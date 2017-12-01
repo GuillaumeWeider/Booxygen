@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_tmx_visitor" kind="class" language="C++" prot="public">
+    <compoundname>gf::TmxVisitor</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_tmx_visitor_1a86960e080ec8cc9237936b13a6bacf09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::TmxVisitor::~TmxVisitor</definition>
+        <argsstring>()</argsstring>
+        <name>~TmxVisitor</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_tmx_visitor_1a24d3f8ac60ec15ed85208b7a74d3fc5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::TmxVisitor::visitTileLayer</definition>
+        <argsstring>(const TmxLayers &amp;map, const TmxTileLayer &amp;layer)</argsstring>
+        <name>visitTileLayer</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_layers" kindref="compound">TmxLayers</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_tile_layer" kindref="compound">TmxTileLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Visit a tile layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tile layer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_tmx_visitor_1aa0f094c39c1c573d7deef1b5955c6cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::TmxVisitor::visitObjectLayer</definition>
+        <argsstring>(const TmxLayers &amp;map, const TmxObjectLayer &amp;layer)</argsstring>
+        <name>visitObjectLayer</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_layers" kindref="compound">TmxLayers</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_object_layer" kindref="compound">TmxObjectLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Visit an object layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object layer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_tmx_visitor_1ac08172e5889d4bb1cd555c660cf23aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::TmxVisitor::visitImageLayer</definition>
+        <argsstring>(const TmxLayers &amp;map, const TmxImageLayer &amp;layer)</argsstring>
+        <name>visitImageLayer</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_layers" kindref="compound">TmxLayers</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_image_layer" kindref="compound">TmxImageLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Visit an image layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image layer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_tmx_visitor_1a864dc6920cbcc28131b108b7a0012f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::TmxVisitor::visitGroupLayer</definition>
+        <argsstring>(const TmxLayers &amp;map, const TmxGroupLayer &amp;layer)</argsstring>
+        <name>visitGroupLayer</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_layers" kindref="compound">TmxLayers</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_group_layer" kindref="compound">TmxGroupLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Visit a group layer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The group layer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="268" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A visitor for layers in the visitor pattern. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_tmx_layer_1aac7dcc82aae5fdbd39144453e6fea3e4" kindref="member">gf::TmxLayer::accept()</ref> </para></simplesect>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Visitor_pattern">Wikipedia - Visitor pattern</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="231" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="231" bodyend="269"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_tmx_visitor_1a864dc6920cbcc28131b108b7a0012f28" prot="public" virt="virtual"><scope>gf::TmxVisitor</scope><name>visitGroupLayer</name></member>
+      <member refid="classgf_1_1_tmx_visitor_1ac08172e5889d4bb1cd555c660cf23aa2" prot="public" virt="virtual"><scope>gf::TmxVisitor</scope><name>visitImageLayer</name></member>
+      <member refid="classgf_1_1_tmx_visitor_1aa0f094c39c1c573d7deef1b5955c6cc7" prot="public" virt="virtual"><scope>gf::TmxVisitor</scope><name>visitObjectLayer</name></member>
+      <member refid="classgf_1_1_tmx_visitor_1a24d3f8ac60ec15ed85208b7a74d3fc5d" prot="public" virt="virtual"><scope>gf::TmxVisitor</scope><name>visitTileLayer</name></member>
+      <member refid="classgf_1_1_tmx_visitor_1a86960e080ec8cc9237936b13a6bacf09" prot="public" virt="virtual"><scope>gf::TmxVisitor</scope><name>~TmxVisitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2857 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__core" kind="group">
+    <compoundname>core</compoundname>
+    <title>Core classes and functions</title>
+    <innerclass refid="classgf_1_1_array2_d" prot="public">gf::Array2D</innerclass>
+    <innerclass refid="classgf_1_1_array_ref" prot="public">gf::ArrayRef</innerclass>
+    <innerclass refid="classgf_1_1_buffer_ref" prot="public">gf::BufferRef</innerclass>
+    <innerclass refid="structgf_1_1_circ" prot="public">gf::Circ</innerclass>
+    <innerclass refid="classgf_1_1_clock" prot="public">gf::Clock</innerclass>
+    <innerclass refid="classgf_1_1_ease" prot="public">gf::Ease</innerclass>
+    <innerclass refid="classgf_1_1_flags" prot="public">gf::Flags</innerclass>
+    <innerclass refid="classgf_1_1_bresenham" prot="public">gf::Bresenham</innerclass>
+    <innerclass refid="classgf_1_1_heightmap" prot="public">gf::Heightmap</innerclass>
+    <innerclass refid="classgf_1_1_input_stream" prot="public">gf::InputStream</innerclass>
+    <innerclass refid="classgf_1_1_file_input_stream" prot="public">gf::FileInputStream</innerclass>
+    <innerclass refid="classgf_1_1_memory_input_stream" prot="public">gf::MemoryInputStream</innerclass>
+    <innerclass refid="structgf_1_1_library_1_1_version" prot="public">gf::Library::Version</innerclass>
+    <innerclass refid="classgf_1_1_library" prot="public">gf::Library</innerclass>
+    <innerclass refid="classgf_1_1_log" prot="public">gf::Log</innerclass>
+    <innerclass refid="structgf_1_1_matrix" prot="public">gf::Matrix</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" prot="public">gf::Matrix&lt; T, 2, 2 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" prot="public">gf::Matrix&lt; T, 3, 3 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" prot="public">gf::Matrix&lt; T, 4, 4 &gt;</innerclass>
+    <innerclass refid="classgf_1_1_noise2_d" prot="public">gf::Noise2D</innerclass>
+    <innerclass refid="classgf_1_1_noise3_d" prot="public">gf::Noise3D</innerclass>
+    <innerclass refid="classgf_1_1_value_noise2_d" prot="public">gf::ValueNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_gradient_noise2_d" prot="public">gf::GradientNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_gradient_noise3_d" prot="public">gf::GradientNoise3D</innerclass>
+    <innerclass refid="classgf_1_1_better_gradient_noise2_d" prot="public">gf::BetterGradientNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_fractal_noise2_d" prot="public">gf::FractalNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_fractal_noise3_d" prot="public">gf::FractalNoise3D</innerclass>
+    <innerclass refid="classgf_1_1_perlin_noise2_d" prot="public">gf::PerlinNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_perlin_noise3_d" prot="public">gf::PerlinNoise3D</innerclass>
+    <innerclass refid="classgf_1_1_simplex_noise2_d" prot="public">gf::SimplexNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_open_simplex_noise2_d" prot="public">gf::OpenSimplexNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_open_simplex_noise3_d" prot="public">gf::OpenSimplexNoise3D</innerclass>
+    <innerclass refid="classgf_1_1_wavelet_noise3_d" prot="public">gf::WaveletNoise3D</innerclass>
+    <innerclass refid="classgf_1_1_worley_noise2_d" prot="public">gf::WorleyNoise2D</innerclass>
+    <innerclass refid="classgf_1_1_multifractal2_d" prot="public">gf::Multifractal2D</innerclass>
+    <innerclass refid="classgf_1_1_hetero_terrain2_d" prot="public">gf::HeteroTerrain2D</innerclass>
+    <innerclass refid="classgf_1_1_hybrid_multifractal2_d" prot="public">gf::HybridMultifractal2D</innerclass>
+    <innerclass refid="classgf_1_1_ridged_multifractal2_d" prot="public">gf::RidgedMultifractal2D</innerclass>
+    <innerclass refid="classgf_1_1_noise3_d_to2_d_adapter" prot="public">gf::Noise3DTo2DAdapter</innerclass>
+    <innerclass refid="structgf_1_1_paths" prot="public">gf::Paths</innerclass>
+    <innerclass refid="classgf_1_1_polygon" prot="public">gf::Polygon</innerclass>
+    <innerclass refid="classgf_1_1_polyline" prot="public">gf::Polyline</innerclass>
+    <innerclass refid="classgf_1_1_queue" prot="public">gf::Queue</innerclass>
+    <innerclass refid="classgf_1_1_random" prot="public">gf::Random</innerclass>
+    <innerclass refid="structgf_1_1_range_1_1_iterator" prot="public">gf::Range::Iterator</innerclass>
+    <innerclass refid="structgf_1_1_range" prot="public">gf::Range</innerclass>
+    <innerclass refid="structgf_1_1_position_range_1_1_iterator" prot="public">gf::PositionRange::Iterator</innerclass>
+    <innerclass refid="structgf_1_1_position_range" prot="public">gf::PositionRange</innerclass>
+    <innerclass refid="structgf_1_1_rect" prot="public">gf::Rect</innerclass>
+    <innerclass refid="classgf_1_1_singleton" prot="public">gf::Singleton</innerclass>
+    <innerclass refid="classgf_1_1_singleton_storage" prot="public">gf::SingletonStorage</innerclass>
+    <innerclass refid="classgf_1_1_string_ref" prot="public">gf::StringRef</innerclass>
+    <innerclass refid="classgf_1_1_system_info" prot="public">gf::SystemInfo</innerclass>
+    <innerclass refid="classgf_1_1_time" prot="public">gf::Time</innerclass>
+    <innerclass refid="structgf_1_1_none_type" prot="public">gf::NoneType</innerclass>
+    <innerclass refid="structgf_1_1_all_type" prot="public">gf::AllType</innerclass>
+    <innerclass refid="structgf_1_1_vector" prot="public">gf::Vector</innerclass>
+    <innerclass refid="structgf_1_1_vector_3_01_t_00_012_01_4" prot="public">gf::Vector&lt; T, 2 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_vector_3_01_t_00_013_01_4" prot="public">gf::Vector&lt; T, 3 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_vector_3_01_t_00_014_01_4" prot="public">gf::Vector&lt; T, 4 &gt;</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__core_1ga919ab8047a14333e1ed3e12dc536650b" prot="public" static="no">
+        <name>Direction</name>
+        <enumvalue id="group__core_1gga919ab8047a14333e1ed3e12dc536650ba4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>The center, indicates no direction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" prot="public">
+          <name>Up</name>
+          <initializer>=  0</initializer>
+          <briefdescription>
+<para>The up direction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1gga919ab8047a14333e1ed3e12dc536650ba92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <initializer>=  1</initializer>
+          <briefdescription>
+<para>The right direction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" prot="public">
+          <name>Down</name>
+          <initializer>=  2</initializer>
+          <briefdescription>
+<para>The down direction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1gga919ab8047a14333e1ed3e12dc536650ba945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+<para>The left direction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Main four directions. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__core_1ga919ab8047a14333e1ed3e12dc536650b" kindref="member">gf::Direction</ref> represents one of the four main directions. A special value is added to represent the center, it indicates no direction.</para><para><simplesect kind="see"><para><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">gf::Orientation</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" prot="public" static="no">
+        <name>Orientation</name>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>The center, indicates no orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a601560b94fbb188919dd1d36c8ab70a4" prot="public">
+          <name>North</name>
+          <initializer>=  0</initializer>
+          <briefdescription>
+<para>The north orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a7254edb19370d28e3466c971d2f8a03e" prot="public">
+          <name>NorthEast</name>
+          <initializer>=  1</initializer>
+          <briefdescription>
+<para>The north-east orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13aa99dc62d017d04cf67266593f9c3761e" prot="public">
+          <name>East</name>
+          <initializer>=  2</initializer>
+          <briefdescription>
+<para>The east orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a865a51dff69223f0cf5ad630e5ada190" prot="public">
+          <name>SouthEast</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+<para>The south-east orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a263d7b2cf53802c9ed127b718c0bf9fd" prot="public">
+          <name>South</name>
+          <initializer>=  4</initializer>
+          <briefdescription>
+<para>The south orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13ae8eaf797b01fdb4246ed54904368b592" prot="public">
+          <name>SouthWest</name>
+          <initializer>=  5</initializer>
+          <briefdescription>
+<para>The south-west orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13abf495fc048d8d44b7f32536df5cf3930" prot="public">
+          <name>West</name>
+          <initializer>=  6</initializer>
+          <briefdescription>
+<para>The west orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a142cbe82227bdec147eff3a629dd366b" prot="public">
+          <name>NorthWest</name>
+          <initializer>=  7</initializer>
+          <briefdescription>
+<para>The north-west orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Cardinal and ordinal orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">gf::Orientation</ref> represents one the four cardinal orientations and the four ordinal (or intercardinal) orientations. A special value is added to represent the center, it indicates no orientation.</para><para><simplesect kind="see"><para><ref refid="group__core_1ga919ab8047a14333e1ed3e12dc536650b" kindref="member">gf::Direction</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" bodystart="42" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__core_1ga834b7c90c6d90647e9ba10caad190efa" prot="public" static="no">
+        <name>Winding</name>
+        <enumvalue id="group__core_1gga834b7c90c6d90647e9ba10caad190efaaba360a794737bcc8657a5b6e870d7ba8" prot="public">
+          <name>Clockwise</name>
+          <briefdescription>
+<para>Same direction as a clock&apos;s hands. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__core_1gga834b7c90c6d90647e9ba10caad190efaa2ce0103fdd01ba7831c54103c8a3bb3f" prot="public">
+          <name>Counterclockwise</name>
+          <briefdescription>
+<para>Opposite direction of a clock&apos;s hands. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The direction of a polygon&apos;s rotation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__core_1gac6236125c5f69ba470c41e18f5085803" prot="public" static="no">
+        <type>Circ&lt; float &gt;</type>
+        <definition>using gf::CircF = typedef Circ&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>CircF</name>
+        <briefdescription>
+<para>A <computeroutput>float</computeroutput> circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="205" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga17920b628fd118fd63fc79a46362b216" prot="public" static="no">
+        <type>Circ&lt; int &gt;</type>
+        <definition>using gf::CircI = typedef Circ&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>CircI</name>
+        <briefdescription>
+<para>A <computeroutput>int</computeroutput> circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="213" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaab2b7e5663dff487d15d6747e93ccbd5" prot="public" static="no">
+        <type>Circ&lt; unsigned &gt;</type>
+        <definition>using gf::CircU = typedef Circ&lt;unsigned&gt;</definition>
+        <argsstring></argsstring>
+        <name>CircU</name>
+        <briefdescription>
+<para>A <computeroutput>unsigned</computeroutput> circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="221" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga3943cb9c4063f7c9ed154bd5e039c5e9" prot="public" static="no">
+        <type>Circ&lt; std::size_t &gt;</type>
+        <definition>using gf::CircZ = typedef Circ&lt;std::size_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>CircZ</name>
+        <briefdescription>
+<para>A <computeroutput>std::size_t</computeroutput> circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="229" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" prot="public" static="no">
+        <type>float(*)(float)</type>
+        <definition>using gf::Easing = typedef float (*)(float)</definition>
+        <argsstring></argsstring>
+        <name>Easing</name>
+        <briefdescription>
+<para>An easing function. </para>        </briefdescription>
+        <detaileddescription>
+<para>An easing function is a function that specifies how a value changes over time. A normalized easing function has the following properties:</para><para><itemizedlist>
+<listitem><para><formula id="24">$ f(0) = 0 $</formula></para></listitem><listitem><para><formula id="25">$ f(1) = 1 $</formula></para></listitem></itemizedlist>
+</para><para>Usual easing functions are provided in <ref refid="classgf_1_1_ease" kindref="compound">gf::Ease</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_ease" kindref="compound">gf::Ease</ref>, <ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Easings.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Easings.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga375ce9d7d861b67c78398d51c1769410" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>using gf::Id = typedef uint64_t</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+<para>An identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="39" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga44b429e4f47cceab994f3b20b811d681" prot="public" static="no">
+        <type>T(*)(T)</type>
+        <definition>using gf::Step = typedef T (*)(T)</definition>
+        <argsstring></argsstring>
+        <name>Step</name>
+        <briefdescription>
+<para>A step is a function with special features. </para>        </briefdescription>
+        <detaileddescription>
+<para>A step <formula id="57">$ f $</formula> is a (mathematical) function which has the following properties:</para><para><itemizedlist>
+<listitem><para><formula id="24">$ f(0) = 0 $</formula></para></listitem><listitem><para><formula id="25">$ f(1) = 1 $</formula></para></listitem></itemizedlist>
+</para><para>It can be used to smooth a linear interpolation.</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>point1<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>point2<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step&lt;float&gt;</ref><sp/>step<sp/>=<sp/>gf::cubicStep&lt;float&gt;;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>interpolatedPoint<sp/>=<sp/><ref refid="group__core_1gac274bd90d63716ed5b514331c90288e9" kindref="member">gf::lerp</ref>(point1,<sp/>point2,<sp/>t);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>smoothedInterpolatedPoint<sp/>=<sp/><ref refid="group__core_1gac274bd90d63716ed5b514331c90288e9" kindref="member">gf::lerp</ref>(point1,<sp/>point2,<sp/>step(t));</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="group__core_1gae4f9435d5873af1b503a277ddae35bd9" kindref="member">linearStep()</ref>, <ref refid="group__core_1gab353056685420de64599bb422adaf701" kindref="member">cubicStep()</ref>, <ref refid="group__core_1ga6f9ca6f1bc9622a4c7e68a3f956d8415" kindref="member">quinticStep()</ref>, <ref refid="group__core_1ga0e9fce6526516ba6bee65bf802888cd3" kindref="member">cosineStep()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="153" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga15242198f27434d7c9945ff0657b3347" prot="public" static="no">
+        <type>Matrix&lt; float, 2, 2 &gt;</type>
+        <definition>using gf::Matrix2f = typedef Matrix&lt;float, 2, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Matrix2f</name>
+        <briefdescription>
+<para>A float square matrix of size 2. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>, <ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kindref="compound">gf::Matrix&lt;T, 2, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="318" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gae702e6021057443ca43f94b32618bbc2" prot="public" static="no">
+        <type>Matrix&lt; float, 3, 3 &gt;</type>
+        <definition>using gf::Matrix3f = typedef Matrix&lt;float, 3, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Matrix3f</name>
+        <briefdescription>
+<para>A float square matrix of size 3. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>, <ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">gf::Matrix&lt;T, 3, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="326" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga602d9345cc8ee188179c52bc1c854771" prot="public" static="no">
+        <type>Matrix&lt; float, 4, 4 &gt;</type>
+        <definition>using gf::Matrix4f = typedef Matrix&lt;float, 4, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Matrix4f</name>
+        <briefdescription>
+<para>A float square matrix of size 4. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>, <ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" kindref="compound">gf::Matrix&lt;T, 4, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="334" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga6788e40b762777c1081f796076116a02" prot="public" static="no">
+        <type>boost::filesystem::path</type>
+        <definition>using gf::Path = typedef boost::filesystem::path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <briefdescription>
+<para>A path in the filesystem. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">gf::Path</ref> is a simple typedef for <computeroutput>boost::filesystem::path</computeroutput>. <ulink url="http://www.boost.org/doc/libs/release/libs/filesystem/">Boost.Filesystem</ulink> will eventually be part of the C++17 standard. So, in the future, <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">gf::Path</ref> will be a typedef for <computeroutput>std::path</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Path.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Path.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga875aab9d7de883344d72355cc09597e6" prot="public" static="no">
+        <type>Range&lt; float &gt;</type>
+        <definition>using gf::RangeF = typedef Range&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>RangeF</name>
+        <briefdescription>
+<para>A float range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="183" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga1f20513549e674effeb96f859ac37af5" prot="public" static="no">
+        <type>Range&lt; int &gt;</type>
+        <definition>using gf::RangeI = typedef Range&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>RangeI</name>
+        <briefdescription>
+<para>A int range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="191" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gad3135fe5249a7908bfe5aa6efa78ecb2" prot="public" static="no">
+        <type>Range&lt; unsigned &gt;</type>
+        <definition>using gf::RangeU = typedef Range&lt;unsigned&gt;</definition>
+        <argsstring></argsstring>
+        <name>RangeU</name>
+        <briefdescription>
+<para>A unsigned range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="199" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gadd2465942ddf9cb7ae83b00797c00672" prot="public" static="no">
+        <type>Range&lt; std::size_t &gt;</type>
+        <definition>using gf::RangeZ = typedef Range&lt;std::size_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>RangeZ</name>
+        <briefdescription>
+<para>A <computeroutput>std::size_t</computeroutput> range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="207" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gac3887a7df16895871374b04d9f6cb961" prot="public" static="no">
+        <type>Rect&lt; float &gt;</type>
+        <definition>using gf::RectF = typedef Rect&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>RectF</name>
+        <briefdescription>
+<para>A <computeroutput>float</computeroutput> rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_rect" kindref="compound">gf::Rect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" line="321" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" prot="public" static="no">
+        <type>Rect&lt; int &gt;</type>
+        <definition>using gf::RectI = typedef Rect&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>RectI</name>
+        <briefdescription>
+<para>A <computeroutput>int</computeroutput> rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_rect" kindref="compound">gf::Rect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" line="329" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga1831a8313850243834b07340b4e3b22c" prot="public" static="no">
+        <type>Rect&lt; unsigned &gt;</type>
+        <definition>using gf::RectU = typedef Rect&lt;unsigned&gt;</definition>
+        <argsstring></argsstring>
+        <name>RectU</name>
+        <briefdescription>
+<para>A <computeroutput>unsigned</computeroutput> rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_rect" kindref="compound">gf::Rect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" line="337" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga191f0ccd444b49e33703af54a9296a51" prot="public" static="no">
+        <type>Rect&lt; std::size_t &gt;</type>
+        <definition>using gf::RectZ = typedef Rect&lt;std::size_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>RectZ</name>
+        <briefdescription>
+<para>A <computeroutput>std::size_t</computeroutput> rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_rect" kindref="compound">gf::Rect</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" line="345" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Rect.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga6036002b111f9c4216809da953818625" prot="public" static="no">
+        <type>Vector&lt; float, 2 &gt;</type>
+        <definition>using gf::Vector2f = typedef Vector&lt;float, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2f</name>
+        <briefdescription>
+<para>A float vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="968" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaefd1239e3c713d51c3dfdeb3f4f7cb08" prot="public" static="no">
+        <type>Vector&lt; float, 3 &gt;</type>
+        <definition>using gf::Vector3f = typedef Vector&lt;float, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3f</name>
+        <briefdescription>
+<para>A float vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="976" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="976" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga80e84250d4f3b2b46e723056d5795ffb" prot="public" static="no">
+        <type>Vector&lt; float, 4 &gt;</type>
+        <definition>using gf::Vector4f = typedef Vector&lt;float, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4f</name>
+        <briefdescription>
+<para>A float vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="984" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaf000d77b14f910bee6329245832d66af" prot="public" static="no">
+        <type>Vector&lt; double, 2 &gt;</type>
+        <definition>using gf::Vector2d = typedef Vector&lt;double, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2d</name>
+        <briefdescription>
+<para>A double vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="992" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaebefd2196203ab24f579f910ca253570" prot="public" static="no">
+        <type>Vector&lt; double, 3 &gt;</type>
+        <definition>using gf::Vector3d = typedef Vector&lt;double, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3d</name>
+        <briefdescription>
+<para>A double vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1000" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga3163b57cc0b98f44dcedf12512d13030" prot="public" static="no">
+        <type>Vector&lt; double, 4 &gt;</type>
+        <definition>using gf::Vector4d = typedef Vector&lt;double, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4d</name>
+        <briefdescription>
+<para>A double vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1008" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" prot="public" static="no">
+        <type>Vector&lt; int, 2 &gt;</type>
+        <definition>using gf::Vector2i = typedef Vector&lt;int, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2i</name>
+        <briefdescription>
+<para>A int vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1016" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1016" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga1546e3b076fe0f210d2bb3bd4e616379" prot="public" static="no">
+        <type>Vector&lt; int, 3 &gt;</type>
+        <definition>using gf::Vector3i = typedef Vector&lt;int, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3i</name>
+        <briefdescription>
+<para>A int vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1024" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaba10c5bbc1959540c64ac57eafb1e7c2" prot="public" static="no">
+        <type>Vector&lt; int, 4 &gt;</type>
+        <definition>using gf::Vector4i = typedef Vector&lt;int, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4i</name>
+        <briefdescription>
+<para>A int vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1032" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" prot="public" static="no">
+        <type>Vector&lt; unsigned, 2 &gt;</type>
+        <definition>using gf::Vector2u = typedef Vector&lt;unsigned, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2u</name>
+        <briefdescription>
+<para>A unsigned vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1040" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga2b8ba7c5a3581a03506b07322391daf7" prot="public" static="no">
+        <type>Vector&lt; unsigned, 3 &gt;</type>
+        <definition>using gf::Vector3u = typedef Vector&lt;unsigned, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3u</name>
+        <briefdescription>
+<para>A unsigned vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1048" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga70c47c0b6af10e59158f3b3fbaa4041e" prot="public" static="no">
+        <type>Vector&lt; unsigned, 4 &gt;</type>
+        <definition>using gf::Vector4u = typedef Vector&lt;unsigned, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4u</name>
+        <briefdescription>
+<para>A unsigned vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1056" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga5bf6a5507851c38bb712a6863da7139d" prot="public" static="no">
+        <type>Vector&lt; std::size_t, 2 &gt;</type>
+        <definition>using gf::Vector2z = typedef Vector&lt;std::size_t, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2z</name>
+        <briefdescription>
+<para>A std::size_t vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1064" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1064" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga99454e8b6f79964d6f3c079a42acddaa" prot="public" static="no">
+        <type>Vector&lt; std::size_t, 3 &gt;</type>
+        <definition>using gf::Vector3z = typedef Vector&lt;std::size_t, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3z</name>
+        <briefdescription>
+<para>A std::size_t vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1072" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga32f4a44aab4b9a63de67d9b9bfa310f6" prot="public" static="no">
+        <type>Vector&lt; std::size_t, 4 &gt;</type>
+        <definition>using gf::Vector4z = typedef Vector&lt;std::size_t, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4z</name>
+        <briefdescription>
+<para>A std::size_t vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1080" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga8bd579024279ac4c52a657d5887dddb2" prot="public" static="no">
+        <type>Vector&lt; bool, 2 &gt;</type>
+        <definition>using gf::Vector2b = typedef Vector&lt;bool, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector2b</name>
+        <briefdescription>
+<para>A bool vector with 2 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1088" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga4cab2cbe71071746ed68c14f4767a4aa" prot="public" static="no">
+        <type>Vector&lt; bool, 3 &gt;</type>
+        <definition>using gf::Vector3b = typedef Vector&lt;bool, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3b</name>
+        <briefdescription>
+<para>A bool vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1096" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gac029aae1238073eb7f799da97e8a6893" prot="public" static="no">
+        <type>Vector&lt; bool, 4 &gt;</type>
+        <definition>using gf::Vector4b = typedef Vector&lt;bool, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector4b</name>
+        <briefdescription>
+<para>A bool vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1104" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gadce7630dd53e101fa1b531e304b6f466" prot="public" static="no">
+        <type>Vector&lt; float, 3 &gt;</type>
+        <definition>using gf::Color3f = typedef Vector&lt;float, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Color3f</name>
+        <briefdescription>
+<para>A float color vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1112" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" prot="public" static="no">
+        <type>Vector&lt; float, 4 &gt;</type>
+        <definition>using gf::Color4f = typedef Vector&lt;float, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Color4f</name>
+        <briefdescription>
+<para>A float color vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1120" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gac1fc7ef93c09869dcdae690195d69701" prot="public" static="no">
+        <type>Vector&lt; uint8_t, 3 &gt;</type>
+        <definition>using gf::Color3u = typedef Vector&lt;uint8_t, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Color3u</name>
+        <briefdescription>
+<para>A uint8_t color vector with 3 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1128" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga09c9beb9c818138a42f029091e885e61" prot="public" static="no">
+        <type>Vector&lt; uint8_t, 4 &gt;</type>
+        <definition>using gf::Color4u = typedef Vector&lt;uint8_t, 4&gt;</definition>
+        <argsstring></argsstring>
+        <name>Color4u</name>
+        <briefdescription>
+<para>A uint8_t color vector with 4 components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1136" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1gab520ef25cf633cde23ee26888676bb96" prot="public" static="no">
+        <type>T(*)(Vector&lt; T, N &gt;, Vector&lt; T, N &gt;)</type>
+        <definition>using gf::Distance = typedef T (*)(Vector&lt;T, N&gt;, Vector&lt;T, N&gt;)</definition>
+        <argsstring></argsstring>
+        <name>Distance</name>
+        <briefdescription>
+<para>A distance function. </para>        </briefdescription>
+        <detaileddescription>
+<para>A distance function is a function that gives the distance between two vectors.</para><para><programlisting><codeline><highlight class="normal">gf::Distance&lt;float,<sp/>3&gt;<sp/>distFn<sp/>=<sp/>gf::manhattanDistance&lt;float,<sp/>3&gt;;</highlight></codeline>
+<codeline><highlight class="normal">Vector3f<sp/>vec1<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">Vector3f<sp/>vec2<sp/>=<sp/>...;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">float<sp/>distance<sp/>=<sp/>distFn(vec1,<sp/>vec2);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="structgf_1_1_vector_1ab7ac075b031168cc0333c60bf5f9ed91" kindref="member">manhattanDistance()</ref>, <ref refid="structgf_1_1_vector_1a6c2b906d7231d200eb766187b5f51936" kindref="member">squareDistance()</ref>, <ref refid="structgf_1_1_vector_1a1bbcb2190ca4bd2fb435f1e74f00c7db" kindref="member">euclideanDistance()</ref>, <ref refid="structgf_1_1_vector_1a8b7e8d54b4bfa8292c7927c5fc9f2386" kindref="member">chebyshevDistance()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__core_1ga20b973d6afc270ead61a988e216199bd" kindref="member">gf::Distance2</ref>, <ref refid="group__core_1ga3c2e319261f34744547b9b86486b3507" kindref="member">gf::Distance3</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1182" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga20b973d6afc270ead61a988e216199bd" prot="public" static="no">
+        <type>Distance&lt; T, 2 &gt;</type>
+        <definition>using gf::Distance2 = typedef Distance&lt;T, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>Distance2</name>
+        <briefdescription>
+<para>A distance function for 2D vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1gab520ef25cf633cde23ee26888676bb96" kindref="member">gf::Distance</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1191" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__core_1ga3c2e319261f34744547b9b86486b3507" prot="public" static="no">
+        <type>Distance&lt; T, 3 &gt;</type>
+        <definition>using gf::Distance3 = typedef Distance&lt;T, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Distance3</name>
+        <briefdescription>
+<para>A distance function for 3D vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1gab520ef25cf633cde23ee26888676bb96" kindref="member">gf::Distance</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="1200" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="1200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__core_1ga63cc77139085fae86503ed552b1c52ee" prot="public" static="no" mutable="no">
+        <type>constexpr Id</type>
+        <definition>constexpr Id gf::InvalidId</definition>
+        <argsstring></argsstring>
+        <name>InvalidId</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The invalid id (which is 0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gafea71ec62ea0c47eb8e65dba77940b40" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Pi</definition>
+        <argsstring></argsstring>
+        <name>Pi</name>
+        <initializer>= 3.14159265358979323846f</initializer>
+        <briefdescription>
+<para>The <formula id="0">$ \pi $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="38" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gaac3ad99d9b813b1cea8802abbfed6d80" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Pi2</definition>
+        <argsstring></argsstring>
+        <name>Pi2</name>
+        <initializer>= Pi / 2</initializer>
+        <briefdescription>
+<para>The <formula id="53">$ \frac{\pi}{2} $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gaab6d74eaf8f5a1744b6de68ad463edf2" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Pi4</definition>
+        <argsstring></argsstring>
+        <name>Pi4</name>
+        <initializer>= Pi / 4</initializer>
+        <briefdescription>
+<para>The <formula id="54">$ \frac{\pi}{4} $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="50" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1ga8aa2d6dc9c8fb96810fe47dff3c9b00a" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Sqrt2</definition>
+        <argsstring></argsstring>
+        <name>Sqrt2</name>
+        <initializer>= 1.41421356237309504880f</initializer>
+        <briefdescription>
+<para>The <formula id="52">$ \sqrt{2} $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="56" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gab6ba065d81cdb7021ba7e47bea500580" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::InvSqrt2</definition>
+        <argsstring></argsstring>
+        <name>InvSqrt2</name>
+        <initializer>= 1 / Sqrt2</initializer>
+        <briefdescription>
+<para>The <formula id="55">$ \frac{1}{\sqrt{2}} $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gad32b4a332d77de3d25eae25cfbcb3fb2" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Sqrt3</definition>
+        <argsstring></argsstring>
+        <name>Sqrt3</name>
+        <initializer>= 1.7320508075688772935f</initializer>
+        <briefdescription>
+<para>The <formula id="56">$ \sqrt{3} $</formula> constant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="68" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1gab4aa74a0cbea2a97c107bc5a1dc63a64" prot="public" static="no" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Epsilon</definition>
+        <argsstring></argsstring>
+        <name>Epsilon</name>
+        <initializer>= std::numeric_limits&lt;float&gt;::epsilon()</initializer>
+        <briefdescription>
+<para>Machine epsilon. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="74" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1ga56ca9bdafc82edc51402f9857beb37ff" prot="public" static="no" mutable="no">
+        <type>constexpr NoneType</type>
+        <definition>constexpr NoneType gf::None</definition>
+        <argsstring></argsstring>
+        <name>None</name>
+        <initializer>= { }</initializer>
+        <briefdescription>
+<para>Constant to represent &quot;none&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_none_type" kindref="compound">gf::NoneType</ref>, <ref refid="group__core_1ga21fb73589fe7966a778a8b77ff9f16b8" kindref="member">gf::All</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Types.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__core_1ga21fb73589fe7966a778a8b77ff9f16b8" prot="public" static="no" mutable="no">
+        <type>constexpr AllType</type>
+        <definition>constexpr AllType gf::All</definition>
+        <argsstring></argsstring>
+        <name>All</name>
+        <initializer>= { }</initializer>
+        <briefdescription>
+<para>Constant to represent &quot;all&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_all_type" kindref="compound">gf::AllType</ref>, <ref refid="group__core_1ga56ca9bdafc82edc51402f9857beb37ff" kindref="member">gf::None</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Types.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Types.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__core_1ga06acc8afaf45bf8111735f1e5124e265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector2f</type>
+        <definition>Vector2f gf::unit</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>unit</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get a unit vector from a direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A unit vector representing the direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga762fb8ffb213b0ca19f6997153821827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector2i</type>
+        <definition>Vector2i gf::displacement</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>displacement</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get a vector from a direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>The vector has its coordinates at -1, 0 or 1 depending on the direction. It can be used to represent the displacement on a grid in the given direction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector representing the direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga96c554e4534b63fd34ac457d563e7c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::angle</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>angle</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get an angle from a direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Up is at angle 0 and angle grows clockwise.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an angle (in radians) representing the direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga9214206036fe1ff2e32f8eb5dd6ddd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction gf::opposite</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>opposite</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the opposite direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The opposite direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaba311399ff14745ba9bd4727d20558ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction gf::orthogonalCW</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>orthogonalCW</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the orthogonal direction clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The orthogonal direction clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gace83a6f16cc97de2213348a25da047ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction gf::orthogonalCCW</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>orthogonalCCW</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the orthogonal direction counter-clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The orthogonal direction counter-clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaf772c7af2f2feee7aa295ce0bbbf0d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction gf::nextCW</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>nextCW</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the next direction clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The next direction clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gada85a63380e5957266d3e6c9ea4bb470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Direction</type>
+        <definition>Direction gf::nextCCW</definition>
+        <argsstring>(Direction direction)</argsstring>
+        <name>nextCCW</name>
+        <param>
+          <type>Direction</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the next direction counter-clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The next direction counter-clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Direction.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga1ef096f0d24fef43c511b1a384a48e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; Vector2i &gt;</type>
+        <definition>std::vector&lt;Vector2i&gt; gf::generateLine</definition>
+        <argsstring>(Vector2i p0, Vector2i p1)</argsstring>
+        <name>generateLine</name>
+        <param>
+          <type>Vector2i</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Vector2i</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Generate a line between two positions. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function uses <ulink url="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham&apos;s line algorithm</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first point of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The last point of the line </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A series of point beginning at the first point and ending just before the last point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_bresenham" kindref="compound">gf::Bresenham</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga488a9efee6bb0ff4d2cb1028a60a83c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; Vector2f &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::midpointDisplacement1D</definition>
+        <argsstring>(Vector2f p0, Vector2f p1, Random &amp;random, unsigned iterations, Vector2f direction, float initialFactor=1.0f, float reductionFactor=0.5f)</argsstring>
+        <name>midpointDisplacement1D</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Random &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialFactor</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>reductionFactor</declname>
+          <defval>0.5f</defval>
+        </param>
+        <briefdescription>
+<para>1D midpoint displacement </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to make a displacement </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial factor to apply to the displacement </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reductionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The factor to apply at each iteration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gae219e7f9ceb8e7a56511019c5a4b082a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; Vector2f &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::midpointDisplacement1D</definition>
+        <argsstring>(Vector2f p0, Vector2f p1, Random &amp;random, unsigned iterations, float initialFactor=1.0f, float reductionFactor=0.5f)</argsstring>
+        <name>midpointDisplacement1D</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>Random &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialFactor</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>reductionFactor</declname>
+          <defval>0.5f</defval>
+        </param>
+        <briefdescription>
+<para>1D midpoint displacement </para>        </briefdescription>
+        <detaileddescription>
+<para>The direction is perpendicular to the segment <formula id="44">$ [P_0 P_1] $</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial factor to apply to the displacement </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reductionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The factor to apply at each iteration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Heightmap</type>
+        <definition>Heightmap gf::midpointDisplacement2D</definition>
+        <argsstring>(Vector2i size, Random &amp;random, ArrayRef&lt; double &gt; initialValues=nullptr)</argsstring>
+        <name>midpointDisplacement2D</name>
+        <param>
+          <type>Vector2i</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Random &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>ArrayRef&lt; double &gt;</type>
+          <declname>initialValues</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>2D midpoint displacement </para>        </briefdescription>
+        <detaileddescription>
+<para>The size can be anything. If the size is not a power of two plus one, then a greater heightmap is generated and a submap of the right size is returned (in the middle of the generated map).</para><para>The function takes initial values. If there are less than three values, only the first one is used to initialize the four corners. If there are more than four, only the first four are used to initialize the four corners in that order: north-west, north-east, south-east, south-west. If no values are given, the four corners are initialized to <formula id="45">$ 0.0 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial values of the four corners</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__core_1ga224a9e63967d8b82789bdc3c87797c26" kindref="member">gf::diamondSquare2D()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga224a9e63967d8b82789bdc3c87797c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Heightmap</type>
+        <definition>Heightmap gf::diamondSquare2D</definition>
+        <argsstring>(Vector2i size, Random &amp;random, ArrayRef&lt; double &gt; initialValues=nullptr)</argsstring>
+        <name>diamondSquare2D</name>
+        <param>
+          <type>Vector2i</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Random &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>ArrayRef&lt; double &gt;</type>
+          <declname>initialValues</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>2D diamond square </para>        </briefdescription>
+        <detaileddescription>
+<para>The size can be anything. If the size is not a power of two plus one, then a greater heightmap is generated and a submap of the right size is returned (in the middle of the generated map).</para><para>The function takes initial values. If there are less than three values, only the first one is used to initialize the four corners. If there are more than four, only the first four are used to initialize the four corners in that order: north-west, north-east, south-east, south-west. If no values are given, the four corners are initialized to <formula id="45">$ 0.0 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial values of the four corners</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" kindref="member">gf::midpointDisplacement2D()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gafb2a827226f08af1ff5ef7bfae6f525a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr Id</type>
+        <definition>constexpr Id gf::hash</definition>
+        <argsstring>(const char *str, std::size_t sz)</argsstring>
+        <name>hash</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+<para>Get an identifier from a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The hash is a Fowler–Noll–Vo 1a hash. This function is mainly for internal use. You should instead use the user-defined literal <computeroutput>_id</computeroutput>.</para><para>Example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>string&quot;</highlight><highlight class="normal">_id;<sp/></highlight><highlight class="comment">//<sp/>computed<sp/>at<sp/>compile<sp/>time</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="63" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gae369c6dfc94eb885a40137e0d66f2d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr Id</type>
+        <definition>constexpr Id gf::hash</definition>
+        <argsstring>(StringRef str)</argsstring>
+        <name>hash</name>
+        <param>
+          <type>StringRef</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get an idenfitier from a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The hash is a Fowler–Noll–Vo 1a hash. This function can be used for computing an id at runtime. For computing an id from a string at compile time, you should use the the user-defined literal <computeroutput>_id</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The hash of the string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga7ed0adec6b897c228288a41a757b96a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gf::almostEquals</definition>
+        <argsstring>(T a, T b, T epsilon=std::numeric_limits&lt; T &gt;::epsilon())</argsstring>
+        <name>almostEquals</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>epsilon</declname>
+          <defval>std::numeric_limits&lt; T &gt;::epsilon()</defval>
+        </param>
+        <briefdescription>
+<para>Compare two floats. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first float </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second float </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A small value that controls the equality comparison</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="http://floating-point-gui.de/errors/comparison/">Comparison - The Floating-Point Guide</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="88" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga4f3a61189703ec2b8dc9e9a27a398bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::degreesToRadians</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>degreesToRadians</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+<para>Convert degrees to radians. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>degrees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An angle in degrees </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The angle in radians </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__core_1ga1965ca9c0aa332a0a9fff72398f29c69" kindref="member">radiansToDegrees()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="113" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga1965ca9c0aa332a0a9fff72398f29c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::radiansToDegrees</definition>
+        <argsstring>(float radians)</argsstring>
+        <name>radiansToDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>radians</declname>
+        </param>
+        <briefdescription>
+<para>Convert radians to degrees. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radians</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An angle in radians </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The angle in degrees </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__core_1ga4f3a61189703ec2b8dc9e9a27a398bb5" kindref="member">degreesToRadians()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gae4f9435d5873af1b503a277ddae35bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::linearStep</definition>
+        <argsstring>(T t)</argsstring>
+        <name>linearStep</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Linear step. </para>        </briefdescription>
+        <detaileddescription>
+<para><formula id="26">\[ f(t) = t \]</formula></para><para><simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="165" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gab353056685420de64599bb422adaf701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::cubicStep</definition>
+        <argsstring>(T t)</argsstring>
+        <name>cubicStep</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Cubic step (smoothstep) </para>        </briefdescription>
+        <detaileddescription>
+<para><formula id="27">\[ f(t) = -2 * t^3 + 3 * t^2 \]</formula></para><para>Compared to a step, it has the following properties:</para><para><itemizedlist>
+<listitem><para><formula id="58">$ f&apos;(0) = 0 $</formula></para></listitem><listitem><para><formula id="59">$ f&apos;(1) = 0 $</formula></para></listitem></itemizedlist>
+</para><para>This function is also known as <ulink url="https://en.wikipedia.org/wiki/Smoothstep">smoothstep</ulink></para><para><simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="186" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="186" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga6f9ca6f1bc9622a4c7e68a3f956d8415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::quinticStep</definition>
+        <argsstring>(T t)</argsstring>
+        <name>quinticStep</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Quintic step (smootherstep) </para>        </briefdescription>
+        <detaileddescription>
+<para><formula id="28">\[ f(t) = 6 * t^5 - 15 * t^4 + 10 * t^3 \]</formula></para><para>Compared to a step, it has the following properties:</para><para><itemizedlist>
+<listitem><para><formula id="58">$ f&apos;(0) = 0 $</formula></para></listitem><listitem><para><formula id="59">$ f&apos;(1) = 0 $</formula></para></listitem><listitem><para><formula id="60">$ f&apos;&apos;(0) = 0 $</formula></para></listitem><listitem><para><formula id="61">$ f&apos;&apos;(1) = 0 $</formula></para></listitem></itemizedlist>
+</para><para>This function is also known as <ulink url="https://en.wikipedia.org/wiki/Smoothstep#Variations">smootherstep</ulink></para><para><simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="209" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga0e9fce6526516ba6bee65bf802888cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T gf::cosineStep</definition>
+        <argsstring>(T t)</argsstring>
+        <name>cosineStep</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Cosine step. </para>        </briefdescription>
+        <detaileddescription>
+<para><formula id="62">\[ f(t) = (1 - \cos(\pi * t)) * 0.5 \]</formula></para><para><simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="223" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gac274bd90d63716ed5b514331c90288e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T gf::lerp</definition>
+        <argsstring>(T lhs, T rhs, U t)</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>T</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>U</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Linear interpolation function. </para>        </briefdescription>
+        <detaileddescription>
+<para>This functions returns an interpolated value between two values <computeroutput>lhs</computeroutput> and <computeroutput>rhs</computeroutput> according to a parameter <formula id="63">$ t $</formula>. When <formula id="64">$ t = 0 $</formula> then <computeroutput>lhs</computeroutput> is returned, and when <formula id="65">$ t = 1 $</formula> then <computeroutput>rhs</computeroutput> is returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interpolation parameter, generally in the interval <formula id="66">$ [0,1] $</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value between the first and second value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="242" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga671bdda5a52c335e68d391147c70cc16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::clamp</definition>
+        <argsstring>(T val, T lo, T hi)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+<para>Clamping function. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function takes a value and returns it if it is in a specified range. If not, the returned value is the nearest value in the range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to clamp </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum accepted value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum accepted value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The clamped value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="260" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga0e22be4ddd625e4c235dbf0ef2d1f43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::square</definition>
+        <argsstring>(T val)</argsstring>
+        <name>square</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Square function. </para>        </briefdescription>
+        <detaileddescription>
+<para>For a value <formula id="67">$ x $</formula>, the square value is <formula id="68">$ x^2 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square of the value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="275" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga55d7afb6ae7f894776bb0244465ac497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr int</type>
+        <definition>constexpr int gf::sign</definition>
+        <argsstring>(T val)</argsstring>
+        <name>sign</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Sign function. </para>        </briefdescription>
+        <detaileddescription>
+<para>The sign function of <formula id="67">$ x $</formula> is:</para><para><itemizedlist>
+<listitem><para><formula id="69">$ -1 $</formula> if <formula id="70">$ x &lt; 0 $</formula></para></listitem><listitem><para><formula id="3">$ 0 $</formula> if <formula id="71">$ x = 0 $</formula></para></listitem><listitem><para><formula id="72">$ 1 $</formula> if <formula id="73">$ x &gt; 0 $</formula></para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sign of the value </para></simplesect>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Sign_function">Sign function</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="295" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="295" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga162af6026bb8a59762e87c918f634006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr T</type>
+        <definition>constexpr T gf::absdiff</definition>
+        <argsstring>(T lhs, T rhs)</argsstring>
+        <name>absdiff</name>
+        <param>
+          <type>T</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Absolute difference of two values. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is defined as:</para><para><formula id="74">\[ \text{absdiff}(a, b) = | a - b | \]</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The absolute difference between the two values </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" line="313" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Math.h" bodystart="313" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga04be8c647e97efed33399d2f623536cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector2f</type>
+        <definition>Vector2f gf::unit</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>unit</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get a unit vector from an orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A unit vector representing the orientation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga8100b5b3e893ba1122e087e7cb0d3234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector2i</type>
+        <definition>Vector2i gf::displacement</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>displacement</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get a vector from an orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para>The vector has its coordinates at -1, 0 or 1 depending on the orientation. It can be used to represent the displacement on a grid in the given orientation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector representing the orientation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gab301a27364052722f38791e50ce6059b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::angle</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>angle</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get an angle from a orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para>North is at angle 0 and angle grows clockwise.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an angle (in radians) representing the orientation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaf25720c19e38cc8c7ff9b9c13a5517d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Orientation</type>
+        <definition>Orientation gf::opposite</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>opposite</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get the opposite orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The opposite orientation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gab0ae6fccca7a950496285ca9e251e8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Orientation</type>
+        <definition>Orientation gf::orthogonalCW</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>orthogonalCW</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get the orthogonal orientation clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The orthogonal orientation clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga3132e949ffe804cf168383283de406ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Orientation</type>
+        <definition>Orientation gf::orthogonalCCW</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>orthogonalCCW</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get the orthogonal orientation counter-clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The orthogonal orientation counter-clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gabf7f419624964ed11e6364cbd14532f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Orientation</type>
+        <definition>Orientation gf::nextCW</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>nextCW</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get the next orientation clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The next orientation clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga2293a9ae1af969db86ac4cffa2c9a8a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Orientation</type>
+        <definition>Orientation gf::nextCCW</definition>
+        <argsstring>(Orientation orientation)</argsstring>
+        <name>nextCCW</name>
+        <param>
+          <type>Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+<para>Get the next orientation counter-clockwise. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The orientation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The next orientation counter-clockwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga32fbf8cfab6d05e2402e3fbfc8e91b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::sleep</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>Time</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Make the current thread sleep for a given duration. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__core_1ga32fbf8cfab6d05e2402e3fbfc8e91b95" kindref="member">gf::sleep</ref> is the best way to block a program or one of its threads, as it doesn&apos;t consume any CPU power.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to sleep </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sleep.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga847d2d5b503afe6a7b153d617230038e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::niceNum</definition>
+        <argsstring>(float num, float precision)</argsstring>
+        <name>niceNum</name>
+        <param>
+          <type>float</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+<para>Create a string representation of a floating point number. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is based on <ulink url="https://mail.python.org/pipermail/python-list/1999-October/005748.html">Python niceNum</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to display </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The precision to use for display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representing the number </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringUtils.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga0364f3fef507463a2aa7e99274684bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::u32string</type>
+        <definition>std::u32string gf::computeUnicodeString</definition>
+        <argsstring>(StringRef str)</argsstring>
+        <name>computeUnicodeString</name>
+        <param>
+          <type>StringRef</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Compute a UTF-32 string from a UTF-8 string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A UTF-8 string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding UTF-32 string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringUtils.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga8c0c84964289eb9f1baba1e1262529e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::formatString</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>formatString</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Format a string like printf. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringUtils.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaebc2509472041742a3afea7e86234a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::formatString</definition>
+        <argsstring>(const char *fmt, va_list ap)</argsstring>
+        <name>formatString</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Format a string like vprintf. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments of the format string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringUtils.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga69ed5b673d0cc85d2cd8e9163296773e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::u32string &gt;</type>
+        <definition>std::vector&lt;std::u32string&gt; gf::splitInParagraphs</definition>
+        <argsstring>(const std::u32string &amp;str)</argsstring>
+        <name>splitInParagraphs</name>
+        <param>
+          <type>const std::u32string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringUtils.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gac4e4c75521a6691a917073fa54a99dcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr Vector2f</type>
+        <definition>constexpr Vector2f gf::transform</definition>
+        <argsstring>(const Matrix3f &amp;mat, Vector2f point)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Apply an affine transformation to a 2D point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="331" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="331" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga78b3491e7bcc6337d2fb2a7b89107aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RectF</type>
+        <definition>RectF gf::transform</definition>
+        <argsstring>(const Matrix3f &amp;mat, const RectF &amp;rect)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>const RectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Apply an affine transformaton to a rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para>The resulting rectangle is axis-aligned</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed rectangle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga6dda386c75e98622d0c0759c5284afc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr Matrix3f</type>
+        <definition>constexpr Matrix3f gf::identityTransform</definition>
+        <argsstring>()</argsstring>
+        <name>identityTransform</name>
+        <briefdescription>
+<para>Identity transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The identity matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="354" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaeae9632c54968101254761769e1106b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix3f</type>
+        <definition>Matrix3f gf::translation</definition>
+        <argsstring>(Vector2f offset)</argsstring>
+        <name>translation</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get a translation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the translation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A translation by <computeroutput>offset</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="366" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="366" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gaba689074f1862658d024cdedb15baafa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::translate</definition>
+        <argsstring>(Matrix3f &amp;mat, Vector2f offset)</argsstring>
+        <name>translate</name>
+        <param>
+          <type>Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Combine the current transform with a translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the translation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga2f3aae300e286c768ba2787216d24e36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix3f</type>
+        <definition>Matrix3f gf::rotation</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotation</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Get a rotation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the rotation (in radians) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A rotation of <computeroutput>angle</computeroutput> radians </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="391" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="391" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga891a5614f8c6ad16bc166974c52af497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix3f</type>
+        <definition>Matrix3f gf::rotation</definition>
+        <argsstring>(float angle, Vector2f center)</argsstring>
+        <name>rotation</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+<para>Get a rotation matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the rotation (in radians) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the rotation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A rotation of <computeroutput>angle</computeroutput> radians of origin <computeroutput>center</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="410" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="410" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga81ce505749755aad267e094ed99277e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::rotate</definition>
+        <argsstring>(Matrix3f &amp;mat, float angle)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Combine the current transform with a rotation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the rotation (in radians) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="427" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gab23b2235964c8826368bc275224cbce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::rotate</definition>
+        <argsstring>(Matrix3f &amp;mat, float angle, Vector2f center)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+<para>Combine the current transform with a rotation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the rotation (in radians) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the rotation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1gac742d644af9304a2a313cea7b001bcc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix3f</type>
+        <definition>Matrix3f gf::scaling</definition>
+        <argsstring>(Vector2f factor)</argsstring>
+        <name>scaling</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Get a scaling matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A scaling by <computeroutput>factor</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="447" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="447" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga68d7e16bd252b39e53a6da4ba70cbb8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix3f</type>
+        <definition>Matrix3f gf::scaling</definition>
+        <argsstring>(Vector2f factor, Vector2f center)</argsstring>
+        <name>scaling</name>
+        <param>
+          <type>Vector2f</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+<para>Get a scaling matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the scaling </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A scaling by <computeroutput>factor</computeroutput> of origin <computeroutput>center</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="464" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="464" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga9a28734646b10ca5179fc221c103545a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::scale</definition>
+        <argsstring>(Matrix3f &amp;mat, Vector2f factor)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Combine the current transform with a scaling. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga125bb4f8f5c164896869b69d8e8ff468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::scale</definition>
+        <argsstring>(Matrix3f &amp;mat, Vector2f factor, Vector2f center)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>Vector2f</type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+<para>Combine the current transform with a scaling. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scaling factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the scaling </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="489" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__core_1ga2c8cc7f2cd8231712c90a788692cec61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::unused</definition>
+        <argsstring>(Args &amp;&amp;...)</argsstring>
+        <name>unused</name>
+        <param>
+          <type>Args &amp;&amp;</type>
+          <declname>...</declname>
+        </param>
+        <briefdescription>
+<para>A simple way to avoid warnings about unused variables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Unused.h" line="35" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Unused.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All the core generic classes and functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Math: <ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref>, <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>, <ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref>, <ref refid="group__core_1ga919ab8047a14333e1ed3e12dc536650b" kindref="member">gf::Direction</ref>, <ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">gf::Orientation</ref>, <ref refid="classgf_1_1_array2_d" kindref="compound">gf::Array2D</ref></para></listitem><listitem><para>Geometry: <ref refid="structgf_1_1_rect" kindref="compound">gf::Rect</ref>, <ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref>, <ref refid="classgf_1_1_polygon" kindref="compound">gf::Polygon</ref>, <ref refid="classgf_1_1_polyline" kindref="compound">gf::Polyline</ref></para></listitem><listitem><para>Stream: <ref refid="classgf_1_1_input_stream" kindref="compound">gf::InputStream</ref>, <ref refid="classgf_1_1_file_input_stream" kindref="compound">gf::FileInputStream</ref>, <ref refid="classgf_1_1_memory_input_stream" kindref="compound">gf::MemoryInputStream</ref></para></listitem><listitem><para>Utility: <ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref>, <ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref>, <ref refid="classgf_1_1_random" kindref="compound">gf::Random</ref>, <ref refid="classgf_1_1_system_info" kindref="compound">gf::SystemInfo</ref>, <ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref>, <ref refid="classgf_1_1_flags" kindref="compound">gf::Flags</ref></para></listitem><listitem><para>Noise: <ref refid="classgf_1_1_noise2_d" kindref="compound">gf::Noise2D</ref> / <ref refid="classgf_1_1_noise3_d" kindref="compound">gf::Noise3D</ref>, <ref refid="classgf_1_1_gradient_noise2_d" kindref="compound">gf::GradientNoise2D</ref> / <ref refid="classgf_1_1_gradient_noise3_d" kindref="compound">gf::GradientNoise3D</ref>, <ref refid="classgf_1_1_fractal_noise2_d" kindref="compound">gf::FractalNoise2D</ref> / <ref refid="classgf_1_1_fractal_noise3_d" kindref="compound">gf::FractalNoise3D</ref>, <ref refid="classgf_1_1_perlin_noise2_d" kindref="compound">gf::PerlinNoise2D</ref> / <ref refid="classgf_1_1_perlin_noise3_d" kindref="compound">gf::PerlinNoise3D</ref>, <ref refid="classgf_1_1_simplex_noise2_d" kindref="compound">gf::SimplexNoise2D</ref>, <ref refid="classgf_1_1_open_simplex_noise2_d" kindref="compound">gf::OpenSimplexNoise2D</ref> / <ref refid="classgf_1_1_open_simplex_noise3_d" kindref="compound">gf::OpenSimplexNoise3D</ref>, <ref refid="classgf_1_1_worley_noise2_d" kindref="compound">gf::WorleyNoise2D</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

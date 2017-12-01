@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_physics_model" kind="class" language="C++" prot="public">
+    <compoundname>gf::PhysicsModel</compoundname>
+    <basecompoundref refid="classgf_1_1_model" prot="public" virt="non-virtual">gf::Model</basecompoundref>
+    <includes refid="_physics_model_8h" local="no">gf/PhysicsModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_physics_model_1a2978e1ce0a1e91f923a04d8f09585dc4" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsModel::m_gravity</definition>
+        <argsstring></argsstring>
+        <name>m_gravity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_model_1ac3452ba121e878ee0361fb770ad8f475" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_physics_body" kindref="compound">PhysicsBody</ref> * &gt;</type>
+        <definition>std::vector&lt;PhysicsBody*&gt; gf::PhysicsModel::m_staticBodies</definition>
+        <argsstring></argsstring>
+        <name>m_staticBodies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_model_1abaf5779eda2586061a4254e744c03819" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_physics_body" kindref="compound">PhysicsBody</ref> * &gt;</type>
+        <definition>std::vector&lt;PhysicsBody*&gt; gf::PhysicsModel::m_dynamicBodies</definition>
+        <argsstring></argsstring>
+        <name>m_dynamicBodies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_physics_model_1ac02c1e934e0b2751327534966b82b567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PhysicsModel::PhysicsModel</definition>
+        <argsstring>(Vector2f gravity={ 0.0f, 0.0f })</argsstring>
+        <name>PhysicsModel</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>gravity</declname>
+          <defval>{ 0.0f, 0.0f }</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gravity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gravity of the simulation (default: no gravity) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1a1f7f493296a1e34fd6703eef156f9de2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsModel::setGravity</definition>
+        <argsstring>(Vector2f gravity) noexcept</argsstring>
+        <name>setGravity</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>gravity</declname>
+        </param>
+        <briefdescription>
+<para>Set the gravity of the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gravity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new gravity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="36" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1a61d7349d110b5e906302410e751196e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsModel::getGravity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getGravity</name>
+        <briefdescription>
+<para>Get the gravity of the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current gravity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1a3b836e8be7b9a30888e1b04603008e03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsModel::addBody</definition>
+        <argsstring>(PhysicsBody &amp;body)</argsstring>
+        <name>addBody</name>
+        <param>
+          <type><ref refid="classgf_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Add a body to the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A physics body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1a6030e2acb69ceee8929ed662d70afb8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsModel::removeBody</definition>
+        <argsstring>(PhysicsBody &amp;body)</argsstring>
+        <name>removeBody</name>
+        <param>
+          <type><ref refid="classgf_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Remove a body from the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A physics body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1af0850d48554d129cdeb2015de33b6ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsModel::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Remove all bodies from the simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_model_1ab9afd38d5609a914b6d6be35fe8e92ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::PhysicsModel::update</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>update</name>
+        <reimplements refid="classgf_1_1_model_1a8b5f07e8e362d5b6326690566a719324">update</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the model&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Models are updated each frame. The time between two frames is given as a parameter to help in the update. This time is in seconds.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" kindref="member">gf::ModelContainer::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A model for physics simulation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_physics_body" kindref="compound">gf::PhysicsBody</ref>, <ref refid="classgf_1_1_fixed_timestep_model" kindref="compound">gf::FixedTimestepModel</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="566">
+        <label>gf::Model</label>
+        <link refid="classgf_1_1_model"/>
+      </node>
+      <node id="565">
+        <label>gf::PhysicsModel</label>
+        <link refid="classgf_1_1_physics_model"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="568">
+        <label>gf::Model</label>
+        <link refid="classgf_1_1_model"/>
+      </node>
+      <node id="567">
+        <label>gf::PhysicsModel</label>
+        <link refid="classgf_1_1_physics_model"/>
+        <childnode refid="568" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" line="22" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsModel.h" bodystart="22" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_physics_model_1a3b836e8be7b9a30888e1b04603008e03" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>addBody</name></member>
+      <member refid="classgf_1_1_physics_model_1af0850d48554d129cdeb2015de33b6ee1" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>clear</name></member>
+      <member refid="classgf_1_1_physics_model_1a61d7349d110b5e906302410e751196e4" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>getGravity</name></member>
+      <member refid="classgf_1_1_physics_model_1abaf5779eda2586061a4254e744c03819" prot="private" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>m_dynamicBodies</name></member>
+      <member refid="classgf_1_1_physics_model_1a2978e1ce0a1e91f923a04d8f09585dc4" prot="private" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>m_gravity</name></member>
+      <member refid="classgf_1_1_physics_model_1ac3452ba121e878ee0361fb770ad8f475" prot="private" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>m_staticBodies</name></member>
+      <member refid="classgf_1_1_physics_model_1ac02c1e934e0b2751327534966b82b567" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>PhysicsModel</name></member>
+      <member refid="classgf_1_1_physics_model_1a6030e2acb69ceee8929ed662d70afb8c" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>removeBody</name></member>
+      <member refid="classgf_1_1_physics_model_1a1f7f493296a1e34fd6703eef156f9de2" prot="public" virt="non-virtual"><scope>gf::PhysicsModel</scope><name>setGravity</name></member>
+      <member refid="classgf_1_1_physics_model_1ab9afd38d5609a914b6d6be35fe8e92ad" prot="public" virt="virtual"><scope>gf::PhysicsModel</scope><name>update</name></member>
+      <member refid="classgf_1_1_model_1aed31deb703dcc9daa2862c20682abc13" prot="public" virt="virtual"><scope>gf::PhysicsModel</scope><name>~Model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_shape_particles" kind="class" language="C++" prot="public">
+    <compoundname>gf::ShapeParticles</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <includes refid="_particles_8h" local="no">gf/Particles.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_shape_particles_1a86dda24c2e21eeeb45658dfc2e26ba5e" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::ShapeParticles::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="113" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1a3d0d16e888c498d1ade1e0fa9761b01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ShapeParticles::ShapeParticles</definition>
+        <argsstring>()</argsstring>
+        <name>ShapeParticles</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1a9e5c1f6f0eb28cb9772cb09488f03b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ShapeParticles::addCircle</definition>
+        <argsstring>(Vector2f center, float radius, Color4f color, std::size_t pointCount=15)</argsstring>
+        <name>addCircle</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>15</defval>
+        </param>
+        <briefdescription>
+<para>Add a circle shape to the particles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points composing the circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1abd851dd3abee20674194b5d2eb9967c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ShapeParticles::addCircle</definition>
+        <argsstring>(const CircF &amp;circ, Color4f color, std::size_t pointCount=15)</argsstring>
+        <name>addCircle</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>circ</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>15</defval>
+        </param>
+        <briefdescription>
+<para>Add a circle shape to the particles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points composing the circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1a6ad069927e44bf21ddf778323b986911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ShapeParticles::addRectangle</definition>
+        <argsstring>(Vector2f position, Vector2f size, Color4f color)</argsstring>
+        <name>addRectangle</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Add a rectangle shape to the particles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the top-left of the rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the rectangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1a3e2003f41108ed2c09ba3d0d3681da38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ShapeParticles::addRectangle</definition>
+        <argsstring>(const RectF &amp;rect, Color4f color)</argsstring>
+        <name>addRectangle</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Add a rectangle shape to the particles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the rectangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_particles_1ae01f9d9337deda40d31acc9a0272dbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::ShapeParticles::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to display a high number of small simple shapes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="710">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="709">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="710" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="708">
+        <label>gf::ShapeParticles</label>
+        <link refid="classgf_1_1_shape_particles"/>
+        <childnode refid="709" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="713">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="712">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="713" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>gf::ShapeParticles</label>
+        <link refid="classgf_1_1_shape_particles"/>
+        <childnode refid="712" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="67" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" bodystart="67" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shape_particles_1a9e5c1f6f0eb28cb9772cb09488f03b08" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>addCircle</name></member>
+      <member refid="classgf_1_1_shape_particles_1abd851dd3abee20674194b5d2eb9967c6" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>addCircle</name></member>
+      <member refid="classgf_1_1_shape_particles_1a6ad069927e44bf21ddf778323b986911" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>addRectangle</name></member>
+      <member refid="classgf_1_1_shape_particles_1a3e2003f41108ed2c09ba3d0d3681da38" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>addRectangle</name></member>
+      <member refid="classgf_1_1_shape_particles_1ae01f9d9337deda40d31acc9a0272dbe8" prot="public" virt="virtual"><scope>gf::ShapeParticles</scope><name>draw</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_particles_1a86dda24c2e21eeeb45658dfc2e26ba5e" prot="private" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_shape_particles_1a3d0d16e888c498d1ade1e0fa9761b01b" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>ShapeParticles</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::ShapeParticles</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::ShapeParticles</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

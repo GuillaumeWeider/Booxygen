@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_parallel_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::ParallelActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" prot="public" static="no">
+        <name>Finish</name>
+        <enumvalue id="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4aed36a1ef76a59ee3f15180e0441188ad" prot="public">
+          <name>Any</name>
+          <briefdescription>
+<para>If any of the activities ends. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4ab1c94ca2fbc3e78fc30069c8d0f01680" prot="public">
+          <name>All</name>
+          <briefdescription>
+<para>If all of the activities ends. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of finish for the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="466" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="466" bodyend="469"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_parallel_activity_1a33135d369d4a3bc79ad66033d805f1a6" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" kindref="member">Finish</ref></type>
+        <definition>Finish gf::ParallelActivity::m_finish</definition>
+        <argsstring></argsstring>
+        <name>m_finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="489" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_parallel_activity_1acddb59a8d5f3bb0d65ce1e6585e12002" prot="private" static="no" mutable="no">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>ActivityStatus gf::ParallelActivity::m_status</definition>
+        <argsstring></argsstring>
+        <name>m_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="490" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_parallel_activity_1a13725150c71704085f004ca80b7f3035" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> * &gt;</type>
+        <definition>std::vector&lt;Activity*&gt; gf::ParallelActivity::m_activities</definition>
+        <argsstring></argsstring>
+        <name>m_activities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="491" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_parallel_activity_1a89d7fa8d0b49db3916f37e43bbb2cd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ParallelActivity::ParallelActivity</definition>
+        <argsstring>(Finish finish=Finish::Any)</argsstring>
+        <name>ParallelActivity</name>
+        <param>
+          <type><ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" kindref="member">Finish</ref></type>
+          <declname>finish</declname>
+          <defval><ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4aed36a1ef76a59ee3f15180e0441188ad" kindref="member">Finish::Any</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>finish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of finish </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_parallel_activity_1a032df62071cb290bbbf87643c1d99ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ParallelActivity::addActivity</definition>
+        <argsstring>(Activity &amp;activity)</argsstring>
+        <name>addActivity</name>
+        <param>
+          <type><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+<para>Add an activity to the set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="483" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_parallel_activity_1a52935bf3337f2ed9dc8e636968f8842a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::ParallelActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="485" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_parallel_activity_1a55db4c401f80973dbab54f2271a93843" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::ParallelActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="486" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity to run several activities in parallel. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="543">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="542">
+        <label>gf::ParallelActivity</label>
+        <link refid="classgf_1_1_parallel_activity"/>
+        <childnode refid="543" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="545">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="544">
+        <label>gf::ParallelActivity</label>
+        <link refid="classgf_1_1_parallel_activity"/>
+        <childnode refid="545" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="461" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="461" bodyend="492"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_parallel_activity_1a032df62071cb290bbbf87643c1d99ded" prot="public" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>addActivity</name></member>
+      <member refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" prot="public" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>Finish</name></member>
+      <member refid="classgf_1_1_parallel_activity_1a13725150c71704085f004ca80b7f3035" prot="private" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>m_activities</name></member>
+      <member refid="classgf_1_1_parallel_activity_1a33135d369d4a3bc79ad66033d805f1a6" prot="private" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>m_finish</name></member>
+      <member refid="classgf_1_1_parallel_activity_1acddb59a8d5f3bb0d65ce1e6585e12002" prot="private" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>m_status</name></member>
+      <member refid="classgf_1_1_parallel_activity_1a89d7fa8d0b49db3916f37e43bbb2cd90" prot="public" virt="non-virtual"><scope>gf::ParallelActivity</scope><name>ParallelActivity</name></member>
+      <member refid="classgf_1_1_parallel_activity_1a55db4c401f80973dbab54f2271a93843" prot="public" virt="virtual"><scope>gf::ParallelActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_parallel_activity_1a52935bf3337f2ed9dc8e636968f8842a" prot="public" virt="virtual"><scope>gf::ParallelActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::ParallelActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

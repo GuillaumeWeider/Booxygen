@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Gamedev Framework (gf)</title>
+    <detaileddescription>
+<para><bold>Gamedev Framework (gf)</bold> is a framework to build 2D games in C++11. It is based on <ulink url="https://www.libsdl.org/">SDL</ulink> and <ulink url="https://www.khronos.org/opengles/2_X/">OpenGL ES 2.0</ulink>, and presents an API that is very similar to the graphics module of <ulink url="http://www.sfml-dev.org/">SFML</ulink> (see <ref refid="differences_with_sfml" kindref="compound">Differences with SFML</ref>) with additional features. It is <emphasis>not</emphasis> a <ulink url="https://en.wikipedia.org/wiki/Game_engine">game engine</ulink>, it is more something like a framework, similar to <ulink url="https://libgdx.badlogicgames.com/">libGDX</ulink> in the Java world.</para><para>Gamedev Framework (gf) is licensed under the terms and conditions of the <ulink url="https://opensource.org/licenses/Zlib">zlib/libpng license</ulink>.</para><sect1 id="index_1index_first">
+<title>First example</title>
+<para><programlisting><codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Font.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/RenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Sprite.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Text.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Window.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>the<sp/>main<sp/>window<sp/>and<sp/>the<sp/>renderer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;Example&quot;</highlight><highlight class="normal">,<sp/>{<sp/>640,<sp/>480<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>a<sp/>sprite<sp/>to<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!texture.<ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;sprite.png&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite(texture);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sprite.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>300,<sp/>200<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>graphical<sp/>text<sp/>to<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;DroidSans.ttf&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref><sp/>text(</highlight><highlight class="stringliteral">&quot;Hello<sp/>gf!&quot;</highlight><highlight class="normal">,<sp/>font,<sp/>50);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>text.setPosition({<sp/>100,<sp/>100<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.clear(<ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>the<sp/>game<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.isOpen())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>the<sp/>entities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.draw(sprite);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.draw(text);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+</programlisting> </para></sect1>
+<sect1 id="index_1index_documentation">
+<title>Documentation</title>
+<para><orderedlist>
+<listitem><para>Introduction to gf<itemizedlist>
+<listitem><para><ref refid="features" kindref="compound">Features of Gamedev Framework (gf)</ref></para></listitem><listitem><para><ref refid="build_and_install" kindref="compound">Build and install gf</ref></para></listitem><listitem><para><ref refid="use" kindref="compound">Use gf in your project</ref></para></listitem><listitem><para><ref refid="differences_with_sfml" kindref="compound">Differences with SFML</ref></para></listitem><listitem><para><ref refid="recommanded_libraries" kindref="compound">Recommanded libraries</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Tutorials on gf<itemizedlist>
+<listitem><para><ref refid="gamedev_101" kindref="compound">Gamedev 101</ref></para></listitem><listitem><para><ref refid="start_game" kindref="compound">Start a game with gf</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>User documentation (WIP)<orderedlist>
+<listitem><para>Core classes<itemizedlist>
+<listitem><para><ref refid="math" kindref="compound">Math functions and constants</ref></para></listitem><listitem><para><ref refid="vectors_matrices_transforms" kindref="compound">Vectors, matrices and transforms</ref></para></listitem><listitem><para><ref refid="singletons" kindref="compound">Safe singletons</ref></para></listitem><listitem><para><ref refid="pcg" kindref="compound">Procedural content generation</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Window classes<itemizedlist>
+<listitem><para><ref refid="events_controls_actions" kindref="compound">Events, controls, actions</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Graphics classes<itemizedlist>
+<listitem><para><ref refid="shader" kindref="compound">How to write your own shader</ref></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Game classes<itemizedlist>
+<listitem><para><ref refid="messages" kindref="compound">Game messages</ref></para></listitem></itemizedlist>
+</para></listitem></orderedlist>
+</para></listitem></orderedlist>
+</para></sect1>
+<sect1 id="index_1source">
+<title>Source</title>
+<para>The source code is available on <ulink url="https://github.com/GamedevFramework/gf">github</ulink>. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

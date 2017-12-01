@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="build_and_install" kind="page">
+    <compoundname>build_and_install</compoundname>
+    <title>Build and install gf</title>
+    <detaileddescription>
+<para>In this document, you will learn how to build and install gf so that you are ready for your first project with gf. It is assumed you already have a compiler installed (gcc or clang for Linux; MSVC included in Visual Studio for Windows).</para><sect1 id="build_and_install_1dependencies">
+<title>Dependencies</title>
+<para>gf needs some external libraries and tools that you must install before compiling gf. Here are some information about these libraries, especially the required minimum version.</para><para>Libraries:</para><para><table rows="7" cols="3"><row>
+<entry thead="yes"><para>Name </para></entry><entry thead="yes"><para>Version </para></entry><entry thead="yes"><para>License  </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://www.libsdl.org/">SDL2</ulink> </para></entry><entry thead="no"><para>2.0.2 </para></entry><entry thead="no"><para>zlib/libpng </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="http://www.boost.org/doc/libs/release/libs/filesystem/">Boost Filesystem</ulink> </para></entry><entry thead="no"><para>1.55 </para></entry><entry thead="no"><para>Boost </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="http://www.boost.org/doc/libs/release/libs/algorithm/string/">Boost String Algorithms</ulink> </para></entry><entry thead="no"><para>1.55 </para></entry><entry thead="no"><para>Boost </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="http://www.boost.org/doc/libs/release/libs/heap/">Boost Heap</ulink> </para></entry><entry thead="no"><para>1.55 </para></entry><entry thead="no"><para>Boost </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="http://freetype.org/">Freetype</ulink> </para></entry><entry thead="no"><para>2.5.2 </para></entry><entry thead="no"><para>Freetype </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://zlib.net/">zlib</ulink> </para></entry><entry thead="no"><para>1.2.8 </para></entry><entry thead="no"><para>zlib/libpng </para></entry></row>
+</table>
+Tools:</para><para><table rows="2" cols="2"><row>
+<entry thead="yes"><para>Name </para></entry><entry thead="yes"><para>Version  </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://cmake.org/">CMake</ulink> </para></entry><entry thead="no"><para>3.0.2 </para></entry></row>
+</table>
+</para></sect1>
+<sect1 id="build_and_install_1getting_started_with_linux">
+<title>Getting started with Linux</title>
+<para>This section assumes you have a working compiler, either <ulink url="https://gcc.gnu.org/">gcc</ulink> or <ulink url="https://clang.llvm.org/">clang</ulink>, and <ulink url="https://git-scm.com/">git</ulink>.</para><sect2 id="build_and_install_1dependencies_for_linux">
+<title>Dependencies for Linux</title>
+<para>The recommanded way for handling dependencies on Linux is to use your favorite distribution&apos;s package manager. Here are the packages needed to build gf for various widespread distributions.</para><para>For Debian/Ubuntu:</para><para><programlisting><codeline><highlight class="normal">apt-get<sp/>install<sp/>libsdl2-dev<sp/>libboost-filesystem-dev<sp/>libboost-dev<sp/>libfreetype6-dev<sp/>zlib1g-dev<sp/>cmake</highlight></codeline>
+</programlisting></para><para>For Archlinux:</para><para><programlisting><codeline><highlight class="normal">pacman<sp/>-S<sp/>sdl2<sp/>boost<sp/>freetype2<sp/>zlib<sp/>cmake</highlight></codeline>
+</programlisting></para><para>For Fedora/Red Hat/CentOS:</para><para><programlisting><codeline><highlight class="normal">dnf<sp/>install<sp/>SDL2-devel<sp/>boost-devel<sp/>freetype-devel<sp/>zlib-devel<sp/>cmake</highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="build_and_install_1build_and_install_for_linux">
+<title>Build and install</title>
+<para>First, build:</para><para><programlisting><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/GamedevFramework/gf.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>gf</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>submodule<sp/>update<sp/>--init</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>../<sp/>-DGF_BUILD_GAMES=ON<sp/>-DGF_BUILD_TOOLS=ON</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+</programlisting></para><para>Then install:</para><para><programlisting><codeline><highlight class="normal">make<sp/>install<sp/>#<sp/>may<sp/>require<sp/>root<sp/>permissions</highlight></codeline>
+</programlisting></para></sect2>
+</sect1>
+<sect1 id="build_and_install_1getting_started_with_windows">
+<title>Getting started with Windows</title>
+<para>This section assumes you are using at least <ulink url="https://www.visualstudio.com/vs/community/">Visual Studio Community 2015</ulink>. You also need <ulink url="https://git-for-windows.github.io/">git for Windows</ulink> and <ulink url="https://cmake.org/download/">CMake 3.8 or newer</ulink>. Finally, the working directory where everything will be installed is set to <computeroutput>C:\Local\</computeroutput>. You can choose whatever directory you want.</para><sect2 id="build_and_install_1dependencies_for_windows">
+<title>Dependencies for Windows</title>
+<para>For Windows, <ulink url="https://github.com/Microsoft/vcpkg">vcpkg</ulink> can handle the dependencies.</para><para>First, you have to install vcpkg from its git repository. From a command line, in the working directory:</para><para><programlisting><codeline><highlight class="normal">C:\Local&gt;<sp/>git<sp/>clone<sp/>https://github.com/Microsoft/vcpkg.git</highlight></codeline>
+<codeline><highlight class="normal">C:\Local&gt;<sp/>cd<sp/>vcpkg</highlight></codeline>
+</programlisting></para><para>Then, you have to follow the instructions from the vcpkg documentation. Normally, during the installation process, it will detect the installed CMake.</para><para><programlisting><codeline><highlight class="normal">C:\Local\vcpkg&gt;<sp/>.\bootstrap-vcpkg.bat</highlight></codeline>
+<codeline><highlight class="normal">C:\Local\vcpkg&gt;<sp/>.\vcpkg<sp/>integrate<sp/>install</highlight></codeline>
+</programlisting></para><para>Then, you can install the dependencies:</para><para><programlisting><codeline><highlight class="normal">C:\Local\vcpkg&gt;<sp/>.\vcpkg<sp/>install<sp/>sdl2<sp/>freetype<sp/>boost<sp/>zlib</highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="build_and_install_1build_and_install_for_windows">
+<title>Build and install</title>
+<para>Back in the working directory, you can prepare the build of gf. Everything will be installed in the vcpkg hierarchy.</para><para><programlisting><codeline><highlight class="normal">C:\Local&gt;<sp/>git<sp/>clone<sp/>https://github.com/GamedevFramework/gf.git</highlight></codeline>
+<codeline><highlight class="normal">C:\Local&gt;<sp/>cd<sp/>gf</highlight></codeline>
+<codeline><highlight class="normal">C:\Local\gf&gt;<sp/>git<sp/>submodule<sp/>update<sp/>--init</highlight></codeline>
+<codeline><highlight class="normal">C:\Local\gf&gt;<sp/>mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">C:\Local\gf&gt;<sp/>cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">C:\Local\gf\build&gt;<sp/>cmake<sp/>../<sp/>-DCMAKE_TOOLCHAIN_FILE=C:\Local\vcpkg\scripts\buildsystems\vcpkg.cmake<sp/>-DCMAKE_INSTALL_PREFIX=C:\Local\vcpkg\installed\x86-windows<sp/>-DGF_BUILD_GAMES=ON<sp/>-DGF_BUILD_TOOLS=ON</highlight></codeline>
+</programlisting></para><para>Finally, open Visual Studio. Then, open the gf solution located at <computeroutput>C:\Local\gf\build\GF.sln</computeroutput>. Then, choose &quot;Release&quot; and build the solution (F7). Finally, build the &quot;INSTALL&quot; project. gf is installed as well as its tools and games. </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

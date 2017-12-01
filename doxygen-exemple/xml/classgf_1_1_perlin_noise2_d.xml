@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_perlin_noise2_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::PerlinNoise2D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise2_d" prot="public" virt="non-virtual">gf::Noise2D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_perlin_noise2_d_1a1a53e528ca2d718b6b23b0a80d2e1209" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_gradient_noise2_d" kindref="compound">GradientNoise2D</ref></type>
+        <definition>GradientNoise2D gf::PerlinNoise2D::m_gradient</definition>
+        <argsstring></argsstring>
+        <name>m_gradient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="252" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_perlin_noise2_d_1a81d778b0c1baa6f05c8b7bfb29b73c20" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_fractal_noise2_d" kindref="compound">FractalNoise2D</ref></type>
+        <definition>FractalNoise2D gf::PerlinNoise2D::m_fractal</definition>
+        <argsstring></argsstring>
+        <name>m_fractal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="253" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_perlin_noise2_d_1a627f4f63bb3425ff2eee6b9196e78f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PerlinNoise2D::PerlinNoise2D</definition>
+        <argsstring>(Random &amp;random, double scale, std::size_t octaves=8)</argsstring>
+        <name>PerlinNoise2D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>octaves</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>octaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of octaves </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_perlin_noise2_d_1a1a4808d7826d038a697e5a4348256b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::PerlinNoise2D::getValue</definition>
+        <argsstring>(double x, double y) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="249" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Perlin 2D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Perlin_noise">Perlin noise</ulink> is the combination of a fractal noise and a gradient noise.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_gradient_noise2_d" kindref="compound">gf::GradientNoise2D</ref>, <ref refid="classgf_1_1_fractal_noise2_d" kindref="compound">gf::FractalNoise2D</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="551">
+        <label>gf::PerlinNoise2D</label>
+        <link refid="classgf_1_1_perlin_noise2_d"/>
+        <childnode refid="552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="553">
+        <label>gf::PerlinNoise2D</label>
+        <link refid="classgf_1_1_perlin_noise2_d"/>
+        <childnode refid="554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="238" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="238" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_perlin_noise2_d_1a1a4808d7826d038a697e5a4348256b89" prot="public" virt="virtual"><scope>gf::PerlinNoise2D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_perlin_noise2_d_1a81d778b0c1baa6f05c8b7bfb29b73c20" prot="private" virt="non-virtual"><scope>gf::PerlinNoise2D</scope><name>m_fractal</name></member>
+      <member refid="classgf_1_1_perlin_noise2_d_1a1a53e528ca2d718b6b23b0a80d2e1209" prot="private" virt="non-virtual"><scope>gf::PerlinNoise2D</scope><name>m_gradient</name></member>
+      <member refid="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" virt="non-virtual"><scope>gf::PerlinNoise2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_perlin_noise2_d_1a627f4f63bb3425ff2eee6b9196e78f33" prot="public" virt="non-virtual"><scope>gf::PerlinNoise2D</scope><name>PerlinNoise2D</name></member>
+      <member refid="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" virt="virtual"><scope>gf::PerlinNoise2D</scope><name>~Noise2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,884 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_matrix_8h" kind="file" language="C++">
+    <compoundname>Matrix.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_render_states_8h" local="yes">RenderStates.h</includedby>
+    <includedby refid="_transform_8h" local="yes">Transform.h</includedby>
+    <includedby refid="_transformable_8h" local="yes">Transformable.h</includedby>
+    <includedby refid="_polygon_8h" local="yes">Polygon.h</includedby>
+    <includedby refid="_shader_8h" local="yes">Shader.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_physics_geometry_8h" local="yes">PhysicsGeometry.h</includedby>
+    <includedby refid="_polyline_8h" local="yes">Polyline.h</includedby>
+    <includedby refid="_render_target_8h" local="yes">RenderTarget.h</includedby>
+    <includedby refid="_view_8h" local="yes">View.h</includedby>
+    <incdepgraph>
+      <node id="1090">
+        <label>cstdint</label>
+      </node>
+      <node id="1088">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="1089">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>Matrix.h</label>
+        <link refid="_matrix_8h"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>cstddef</label>
+      </node>
+      <node id="1092">
+        <label>type_traits</label>
+      </node>
+      <node id="1087">
+        <label>algorithm</label>
+      </node>
+      <node id="1091">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1131">
+        <label>Views.h</label>
+        <link refid="_views_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>Effect.h</label>
+        <link refid="_effect_8h_source"/>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>PhysicsGeometry.h</label>
+        <link refid="_physics_geometry_8h_source"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>PostProcessing.h</label>
+        <link refid="_post_processing_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1130">
+        <label>View.h</label>
+        <link refid="_view_8h_source"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>Grid.h</label>
+        <link refid="_grid_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>NinePatch.h</label>
+        <link refid="_nine_patch_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>Shape.h</label>
+        <link refid="_shape_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>AnimatedSprite.h</label>
+        <link refid="_animated_sprite_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>Shapes.h</label>
+        <link refid="_shapes_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>RenderPipeline.h</label>
+        <link refid="_render_pipeline_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>RenderTarget.h</label>
+        <link refid="_render_target_8h_source"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1115">
+        <label>EntityContainer.h</label>
+        <link refid="_entity_container_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>Collision.h</label>
+        <link refid="_collision_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>RenderTexture.h</label>
+        <link refid="_render_texture_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>RenderStates.h</label>
+        <link refid="_render_states_8h_source"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>Shader.h</label>
+        <link refid="_shader_8h_source"/>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>Drawable.h</label>
+        <link refid="_drawable_8h_source"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>Particles.h</label>
+        <link refid="_particles_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>Effects.h</label>
+        <link refid="_effects_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>Transformable.h</label>
+        <link refid="_transformable_8h_source"/>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1129">
+        <label>Polyline.h</label>
+        <link refid="_polyline_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>Sprite.h</label>
+        <link refid="_sprite_8h_source"/>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>Matrix.h</label>
+        <link refid="_matrix_8h"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="1119">
+        <label>RenderWindow.h</label>
+        <link refid="_render_window_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>BufferedGeometry.h</label>
+        <link refid="_buffered_geometry_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>Logo.h</label>
+        <link refid="_logo_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>Curve.h</label>
+        <link refid="_curve_8h_source"/>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>VertexArray.h</label>
+        <link refid="_vertex_array_8h_source"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>Text.h</label>
+        <link refid="_text_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>PhysicsBody.h</label>
+        <link refid="_physics_body_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>Transform.h</label>
+        <link refid="_transform_8h_source"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>TileLayer.h</label>
+        <link refid="_tile_layer_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>Curves.h</label>
+        <link refid="_curves_8h_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>Polygon.h</label>
+        <link refid="_polygon_8h_source"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_matrix" prot="public">gf::Matrix</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" prot="public">gf::Matrix&lt; T, 2, 2 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" prot="public">gf::Matrix&lt; T, 3, 3 &gt;</innerclass>
+    <innerclass refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" prot="public">gf::Matrix&lt; T, 4, 4 &gt;</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_MATRIX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_MATRIX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="59" refid="structgf_1_1_matrix" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(ROWS<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;ROWS<sp/>must<sp/>be<sp/>strictly<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(COLS<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;COLS<sp/>must<sp/>be<sp/>strictly<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structgf_1_1_matrix_1ac8ff968abb67be292136990a382b9662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_1ac8ff968abb67be292136990a382b9662" kindref="member">value_type</ref><sp/>=<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structgf_1_1_matrix_1a3b1cc3ba50dc4021a0b5304b68fba297" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Rows<sp/>=<sp/>ROWS;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structgf_1_1_matrix_1a61c06d9b075d17d49208df69bfd86a39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Cols<sp/>=<sp/>COLS;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structgf_1_1_matrix_1ab7dcd4b3222cbd291200ffaf02ed8bdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_1ab7dcd4b3222cbd291200ffaf02ed8bdc" kindref="member">Matrix</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::fill_n(data,<sp/>ROWS<sp/>*<sp/>COLS,<sp/>val);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96" refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>grid[ROWS][COLS];<sp/></highlight></codeline>
+<codeline lineno="97" refid="structgf_1_1_matrix_1aa211c76b5b51c90d40a95ef6c80f1ddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>data[ROWS<sp/>*<sp/>COLS];<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="119" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>,<sp/>2,<sp/>2&gt;<sp/>{</highlight></codeline>
+<codeline lineno="123" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a225ece6e3b0582b2962cbc64661e1d46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a225ece6e3b0582b2962cbc64661e1d46" kindref="member">value_type</ref><sp/>=<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a5222d715f0c309b086f7c3fa17b44ee3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Rows<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54988a14d3a02cc33d058cab02f57159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Cols<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a121310c4df0a8e5d770851d0fb2b0596" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a121310c4df0a8e5d770851d0fb2b0596" kindref="member">Matrix</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yy)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>data{xx,<sp/>xy,<sp/>yx,<sp/>yy}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a805168cb03f6c88ad9db7b1c5f36cade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>grid[2][2];<sp/></highlight></codeline>
+<codeline lineno="159" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a7ea8fc39c94f1ac5424a9e087dd36541" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>data[4];<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" kindref="member">xy</ref>;</highlight></codeline>
+<codeline lineno="162" refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" kindref="member">yy</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="185" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>,<sp/>3,<sp/>3&gt;<sp/>{</highlight></codeline>
+<codeline lineno="189" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a321435e80577e8b954307d96a55e285e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a321435e80577e8b954307d96a55e285e" kindref="member">value_type</ref><sp/>=<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ab4cebda6473789de784e457aa743d05d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Rows<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1acac6a6f9c7ef40e7107271535d6daf62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Cols<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a68d0577fb4821c0d67ea2283ae094a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a68d0577fb4821c0d67ea2283ae094a93" kindref="member">Matrix</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zz)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>data{xx,<sp/>xy,<sp/>xz,<sp/>yx,<sp/>yy,<sp/>yz,<sp/>zx,<sp/>zy,<sp/>zz}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b9230d5540ba24c00e6d31c052369a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>grid[3][3];<sp/></highlight></codeline>
+<codeline lineno="230" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a2dbf96af43a9504a64af5e09ae26e6fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>data[9];<sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="232" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/>xy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref>;</highlight></codeline>
+<codeline lineno="233" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/>yy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref>;</highlight></codeline>
+<codeline lineno="234" refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zx,<sp/>zy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="255" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>,<sp/>4,<sp/>4&gt;<sp/>{</highlight></codeline>
+<codeline lineno="259" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a159a43b8eebc35975d2e7509a433530a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a159a43b8eebc35975d2e7509a433530a" kindref="member">value_type</ref><sp/>=<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac11538b744372663efa74e7e0ddfd8da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Rows<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aa0bd521cde478e861a91218f6aa7dd06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/>std::size_t<sp/>Cols<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5eee260dabb51b67890390d0f700158c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5eee260dabb51b67890390d0f700158c" kindref="member">Matrix</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xw,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yw,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zw,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>wx,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>wy,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>wz,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>ww)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>data{xx,<sp/>xy,<sp/>xz,<sp/>xw,<sp/>yx,<sp/>yy,<sp/>yz,<sp/>yw,<sp/>zx,<sp/>zy,<sp/>zz,<sp/>zw,<sp/>wx,<sp/>wy,<sp/>wz,<sp/>ww}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="301" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a62ee98dff2906e5254bc7c292801ece6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>grid[4][4];<sp/></highlight></codeline>
+<codeline lineno="302" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4569e2ac9d4bf65cf42d975b7df82348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>data[16];<sp/></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="304" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a0dd01236f8d5e42af91cf02b3d89612a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>xx,<sp/>xy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a0dd01236f8d5e42af91cf02b3d89612a" kindref="member">xz</ref>,<sp/>xw;</highlight></codeline>
+<codeline lineno="305" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac44d05077c7a87ad3dc03e8ddc28388d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>yx,<sp/>yy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac44d05077c7a87ad3dc03e8ddc28388d" kindref="member">yz</ref>,<sp/>yw;</highlight></codeline>
+<codeline lineno="306" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a6698bb80eb60a3eee027d389d0a41db8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>zx,<sp/>zy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a6698bb80eb60a3eee027d389d0a41db8" kindref="member">zz</ref>,<sp/>zw;</highlight></codeline>
+<codeline lineno="307" refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a4922aa0a0e7213fd27b830846b2222" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>wx,<sp/>wy,<sp/><ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a4922aa0a0e7213fd27b830846b2222" kindref="member">wz</ref>,<sp/>ww;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="group__core_1ga15242198f27434d7c9945ff0657b3347" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix2f</ref><sp/>=<sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 2, 2&gt;</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="group__core_1gae702e6021057443ca43f94b32618bbc2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/>=<sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 3, 3&gt;</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="group__core_1ga602d9345cc8ee188179c52bc1c854771" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix4f</ref><sp/>=<sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 4, 4&gt;</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MSVC<sp/>does<sp/>not<sp/>like<sp/>extern<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 2, 2&gt;</ref>;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 3, 3&gt;</ref>;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;float, 4, 4&gt;</ref>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"><sp/><sp/><sp/>*<sp/>equality<sp/>operations</highlight></codeline>
+<codeline lineno="345"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="structgf_1_1_matrix_1a3fae58c56124d6da3f13dd6ce09d5be8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_1a3fae58c56124d6da3f13dd6ce09d5be8" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>!=<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j])<sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="structgf_1_1_matrix_1aaf854087604c8e76c1d65d7425662458" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_1aaf854087604c8e76c1d65d7425662458" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(lhs<sp/>==<sp/>rhs);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="376"><highlight class="comment"><sp/><sp/><sp/>*<sp/>unary<sp/>operators</highlight></codeline>
+<codeline lineno="377"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="structgf_1_1_matrix_1a175ad214c0035feb093ed8f0f21a4aba" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a175ad214c0035feb093ed8f0f21a4aba" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>-<sp/>val.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="398"><highlight class="comment"><sp/><sp/><sp/>*<sp/>arithmetic<sp/>component-wise<sp/>operations</highlight></codeline>
+<codeline lineno="399"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="structgf_1_1_matrix_1ad1d8308b257224ea492a151a4acd334b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1ad1d8308b257224ea492a151a4acd334b" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>+<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="structgf_1_1_matrix_1ae4bbdc6d64dc049d4ae10ec02c5cf606" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/><ref refid="structgf_1_1_matrix_1ae4bbdc6d64dc049d4ae10ec02c5cf606" kindref="member">operator+=</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>+=<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442" refid="structgf_1_1_matrix_1ac26aa74331714f1eab998729e55d8de5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1ac26aa74331714f1eab998729e55d8de5" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>-<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460" refid="structgf_1_1_matrix_1a58965ee565b58748c00fd837148f55ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/><ref refid="structgf_1_1_matrix_1a58965ee565b58748c00fd837148f55ae" kindref="member">operator-=</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>-=<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="471"><highlight class="comment"><sp/><sp/><sp/>*<sp/>multiplication<sp/>and<sp/>division</highlight></codeline>
+<codeline lineno="472"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="480" refid="structgf_1_1_matrix_1a6bc29b6563af3ff0733a7a96b07553d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a6bc29b6563af3ff0733a7a96b07553d1" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>*<sp/>rhs;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498" refid="structgf_1_1_matrix_1a1896f0873100ff725cf5e878037b5781" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/><ref refid="structgf_1_1_matrix_1a1896f0873100ff725cf5e878037b5781" kindref="member">operator*=</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>*=<sp/>rhs;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514" refid="structgf_1_1_matrix_1aad1e642c2558507bd953b6d6e169ece5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1aad1e642c2558507bd953b6d6e169ece5" kindref="member">operator*</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>lhs<sp/>*<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532" refid="structgf_1_1_matrix_1afdda645b618aa15d0b7dc5a7cb6cd768" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1afdda645b618aa15d0b7dc5a7cb6cd768" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>/<sp/>rhs;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ROWS,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>COLS&gt;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="structgf_1_1_matrix_1a1fd5f4f6e232f151e470f7dd435a9025" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/><ref refid="structgf_1_1_matrix_1a1fd5f4f6e232f151e470f7dd435a9025" kindref="member">operator/=</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, ROWS, COLS&gt;</ref>&amp;<sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ROWS;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>COLS;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>/=<sp/>rhs;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs;</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S1,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S2&gt;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566" refid="structgf_1_1_matrix_1a9cbdbaf0c2e82269adcf7d91a58ba29e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S1&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a9cbdbaf0c2e82269adcf7d91a58ba29e" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S2&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S2&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S1&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>S1;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>val{0};</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>S2;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>+=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>*<sp/>rhs.<ref refid="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" kindref="member">data</ref>[j];</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" kindref="member">data</ref>[i]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S1,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S2&gt;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="structgf_1_1_matrix_1a04f3ddcef53ccd6efc1f791adf2c8aa7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S2&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a04f3ddcef53ccd6efc1f791adf2c8aa7" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S1&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S2&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;T, S2&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>S2;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>val{0};</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>S1;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>+=<sp/>lhs.<ref refid="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" kindref="member">data</ref>[i]<sp/>*<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" kindref="member">data</ref>[j]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S1,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S2,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S3&gt;</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="611" refid="structgf_1_1_matrix_1a547c1dbd7ede968e6c359bbe5a02813e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S3&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a547c1dbd7ede968e6c359bbe5a02813e" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S2&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S2, S3&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S3&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>S1;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>S3;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>val{0};</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>S2;<sp/>++k)<sp/>{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>+=<sp/>lhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][k]<sp/>*<sp/>rhs.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[k][j];</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="637" refid="structgf_1_1_matrix_1a678f083b331b43ba919af9a55ca24e6b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, N, N&gt;</ref>&amp;<sp/><ref refid="structgf_1_1_matrix_1a678f083b331b43ba919af9a55ca24e6b" kindref="member">operator*=</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, N, N&gt;</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, N, N&gt;</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/>lhs<sp/>=<sp/>lhs<sp/>*<sp/>rhs;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="643"><highlight class="comment"><sp/><sp/><sp/>*<sp/>usual<sp/>operations</highlight></codeline>
+<codeline lineno="644"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MatrixType&gt;</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654" refid="structgf_1_1_matrix_1a523fecc4b735d067a99e364f3244311d" refkind="member"><highlight class="normal"><sp/><sp/>MatrixType<sp/><ref refid="structgf_1_1_matrix_1a523fecc4b735d067a99e364f3244311d" kindref="member">identity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(MatrixType::Rows<sp/>==<sp/>MatrixType::Cols,<sp/></highlight><highlight class="stringliteral">&quot;identity()<sp/>is<sp/>only<sp/>defined<sp/>for<sp/>square<sp/>matrices.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>MatrixType<sp/>out;</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MatrixType::value_type<sp/><ref refid="structgf_1_1_matrix_1ac8ff968abb67be292136990a382b9662" kindref="member">value_type</ref>;</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>MatrixType::Rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>MatrixType::Cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.grid[i][j]<sp/>=<sp/>(i<sp/>==<sp/>j)<sp/>?<sp/>value_type{1}<sp/>:<sp/>value_type{0};</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S1,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>S2&gt;</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="676" refid="structgf_1_1_matrix_1a7d5d2aa15c3d405aea61149e82acd0f4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S2, S1&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a7d5d2aa15c3d405aea61149e82acd0f4" kindref="member">transpose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S1, S2&gt;</ref>&amp;<sp/>mat)<sp/>{</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix&lt;T, S2, S1&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>S1;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>S2;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[j][i]<sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" kindref="member">grid</ref>[i][j];</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>https://en.wikipedia.org/wiki/Invertible_matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696" refid="structgf_1_1_matrix_1a2b8bad7d2cc95572352513a6e8963a76" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kindref="compound">Matrix&lt;T, 2, 2&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1a2b8bad7d2cc95572352513a6e8963a76" kindref="member">invert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kindref="compound">Matrix&lt;T, 2, 2&gt;</ref>&amp;<sp/>mat)<sp/>{</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kindref="compound">Matrix&lt;T, 2, 2&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1ae9d7d326d46a9416bdb72983dccb160d" kindref="member">xx</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" kindref="member">yy</ref>;</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" kindref="member">xy</ref><sp/>=<sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" kindref="member">xy</ref>;</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af900d8eb98a3cda9a6e72d2709db6967" kindref="member">yx</ref><sp/>=<sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af900d8eb98a3cda9a6e72d2709db6967" kindref="member">yx</ref>;</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" kindref="member">yy</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1ae9d7d326d46a9416bdb72983dccb160d" kindref="member">xx</ref>;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>det<sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1ae9d7d326d46a9416bdb72983dccb160d" kindref="member">xx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" kindref="member">yy</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af900d8eb98a3cda9a6e72d2709db6967" kindref="member">yx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" kindref="member">xy</ref>;</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>/=<sp/>det;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="715" refid="structgf_1_1_matrix_1aa0086ad26b9fdc2b4010eaf37aa5f2e5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">Matrix&lt;T, 3, 3&gt;</ref><sp/><ref refid="structgf_1_1_matrix_1aa0086ad26b9fdc2b4010eaf37aa5f2e5" kindref="member">invert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">Matrix&lt;T, 3, 3&gt;</ref>&amp;<sp/>mat)<sp/>{</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">Matrix&lt;T, 3, 3&gt;</ref><sp/>out;</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a485425c9fa32e5813ab26b457e2beba0" kindref="member">yy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aa1f55de5d7049c75f2e95b9e10b12c0e" kindref="member">zy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref>;</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref><sp/>=<sp/>-<sp/>(mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aa1f55de5d7049c75f2e95b9e10b12c0e" kindref="member">zy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref>);</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a485425c9fa32e5813ab26b457e2beba0" kindref="member">yy</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref>;</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>=<sp/>-<sp/>(mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref>);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a485425c9fa32e5813ab26b457e2beba0" kindref="member">yy</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref>;</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref><sp/>=<sp/>-<sp/>(mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a9c4ec1e1082dd60f413981f8b9dd98cc" kindref="member">yz</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref>);</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aa1f55de5d7049c75f2e95b9e10b12c0e" kindref="member">zy</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a485425c9fa32e5813ab26b457e2beba0" kindref="member">yy</ref>;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aa1f55de5d7049c75f2e95b9e10b12c0e" kindref="member">zy</ref><sp/>=<sp/>-<sp/>(mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aa1f55de5d7049c75f2e95b9e10b12c0e" kindref="member">zy</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref>);</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a5b7300e4b8f9189c87e6b7542422b9bd" kindref="member">zz</ref><sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a485425c9fa32e5813ab26b457e2beba0" kindref="member">yy</ref><sp/>-<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>*<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref>;</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>det<sp/>=<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>*<sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aef28603c997d517cee3042a94d87a718" kindref="member">xx</ref><sp/>+<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a3c24029610f10d07e67472a2b6fad69e" kindref="member">xy</ref><sp/>*<sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1a6a5de992605421d97d4d85297f02512a" kindref="member">yx</ref><sp/>+<sp/>mat.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1ac43857ee2435a2b2c3825f8d32d167b1" kindref="member">xz</ref><sp/>*<sp/>out.<ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4_1aabf20b6e5795c95ee0d6ac481d0e82c9" kindref="member">zx</ref>;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>/=<sp/>det;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="736"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GAME_MATRIX_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h"/>
+  </compounddef>
+</doxygen>

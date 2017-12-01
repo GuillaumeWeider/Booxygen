@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_string_ref" kind="class" language="C++" prot="public">
+    <compoundname>gf::StringRef</compoundname>
+    <includes refid="_string_ref_8h" local="no">gf/StringRef.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_string_ref_1ac94ed3f4c37bc695e1c3671deb5cde6e" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* gf::StringRef::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="170" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_string_ref_1abfaf808aea9c22e95a73d8c975be1076" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::StringRef::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="171" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_string_ref_1abf4972c1b5294b87e4f5b0117075729e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::StringRef::StringRef</definition>
+        <argsstring>()</argsstring>
+        <name>StringRef</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="48" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1a68cd01eb2c1fe0ee21845320b4b5dda5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::StringRef::StringRef</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+<para>Null constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="60" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1acbaa1ea4321ba5a1ffedc78699858d03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::StringRef::StringRef</definition>
+        <argsstring>(const char *str, std::size_t size)</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a pointer and a size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1af7b4848e46560c19b93dc746f31aa217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::StringRef::StringRef</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a null-terminated string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The size is computed with <computeroutput>std::strlen</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="87" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1ace820f8e8c3166078e189d41bf6b413b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::StringRef::StringRef</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a <computeroutput>std::string</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A C++ string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1aaf842fe1a7a4594b4be5df29d3cf41a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* gf::StringRef::getData</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get a pointer to the string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the beginning of the string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="111" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1a19b252c627d906593f1cde39c2d4a3e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::StringRef::getSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="120" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1abf165c5341fce3c5f231cafa603d24d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::StringRef::isEmpty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the string is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty string is a string with size 0. So the null string is empty.</para><para><simplesect kind="return"><para>True if the string is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="131" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1a5ed5d4a9d7dac1f7347a39ab7bc53367" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* gf::StringRef::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the beginning of the string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first character</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_string_ref_1a0e332b708cd0e356675c36909455a7f9" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="142" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1a0e332b708cd0e356675c36909455a7f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* gf::StringRef::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator past the end of the string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer past the last character</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_string_ref_1a5ed5d4a9d7dac1f7347a39ab7bc53367" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="153" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_string_ref_1a0f06f6dcbe3fdadc35b57a7c4459a68f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr char</type>
+        <definition>constexpr char gf::StringRef::operator[]</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a character at a given index. </para>        </briefdescription>
+        <detaileddescription>
+<para>No verification is done on the index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The character at the given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="165" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A constant reference to a string and its size. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class stores a pointer to a string and its size. It can be built from various inputs: <computeroutput>std::string</computeroutput>, C string.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_array_ref" kindref="compound">gf::ArrayRef</ref>, <ref refid="classgf_1_1_buffer_ref" kindref="compound">gf::BufferRef</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/StringRef.h" bodystart="41" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_string_ref_1a5ed5d4a9d7dac1f7347a39ab7bc53367" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>begin</name></member>
+      <member refid="classgf_1_1_string_ref_1a0e332b708cd0e356675c36909455a7f9" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>end</name></member>
+      <member refid="classgf_1_1_string_ref_1aaf842fe1a7a4594b4be5df29d3cf41a1" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>getData</name></member>
+      <member refid="classgf_1_1_string_ref_1a19b252c627d906593f1cde39c2d4a3e9" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_string_ref_1abf165c5341fce3c5f231cafa603d24d4" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>isEmpty</name></member>
+      <member refid="classgf_1_1_string_ref_1ac94ed3f4c37bc695e1c3671deb5cde6e" prot="private" virt="non-virtual"><scope>gf::StringRef</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_string_ref_1abfaf808aea9c22e95a73d8c975be1076" prot="private" virt="non-virtual"><scope>gf::StringRef</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_string_ref_1a0f06f6dcbe3fdadc35b57a7c4459a68f" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>operator[]</name></member>
+      <member refid="classgf_1_1_string_ref_1abf4972c1b5294b87e4f5b0117075729e" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>StringRef</name></member>
+      <member refid="classgf_1_1_string_ref_1a68cd01eb2c1fe0ee21845320b4b5dda5" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>StringRef</name></member>
+      <member refid="classgf_1_1_string_ref_1acbaa1ea4321ba5a1ffedc78699858d03" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>StringRef</name></member>
+      <member refid="classgf_1_1_string_ref_1af7b4848e46560c19b93dc746f31aa217" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>StringRef</name></member>
+      <member refid="classgf_1_1_string_ref_1ace820f8e8c3166078e189d41bf6b413b" prot="public" virt="non-virtual"><scope>gf::StringRef</scope><name>StringRef</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

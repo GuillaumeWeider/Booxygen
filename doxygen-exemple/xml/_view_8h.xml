@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_view_8h" kind="file" language="C++">
+    <compoundname>View.h</compoundname>
+    <includes refid="_matrix_8h" local="yes">Matrix.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_rect_8h" local="yes">Rect.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_render_target_8h" local="yes">RenderTarget.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_views_8h" local="yes">Views.h</includedby>
+    <incdepgraph>
+      <node id="2559">
+        <label>View.h</label>
+        <link refid="_view_8h"/>
+        <childnode refid="2560" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+      </node>
+      <node id="2565">
+        <label>cstdint</label>
+      </node>
+      <node id="2563">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="2564">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2565" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+      </node>
+      <node id="2560">
+        <label>Matrix.h</label>
+        <link refid="_matrix_8h_source"/>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+      </node>
+      <node id="2561">
+        <label>cstddef</label>
+      </node>
+      <node id="2567">
+        <label>type_traits</label>
+      </node>
+      <node id="2562">
+        <label>algorithm</label>
+      </node>
+      <node id="2568">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+      </node>
+      <node id="2566">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2575">
+        <label>Views.h</label>
+        <link refid="_views_8h_source"/>
+        <childnode refid="2572" relation="include">
+        </childnode>
+      </node>
+      <node id="2569">
+        <label>View.h</label>
+        <link refid="_view_8h"/>
+        <childnode refid="2570" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+      </node>
+      <node id="2571">
+        <label>RenderPipeline.h</label>
+        <link refid="_render_pipeline_8h_source"/>
+        <childnode refid="2572" relation="include">
+        </childnode>
+      </node>
+      <node id="2570">
+        <label>RenderTarget.h</label>
+        <link refid="_render_target_8h_source"/>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+      </node>
+      <node id="2573">
+        <label>RenderTexture.h</label>
+        <link refid="_render_texture_8h_source"/>
+        <childnode refid="2572" relation="include">
+        </childnode>
+      </node>
+      <node id="2572">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="2574">
+        <label>RenderWindow.h</label>
+        <link refid="_render_window_8h_source"/>
+        <childnode refid="2572" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgf_1_1_view" prot="public">gf::View</innerclass>
+    <innerclass refid="classgf_1_1_adaptative_view" prot="public">gf::AdaptativeView</innerclass>
+    <innerclass refid="classgf_1_1_zooming_view_adaptor" prot="public">gf::ZoomingViewAdaptor</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Part<sp/>of<sp/>this<sp/>file<sp/>comes<sp/>from<sp/>SFML,<sp/>with<sp/>the<sp/>same<sp/>license:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2007-2015<sp/>Laurent<sp/>Gomila<sp/>(laurent@sfml-dev.org)</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_VIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_VIEW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Matrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Rect.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Event;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RenderTarget;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classgf_1_1_view" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>rect);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>size);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classgf_1_1_view" kindref="compound">View</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" kindref="member">setCenter</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_center<sp/>=<sp/>center;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" kindref="member">getCenter</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_center;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_size<sp/>=<sp/>size;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>onSizeChange(m_size);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" kindref="member">getSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" kindref="member">setRotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_rotation<sp/>=<sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" kindref="member">getRotation</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_rotation;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setViewport(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>viewport);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/><ref refid="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" kindref="member">getViewport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_viewport;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>rect);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>move(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga81ce505749755aad267e094ed99277e8" kindref="member">rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zoom(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zoom(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>fixed);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/>getTransform()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/>getInverseTransform()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="321" refid="classgf_1_1_view_1a59e869018b8024110ec5d2571d87c15c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view_1a59e869018b8024110ec5d2571d87c15c" kindref="member">setSizeNoCallback</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_size<sp/>=<sp/>size;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onSizeChange(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>size);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setViewportNoCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>viewport);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onViewportChange(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>viewport);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>m_center;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>m_size;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m_rotation;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref><sp/>m_viewport;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="classgf_1_1_adaptative_view" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_adaptative_view" kindref="compound">AdaptativeView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref><sp/>{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="390" refid="classgf_1_1_adaptative_view_1aa3096315aeb04895152c857f9acf5899" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_adaptative_view_1aa3096315aeb04895152c857f9acf5899" kindref="member">AdaptativeView</ref>()</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>()</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401" refid="classgf_1_1_adaptative_view_1a345f031d31abbf50eaec549720a25540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_adaptative_view_1a345f031d31abbf50eaec549720a25540" kindref="member">AdaptativeView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>rect)</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>(rect)</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="classgf_1_1_adaptative_view_1a5867d055403b738a2794f7a8a0c170d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_adaptative_view_1a5867d055403b738a2794f7a8a0c170d2" kindref="member">AdaptativeView</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>size)</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>(center,<sp/>size)</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInitialScreenSize(<ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>screenSize);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onScreenSizeChange(<ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>screenSize)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439" refid="classgf_1_1_zooming_view_adaptor" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_zooming_view_adaptor" kindref="compound">ZoomingViewAdaptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_zooming_view_adaptor" kindref="compound">ZoomingViewAdaptor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref>&amp;<sp/>target,<sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>&amp;<sp/>view);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processEvent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_event" kindref="compound">Event</ref>&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref>&amp;<sp/>m_target;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_view" kindref="compound">View</ref>&amp;<sp/>m_view;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2i</ref><sp/>m_mousePosition;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>State<sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Stationary,</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Moving,</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>State<sp/>m_state;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_VIEW_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h"/>
+  </compounddef>
+</doxygen>

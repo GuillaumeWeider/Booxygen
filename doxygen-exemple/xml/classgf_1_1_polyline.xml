@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_polyline" kind="class" language="C++" prot="public">
+    <compoundname>gf::Polyline</compoundname>
+    <includes refid="_polyline_8h" local="no">gf/Polyline.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a6039d85bfd45bd721a46867f143a981b" prot="public">
+          <name>Chain</name>
+          <briefdescription>
+<para>The polyline is open. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a8f53d59237ea126834dc7ec2229b90d9" prot="public">
+          <name>Loop</name>
+          <briefdescription>
+<para>The polyline is closed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of polyline. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="48" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_polyline_1a14e190fc051e94b34616139219053d57" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::Polyline::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="203" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_polyline_1a3b0e65d8cbb464fdbd94c3f0cac1a801" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" kindref="member">Type</ref></type>
+        <definition>Type gf::Polyline::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="204" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_polyline_1aa8c91cf1c213140a650dbd8111971277" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Polyline::Polyline</definition>
+        <argsstring>(Type type=Chain)</argsstring>
+        <name>Polyline</name>
+        <param>
+          <type><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" kindref="member">Type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a6039d85bfd45bd721a46867f143a981b" kindref="member">Chain</ref></defval>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of polyline (default: chain) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1aec8843b2950ee2e8782897cf5f208fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Polyline::Polyline</definition>
+        <argsstring>(ArrayRef&lt; Vector2f &gt; points, Type type=Chain)</argsstring>
+        <name>Polyline</name>
+        <param>
+          <type><ref refid="classgf_1_1_array_ref" kindref="compound">ArrayRef</ref>&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" kindref="member">Type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a6039d85bfd45bd721a46867f143a981b" kindref="member">Chain</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor from an array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of polyline (default: chain) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="70" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1ac7454cf290c4f6515cc080e379350e42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::Polyline::Polyline</definition>
+        <argsstring>(Iterator first, Iterator last, Type type=Chain)</argsstring>
+        <name>Polyline</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" kindref="member">Type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a6039d85bfd45bd721a46867f143a981b" kindref="member">Chain</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor from points. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator to the first point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator after the last point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of polyline (default: chain) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="85" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a0e385bb6ba7cd68d64b2a35c3c72dc93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Polyline::addPoint</definition>
+        <argsstring>(Vector2f point)</argsstring>
+        <name>addPoint</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Add a point to the polyline. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to add to the polyline </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a7d58ad4fd5f5652e4de1b5b4f171755a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::Polyline::getPointCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointCount</name>
+        <briefdescription>
+<para>Get the number of points of the polyline. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of points of the polyline </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a9a7b4a49afe5b452ef0c0ad0b0250b71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polyline::getPoint</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>getPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the i-th point of the polyline. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1ab7c7bb63d6d6c2d1a148384748804149" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> *</type>
+        <definition>const Vector2f* gf::Polyline::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first point. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1a1d8b11807d9497acde4ec812aa0a537b" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a1d8b11807d9497acde4ec812aa0a537b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> *</type>
+        <definition>const Vector2f* gf::Polyline::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator past the last point. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer past the last point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1ab7c7bb63d6d6c2d1a148384748804149" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a2f803d1ccca1e883471e7279d875eafd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Polyline::hasPrevPoint</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>hasPrevPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Check if there is a point before the i-th point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a point before the current point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1afd597e9efb86087f378784629613c354" kindref="member">getPrevPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1afd597e9efb86087f378784629613c354" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polyline::getPrevPoint</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>getPrevPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get the point before the i-th point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point before the current point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1a2f803d1ccca1e883471e7279d875eafd" kindref="member">hasPrevPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a490247af211e321cab516b2c17854ac1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Polyline::hasNextPoint</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>hasNextPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Check if there is a point after the i-th point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a point after the current point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1a954e561b938958aab99e05249690b9c1" kindref="member">getNextPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1a954e561b938958aab99e05249690b9c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polyline::getNextPoint</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>getNextPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get the point after the i-th point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point after the current point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1a490247af211e321cab516b2c17854ac1" kindref="member">hasNextPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1ac8e7ffa5edd17863ebf17abc1a13b2e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Polyline::setType</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>setType</name>
+        <param>
+          <type><ref refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the polyline. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new type of the polyline </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="176" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1ae62d61623c433be49b88a8b51c1e0699" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Polyline::isLoop</definition>
+        <argsstring>() const</argsstring>
+        <name>isLoop</name>
+        <briefdescription>
+<para>Check is the polyline is a loop. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the polyline is a loop</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1ad704ecb18cee632447994060d5e38d76" kindref="member">isChain()</ref>, <ref refid="classgf_1_1_polyline_1ac8e7ffa5edd17863ebf17abc1a13b2e2" kindref="member">setType()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="187" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polyline_1ad704ecb18cee632447994060d5e38d76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Polyline::isChain</definition>
+        <argsstring>() const</argsstring>
+        <name>isChain</name>
+        <briefdescription>
+<para>Check is the polyline is a chain. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the polyline is a chain</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polyline_1ae62d61623c433be49b88a8b51c1e0699" kindref="member">isLoop()</ref>, <ref refid="classgf_1_1_polyline_1ac8e7ffa5edd17863ebf17abc1a13b2e2" kindref="member">setType()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="198" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="198" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A polyline. </para>    </briefdescription>
+    <detaileddescription>
+<para>A polyline is a set of consecutive segments. It is defined by the points ending the segments. A polyline can be open (chain) or closed (loop). </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polyline.h" bodystart="43" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_polyline_1a0e385bb6ba7cd68d64b2a35c3c72dc93" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>addPoint</name></member>
+      <member refid="classgf_1_1_polyline_1ab7c7bb63d6d6c2d1a148384748804149" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>begin</name></member>
+      <member refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a6039d85bfd45bd721a46867f143a981b" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Chain</name></member>
+      <member refid="classgf_1_1_polyline_1a1d8b11807d9497acde4ec812aa0a537b" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>end</name></member>
+      <member refid="classgf_1_1_polyline_1a954e561b938958aab99e05249690b9c1" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>getNextPoint</name></member>
+      <member refid="classgf_1_1_polyline_1a9a7b4a49afe5b452ef0c0ad0b0250b71" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_polyline_1a7d58ad4fd5f5652e4de1b5b4f171755a" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_polyline_1afd597e9efb86087f378784629613c354" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>getPrevPoint</name></member>
+      <member refid="classgf_1_1_polyline_1a490247af211e321cab516b2c17854ac1" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>hasNextPoint</name></member>
+      <member refid="classgf_1_1_polyline_1a2f803d1ccca1e883471e7279d875eafd" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>hasPrevPoint</name></member>
+      <member refid="classgf_1_1_polyline_1ad704ecb18cee632447994060d5e38d76" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>isChain</name></member>
+      <member refid="classgf_1_1_polyline_1ae62d61623c433be49b88a8b51c1e0699" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>isLoop</name></member>
+      <member refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624a8f53d59237ea126834dc7ec2229b90d9" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Loop</name></member>
+      <member refid="classgf_1_1_polyline_1a14e190fc051e94b34616139219053d57" prot="private" virt="non-virtual"><scope>gf::Polyline</scope><name>m_points</name></member>
+      <member refid="classgf_1_1_polyline_1a3b0e65d8cbb464fdbd94c3f0cac1a801" prot="private" virt="non-virtual"><scope>gf::Polyline</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_polyline_1aa8c91cf1c213140a650dbd8111971277" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Polyline</name></member>
+      <member refid="classgf_1_1_polyline_1aec8843b2950ee2e8782897cf5f208fa6" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Polyline</name></member>
+      <member refid="classgf_1_1_polyline_1ac7454cf290c4f6515cc080e379350e42" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Polyline</name></member>
+      <member refid="classgf_1_1_polyline_1ac8e7ffa5edd17863ebf17abc1a13b2e2" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>setType</name></member>
+      <member refid="classgf_1_1_polyline_1a1e91044d809b032b2cc4cd6652890624" prot="public" virt="non-virtual"><scope>gf::Polyline</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

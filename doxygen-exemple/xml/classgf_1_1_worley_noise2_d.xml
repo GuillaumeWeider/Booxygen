@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_worley_noise2_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::WorleyNoise2D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise2_d" prot="public" virt="non-virtual">gf::Noise2D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_worley_noise2_d_1aa7742506e834234c885644a1f5e19806" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::WorleyNoise2D::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="412" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_worley_noise2_d_1a78963148b9e5fe181674c0f74141356e" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga20b973d6afc270ead61a988e216199bd" kindref="member">Distance2</ref>&lt; double &gt;</type>
+        <definition>Distance2&lt;double&gt; gf::WorleyNoise2D::m_distance</definition>
+        <argsstring></argsstring>
+        <name>m_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="413" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_worley_noise2_d_1a5098c188caa7eba3596126ee14d95754" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; gf::WorleyNoise2D::m_coeffs</definition>
+        <argsstring></argsstring>
+        <name>m_coeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="414" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_worley_noise2_d_1a6603f131c7090b398999bbb7f4c85fea" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1gaf000d77b14f910bee6329245832d66af" kindref="member">Vector2d</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2d&gt; gf::WorleyNoise2D::m_cells</definition>
+        <argsstring></argsstring>
+        <name>m_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="415" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_worley_noise2_d_1ab57c65d91676aeed305c0d4c17007f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::WorleyNoise2D::WorleyNoise2D</definition>
+        <argsstring>(Random &amp;random, std::size_t count, Distance2&lt; double &gt; distance, std::vector&lt; double &gt; coeffs)</argsstring>
+        <name>WorleyNoise2D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga20b973d6afc270ead61a988e216199bd" kindref="member">Distance2</ref>&lt; double &gt;</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>coeffs</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A distance function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coeffs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coefficients for the noise </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_worley_noise2_d_1a0d3189af625c4619ea04cfb953d6e3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::WorleyNoise2D::getValue</definition>
+        <argsstring>(double x, double y) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="409" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Worley 2D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Worley_noise">Worley noise</ulink> is a point based noise. It is also known as Voronoi noise or cellular noise or simply cell noise. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1120">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+      <node id="1119">
+        <label>gf::WorleyNoise2D</label>
+        <link refid="classgf_1_1_worley_noise2_d"/>
+        <childnode refid="1120" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1122">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+      <node id="1121">
+        <label>gf::WorleyNoise2D</label>
+        <link refid="classgf_1_1_worley_noise2_d"/>
+        <childnode refid="1122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="397" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="397" bodyend="416"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_worley_noise2_d_1a0d3189af625c4619ea04cfb953d6e3bf" prot="public" virt="virtual"><scope>gf::WorleyNoise2D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_worley_noise2_d_1a6603f131c7090b398999bbb7f4c85fea" prot="private" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>m_cells</name></member>
+      <member refid="classgf_1_1_worley_noise2_d_1a5098c188caa7eba3596126ee14d95754" prot="private" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>m_coeffs</name></member>
+      <member refid="classgf_1_1_worley_noise2_d_1aa7742506e834234c885644a1f5e19806" prot="private" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>m_count</name></member>
+      <member refid="classgf_1_1_worley_noise2_d_1a78963148b9e5fe181674c0f74141356e" prot="private" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>m_distance</name></member>
+      <member refid="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_worley_noise2_d_1ab57c65d91676aeed305c0d4c17007f82" prot="public" virt="non-virtual"><scope>gf::WorleyNoise2D</scope><name>WorleyNoise2D</name></member>
+      <member refid="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" virt="virtual"><scope>gf::WorleyNoise2D</scope><name>~Noise2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

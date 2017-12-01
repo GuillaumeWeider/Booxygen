@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="pcg" kind="page">
+    <compoundname>pcg</compoundname>
+    <title>Procedural content generation</title>
+    <detaileddescription>
+<para>Gamedev Framework (gf) provides some useful tools for <ulink url="https://en.wikipedia.org/wiki/Procedural_generation">procedural generation</ulink>. Here is a quick overview.</para><para><simplesect kind="see"><para><ulink url="http://pcg.wikidot.com/">Procedural Content Generation Wiki</ulink></para></simplesect>
+</para><sect1 id="pcg_1pcg_noise">
+<title>Noise</title>
+<para>A coherent noise is a pseudo-random function. It can be used to create textures, or maps. The most well-known type of noise is probably Perlin noise. Noise functions, in general, can be the basic bricks for procedural generation.</para><para>Noises classification:</para><para><itemizedlist>
+<listitem><para>Lattice based:<itemizedlist>
+<listitem><para>Gradient based:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Gradient_noise">Gradient noise</ulink></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Simplex_noise">Simplex noise</ulink></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/OpenSimplex_noise">OpenSimplex noise</ulink></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Wavelet_noise">Wavelet noise</ulink></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Value based:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Value_noise">Value noise</ulink></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Point based:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Worley_noise">Worley noise</ulink></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><simplesect kind="see"><para><ulink url="http://libnoise.sourceforge.net/coherentnoise/index.html">What is coherent noise? - libnoise</ulink></para></simplesect>
+</para><sect2 id="pcg_1pcg_noise_list">
+<title>List of noises</title>
+<para>Basic noise:</para><para><table rows="8" cols="3"><row>
+<entry thead="yes"><para>Name </para></entry><entry thead="yes"><para>2D </para></entry><entry thead="yes"><para>3D  </para></entry></row>
+<row>
+<entry thead="no"><para>Value noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_value_noise2_d" kindref="compound">gf::ValueNoise2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Gradient noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_gradient_noise2_d" kindref="compound">gf::GradientNoise2D</ref> </para></entry><entry thead="no"><para><ref refid="classgf_1_1_gradient_noise3_d" kindref="compound">gf::GradientNoise3D</ref> </para></entry></row>
+<row>
+<entry thead="no"><para>Better Gradient noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_better_gradient_noise2_d" kindref="compound">gf::BetterGradientNoise2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Simplex noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_simplex_noise2_d" kindref="compound">gf::SimplexNoise2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>OpenSimplex noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_open_simplex_noise2_d" kindref="compound">gf::OpenSimplexNoise2D</ref> </para></entry><entry thead="no"><para><ref refid="classgf_1_1_open_simplex_noise3_d" kindref="compound">gf::OpenSimplexNoise3D</ref> </para></entry></row>
+<row>
+<entry thead="no"><para>Worley noise </para></entry><entry thead="no"><para><ref refid="classgf_1_1_worley_noise2_d" kindref="compound">gf::WorleyNoise2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Wavelet noise </para></entry><entry thead="no"><para></para></entry><entry thead="no"><para><ref refid="classgf_1_1_wavelet_noise3_d" kindref="compound">gf::WaveletNoise3D</ref> </para></entry></row>
+</table>
+Noise adapters:</para><para><table rows="6" cols="3"><row>
+<entry thead="yes"><para>Name </para></entry><entry thead="yes"><para>2D </para></entry><entry thead="yes"><para>3D  </para></entry></row>
+<row>
+<entry thead="no"><para>Fractal noise (fBm) </para></entry><entry thead="no"><para><ref refid="classgf_1_1_fractal_noise2_d" kindref="compound">gf::FractalNoise2D</ref> </para></entry><entry thead="no"><para><ref refid="classgf_1_1_fractal_noise3_d" kindref="compound">gf::FractalNoise3D</ref> </para></entry></row>
+<row>
+<entry thead="no"><para>Multifractal </para></entry><entry thead="no"><para><ref refid="classgf_1_1_multifractal2_d" kindref="compound">gf::Multifractal2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Hybrid Multifractal </para></entry><entry thead="no"><para><ref refid="classgf_1_1_hybrid_multifractal2_d" kindref="compound">gf::HybridMultifractal2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Ridged Multifractal </para></entry><entry thead="no"><para><ref refid="classgf_1_1_ridged_multifractal2_d" kindref="compound">gf::RidgedMultifractal2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para>Hetero terrain </para></entry><entry thead="no"><para><ref refid="classgf_1_1_hetero_terrain2_d" kindref="compound">gf::HeteroTerrain2D</ref> </para></entry><entry thead="no"><para></para></entry></row>
+</table>
+The famous Perlin noise is just the combinaison of a fractal noise and a gradient noise but has its own classes: <ref refid="classgf_1_1_perlin_noise2_d" kindref="compound">gf::PerlinNoise2D</ref> and <ref refid="classgf_1_1_perlin_noise3_d" kindref="compound">gf::PerlinNoise3D</ref>.</para></sect2>
+<sect2 id="pcg_1pcg_noise_gallery">
+<title>Gallery</title>
+<para>Value noise: <image type="html" name="value_noise.png"></image>
+</para><para>Gradient noise: <image type="html" name="gradient_noise.png"></image>
+</para><para>Simplex noise: <image type="html" name="simplex_noise.png"></image>
+</para><para>OpenSimplex noise: <image type="html" name="opensimplex_noise.png"></image>
+</para><para>Perlin noise: <image type="html" name="perlin_noise.png"></image>
+</para></sect2>
+</sect1>
+<sect1 id="pcg_1pcg_algorithms_structures">
+<title>Algorithms and structures</title>
+<sect2 id="pcg_1pcg_heightmap">
+<title>Heightmap</title>
+<para><itemizedlist>
+<listitem><para><ref refid="classgf_1_1_heightmap" kindref="compound">gf::Heightmap</ref></para></listitem></itemizedlist>
+</para></sect2>
+<sect2 id="pcg_1pcg_midpoint_displacement">
+<title>Midpoint displacement</title>
+<para>Midpoint displacement is a method for generating a heightmap, in 1D or 2D.</para><para><itemizedlist>
+<listitem><para><ref refid="group__core_1ga488a9efee6bb0ff4d2cb1028a60a83c6" kindref="member">gf::midpointDisplacement1D()</ref></para></listitem><listitem><para><ref refid="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" kindref="member">gf::midpointDisplacement2D()</ref></para></listitem></itemizedlist>
+</para></sect2>
+<sect2 id="pcg_1pcg_diamond_square">
+<title>Diamond square</title>
+<para>Diamond square is an improvment of midpoint displacement.</para><para><itemizedlist>
+<listitem><para><ref refid="group__core_1ga224a9e63967d8b82789bdc3c87797c26" kindref="member">gf::diamondSquare2D()</ref> </para></listitem></itemizedlist>
+</para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_range_1_1_iterator" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Range::Iterator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::iterator&lt; std::input_iterator_tag, T &gt;</basecompoundref>
+    <includes refid="_range_8h" local="no">gf/Range.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_range_1_1_iterator_1ae98e48c0875896a57fa70ccbecb745d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Range&lt; T &gt;::Iterator::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>The index in the range. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1ad824744be4b7092f99835b014e21d386" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Range&lt; T &gt;::Iterator::Iterator</definition>
+        <argsstring>(T iteratorIndex) noexcept</argsstring>
+        <name>Iterator</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>iteratorIndex</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iteratorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index in the range </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1a22680f1dd41f1c34ae381a98724c2408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Range&lt; T &gt;::Iterator::operator*</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Dereference operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="69" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1a4459872c42b659b657424c78f8a8060a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; gf::Range&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Increment operator (prefix) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1a2dbe9e513e93fd66434a97e30e8597ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator gf::Range&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>(int) noexcept</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Increment operator (postfix) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1a1345f319c72a92fdad696b4f18b06c8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Range&lt; T &gt;::Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the iterator are different </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="100" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1_1_iterator_1a03da95dcf864fa945c30a494933dc1e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Range&lt; T &gt;::Iterator::operator==</definition>
+        <argsstring>(const Iterator &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the iterator are the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="110" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A range iterator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="398">
+        <label>std::iterator&lt; std::input_iterator_tag, T &gt;</label>
+      </node>
+      <node id="397">
+        <label>gf::Range&lt; T &gt;::Iterator</label>
+        <link refid="structgf_1_1_range_1_1_iterator"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="400">
+        <label>std::iterator&lt; std::input_iterator_tag, T &gt;</label>
+      </node>
+      <node id="399">
+        <label>gf::Range&lt; T &gt;::Iterator</label>
+        <link refid="structgf_1_1_range_1_1_iterator"/>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="50" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="50" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_range_1_1_iterator_1ae98e48c0875896a57fa70ccbecb745d5" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>index</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1ad824744be4b7092f99835b014e21d386" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>Iterator</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1a1345f319c72a92fdad696b4f18b06c8f" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>operator!=</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1a22680f1dd41f1c34ae381a98724c2408" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1a4459872c42b659b657424c78f8a8060a" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>operator++</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1a2dbe9e513e93fd66434a97e30e8597ad" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>operator++</name></member>
+      <member refid="structgf_1_1_range_1_1_iterator_1a03da95dcf864fa945c30a494933dc1e1" prot="public" virt="non-virtual"><scope>gf::Range::Iterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

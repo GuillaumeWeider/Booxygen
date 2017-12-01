@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_physics_geometry" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::PhysicsGeometry</compoundname>
+    <derivedcompoundref refid="classgf_1_1_circle_geometry" prot="public" virt="non-virtual">gf::CircleGeometry</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_polygon_geometry" prot="public" virt="non-virtual">gf::PolygonGeometry</derivedcompoundref>
+    <includes refid="_physics_geometry_8h" local="no">gf/PhysicsGeometry.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579a30954d90085f6eaaf5817917fc5fecb3" prot="public">
+          <name>Circle</name>
+          <briefdescription>
+<para>A circle (see <ref refid="classgf_1_1_circle_geometry" kindref="compound">gf::CircleGeometry</ref>) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579a4c0a11247d92f73fb84baa51e37a3263" prot="public">
+          <name>Polygon</name>
+          <briefdescription>
+<para>A polygon (see <ref refid="classgf_1_1_polygon_geometry" kindref="compound">gf::PolygonGeometry</ref>) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of geometry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_physics_geometry_1a0d9b92ea4f89e18effc7b54d2652fe0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" kindref="member">Type</ref></type>
+        <definition>Type gf::PhysicsGeometry::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="106" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a9e91c7774d891b67e1fc730b308366b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::PhysicsGeometry::PhysicsGeometry</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>PhysicsGeometry</name>
+        <param>
+          <type><ref refid="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the geometry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a7b2c4ac9871a7d0fac875f1f6240a5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::PhysicsGeometry::~PhysicsGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsGeometry</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a2f83779b89b8761371650453ca1a0541" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" kindref="member">Type</ref></type>
+        <definition>Type gf::PhysicsGeometry::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Get the type of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a44b36d13e95ebaace7ff85b9365ebd14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gf::PhysicsGeometry::getArea</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getArea</name>
+        <reimplementedby refid="classgf_1_1_circle_geometry_1a54cb03860363a39b1b8295f1071e99c1">getArea</reimplementedby>
+        <reimplementedby refid="classgf_1_1_polygon_geometry_1aa720bf42fdd710aeed17dda0389f60d0">getArea</reimplementedby>
+        <briefdescription>
+<para>Compute the area of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The area in world units </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a67bf19f8f71100305a0f4583eddcba3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref></type>
+        <definition>virtual CircF gf::PhysicsGeometry::getBoundingCircle</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getBoundingCircle</name>
+        <reimplementedby refid="classgf_1_1_circle_geometry_1a336af92333f6e05ee7982b344a26a8df">getBoundingCircle</reimplementedby>
+        <reimplementedby refid="classgf_1_1_polygon_geometry_1acc984684858b7c2eac25758666b4f28a">getBoundingCircle</reimplementedby>
+        <briefdescription>
+<para>Get a bouding circle. </para>        </briefdescription>
+        <detaileddescription>
+<para>The circle may not be the <ulink url="https://en.wikipedia.org/wiki/Smallest-circle_problem">minimum bouding circle</ulink>.</para><para><simplesect kind="return"><para>A bounding circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_geometry_1a14a54c7cfa3b5ace7d80868fbdd292c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gf::PhysicsGeometry::renderAt</definition>
+        <argsstring>(RenderTarget &amp;target, const RenderStates &amp;states, Vector2f position, float angle) const =0</argsstring>
+        <name>renderAt</name>
+        <reimplementedby refid="classgf_1_1_circle_geometry_1ae63a955f7d4c437aeffe57a7651c0c6c">renderAt</reimplementedby>
+        <reimplementedby refid="classgf_1_1_polygon_geometry_1ad1094236f9dd07f9921645fd451ca6e2">renderAt</reimplementedby>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Render the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states to use for drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the geometry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The geometry of a physics body. </para>    </briefdescription>
+    <detaileddescription>
+<para>The geometry is defined in model coordinates.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_physics_body" kindref="compound">gf::PhysicsBody</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="563">
+        <label>gf::PolygonGeometry</label>
+        <link refid="classgf_1_1_polygon_geometry"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>gf::CircleGeometry</label>
+        <link refid="classgf_1_1_circle_geometry"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>gf::PhysicsGeometry</label>
+        <link refid="classgf_1_1_physics_geometry"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="46" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="46" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_physics_geometry_1a44b36d13e95ebaace7ff85b9365ebd14" prot="public" virt="pure-virtual"><scope>gf::PhysicsGeometry</scope><name>getArea</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a67bf19f8f71100305a0f4583eddcba3e" prot="public" virt="pure-virtual"><scope>gf::PhysicsGeometry</scope><name>getBoundingCircle</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a2f83779b89b8761371650453ca1a0541" prot="public" virt="non-virtual"><scope>gf::PhysicsGeometry</scope><name>getType</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a0d9b92ea4f89e18effc7b54d2652fe0b" prot="private" virt="non-virtual"><scope>gf::PhysicsGeometry</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a9e91c7774d891b67e1fc730b308366b3" prot="public" virt="non-virtual"><scope>gf::PhysicsGeometry</scope><name>PhysicsGeometry</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a14a54c7cfa3b5ace7d80868fbdd292c4" prot="public" virt="pure-virtual"><scope>gf::PhysicsGeometry</scope><name>renderAt</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" prot="public" virt="non-virtual"><scope>gf::PhysicsGeometry</scope><name>Type</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a7b2c4ac9871a7d0fac875f1f6240a5c7" prot="public" virt="virtual"><scope>gf::PhysicsGeometry</scope><name>~PhysicsGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

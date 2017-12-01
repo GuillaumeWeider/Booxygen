@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_image" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxImage</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_image_1adfca35aed0e62c0913655f92247ff9ba" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gf::TmxImage::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+<para>The format of the image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="491" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_image_1a2050fa6349ea55e10df714b20abf2565" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+        <definition>Path gf::TmxImage::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+<para>The path to the image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="492" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_image_1a72d13879cbe114a09a262a104611e6e4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref></type>
+        <definition>Color4u gf::TmxImage::transparent</definition>
+        <argsstring></argsstring>
+        <name>transparent</name>
+        <briefdescription>
+<para>The transparent color. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="493" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_image_1a8d105672312b3c48efa8ed80145b7669" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::TmxImage::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The size of the image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="494" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A reference to an image. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="826">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="824">
+        <label>gf::Vector&lt; uint8_t, 4 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="823">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="822">
+        <label>gf::TmxImage</label>
+        <link refid="structgf_1_1_tmx_image"/>
+        <childnode refid="823" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="824" relation="usage">
+          <edgelabel>transparent</edgelabel>
+        </childnode>
+        <childnode refid="825" relation="usage">
+          <edgelabel>format</edgelabel>
+        </childnode>
+      </node>
+      <node id="825">
+        <label>std::string</label>
+        <childnode refid="826" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="490" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="490" bodyend="495"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_image_1adfca35aed0e62c0913655f92247ff9ba" prot="public" virt="non-virtual"><scope>gf::TmxImage</scope><name>format</name></member>
+      <member refid="structgf_1_1_tmx_image_1a8d105672312b3c48efa8ed80145b7669" prot="public" virt="non-virtual"><scope>gf::TmxImage</scope><name>size</name></member>
+      <member refid="structgf_1_1_tmx_image_1a2050fa6349ea55e10df714b20abf2565" prot="public" virt="non-virtual"><scope>gf::TmxImage</scope><name>source</name></member>
+      <member refid="structgf_1_1_tmx_image_1a72d13879cbe114a09a262a104611e6e4" prot="public" virt="non-virtual"><scope>gf::TmxImage</scope><name>transparent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

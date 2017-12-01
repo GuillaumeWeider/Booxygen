@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_frame" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxFrame</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_frame_1a6f2bc96b5953b359685a9ba0745f208d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::TmxFrame::tileId</definition>
+        <argsstring></argsstring>
+        <name>tileId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="525" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_frame_1a185648997cc9482d6b1a0995152ede0b" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::TmxFrame::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="526" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A frame in a tile animation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_tmx_animation" kindref="compound">gf::TmxAnimation</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="810">
+        <label>gf::Time</label>
+        <link refid="classgf_1_1_time"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="809">
+        <label>gf::TmxFrame</label>
+        <link refid="structgf_1_1_tmx_frame"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>duration</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="524" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="524" bodyend="527"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_frame_1a185648997cc9482d6b1a0995152ede0b" prot="public" virt="non-virtual"><scope>gf::TmxFrame</scope><name>duration</name></member>
+      <member refid="structgf_1_1_tmx_frame_1a6f2bc96b5953b359685a9ba0745f208d" prot="public" virt="non-virtual"><scope>gf::TmxFrame</scope><name>tileId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

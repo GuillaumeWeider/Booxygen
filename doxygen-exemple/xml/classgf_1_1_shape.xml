@@ -1,0 +1,738 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_shape" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Shape</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_circle_shape" prot="public" virt="non-virtual">gf::CircleShape</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_convex_shape" prot="public" virt="non-virtual">gf::ConvexShape</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_rectangle_shape" prot="public" virt="non-virtual">gf::RectangleShape</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_rounded_rectangle_shape" prot="public" virt="non-virtual">gf::RoundedRectangleShape</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_star_shape" prot="public" virt="non-virtual">gf::StarShape</derivedcompoundref>
+    <includes refid="_shape_8h" local="no">gf/Shape.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_shape_1a9cbdc5068ce9b4795986b3be1cf83be0" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>const Texture* gf::Shape::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="321" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1ae43f065a1d275e3669499dd61355def4" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Shape::m_textureRect</definition>
+        <argsstring></argsstring>
+        <name>m_textureRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="322" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1a1ecb488c878aea0d03da3a48ecd8ac33" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Shape::m_color</definition>
+        <argsstring></argsstring>
+        <name>m_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="323" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1a41521e66c20788254dcda42339e12125" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::Shape::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="324" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1a61a5ec43ad8292c5999dcf6aca3f5f69" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Shape::m_bounds</definition>
+        <argsstring></argsstring>
+        <name>m_bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="325" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1a4cc001ac262ab27b7e0556e8babbed93" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Shape::m_outlineColor</definition>
+        <argsstring></argsstring>
+        <name>m_outlineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="327" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1aea7a63d8efde0cc94a7e843a61554184" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Shape::m_outlineThickness</definition>
+        <argsstring></argsstring>
+        <name>m_outlineThickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="328" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shape_1a5115fc3f783585c23eb1cc2879278ab6" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::Shape::m_outlineVertices</definition>
+        <argsstring></argsstring>
+        <name>m_outlineVertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="329" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Shape::Shape</definition>
+        <argsstring>()</argsstring>
+        <name>Shape</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setTexture</definition>
+        <argsstring>(const Texture &amp;texture, bool resetRect=false)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>resetRect</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Change the source texture of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The texture must exist as long as the shape uses it. Indeed, the shape doesn&apos;t store its own copy of the texture, but rather keeps a pointer to the one that you passed to this function. If the source texture is destroyed and the shape tries to use it, the behavior is undefined.</para><para>If <computeroutput>resetRect</computeroutput> is true, the texture rect property of the shape is automatically adjusted to the size of the new texture. If it is false, the texture rect is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resetRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should the texture rect be reset to the size of the new texture?</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" kindref="member">getTexture()</ref>, <ref refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" kindref="member">setTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+        <definition>const Texture&amp; gf::Shape::getTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>getTexture</name>
+        <briefdescription>
+<para>Get the source texture of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned reference is const, which means that you can&apos;t modify the texture when you retrieve it with this function.</para><para><simplesect kind="return"><para>Reference to the shape&apos;s texture</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="110" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shape::hasTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>hasTexture</name>
+        <briefdescription>
+<para>Check if a texture is set. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a texture is already set</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" kindref="member">setTexture()</ref>, <ref refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" kindref="member">getTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="121" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::unsetTexture</definition>
+        <argsstring>()</argsstring>
+        <name>unsetTexture</name>
+        <briefdescription>
+<para>Unset the source texture of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>After a call to this function, the shape has no source texture.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setTextureRect</definition>
+        <argsstring>(const RectF &amp;rect)</argsstring>
+        <name>setTextureRect</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Set the sub-rectangle of the texture that the shape will display. </para>        </briefdescription>
+        <detaileddescription>
+<para>The texture rect is useful when you don&apos;t want to display the whole texture, but rather a part of it.</para><para>By default, the texture rect covers the entire texture.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle defining the region of the texture to display</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" kindref="member">getTextureRect()</ref>, <ref refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+        <definition>const RectF&amp; gf::Shape::getTextureRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureRect</name>
+        <briefdescription>
+<para>Get the sub-rectangle of the texture displayed by the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> rectangle of the shape</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" kindref="member">setTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="155" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the fill color of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>This color is modulated (multiplied) with the shape&apos;s texture if any. It can be used to colorize the shape, or change its global opacity.</para><para>You can use <ref refid="structgf_1_1_color_1a939ec46a131a7a56a81a0e3a5ea3bb03" kindref="member">gf::Color::Transparent</ref> to make the inside of the shape transparent, and have the outline alone.</para><para>By default, the shape&apos;s fill color is opaque white.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New color of the shape</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" kindref="member">getColor()</ref>, <ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Shape::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Get the fill color of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Fill color of the shape</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" kindref="member">setColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="184" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setOutlineColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setOutlineColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the outline color of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, the shape&apos;s outline color is opaque white.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New outline color of the shape</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" kindref="member">getOutlineColor()</ref>, <ref refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" kindref="member">setColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Shape::getOutlineColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutlineColor</name>
+        <briefdescription>
+<para>Get the outline color of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Outline color of the shape</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="206" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="206" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setOutlineThickness</definition>
+        <argsstring>(float thickness)</argsstring>
+        <name>setOutlineThickness</name>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <briefdescription>
+<para>Set the thickness of the shape&apos;s outline. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, the outline thickness is <formula id="3">$ 0 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New outline thickness</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" kindref="member">getOutlineThickness()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Shape::getOutlineThickness</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutlineThickness</name>
+        <briefdescription>
+<para>Get the outline thickness of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Outline thickness of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" kindref="member">setOutlineThickness()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="227" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::Shape::getPointCount</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getPointCount</name>
+        <reimplementedby refid="classgf_1_1_rectangle_shape_1a392a9995e70824c4a598171bc44a9b2e">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_circle_shape_1a06d14c2b6d92f2ef5959bd066784aa77">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_convex_shape_1a6e0feb913ff058352de99f088c1bd65e">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_star_shape_1abe3452a84c472360ffc71ddb5dfb1be3">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_rounded_rectangle_shape_1a38fa96147f6393d2ad2cfab11e7181db">getPointCount</reimplementedby>
+        <briefdescription>
+<para>Get the total number of points of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::Shape::getPoint</definition>
+        <argsstring>(std::size_t index) const =0</argsstring>
+        <name>getPoint</name>
+        <reimplementedby refid="classgf_1_1_rectangle_shape_1a8c3b61a5594faa63e8c767999386a7cb">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_circle_shape_1a7fa3be6128b31c89f96ff268a6c3d420">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_convex_shape_1a7d43d98ab4615413958a783651687fc6">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_star_shape_1af4a3a012618e33e93c350b4691d04f1f">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_rounded_rectangle_shape_1a0ccf4a25a844a212fd10e4be0b1e3b9d">getPoint</reimplementedby>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the shape&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the shape.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Shape::getLocalBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalBounds</name>
+        <briefdescription>
+<para>Get the local bounding rectangle of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned rectangle is in local coordinates, which means that it ignores the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the entity in the entity&apos;s coordinate system.</para><para><simplesect kind="return"><para>Local bounding rectangle of the entity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::setAnchor</definition>
+        <argsstring>(Anchor anchor)</argsstring>
+        <name>setAnchor</name>
+        <param>
+          <type><ref refid="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" kindref="member">Anchor</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+<para>Set the anchor origin of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>Compute the origin of the entity based on the local bounds and the specified anchor. Internally, this function calls <computeroutput><ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor of the entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" kindref="member">getLocalBounds()</ref>, <ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref></type>
+        <definition>VertexBuffer gf::Shape::commitGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>commitGeometry</name>
+        <briefdescription>
+<para>Create a buffer with the current geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is uploaded in the graphics memory so that it&apos;s faster to draw.</para><para><simplesect kind="return"><para>A buffer with the current geometry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref></type>
+        <definition>VertexBuffer gf::Shape::commitOutlineGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>commitOutlineGeometry</name>
+        <briefdescription>
+<para>Create a buffer with the current outline geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is uploaded in the graphics memory so that it&apos;s faster to draw.</para><para><simplesect kind="return"><para>A buffer with the current outline geometry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Shape::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="302" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::updateGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>updateGeometry</name>
+        <briefdescription>
+<para>Recompute the internal geometry of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function must be called by the derived class everytime the shape&apos;s points change (i.e. the result of either <ref refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7" kindref="member">getPointCount()</ref> or <ref refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4" kindref="member">getPoint()</ref> is different). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="312" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_shape_1a3a450f5a9c8a73b4439b74075febd139" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::updateColors</definition>
+        <argsstring>()</argsstring>
+        <name>updateColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a30da6cf3f74a914422f4a9942cd91e0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::updateTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>updateTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="316" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1a79bb85e0b4bf68fe31b14dfe529de75e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::updateOutline</definition>
+        <argsstring>()</argsstring>
+        <name>updateOutline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shape_1aefc6271fb866dd1151549db01a247a43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shape::updateOutlineColors</definition>
+        <argsstring>()</argsstring>
+        <name>updateOutlineColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="318" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for textured shapes with outline. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> is a drawable class that allows to define and display a custom convex shape on a render target. It&apos;s only an abstract base, it needs to be specialized for concrete types of shapes (circle, rectangle, convex polygon, star, ...).</para><para>In addition to the attributes provided by the specialized shape classes, a shape always has the following attributes:</para><para><itemizedlist>
+<listitem><para>a texture</para></listitem><listitem><para>a texture rectangle</para></listitem><listitem><para>a fill color</para></listitem><listitem><para>an outline color</para></listitem><listitem><para>an outline thickness</para></listitem></itemizedlist>
+</para><para>Each feature is optional, and can be disabled easily:</para><para><itemizedlist>
+<listitem><para>the texture can be null</para></listitem><listitem><para>the fill/outline colors can be transparent</para></listitem><listitem><para>the outline thickness can be zero</para></listitem></itemizedlist>
+</para><para>You can write your own derived shape class, there are only two virtual functions to override:</para><para><itemizedlist>
+<listitem><para><computeroutput><ref refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7" kindref="member">getPointCount()</ref></computeroutput> must return the number of points of the shape</para></listitem><listitem><para><computeroutput><ref refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4" kindref="member">getPoint()</ref></computeroutput> must return the points of the shape</para></listitem></itemizedlist>
+</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_rectangle_shape" kindref="compound">gf::RectangleShape</ref>, <ref refid="classgf_1_1_circle_shape" kindref="compound">gf::CircleShape</ref>, <ref refid="classgf_1_1_convex_shape" kindref="compound">gf::ConvexShape</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="700">
+        <label>gf::CircleShape</label>
+        <link refid="classgf_1_1_circle_shape"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="698" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>gf::RoundedRectangleShape</label>
+        <link refid="classgf_1_1_rounded_rectangle_shape"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="704">
+        <label>gf::StarShape</label>
+        <link refid="classgf_1_1_star_shape"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>gf::ConvexShape</label>
+        <link refid="classgf_1_1_convex_shape"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>gf::RectangleShape</label>
+        <link refid="classgf_1_1_rectangle_shape"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="705">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="706">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shape.h" bodystart="73" bodyend="330"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" virt="virtual"><scope>gf::Shape</scope><name>draw</name></member>
+      <member refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4" prot="public" virt="pure-virtual"><scope>gf::Shape</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7" prot="public" virt="pure-virtual"><scope>gf::Shape</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_shape_1a61a5ec43ad8292c5999dcf6aca3f5f69" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_bounds</name></member>
+      <member refid="classgf_1_1_shape_1a1ecb488c878aea0d03da3a48ecd8ac33" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_color</name></member>
+      <member refid="classgf_1_1_shape_1a4cc001ac262ab27b7e0556e8babbed93" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_outlineColor</name></member>
+      <member refid="classgf_1_1_shape_1aea7a63d8efde0cc94a7e843a61554184" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_outlineThickness</name></member>
+      <member refid="classgf_1_1_shape_1a5115fc3f783585c23eb1cc2879278ab6" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_outlineVertices</name></member>
+      <member refid="classgf_1_1_shape_1a9cbdc5068ce9b4795986b3be1cf83be0" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_shape_1ae43f065a1d275e3669499dd61355def4" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_textureRect</name></member>
+      <member refid="classgf_1_1_shape_1a41521e66c20788254dcda42339e12125" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Shape</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>Shape</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" virt="non-virtual"><scope>gf::Shape</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_shape_1a3a450f5a9c8a73b4439b74075febd139" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>updateColors</name></member>
+      <member refid="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" virt="non-virtual"><scope>gf::Shape</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a79bb85e0b4bf68fe31b14dfe529de75e" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>updateOutline</name></member>
+      <member refid="classgf_1_1_shape_1aefc6271fb866dd1151549db01a247a43" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>updateOutlineColors</name></member>
+      <member refid="classgf_1_1_shape_1a30da6cf3f74a914422f4a9942cd91e0e" prot="private" virt="non-virtual"><scope>gf::Shape</scope><name>updateTexCoords</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Shape</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_scancode_key_control" kind="class" language="C++" prot="public">
+    <compoundname>gf::ScancodeKeyControl</compoundname>
+    <basecompoundref refid="classgf_1_1_control" prot="public" virt="non-virtual">gf::Control</basecompoundref>
+    <includes refid="_controls_8h" local="no">gf/Controls.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_scancode_key_control_1acedaa2ed411978be21eff41bd6d1ad3e" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref></type>
+        <definition>Scancode gf::ScancodeKeyControl::m_code</definition>
+        <argsstring></argsstring>
+        <name>m_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_scancode_key_control_1a974b66de233ee06d74ca8398bd26518d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ScancodeKeyControl::ScancodeKeyControl</definition>
+        <argsstring>(Scancode code)</argsstring>
+        <name>ScancodeKeyControl</name>
+        <param>
+          <type><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref></type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Construct a key control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scancode of the key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_scancode_key_control_1aa35c61ff584d66bd38831d98f380b911" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::ScancodeKeyControl::processEvent</definition>
+        <argsstring>(const Event &amp;event) override</argsstring>
+        <name>processEvent</name>
+        <reimplements refid="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc">processEvent</reimplements>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the control thanks to an event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to update the control.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" kindref="member">Action::processEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A key control based on scancode. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="675">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="674">
+        <label>gf::ScancodeKeyControl</label>
+        <link refid="classgf_1_1_scancode_key_control"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="677">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="676">
+        <label>gf::ScancodeKeyControl</label>
+        <link refid="classgf_1_1_scancode_key_control"/>
+        <childnode refid="677" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="58" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_control_1ad97882f2c328b5f235a87bb608cf8cb5" prot="public" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>Control</name></member>
+      <member refid="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" prot="public" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>isActive</name></member>
+      <member refid="classgf_1_1_scancode_key_control_1acedaa2ed411978be21eff41bd6d1ad3e" prot="private" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>m_code</name></member>
+      <member refid="classgf_1_1_scancode_key_control_1aa35c61ff584d66bd38831d98f380b911" prot="public" virt="virtual"><scope>gf::ScancodeKeyControl</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" prot="public" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>reset</name></member>
+      <member refid="classgf_1_1_scancode_key_control_1a974b66de233ee06d74ca8398bd26518d" prot="public" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>ScancodeKeyControl</name></member>
+      <member refid="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" prot="public" virt="non-virtual"><scope>gf::ScancodeKeyControl</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_control_1a85333ef810395ee3fd2ddba48cce76fc" prot="public" virt="virtual"><scope>gf::ScancodeKeyControl</scope><name>~Control</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

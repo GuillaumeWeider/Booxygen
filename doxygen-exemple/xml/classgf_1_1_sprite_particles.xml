@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_sprite_particles" kind="class" language="C++" prot="public">
+    <compoundname>gf::SpriteParticles</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <includes refid="_particles_8h" local="no">gf/Particles.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_sprite_particles_1ac748461b00b80dbc2e04cd3d5933760a" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>const Texture* gf::SpriteParticles::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="155" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_particles_1a305f16997079de546e15dbce967a6e5e" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::SpriteParticles::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="156" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_sprite_particles_1a84bf5ac56ff2ec51814630a20a9e1b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SpriteParticles::SpriteParticles</definition>
+        <argsstring>()</argsstring>
+        <name>SpriteParticles</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_particles_1a9d01b4bffb04a49dbdb3863b346a71f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SpriteParticles::SpriteParticles</definition>
+        <argsstring>(const Texture &amp;texture)</argsstring>
+        <name>SpriteParticles</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_particles_1a60632e5f8e762dc3cd10ddf6106c6fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteParticles::setTexture</definition>
+        <argsstring>(const Texture &amp;texture)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Change the source texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_particles_1a427a3454b7fb3db7b5baf3d503276358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteParticles::addSprite</definition>
+        <argsstring>(Vector2f position, const RectF &amp;textureRect, Color4f color=Color::White)</argsstring>
+        <name>addSprite</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>textureRect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>color</declname>
+          <defval><ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">Color::White</ref></defval>
+        </param>
+        <briefdescription>
+<para>Add a sprite to the particles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the center of the sprite </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-rectangle of the texture to assign to the sprite </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the sprite </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_particles_1aa5d0e80d2691b72af6fc578c0c7499c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::SpriteParticles::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="152" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to display a high number of sprites. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_sprite_batch" kindref="compound">gf::SpriteBatch</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="733">
+        <label>gf::SpriteParticles</label>
+        <link refid="classgf_1_1_sprite_particles"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="735">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="734">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="736">
+        <label>gf::SpriteParticles</label>
+        <link refid="classgf_1_1_sprite_particles"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="737">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Particles.h" bodystart="122" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_sprite_particles_1a427a3454b7fb3db7b5baf3d503276358" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>addSprite</name></member>
+      <member refid="classgf_1_1_sprite_particles_1aa5d0e80d2691b72af6fc578c0c7499c5" prot="public" virt="virtual"><scope>gf::SpriteParticles</scope><name>draw</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_sprite_particles_1ac748461b00b80dbc2e04cd3d5933760a" prot="private" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_sprite_particles_1a305f16997079de546e15dbce967a6e5e" prot="private" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_sprite_particles_1a60632e5f8e762dc3cd10ddf6106c6fa7" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_sprite_particles_1a84bf5ac56ff2ec51814630a20a9e1b0a" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>SpriteParticles</name></member>
+      <member refid="classgf_1_1_sprite_particles_1a9d01b4bffb04a49dbdb3863b346a71f1" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>SpriteParticles</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::SpriteParticles</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::SpriteParticles</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

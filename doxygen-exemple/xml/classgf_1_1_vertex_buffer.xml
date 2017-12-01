@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_vertex_buffer" kind="class" language="C++" prot="public">
+    <compoundname>gf::VertexBuffer</compoundname>
+    <includes refid="_vertex_buffer_8h" local="no">gf/VertexBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_vertex_buffer_1aaf25b8198becb769a6bc42eaa01ee534" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::VertexBuffer::m_vbo</definition>
+        <argsstring></argsstring>
+        <name>m_vbo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="175" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_vertex_buffer_1abfa2a0791cd074fb14b6e8b3353e6c97" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::VertexBuffer::m_ebo</definition>
+        <argsstring></argsstring>
+        <name>m_ebo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="176" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_vertex_buffer_1a73afd39e17cbdbc3d9549b34ac756d47" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::VertexBuffer::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="177" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_vertex_buffer_1ad2ecc3ab11434e11c8d257f4e873f3b2" prot="private" static="no" mutable="no">
+        <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType gf::VertexBuffer::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="178" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a12c0d6fb306be3c1f1909a3ff2eacdb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexBuffer::VertexBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>VertexBuffer</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1aadda6aedc6a918cbb16234b63345d0c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexBuffer::~VertexBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~VertexBuffer</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a49fa2b001fb0a07a16acdaa2ab40eb42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexBuffer::VertexBuffer</definition>
+        <argsstring>(const VertexBuffer &amp;)=delete</argsstring>
+        <name>VertexBuffer</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1ac025a8cb7da07c9927d6b11831270b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+        <definition>VertexBuffer&amp; gf::VertexBuffer::operator=</definition>
+        <argsstring>(const VertexBuffer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a782c23ce4f47f6bedf8f73cd7f13a78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexBuffer::VertexBuffer</definition>
+        <argsstring>(VertexBuffer &amp;&amp;other)</argsstring>
+        <name>VertexBuffer</name>
+        <param>
+          <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a5918402becd9cee3a375c487394e3d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+        <definition>VertexBuffer&amp; gf::VertexBuffer::operator=</definition>
+        <argsstring>(VertexBuffer &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexBuffer::load</definition>
+        <argsstring>(const Vertex *vertices, std::size_t count, PrimitiveType type)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load an array of vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1adf4a9fded5e0c65affcac5f545dbe246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexBuffer::load</definition>
+        <argsstring>(const Vertex *vertices, const uint16_t *indices, std::size_t count, PrimitiveType type)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load an array of vertices and their indices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of indices in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a0771366c7616d2261d5a57de036e3df9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::VertexBuffer::hasArrayBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>hasArrayBuffer</name>
+        <briefdescription>
+<para>Check if there is an array buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if an array buffer is defined </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a8cf6dd5a55e4f153af13f48784b2696c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::VertexBuffer::hasElementArrayBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>hasElementArrayBuffer</name>
+        <briefdescription>
+<para>Check if there is an element array buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if an array element buffer is defined </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="135" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a5cda03797c8747244ee9855b406c0f57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::VertexBuffer::getCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getCount</name>
+        <briefdescription>
+<para>Get the count of vertices or indices. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the <computeroutput>count</computeroutput> parameter given in <ref refid="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" kindref="member">VertexBuffer::load()</ref>.</para><para><simplesect kind="return"><para>The count of vertices or indices </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" kindref="member">load()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="148" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1ab7a818835243334450fac8014bccadac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType gf::VertexBuffer::getPrimitiveType</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrimitiveType</name>
+        <briefdescription>
+<para>Get the primitive type of the data in the buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the <computeroutput>type</computeroutput> parameter given in <ref refid="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" kindref="member">VertexBuffer::load()</ref>.</para><para><simplesect kind="return"><para>The primitive type </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" kindref="member">load()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_vertex_buffer_1a2a108aa938653465d3873f8f2bcbf1cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::VertexBuffer::bind</definition>
+        <argsstring>(const VertexBuffer *buffer)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Binds a vertex buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is for internal use only.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer or <computeroutput>nullptr</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="172" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data in the graphics memory. </para>    </briefdescription>
+    <detaileddescription>
+<para>A vertex buffer is a buffer that resides directly in the graphics memory. The advantage is that the draw operations are faster than uploading data each time. The drawback is that the data must not change, i.e. data can be loaded only once.</para><para>In gf, a vertex buffer can be used directly. But the main usage is for drawable entities that can upload the final geometry and give the corresponding vertex buffer.</para><para>Usage:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture</ref>(texture);</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" kindref="member">setTextureRect</ref>({<sp/>0.5f,<sp/>0.5f,<sp/>0.25f,<sp/>0.25f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_vertex_buffer" kindref="compound">gf::VertexBuffer</ref><sp/>buffer<sp/>=<sp/>sprite.<ref refid="classgf_1_1_sprite_1acc292dcf8376169811ae28996b38c749" kindref="member">commitGeometry</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_buffered_geometry" kindref="compound">gf::BufferedGeometry</ref><sp/>geometry;</highlight></codeline>
+<codeline><highlight class="normal">geometry.<ref refid="classgf_1_1_buffered_geometry_1a48a306aae3ff919d7fc43491f94a6349" kindref="member">setBuffer</ref>(buffer);</highlight></codeline>
+<codeline><highlight class="normal">geometry.<ref refid="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" kindref="member">setTexture</ref>(texture);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(geometry);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry" kindref="compound">gf::BufferedGeometry</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexBuffer.h" bodystart="70" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_vertex_buffer_1a2a108aa938653465d3873f8f2bcbf1cd" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>bind</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a5cda03797c8747244ee9855b406c0f57" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>getCount</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1ab7a818835243334450fac8014bccadac" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>getPrimitiveType</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a0771366c7616d2261d5a57de036e3df9" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>hasArrayBuffer</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a8cf6dd5a55e4f153af13f48784b2696c" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>hasElementArrayBuffer</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a48ac1646e3bc8c6fbf77eab17d49b22b" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>load</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1adf4a9fded5e0c65affcac5f545dbe246" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>load</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a73afd39e17cbdbc3d9549b34ac756d47" prot="private" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>m_count</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1abfa2a0791cd074fb14b6e8b3353e6c97" prot="private" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>m_ebo</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1ad2ecc3ab11434e11c8d257f4e873f3b2" prot="private" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1aaf25b8198becb769a6bc42eaa01ee534" prot="private" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>m_vbo</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1ac025a8cb7da07c9927d6b11831270b43" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a5918402becd9cee3a375c487394e3d01" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a12c0d6fb306be3c1f1909a3ff2eacdb0" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>VertexBuffer</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a49fa2b001fb0a07a16acdaa2ab40eb42" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>VertexBuffer</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1a782c23ce4f47f6bedf8f73cd7f13a78d" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>VertexBuffer</name></member>
+      <member refid="classgf_1_1_vertex_buffer_1aadda6aedc6a918cbb16234b63345d0c1" prot="public" virt="non-virtual"><scope>gf::VertexBuffer</scope><name>~VertexBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

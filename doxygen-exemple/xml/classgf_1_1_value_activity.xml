@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_value_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::ValueActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_value_activity_1a3d40ae12119ffac4ed339640be50900d" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tween" kindref="compound">Tween</ref>&lt; float &gt;</type>
+        <definition>Tween&lt;float&gt; gf::ValueActivity::m_tween</definition>
+        <argsstring></argsstring>
+        <name>m_tween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="114" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a1412378697cf8502d11218243b6170ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ValueActivity::ValueActivity</definition>
+        <argsstring>(float origin, float target, float &amp;value, Time duration, Easing easing=Ease::linear)</argsstring>
+        <name>ValueActivity</name>
+        <param>
+          <type>float</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref></type>
+          <declname>easing</declname>
+          <defval><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference on the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the tween </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>easing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The easing for the interpolation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a1c3cf2d3782fb9820cb2c2c33de52a51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ValueActivity::setOrigin</definition>
+        <argsstring>(float origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type>float</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Change the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new origin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1ab1b4b8f1f7eaf3511b846f5dcb10ee5b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::ValueActivity::getOrigin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getOrigin</name>
+        <briefdescription>
+<para>Get the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current origin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a98139139fd3a2cfe70863be39ccfad75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ValueActivity::setTarget</definition>
+        <argsstring>(float target)</argsstring>
+        <name>setTarget</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Change the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="79" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a331bc2e14aee56b786f0c25b50649cba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::ValueActivity::getTarget</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+<para>Get the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current target </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a261c9dc4dd65242b5ce8901ef5b57fc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ValueActivity::setDuration</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>setDuration</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Change the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new duration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="97" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a478f280c9af65bb7be3dbbf815a13633" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::ValueActivity::getDuration</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDuration</name>
+        <briefdescription>
+<para>Get the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current duration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="106" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1a472003ee9d0b057b57e1506cfe71a125" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::ValueActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_value_activity_1ae9f5e60f66bf802d014d3540b9557748" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::ValueActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="111" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity for a simple float value. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_tween" kindref="compound">gf::Tween</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1065">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="1064">
+        <label>gf::ValueActivity</label>
+        <link refid="classgf_1_1_value_activity"/>
+        <childnode refid="1065" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1067">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="1066">
+        <label>gf::ValueActivity</label>
+        <link refid="classgf_1_1_value_activity"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="43" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_value_activity_1a478f280c9af65bb7be3dbbf815a13633" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>getDuration</name></member>
+      <member refid="classgf_1_1_value_activity_1ab1b4b8f1f7eaf3511b846f5dcb10ee5b" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_value_activity_1a331bc2e14aee56b786f0c25b50649cba" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>getTarget</name></member>
+      <member refid="classgf_1_1_value_activity_1a3d40ae12119ffac4ed339640be50900d" prot="private" virt="non-virtual"><scope>gf::ValueActivity</scope><name>m_tween</name></member>
+      <member refid="classgf_1_1_value_activity_1ae9f5e60f66bf802d014d3540b9557748" prot="public" virt="virtual"><scope>gf::ValueActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_value_activity_1a472003ee9d0b057b57e1506cfe71a125" prot="public" virt="virtual"><scope>gf::ValueActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_value_activity_1a261c9dc4dd65242b5ce8901ef5b57fc7" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>setDuration</name></member>
+      <member refid="classgf_1_1_value_activity_1a1c3cf2d3782fb9820cb2c2c33de52a51" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_value_activity_1a98139139fd3a2cfe70863be39ccfad75" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>setTarget</name></member>
+      <member refid="classgf_1_1_value_activity_1a1412378697cf8502d11218243b6170ee" prot="public" virt="non-virtual"><scope>gf::ValueActivity</scope><name>ValueActivity</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::ValueActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

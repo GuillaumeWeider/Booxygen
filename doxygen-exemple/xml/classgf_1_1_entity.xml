@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_entity" kind="class" language="C++" prot="public">
+    <compoundname>gf::Entity</compoundname>
+    <includes refid="_entity_8h" local="no">gf/Entity.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Entity liveness</header>
+      <memberdef kind="function" id="classgf_1_1_entity_1a8bcbcc4f3428f2e9fe9d7ad17bde9c0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Entity::isAlive</definition>
+        <argsstring>() const</argsstring>
+        <name>isAlive</name>
+        <briefdescription>
+<para>Check if the entity is alive. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the entity is alive </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_1adb6536cb376e132adbd8bbdcfe99204a" kindref="member">setAlive()</ref>, <ref refid="classgf_1_1_entity_1ab41d1e2a08ce78c30466fecd6de0c837" kindref="member">kill()</ref>; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="93" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1adb6536cb376e132adbd8bbdcfe99204a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Entity::setAlive</definition>
+        <argsstring>()</argsstring>
+        <name>setAlive</name>
+        <briefdescription>
+<para>Set the entity alive (again) </para>        </briefdescription>
+        <detaileddescription>
+<para>This function can be called to revive an entity that has been killed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="102" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1ab41d1e2a08ce78c30466fecd6de0c837" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Entity::kill</definition>
+        <argsstring>()</argsstring>
+        <name>kill</name>
+        <briefdescription>
+<para>Kill an entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function kills the entity. After being killed, the entity must not be updated or rendered. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="112" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_entity_1ad827f3bb0b168bfc4bd1d2bbd4f3dce2" prot="private" static="no">
+        <name>Liveness</name>
+        <enumvalue id="classgf_1_1_entity_1ad827f3bb0b168bfc4bd1d2bbd4f3dce2a3bfa0eed9e858c516e816a519b2a82eb" prot="private">
+          <name>ALIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_entity_1ad827f3bb0b168bfc4bd1d2bbd4f3dce2abb4784231ff45108ee20bad16e4a2e8c" prot="private">
+          <name>DEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="140" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_entity_1a432147e643a9f1523205c9527da4888a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gf::Entity::m_priority</definition>
+        <argsstring></argsstring>
+        <name>m_priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="145" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_entity_1ad4e204d071d15f3ee2ac30025202604f" prot="private" static="no" mutable="no">
+        <type>Liveness</type>
+        <definition>Liveness gf::Entity::m_liveness</definition>
+        <argsstring></argsstring>
+        <name>m_liveness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="146" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_entity_1a99519191c150cca95cb808d0571737f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Entity::Entity</definition>
+        <argsstring>(int priority=0)</argsstring>
+        <name>Entity</name>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Contructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, the entity is alive.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority of the entity (default: 0) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="62" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1a743d49f49356ab4266bef7eaaf52f78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Entity::~Entity</definition>
+        <argsstring>()</argsstring>
+        <name>~Entity</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1ac7b4f887f22a641f33847d0447628aa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Entity::getPriority</definition>
+        <argsstring>() const</argsstring>
+        <name>getPriority</name>
+        <briefdescription>
+<para>Get the priority of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The priority </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1ac0e67948dc2be7a9fbb6206dc6dcaac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Entity::update</definition>
+        <argsstring>(Time time)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the entity&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Entities are updated each frame. The time between two frames is given as a parameter to help in the update. This time is in seconds.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" kindref="member">gf::EntityContainer::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_1a594f75d48d112e3020679b5d33f75d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Entity::render</definition>
+        <argsstring>(RenderTarget &amp;target, const RenderStates &amp;states)</argsstring>
+        <name>render</name>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Render the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" kindref="member">gf::EntityContainer::render()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="137" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A game entity. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref> represents a game entity, i.e. an object that is updated and rendered every frame.</para><para>Entities are ordered by priority when they are renderer, with lower priority being rendered first and higher priority being renderered last. The default priority is <formula id="3">$ 0 $</formula>.</para><para>Entities can become dead, in which case they are neither updated nor rendered anymore.</para><para>Entities can be grouped in an <ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Entity.h" bodystart="53" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_entity_1a99519191c150cca95cb808d0571737f1" prot="public" virt="non-virtual"><scope>gf::Entity</scope><name>Entity</name></member>
+      <member refid="classgf_1_1_entity_1ac7b4f887f22a641f33847d0447628aa2" prot="public" virt="non-virtual"><scope>gf::Entity</scope><name>getPriority</name></member>
+      <member refid="classgf_1_1_entity_1a8bcbcc4f3428f2e9fe9d7ad17bde9c0c" prot="public" virt="non-virtual"><scope>gf::Entity</scope><name>isAlive</name></member>
+      <member refid="classgf_1_1_entity_1ab41d1e2a08ce78c30466fecd6de0c837" prot="public" virt="non-virtual"><scope>gf::Entity</scope><name>kill</name></member>
+      <member refid="classgf_1_1_entity_1ad827f3bb0b168bfc4bd1d2bbd4f3dce2" prot="private" virt="non-virtual"><scope>gf::Entity</scope><name>Liveness</name></member>
+      <member refid="classgf_1_1_entity_1ad4e204d071d15f3ee2ac30025202604f" prot="private" virt="non-virtual"><scope>gf::Entity</scope><name>m_liveness</name></member>
+      <member refid="classgf_1_1_entity_1a432147e643a9f1523205c9527da4888a" prot="private" virt="non-virtual"><scope>gf::Entity</scope><name>m_priority</name></member>
+      <member refid="classgf_1_1_entity_1a594f75d48d112e3020679b5d33f75d1e" prot="public" virt="virtual"><scope>gf::Entity</scope><name>render</name></member>
+      <member refid="classgf_1_1_entity_1adb6536cb376e132adbd8bbdcfe99204a" prot="public" virt="non-virtual"><scope>gf::Entity</scope><name>setAlive</name></member>
+      <member refid="classgf_1_1_entity_1ac0e67948dc2be7a9fbb6206dc6dcaac7" prot="public" virt="virtual"><scope>gf::Entity</scope><name>update</name></member>
+      <member refid="classgf_1_1_entity_1a743d49f49356ab4266bef7eaaf52f78d" prot="public" virt="virtual"><scope>gf::Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

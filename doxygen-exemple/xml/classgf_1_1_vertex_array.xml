@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_vertex_array" kind="class" language="C++" prot="public">
+    <compoundname>gf::VertexArray</compoundname>
+    <basecompoundref refid="classgf_1_1_drawable" prot="public" virt="non-virtual">gf::Drawable</basecompoundref>
+    <includes refid="_vertex_array_8h" local="no">gf/VertexArray.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_vertex_array_1ae77d118f0691c55adb36c28121bcb5cb" prot="private" static="no" mutable="no">
+        <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType gf::VertexArray::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="240" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_vertex_array_1a43c38c38fb04027d75e2ce2e76819e9f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; gf::VertexArray::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="241" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a5d6f0a8038005abf8c2e81294936a7b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexArray::VertexArray</definition>
+        <argsstring>()</argsstring>
+        <name>VertexArray</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty vertex array. The default primitive type is <ref refid="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a75dd5f1160a3f02b6fae89c54361a1b3" kindref="member">gf::PrimitiveType::Points</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a56be627a12c76eca465f62f040eeaa6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::VertexArray::VertexArray</definition>
+        <argsstring>(PrimitiveType type, std::size_t count=0)</argsstring>
+        <name>VertexArray</name>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Construct the vertex array with a type and an initial number of vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial number of vertices in the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1aa3c34ba51df3f55285f05159614a2b28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::VertexArray::getVertexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexCount</name>
+        <briefdescription>
+<para>Return the vertex count. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of vertices in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="98" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a78c8effcea25990842d49e7e2992fa68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+        <definition>const Vertex* gf::VertexArray::getVertexData</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertexData</name>
+        <briefdescription>
+<para>Return the vertex data. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the vertices in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="107" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1af2bac3653190e3c0efb7afab7b3ecefe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex&amp; gf::VertexArray::operator[]</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a read-write access to a vertex by its index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function doesn&apos;t check <computeroutput>index</computeroutput>, it must be in range <formula id="121">$ [0, n - 1]$</formula> where <formula id="23">$ n $</formula> is the vertex count. The behavior is undefined otherwise.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the vertex to get</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to the index-th vertex</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_vertex_array_1aa3c34ba51df3f55285f05159614a2b28" kindref="member">getVertexCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="124" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a40e1935a20034469b5c25ca7dbaf68c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>const Vertex&amp; gf::VertexArray::operator[]</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a read-only access to a vertex by its index. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function doesn&apos;t check <computeroutput>index</computeroutput>, it must be in range <formula id="121">$ [0, n - 1]$</formula> where <formula id="23">$ n $</formula> is the vertex count. The behavior is undefined otherwise.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the vertex to get</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Const reference to the index-th vertex</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_vertex_array_1aa3c34ba51df3f55285f05159614a2b28" kindref="member">getVertexCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="141" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1aec5a12dfde11518c2d11c8ca3f68fbea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::VertexArray::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the vertex array is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the vertex array is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="150" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1aa69dcc3a20e00ba828e2756519f22001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexArray::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function removes all the vertices from the array. It doesn&apos;t deallocate the corresponding memory, so that adding new vertices after clearing doesn&apos;t involve reallocating all the memory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1af0a78203accd6970eaf7fc2c822d4eda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexArray::resize</definition>
+        <argsstring>(std::size_t count)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Resize the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>count</computeroutput> is greater than the current size, the previous vertices are kept and new (default-constructed) vertices are added.</para><para>If <computeroutput>count</computeroutput> is less than the current size, existing vertices are removed from the array.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of the array (number of vertices) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="178" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1af37db3a36a49bf3ecd8de61624f54327" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexArray::reserve</definition>
+        <argsstring>(std::size_t capacity)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Increase the capacity of the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New capacity of the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="187" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a7d664df85bb2d36b5b0e6f46c53b9597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexArray::append</definition>
+        <argsstring>(const Vertex &amp;vertex)</argsstring>
+        <name>append</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>Add a vertex to the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vertex to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="196" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a96dd2e2cb0c668983a271dbdc601ced1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::VertexArray::setPrimitiveType</definition>
+        <argsstring>(PrimitiveType type)</argsstring>
+        <name>setPrimitiveType</name>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of primitives to draw. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function defines how the vertices must be interpreted when it&apos;s time to draw them:</para><para><itemizedlist>
+<listitem><para>As points</para></listitem><listitem><para>As lines</para></listitem><listitem><para>As triangles</para></listitem></itemizedlist>
+</para><para>The default primitive type is <ref refid="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a75dd5f1160a3f02b6fae89c54361a1b3" kindref="member">gf::PrimitiveType::Points</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitive </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="214" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1a0fedfe97fb034e409ccda36d50d39e80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType gf::VertexArray::getPrimitiveType</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrimitiveType</name>
+        <briefdescription>
+<para>Get the type of primitives drawn by the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Primitive type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="223" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1aa4f4e70f0f8612adf0496dede38cf6dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::VertexArray::getBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getBounds</name>
+        <briefdescription>
+<para>Compute the bounding rectangle of the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the minimal axis-aligned rectangle that contains all the vertices of the array.</para><para><simplesect kind="return"><para>Bounding rectangle of the vertex array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_vertex_array_1abeb5048610ce99319d6f650defe184ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::VertexArray::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="237" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A set of primitives. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_vertex_array" kindref="compound">gf::VertexArray</ref> is a very simple wrapper around a dynamic array of vertices and a primitive type.</para><para>It inherits <ref refid="classgf_1_1_drawable" kindref="compound">gf::Drawable</ref>, but unlike other drawables it is not transformable.</para><para>Example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_vertex_array" kindref="compound">gf::VertexArray</ref><sp/>lines(<ref refid="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1ae7f9e73b8edd21f420a63b3ace5768a2" kindref="member">gf::PrimitiveType::LineStrip</ref>,<sp/>4);</highlight></codeline>
+<codeline><highlight class="normal">lines[0].position<sp/>=<sp/><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">gf::Vector2f</ref>(10,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">lines[1].position<sp/>=<sp/><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">gf::Vector2f</ref>(20,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">lines[2].position<sp/>=<sp/><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">gf::Vector2f</ref>(30,<sp/>5);</highlight></codeline>
+<codeline><highlight class="normal">lines[3].position<sp/>=<sp/><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">gf::Vector2f</ref>(40,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">window.draw(lines);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="structgf_1_1_vertex" kindref="compound">gf::Vertex</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1094">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1093">
+        <label>gf::VertexArray</label>
+        <link refid="classgf_1_1_vertex_array"/>
+        <childnode refid="1094" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1096">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1095">
+        <label>gf::VertexArray</label>
+        <link refid="classgf_1_1_vertex_array"/>
+        <childnode refid="1096" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" line="65" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VertexArray.h" bodystart="65" bodyend="242"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_vertex_array_1a7d664df85bb2d36b5b0e6f46c53b9597" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>append</name></member>
+      <member refid="classgf_1_1_vertex_array_1aa69dcc3a20e00ba828e2756519f22001" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>clear</name></member>
+      <member refid="classgf_1_1_vertex_array_1abeb5048610ce99319d6f650defe184ea" prot="public" virt="virtual"><scope>gf::VertexArray</scope><name>draw</name></member>
+      <member refid="classgf_1_1_vertex_array_1aa4f4e70f0f8612adf0496dede38cf6dd" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>getBounds</name></member>
+      <member refid="classgf_1_1_vertex_array_1a0fedfe97fb034e409ccda36d50d39e80" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>getPrimitiveType</name></member>
+      <member refid="classgf_1_1_vertex_array_1aa3c34ba51df3f55285f05159614a2b28" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>getVertexCount</name></member>
+      <member refid="classgf_1_1_vertex_array_1a78c8effcea25990842d49e7e2992fa68" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>getVertexData</name></member>
+      <member refid="classgf_1_1_vertex_array_1aec5a12dfde11518c2d11c8ca3f68fbea" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>isEmpty</name></member>
+      <member refid="classgf_1_1_vertex_array_1ae77d118f0691c55adb36c28121bcb5cb" prot="private" virt="non-virtual"><scope>gf::VertexArray</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_vertex_array_1a43c38c38fb04027d75e2ce2e76819e9f" prot="private" virt="non-virtual"><scope>gf::VertexArray</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_vertex_array_1af2bac3653190e3c0efb7afab7b3ecefe" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>operator[]</name></member>
+      <member refid="classgf_1_1_vertex_array_1a40e1935a20034469b5c25ca7dbaf68c8" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>operator[]</name></member>
+      <member refid="classgf_1_1_vertex_array_1af37db3a36a49bf3ecd8de61624f54327" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>reserve</name></member>
+      <member refid="classgf_1_1_vertex_array_1af0a78203accd6970eaf7fc2c822d4eda" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>resize</name></member>
+      <member refid="classgf_1_1_vertex_array_1a96dd2e2cb0c668983a271dbdc601ced1" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>setPrimitiveType</name></member>
+      <member refid="classgf_1_1_vertex_array_1a5d6f0a8038005abf8c2e81294936a7b4" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>VertexArray</name></member>
+      <member refid="classgf_1_1_vertex_array_1a56be627a12c76eca465f62f040eeaa6e" prot="public" virt="non-virtual"><scope>gf::VertexArray</scope><name>VertexArray</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::VertexArray</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

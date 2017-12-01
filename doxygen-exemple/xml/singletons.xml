@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="singletons" kind="page">
+    <compoundname>singletons</compoundname>
+    <title>Safe singletons</title>
+    <detaileddescription>
+<para>Gamedev Framwork (gf) provides two classes to define singletons: <ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref> and <ref refid="classgf_1_1_singleton_storage" kindref="compound">gf::SingletonStorage</ref>. It implements a variant of the <ulink url="https://en.wikipedia.org/wiki/Singleton_pattern">singleton pattern</ulink>.</para><sect1 id="singletons_1singletons_howto">
+<title>How to use singleton classes?</title>
+<para><ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref> is a wrapper around a pointer. The pointer is provided by a <ref refid="classgf_1_1_singleton_storage" kindref="compound">gf::SingletonStorage</ref> that is allocated in the stack. As soon as the storage is allocated, the singleton can be used like a global variable.</para><para><programlisting><codeline><highlight class="comment">//<sp/>a<sp/>global<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton&lt;gf::MessageManager&gt;</ref><sp/>gMessageManager;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>allocate<sp/>storage<sp/>for<sp/>the<sp/>singleton</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_singleton_storage" kindref="compound">gf::SingletonStorage&lt;gf::MessageManager&gt;</ref><sp/>storageForMessageManager(gMessageManager);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>now<sp/>on,<sp/>you<sp/>can<sp/>access<sp/>the<sp/>singleton<sp/>like<sp/>a<sp/>global<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gMessageManager().sendMessage&lt;Ping&gt;(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para>But beware: <ulink url="http://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons">singletons are bad</ulink>. You should try to create as few singletons as possible. Game development is one example where singletons can be used. Just because a game is a very complex piece of code and that singletons sometimes make the code more readable. Just know what you are doing.</para></sect1>
+<sect1 id="singletons_1singletons_why">
+<title>Why two classes?</title>
+<para>Short answer: to prevent the <ulink url="https://isocpp.org/wiki/faq/ctors#static-init-order">static initialization order fiasco</ulink>.</para><para>Long answer. Global variables are initialized at the start of the <computeroutput>main</computeroutput> function. The order of initialization depends on the compiler so that it can be quite messy if a global variable needs another global variable. This is called the static initialization order fiasco. There is no direct and simple workaround for this problem.</para><para>One solution is to use two classes. The first class is <ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref> and simply holds a pointer. Global variables of this type can be safely defined as the order of initialization is not relevant. The second class is <ref refid="classgf_1_1_singleton_storage" kindref="compound">gf::SingletonStorage</ref> and is allocated in the <computeroutput>main</computeroutput> function. It serves two purposes: provide an allocated object to the singleton; handle the lifetime of the object. Indeed, objects can be initialized like any other variables so the order is well specified. A bonus is the automatic deallocation at the end of the program. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

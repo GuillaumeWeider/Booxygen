@@ -1,0 +1,3322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_u_i" kind="class" language="C++" prot="public">
+    <compoundname>gf::UI</compoundname>
+    <basecompoundref refid="classgf_1_1_drawable" prot="public" virt="non-virtual">gf::Drawable</basecompoundref>
+    <includes refid="_u_i_8h" local="no">gf/UI.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Window</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::begin</definition>
+        <argsstring>(const std::string &amp;title, const RectF &amp;bounds, UIWindowFlags flags=None)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">UIWindowFlags</ref></type>
+          <declname>flags</declname>
+          <defval><ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref></defval>
+        </param>
+        <briefdescription>
+<para>Create a window. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.begin(</highlight><highlight class="stringliteral">&quot;Title&quot;</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_rect" kindref="compound">gf::RectF</ref>(20,<sp/>20,<sp/>200,<sp/>200),<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.end();</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area of the window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True is the content of the window is visible</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" kindref="member">end()</ref>, <ref refid="group__graphics_1ga1f6e0cfb0a30fef018c7dfa724ae6e20" kindref="member">gf::UIWindow</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Finish a window. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.begin(</highlight><highlight class="stringliteral">&quot;Title&quot;</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_rect" kindref="compound">gf::RectF</ref>(20,<sp/>20,<sp/>200,<sp/>200),<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.end();</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="485" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1acf80dc48d3af36fb81af3f01c231835d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::UI::windowGetBounds</definition>
+        <argsstring>()</argsstring>
+        <name>windowGetBounds</name>
+        <briefdescription>
+<para>Get the window bounds. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function must be called between <ref refid="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" kindref="member">begin()</ref> and <ref refid="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" kindref="member">end()</ref>.</para><para><simplesect kind="return"><para>The bounds of the current window </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="494" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Layout</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a507a56deaaa6eecf102e92243cd2a3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRowDynamic</definition>
+        <argsstring>(float height, int cols)</argsstring>
+        <name>layoutRowDynamic</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Dynamic row with fixed column layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the row</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab6f2e0bc248a3bc5ba1b352764e8b821" kindref="member">layoutRowStatic()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="513" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ab6f2e0bc248a3bc5ba1b352764e8b821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRowStatic</definition>
+        <argsstring>(float height, int itemWidth, int cols)</argsstring>
+        <name>layoutRowStatic</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>itemWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Static row with fixed column layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of each item in the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the row</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a507a56deaaa6eecf102e92243cd2a3bb" kindref="member">layoutRowDynamic()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="524" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRowBegin</definition>
+        <argsstring>(UILayout format, float height, int cols)</argsstring>
+        <name>layoutRowBegin</name>
+        <param>
+          <type><ref refid="group__graphics_1ga6a42c4039729410b3839e01afe754719" kindref="member">UILayout</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Start an immediate mode custom column layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the row: static or dynamic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the row</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="535" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRowPush</definition>
+        <argsstring>(float width)</argsstring>
+        <name>layoutRowPush</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Specify the width of the next column. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the next column</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="544" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRowEnd</definition>
+        <argsstring>()</argsstring>
+        <name>layoutRowEnd</name>
+        <briefdescription>
+<para>Finish an immediate mode custom column layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref>, <ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="551" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::layoutRow</definition>
+        <argsstring>(UILayout format, float height, ArrayRef&lt; float &gt; ratio)</argsstring>
+        <name>layoutRow</name>
+        <param>
+          <type><ref refid="group__graphics_1ga6a42c4039729410b3839e01afe754719" kindref="member">UILayout</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_array_ref" kindref="compound">ArrayRef</ref>&lt; float &gt;</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+<para>Array-based custom column layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the row: static or dynamic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the row </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to an array of ratios for the columns </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="560" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a974c9837f2e3990596da807d8130ffcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::separator</definition>
+        <argsstring>(float height)</argsstring>
+        <name>separator</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>An empty separator. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates an empty row so you have to specify a new row.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the row </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="569" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Layout: Group</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a0f417ea6c6d0e5ed793170550eb3ffd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::groupBegin</definition>
+        <argsstring>(const std::string &amp;title, UIWindowFlags flags=None)</argsstring>
+        <name>groupBegin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">UIWindowFlags</ref></type>
+          <declname>flags</declname>
+          <defval><ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref></defval>
+        </param>
+        <briefdescription>
+<para>Start a group. </para>        </briefdescription>
+        <detaileddescription>
+<para>The only allowed flags are <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">UIWindow::Title</ref>, <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">UIWindow::Border</ref>, <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20aae89bf06303fdc372f34ec166a263749" kindref="member">UIWindow::NoScrollbar</ref>.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.layoutRowStatic(groupHeight,<sp/>groupWidth,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.groupBegin(</highlight><highlight class="stringliteral">&quot;Group&quot;</highlight><highlight class="normal">,<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>group</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.groupEnd();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the group </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the group </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the group is visible</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1acd1e50425ba731b2eb66e0cab6ef357c" kindref="member">groupEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="594" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1acd1e50425ba731b2eb66e0cab6ef357c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::groupEnd</definition>
+        <argsstring>()</argsstring>
+        <name>groupEnd</name>
+        <briefdescription>
+<para>Finish a group. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.layoutRowStatic(groupHeight,<sp/>groupWidth,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.groupBegin(</highlight><highlight class="stringliteral">&quot;Group&quot;</highlight><highlight class="normal">,<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>group</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.groupEnd();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a0f417ea6c6d0e5ed793170550eb3ffd4" kindref="member">groupBegin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="603" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1aa32bccc14f2f9da2f547d0d6d78486ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::groupScrolledBegin</definition>
+        <argsstring>(UIScroll &amp;scroll, const std::string &amp;title, UIWindowFlags flags=None)</argsstring>
+        <name>groupScrolledBegin</name>
+        <param>
+          <type><ref refid="group__graphics_1gafb0b0f22d014392d732a2f727bab9476" kindref="member">UIScroll</ref> &amp;</type>
+          <declname>scroll</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">UIWindowFlags</ref></type>
+          <declname>flags</declname>
+          <defval><ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref></defval>
+        </param>
+        <briefdescription>
+<para>Start a scrolled group. </para>        </briefdescription>
+        <detaileddescription>
+<para>The only allowed flags are <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">UIWindow::Title</ref>, <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">UIWindow::Border</ref>, <ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20aae89bf06303fdc372f34ec166a263749" kindref="member">UIWindow::NoScrollbar</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A state for representing the scroll </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the group </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the group </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the group is visible</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1afefb687e114aa7363b55b0d834a554fd" kindref="member">groupScrolledEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="618" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1afefb687e114aa7363b55b0d834a554fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::groupScrolledEnd</definition>
+        <argsstring>()</argsstring>
+        <name>groupScrolledEnd</name>
+        <briefdescription>
+<para>Finish a scrolled group. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1aa32bccc14f2f9da2f547d0d6d78486ca" kindref="member">groupScrolledBegin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="625" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Layout: Tree</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ac2c1479b33489d6264d4e779131c771b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::treePush</definition>
+        <argsstring>(UITree type, const std::string &amp;title, UICollapse &amp;state)</argsstring>
+        <name>treePush</name>
+        <param>
+          <type><ref refid="group__graphics_1ga08e52c09767f611e8578fb66a0c4644e" kindref="member">UITree</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">UICollapse</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Start a tree layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>rootCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a074afcc50ae51f248cbae4950845549e" kindref="member">gf::UICollapse::Minimized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c6ba25104401c9ee0650230fc6ba413" kindref="member">gf::UITree::Tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Root&quot;</highlight><highlight class="normal">,<sp/>rootCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>childCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a49d903a5c02560cf79bf6b516cc89457" kindref="member">gf::UICollapse::Maximized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea6c3a6944a808a7c0bbb6788dbec54a9f" kindref="member">gf::UITree::Node</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Child&quot;</highlight><highlight class="normal">,<sp/>childCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>child<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>next<sp/>content<sp/>of<sp/>the<sp/>root<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of tree: tab or node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collapse state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the tree is maximized</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1abcc6cddf43ba9350d8473908224764f1" kindref="member">treePop()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="648" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1abcc6cddf43ba9350d8473908224764f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::treePop</definition>
+        <argsstring>()</argsstring>
+        <name>treePop</name>
+        <briefdescription>
+<para>Finish a tree layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>rootCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a074afcc50ae51f248cbae4950845549e" kindref="member">gf::UICollapse::Minimized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c6ba25104401c9ee0650230fc6ba413" kindref="member">gf::UITree::Tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Root&quot;</highlight><highlight class="normal">,<sp/>rootCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>childCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a49d903a5c02560cf79bf6b516cc89457" kindref="member">gf::UICollapse::Maximized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea6c3a6944a808a7c0bbb6788dbec54a9f" kindref="member">gf::UITree::Node</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Child&quot;</highlight><highlight class="normal">,<sp/>childCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>child<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>next<sp/>content<sp/>of<sp/>the<sp/>root<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ac2c1479b33489d6264d4e779131c771b" kindref="member">treePush()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="657" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Labels</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::label</definition>
+        <argsstring>(StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>label</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A simple label with text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a0d0c7d0d6b44f1901187b80a3a2cdddf" kindref="member">labelColored()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="676" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a0d0c7d0d6b44f1901187b80a3a2cdddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::labelColored</definition>
+        <argsstring>(const Color4f &amp;color, StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>labelColored</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A label with colored text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" kindref="member">label()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="687" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ad98c393b20deeb24956117ce9b0c087b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::labelWrap</definition>
+        <argsstring>(StringRef title)</argsstring>
+        <name>labelWrap</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>A simple label that can wrap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a551bb7354fd6b1901bde99ddbb675fc9" kindref="member">labelWrapColored()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="696" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a551bb7354fd6b1901bde99ddbb675fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::labelWrapColored</definition>
+        <argsstring>(const Color4f &amp;color, StringRef title)</argsstring>
+        <name>labelWrapColored</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>A label with colored text that can wrap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ad98c393b20deeb24956117ce9b0c087b" kindref="member">labelWrap()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="706" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a3d79bc8549a6464ae28253bc492e86f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::image</definition>
+        <argsstring>(const Texture &amp;texture, const RectF &amp;textureRect)</argsstring>
+        <name>image</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>textureRect</declname>
+        </param>
+        <briefdescription>
+<para>An image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A sub-rectangle of the texture to show </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="714" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Buttons</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ac13d357e9d9300f1b10dc5e7605aedec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::buttonSetBehavior</definition>
+        <argsstring>(UIButtonBehavior behavior)</argsstring>
+        <name>buttonSetBehavior</name>
+        <param>
+          <type><ref refid="group__graphics_1gafa2fae07fe31387c721a9c3bf1aef7cb" kindref="member">UIButtonBehavior</ref></type>
+          <declname>behavior</declname>
+        </param>
+        <briefdescription>
+<para>Change the behavior of buttons. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new behavior of buttons</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a56ba00eaada8406ab6ddd3039d8faf94" kindref="member">buttonPushBehavior()</ref>, <ref refid="classgf_1_1_u_i_1a490adcfbea3b4643d04456e07c162097" kindref="member">buttonPopBehavior()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="732" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a56ba00eaada8406ab6ddd3039d8faf94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonPushBehavior</definition>
+        <argsstring>(UIButtonBehavior behavior)</argsstring>
+        <name>buttonPushBehavior</name>
+        <param>
+          <type><ref refid="group__graphics_1gafa2fae07fe31387c721a9c3bf1aef7cb" kindref="member">UIButtonBehavior</ref></type>
+          <declname>behavior</declname>
+        </param>
+        <briefdescription>
+<para>Push a new behavior of buttons. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>behavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new behavior of buttons</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ac13d357e9d9300f1b10dc5e7605aedec" kindref="member">buttonSetBehavior()</ref>, <ref refid="classgf_1_1_u_i_1a490adcfbea3b4643d04456e07c162097" kindref="member">buttonPopBehavior()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="741" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a490adcfbea3b4643d04456e07c162097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonPopBehavior</definition>
+        <argsstring>()</argsstring>
+        <name>buttonPopBehavior</name>
+        <briefdescription>
+<para>Pop the previous behavior of buttons. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ac13d357e9d9300f1b10dc5e7605aedec" kindref="member">buttonSetBehavior()</ref>, <ref refid="classgf_1_1_u_i_1a56ba00eaada8406ab6ddd3039d8faf94" kindref="member">buttonPushBehavior()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="748" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonLabel</definition>
+        <argsstring>(StringRef title)</argsstring>
+        <name>buttonLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>A button with a centered label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the button </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the button was pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" kindref="member">buttonColor()</ref>, <ref refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" kindref="member">buttonSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" kindref="member">buttonSymbolLabel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="758" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>buttonColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>A button with a color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the button </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the button was pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" kindref="member">buttonLabel()</ref>, <ref refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" kindref="member">buttonSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" kindref="member">buttonSymbolLabel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="768" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonSymbol</definition>
+        <argsstring>(UISymbol symbol)</argsstring>
+        <name>buttonSymbol</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+<para>A button with a symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A symbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the button was pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" kindref="member">buttonLabel()</ref>, <ref refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" kindref="member">buttonColor()</ref>, <ref refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" kindref="member">buttonSymbolLabel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="778" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::buttonSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>buttonSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A button with a symbol and a centered label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A symbol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the button </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the symbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the button was pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" kindref="member">buttonLabel()</ref>, <ref refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" kindref="member">buttonColor()</ref>, <ref refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" kindref="member">buttonSymbol()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="790" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Checkbox</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1af1aa9f995cda346ca0599ff22598fa4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::checkbox</definition>
+        <argsstring>(StringRef title, bool &amp;active)</argsstring>
+        <name>checkbox</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>A checkbox with a title. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the checkbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a boolean that indicates the state of the checkbox </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the checkbox has changed its state</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ada5876a7009b62961398d7fe7e101748" kindref="member">checkboxFlags()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="810" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ada5876a7009b62961398d7fe7e101748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::checkboxFlags</definition>
+        <argsstring>(StringRef title, unsigned &amp;flags, unsigned value)</argsstring>
+        <name>checkboxFlags</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A checkbox with a title for flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the checkbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the state of flags </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flag value for this checkbox </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the checkbox has changed its state</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1af1aa9f995cda346ca0599ff22598fa4b" kindref="member">checkbox()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="822" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Radio</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a28fcbaa8eb6e6dada63da19f24fb60ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::option</definition>
+        <argsstring>(StringRef title, bool active)</argsstring>
+        <name>option</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>A radio button without state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the radio button </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A boolean that indicates if the radio is chosen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the radio is pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1aaf0fd0bef4258ac3e3d8caa00bff7c75" kindref="member">radio()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="842" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1aaf0fd0bef4258ac3e3d8caa00bff7c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::radio</definition>
+        <argsstring>(StringRef title, bool &amp;active)</argsstring>
+        <name>radio</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>A radio button with a reference state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the radio button </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the state of the radio </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the radio is pressed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a28fcbaa8eb6e6dada63da19f24fb60ec" kindref="member">option()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="853" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Selectable</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a3eef3c61be59ac55399bdb718d5837ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::selectableLabel</definition>
+        <argsstring>(StringRef title, UIAlignment align, bool &amp;value)</argsstring>
+        <name>selectableLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A selectable label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the state of the selection </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the state has changed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" kindref="member">label()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="874" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Slider</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a4bac30f1ff0b02140f3c005401945e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::sliderFloat</definition>
+        <argsstring>(float min, float &amp;val, float max, float step)</argsstring>
+        <name>sliderFloat</name>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>A slider for a float value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when changing the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the slider has changed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a55eb6ac28e684fc06045bcbc7aac36af" kindref="member">sliderInt()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="896" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a55eb6ac28e684fc06045bcbc7aac36af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::sliderInt</definition>
+        <argsstring>(int min, int &amp;val, int max, int step)</argsstring>
+        <name>sliderInt</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>A slider for an int value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when changing the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the slider has changed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a4bac30f1ff0b02140f3c005401945e2d" kindref="member">sliderFloat()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="909" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Progressbar</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ab36c4a86436e40c78dbcb9aaf48f2f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::progress</definition>
+        <argsstring>(std::size_t &amp;current, std::size_t max, UIProgress modifyable=UIProgress::Modifyable)</argsstring>
+        <name>progress</name>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga118728035ca7e2268496ed0acd9a2aeb" kindref="member">UIProgress</ref></type>
+          <declname>modifyable</declname>
+          <defval><ref refid="group__graphics_1gga118728035ca7e2268496ed0acd9a2aeba1aab5637508446595a70c7e15ef50bc6" kindref="member">UIProgress::Modifyable</ref></defval>
+        </param>
+        <briefdescription>
+<para>A progress bar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the state of the progress bar </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum of the progress bar (the minimum is zero) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modifyable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A property to indicate if the progress bar can be modified by the user or not </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the progress bar has changed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="928" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Color picker</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1abceadbe761b49e1f5585c1aebd177b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::colorPicker</definition>
+        <argsstring>(Color4f &amp;color)</argsstring>
+        <name>colorPicker</name>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>A color picker. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the state of the color picker, i.e. the current color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the color has changed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="945" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: Property</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a4ea3b80b5f9ef2803d781ca2e3314625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::propertyInt</definition>
+        <argsstring>(const std::string &amp;name, int min, int &amp;val, int max, int step, float incPerPixel)</argsstring>
+        <name>propertyInt</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>incPerPixel</declname>
+        </param>
+        <briefdescription>
+<para>A property for an integer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the property </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when changing the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when modifying the value with the mouse</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a53c060dd768be908f18af3f3bb06cd49" kindref="member">propertyFloat()</ref>, <ref refid="classgf_1_1_u_i_1ad81c88f9413595940934c82d3e72970a" kindref="member">propertyDouble()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="968" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a53c060dd768be908f18af3f3bb06cd49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::propertyFloat</definition>
+        <argsstring>(const std::string &amp;name, float min, float &amp;val, float max, float step, float incPerPixel)</argsstring>
+        <name>propertyFloat</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>incPerPixel</declname>
+        </param>
+        <briefdescription>
+<para>A property for a float. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the property </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when changing the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when modifying the value with the mouse</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a4ea3b80b5f9ef2803d781ca2e3314625" kindref="member">propertyInt()</ref>, <ref refid="classgf_1_1_u_i_1ad81c88f9413595940934c82d3e72970a" kindref="member">propertyDouble()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="982" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ad81c88f9413595940934c82d3e72970a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::propertyDouble</definition>
+        <argsstring>(const std::string &amp;name, double min, double &amp;val, double max, double step, float incPerPixel)</argsstring>
+        <name>propertyDouble</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>incPerPixel</declname>
+        </param>
+        <briefdescription>
+<para>A property for a double. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the property </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum for the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when changing the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step when modifying the value with the mouse</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a4ea3b80b5f9ef2803d781ca2e3314625" kindref="member">propertyInt()</ref>, <ref refid="classgf_1_1_u_i_1a53c060dd768be908f18af3f3bb06cd49" kindref="member">propertyFloat()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="996" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Widgets: TextEdit</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a4d50ffbe785d3b5a5a75f59a6674e2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__graphics_1ga3a98cef8d7a7ecab5af92b2a0be47b42" kindref="member">UIEditEventFlags</ref></type>
+        <definition>UIEditEventFlags gf::UI::edit</definition>
+        <argsstring>(UIEditFlags flags, BufferRef&lt; char &gt; buffer, std::size_t &amp;length, UIEditFilter filter=UIEditFilter::Default)</argsstring>
+        <name>edit</name>
+        <param>
+          <type><ref refid="group__graphics_1ga5164ab4d2380f9f086ee1e5468888c67" kindref="member">UIEditFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_buffer_ref" kindref="compound">BufferRef</ref>&lt; char &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>std::size_t &amp;</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga8530c5fb4e1d7ea911ccc1281af1afa8" kindref="member">UIEditFilter</ref></type>
+          <declname>filter</declname>
+          <defval><ref refid="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a7a1920d61156abc05a60135aefe8bc67" kindref="member">UIEditFilter::Default</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1007" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Dialogs</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ae6edb881afccc57737a6a998b5ffcd9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::fileSelector</definition>
+        <argsstring>(UIBrowser &amp;browser, const std::string &amp;title, const RectF &amp;bounds)</argsstring>
+        <name>fileSelector</name>
+        <param>
+          <type><ref refid="structgf_1_1_u_i_browser" kindref="compound">UIBrowser</ref> &amp;</type>
+          <declname>browser</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>File selector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>browser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the file selector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the file selector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area of the file selector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the file selector is open </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1026" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Popups</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::popupBegin</definition>
+        <argsstring>(UIPopup type, const std::string &amp;title, UIWindowFlags flags, const RectF &amp;bounds)</argsstring>
+        <name>popupBegin</name>
+        <param>
+          <type><ref refid="group__graphics_1ga513bd020a398cf8584c5c548bcc73988" kindref="member">UIPopup</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">UIWindowFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Start a popup window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of popup (static or dynamic) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the popup </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the popup window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area of the popup window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the popup is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a9826a8fd5f15d8e7e921560f947b7602" kindref="member">popupClose()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1048" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a9826a8fd5f15d8e7e921560f947b7602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::popupClose</definition>
+        <argsstring>()</argsstring>
+        <name>popupClose</name>
+        <briefdescription>
+<para>Close a popup window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1055" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::popupEnd</definition>
+        <argsstring>()</argsstring>
+        <name>popupEnd</name>
+        <briefdescription>
+<para>Finish a popup window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a9826a8fd5f15d8e7e921560f947b7602" kindref="member">popupClose()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1062" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Combo box</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::combobox</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;items, int &amp;selected, int itemHeight, Vector2f size)</argsstring>
+        <name>combobox</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>itemHeight</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>A simple combo box with a list of item. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of items in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the selected item in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the items in the list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" kindref="member">comboboxSeparator()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1083" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::comboboxSeparator</definition>
+        <argsstring>(const std::string &amp;itemsSeparatedBySeparator, char separator, int &amp;selected, int itemHeight, Vector2f size)</argsstring>
+        <name>comboboxSeparator</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>itemsSeparatedBySeparator</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>itemHeight</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>A simple combo box with a string and a separator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemsSeparatedBySeparator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string with all the items separated by a separator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>separator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The separator used in the string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the selected item in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the items in the list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" kindref="member">combobox()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1096" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1aa198bfaf6031d06ec3efff8641d3f48a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboBeginLabel</definition>
+        <argsstring>(StringRef selected, Vector2f size)</argsstring>
+        <name>comboBeginLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a combo box with a label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The selected item that appears in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the combo box is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" kindref="member">comboClose()</ref>, <ref refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" kindref="member">comboEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a1df1604aa5f16c146c92411ea9acbbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboBeginColor</definition>
+        <argsstring>(const Color4f &amp;color, Vector2f size)</argsstring>
+        <name>comboBeginColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a combo box with a color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color that appears in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the combo box is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" kindref="member">comboClose()</ref>, <ref refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" kindref="member">comboEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ac6d54bfad0135c3086f44c8ec2edd17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboBeginSymbol</definition>
+        <argsstring>(UISymbol symbol, Vector2f size)</argsstring>
+        <name>comboBeginSymbol</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a combo box with a symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol that appears in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the combo box is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" kindref="member">comboClose()</ref>, <ref refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" kindref="member">comboEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a9597e8db724b36d17b968106ead7a64e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboBeginSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef selected, Vector2f size)</argsstring>
+        <name>comboBeginSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>selected</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a combo box with a symbol and a label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol that appears in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The selected item that appears in the combo box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the combo box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the combo box is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" kindref="member">comboClose()</ref>, <ref refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" kindref="member">comboEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a6ba1364a4230e793850fecdba9109052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboItemLabel</definition>
+        <argsstring>(StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>comboItemLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A label inside the combo box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1abdd760f43fb3da33ea32dd6692dc7dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::comboItemSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>comboItemSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A symbol and a label inside the combo box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol of the item </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::comboClose</definition>
+        <argsstring>()</argsstring>
+        <name>comboClose</name>
+        <briefdescription>
+<para>Close a combo box. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" kindref="member">comboEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::comboEnd</definition>
+        <argsstring>()</argsstring>
+        <name>comboEnd</name>
+        <briefdescription>
+<para>Finish a combo box. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1aa198bfaf6031d06ec3efff8641d3f48a" kindref="member">comboBeginLabel()</ref>, <ref refid="classgf_1_1_u_i_1a1df1604aa5f16c146c92411ea9acbbb4" kindref="member">comboBeginColor()</ref>, <ref refid="classgf_1_1_u_i_1ac6d54bfad0135c3086f44c8ec2edd17b" kindref="member">comboBeginSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a9597e8db724b36d17b968106ead7a64e" kindref="member">comboBeginSymbolLabel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1174" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Contextual</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::contextualBegin</definition>
+        <argsstring>(UIWindowFlags flags, Vector2f size, const RectF &amp;triggerBounds)</argsstring>
+        <name>contextualBegin</name>
+        <param>
+          <type><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">UIWindowFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>triggerBounds</declname>
+        </param>
+        <briefdescription>
+<para>Start a contextual window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the contextual window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the contextual window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>triggerBounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounds when the contextual should appear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the contextual is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a568aafd3cdc965c8768c44a9386a5428" kindref="member">contextualClose()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a0ce458a8979706f2c10837cebfe1f01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::contextualItemLabel</definition>
+        <argsstring>(StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>contextualItemLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A label inside the contextual window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a1e521648683edd2db26efd1fd8672e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::contextualItemSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>contextualItemSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A symbol and a label inside the contextual window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol of the item </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a568aafd3cdc965c8768c44a9386a5428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::contextualClose</definition>
+        <argsstring>()</argsstring>
+        <name>contextualClose</name>
+        <briefdescription>
+<para>Close the contextual window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::contextualEnd</definition>
+        <argsstring>()</argsstring>
+        <name>contextualEnd</name>
+        <briefdescription>
+<para>Finish the contextual window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1a568aafd3cdc965c8768c44a9386a5428" kindref="member">contextualClose()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1228" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Tooltip</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::tooltip</definition>
+        <argsstring>(const std::string &amp;text)</argsstring>
+        <name>tooltip</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>A simple tooltip with a text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text of the tooltip </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a56d00f8126017ebffcfffbfa3e55340b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::tooltipBegin</definition>
+        <argsstring>(float width)</argsstring>
+        <name>tooltipBegin</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Start a tooltip. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The with of the tooltip </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the tooltip is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a23687763ebac7e54337a05cf9f64bec9" kindref="member">tooltipEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a23687763ebac7e54337a05cf9f64bec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::tooltipEnd</definition>
+        <argsstring>()</argsstring>
+        <name>tooltipEnd</name>
+        <briefdescription>
+<para>Finish a tooltip. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a56d00f8126017ebffcfffbfa3e55340b" kindref="member">tooltipBegin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1261" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Menu</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::menubarBegin</definition>
+        <argsstring>()</argsstring>
+        <name>menubarBegin</name>
+        <briefdescription>
+<para>Start a menu bar. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" kindref="member">menubarEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::menubarEnd</definition>
+        <argsstring>()</argsstring>
+        <name>menubarEnd</name>
+        <briefdescription>
+<para>Finish a menu bar. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" kindref="member">menubarBegin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a00211247782d01999e202d4228caa01d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::menuBeginLabel</definition>
+        <argsstring>(StringRef title, UIAlignment align, Vector2f size)</argsstring>
+        <name>menuBeginLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a menu with a label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the menu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the menu is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" kindref="member">menuClose()</ref>, <ref refid="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" kindref="member">menuEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ada2c18f624521d1ad836d2a976c991b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::menuBeginSymbol</definition>
+        <argsstring>(const std::string &amp;id, UISymbol symbol, Vector2f size)</argsstring>
+        <name>menuBeginSymbol</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a menu with a symbol. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A unique identifier for the menu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A symbol for the menu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the menu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the menu is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" kindref="member">menuClose()</ref>, <ref refid="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" kindref="member">menuEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1308" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a72cf7feb937f2f25790ae34248f90fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::menuBeginSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef title, UIAlignment align, Vector2f size)</argsstring>
+        <name>menuBeginSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Start a menu with a symbol and a label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A symbol for the menu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the menu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the menu is open</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" kindref="member">menuClose()</ref>, <ref refid="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" kindref="member">menuEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a5fb6434f51e6ca16f51e0d4c86307b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::menuItemLabel</definition>
+        <argsstring>(StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>menuItemLabel</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A label inside the menu. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a023e05166f4f93028d66319c1e86df4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::menuItemSymbolLabel</definition>
+        <argsstring>(UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)</argsstring>
+        <name>menuItemSymbolLabel</name>
+        <param>
+          <type><ref refid="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" kindref="member">UISymbol</ref></type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" kindref="member">UIAlignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" kindref="member">UIAlignment::Left</ref></defval>
+        </param>
+        <briefdescription>
+<para>A symbol and a label inside the menu. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol of the item </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the label </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text in the label </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the item is selected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::menuClose</definition>
+        <argsstring>()</argsstring>
+        <name>menuClose</name>
+        <briefdescription>
+<para>Close a menu. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" kindref="member">menuEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::menuEnd</definition>
+        <argsstring>()</argsstring>
+        <name>menuEnd</name>
+        <briefdescription>
+<para>Finish a menu. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" kindref="member">menuClose()</ref>, <ref refid="classgf_1_1_u_i_1a00211247782d01999e202d4228caa01d" kindref="member">menuBeginLabel()</ref>, <ref refid="classgf_1_1_u_i_1ada2c18f624521d1ad836d2a976c991b1" kindref="member">menuBeginSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a72cf7feb937f2f25790ae34248f90fe0" kindref="member">menuBeginSymbolLabel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1354" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Utilities</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1abe18e1185f3492ef92271164963fddc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::UI::getWidgetBounds</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetBounds</name>
+        <briefdescription>
+<para>Get the current widget bounds. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The bounds of the widget </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a7e2a69c8fe5fec001482859d0ccc4de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::UI::isWidgetHovered</definition>
+        <argsstring>()</argsstring>
+        <name>isWidgetHovered</name>
+        <briefdescription>
+<para>Check if the widget is hovered by the mouse. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must do this check just after the layout specification</para><para><simplesect kind="return"><para>True if the mouse hovers the widget </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a7110f218780c8e05eb3d6645a8f55c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::spacing</definition>
+        <argsstring>(int cols)</argsstring>
+        <name>spacing</name>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Create a horizontal spacing to fill some columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1386" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Style</header>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a2288154294f6996144e1f11833e1ae33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::setPredefinedStyle</definition>
+        <argsstring>(UIPredefinedStyle style)</argsstring>
+        <name>setPredefinedStyle</name>
+        <param>
+          <type><ref refid="group__graphics_1ga2fb32ce205a3b79af32b7c176d49c961" kindref="member">UIPredefinedStyle</ref></type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+<para>Set a predefined style for all the windows and the widgets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The predefined style</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__graphics_1ga2fb32ce205a3b79af32b7c176d49c961" kindref="member">gf::UIPredefinedStyle</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1404" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829a" prot="private" static="no">
+        <name>State</name>
+        <enumvalue id="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829aaa6122a65eaa676f700ae68d393054a37" prot="private">
+          <name>Start</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829aa324118a6721dd6b8a9b9f4e327df2bf5" prot="private">
+          <name>Input</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829aaad2376beebecdcf7846ba973fa1a005b" prot="private">
+          <name>Setup</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829aa2d03c2d5a7ec65ef4619e0582c272ec2" prot="private">
+          <name>Draw</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1413" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="1413" bodyend="1418"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgf_1_1_u_i_1aedc3cf63fe349f02705e0421e45a64fd" prot="public" static="yes" mutable="no">
+        <type>constexpr unsigned</type>
+        <definition>constexpr unsigned gf::UI::DefaultCharacterSize</definition>
+        <argsstring></argsstring>
+        <name>DefaultCharacterSize</name>
+        <initializer>= 13</initializer>
+        <briefdescription>
+<para>The default size for the font. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="415" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_u_i_1a43ef77435adfdcd24abbaefb8bfcf85c" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; UIImpl &gt;</type>
+        <definition>std::unique_ptr&lt;UIImpl&gt; gf::UI::m_impl</definition>
+        <argsstring></argsstring>
+        <name>m_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1425" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="1423" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_u_i_1ad667d483c44646386261091ceb3a7963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::UI::UI</definition>
+        <argsstring>(Font &amp;font, unsigned characterSize=DefaultCharacterSize)</argsstring>
+        <name>UI</name>
+        <param>
+          <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+          <defval><ref refid="classgf_1_1_u_i_1aedc3cf63fe349f02705e0421e45a64fd" kindref="member">DefaultCharacterSize</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font used in the interface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the font used in the interface </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a5cc48801f41a720c8150307112f77166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::UI::~UI</definition>
+        <argsstring>()</argsstring>
+        <name>~UI</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a2c60b9647c66d6fe25dd8e219e9d6abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::UI::UI</definition>
+        <argsstring>(const UI &amp;)=delete</argsstring>
+        <name>UI</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="433" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1acf19a5124d2674212985ddade6059d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;</type>
+        <definition>UI&amp; gf::UI::operator=</definition>
+        <argsstring>(const UI &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1aa019ce9a35b34cde7e405af3a50d1ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::UI::UI</definition>
+        <argsstring>(UI &amp;&amp;other)</argsstring>
+        <name>UI</name>
+        <param>
+          <type><ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="443" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a16a7549d10877461adc6191979976998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;</type>
+        <definition>UI&amp; gf::UI::operator=</definition>
+        <argsstring>(UI &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_u_i" kindref="compound">UI</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1a985edec80d3c0c9565fb987faa7fd2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::processEvent</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>processEvent</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the internal state with an event. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function must be called for every event that occur in a frame.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="457" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_u_i_1ae3f55b7784e4db1aa450d1c4d49f7772" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::UI::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1410" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_u_i_1aa5c34e2cfc16179acd1e9c8691b61f56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::UI::setState</definition>
+        <argsstring>(State state)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>State</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="1420" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Context for an immediate mode graphical interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>When building a graphical interfaces, you have basically two choices: either the retained mode where you build a hierarchy of widgets, or the immediate mode where widgets are built from function calls. Choosing the best mode between these two may be <ulink url="http://gamedev.stackexchange.com/questions/24103/immediate-gui-yae-or-nay">controversial</ulink>. gf offers an immediate mode graphical interface through this class.</para><para>The immediate mode graphical interface (or imgui) of gf is based on <ulink url="https://github.com/vurtun/nuklear">Nuklear</ulink>, a C library with the same purpose. gf does not provide (yet?) all the features of Nuklear, but a fair amount of the main features. Nuklear is totally abstracted in gf so you won&apos;t see any interface from Nuklear and you won&apos;t be able to interact directly with Nuklear. If you need a feature that is not implemented yet, just ask.</para><para>This imgui library can be used to create tools for the game developpers. It&apos;s easy and quick to build a functional interface with an imgui library. You can see some examples in gf itself. You can also use this library to build in-game interfaces, even if it&apos;s not its primary purpose. If your game is heavily based on a graphical interface, it may be a good option.</para><para><heading level="1">Creating a context</heading>
+</para><para>An instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> is a context for all the windows that will be created. You must provide a font and a character size that will be used in the interface. Generally, you create the instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> at the beginning of your application and then you use this instance throughout your application.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;font.ttf&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref><sp/>ui(font,<sp/>13);</highlight></codeline>
+</programlisting> By default, the character size is 13.</para><para><heading level="1">Managing events</heading>
+</para><para>The imgui needs to know the input events that occurred in the frame time. So when polling the events in your main loop, you must pass the events to the context so that it can be updated and take the good decision. For example, if you press on a button, the mouse event will be transmitted and the library will know that you pressed a button and act accordingly.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.processEvent(event);<sp/></highlight><highlight class="comment">//<sp/>update<sp/>the<sp/>imgui<sp/>with<sp/>input<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting></para><para><heading level="1">Creating a window</heading>
+</para><para>Then, you have to create a window. The window has a title that may appear in the titlebar. It also identifies the window so two windows must have two different titles. The window also has bounds, i.e. a position and a size, that indicates where to put the window in the screen. There is no automatic placement of windows. Finally, the window can have many properties (see <ref refid="group__graphics_1ga1f6e0cfb0a30fef018c7dfa724ae6e20" kindref="member">gf::UIWindow</ref>) that modify the interaction with the window. They are defined at the window creation.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.begin(</highlight><highlight class="stringliteral">&quot;Title&quot;</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_rect" kindref="compound">gf::RectF</ref>(20,<sp/>20,<sp/>200,<sp/>200),<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.end();</highlight></codeline>
+</programlisting> For each <ref refid="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" kindref="member">begin()</ref>, you have to call <ref refid="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" kindref="member">end()</ref> to finish the window. You can create as many windows as you want as long as they have different titles.</para><para><heading level="1">Determining a layout</heading>
+</para><para>Before drawing any widget, you have to define a layout. Think of it as a sort of specification for how to organize the following widgets. There are three types of layouts: rows, groups, trees.</para><para><heading level="2">Rows</heading>
+</para><para>Rows are the most common type of layout. The row layout is very flexible.</para><para>A row can be either static (it does not adapt to the width of the window) of dynamic (it adapts to the width of the window). It can be fixed (all columns have the same width) or custom (columns&apos; widths are specified, either relatively or absolutely), and in the latter case the specification can be global or in immediate mode. Here is a summary of the functions to use in each case:</para><para><itemizedlist>
+<listitem><para>dynamic row<itemizedlist>
+<listitem><para>fixed column layout: <ref refid="classgf_1_1_u_i_1a507a56deaaa6eecf102e92243cd2a3bb" kindref="member">layoutRowDynamic()</ref></para></listitem><listitem><para>custom column layout<itemizedlist>
+<listitem><para>array-based: <ref refid="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" kindref="member">layoutRow()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a971fd8cc345d8bd9f92e9f7d88fdf20c" kindref="member">gf::UILayout::Dynamic</ref></para></listitem><listitem><para>immediate-mode: <ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a971fd8cc345d8bd9f92e9f7d88fdf20c" kindref="member">gf::UILayout::Dynamic</ref>, <ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>static row<itemizedlist>
+<listitem><para>fixed column layout: <ref refid="classgf_1_1_u_i_1ab6f2e0bc248a3bc5ba1b352764e8b821" kindref="member">layoutRowStatic()</ref></para></listitem><listitem><para>custom column layout<itemizedlist>
+<listitem><para>array-based: <ref refid="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" kindref="member">layoutRow()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a84a8921b25f505d0d2077aeb5db4bc16" kindref="member">gf::UILayout::Static</ref></para></listitem><listitem><para>immediate-mode: <ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a84a8921b25f505d0d2077aeb5db4bc16" kindref="member">gf::UILayout::Static</ref>, <ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><heading level="2">Trees</heading>
+</para><para>A tree is a tree-like layout. It can be collapsed to hide its content except its title. There are two types of trees: tabs and nodes (see <ref refid="group__graphics_1ga08e52c09767f611e8578fb66a0c4644e" kindref="member">gf::UITree</ref>). A tab tree is generally put at the root of the tree, it is represented with a border around the title. A node tree is generally the son of a tab tree or another node tree. It is represented without any border.</para><para>In both cases, you need a variable of type <ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref> to handle the current state of the tree: minimized or maximized.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>rootCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a074afcc50ae51f248cbae4950845549e" kindref="member">gf::UICollapse::Minimized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c6ba25104401c9ee0650230fc6ba413" kindref="member">gf::UITree::Tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Root&quot;</highlight><highlight class="normal">,<sp/>rootCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>childCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a49d903a5c02560cf79bf6b516cc89457" kindref="member">gf::UICollapse::Maximized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea6c3a6944a808a7c0bbb6788dbec54a9f" kindref="member">gf::UITree::Node</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Child&quot;</highlight><highlight class="normal">,<sp/>childCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>child<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>next<sp/>content<sp/>of<sp/>the<sp/>root<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <heading level="2">Groups</heading>
+</para><para>A group is a kind of window inside a window. It can have a title, a border and a scrollbar. However, a group needs to be put in a row. See <ref refid="classgf_1_1_u_i_1a0f417ea6c6d0e5ed793170550eb3ffd4" kindref="member">groupBegin()</ref> and <ref refid="classgf_1_1_u_i_1acd1e50425ba731b2eb66e0cab6ef357c" kindref="member">groupEnd()</ref>.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.layoutRowStatic(groupHeight,<sp/>groupWidth,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.groupBegin(</highlight><highlight class="stringliteral">&quot;Group&quot;</highlight><highlight class="normal">,<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>group</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.groupEnd();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting></para><para><heading level="1">Adding widgets and more</heading>
+</para><para>The library offers common kinds of widgets:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Label_%28control%29">labels</ulink>: <ref refid="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" kindref="member">label()</ref>, <ref refid="classgf_1_1_u_i_1a3eef3c61be59ac55399bdb718d5837ab" kindref="member">selectableLabel()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Button_%28computing%29">buttons</ulink>: <ref refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" kindref="member">buttonLabel()</ref>, <ref refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" kindref="member">buttonColor()</ref>, <ref refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" kindref="member">buttonSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" kindref="member">buttonSymbolLabel()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Checkbox">checkboxes</ulink>: <ref refid="classgf_1_1_u_i_1af1aa9f995cda346ca0599ff22598fa4b" kindref="member">checkbox()</ref>, <ref refid="classgf_1_1_u_i_1ada5876a7009b62961398d7fe7e101748" kindref="member">checkboxFlags()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Radio_button">radio buttons</ulink>: <ref refid="classgf_1_1_u_i_1a28fcbaa8eb6e6dada63da19f24fb60ec" kindref="member">option()</ref>, <ref refid="classgf_1_1_u_i_1aaf0fd0bef4258ac3e3d8caa00bff7c75" kindref="member">radio()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Slider_%28computing%29">sliders</ulink>: <ref refid="classgf_1_1_u_i_1a4bac30f1ff0b02140f3c005401945e2d" kindref="member">sliderFloat()</ref>, <ref refid="classgf_1_1_u_i_1a55eb6ac28e684fc06045bcbc7aac36af" kindref="member">sliderInt()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Progress_bar">progress bars</ulink>: <ref refid="classgf_1_1_u_i_1ab36c4a86436e40c78dbcb9aaf48f2f5f" kindref="member">progress()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Color_tool">color pickers</ulink>: <ref refid="classgf_1_1_u_i_1abceadbe761b49e1f5585c1aebd177b28" kindref="member">colorPicker()</ref></para></listitem></itemizedlist>
+</para><para>Widgets often manipulate a reference to a user-provided variable that represents the state of the widget. This way, you can pass directly your model variables to the graphical interface without duplicating the data. Some widgets return a boolean that indicates a state change. For example, a button returns true if it has been pressed.</para><para>The library also offers common graphical interface elements:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Popover_%28GUI%29">popups</ulink>: <ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Combo_box">combo boxes</ulink>: <ref refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" kindref="member">combobox()</ref>, <ref refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" kindref="member">comboboxSeparator()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Context_menu">contextuals</ulink>: <ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Tooltip">tooltips</ulink>: <ref refid="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" kindref="member">tooltip()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Menu_28computing%29">menus</ulink>: <ref refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" kindref="member">menubarBegin()</ref>, <ref refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" kindref="member">menubarEnd()</ref></para></listitem></itemizedlist>
+</para><para>Many of these elements have a begin/end API. The end part must be called if the begin part succeeded, i.e. returned true. Some elements offer a simplified version without begin/end for common cases. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1056">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1055">
+        <label>gf::UI</label>
+        <link refid="classgf_1_1_u_i"/>
+        <childnode refid="1056" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1058">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1057">
+        <label>gf::UI</label>
+        <link refid="classgf_1_1_u_i"/>
+        <childnode refid="1058" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="410" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="410" bodyend="1426"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>begin</name></member>
+      <member refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonColor</name></member>
+      <member refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a490adcfbea3b4643d04456e07c162097" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonPopBehavior</name></member>
+      <member refid="classgf_1_1_u_i_1a56ba00eaada8406ab6ddd3039d8faf94" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonPushBehavior</name></member>
+      <member refid="classgf_1_1_u_i_1ac13d357e9d9300f1b10dc5e7605aedec" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonSetBehavior</name></member>
+      <member refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonSymbol</name></member>
+      <member refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>buttonSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1af1aa9f995cda346ca0599ff22598fa4b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>checkbox</name></member>
+      <member refid="classgf_1_1_u_i_1ada5876a7009b62961398d7fe7e101748" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>checkboxFlags</name></member>
+      <member refid="classgf_1_1_u_i_1abceadbe761b49e1f5585c1aebd177b28" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>colorPicker</name></member>
+      <member refid="classgf_1_1_u_i_1a1df1604aa5f16c146c92411ea9acbbb4" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboBeginColor</name></member>
+      <member refid="classgf_1_1_u_i_1aa198bfaf6031d06ec3efff8641d3f48a" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboBeginLabel</name></member>
+      <member refid="classgf_1_1_u_i_1ac6d54bfad0135c3086f44c8ec2edd17b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboBeginSymbol</name></member>
+      <member refid="classgf_1_1_u_i_1a9597e8db724b36d17b968106ead7a64e" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboBeginSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>combobox</name></member>
+      <member refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboboxSeparator</name></member>
+      <member refid="classgf_1_1_u_i_1ab5200e68563cb345ceb398936b8af2fc" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboClose</name></member>
+      <member refid="classgf_1_1_u_i_1ae98bfab1e4fd63785a6ddbfdf8668328" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a6ba1364a4230e793850fecdba9109052" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboItemLabel</name></member>
+      <member refid="classgf_1_1_u_i_1abdd760f43fb3da33ea32dd6692dc7dbc" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>comboItemSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>contextualBegin</name></member>
+      <member refid="classgf_1_1_u_i_1a568aafd3cdc965c8768c44a9386a5428" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>contextualClose</name></member>
+      <member refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>contextualEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a0ce458a8979706f2c10837cebfe1f01e" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>contextualItemLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a1e521648683edd2db26efd1fd8672e79" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>contextualItemSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1aedc3cf63fe349f02705e0421e45a64fd" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>DefaultCharacterSize</name></member>
+      <member refid="classgf_1_1_u_i_1ae3f55b7784e4db1aa450d1c4d49f7772" prot="public" virt="virtual"><scope>gf::UI</scope><name>draw</name></member>
+      <member refid="classgf_1_1_u_i_1a4d50ffbe785d3b5a5a75f59a6674e2d9" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>edit</name></member>
+      <member refid="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>end</name></member>
+      <member refid="classgf_1_1_u_i_1ae6edb881afccc57737a6a998b5ffcd9c" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>fileSelector</name></member>
+      <member refid="classgf_1_1_u_i_1abe18e1185f3492ef92271164963fddc7" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>getWidgetBounds</name></member>
+      <member refid="classgf_1_1_u_i_1a0f417ea6c6d0e5ed793170550eb3ffd4" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>groupBegin</name></member>
+      <member refid="classgf_1_1_u_i_1acd1e50425ba731b2eb66e0cab6ef357c" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>groupEnd</name></member>
+      <member refid="classgf_1_1_u_i_1aa32bccc14f2f9da2f547d0d6d78486ca" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>groupScrolledBegin</name></member>
+      <member refid="classgf_1_1_u_i_1afefb687e114aa7363b55b0d834a554fd" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>groupScrolledEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a3d79bc8549a6464ae28253bc492e86f7" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>image</name></member>
+      <member refid="classgf_1_1_u_i_1a7e2a69c8fe5fec001482859d0ccc4de2" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>isWidgetHovered</name></member>
+      <member refid="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>label</name></member>
+      <member refid="classgf_1_1_u_i_1a0d0c7d0d6b44f1901187b80a3a2cdddf" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>labelColored</name></member>
+      <member refid="classgf_1_1_u_i_1ad98c393b20deeb24956117ce9b0c087b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>labelWrap</name></member>
+      <member refid="classgf_1_1_u_i_1a551bb7354fd6b1901bde99ddbb675fc9" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>labelWrapColored</name></member>
+      <member refid="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRow</name></member>
+      <member refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRowBegin</name></member>
+      <member refid="classgf_1_1_u_i_1a507a56deaaa6eecf102e92243cd2a3bb" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRowDynamic</name></member>
+      <member refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRowEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRowPush</name></member>
+      <member refid="classgf_1_1_u_i_1ab6f2e0bc248a3bc5ba1b352764e8b821" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>layoutRowStatic</name></member>
+      <member refid="classgf_1_1_u_i_1a43ef77435adfdcd24abbaefb8bfcf85c" prot="private" virt="non-virtual"><scope>gf::UI</scope><name>m_impl</name></member>
+      <member refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menubarBegin</name></member>
+      <member refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menubarEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a00211247782d01999e202d4228caa01d" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuBeginLabel</name></member>
+      <member refid="classgf_1_1_u_i_1ada2c18f624521d1ad836d2a976c991b1" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuBeginSymbol</name></member>
+      <member refid="classgf_1_1_u_i_1a72cf7feb937f2f25790ae34248f90fe0" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuBeginSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1ae36f98027d16263fd5acdcbe5eafee04" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuClose</name></member>
+      <member refid="classgf_1_1_u_i_1a351214dad23db96c0b9177a0b838573a" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a5fb6434f51e6ca16f51e0d4c86307b9c" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuItemLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a023e05166f4f93028d66319c1e86df4a" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>menuItemSymbolLabel</name></member>
+      <member refid="classgf_1_1_u_i_1acf19a5124d2674212985ddade6059d8e" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_u_i_1a16a7549d10877461adc6191979976998" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_u_i_1a28fcbaa8eb6e6dada63da19f24fb60ec" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>option</name></member>
+      <member refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>popupBegin</name></member>
+      <member refid="classgf_1_1_u_i_1a9826a8fd5f15d8e7e921560f947b7602" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>popupClose</name></member>
+      <member refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>popupEnd</name></member>
+      <member refid="classgf_1_1_u_i_1a985edec80d3c0c9565fb987faa7fd2e7" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_u_i_1ab36c4a86436e40c78dbcb9aaf48f2f5f" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>progress</name></member>
+      <member refid="classgf_1_1_u_i_1ad81c88f9413595940934c82d3e72970a" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>propertyDouble</name></member>
+      <member refid="classgf_1_1_u_i_1a53c060dd768be908f18af3f3bb06cd49" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>propertyFloat</name></member>
+      <member refid="classgf_1_1_u_i_1a4ea3b80b5f9ef2803d781ca2e3314625" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>propertyInt</name></member>
+      <member refid="classgf_1_1_u_i_1aaf0fd0bef4258ac3e3d8caa00bff7c75" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>radio</name></member>
+      <member refid="classgf_1_1_u_i_1a3eef3c61be59ac55399bdb718d5837ab" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>selectableLabel</name></member>
+      <member refid="classgf_1_1_u_i_1a974c9837f2e3990596da807d8130ffcb" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>separator</name></member>
+      <member refid="classgf_1_1_u_i_1a2288154294f6996144e1f11833e1ae33" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>setPredefinedStyle</name></member>
+      <member refid="classgf_1_1_u_i_1aa5c34e2cfc16179acd1e9c8691b61f56" prot="private" virt="non-virtual"><scope>gf::UI</scope><name>setState</name></member>
+      <member refid="classgf_1_1_u_i_1a4bac30f1ff0b02140f3c005401945e2d" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>sliderFloat</name></member>
+      <member refid="classgf_1_1_u_i_1a55eb6ac28e684fc06045bcbc7aac36af" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>sliderInt</name></member>
+      <member refid="classgf_1_1_u_i_1a7110f218780c8e05eb3d6645a8f55c1b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>spacing</name></member>
+      <member refid="classgf_1_1_u_i_1a38e92eaa50098638f932b9545888829a" prot="private" virt="non-virtual"><scope>gf::UI</scope><name>State</name></member>
+      <member refid="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>tooltip</name></member>
+      <member refid="classgf_1_1_u_i_1a56d00f8126017ebffcfffbfa3e55340b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>tooltipBegin</name></member>
+      <member refid="classgf_1_1_u_i_1a23687763ebac7e54337a05cf9f64bec9" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>tooltipEnd</name></member>
+      <member refid="classgf_1_1_u_i_1abcc6cddf43ba9350d8473908224764f1" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>treePop</name></member>
+      <member refid="classgf_1_1_u_i_1ac2c1479b33489d6264d4e779131c771b" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>treePush</name></member>
+      <member refid="classgf_1_1_u_i_1ad667d483c44646386261091ceb3a7963" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>UI</name></member>
+      <member refid="classgf_1_1_u_i_1a2c60b9647c66d6fe25dd8e219e9d6abf" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>UI</name></member>
+      <member refid="classgf_1_1_u_i_1aa019ce9a35b34cde7e405af3a50d1ec7" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>UI</name></member>
+      <member refid="classgf_1_1_u_i_1acf80dc48d3af36fb81af3f01c231835d" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>windowGetBounds</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::UI</scope><name>~Drawable</name></member>
+      <member refid="classgf_1_1_u_i_1a5cc48801f41a720c8150307112f77166" prot="public" virt="non-virtual"><scope>gf::UI</scope><name>~UI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

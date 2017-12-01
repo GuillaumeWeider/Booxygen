@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_compound_curve" kind="class" language="C++" prot="public">
+    <compoundname>gf::CompoundCurve</compoundname>
+    <basecompoundref refid="classgf_1_1_curve" prot="public" virt="non-virtual">gf::Curve</basecompoundref>
+    <includes refid="_curves_8h" local="no">gf/Curves.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_compound_curve_1a8a840d73545538119115ba93986b293c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::CompoundCurve::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="186" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1aefa10b9b883610b29e5ffb4457e46ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::CompoundCurve::CompoundCurve</definition>
+        <argsstring>(Vector2f origin=Vector2f(0, 0))</argsstring>
+        <name>CompoundCurve</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+          <defval><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref>(0, 0)</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first point of the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1a6616a956c88d860182ab34245609e8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_compound_curve" kindref="compound">CompoundCurve</ref> &amp;</type>
+        <definition>CompoundCurve&amp; gf::CompoundCurve::setOrigin</definition>
+        <argsstring>(Vector2f origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Set the first point of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first point of the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference on the current compound curve </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1abc409d7dcc1576be60baaea4b8f9d53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_compound_curve" kindref="compound">CompoundCurve</ref> &amp;</type>
+        <definition>CompoundCurve&amp; gf::CompoundCurve::lineTo</definition>
+        <argsstring>(Vector2f p1)</argsstring>
+        <name>lineTo</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Create a line from the last point to a new point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new end point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1a0581b418cfbaf48c1f2dfc904dac97be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_compound_curve" kindref="compound">CompoundCurve</ref> &amp;</type>
+        <definition>CompoundCurve&amp; gf::CompoundCurve::quadraticCurveTo</definition>
+        <argsstring>(Vector2f p1, Vector2f p2, std::size_t pointCount=20)</argsstring>
+        <name>quadraticCurveTo</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Create a quadratic Bézier curve from the last point to a new point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The control point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points composing the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1a60f140c5639b70396315a70976fa73b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_compound_curve" kindref="compound">CompoundCurve</ref> &amp;</type>
+        <definition>CompoundCurve&amp; gf::CompoundCurve::cubicCurveTo</definition>
+        <argsstring>(Vector2f p1, Vector2f p2, Vector2f p3, std::size_t pointCount=30)</argsstring>
+        <name>cubicCurveTo</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+<para>Create a cubic Bézier curve from the last point to a new point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first control point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second control point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points composing the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1a5f88f4c96d02b85a7eab3c2a6648dfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::CompoundCurve::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Close the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>This create a line between the last point and the first point of the curve. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1af2ce27749cac38960e0ec755a3e9ae3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_compound_curve" kindref="compound">CompoundCurve</ref> &amp;</type>
+        <definition>CompoundCurve&amp; gf::CompoundCurve::clear</definition>
+        <argsstring>(Vector2f origin=Vector2f(0, 0))</argsstring>
+        <name>clear</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+          <defval><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref>(0, 0)</defval>
+        </param>
+        <briefdescription>
+<para>Reset the curve to a new origin. </para>        </briefdescription>
+        <detaileddescription>
+<para>The curve is open again.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first point of the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1ab13ca041e8073292b066afc8f7acaafe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::CompoundCurve::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_compound_curve_1a5e04910e52ba5e83faf7e44cba9445e2" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_compound_curve_1a5e04910e52ba5e83faf7e44cba9445e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::CompoundCurve::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the curve&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the curve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_compound_curve_1ab13ca041e8073292b066afc8f7acaafe" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="183" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A compound curve. </para>    </briefdescription>
+    <detaileddescription>
+<para>A compound curve is a curve composed of several continuous curves. It is sometimes called a path in vector graphics software. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="149">
+        <label>gf::CompoundCurve</label>
+        <link refid="classgf_1_1_compound_curve"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="151">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="153">
+        <label>gf::CompoundCurve</label>
+        <link refid="classgf_1_1_compound_curve"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="155">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" bodystart="122" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_compound_curve_1af2ce27749cac38960e0ec755a3e9ae3f" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>clear</name></member>
+      <member refid="classgf_1_1_compound_curve_1a5f88f4c96d02b85a7eab3c2a6648dfde" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>close</name></member>
+      <member refid="classgf_1_1_curve_1a1cff9947e7a2ca8bd819af431460845b" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_curve_1a81cdd96a68982a3f51a0c4a4f9ac4353" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_compound_curve_1aefa10b9b883610b29e5ffb4457e46ff9" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>CompoundCurve</name></member>
+      <member refid="classgf_1_1_compound_curve_1a60f140c5639b70396315a70976fa73b6" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>cubicCurveTo</name></member>
+      <member refid="classgf_1_1_curve_1a564dba3050a213392a10d23f4ed1ba90" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>Curve</name></member>
+      <member refid="classgf_1_1_curve_1aa54fc04c78d0e2c4471647728ca29c95" prot="public" virt="virtual"><scope>gf::CompoundCurve</scope><name>draw</name></member>
+      <member refid="classgf_1_1_curve_1a71ee8668036208a3a26b84fd7686172b" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_curve_1a4924072750e0aab38e10272786bf7a7b" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_curve_1a6dcca32a07306fd868dc732bb246c134" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1a5ea717b424d865f3b52cabda32754542" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_compound_curve_1a5e04910e52ba5e83faf7e44cba9445e2" prot="public" virt="virtual"><scope>gf::CompoundCurve</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_compound_curve_1ab13ca041e8073292b066afc8f7acaafe" prot="public" virt="virtual"><scope>gf::CompoundCurve</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_curve_1a8bcfb3e49fed7d6a38bfd4065c16a9c1" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getType</name></member>
+      <member refid="classgf_1_1_curve_1a6b74eb47e582346ff9e8706a9a5d0eb8" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>getWidth</name></member>
+      <member refid="classgf_1_1_compound_curve_1abc409d7dcc1576be60baaea4b8f9d53c" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>lineTo</name></member>
+      <member refid="classgf_1_1_compound_curve_1a8a840d73545538119115ba93986b293c" prot="private" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>m_points</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>move</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a306eccd159d833238a04d882d7d9a321" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>Outlined</name></member>
+      <member refid="classgf_1_1_compound_curve_1a0581b418cfbaf48c1f2dfc904dac97be" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>quadraticCurveTo</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>scale</name></member>
+      <member refid="classgf_1_1_curve_1af7a049cb925bb1b7d4de1ffe36056133" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_curve_1a984074936efb2cb0fa03d37f3330eece" prot="protected" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setClosed</name></member>
+      <member refid="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_compound_curve_1a6616a956c88d860182ab34245609e8ff" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1ae5c7357a6ebb37fd978486b430f8286d" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_curve_1afa5e524b5de1d869e7cd83524f7dfbda" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setType</name></member>
+      <member refid="classgf_1_1_curve_1a4d1ee3635fa82957c94f3f2085f8651f" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>setWidth</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a119907af16879acca1aafb34e91d5c1d" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>Simple</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" prot="public" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>Type</name></member>
+      <member refid="classgf_1_1_curve_1a3dee8a7f5d153f4f276dd4127f5bd391" prot="protected" virt="non-virtual"><scope>gf::CompoundCurve</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::CompoundCurve</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

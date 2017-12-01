@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_gamepad_button_control" kind="class" language="C++" prot="public">
+    <compoundname>gf::GamepadButtonControl</compoundname>
+    <basecompoundref refid="classgf_1_1_control" prot="public" virt="non-virtual">gf::Control</basecompoundref>
+    <includes refid="_controls_8h" local="no">gf/Controls.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_gamepad_button_control_1ab383d63fd77c8c352f431d537fed9e83" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+        <definition>GamepadId gf::GamepadButtonControl::m_id</definition>
+        <argsstring></argsstring>
+        <name>m_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="110" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_gamepad_button_control_1a6000cd063abd0e8dd5bb39542cc03e29" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" kindref="member">GamepadButton</ref></type>
+        <definition>GamepadButton gf::GamepadButtonControl::m_button</definition>
+        <argsstring></argsstring>
+        <name>m_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="111" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_gamepad_button_control_1a7f697e4ec578faecb00523dd538f499c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::GamepadButtonControl::GamepadButtonControl</definition>
+        <argsstring>(GamepadId id, GamepadButton button)</argsstring>
+        <name>GamepadButtonControl</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" kindref="member">GamepadButton</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Contruct a gamepad button control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the gamepad </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button of the gamepad </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" kindref="member">gf::Gamepad::open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_button_control_1a409ddb7a9639100681cf9137691dee1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::GamepadButtonControl::processEvent</definition>
+        <argsstring>(const Event &amp;event) override</argsstring>
+        <name>processEvent</name>
+        <reimplements refid="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc">processEvent</reimplements>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the control thanks to an event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to update the control.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" kindref="member">Action::processEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="107" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A gamepad button control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="347">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="346">
+        <label>gf::GamepadButtonControl</label>
+        <link refid="classgf_1_1_gamepad_button_control"/>
+        <childnode refid="347" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="349">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="348">
+        <label>gf::GamepadButtonControl</label>
+        <link refid="classgf_1_1_gamepad_button_control"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="96" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_control_1ad97882f2c328b5f235a87bb608cf8cb5" prot="public" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>Control</name></member>
+      <member refid="classgf_1_1_gamepad_button_control_1a7f697e4ec578faecb00523dd538f499c" prot="public" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>GamepadButtonControl</name></member>
+      <member refid="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" prot="public" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>isActive</name></member>
+      <member refid="classgf_1_1_gamepad_button_control_1a6000cd063abd0e8dd5bb39542cc03e29" prot="private" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>m_button</name></member>
+      <member refid="classgf_1_1_gamepad_button_control_1ab383d63fd77c8c352f431d537fed9e83" prot="private" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>m_id</name></member>
+      <member refid="classgf_1_1_gamepad_button_control_1a409ddb7a9639100681cf9137691dee1a" prot="public" virt="virtual"><scope>gf::GamepadButtonControl</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" prot="public" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>reset</name></member>
+      <member refid="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" prot="public" virt="non-virtual"><scope>gf::GamepadButtonControl</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_control_1a85333ef810395ee3fd2ddba48cce76fc" prot="public" virt="virtual"><scope>gf::GamepadButtonControl</scope><name>~Control</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

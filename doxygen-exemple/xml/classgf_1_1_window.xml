@@ -1,0 +1,896 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>gf::Window</compoundname>
+    <includes refid="_window_8h" local="no">gf/Window.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Window&apos;s lifecycle</header>
+      <memberdef kind="function" id="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isOpen</name>
+        <briefdescription>
+<para>Tell whether or not closing has been requested. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is open, false if closing has been requested </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Request for closing. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not close the window immediately. It only requests the window to close. Actual closing is done when the object is destroyed.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" kindref="member">isOpen()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Window&apos;s positon and size</header>
+      <memberdef kind="function" id="classgf_1_1_window_1a38d2e326f6bece85778fe752eefed482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setTitle</definition>
+        <argsstring>(StringRef title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Change the title of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New title </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a931eb9c06b2b581fe0e0832f599abebd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Window::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>Get the position of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The position of the window, in pixels </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1ac0b76a8274cd6bcfea97de514ec02f13" kindref="member">setPosition()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1ac0b76a8274cd6bcfea97de514ec02f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setPosition</definition>
+        <argsstring>(Vector2i position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Change the position of the window on screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New position, in pixels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a931eb9c06b2b581fe0e0832f599abebd" kindref="member">getPosition()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a6f169344709bb65974d53247c6cedb74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Window::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the rendering region of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size in pixels </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1aaff47b034e3cec36e5942e0418e13059" kindref="member">setSize()</ref>, <ref refid="classgf_1_1_window_1a578520fb3fa3385fbc52e10c6ac51eb1" kindref="member">getFramebufferSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1aaff47b034e3cec36e5942e0418e13059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setSize</definition>
+        <argsstring>(Vector2u size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Change the size of the rendering region of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size, in pixels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a6f169344709bb65974d53247c6cedb74" kindref="member">getSize()</ref>, <ref refid="classgf_1_1_window_1a578520fb3fa3385fbc52e10c6ac51eb1" kindref="member">getFramebufferSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a578520fb3fa3385fbc52e10c6ac51eb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Window::getFramebufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getFramebufferSize</name>
+        <briefdescription>
+<para>Get the size of the underlying framebuffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This size can differ from the size returned by <ref refid="classgf_1_1_window_1a6f169344709bb65974d53247c6cedb74" kindref="member">getSize()</ref> for high-DPI screens.</para><para><simplesect kind="return"><para><ref refid="classgf_1_1_window_1a6f169344709bb65974d53247c6cedb74" kindref="member">getSize()</ref>, <ref refid="classgf_1_1_window_1aaff47b034e3cec36e5942e0418e13059" kindref="member">setSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a37dd6d312e1ab1cf1eecc43ab35e2c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setFullscreen</definition>
+        <argsstring>(bool full=true)</argsstring>
+        <name>setFullscreen</name>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Change the window state to fullscreen or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the window must be in fullscreen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1acbcd626cf1be02a768e42bd0002d587b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::toggleFullscreen</definition>
+        <argsstring>()</argsstring>
+        <name>toggleFullscreen</name>
+        <briefdescription>
+<para>Toggle the fullscreen state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1ad0c45bf3252b2a676755960a07ef4138" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isFullscreen</definition>
+        <argsstring>() const</argsstring>
+        <name>isFullscreen</name>
+        <briefdescription>
+<para>Check if the window is fullscreen or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is fullscreen </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="217" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="217" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Window&apos;s state</header>
+      <memberdef kind="function" id="classgf_1_1_window_1a71d47b2d26424098b05210736c8d9d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::minimize</definition>
+        <argsstring>()</argsstring>
+        <name>minimize</name>
+        <briefdescription>
+<para>Minimize the window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1af5900fe9bb58c7c628f5ffce8ff28dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::restore</definition>
+        <argsstring>()</argsstring>
+        <name>restore</name>
+        <briefdescription>
+<para>Restore the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>Restore the size and position of a minimized or maximized window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a23c06cd383420c3145b6c780724daefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::maximize</definition>
+        <argsstring>()</argsstring>
+        <name>maximize</name>
+        <briefdescription>
+<para>Maximize the window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a55d8286c6c5bc38956da073187aa9f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>Show a window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_window_1a375416856300f979d8c529df9c043713" kindref="member">hide()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a375416856300f979d8c529df9c043713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <briefdescription>
+<para>Hide a window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_window_1a55d8286c6c5bc38956da073187aa9f1f" kindref="member">show()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a29b9949da62c3002eafe6a41eb2f1693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setVisible</definition>
+        <argsstring>(bool visible=true)</argsstring>
+        <name>setVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Show or hide the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>The window is shown by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to show the window, false to hide it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a55d8286c6c5bc38956da073187aa9f1f" kindref="member">show()</ref>, <ref refid="classgf_1_1_window_1a375416856300f979d8c529df9c043713" kindref="member">hide()</ref>, <ref refid="classgf_1_1_window_1a291a6b1786311e9e947c493ee4fc86ef" kindref="member">isVisible()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a2f4a59604ebffb0ec95d12773aefc597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setDecorated</definition>
+        <argsstring>(bool decorated=true)</argsstring>
+        <name>setDecorated</name>
+        <param>
+          <type>bool</type>
+          <declname>decorated</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Show or hide the decoration of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>decorated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to show decoration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a7630ac57c4b7acba61ed55deaf7b5b11" kindref="member">isDecorated()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a2f6cf7e29ff61613c24e6c55284fb773" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isFocused</definition>
+        <argsstring>() const</argsstring>
+        <name>isFocused</name>
+        <briefdescription>
+<para>Check if the window is focused. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is focused </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="280" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1acbeaca7a6e8f3ae64ac4ae594c920365" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isMinimized</definition>
+        <argsstring>() const</argsstring>
+        <name>isMinimized</name>
+        <briefdescription>
+<para>Check if the window is minimized. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is minimized </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a750f1d71374d840fb03cbd4ee72bfd82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isResizable</definition>
+        <argsstring>() const</argsstring>
+        <name>isResizable</name>
+        <briefdescription>
+<para>Check if the window is resizable. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is resizable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a291a6b1786311e9e947c493ee4fc86ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isVisible</definition>
+        <argsstring>() const</argsstring>
+        <name>isVisible</name>
+        <briefdescription>
+<para>Check if the window is visible. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is visible </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="301" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a7630ac57c4b7acba61ed55deaf7b5b11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isDecorated</definition>
+        <argsstring>() const</argsstring>
+        <name>isDecorated</name>
+        <briefdescription>
+<para>Check if the window is decorated. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the window is decorated </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="308" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Event handling</header>
+      <memberdef kind="function" id="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::pollEvent</definition>
+        <argsstring>(Event &amp;event)</argsstring>
+        <name>pollEvent</name>
+        <param>
+          <type><ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Pop the event on top of the event queue, if any, and return it. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is not blocking: if there&apos;s no pending event then it will return false and leave <computeroutput>event</computeroutput> unmodified. Note that more than one event may be present in the event queue, thus you should always call this function in a loop to make sure that you process every pending event.</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>process<sp/>event...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structgf_1_1_event" kindref="compound">Event</ref> to be returned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if an event was returned, or false if the event queue was empty </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" kindref="member">waitEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::waitEvent</definition>
+        <argsstring>(Event &amp;event)</argsstring>
+        <name>waitEvent</name>
+        <param>
+          <type><ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Wait for an event and return it. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is blocking: if there&apos;s no pending event then it will wait until an event is received. After this function returns (and no error occurred), the <computeroutput>event</computeroutput> object is always valid and filled properly. This function is typically used when you have a thread that is dedicated to events handling: you want to make this thread sleep as long as no new event is received.</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" kindref="member">waitEvent</ref>(event))</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>process<sp/>event...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structgf_1_1_event" kindref="compound">Event</ref> to be returned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if any error occurred </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="364" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Display</header>
+      <memberdef kind="function" id="classgf_1_1_window_1af8dd7e7c736c122366bbf3a952db707e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setVerticalSyncEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setVerticalSyncEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enable or disable vertical synchronization. </para>        </briefdescription>
+        <detaileddescription>
+<para>Activating vertical synchronization will limit the number of frames displayed to the refresh rate of the monitor. This can avoid some visual artifacts, and limit the framerate to a good value (but not constant across different computers).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable v-sync, false to deactivate it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1aead2edba09b75b207f3f583bfa766347" kindref="member">isVerticalSyncEnabled()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1aead2edba09b75b207f3f583bfa766347" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Window::isVerticalSyncEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isVerticalSyncEnabled</name>
+        <briefdescription>
+<para>Check if the vertical synchronization is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the v-sync is enabled </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_window_1af8dd7e7c736c122366bbf3a952db707e" kindref="member">setVerticalSyncEnabled()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="392" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a24e0ada9e56ba6f30615af3600a3493f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setFramerateLimit</definition>
+        <argsstring>(unsigned int limit)</argsstring>
+        <name>setFramerateLimit</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+<para>Limit the framerate to a maximum fixed frequency. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a limit is set, the window will use a small delay after each call to <ref refid="classgf_1_1_window_1af9c4a7e16529e3fcdc603aead494ea94" kindref="member">display()</ref> to ensure that the current frame lasted long enough to match the framerate limit.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Framerate limit, in frames per seconds (use 0 to disable limit) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1af9c4a7e16529e3fcdc603aead494ea94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+<para>Display on screen what has been rendered to the window so far. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is typically called after all OpenGL rendering has been done for the current frame, in order to show it on screen.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" kindref="member">RenderWindow::display()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="414" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Input management</header>
+      <memberdef kind="function" id="classgf_1_1_window_1a6950c72b8ebc294f5cd62a83c6c1f408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setMouseCursorVisible</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>setMouseCursorVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+<para>Show or hide the mouse cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The mouse cursor is visible by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to show the mouse cursor, false to hide it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="431" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a896ed7e5bc16dfb52d593c992e5b70f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setMouseCursorGrabbed</definition>
+        <argsstring>(bool grabbed)</argsstring>
+        <name>setMouseCursorGrabbed</name>
+        <param>
+          <type>bool</type>
+          <declname>grabbed</declname>
+        </param>
+        <briefdescription>
+<para>Grab or release the mouse cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>If set, grabs the mouse cursor inside this window&apos;s client area so it may no longer be moved outside its bounds. Note that grabbing is only active while the window has focus and calling this function for fullscreen windows won&apos;t have any effect (fullscreen windows always grab the cursor).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grabbed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable, false to disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a6bb93be3a77f1fab046201fc3af655d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Window::setMouseCursor</definition>
+        <argsstring>(const Cursor &amp;cursor)</argsstring>
+        <name>setMouseCursor</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+<para>Set the displayed cursor to a native system cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Upon window creation, the arrow cursor is used by default.</para><para><simplesect kind="warning"><para>The cursor must not be destroyed while in use by the window.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Native system cursor type to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="457" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_window_1a70f9dec029e1e8517f34c0075a1a9688" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref></type>
+        <definition>Library gf::Window::m_lib</definition>
+        <argsstring></argsstring>
+        <name>m_lib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="463" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1ae76aef7cd8758216814081030f62667d" prot="private" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* gf::Window::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="466" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1a516828ccdb0d93ee2bb5d866ebb431ed" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* gf::Window::m_context</definition>
+        <argsstring></argsstring>
+        <name>m_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="467" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1ae2fa2cf5b3d8e09ee06aef5c047cc06c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gf::Window::m_shouldClose</definition>
+        <argsstring></argsstring>
+        <name>m_shouldClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="468" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1a757045ea2449dd74b45de48d2aa822a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gf::Window::m_isFullscreen</definition>
+        <argsstring></argsstring>
+        <name>m_isFullscreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="469" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1a005795f1f8ebbccf8a2cc2276fe6a2b1" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_clock" kindref="compound">Clock</ref></type>
+        <definition>Clock gf::Window::m_clock</definition>
+        <argsstring></argsstring>
+        <name>m_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="472" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_window_1ae5eb0944302ae7cd91b6969aea039351" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::Window::m_duration</definition>
+        <argsstring></argsstring>
+        <name>m_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="473" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_window_1a4604d162a6c295ba70fed6e1f4398328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Window::Window</definition>
+        <argsstring>(StringRef title, Vector2u size, WindowFlags hints=WindowFlags(All))</argsstring>
+        <name>Window</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gaddbdac9d343e47408a923ec5fc5a5090" kindref="member">WindowFlags</ref></type>
+          <declname>hints</declname>
+          <defval><ref refid="group__window_1gaddbdac9d343e47408a923ec5fc5a5090" kindref="member">WindowFlags</ref>(<ref refid="group__core_1ga21fb73589fe7966a778a8b77ff9f16b8" kindref="member">All</ref>)</defval>
+        </param>
+        <briefdescription>
+<para>Create a new window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates the window with the size defined in <computeroutput>size</computeroutput>. Additional parameters can be passed with <computeroutput>hints</computeroutput> (resizable, visible, decorated).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial size of the window </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some hints for the creation of the window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__window_1ga62cc170c1e16539e4bad1d9f27c6b752" kindref="member">gf::WindowHints</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a7bad084073b4fedd15b956a66539b2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Actually destroy the window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1a308b61ed6daee1a20c88a1ff55ec751f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Window::Window</definition>
+        <argsstring>(const Window &amp;)=delete</argsstring>
+        <name>Window</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_window" kindref="compound">Window</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_window_1ad6fdf699422b63743b3d1af12ad7fd26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_window" kindref="compound">Window</ref> &amp;</type>
+        <definition>Window&amp; gf::Window::operator=</definition>
+        <argsstring>(const Window &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_window" kindref="compound">Window</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="120" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An OS window. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref> class provides a simple interface for manipulating the window: move, resize, show/hide, control mouse cursor, etc. It also provides event handling through its <ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent()</ref> and <ref refid="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" kindref="member">waitEvent()</ref> functions.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;My<sp/>window&quot;</highlight><highlight class="normal">,<sp/>{<sp/>640,<sp/>480<sp/>},<sp/><ref refid="group__window_1gga62cc170c1e16539e4bad1d9f27c6b752aaff10bf1618da00a8a80b74044e719b2" kindref="member">gf::WindowHints::Resizable</ref><sp/>|<sp/><ref refid="group__game_1ggad82e9592419fd671caafe4af9b4f89e7aec24d78ce33048dc73a2b6b1a0690192" kindref="member">gf::WindowHints::Visible</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" kindref="member">isOpen</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>process<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="88" bodyend="474"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>close</name></member>
+      <member refid="classgf_1_1_window_1af9c4a7e16529e3fcdc603aead494ea94" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>display</name></member>
+      <member refid="classgf_1_1_window_1a578520fb3fa3385fbc52e10c6ac51eb1" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>getFramebufferSize</name></member>
+      <member refid="classgf_1_1_window_1a931eb9c06b2b581fe0e0832f599abebd" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_window_1a6f169344709bb65974d53247c6cedb74" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_window_1a375416856300f979d8c529df9c043713" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>hide</name></member>
+      <member refid="classgf_1_1_window_1a7630ac57c4b7acba61ed55deaf7b5b11" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isDecorated</name></member>
+      <member refid="classgf_1_1_window_1a2f6cf7e29ff61613c24e6c55284fb773" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isFocused</name></member>
+      <member refid="classgf_1_1_window_1ad0c45bf3252b2a676755960a07ef4138" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isFullscreen</name></member>
+      <member refid="classgf_1_1_window_1acbeaca7a6e8f3ae64ac4ae594c920365" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isMinimized</name></member>
+      <member refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isOpen</name></member>
+      <member refid="classgf_1_1_window_1a750f1d71374d840fb03cbd4ee72bfd82" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isResizable</name></member>
+      <member refid="classgf_1_1_window_1aead2edba09b75b207f3f583bfa766347" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isVerticalSyncEnabled</name></member>
+      <member refid="classgf_1_1_window_1a291a6b1786311e9e947c493ee4fc86ef" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>isVisible</name></member>
+      <member refid="classgf_1_1_window_1a005795f1f8ebbccf8a2cc2276fe6a2b1" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_clock</name></member>
+      <member refid="classgf_1_1_window_1a516828ccdb0d93ee2bb5d866ebb431ed" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_context</name></member>
+      <member refid="classgf_1_1_window_1ae5eb0944302ae7cd91b6969aea039351" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_duration</name></member>
+      <member refid="classgf_1_1_window_1a757045ea2449dd74b45de48d2aa822a4" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_isFullscreen</name></member>
+      <member refid="classgf_1_1_window_1a70f9dec029e1e8517f34c0075a1a9688" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_lib</name></member>
+      <member refid="classgf_1_1_window_1ae2fa2cf5b3d8e09ee06aef5c047cc06c" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_shouldClose</name></member>
+      <member refid="classgf_1_1_window_1ae76aef7cd8758216814081030f62667d" prot="private" virt="non-virtual"><scope>gf::Window</scope><name>m_window</name></member>
+      <member refid="classgf_1_1_window_1a23c06cd383420c3145b6c780724daefd" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>maximize</name></member>
+      <member refid="classgf_1_1_window_1a71d47b2d26424098b05210736c8d9d81" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>minimize</name></member>
+      <member refid="classgf_1_1_window_1ad6fdf699422b63743b3d1af12ad7fd26" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>pollEvent</name></member>
+      <member refid="classgf_1_1_window_1af5900fe9bb58c7c628f5ffce8ff28dbb" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>restore</name></member>
+      <member refid="classgf_1_1_window_1a2f4a59604ebffb0ec95d12773aefc597" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setDecorated</name></member>
+      <member refid="classgf_1_1_window_1a24e0ada9e56ba6f30615af3600a3493f" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setFramerateLimit</name></member>
+      <member refid="classgf_1_1_window_1a37dd6d312e1ab1cf1eecc43ab35e2c58" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setFullscreen</name></member>
+      <member refid="classgf_1_1_window_1a6bb93be3a77f1fab046201fc3af655d6" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setMouseCursor</name></member>
+      <member refid="classgf_1_1_window_1a896ed7e5bc16dfb52d593c992e5b70f9" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setMouseCursorGrabbed</name></member>
+      <member refid="classgf_1_1_window_1a6950c72b8ebc294f5cd62a83c6c1f408" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setMouseCursorVisible</name></member>
+      <member refid="classgf_1_1_window_1ac0b76a8274cd6bcfea97de514ec02f13" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_window_1aaff47b034e3cec36e5942e0418e13059" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setSize</name></member>
+      <member refid="classgf_1_1_window_1a38d2e326f6bece85778fe752eefed482" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setTitle</name></member>
+      <member refid="classgf_1_1_window_1af8dd7e7c736c122366bbf3a952db707e" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setVerticalSyncEnabled</name></member>
+      <member refid="classgf_1_1_window_1a29b9949da62c3002eafe6a41eb2f1693" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>setVisible</name></member>
+      <member refid="classgf_1_1_window_1a55d8286c6c5bc38956da073187aa9f1f" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>show</name></member>
+      <member refid="classgf_1_1_window_1acbcd626cf1be02a768e42bd0002d587b" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>toggleFullscreen</name></member>
+      <member refid="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>waitEvent</name></member>
+      <member refid="classgf_1_1_window_1a4604d162a6c295ba70fed6e1f4398328" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>Window</name></member>
+      <member refid="classgf_1_1_window_1a308b61ed6daee1a20c88a1ff55ec751f" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>Window</name></member>
+      <member refid="classgf_1_1_window_1a7bad084073b4fedd15b956a66539b2f6" prot="public" virt="non-virtual"><scope>gf::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

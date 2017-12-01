@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_circle_shape" kind="class" language="C++" prot="public">
+    <compoundname>gf::CircleShape</compoundname>
+    <basecompoundref refid="classgf_1_1_shape" prot="public" virt="non-virtual">gf::Shape</basecompoundref>
+    <includes refid="_shapes_8h" local="no">gf/Shapes.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_circle_shape_1a891b95115eb912f961e29708c3aea00b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::CircleShape::m_radius</definition>
+        <argsstring></argsstring>
+        <name>m_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="195" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_circle_shape_1a35afafc1c4e9dfe32c39445ac43a3d2e" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::CircleShape::m_pointCount</definition>
+        <argsstring></argsstring>
+        <name>m_pointCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="196" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1a4fdd743e2b1967c019e4b77a762994b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::CircleShape::CircleShape</definition>
+        <argsstring>(float radius=0, std::size_t pointCount=30)</argsstring>
+        <name>CircleShape</name>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points composing the circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1a1ac08baba6b720bec94059a390c2c709" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::CircleShape::CircleShape</definition>
+        <argsstring>(const CircF &amp;circ, std::size_t pointCount=30)</argsstring>
+        <name>CircleShape</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>circ</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with a circle. </para>        </briefdescription>
+        <detaileddescription>
+<para>The shape takes the radius of the circle and the position of the circle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A circle with a radius and a position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points composing the circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1af1de36bfe0e2677224e58affb7d5b3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::CircleShape::setRadius</definition>
+        <argsstring>(float radius)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Set the radius of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New radius of the circle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_circle_shape_1a802422e1b887b02d86c7883e22e18de0" kindref="member">getRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1a802422e1b887b02d86c7883e22e18de0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::CircleShape::getRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getRadius</name>
+        <briefdescription>
+<para>Get the radius of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Radius of the circle</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_circle_shape_1af1de36bfe0e2677224e58affb7d5b3c0" kindref="member">setRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="178" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1ae7a23e4c0fb61e5db2c2f5a1834ab78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::CircleShape::setPointCount</definition>
+        <argsstring>(std::size_t pointCount)</argsstring>
+        <name>setPointCount</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of points of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New number of points of the circle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_circle_shape_1a06d14c2b6d92f2ef5959bd066784aa77" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1a06d14c2b6d92f2ef5959bd066784aa77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::CircleShape::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_circle_shape_1a7fa3be6128b31c89f96ff268a6c3d420" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_circle_shape_1a7fa3be6128b31c89f96ff268a6c3d420" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::CircleShape::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the shape&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the shape.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_circle_shape_1a06d14c2b6d92f2ef5959bd066784aa77" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="192" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized shape representing a circle. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_circle_shape" kindref="compound">gf::CircleShape</ref><sp/>circle;</highlight></codeline>
+<codeline><highlight class="normal">circle.<ref refid="classgf_1_1_circle_shape_1af1de36bfe0e2677224e58affb7d5b3c0" kindref="member">setRadius</ref>(150);</highlight></codeline>
+<codeline><highlight class="normal">circle.<ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor</ref>(<ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal">circle.<ref refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" kindref="member">setOutlineThickness</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal">circle.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>10.0f,<sp/>20.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">window.draw(circle);</highlight></codeline>
+</programlisting></para><para>Since the graphics card can&apos;t draw perfect circles, we have to fake them with multiple triangles connected to each other. The &quot;points count&quot; property of <ref refid="classgf_1_1_circle_shape" kindref="compound">gf::CircleShape</ref> defines how many of these triangles to use, and therefore defines the quality of the circle.</para><para>The number of points can also be used for another purpose; with small numbers you can create any regular polygon shape: equilateral triangle, square, pentagon, hexagon, ...</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>gf::CircleShape</label>
+        <link refid="classgf_1_1_circle_shape"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="95">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>gf::CircleShape</label>
+        <link refid="classgf_1_1_circle_shape"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="99">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="141" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="141" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_circle_shape_1a4fdd743e2b1967c019e4b77a762994b9" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>CircleShape</name></member>
+      <member refid="classgf_1_1_circle_shape_1a1ac08baba6b720bec94059a390c2c709" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>CircleShape</name></member>
+      <member refid="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" virt="virtual"><scope>gf::CircleShape</scope><name>draw</name></member>
+      <member refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_circle_shape_1a7fa3be6128b31c89f96ff268a6c3d420" prot="public" virt="virtual"><scope>gf::CircleShape</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_circle_shape_1a06d14c2b6d92f2ef5959bd066784aa77" prot="public" virt="virtual"><scope>gf::CircleShape</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_circle_shape_1a802422e1b887b02d86c7883e22e18de0" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_circle_shape_1a35afafc1c4e9dfe32c39445ac43a3d2e" prot="private" virt="non-virtual"><scope>gf::CircleShape</scope><name>m_pointCount</name></member>
+      <member refid="classgf_1_1_circle_shape_1a891b95115eb912f961e29708c3aea00b" prot="private" virt="non-virtual"><scope>gf::CircleShape</scope><name>m_radius</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::CircleShape</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_circle_shape_1ae7a23e4c0fb61e5db2c2f5a1834ab78e" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_circle_shape_1af1de36bfe0e2677224e58affb7d5b3c0" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>Shape</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" virt="non-virtual"><scope>gf::CircleShape</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" virt="non-virtual"><scope>gf::CircleShape</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::CircleShape</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

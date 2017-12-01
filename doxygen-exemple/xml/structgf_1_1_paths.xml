@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_paths" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Paths</compoundname>
+    <includes refid="_paths_8h" local="no">gf/Paths.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_paths_1af0b7d8487172308a0b8490afb1074421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Paths::Paths</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Paths</name>
+        <briefdescription>
+<para>Deleted constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgf_1_1_paths_1af55f6a9837e5dff859fb77047b17f6d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+        <definition>static Path gf::Paths::getPrefPath</definition>
+        <argsstring>(StringRef org, StringRef app)</argsstring>
+        <name>getPrefPath</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>org</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Get the preferences path. </para>        </briefdescription>
+        <detaileddescription>
+<para>The preferences path is where an application can save data. It depends on the user and the application.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>org</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of your organization </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of your application </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The preferences path </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_paths_1a5ac0556bfde118cb32244931d59e6dd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+        <definition>static Path gf::Paths::getBasePath</definition>
+        <argsstring>()</argsstring>
+        <name>getBasePath</name>
+        <briefdescription>
+<para>Get the base path. </para>        </briefdescription>
+        <detaileddescription>
+<para>The base path is the path where the application is run. <simplesect kind="return"><para>The base path </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_paths_1a479447f33050825d138df42b2551a1eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+        <definition>static Path gf::Paths::getCurrentPath</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentPath</name>
+        <briefdescription>
+<para>Get the current path. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current path </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Special paths. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" line="37" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Paths.h" bodystart="37" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_paths_1a5ac0556bfde118cb32244931d59e6dd9" prot="public" virt="non-virtual"><scope>gf::Paths</scope><name>getBasePath</name></member>
+      <member refid="structgf_1_1_paths_1a479447f33050825d138df42b2551a1eb" prot="public" virt="non-virtual"><scope>gf::Paths</scope><name>getCurrentPath</name></member>
+      <member refid="structgf_1_1_paths_1af55f6a9837e5dff859fb77047b17f6d9" prot="public" virt="non-virtual"><scope>gf::Paths</scope><name>getPrefPath</name></member>
+      <member refid="structgf_1_1_paths_1af0b7d8487172308a0b8490afb1074421" prot="public" virt="non-virtual"><scope>gf::Paths</scope><name>Paths</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

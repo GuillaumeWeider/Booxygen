@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_glyph" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Glyph</compoundname>
+    <includes refid="_font_8h" local="no">gf/Font.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_glyph_1a3ff547d59acaebd966a0f42960d3450a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Glyph::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <briefdescription>
+<para>Bouding rectangle of the glyph, in coordinates relative to the baseline. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_glyph_1a1fc7db4f91420f1fdaa73466b7dc0dec" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Glyph::textureRect</definition>
+        <argsstring></argsstring>
+        <name>textureRect</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> coordinates of the glyph inside the font&apos;s texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_glyph_1a7f6801d49b577a3a23c6a3ae6e69a5aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Glyph::advance</definition>
+        <argsstring></argsstring>
+        <name>advance</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Offset to move horizontally to the next character. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="60" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A glyph. </para>    </briefdescription>
+    <detaileddescription>
+<para>A glyph is the visual representation of a character.</para><para>Glyphs are loaded from fonts and put in a texture. In order to draw a glyph, you need to known the bounding rectangle of the glyph and the texture coordinates where the glyph is. Then, you can compute the position of the next glyph with the <computeroutput>advance</computeroutput> field.</para><para>Generally, you do not have to manipulate glyphs directly. <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> can display text and make all the necessary computations for you.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>, <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="358">
+        <label>gf::Rect&lt; float &gt;</label>
+        <link refid="structgf_1_1_rect"/>
+        <childnode refid="359" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="359">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="357">
+        <label>gf::Glyph</label>
+        <link refid="structgf_1_1_glyph"/>
+        <childnode refid="358" relation="usage">
+          <edgelabel>textureRect</edgelabel>
+          <edgelabel>bounds</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="57" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="57" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_glyph_1a7f6801d49b577a3a23c6a3ae6e69a5aa" prot="public" virt="non-virtual"><scope>gf::Glyph</scope><name>advance</name></member>
+      <member refid="structgf_1_1_glyph_1a3ff547d59acaebd966a0f42960d3450a" prot="public" virt="non-virtual"><scope>gf::Glyph</scope><name>bounds</name></member>
+      <member refid="structgf_1_1_glyph_1a1fc7db4f91420f1fdaa73466b7dc0dec" prot="public" virt="non-virtual"><scope>gf::Glyph</scope><name>textureRect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

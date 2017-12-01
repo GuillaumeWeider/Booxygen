@@ -1,0 +1,709 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_view" kind="class" language="C++" prot="public">
+    <compoundname>gf::View</compoundname>
+    <derivedcompoundref refid="classgf_1_1_adaptative_view" prot="public" virt="non-virtual">gf::AdaptativeView</derivedcompoundref>
+    <includes refid="_view_8h" local="no">gf/View.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_view_1a7601a6593e9d8a89af64cfbfa9eea636" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::View::m_center</definition>
+        <argsstring></argsstring>
+        <name>m_center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="352" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_view_1ac581c69cebdd11d0861f47e2de2bdd54" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::View::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="353" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_view_1aa2275959367dc2f0cc8569a839da7494" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::View::m_rotation</definition>
+        <argsstring></argsstring>
+        <name>m_rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="354" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_view_1ad3c69f7a33a272ab82c73401670e6b6e" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::View::m_viewport</definition>
+        <argsstring></argsstring>
+        <name>m_viewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="355" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_view_1adfd0d6e4d3d4206a6804b9cb2c391e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::View::View</definition>
+        <argsstring>()</argsstring>
+        <name>View</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates a default view of <formula id="122">$(0, 0, 1000, 1000)$</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a5cb93b3d2069f74aa24be70439979120" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::View::View</definition>
+        <argsstring>(const RectF &amp;rect)</argsstring>
+        <name>View</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Construct the view from a rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle defining the zone to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1adafd0b8f28754639b7ae5bceb7aa8b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::View::View</definition>
+        <argsstring>(Vector2f center, Vector2f size)</argsstring>
+        <name>View</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct the view from its center and size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center of the zone to display </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the zone to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1ae95b6b57bffffe92693f2f372e994f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::View::~View</definition>
+        <argsstring>()</argsstring>
+        <name>~View</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setCenter</definition>
+        <argsstring>(Vector2f center)</argsstring>
+        <name>setCenter</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>center</declname>
+        </param>
+        <briefdescription>
+<para>Set the center of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New center</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" kindref="member">getCenter()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="130" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::View::getCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+<para>Get the center of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Center of the view</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" kindref="member">setCenter()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="141" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setSize</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set the size of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" kindref="member">getSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="152" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::View::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the view</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="164" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setRotation</definition>
+        <argsstring>(float rotation)</argsstring>
+        <name>setRotation</name>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Set the orientation of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default rotation of a view is 0 degree.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New angle, in radians</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" kindref="member">getRotation()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="177" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::View::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+<para>Get the current orientation of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref> angle of the view, in radians</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" kindref="member">setRotation()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="188" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setViewport</definition>
+        <argsstring>(const RectF &amp;viewport)</argsstring>
+        <name>setViewport</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+<para>Set the target viewport. </para>        </briefdescription>
+        <detaileddescription>
+<para>The viewport is the rectangle into which the contents of the view are displayed, expressed as a factor (between 0 and 1) of the size of the <ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> to which the view is applied.</para><para>For example, a view which takes the left side of the target would be defined with:</para><para><programlisting><codeline><highlight class="normal">view.<ref refid="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" kindref="member">setViewport</ref>({0.0f,<sp/>0.0f,<sp/>0.5f,<sp/>1.0f}).</highlight></codeline>
+</programlisting></para><para>By default, a view has a viewport which covers the entire target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New viewport rectangle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" kindref="member">getViewport()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+        <definition>const RectF&amp; gf::View::getViewport</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewport</name>
+        <briefdescription>
+<para>Get the target viewport rectangle of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Viewport rectangle, expressed as a factor of the target size</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" kindref="member">setViewport()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="221" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="221" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a4a8327e3636d0e65b1202185891947cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::reset</definition>
+        <argsstring>(const RectF &amp;rect)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Reset the view to the given rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this function resets the rotation angle to 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle defining the zone to display</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" kindref="member">setCenter()</ref>, <ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize()</ref>, <ref refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" kindref="member">setRotation()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::move</definition>
+        <argsstring>(Vector2f offset)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Move the view relatively to its current position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Move offset</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" kindref="member">setCenter()</ref>, <ref refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" kindref="member">rotate()</ref>, <ref refid="classgf_1_1_view_1a6815a934484902eaa122adf2c4aed7c2" kindref="member">zoom()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::rotate</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Rotate the view relatively to its current orientation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to rotate, in radians</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" kindref="member">setRotation()</ref>, <ref refid="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" kindref="member">move()</ref>, <ref refid="classgf_1_1_view_1a6815a934484902eaa122adf2c4aed7c2" kindref="member">zoom()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a6815a934484902eaa122adf2c4aed7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::zoom</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>zoom</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Resize the view rectangle relatively to its current size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Resizing the view simulates a zoom, as the zone displayed on screen grows or shrinks. <computeroutput>factor</computeroutput> is a multiplier:</para><para><itemizedlist>
+<listitem><para><formula id="123">$ = 1 $</formula> keeps the size unchanged</para></listitem><listitem><para><formula id="124">$ &gt; 1 $</formula> makes the view bigger (objects appear smaller)</para></listitem><listitem><para><formula id="125">$ &lt; 1 $</formula> makes the view smaller (objects appear bigger)</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zoom factor to apply</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize()</ref>, <ref refid="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" kindref="member">move()</ref>, <ref refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" kindref="member">rotate()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1af3674f5b8a2d44eff9f22c48802d1a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::zoom</definition>
+        <argsstring>(float factor, Vector2f fixed)</argsstring>
+        <name>zoom</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>fixed</declname>
+        </param>
+        <briefdescription>
+<para>Resize the view rectangle relatively to its current size and a fixed point. </para>        </briefdescription>
+        <detaileddescription>
+<para>Resizing the view simulates a zoom, as the zone displayed on screen grows or shrinks. <computeroutput>factor</computeroutput> is a multiplier:</para><para><itemizedlist>
+<listitem><para><formula id="123">$ = 1 $</formula> keeps the size unchanged</para></listitem><listitem><para><formula id="124">$ &gt; 1 $</formula> makes the view bigger (objects appear smaller)</para></listitem><listitem><para><formula id="125">$ &lt; 1 $</formula> makes the view smaller (objects appear bigger)</para></listitem></itemizedlist>
+</para><para>Additionally, a fixed point is used as the center of the zoom. It is the only point that stays at the same place in the view.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zoom factor to apply </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fixed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the zoom</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize()</ref>, <ref refid="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" kindref="member">move()</ref>, <ref refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" kindref="member">rotate()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1afbd0c88f80b5bef08f0d18d1cb286191" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref></type>
+        <definition>Matrix3f gf::View::getTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransform</name>
+        <briefdescription>
+<para>Get the projection transform of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is meant for internal use only.</para><para><simplesect kind="return"><para>Projection transform defining the view</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1a78048d0236c2569710d5ce5e860b4e6e" kindref="member">getInverseTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a78048d0236c2569710d5ce5e860b4e6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref></type>
+        <definition>Matrix3f gf::View::getInverseTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getInverseTransform</name>
+        <briefdescription>
+<para>Get the inverse projection transform of the view. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is meant for internal use only.</para><para><simplesect kind="return"><para>Inverse of the projection transform defining the view</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_1afbd0c88f80b5bef08f0d18d1cb286191" kindref="member">getTransform</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="310" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_view_1a59e869018b8024110ec5d2571d87c15c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setSizeNoCallback</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>setSizeNoCallback</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set the world size, without calling <ref refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" kindref="member">onSizeChange()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is meant for adaptative views so that they can adapt the world size without having a callback infinite loop.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new world size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="321" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="321" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::View::onSizeChange</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>onSizeChange</name>
+        <reimplementedby refid="classgf_1_1_fit_view_1aecf561ba4dc929b973c2483cfdfe9b96">onSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fill_view_1aa2b8234183fbc6ed5f5a1c220e4955d6">onSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_extend_view_1a14c25626f1bb6ac330161877bd652e9b">onSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_locked_view_1a86456808346dc179e3d2d400869e30c6">onSizeChange</reimplementedby>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Callback when the world has just been resized. </para>        </briefdescription>
+        <detaileddescription>
+<para>This callback is called when <ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize()</ref> is called.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new size of the visible world </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="332" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1abec8761ca794fa0cdb950f967d206769" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::View::setViewportNoCallback</definition>
+        <argsstring>(const RectF &amp;viewport)</argsstring>
+        <name>setViewportNoCallback</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+<para>Set the viewport, without calling <ref refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" kindref="member">onViewportChange()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is meant for adaptative views so that they can adapt the viewport without having a callback infinite loop.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new viewport </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::View::onViewportChange</definition>
+        <argsstring>(const RectF &amp;viewport)</argsstring>
+        <name>onViewportChange</name>
+        <reimplementedby refid="classgf_1_1_fit_view_1a3645faa5abfaa8e22d4e85a2ef675683">onViewportChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fill_view_1a831cb88f220424351ad67991d94d8240">onViewportChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_extend_view_1abc6b3a3ed4fe10520e26f897e6ad6960">onViewportChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_locked_view_1ad8e271607a7a4b2f780dc05645b26bdf">onViewportChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_screen_view_1addab51d823e149cc0465605125d78e0a">onViewportChange</reimplementedby>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+<para>Callback when the viewport has just been changed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new viewport </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="349" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>2D camera that defines what region is shown on screen </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> defines a camera in the 2D scene. This is a very powerful concept: you can scroll, rotate or zoom the entire scene without altering the way that your drawable objects are drawn.</para><para>A view is composed of a source rectangle, which defines what part of the 2D scene is shown, and a target viewport, which defines where the contents of the source rectangle will be displayed on the render target (window or texture).</para><para>The viewport allows to map the scene to a custom part of the render target, and can be used for split-screen or for displaying a minimap, for example. If the source rectangle has not the same size as the viewport, its contents will be stretched to fit in.</para><para>To apply a view, you have to assign it to the render target. Then, every objects drawn in this render target will be affected by the view until you use another view.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_view" kindref="compound">gf::View</ref><sp/>view;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>view<sp/>to<sp/>a<sp/>rectangle<sp/>located<sp/>at<sp/>(100,<sp/>100)<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>a<sp/>size<sp/>of<sp/>400x200</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">view.<ref refid="classgf_1_1_view_1a4a8327e3636d0e65b1202185891947cd" kindref="member">reset</ref>({<sp/>100.0f,<sp/>100.0f,<sp/>400.0f,<sp/>200.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rotate<sp/>it<sp/>by<sp/>45<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">view.<ref refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" kindref="member">rotate</ref>(<ref refid="group__core_1gafea71ec62ea0c47eb8e65dba77940b40" kindref="member">gf::Pi</ref><sp/>/<sp/>4);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Set<sp/>its<sp/>target<sp/>viewport<sp/>to<sp/>be<sp/>half<sp/>of<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">view.<ref refid="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" kindref="member">setViewport</ref>({<sp/>0.f,<sp/>0.f,<sp/>0.5f,<sp/>1.f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Apply<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" kindref="member">setView</ref>(view);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Render<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(someSprite);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>default<sp/>view<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" kindref="member">setView</ref>(renderer.getDefaultView());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Render<sp/>stuff<sp/>not<sp/>affected<sp/>by<sp/>the<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(someOtherSprite);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>, gf::AdaptiveView </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1104">
+        <label>gf::ExtendView</label>
+        <link refid="classgf_1_1_extend_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>gf::FillView</label>
+        <link refid="classgf_1_1_fill_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>gf::View</label>
+        <link refid="classgf_1_1_view"/>
+      </node>
+      <node id="1108">
+        <label>gf::ScreenView</label>
+        <link refid="classgf_1_1_screen_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>gf::FitView</label>
+        <link refid="classgf_1_1_fit_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>gf::AdaptativeView</label>
+        <link refid="classgf_1_1_adaptative_view"/>
+        <childnode refid="1102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>gf::LockedView</label>
+        <link refid="classgf_1_1_locked_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>gf::StretchView</label>
+        <link refid="classgf_1_1_stretch_view"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="94" bodyend="356"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getCenter</name></member>
+      <member refid="classgf_1_1_view_1a78048d0236c2569710d5ce5e860b4e6e" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_view_1afbd0c88f80b5bef08f0d18d1cb286191" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" prot="public" virt="non-virtual"><scope>gf::View</scope><name>getViewport</name></member>
+      <member refid="classgf_1_1_view_1a7601a6593e9d8a89af64cfbfa9eea636" prot="private" virt="non-virtual"><scope>gf::View</scope><name>m_center</name></member>
+      <member refid="classgf_1_1_view_1aa2275959367dc2f0cc8569a839da7494" prot="private" virt="non-virtual"><scope>gf::View</scope><name>m_rotation</name></member>
+      <member refid="classgf_1_1_view_1ac581c69cebdd11d0861f47e2de2bdd54" prot="private" virt="non-virtual"><scope>gf::View</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_view_1ad3c69f7a33a272ab82c73401670e6b6e" prot="private" virt="non-virtual"><scope>gf::View</scope><name>m_viewport</name></member>
+      <member refid="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" prot="public" virt="non-virtual"><scope>gf::View</scope><name>move</name></member>
+      <member refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" prot="protected" virt="virtual"><scope>gf::View</scope><name>onSizeChange</name></member>
+      <member refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" prot="protected" virt="virtual"><scope>gf::View</scope><name>onViewportChange</name></member>
+      <member refid="classgf_1_1_view_1a4a8327e3636d0e65b1202185891947cd" prot="public" virt="non-virtual"><scope>gf::View</scope><name>reset</name></member>
+      <member refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" prot="public" virt="non-virtual"><scope>gf::View</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" prot="public" virt="non-virtual"><scope>gf::View</scope><name>setCenter</name></member>
+      <member refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" prot="public" virt="non-virtual"><scope>gf::View</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" prot="public" virt="non-virtual"><scope>gf::View</scope><name>setSize</name></member>
+      <member refid="classgf_1_1_view_1a59e869018b8024110ec5d2571d87c15c" prot="protected" virt="non-virtual"><scope>gf::View</scope><name>setSizeNoCallback</name></member>
+      <member refid="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" prot="public" virt="non-virtual"><scope>gf::View</scope><name>setViewport</name></member>
+      <member refid="classgf_1_1_view_1abec8761ca794fa0cdb950f967d206769" prot="protected" virt="non-virtual"><scope>gf::View</scope><name>setViewportNoCallback</name></member>
+      <member refid="classgf_1_1_view_1adfd0d6e4d3d4206a6804b9cb2c391e36" prot="public" virt="non-virtual"><scope>gf::View</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1a5cb93b3d2069f74aa24be70439979120" prot="public" virt="non-virtual"><scope>gf::View</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1adafd0b8f28754639b7ae5bceb7aa8b4d" prot="public" virt="non-virtual"><scope>gf::View</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1a6815a934484902eaa122adf2c4aed7c2" prot="public" virt="non-virtual"><scope>gf::View</scope><name>zoom</name></member>
+      <member refid="classgf_1_1_view_1af3674f5b8a2d44eff9f22c48802d1a91" prot="public" virt="non-virtual"><scope>gf::View</scope><name>zoom</name></member>
+      <member refid="classgf_1_1_view_1ae95b6b57bffffe92693f2f372e994f76" prot="public" virt="virtual"><scope>gf::View</scope><name>~View</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

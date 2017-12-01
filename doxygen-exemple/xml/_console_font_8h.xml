@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_console_font_8h" kind="file" language="C++">
+    <compoundname>ConsoleFont.h</compoundname>
+    <includes refid="_array_ref_8h" local="yes">ArrayRef.h</includes>
+    <includes refid="_path_8h" local="yes">Path.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_string_ref_8h" local="yes">StringRef.h</includes>
+    <includes refid="_texture_8h" local="yes">Texture.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_console_8h" local="yes">Console.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <incdepgraph>
+      <node id="370">
+        <label>boost/functional/hash.hpp</label>
+      </node>
+      <node id="368">
+        <label>Path.h</label>
+        <link refid="_path_8h_source"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>cstdint</label>
+      </node>
+      <node id="365">
+        <label>ArrayRef.h</label>
+        <link refid="_array_ref_8h_source"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="374">
+        <label>string</label>
+      </node>
+      <node id="380">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>vector</label>
+      </node>
+      <node id="369">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="366">
+        <label>array</label>
+      </node>
+      <node id="372">
+        <label>StringRef.h</label>
+        <link refid="_string_ref_8h_source"/>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>cstddef</label>
+      </node>
+      <node id="364">
+        <label>ConsoleFont.h</label>
+        <link refid="_console_font_8h"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>Texture.h</label>
+        <link refid="_texture_8h_source"/>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>type_traits</label>
+      </node>
+      <node id="379">
+        <label>algorithm</label>
+      </node>
+      <node id="373">
+        <label>cstring</label>
+      </node>
+      <node id="377">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="385">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="383">
+        <label>ConsoleFont.h</label>
+        <link refid="_console_font_8h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_console_font_format" prot="public">gf::ConsoleFontFormat</innerclass>
+    <innerclass refid="structgf_1_1_console_font_element" prot="public">gf::ConsoleFontElement</innerclass>
+    <innerclass refid="structgf_1_1_predefined_console_font_format" prot="public">gf::PredefinedConsoleFontFormat</innerclass>
+    <innerclass refid="classgf_1_1_console_font" prot="public">gf::ConsoleFont</innerclass>
+    <innerclass refid="classgf_1_1_bitmap_console_font" prot="public">gf::BitmapConsoleFont</innerclass>
+    <innerclass refid="classgf_1_1_colored_console_font" prot="public">gf::ColoredConsoleFont</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_CONSOLE_FONT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_CONSOLE_FONT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ArrayRef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Path.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;StringRef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structgf_1_1_console_font_format" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807a" kindref="member">Transparency</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa7c6eb89d6578acd4e0d6df4c8d09fd4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa7c6eb89d6578acd4e0d6df4c8d09fd4c" kindref="member">Alpha</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa859e9941346398dbe065cd57b485cc9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa859e9941346398dbe065cd57b485cc9d" kindref="member">Grayscale</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa025c050f3a53d47c8a2e7db76b219505" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa025c050f3a53d47c8a2e7db76b219505" kindref="member">ColorKey</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structgf_1_1_console_font_format_1a82d147fd96f3396af284013b40f3101e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807a" kindref="member">Transparency</ref><sp/><ref refid="structgf_1_1_console_font_format_1a82d147fd96f3396af284013b40f3101e" kindref="member">transparency</ref>;<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941" kindref="member">Layout</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a396a8e855eafb8740c8d2fabd751bcfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a396a8e855eafb8740c8d2fabd751bcfe" kindref="member">InColumn</ref>,<sp/></highlight></codeline>
+<codeline lineno="59" refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a07a4ff4c1db6fc6e92a7efe791b7f86e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a07a4ff4c1db6fc6e92a7efe791b7f86e" kindref="member">InRow</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structgf_1_1_console_font_format_1a8e49c12aae7215c81c538990c1993fe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941" kindref="member">Layout</ref><sp/><ref refid="structgf_1_1_console_font_format_1a8e49c12aae7215c81c538990c1993fe9" kindref="member">layout</ref>;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdc" kindref="member">Mapping</ref><sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca897c4d1be5b7cd7c6e040c30875bce59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca897c4d1be5b7cd7c6e040c30875bce59" kindref="member">CodePage437</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca13e296f4dde27fa17a6debb3d09b6744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca13e296f4dde27fa17a6debb3d09b6744" kindref="member">ModifiedCodePage437</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca8862fc5fc0cc00fde19dafbdc6ebd4cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca8862fc5fc0cc00fde19dafbdc6ebd4cf" kindref="member">Special</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca0e1883560cbe542347d153d845d5c698" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca0e1883560cbe542347d153d845d5c698" kindref="member">Custom</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structgf_1_1_console_font_format_1a6ad81ceabda3ebdf87ff0ae45cf83677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdc" kindref="member">Mapping</ref><sp/><ref refid="structgf_1_1_console_font_format_1a6ad81ceabda3ebdf87ff0ae45cf83677" kindref="member">mapping</ref>;<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structgf_1_1_console_font_element" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_console_font_element" kindref="compound">ConsoleFontElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="84" refid="structgf_1_1_console_font_element_1a3605224dc4ee18e3eecd7b077206bb69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>char16_t<sp/><ref refid="structgf_1_1_console_font_element_1a3605224dc4ee18e3eecd7b077206bb69" kindref="member">character</ref>;<sp/></highlight></codeline>
+<codeline lineno="85" refid="structgf_1_1_console_font_element_1a274d78c67545d3a050c5b12c2254aa07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgf_1_1_console_font_element_1a274d78c67545d3a050c5b12c2254aa07" kindref="member">index</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structgf_1_1_predefined_console_font_format" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_predefined_console_font_format" kindref="compound">PredefinedConsoleFontFormat</ref><sp/>{</highlight></codeline>
+<codeline lineno="96" refid="structgf_1_1_predefined_console_font_format_1a87db76f021f47b6e1bfd9f3c075ce902" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>Libtcod<sp/>=<sp/>{<sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa025c050f3a53d47c8a2e7db76b219505" kindref="member">ConsoleFontFormat::ColorKey</ref>,<sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a07a4ff4c1db6fc6e92a7efe791b7f86e" kindref="member">ConsoleFontFormat::InRow</ref>,<sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca8862fc5fc0cc00fde19dafbdc6ebd4cf" kindref="member">ConsoleFontFormat::Special</ref><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="structgf_1_1_predefined_console_font_format_1a3eaaf0493619fcea4d2db34bb3dcd6f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>DwarfFortress<sp/>=<sp/>{<sp/><ref refid="structgf_1_1_console_font_format_1af71f90c599987d224a545bd32a2b807aa025c050f3a53d47c8a2e7db76b219505" kindref="member">ConsoleFontFormat::ColorKey</ref>,<sp/><ref refid="structgf_1_1_console_font_format_1a19791d88251f289db0b0896b3afb0941a07a4ff4c1db6fc6e92a7efe791b7f86e" kindref="member">ConsoleFontFormat::InRow</ref>,<sp/><ref refid="structgf_1_1_console_font_format_1adc89883c8b724f67456a5c4fb3b7dbdca897c4d1be5b7cd7c6e040c30875bce59" kindref="member">ConsoleFontFormat::CodePage437</ref><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classgf_1_1_console_font" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classgf_1_1_console_font_1a195f1fac89d1020197a2a9cb48c591e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/><ref refid="classgf_1_1_console_font_1a195f1fac89d1020197a2a9cb48c591e1" kindref="member">getFormat</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_format;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classgf_1_1_console_font_1a6b33d57e9171c0e339086ae0b405fe5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/><ref refid="classgf_1_1_console_font_1a6b33d57e9171c0e339086ae0b405fe5a" kindref="member">getSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classgf_1_1_console_font_1aa973bbd5867bf5c085296ecf9a83d3f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/><ref refid="classgf_1_1_console_font_1aa973bbd5867bf5c085296ecf9a83d3f2" kindref="member">getCharacterSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_characterSize;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapCode(char16_t<sp/>c,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>position);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapCodeRange(char16_t<sp/>c,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>count,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>position);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapString(<ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref><sp/>str,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>position);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapElement(<ref refid="structgf_1_1_console_font_element" kindref="compound">ConsoleFontElement</ref><sp/>element);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mapElements(<ref refid="classgf_1_1_array_ref" kindref="compound">ArrayRef&lt;ConsoleFontElement&gt;</ref><sp/>elements);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearMapping();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectU</ref><sp/>getSubTexture(char16_t<sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref><sp/>getTextureRect(char16_t<sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref><sp/>*getTexture()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setFormatAndComputeSizes(<ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>format,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>size,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>imageSize);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>logFormat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref>&amp;<sp/>filename)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>getColorKeyPosition()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>m_mapping;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>m_format;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>m_size;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>m_characterSize;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="classgf_1_1_bitmap_console_font" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_bitmap_console_font" kindref="compound">BitmapConsoleFont</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref><sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref><sp/>*getTexture()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loadFromFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref>&amp;<sp/>filename,<sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>format,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>size<sp/>=<sp/>{<sp/>0u,<sp/>0u<sp/>});</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_alpha_texture" kindref="compound">AlphaTexture</ref><sp/>m_texture;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classgf_1_1_colored_console_font" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_colored_console_font" kindref="compound">ColoredConsoleFont</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref><sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref><sp/>*getTexture()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loadFromFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref>&amp;<sp/>filename,<sp/><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref><sp/>format,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/>size<sp/>=<sp/>{<sp/>0u,<sp/>0u<sp/>});</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref><sp/>m_texture;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_CONSOLE_FONT_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h"/>
+  </compounddef>
+</doxygen>

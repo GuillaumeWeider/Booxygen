@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_sprite" kind="class" language="C++" prot="public">
+    <compoundname>gf::Sprite</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_animated_sprite" prot="public" virt="non-virtual">gf::AnimatedSprite</derivedcompoundref>
+    <includes refid="_sprite_8h" local="no">gf/Sprite.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_sprite_1a2fa8c51210013d95529ff5c687f9c3ff" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>const Texture* gf::Sprite::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="264" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_1a5981f9f6103f90fc1db3cd9d9a90be39" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Sprite::m_textureRect</definition>
+        <argsstring></argsstring>
+        <name>m_textureRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="265" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_1a17074fb9862bc9a6606974b4b2940336" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex gf::Sprite::m_vertices[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="266" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_1ac95f221994e3af2cfdc99f147db1d598" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Sprite::m_bounds</definition>
+        <argsstring></argsstring>
+        <name>m_bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="267" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_sprite_1af399bcb62e290ea6603f6ac441e3c2fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Sprite::Sprite</definition>
+        <argsstring>()</argsstring>
+        <name>Sprite</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty sprite with no source texture. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a42c6e903c0535c9f481cbc3ac97a6227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Sprite::Sprite</definition>
+        <argsstring>(const Texture &amp;texture)</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Construct the sprite from a source texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a5cb10074a37c503a91229e221a50828b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Sprite::Sprite</definition>
+        <argsstring>(const Texture &amp;texture, const RectF &amp;textureRect)</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>textureRect</declname>
+        </param>
+        <briefdescription>
+<para>Construct the sprite from a sub-rectangle of a source texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sub-rectangle of the texture to assign to the sprite</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref>, <ref refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" kindref="member">setTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::setTexture</definition>
+        <argsstring>(const Texture &amp;texture, bool resetRect=false)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>resetRect</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Change the source texture of the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para>The texture must exist as long as the sprite uses it. Indeed, the sprite doesn&apos;t store its own copy of the texture, but rather keeps a pointer to the one that you passed to this function. If the source texture is destroyed and the sprite tries to use it, the behavior is undefined.</para><para>If <computeroutput>resetRect</computeroutput> is true, the texture rect property of the sprite is automatically adjusted to the size of the new texture. If it is false, the texture rect is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resetRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should the texture rect be reset to the size of the new texture?</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1a09cda9380aa1d6fad08f5673574fb305" kindref="member">getTexture()</ref>, <ref refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" kindref="member">setTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a09cda9380aa1d6fad08f5673574fb305" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+        <definition>const Texture&amp; gf::Sprite::getTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>getTexture</name>
+        <briefdescription>
+<para>Get the source texture of the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned reference is const, which means that you can&apos;t modify the texture when you retrieve it with this function.</para><para><simplesect kind="return"><para>Reference to the sprite&apos;s texture</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="145" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1af8d1e7657a5bd0df8daf43474fc39fe9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Sprite::hasTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>hasTexture</name>
+        <briefdescription>
+<para>Check if a texture is set. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a texture is already set</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref>, <ref refid="classgf_1_1_sprite_1a09cda9380aa1d6fad08f5673574fb305" kindref="member">getTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="156" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a8aab6dc419a76e5c1c1dc7aaed4c1161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::unsetTexture</definition>
+        <argsstring>()</argsstring>
+        <name>unsetTexture</name>
+        <briefdescription>
+<para>Unset the source texture of the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para>After a call to this function, the sprite has no source texture.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::setTextureRect</definition>
+        <argsstring>(const RectF &amp;rect)</argsstring>
+        <name>setTextureRect</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Set the sub-rectangle of the texture that the sprite will display. </para>        </briefdescription>
+        <detaileddescription>
+<para>The texture rect is useful when you don&apos;t want to display the whole texture, but rather a part of it. By default, the texture rect covers the entire texture.</para><para>The rectangle is given in texture coordinates, meaning that <formula id="75">$(0,0)$</formula> is the top left corner and <formula id="76">$(1,1)$</formula> is the bottom right corner.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle defining the region of the texture to display</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1acacdb92122d8c1c085a4becfd94034e4" kindref="member">getTextureRect()</ref>, <ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1acacdb92122d8c1c085a4becfd94034e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+        <definition>const RectF&amp; gf::Sprite::getTextureRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureRect</name>
+        <briefdescription>
+<para>Get the sub-rectangle of the texture displayed by the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> rectangle of the sprite in texture coordinates</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" kindref="member">setTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="193" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1acc83d464d6d81d7962f865fddd91dd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::setColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the global color of the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para>This color is modulated (multiplied) with the sprite&apos;s texture. It can be used to colorize the sprite, or change its global opacity.</para><para>By default, the sprite&apos;s color is opaque white.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New color of the sprite</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1aa10582db99e9ea95d8088d5a63a7805b" kindref="member">getColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1aa10582db99e9ea95d8088d5a63a7805b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Sprite::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Get the global color of the sprite. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Global color of the sprite</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1acc83d464d6d81d7962f865fddd91dd7b" kindref="member">setColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1acdc419c021db4aa46c28b816aa5f12f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Sprite::getLocalBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalBounds</name>
+        <briefdescription>
+<para>Get the local bounding rectangle of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned rectangle is in local coordinates, which means that it ignores the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the entity in the entity&apos;s coordinate system.</para><para><simplesect kind="return"><para>Local bounding rectangle of the entity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a663171bd8edf780d19e9a483edb80dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::setAnchor</definition>
+        <argsstring>(Anchor anchor)</argsstring>
+        <name>setAnchor</name>
+        <param>
+          <type><ref refid="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" kindref="member">Anchor</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+<para>Set the anchor origin of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>Compute the origin of the entity based on the local bounds and the specified anchor. Internally, this function calls <computeroutput><ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor of the entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_sprite_1acdc419c021db4aa46c28b816aa5f12f9" kindref="member">getLocalBounds()</ref>, <ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1acc292dcf8376169811ae28996b38c749" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref></type>
+        <definition>VertexBuffer gf::Sprite::commitGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>commitGeometry</name>
+        <briefdescription>
+<para>Create a buffer with the current geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is uploaded in the graphics memory so that it&apos;s faster to draw.</para><para><simplesect kind="return"><para>A buffer with the current geometry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1ae58a494382f66020f65d53bafd030f81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Sprite::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_sprite_1abd3002d6cead34dfea5cc736a8a4ef2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::updatePositions</definition>
+        <argsstring>()</argsstring>
+        <name>updatePositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_1a6d25989d35580361bbce33de093a7311" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Sprite::updateTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>updateTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="261" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A drawable representation of a texture, with its own transformations, color, etc. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> is a drawable class that allows to easily display a texture (or a part of it) on a render target.</para><para>It inherits all the functions from <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref>: position, rotation, scale, origin. It also adds sprite-specific properties such as the texture to use, the part of it to display, and some convenience functions to change the overall color of the sprite, or to get its bounding rectangle.</para><para><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> works in combination with the <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> class, which loads and provides the pixel data of a given texture.</para><para>The separation of <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> and <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> allows more flexibility and better performances: indeed a <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> is a lightweight object which can use the pixel data of a <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> and draw it with its own transformation/color/blending attributes.</para><para>It is important to note that the <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> instance doesn&apos;t copy the texture that it uses, it only keeps a reference to it. Thus, a <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> must not be destroyed while it is used by a <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> (i.e. never write a function that uses a local <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> instance for creating a sprite).</para><para>Usage example: <programlisting><codeline><highlight class="comment">//<sp/>Declare<sp/>and<sp/>load<sp/>a<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal">texture.<ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;texture.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite;</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture</ref>(texture);</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" kindref="member">setTextureRect</ref>({<sp/>0.1f,<sp/>0.1f,<sp/>0.5f,<sp/>0.3f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1acc83d464d6d81d7962f865fddd91dd7b" kindref="member">setColor</ref>({<sp/>1.0f,<sp/>1.0f,<sp/>1.0f,<sp/>0.8f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>100.0f,<sp/>25.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Draw<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>, <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref>, <ref refid="classgf_1_1_sprite_batch" kindref="compound">gf::SpriteBatch</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="726">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="724">
+        <label>gf::Sprite</label>
+        <link refid="classgf_1_1_sprite"/>
+        <childnode refid="725" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>gf::AnimatedSprite</label>
+        <link refid="classgf_1_1_animated_sprite"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="730">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="728">
+        <label>gf::Sprite</label>
+        <link refid="classgf_1_1_sprite"/>
+        <childnode refid="729" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="730" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" line="87" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Sprite.h" bodystart="87" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_sprite_1acc292dcf8376169811ae28996b38c749" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_sprite_1ae58a494382f66020f65d53bafd030f81" prot="public" virt="virtual"><scope>gf::Sprite</scope><name>draw</name></member>
+      <member refid="classgf_1_1_sprite_1aa10582db99e9ea95d8088d5a63a7805b" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_sprite_1acdc419c021db4aa46c28b816aa5f12f9" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_sprite_1a09cda9380aa1d6fad08f5673574fb305" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_sprite_1acacdb92122d8c1c085a4becfd94034e4" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_sprite_1af8d1e7657a5bd0df8daf43474fc39fe9" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_sprite_1ac95f221994e3af2cfdc99f147db1d598" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>m_bounds</name></member>
+      <member refid="classgf_1_1_sprite_1a2fa8c51210013d95529ff5c687f9c3ff" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_sprite_1a5981f9f6103f90fc1db3cd9d9a90be39" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>m_textureRect</name></member>
+      <member refid="classgf_1_1_sprite_1a17074fb9862bc9a6606974b4b2940336" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>scale</name></member>
+      <member refid="classgf_1_1_sprite_1a663171bd8edf780d19e9a483edb80dad" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_sprite_1acc83d464d6d81d7962f865fddd91dd7b" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Sprite</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_sprite_1ad62ac864a6937a8f6b229016b71d7bad" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_sprite_1af399bcb62e290ea6603f6ac441e3c2fb" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>Sprite</name></member>
+      <member refid="classgf_1_1_sprite_1a42c6e903c0535c9f481cbc3ac97a6227" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>Sprite</name></member>
+      <member refid="classgf_1_1_sprite_1a5cb10074a37c503a91229e221a50828b" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>Sprite</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_sprite_1a8aab6dc419a76e5c1c1dc7aaed4c1161" prot="public" virt="non-virtual"><scope>gf::Sprite</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_sprite_1abd3002d6cead34dfea5cc736a8a4ef2d" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>updatePositions</name></member>
+      <member refid="classgf_1_1_sprite_1a6d25989d35580361bbce33de093a7311" prot="private" virt="non-virtual"><scope>gf::Sprite</scope><name>updateTexCoords</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Sprite</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

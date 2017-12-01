@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="shader" kind="page">
+    <compoundname>shader</compoundname>
+    <title>How to write your own shader</title>
+    <detaileddescription>
+<sect1 id="shader_1shader_intro">
+<title>Introduction</title>
+<para>This is a quick and dirty introduction to modern OpenGL rendering pipeline. If you already know everything then you can go to the next section.</para><para>In modern OpenGL, the rendering pipeline is programmable. Not everything is programmable but the most important parts. You have to use a special language called <ulink url="https://en.wikipedia.org/wiki/OpenGL_Shading_Language">GLSL</ulink> (OpenGL Shading Language) and make programs called shaders.</para><para>The data you send to shaders is prepared in the main program and is called vertices. Vertices represent the geometry of what you have to draw. A vertex is a kind of super point: it contains the coordinates of the object but also the texture coordinates of the point, sometimes (in 3D) the normal of the surface at that point, and many more possible things.</para><para>All the vertices are sent to the graphics card that passes them to the <emphasis>vertex shader</emphasis> which is responsible of transforming the coordinates of the vertex from the game world (2D or 3D) to the screen. After this first pass, the vertices go in the rasterizer which computes the color of each pixel. Then, the pixels go through a <emphasis>fragment shader</emphasis> which can compute the final color of the pixel and sometimes other attributes.</para><para>And that&apos;s it, basically!</para><para><simplesect kind="see"><para><ulink url="https://www.opengl.org/wiki/Rendering_Pipeline_Overview">Rendering pipeline overview - OpenGL.org</ulink></para></simplesect>
+</para></sect1>
+<sect1 id="shader_1shader_default">
+<title>Default shaders</title>
+<para>In gf, every draw command ends in a shader. If no shader is specified, then a default shader is used.</para><sect2 id="shader_1shader_default_vertex_shader">
+<title>Default vertex shader</title>
+<para>Here is the default vertex shader:</para><para><programlisting><codeline><highlight class="normal">#version<sp/>100</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>attributes<sp/>of<sp/>the<sp/>vertex:</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>position<sp/>in<sp/>the<sp/>game<sp/>world</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>color<sp/>of<sp/>the<sp/>vertex</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>texture<sp/>coordinates</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">attribute<sp/>vec2<sp/>a_position;</highlight></codeline>
+<codeline><highlight class="normal">attribute<sp/>vec4<sp/>a_color;</highlight></codeline>
+<codeline><highlight class="normal">attribute<sp/>vec2<sp/>a_texCoords;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>outputs<sp/>of<sp/>the<sp/>shader<sp/>that<sp/>will<sp/>be<sp/>passed<sp/>to<sp/>the<sp/>fragment<sp/>shader</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>color<sp/>of<sp/>the<sp/>vertex</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>texture<sp/>coordinates</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">varying<sp/>vec4<sp/>v_color;</highlight></codeline>
+<codeline><highlight class="normal">varying<sp/>vec2<sp/>v_texCoords;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>transformation<sp/>matrix<sp/>for<sp/>the<sp/>object.</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>It<sp/>is<sp/>a<sp/>constant<sp/>(uniform)<sp/>accross<sp/>all<sp/>vertices.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">uniform<sp/>mat3<sp/>u_transform;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>main<sp/>program<sp/>starts<sp/>here.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>main(void)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>First,<sp/>pass<sp/>the<sp/>texture<sp/>coordinates<sp/>and<sp/>color<sp/>to<sp/>the<sp/>fragment<sp/>shader</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>v_texCoords<sp/>=<sp/>a_texCoords;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>v_color<sp/>=<sp/>a_color;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Then<sp/>compute<sp/>the<sp/>coordinate<sp/>on<sp/>the<sp/>screen<sp/>of<sp/>the<sp/>vertex.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>For<sp/>this,<sp/>you<sp/>have<sp/>to<sp/>compute<sp/>the<sp/>homogeneous<sp/>coordinate<sp/>of<sp/>the<sp/>position.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>vec3<sp/>worldPosition<sp/>=<sp/>vec3(a_position,<sp/>1);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>And<sp/>multiply<sp/>by<sp/>the<sp/>transformation<sp/>matrix.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>vec3<sp/>normalizedPosition<sp/>=<sp/>worldPosition<sp/>*<sp/>u_transform;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>The<sp/>output<sp/>is<sp/>the<sp/>final<sp/>position<sp/>of<sp/>the<sp/>vertex<sp/>on<sp/>the<sp/>screen.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gl_Position<sp/>=<sp/>vec4(normalizedPosition.xy,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><ref refid="structgf_1_1_vertex" kindref="compound">gf::Vertex</ref> contains the data that is passed to this vertex shader. When you call <ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">gf::RenderTarget::draw()</ref>, you have to provide an array of <ref refid="structgf_1_1_vertex" kindref="compound">gf::Vertex</ref> which is then handled by the shader:</para><para><itemizedlist>
+<listitem><para>The <computeroutput>position</computeroutput> attribute becomes <computeroutput>a_position</computeroutput> in the shader</para></listitem><listitem><para>The <computeroutput>color</computeroutput> attribute becomes <computeroutput>a_color</computeroutput> in the shader</para></listitem><listitem><para>The <computeroutput>texCoords</computeroutput> attribute becomes <computeroutput>a_texCoords</computeroutput> in the shader</para></listitem></itemizedlist>
+</para><para>The <computeroutput>u_transform</computeroutput> constant is set by the library automatically. It is computed from the global transform matrix put in <ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref> and from the object transform matrix (see <ref refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" kindref="member">gf::Transformable::getTransform()</ref>).</para></sect2>
+<sect2 id="shader_1shader_default_fragment_shader">
+<title>Default fragment shader</title>
+<para>Here is the default fragment shader:</para><para><programlisting><codeline><highlight class="normal">#version<sp/>100</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">precision<sp/>mediump<sp/>float;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>inputs<sp/>from<sp/>the<sp/>vertex<sp/>shader</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>color<sp/>of<sp/>the<sp/>vertex</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>-<sp/>texture<sp/>coordinates</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">varying<sp/>vec4<sp/>v_color;</highlight></codeline>
+<codeline><highlight class="normal">varying<sp/>vec2<sp/>v_texCoords;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>texture<sp/>used<sp/>for<sp/>the<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>It<sp/>is<sp/>a<sp/>constant<sp/>(uniform)<sp/>accross<sp/>all<sp/>vertices.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">uniform<sp/>sampler2D<sp/>u_texture;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>main<sp/>program<sp/>starts<sp/>here.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>main(void)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Compute<sp/>the<sp/>color<sp/>from<sp/>the<sp/>texture<sp/>and<sp/>texture<sp/>coordinates</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>vec4<sp/>color<sp/>=<sp/>texture2D(u_texture,<sp/>v_texCoords);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Compute<sp/>the<sp/>final<sp/>color<sp/>by<sp/>multiplying<sp/>with<sp/>the<sp/>color<sp/>of<sp/>the<sp/>object</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gl_FragColor<sp/>=<sp/>color<sp/>*<sp/>v_color;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para>The <computeroutput>u_texture</computeroutput> constant is set by the library automatically. If no texture is provided, a default opaque white infinite texture is set.</para><para>Quite easy. We are in 2D!</para></sect2>
+</sect1>
+<sect1 id="shader_1shader_user_shader">
+<title>User provided shader</title>
+<para>If you want to write your own shader, you will have to use the same variables (with the same names) so that you can receive the data from the vertices. The easiest way to do it is to start from the default shaders and modify them. This means you can not add <computeroutput>attribute</computeroutput> variables, but you can do whatever you want with <computeroutput>varying</computeroutput> variables and you can add <computeroutput>uniform</computeroutput> variables as long as you keep the two already present variables <computeroutput>u_transform</computeroutput> and <computeroutput>u_texture</computeroutput>.</para><para>Then, you can load your shader with <ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">gf::Shader::loadFromFile()</ref> (or any other loading method of <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref>).</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref><sp/>shader;</highlight></codeline>
+<codeline><highlight class="normal">shader.<ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;my.vert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;my.frag&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para><para>If you have additional constants (uniforms), you can set them with one of the <ref refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" kindref="member">gf::Shader::setUniform()</ref> functions.</para><para>Finally, you can use the <ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref> to specify your shader when rendering your objects.</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...<sp/>initialize<sp/>the<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref><sp/>states;</highlight></codeline>
+<codeline><highlight class="normal">states.<ref refid="structgf_1_1_render_states_1a38b5fe28cff8f7760bbb9904e3a13f11" kindref="member">shader</ref><sp/>=<sp/>&amp;shader;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.draw(sprite,<sp/>states);</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="shader_1shader_post_processing">
+<title>Post-processing</title>
+<para>Post-processing is an application of global graphic effects after the frame has been computed. It can be used for a wide range of usage. Technically, the frame is rendered in a texture and the texture is then sent into the graphics pipeline again i.e. in the shaders where you can apply the desired effect.</para><para>In gf, there are some already predefined post-processing shaders, called effects:</para><para><itemizedlist>
+<listitem><para><ref refid="classgf_1_1_anti_aliasing_effect" kindref="compound">gf::AntiAliasingEffect</ref>: the FXAA anti-aliasing algorithm</para></listitem><listitem><para><ref refid="classgf_1_1_color_effect" kindref="compound">gf::ColorEffect</ref>: several color transformation (grayscale, sepia, etc)</para></listitem><listitem><para><ref refid="classgf_1_1_color_blind_effect" kindref="compound">gf::ColorBlindEffect</ref>: a color transformation to simulate color blindness</para></listitem><listitem><para><ref refid="classgf_1_1_edge_effect" kindref="compound">gf::EdgeEffect</ref>: an edge detector to improve the edges</para></listitem></itemizedlist>
+</para><para>You can write your own post-processing effects. Generally, you only use a special fragment shader.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_post_processing" kindref="compound">gf::PostProcessing</ref>, <ref refid="classgf_1_1_effect" kindref="compound">gf::Effect</ref>, <ref refid="classgf_1_1_render_pipeline" kindref="compound">gf::RenderPipeline</ref> </para></simplesect>
+<simplesect kind="see"><para><ulink url="http://www.geeks3d.com/shader-library/#postfx">Shader Library, Post-Processing Filters - Geeks3D</ulink> </para></simplesect>
+<simplesect kind="see"><para><ulink url="http://learnopengl.com/#!In-Practice/2D-Game/Postprocessing">Postprocessing - LearnOpenGL.com</ulink> </para></simplesect>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

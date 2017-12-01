@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_array2_d_8h" kind="file" language="C++">
+    <compoundname>Array2D.h</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_log_8h" local="yes">Log.h</includes>
+    <includes refid="_math_8h" local="yes">Math.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_range_8h" local="yes">Range.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_console_8h" local="yes">Console.h</includedby>
+    <includedby refid="_heightmap_8h" local="yes">Heightmap.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_map_8h" local="yes">Map.h</includedby>
+    <includedby refid="_tile_layer_8h" local="yes">TileLayer.h</includedby>
+    <incdepgraph>
+      <node id="123">
+        <label>limits</label>
+      </node>
+      <node id="111">
+        <label>Array2D.h</label>
+        <link refid="_array2_d_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>iterator</label>
+      </node>
+      <node id="128">
+        <label>cstdint</label>
+      </node>
+      <node id="120">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="122">
+        <label>cmath</label>
+      </node>
+      <node id="112">
+        <label>cassert</label>
+      </node>
+      <node id="117">
+        <label>cstdarg</label>
+      </node>
+      <node id="119">
+        <label>map</label>
+      </node>
+      <node id="127">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>Log.h</label>
+        <link refid="_log_8h_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>Range.h</label>
+        <link refid="_range_8h_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>vector</label>
+      </node>
+      <node id="114">
+        <label>utility</label>
+      </node>
+      <node id="121">
+        <label>Math.h</label>
+        <link refid="_math_8h_source"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>cstdlib</label>
+      </node>
+      <node id="125">
+        <label>cstddef</label>
+      </node>
+      <node id="113">
+        <label>type_traits</label>
+      </node>
+      <node id="129">
+        <label>algorithm</label>
+      </node>
+      <node id="130">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="135">
+        <label>Geometry.h</label>
+        <link refid="_geometry_8h_source"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>Array2D.h</label>
+        <link refid="_array2_d_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>Map.h</label>
+        <link refid="_map_8h_source"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>Heightmap.h</label>
+        <link refid="_heightmap_8h_source"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="132">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>TileLayer.h</label>
+        <link refid="_tile_layer_8h_source"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgf_1_1_array2_d" prot="public">gf::Array2D</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ARRAY2D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARRAY2D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Range.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>I<sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="63" refid="classgf_1_1_array2_d" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70" refid="classgf_1_1_array2_d_1a0ec41dd614366590913b0148ec48c040" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d_1a0ec41dd614366590913b0148ec48c040" kindref="member">Array2D</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_size(0,<sp/>0)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classgf_1_1_array2_d_1a280284a67ba004b12a0a9b6eaa4680fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d_1a280284a67ba004b12a0a9b6eaa4680fa" kindref="member">Array2D</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>size)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_size(size)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>m_data(size.width<sp/>*<sp/>size.height)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classgf_1_1_array2_d_1adb700b94e1de611c0127972ad533b65b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d_1adb700b94e1de611c0127972ad533b65b" kindref="member">Array2D</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/>value)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_size(size)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>m_data(size.width<sp/>*<sp/>size.height,<sp/>value)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>(<ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;<sp/>operator=(<ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classgf_1_1_array2_d_1aa5a1495f3d6ffc5fad5d1fe0bac3443a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1aa5a1495f3d6ffc5fad5d1fe0bac3443a" kindref="member">swap</ref>(<ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::swap(m_data,<sp/>other.m_data);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::swap(m_size,<sp/>other.m_size);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classgf_1_1_array2_d_1a4b79fa8c752fd9f2ed5c639523490a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>*<ref refid="classgf_1_1_array2_d_1a4b79fa8c752fd9f2ed5c639523490a74" kindref="member">getDataPtr</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.data();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classgf_1_1_array2_d_1a0677c2fcb304ac8751f193b77c513dbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="classgf_1_1_array2_d_1a0677c2fcb304ac8751f193b77c513dbe" kindref="member">getDataSize</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.size();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classgf_1_1_array2_d_1a5e7ec4e91c30a35c7a41d5219c1a029d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/><ref refid="classgf_1_1_array2_d_1a5e7ec4e91c30a35c7a41d5219c1a029d" kindref="member">getSize</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="classgf_1_1_array2_d_1a199677b75b5c04282daa9ef15cdc5e9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/><ref refid="classgf_1_1_array2_d_1a199677b75b5c04282daa9ef15cdc5e9f" kindref="member">getCols</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size.col;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classgf_1_1_array2_d_1a389b07a7da0c0cd5a01af384346a19a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/><ref refid="classgf_1_1_array2_d_1a389b07a7da0c0cd5a01af384346a19a2" kindref="member">getRows</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_size.row;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classgf_1_1_array2_d_1abcd3af6e1984e0345bb95d6f16f64c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1abcd3af6e1984e0345bb95d6f16f64c9e" kindref="member">isEmpty</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.empty();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classgf_1_1_array2_d_1adddda9ba3c9bd37add85fe246bb57cdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1adddda9ba3c9bd37add85fe246bb57cdd" kindref="member">isValid</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos.col<sp/>&lt;<sp/>m_size.col<sp/>&amp;&amp;<sp/>pos.row<sp/>&lt;<sp/>m_size.row<sp/>&amp;&amp;<sp/>(std::is_unsigned&lt;I&gt;::value<sp/>||<sp/>(0<sp/>&lt;=<sp/>pos.col<sp/>&amp;&amp;<sp/>0<sp/>&lt;=<sp/>pos.row));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="classgf_1_1_array2_d_1a4ce2f15a2adae812ec3889702b27b660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/><ref refid="classgf_1_1_array2_d_1a4ce2f15a2adae812ec3889702b27b660" kindref="member">operator()</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(pos);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classgf_1_1_array2_d_1a25e29d5840eba19f24cd72f07874ea7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/><ref refid="classgf_1_1_array2_d_1a25e29d5840eba19f24cd72f07874ea7f" kindref="member">operator()</ref>(std::size_t<sp/>index)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data[index];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classgf_1_1_array2_d_1a6881232f07dad70f955cf77b5f36a108" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/><ref refid="classgf_1_1_array2_d_1a6881232f07dad70f955cf77b5f36a108" kindref="member">operator()</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(pos);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="classgf_1_1_array2_d_1ad4bd487b2ed0031399c5997df59c8de3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/><ref refid="classgf_1_1_array2_d_1ad4bd487b2ed0031399c5997df59c8de3" kindref="member">operator()</ref>(std::size_t<sp/>index)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data[index];</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classgf_1_1_array2_d_1ae4018dd5b613a2bf820d60b060551848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/><ref refid="classgf_1_1_array2_d_1ae4018dd5b613a2bf820d60b060551848" kindref="member">toPosition</ref>(std::size_t<sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>pos<sp/>%<sp/>m_size.col,<sp/>pos<sp/>/<sp/>m_size.col<sp/>};</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="291" refid="classgf_1_1_array2_d_1a56b1f031e9d3d6ec2b1c8cbba58d5e3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1a56b1f031e9d3d6ec2b1c8cbba58d5e3e" kindref="member">visit4Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsDiamond(pos,<sp/>func,<sp/>1);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="317" refid="classgf_1_1_array2_d_1afd7c2693c2780580ecb9b42d0c18550c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1afd7c2693c2780580ecb9b42d0c18550c" kindref="member">visit4Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsDiamond(pos,<sp/>func,<sp/>1);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="343" refid="classgf_1_1_array2_d_1a1006e33c449707e066a561b25c9771ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1a1006e33c449707e066a561b25c9771ba" kindref="member">visit12Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsDiamond(pos,<sp/>func,<sp/>2);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="369" refid="classgf_1_1_array2_d_1afad6bcac042a8b721802d578c21c708c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1afad6bcac042a8b721802d578c21c708c" kindref="member">visit12Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsDiamond(pos,<sp/>func,<sp/>2);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="395" refid="classgf_1_1_array2_d_1a845439d276d60edaafe7860641cdca42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1a845439d276d60edaafe7860641cdca42" kindref="member">visit8Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsSquare(pos,<sp/>func,<sp/>1);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="423" refid="classgf_1_1_array2_d_1ad5d4e536abdca9dbe55c796ed791bf7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1ad5d4e536abdca9dbe55c796ed791bf7c" kindref="member">visit8Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsSquare(pos,<sp/>func,<sp/>1);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="449" refid="classgf_1_1_array2_d_1a38c1cf768d111e1e7a57032f4b051cb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1a38c1cf768d111e1e7a57032f4b051cb4" kindref="member">visit24Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsSquare(pos,<sp/>func,<sp/>2);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="475" refid="classgf_1_1_array2_d_1a840139ac05680d6406223b447037a664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_array2_d_1a840139ac05680d6406223b447037a664" kindref="member">visit24Neighbors</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>visitNeighborsSquare(pos,<sp/>func,<sp/>2);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492" refid="classgf_1_1_array2_d_1aff17b16f1868abd8bbe6955dafee3aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>*<ref refid="classgf_1_1_array2_d_1aff17b16f1868abd8bbe6955dafee3aa5" kindref="member">begin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.data();</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502" refid="classgf_1_1_array2_d_1aec3d53d1365b9db610a9290b79e6d74f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>*<ref refid="classgf_1_1_array2_d_1aec3d53d1365b9db610a9290b79e6d74f" kindref="member">end</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.data()<sp/>+<sp/>m_data.size();</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>*<ref refid="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" kindref="member">begin</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.data();</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522" refid="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>*<ref refid="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" kindref="member">end</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data.data()<sp/>+<sp/>m_data.size();</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531" refid="classgf_1_1_array2_d_1ae7b112218b2234719dc3d9d3c2b99496" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range" kindref="compound">RangeZ</ref><sp/><ref refid="classgf_1_1_array2_d_1ae7b112218b2234719dc3d9d3c2b99496" kindref="member">getIndexRange</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>0,<sp/>m_size.col<sp/>*<sp/>m_size.row<sp/>};</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="540" refid="classgf_1_1_array2_d_1ae4881cc9ecc8b79f7fb4a0e63624eb6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;I&gt;</ref><sp/><ref refid="classgf_1_1_array2_d_1ae4881cc9ecc8b79f7fb4a0e63624eb6a" kindref="member">getRowRange</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>0,<sp/>m_size.row<sp/>};</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549" refid="classgf_1_1_array2_d_1adde6cc217dbf1c988c9fe2ade0becb53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;I&gt;</ref><sp/><ref refid="classgf_1_1_array2_d_1adde6cc217dbf1c988c9fe2ade0becb53" kindref="member">getColRange</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>0,<sp/>m_size.col<sp/>};</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558" refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_position_range" kindref="compound">PositionRange&lt;I&gt;</ref><sp/><ref refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" kindref="member">getPositionRange</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>getColRange(),<sp/>getRowRange()<sp/>};</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos)<sp/>{</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data[pos.row<sp/>*<sp/>m_size.col<sp/>+<sp/>pos.col];</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&amp;<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data[pos.row<sp/>*<sp/>m_size.col<sp/>+<sp/>pos.col];</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visitNeighborsSquare(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/>n)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(isValid(pos));</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMin<sp/>=<sp/>pos.col<sp/>-<sp/>std::min(pos.col,<sp/>n);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMax<sp/>=<sp/>pos.col<sp/>+<sp/>std::min(m_size.col<sp/>-<sp/>pos.col<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMin<sp/>=<sp/>pos.row<sp/>-<sp/>std::min(pos.row,<sp/>n);</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMax<sp/>=<sp/>pos.row<sp/>+<sp/>std::min(m_size.row<sp/>-<sp/>pos.row<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>rowMin;<sp/>row<sp/>&lt;=<sp/>rowMax;<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>colMin;<sp/>col<sp/>&lt;=<sp/>colMax;<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(col<sp/>==<sp/>pos.col<sp/>&amp;&amp;<sp/>row<sp/>==<sp/>pos.row)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>to<sp/>include<sp/>VectorOps.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func({<sp/>col,<sp/>row<sp/>},<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">({<sp/>col,<sp/>row<sp/>}));</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visitNeighborsSquare(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(isValid(pos));</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMin<sp/>=<sp/>pos.col<sp/>-<sp/>std::min(pos.col,<sp/>n);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMax<sp/>=<sp/>pos.col<sp/>+<sp/>std::min(m_size.col<sp/>-<sp/>pos.col<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMin<sp/>=<sp/>pos.row<sp/>-<sp/>std::min(pos.row,<sp/>n);</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMax<sp/>=<sp/>pos.row<sp/>+<sp/>std::min(m_size.row<sp/>-<sp/>pos.row<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>rowMin;<sp/>row<sp/>&lt;=<sp/>rowMax;<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>colMin;<sp/>col<sp/>&lt;=<sp/>colMax;<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(col<sp/>==<sp/>pos.col<sp/>&amp;&amp;<sp/>row<sp/>==<sp/>pos.row)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>to<sp/>include<sp/>VectorOps.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func({<sp/>col,<sp/>row<sp/>},<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">({<sp/>col,<sp/>row<sp/>}));</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visitNeighborsDiamond(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/>n)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(isValid(pos));</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMin<sp/>=<sp/>pos.col<sp/>-<sp/>std::min(pos.col,<sp/>n);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMax<sp/>=<sp/>pos.col<sp/>+<sp/>std::min(m_size.col<sp/>-<sp/>pos.col<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMin<sp/>=<sp/>pos.row<sp/>-<sp/>std::min(pos.row,<sp/>n);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMax<sp/>=<sp/>pos.row<sp/>+<sp/>std::min(m_size.row<sp/>-<sp/>pos.row<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>rowMin;<sp/>row<sp/>&lt;=<sp/>rowMax;<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>colMin;<sp/>col<sp/>&lt;=<sp/>colMax;<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(col<sp/>==<sp/>pos.col<sp/>&amp;&amp;<sp/>row<sp/>==<sp/>pos.row)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>to<sp/>include<sp/>VectorOps.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__core_1ga162af6026bb8a59762e87c918f634006" kindref="member">gf::absdiff</ref>(col,<sp/>pos.col)<sp/>+<sp/><ref refid="group__core_1ga162af6026bb8a59762e87c918f634006" kindref="member">gf::absdiff</ref>(row,<sp/>pos.row)<sp/>&gt;<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func({<sp/>col,<sp/>row<sp/>},<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">({<sp/>col,<sp/>row<sp/>}));</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>visitNeighborsDiamond(<ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>pos,<sp/>Func<sp/>func,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(isValid(pos));</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMin<sp/>=<sp/>pos.col<sp/>-<sp/>std::min(pos.col,<sp/>n);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colMax<sp/>=<sp/>pos.col<sp/>+<sp/>std::min(m_size.col<sp/>-<sp/>pos.col<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMin<sp/>=<sp/>pos.row<sp/>-<sp/>std::min(pos.row,<sp/>n);</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rowMax<sp/>=<sp/>pos.row<sp/>+<sp/>std::min(m_size.row<sp/>-<sp/>pos.row<sp/>-<sp/>1,<sp/>n);</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>rowMin;<sp/>row<sp/>&lt;=<sp/>rowMax;<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>colMin;<sp/>col<sp/>&lt;=<sp/>colMax;<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(col<sp/>==<sp/>pos.col<sp/>&amp;&amp;<sp/>row<sp/>==<sp/>pos.row)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>to<sp/>include<sp/>VectorOps.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__core_1ga162af6026bb8a59762e87c918f634006" kindref="member">gf::absdiff</ref>(col,<sp/>pos.col)<sp/>+<sp/><ref refid="group__core_1ga162af6026bb8a59762e87c918f634006" kindref="member">gf::absdiff</ref>(row,<sp/>pos.row)<sp/>&gt;<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func({<sp/>col,<sp/>row<sp/>},<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">({<sp/>col,<sp/>row<sp/>}));</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector&lt;I, 2&gt;</ref><sp/>m_size;</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>m_data;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"></highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ARRAY2D_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h"/>
+  </compounddef>
+</doxygen>

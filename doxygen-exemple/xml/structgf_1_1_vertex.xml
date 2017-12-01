@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_vertex" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Vertex</compoundname>
+    <includes refid="_vertex_8h" local="no">gf/Vertex.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_vertex_1a5b0a0e1db86b59a8bd68dd1096373d9e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Vertex::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+<para>Position of the vertex in world coordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" line="76" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_vertex_1a1c08b5913c321ab17213ce7dcd76c350" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Vertex::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= <ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">Color::White</ref></initializer>
+        <briefdescription>
+<para>Color of the vertex (default: white) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" line="77" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_vertex_1aaf5bf3625e264c4f281377fe75748839" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Vertex::texCoords</definition>
+        <argsstring></argsstring>
+        <name>texCoords</name>
+        <initializer>= <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref>{ 0.0f, 0.0f }</initializer>
+        <briefdescription>
+<para><ref refid="classgf_1_1_coordinates" kindref="compound">Coordinates</ref> of the texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A point associated with a color and a texture coordinate. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_vertex" kindref="compound">gf::Vertex</ref> represents the association between a position in the world, a color and texture coordinates.</para><para>A vertex is the building block for drawing. Everything which is visible on screen is made of vertices. They are grouped as 2D primitives (triangles, etc), and these primitives are grouped to create even more complex 2D entities such as sprites, shapes, etc.</para><para>If you use the graphical entities of gf (sprite, shape), you won&apos;t have to deal with vertices directly. But if you want to define your own 2D entities, using vertices will allow you to get maximum performances.</para><para>The texture coordinates are in the <formula id="4">$ [0, 1] $</formula> range. <formula id="80">$ (0,0) $</formula> is the top-left of the texture while <formula id="120">$ (1,1) $</formula> is the bottom right of the texture. If a coordinate is outside the <formula id="4">$ [0, 1] $</formula> range, the texture is clamped or repeated (see <ref refid="classgf_1_1_bare_texture_1a34860c67cf5bd39b7d04d290ecee427c" kindref="member">Texture::setRepeated</ref>).</para><para>Example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>define<sp/>a<sp/>triangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vertex" kindref="compound">gf::Vertex</ref><sp/>triangle[3];</highlight></codeline>
+<codeline><highlight class="normal">triangle[0].<ref refid="structgf_1_1_vertex_1a5b0a0e1db86b59a8bd68dd1096373d9e" kindref="member">position</ref><sp/>=<sp/>{<sp/>0.0f,<sp/>0.5f<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">triangle[0].<ref refid="structgf_1_1_vertex_1a1c08b5913c321ab17213ce7dcd76c350" kindref="member">color</ref><sp/>=<sp/><ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>;</highlight></codeline>
+<codeline><highlight class="normal">triangle[1].<ref refid="structgf_1_1_vertex_1a5b0a0e1db86b59a8bd68dd1096373d9e" kindref="member">position</ref><sp/>=<sp/>{<sp/>0.5f,<sp/>-0.5f<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">triangle[1].<ref refid="structgf_1_1_vertex_1a1c08b5913c321ab17213ce7dcd76c350" kindref="member">color</ref><sp/>=<sp/><ref refid="structgf_1_1_color_1ae14a966a9aacb0c39bac4b8ea3617791" kindref="member">gf::Color::Green</ref>;</highlight></codeline>
+<codeline><highlight class="normal">triangle[2].<ref refid="structgf_1_1_vertex_1a5b0a0e1db86b59a8bd68dd1096373d9e" kindref="member">position</ref><sp/>=<sp/>{<sp/>-0.5f,<sp/>-0.5f<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">triangle[2].<ref refid="structgf_1_1_vertex_1a1c08b5913c321ab17213ce7dcd76c350" kindref="member">color</ref><sp/>=<sp/><ref refid="structgf_1_1_color_1aeb2d6914d800765e5aeaed16b521e263" kindref="member">gf::Color::Yellow</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>draw<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(triangle,<sp/>3,<sp/><ref refid="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a7ca66fdfaad3eb33fc65d7490178f856" kindref="member">gf::PrimitiveType::Triangles</ref>);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">gf::PrimitiveType</ref>, <ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">gf::RenderTarget::draw</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1091">
+        <label>gf::Vector&lt; float, 4 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="1092">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="1090">
+        <label>gf::Vertex</label>
+        <link refid="structgf_1_1_vertex"/>
+        <childnode refid="1091" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+        <childnode refid="1092" relation="usage">
+          <edgelabel>texCoords</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vertex.h" bodystart="75" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_vertex_1a1c08b5913c321ab17213ce7dcd76c350" prot="public" virt="non-virtual"><scope>gf::Vertex</scope><name>color</name></member>
+      <member refid="structgf_1_1_vertex_1a5b0a0e1db86b59a8bd68dd1096373d9e" prot="public" virt="non-virtual"><scope>gf::Vertex</scope><name>position</name></member>
+      <member refid="structgf_1_1_vertex_1aaf5bf3625e264c4f281377fe75748839" prot="public" virt="non-virtual"><scope>gf::Vertex</scope><name>texCoords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="recommanded_libraries" kind="page">
+    <compoundname>recommanded_libraries</compoundname>
+    <title>Recommanded libraries</title>
+    <detaileddescription>
+<para>gf does not provide everything, its main focus is on graphics. Here is a list of recommanded C++ libraries that can be used:</para><sect1 id="recommanded_libraries_1recommanded_libraries_threading">
+<title>Threading</title>
+<para><itemizedlist>
+<listitem><para>No need for an external thread library, C++11 provides <ulink url="http://en.cppreference.com/w/cpp/thread">threads, mutexes, condition variables and futures</ulink>.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="recommanded_libraries_1recommanded_libraries_network">
+<title>Network</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://think-async.com/">Asio</ulink> or <ulink url="http://www.boost.org/doc/libs/release/libs/asio/">Boost.Asio</ulink>: This library will be integrated in the future C++ standard, so it can be used safely if you want a future-proof networking library (Boost Software License).</para></listitem><listitem><para><ulink url="http://enet.bespin.org/">ENet</ulink>: It&apos;s a reliable UDP networking library used in the game industry (MIT licence).</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="recommanded_libraries_1recommanded_libraries_audio">
+<title>Audio</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://www.sfml-dev.org/tutorials/2.3/#audio-module">SFML Audio</ulink>: This part of SFML is independent and can be used without the rest of SFML, it is a simple abstraction above <ulink url="https://www.openal.org/">OpenAL</ulink> (zlib/libpng license).</para></listitem><listitem><para><ulink url="http://portaudio.com/">PortAudio</ulink>: This library is a low-level audio I/O library (MIT license).</para></listitem><listitem><para><ulink url="http://sol.gfxile.net/soloud/index.html">SoLoud</ulink>: This library if an easy to use audio engine for games (zlib/libpng license).</para></listitem><listitem><para><ulink url="http://libsound.io/">libsoundio</ulink>: This library is a a lightweight abstraction over various sound drivers (MIT license).</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="recommanded_libraries_1recommanded_libraries_physics">
+<title>Physics</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://box2d.org/">Box2D</ulink>: This library is a 2D physics engine for games (zlib/libpng license).</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="recommanded_libraries_1recommanded_libraries_serialization">
+<title>Serialization</title>
+<para><itemizedlist>
+<listitem><para><ulink url="http://www.boost.org/libs/serialization">Boost Serialization</ulink>: The serialization library of the Boost project (Boost Software License)</para></listitem><listitem><para><ulink url="http://uscilab.github.io/cereal/">cereal</ulink>: This library is a header-only C++11 serialization library (BSD license). </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

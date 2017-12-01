@@ -1,0 +1,869 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_physics_body" kind="class" language="C++" prot="public">
+    <compoundname>gf::PhysicsBody</compoundname>
+    <includes refid="_physics_body_8h" local="no">gf/PhysicsBody.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Position, angle, velocity and acceleration</header>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a97acccff218d1c116937ed4be17247ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>Get the position of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current position of the body </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="90" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1aba7fda0c4c85a58cf51744a39b0cbada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setPosition</definition>
+        <argsstring>(Vector2f position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set the position of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new position of the body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a15136f3f42efe5c4178a7a5d0fbdc471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::move</definition>
+        <argsstring>(Vector2f offset)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Move the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset to apply to the position of the body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1ad32902adfefc0c26d55963afdadd15c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::getLinearVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinearVelocity</name>
+        <briefdescription>
+<para>Get the linear velocity of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current linear velocity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="113" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a123a92093c38edbed20bc93fde099d60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setLinearVelocity</definition>
+        <argsstring>(Vector2f velocity)</argsstring>
+        <name>setLinearVelocity</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+<para>Set the linear velocity of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>velocity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new velocity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1adce5a7d37fe5b37f5500577d9c39ca76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::applyLinearImpulse</definition>
+        <argsstring>(Vector2f impulse)</argsstring>
+        <name>applyLinearImpulse</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>impulse</declname>
+        </param>
+        <briefdescription>
+<para>Apply a linear impulse. </para>        </briefdescription>
+        <detaileddescription>
+<para>The impulse changes the velocity.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>impulse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The impulse to apply to the velocity of the body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a2b1db15fa14af45c45eb50adff2e8f7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::getAcceleration</definition>
+        <argsstring>() const</argsstring>
+        <name>getAcceleration</name>
+        <briefdescription>
+<para>Get the acceleration of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current acceleration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="140" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a91649bff8e2f71af11360ce0317c4c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::applyForce</definition>
+        <argsstring>(Vector2f force)</argsstring>
+        <name>applyForce</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>Apply a force. </para>        </briefdescription>
+        <detaileddescription>
+<para>The force changes the acceleration (by Newton&apos;s law)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The force to apply to the acceleration of the body </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1af9f2052aed49bc2a809d6678806543cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getAngle</definition>
+        <argsstring>() const</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+<para>Get the angle of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The angle of the body </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="158" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1aa788e11a971227be18ced4fadcfeefe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the angle of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="167" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a042fab2ae6fe4695a495cafbf3421b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::turn</definition>
+        <argsstring>(float arc)</argsstring>
+        <name>turn</name>
+        <param>
+          <type>float</type>
+          <declname>arc</declname>
+        </param>
+        <briefdescription>
+<para>Change the angle of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arc to add to the current angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="176" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1ad0286fe9338d6ed223e81b6dad353806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setVelocityFromAngle</definition>
+        <argsstring>()</argsstring>
+        <name>setVelocityFromAngle</name>
+        <briefdescription>
+<para>Set the velocity direction from the angle of the body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1afcf11f0945c83ab901a835b75fbf2b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::updateTransform</definition>
+        <argsstring>()</argsstring>
+        <name>updateTransform</name>
+        <briefdescription>
+<para>Update the internal transform. </para>        </briefdescription>
+        <detaileddescription>
+<para>Normally, you should not call this function.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_physics_body_1a15f5caf11e8829cd9b029adff6e02d2a" kindref="member">getTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a15f5caf11e8829cd9b029adff6e02d2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+        <definition>const Transform&amp; gf::PhysicsBody::getTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransform</name>
+        <briefdescription>
+<para>Get the current transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current transform </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_physics_body_1afcf11f0945c83ab901a835b75fbf2b80" kindref="member">updateTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="200" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Body properties</header>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1adedbd1cd2a73c498628856c1763bded5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setRestitution</definition>
+        <argsstring>(float restitution)</argsstring>
+        <name>setRestitution</name>
+        <param>
+          <type>float</type>
+          <declname>restitution</declname>
+        </param>
+        <briefdescription>
+<para>Set the restitution of the body of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restitution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new restitution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="215" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1ad09a1a312eceafc21aa473248936581d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getRestitution</definition>
+        <argsstring>() const</argsstring>
+        <name>getRestitution</name>
+        <briefdescription>
+<para>Get the restitution of the body of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current restitution </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="224" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a6c6dca7ab89d87c06fc34f8dc4599815" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setStaticFriction</definition>
+        <argsstring>(float friction)</argsstring>
+        <name>setStaticFriction</name>
+        <param>
+          <type>float</type>
+          <declname>friction</declname>
+        </param>
+        <briefdescription>
+<para>Set the static friction coefficient of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>friction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new friction coefficient </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="233" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a65e9da0d64758b9c912966afbd39bb45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getStaticFriction</definition>
+        <argsstring>() const</argsstring>
+        <name>getStaticFriction</name>
+        <briefdescription>
+<para>Get the static friction coefficient of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current friction coefficient </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="242" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a16686ce8f0a318a0be94a845a197883b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setDynamicFriction</definition>
+        <argsstring>(float friction)</argsstring>
+        <name>setDynamicFriction</name>
+        <param>
+          <type>float</type>
+          <declname>friction</declname>
+        </param>
+        <briefdescription>
+<para>Set the dynamic friction coefficient of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>friction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new friction coefficient </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="251" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1ad18b9625c13ec7f2298f623dfc683411" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getDynamicFriction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDynamicFriction</name>
+        <briefdescription>
+<para>Get the dynamic friction coefficient of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current friction coefficient </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="260" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1aea32624b3636ef226fd2438c8e79459c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setLinearDamping</definition>
+        <argsstring>(float damping)</argsstring>
+        <name>setLinearDamping</name>
+        <param>
+          <type>float</type>
+          <declname>damping</declname>
+        </param>
+        <briefdescription>
+<para>Set the linear damping of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new damping </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="269" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a6587a1176f4a7cc3214e67ee9f4fa8ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getLinearDamping</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinearDamping</name>
+        <briefdescription>
+<para>Get the linear damping of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current damping </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="278" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1ae4cc8c38a53f84691c5dc0d1744aac1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::setDensity</definition>
+        <argsstring>(float density)</argsstring>
+        <name>setDensity</name>
+        <param>
+          <type>float</type>
+          <declname>density</declname>
+        </param>
+        <briefdescription>
+<para>Set the density of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>This changes the mass of the body, according to its geometry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>density</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new density </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1aef4645e6058c4ab291cb38a7ede26e42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::getInverseMass</definition>
+        <argsstring>() const</argsstring>
+        <name>getInverseMass</name>
+        <briefdescription>
+<para>Get the inverse mass of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>The inverse mass is zero for static objects.</para><para><simplesect kind="return"><para>The current inverse mass </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="298" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="298" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702f" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702fafa32023dee2aa3ab1b165cc6807fad10" prot="public">
+          <name>Static</name>
+          <briefdescription>
+<para>Static body with infinite mass. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702fa79a18ed43dd064c7e2ba118afdc59df4" prot="public">
+          <name>Dynamic</name>
+          <briefdescription>
+<para>Dynamic bodies with finite mass. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a81018654c27c947b196da201d92a8022" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702f" kindref="member">Type</ref></type>
+        <definition>Type gf::PhysicsBody::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="313" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a38cc0ca47a15cbbedd5915cdf2608930" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="315" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a7ade29435667261c889fdd1f4ce9f985" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::m_linearVelocity</definition>
+        <argsstring></argsstring>
+        <name>m_linearVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="316" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1aa8a57a7ffc16c780337464e21f8396bb" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::PhysicsBody::m_acceleration</definition>
+        <argsstring></argsstring>
+        <name>m_acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="317" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a07f3eec2a2ecf6e53cfdc2cc35a7e567" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_angle</definition>
+        <argsstring></argsstring>
+        <name>m_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="319" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a2cd6e087c866622197b0b232c5f0b26c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_inverseMass</definition>
+        <argsstring></argsstring>
+        <name>m_inverseMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="321" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1af9a8e2837894839ecd954bf8225832de" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_restitution</definition>
+        <argsstring></argsstring>
+        <name>m_restitution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="323" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a9b2a17b7d4af25c3d15a02da48a93161" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_staticFriction</definition>
+        <argsstring></argsstring>
+        <name>m_staticFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="324" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a9a0e26cb997693bce9c2c4a663cf8277" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_dynamicFriction</definition>
+        <argsstring></argsstring>
+        <name>m_dynamicFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="325" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a975846091ad0e35e9683b5288100b4b0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::PhysicsBody::m_linearDamping</definition>
+        <argsstring></argsstring>
+        <name>m_linearDamping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="326" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1acd1c3253234b42cadc5169af217b71d2" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref></type>
+        <definition>Transform gf::PhysicsBody::m_transform</definition>
+        <argsstring></argsstring>
+        <name>m_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="328" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_physics_body_1a2804e60e1eb71212270c45482e7bb365" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_physics_geometry" kindref="compound">PhysicsGeometry</ref> &amp;</type>
+        <definition>const PhysicsGeometry&amp; gf::PhysicsBody::m_geometry</definition>
+        <argsstring></argsstring>
+        <name>m_geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="330" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a4b2e21960ecb5b0f7f93f5b26cd3af3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PhysicsBody::PhysicsBody</definition>
+        <argsstring>(const PhysicsGeometry &amp;geometry, Type type=Dynamic)</argsstring>
+        <name>PhysicsBody</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_physics_geometry" kindref="compound">PhysicsGeometry</ref> &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702f" kindref="member">Type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702fa79a18ed43dd064c7e2ba118afdc59df4" kindref="member">Dynamic</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The geometry of the body </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the body (default: dynamic) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a40bc7b5e0effcdb56599fd45d5b44327" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702f" kindref="member">Type</ref></type>
+        <definition>Type gf::PhysicsBody::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Get the type of the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the body </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a394883bb45cc5489ecda429a23204a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::step</definition>
+        <argsstring>(float dt)</argsstring>
+        <name>step</name>
+        <param>
+          <type>float</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Update the model&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time (in seconds) since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1a1ad4d5a2ac69dc1a634e839719bc7cf5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PhysicsBody::render</definition>
+        <argsstring>(RenderTarget &amp;target, const RenderStates &amp;states) const</argsstring>
+        <name>render</name>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Render the body. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is for debugging purpose. The body is outlined in red.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_physics_body_1af0b277d77f68d6a51ee2d6f9e9110f68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::PhysicsBody::collidesWith</definition>
+        <argsstring>(const PhysicsBody &amp;other, Penetration &amp;p) const</argsstring>
+        <name>collidesWith</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if the body collides with another body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other body </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="310" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A physics body. </para>    </briefdescription>
+    <detaileddescription>
+<para>A body has several properties:</para><para><itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Coefficient_of_restitution">restitution</ulink> (default: 0)</para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Friction#Coefficient_of_friction">static and dynamic friction</ulink> (default: 0)</para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Damping_ratio">linear damping</ulink> (default: 0)</para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Density">density</ulink> (default: 1)</para></listitem></itemizedlist>
+</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_physics_geometry" kindref="compound">gf::PhysicsGeometry</ref>, <ref refid="classgf_1_1_physics_model" kindref="compound">gf::PhysicsModel</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" line="36" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsBody.h" bodystart="36" bodyend="331"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_physics_body_1a91649bff8e2f71af11360ce0317c4c1d" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>applyForce</name></member>
+      <member refid="classgf_1_1_physics_body_1adce5a7d37fe5b37f5500577d9c39ca76" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>applyLinearImpulse</name></member>
+      <member refid="classgf_1_1_physics_body_1af0b277d77f68d6a51ee2d6f9e9110f68" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>collidesWith</name></member>
+      <member refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702fa79a18ed43dd064c7e2ba118afdc59df4" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>Dynamic</name></member>
+      <member refid="classgf_1_1_physics_body_1a2b1db15fa14af45c45eb50adff2e8f7e" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getAcceleration</name></member>
+      <member refid="classgf_1_1_physics_body_1af9f2052aed49bc2a809d6678806543cd" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getAngle</name></member>
+      <member refid="classgf_1_1_physics_body_1ad18b9625c13ec7f2298f623dfc683411" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getDynamicFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1aef4645e6058c4ab291cb38a7ede26e42" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getInverseMass</name></member>
+      <member refid="classgf_1_1_physics_body_1a6587a1176f4a7cc3214e67ee9f4fa8ad" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getLinearDamping</name></member>
+      <member refid="classgf_1_1_physics_body_1ad32902adfefc0c26d55963afdadd15c9" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getLinearVelocity</name></member>
+      <member refid="classgf_1_1_physics_body_1a97acccff218d1c116937ed4be17247ca" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_physics_body_1ad09a1a312eceafc21aa473248936581d" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getRestitution</name></member>
+      <member refid="classgf_1_1_physics_body_1a65e9da0d64758b9c912966afbd39bb45" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getStaticFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1a15f5caf11e8829cd9b029adff6e02d2a" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_physics_body_1a40bc7b5e0effcdb56599fd45d5b44327" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>getType</name></member>
+      <member refid="classgf_1_1_physics_body_1aa8a57a7ffc16c780337464e21f8396bb" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_acceleration</name></member>
+      <member refid="classgf_1_1_physics_body_1a07f3eec2a2ecf6e53cfdc2cc35a7e567" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_angle</name></member>
+      <member refid="classgf_1_1_physics_body_1a9a0e26cb997693bce9c2c4a663cf8277" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_dynamicFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1a2804e60e1eb71212270c45482e7bb365" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_geometry</name></member>
+      <member refid="classgf_1_1_physics_body_1a2cd6e087c866622197b0b232c5f0b26c" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_inverseMass</name></member>
+      <member refid="classgf_1_1_physics_body_1a975846091ad0e35e9683b5288100b4b0" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_linearDamping</name></member>
+      <member refid="classgf_1_1_physics_body_1a7ade29435667261c889fdd1f4ce9f985" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_linearVelocity</name></member>
+      <member refid="classgf_1_1_physics_body_1a38cc0ca47a15cbbedd5915cdf2608930" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_position</name></member>
+      <member refid="classgf_1_1_physics_body_1af9a8e2837894839ecd954bf8225832de" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_restitution</name></member>
+      <member refid="classgf_1_1_physics_body_1a9b2a17b7d4af25c3d15a02da48a93161" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_staticFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1acd1c3253234b42cadc5169af217b71d2" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_transform</name></member>
+      <member refid="classgf_1_1_physics_body_1a81018654c27c947b196da201d92a8022" prot="private" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_physics_body_1a15136f3f42efe5c4178a7a5d0fbdc471" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>move</name></member>
+      <member refid="classgf_1_1_physics_body_1a4b2e21960ecb5b0f7f93f5b26cd3af3e" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>PhysicsBody</name></member>
+      <member refid="classgf_1_1_physics_body_1a1ad4d5a2ac69dc1a634e839719bc7cf5" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>render</name></member>
+      <member refid="classgf_1_1_physics_body_1aa788e11a971227be18ced4fadcfeefe3" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setAngle</name></member>
+      <member refid="classgf_1_1_physics_body_1ae4cc8c38a53f84691c5dc0d1744aac1e" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setDensity</name></member>
+      <member refid="classgf_1_1_physics_body_1a16686ce8f0a318a0be94a845a197883b" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setDynamicFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1aea32624b3636ef226fd2438c8e79459c" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setLinearDamping</name></member>
+      <member refid="classgf_1_1_physics_body_1a123a92093c38edbed20bc93fde099d60" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setLinearVelocity</name></member>
+      <member refid="classgf_1_1_physics_body_1aba7fda0c4c85a58cf51744a39b0cbada" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_physics_body_1adedbd1cd2a73c498628856c1763bded5" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setRestitution</name></member>
+      <member refid="classgf_1_1_physics_body_1a6c6dca7ab89d87c06fc34f8dc4599815" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setStaticFriction</name></member>
+      <member refid="classgf_1_1_physics_body_1ad0286fe9338d6ed223e81b6dad353806" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>setVelocityFromAngle</name></member>
+      <member refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702fafa32023dee2aa3ab1b165cc6807fad10" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>Static</name></member>
+      <member refid="classgf_1_1_physics_body_1a394883bb45cc5489ecda429a23204a93" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>step</name></member>
+      <member refid="classgf_1_1_physics_body_1a042fab2ae6fe4695a495cafbf3421b93" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>turn</name></member>
+      <member refid="classgf_1_1_physics_body_1a028e27932aab1c36d31ae18b6304702f" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>Type</name></member>
+      <member refid="classgf_1_1_physics_body_1afcf11f0945c83ab901a835b75fbf2b80" prot="public" virt="non-virtual"><scope>gf::PhysicsBody</scope><name>updateTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

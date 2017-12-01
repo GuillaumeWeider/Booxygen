@@ -1,0 +1,2376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_vector" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Vector</compoundname>
+    <includes refid="_vector_8h" local="no">gf/Vector.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Vector&lt; T, N &gt;::data[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The internal representation of the vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>A vector is represented with an array of <computeroutput>N</computeroutput> values of type <computeroutput>T</computeroutput>. It can be accessed directly, like an array or like a pointer, which can ease interoperability with other libraries. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="251" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_vector_1a067a3d3bd29d65b7519afdbdcc6fb5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>()=default</argsstring>
+        <name>Vector</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor is defaulted so that this type is <ulink url="http://en.cppreference.com/w/cpp/concept/TrivialType">trivial</ulink>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a207af73fa887a1bf398cd55a16927de9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>(T val)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that fills the vector with a value. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor takes a value and fills the entire vector with this value. Care must be taken when calling this constructor:</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;int, 5&gt;</ref><sp/>vecOK(42);<sp/></highlight><highlight class="comment">//<sp/>OK,<sp/>vector<sp/>is<sp/>filled<sp/>with<sp/>42</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;int, 5&gt;</ref><sp/>vecKO{42};<sp/></highlight><highlight class="comment">//<sp/>KO,<sp/>vector<sp/>is<sp/>initialized<sp/>with<sp/>a<sp/>42<sp/>in<sp/>the<sp/>first<sp/>coordinate</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to fill the vector with </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1abac7b6a8a72ab952ac01c96bc39e9056" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>(T *array)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that takes an array. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor can ease conversion from other math libraries. The array must contain enough data for <computeroutput>N</computeroutput> dimensions.</para><para><programlisting><codeline><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>array[5]<sp/>=<sp/>{<sp/>1.0f,<sp/>-1.0f,<sp/>0.5f,<sp/>-2.0f,<sp/>0.0f<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;float, 5&gt;</ref><sp/>vec(array);</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array with the values of the vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="104" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a7db6a2e3790bc19db75529442433e659" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>(std::initializer_list&lt; T &gt; list)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that takes an initializer list. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor allows to use an initializer list to define the coordinates of the vector.</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;bool, 5&gt;</ref><sp/>vec1{<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;bool, 5&gt;</ref><sp/>vec2<sp/>=<sp/>{<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An initializer list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1af4497f220f69f24804b8e2481c8c161b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>(const Vector &amp;other)=default</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor is defaulted so that this type is <ulink url="http://en.cppreference.com/w/cpp/concept/TrivialType">trivial</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to copy from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1acb90d5ec3ce8008c2f6c75135f41625a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::Vector&lt; T, N &gt;::Vector</definition>
+        <argsstring>(const Vector&lt; U, N &gt; &amp;other)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Converting copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to copy from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="144" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a6c56cba56a195d5f2bfafd96d6a8dee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+        <definition>Vector&amp; gf::Vector&lt; T, N &gt;::operator=</definition>
+        <argsstring>(const Vector &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operator is defaulted so that this type is <ulink url="http://en.cppreference.com/w/cpp/concept/TrivialType">trivial</ulink>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ae29bcf6cda25b990b08c600711375649" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Vector&lt; T, N &gt;::operator[]</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access to the <formula id="93">$ i $</formula>-th coordinate. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;int, 5&gt;</ref><sp/>vec<sp/>=<sp/>{<sp/>1,<sp/>3,<sp/>5,<sp/>7,<sp/>9<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">std::printf(</highlight><highlight class="stringliteral">&quot;%i&quot;</highlight><highlight class="normal">,<sp/>vec[1]);<sp/></highlight><highlight class="comment">//<sp/>prints<sp/>3</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinate number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <formula id="93">$ i $</formula>-th coordinate of the vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="169" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a7e288fdab18a04d3a5cbbf92b438fac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>T&amp; gf::Vector&lt; T, N &gt;::operator[]</definition>
+        <argsstring>(std::size_t i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access to the <formula id="93">$ i $</formula>-th coordinate. </para>        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector&lt;int, 5&gt;</ref><sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal">vec[0]<sp/>=<sp/>vec[1]<sp/>=<sp/>vec[2]<sp/>=<sp/>vec[3]<sp/>=<sp/>vec[4]<sp/>=<sp/>0;</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinate number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <formula id="93">$ i $</formula>-th coordinate of the vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="184" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ae6a7e4261a4e635745f3bbb26fe2788c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::Vector&lt; T, N &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Iterator.to the first element. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="194" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1abbb2b2ee77259b73e2b8ae8eadcf8a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::Vector&lt; T, N &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Iterator to the element after the last one. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An invalid pointer that is the adress after the last element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="203" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ab686f01403d3538412d38defb0343222" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Vector&lt; T, N &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Iterator.to the first element (const version). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer on the first const element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="212" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a20a7f448aaf57c9c8057f32dcdb2b17b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Vector&lt; T, N &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Iterator on the element after the last one (const version). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An invalid pointer that is the adress after the last const element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="222" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a86883c0bb9011b4790c30a2e74f73583" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Vector&lt; T, N &gt;::cbegin</definition>
+        <argsstring>() const</argsstring>
+        <name>cbegin</name>
+        <briefdescription>
+<para>Iterator.on the first element (const version). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer on the first const element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="230" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a173c44a2b1a98eb4d50a93fbe980e4ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Vector&lt; T, N &gt;::cend</definition>
+        <argsstring>() const</argsstring>
+        <name>cend</name>
+        <briefdescription>
+<para>Iterator on the element after the last one (const version). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An invalid pointer that is the adress after the last const element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="240" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="240" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_vector_1addfc879a55660b67f701dc5b8f7ee2e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a194e3ab10cac9d61a1b7cb5179a2a045" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1acb6c3010ab2bda198e324c826f933360" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; operator-</definition>
+        <argsstring>(Vector&lt; T, N &gt; val)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise unary minus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="68" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a8e0a6cadb46b506bc913deb4b18a1516" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator+</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise addition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="84" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="84" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a101fbd6e3dbcddd1d856666d59326c5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator+=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise addition and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="100" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a00e172b44efd3aad4cf74adbbfa9a6e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator+</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, U rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar addition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="114" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a406d276bfe7acaa751a9b85417aee3c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator+=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, U rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar addition and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="130" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a5015b6c77ebbd2690707c43deb298d0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator+</definition>
+        <argsstring>(T lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Left scalar addition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="144" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="144" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a8a07db68d257f670491de216befd832d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator-</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise substraction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a96a7faa11e7244c26d0b290cd8be2894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator-=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise substraction and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="177" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="177" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1af30f0d7c7488c76df6c71d51d913de32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator-</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, U rhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar substraction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="192" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="192" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1afec7d861fcc4d7b371e74635767b09b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator-=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, U rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar substraction and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="208" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="208" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1acd174ac192406cd11b091cd69dbb7553" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator-</definition>
+        <argsstring>(T lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Left scalar substraction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="222" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="222" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a585873ed563da32008b584ed878bf9ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator*</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="239" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="239" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a3811d6c420b6e8d37a2c6529f1695401" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator*=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise multiplication and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="255" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="255" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a409504167f553a88cb2a5664703b3ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator*</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, U rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="269" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="269" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a3868eb2530937c190ca12d86a76539ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator*=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, U rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar multiplication and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="285" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="285" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a919ff69530aacf912ab061b5c54f0696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator*</definition>
+        <argsstring>(T lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Left scalar multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="299" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="299" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1af7a62691c378af8f5e949e9660673c72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator/</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise division. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="315" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="315" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a9281898f141cd2de6fe2d2e0fcf2fa03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator/=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise division and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="331" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="331" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ad43a1fd611e6ebae0fd6121336907d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator/</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, U rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar division. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="345" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="345" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a9efbe36172735f3ea47b292dee469c0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Vector&lt; T, N &gt; &amp; operator/=</definition>
+        <argsstring>(Vector&lt; T, N &gt; &amp;lhs, U rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar division and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="361" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1abc1f8173b7503ffbe19f780ff262acd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+            <defval>typename std::enable_if&lt;std::is_arithmetic&lt;<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::value, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; typename std::common_type&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref> &gt;::type, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; typename std::common_type&lt; T, U &gt;::type, N &gt; operator/</definition>
+        <argsstring>(T lhs, Vector&lt; U, N &gt; rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Left scalar division. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="375" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="375" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a21f5f97b31b1fe83154a4220ca1c294f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; bool, N &gt; operator||</definition>
+        <argsstring>(Vector&lt; bool, N &gt; lhs, Vector&lt; bool, N &gt; rhs)</argsstring>
+        <name>operator||</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise logical or operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="391" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="391" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a564559a8e1875530649fa57c59af24f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; bool, N &gt; operator &amp;&amp;</definition>
+        <argsstring>(Vector&lt; bool, N &gt; lhs, Vector&lt; bool, N &gt; rhs)</argsstring>
+        <name>operator&amp;&amp;</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise logical and operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="407" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="407" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a85c05c082b028916436d768e0dc33a00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T dot</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>dot</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Scalar product. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ulink url="https://en.wikipedia.org/wiki/Dot_product">scalar product</ulink> or dot product of two vectors <formula id="94">$ \mathbf{a} = (a_1, \ldots, a_N) $</formula> and <formula id="95">$ \mathbf{b} = (b_1, \ldots, b_N) $</formula> is:</para><para><formula id="96">\[ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{N} a_i b_i = a_1 b_1 + \ldots + a_N b_N \]</formula> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="431" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="431" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a4472d084dcbc697572b455b5fc107140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; min</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>min</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise minimum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="447" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="447" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a5a4cbdb80d7c0e4b36833df472ca7180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; max</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>max</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise maximum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="463" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="463" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a68a904f7008f374c70a3da29cdbfa35a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; abs</definition>
+        <argsstring>(Vector&lt; T, N &gt; val)</argsstring>
+        <name>abs</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise absolute value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="479" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="479" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ac03ffe695fc3042053f55e576581a697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; int, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; int, N &gt; sign</definition>
+        <argsstring>(Vector&lt; T, N &gt; val)</argsstring>
+        <name>sign</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise sign value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="495" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="495" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1adad3f5ad89d4b066415deb088a0212da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; bool, N &gt; equals</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>equals</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise equality operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="511" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="511" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a6c3c7d536643aeeaec15a9f488aca06e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; bool, N &gt; lessThan</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="527" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="527" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a1f6fb725344c746cd7ca54519df1b5e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; bool, N &gt; greaterThan</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>greaterThan</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise comparison operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="543" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="543" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ae03b8997d14c491f8ac6ed43d819a92f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; select</definition>
+        <argsstring>(Vector&lt; bool, N &gt; cond, Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>select</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; bool, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise selection operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="559" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="559" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a3bf31cce3551be5d6d1966f83050d483" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; clamp</definition>
+        <argsstring>(Vector&lt; T, N &gt; val, Vector&lt; T, N &gt; lo, Vector&lt; T, N &gt; hi)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise clamp function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Relative to two other vectors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="578" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="578" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a210e3ef17e716b9c72fa9c0f35a19093" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; clamp</definition>
+        <argsstring>(Vector&lt; T, N &gt; val, T lo, T hi)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise clamp function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Relative to two values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="596" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="596" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a49c2f35ee5198f5e17dc43dacac166e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; lerp</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs, U t)</argsstring>
+        <name>lerp</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" kindref="member">U</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise lerp function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="612" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="612" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a13e84f24664d006f2fff11c89059ef52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T manhattanLength</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>manhattanLength</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Manhattan length of a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Manhattan length <formula id="97">$ \|\mathbf{u}\|_1 $</formula> of a vector <formula id="98">$ \mathbf{u} = (u_1, \ldots, u_N) $</formula> is:</para><para><formula id="99">\[ \|\mathbf{u}\|_1 = \sum_{i = 1}^{N} |u_i| \]</formula></para><para>The Manhattan length is also called the 1-norm.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Manhattan length of the vector</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1ab7ac075b031168cc0333c60bf5f9ed91" kindref="member">manhattanDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="641" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="641" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a1955a31725e521021b0be0ab2871be50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T squareLength</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>squareLength</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Square Euclidean length of a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The square Euclidean length <formula id="100">$ \|\mathbf{u}\|_2^2 $</formula> of a vector <formula id="98">$ \mathbf{u} = (u_1, \ldots, u_N) $</formula> is:</para><para><formula id="101">\[ \|\mathbf{u}\|_2^2 = \sum_{i = 1}^{N} u_i^2 \]</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square Euclidean length of the vector</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a5b81f7458166ea6cf9a7365b947cf6a0" kindref="member">euclideanLength()</ref>, <ref refid="structgf_1_1_vector_1a6c2b906d7231d200eb766187b5f51936" kindref="member">squareDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="667" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="667" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a5b81f7458166ea6cf9a7365b947cf6a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T euclideanLength</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>euclideanLength</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Euclidean length of a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Euclidean length <formula id="102">$ \|\mathbf{u}\|_2 $</formula> of a vector <formula id="98">$ \mathbf{u} = (u_1, \ldots, u_N) $</formula> is:</para><para><formula id="103">\[ \|\mathbf{u}\|_2 = \sqrt{\sum_{i = 1}^{N} u_i^2} \]</formula></para><para>The Euclidean length is also called the 2-norm.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Euclidean length of the vector</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a1bbcb2190ca4bd2fb435f1e74f00c7db" kindref="member">euclideanDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="695" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="695" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1aafea65ac04f9577ddf229f2b67250db6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T chebyshevLength</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>chebyshevLength</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Chebyshev length of a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Chebyshev length <formula id="104">$ \|\mathbf{u}\|_{\infty} $</formula> of a vector <formula id="98">$ \mathbf{u} = (u_1, \ldots, u_N) $</formula> is:</para><para><formula id="105">\[ \|u\|_{\infty} = \max_{i = 1}^{N} |u_i| \]</formula></para><para>The Chebyshev length is also called the infinity norm or maximum norm.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Chebyshev length of the vector</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a8b7e8d54b4bfa8292c7927c5fc9f2386" kindref="member">chebyshevDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="733" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="733" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a9e5d34e6962eb33c8d23a67c2a67a691" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T naturalLength</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>naturalLength</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Natural length of a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The natural length <formula id="106">$ L $</formula> of a vector: <formula id="98">$ \mathbf{u} = (u_1, \ldots, u_N) $</formula> is:</para><para><formula id="107">\[ L = \|\mathbf{u}\|_1 + \|\mathbf{u}\|_2^2 = \sum_{i = 1}^{N} |u_i| + \sum_{i = 1}^{N} u_i^2 \]</formula></para><para>It&apos;s the sum of the Manhattan length and the square length.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The natural length of the vector</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1aa156019ca0df0875f1905e24dc008d05" kindref="member">naturalDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="762" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="762" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ab7ac075b031168cc0333c60bf5f9ed91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T manhattanDistance</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>manhattanDistance</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Manhattan distance between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Manhattan distance between two vectors is the Manhattan length of the difference of the two vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Manhattan distance between the two vectors</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a13e84f24664d006f2fff11c89059ef52" kindref="member">manhattanLength()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="781" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="781" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a6c2b906d7231d200eb766187b5f51936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T squareDistance</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>squareDistance</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Square Euclidean distance between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The square Euclidean distance between two vectors is the square Euclidean length of the difference of the two vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square Euclidean distance between the two vectors</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a1955a31725e521021b0be0ab2871be50" kindref="member">squareLength()</ref>, <ref refid="structgf_1_1_vector_1a1bbcb2190ca4bd2fb435f1e74f00c7db" kindref="member">euclideanDistance()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="800" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="800" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a1bbcb2190ca4bd2fb435f1e74f00c7db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T euclideanDistance</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>euclideanDistance</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Euclidean distance between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Euclidean distance between two vectors is the Euclidean length of the difference of the two vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Euclidean distance between the two vectors</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a5b81f7458166ea6cf9a7365b947cf6a0" kindref="member">euclideanLength()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="819" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="819" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a8b7e8d54b4bfa8292c7927c5fc9f2386" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T chebyshevDistance</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>chebyshevDistance</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Chebyshev distance between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The Chebyshev distance between two vectors is the Chebyshev length of the difference of the two vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Chebyshev distance between the two vectors</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1aafea65ac04f9577ddf229f2b67250db6" kindref="member">chebyshevLength()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="838" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="838" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1aa156019ca0df0875f1905e24dc008d05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T naturalDistance</definition>
+        <argsstring>(Vector&lt; T, N &gt; lhs, Vector&lt; T, N &gt; rhs)</argsstring>
+        <name>naturalDistance</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Natural distance between two vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The natural distance between two vectors is the natural length of the difference of the two vectors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The natural distance between the two vectors</para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a9e5d34e6962eb33c8d23a67c2a67a691" kindref="member">naturalLength()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="857" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="857" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a4ff13e50288e1deeb196aa12df06d883" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+        <definition>Vector&lt; T, N &gt; normalize</definition>
+        <argsstring>(Vector&lt; T, N &gt; vec)</argsstring>
+        <name>normalize</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Normalize a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The normalized vector of <formula id="108">$ \mathbf{u} $</formula> is a vector in the same direction but with a (euclidean) length of 1:</para><para><formula id="109">\[ \frac{\mathbf{u}}{\|\mathbf{u}\|_2} \]</formula></para><para>A normalized vector is also called a <ulink url="https://en.wikipedia.org/wiki/Unit_vector">unit vector</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A normalized vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="878" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="878" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a1ba83d14d9bc5292fcf5ab39f596440b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt; T, 2 &gt; unit</definition>
+        <argsstring>(T angle)</argsstring>
+        <name>unit</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Unit vector in a specified direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A unit vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="892" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="892" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a18e6f216b07d4883920dc5677a4fe92c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>float</type>
+        <definition>float angle</definition>
+        <argsstring>(Vector&lt; T, 2 &gt; vec)</argsstring>
+        <name>angle</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Angle of a vector relative to the x-axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The angle of the vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="905" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="905" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a1aceef07438afe7fb1157efe584591cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt; T, 2 &gt; perp</definition>
+        <argsstring>(Vector&lt; T, 2 &gt; vec)</argsstring>
+        <name>perp</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Perpendicular vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>The perpendicular vector <formula id="110">$ \mathbf{u}^{\perp} $</formula> of vector <formula id="111">$ \mathbf{u} = (x, y) $</formula> is:</para><para><formula id="112">\[ \mathbf{u}^{\perp} = (-y, x) \]</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A perpendicular vector </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="922" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="922" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a3fac9c8378201cc97b5d09608e2fdf31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt; T, 2 &gt; vectorTripleProduct</definition>
+        <argsstring>(Vector&lt; T, 2 &gt; a, Vector&lt; T, 2 &gt; b, Vector&lt; T, 2 &gt; c)</argsstring>
+        <name>vectorTripleProduct</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Regular vector triple product. </para>        </briefdescription>
+        <detaileddescription>
+<para>The regular <ulink url="https://en.wikipedia.org/wiki/Triple_product#Vector_triple_product">vector triple product</ulink> of vectors <formula id="113">$ \mathbf{a} $</formula>, <formula id="114">$ \mathbf{b} $</formula> and <formula id="115">$ \mathbf{c} $</formula> is:</para><para><formula id="116">\[ \mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c} \]</formula></para><para><simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a36ada12630bfc23d6720b07328ebdf40" kindref="member">inverseVectorTripleProduct()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="941" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="941" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1a36ada12630bfc23d6720b07328ebdf40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt; T, 2 &gt; inverseVectorTripleProduct</definition>
+        <argsstring>(Vector&lt; T, 2 &gt; a, Vector&lt; T, 2 &gt; b, Vector&lt; T, 2 &gt; c)</argsstring>
+        <name>inverseVectorTripleProduct</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Inverse vector triple product. </para>        </briefdescription>
+        <detaileddescription>
+<para>The inverse <ulink url="https://en.wikipedia.org/wiki/Triple_product#Vector_triple_product">vector triple product</ulink> of vectors <formula id="113">$ \mathbf{a} $</formula>, <formula id="114">$ \mathbf{b} $</formula> and <formula id="115">$ \mathbf{c} $</formula> is:</para><para><formula id="117">\[ (\mathbf{a} \times \mathbf{b}) \times \mathbf{c} = -\mathbf{c} \times (\mathbf{a} \times \mathbf{b}) = -(\mathbf{c} \cdot \mathbf{b}) \mathbf{a} + (\mathbf{c} \cdot \mathbf{a}) \mathbf{b} \]</formula></para><para><simplesect kind="see"><para><ref refid="structgf_1_1_vector_1a3fac9c8378201cc97b5d09608e2fdf31" kindref="member">vectorTripleProduct()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="961" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="961" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ac9c7b0f2832ebb10c93344ada3e196c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>constexpr T cross</definition>
+        <argsstring>(Vector&lt; T, 2 &gt; lhs, Vector&lt; T, 2 &gt; rhs)</argsstring>
+        <name>cross</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Cross product for 2D vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The cross product of 2D vectors is not really a cross product, it is the magnitude of the vector resulting from a 3D cross product of 2D vectors with <formula id="79">$ z = 0 $</formula>. The cross product <formula id="118">$ \mathbf{a} \times \mathbf{b} $</formula> of the vectors <formula id="113">$ \mathbf{a} $</formula> and <formula id="114">$ \mathbf{b} $</formula> is:</para><para><formula id="119">\[ \mathbf{a} \times \mathbf{b} = \mathbf{a}^{\perp} \cdot \mathbf{b} \]</formula></para><para>The 2D cross product is also known as the perp dot product or wedge product.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cross product of the two vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="984" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="984" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_vector_1ace7dc23b70392429718b79fe1d8b5e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 3 &gt;</type>
+        <definition>constexpr Vector&lt; T, 3 &gt; cross</definition>
+        <argsstring>(Vector&lt; T, 3 &gt; lhs, Vector&lt; T, 3 &gt; rhs)</argsstring>
+        <name>cross</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 3 &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 3 &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Cross product for 3D vectors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A first vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A second vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cross product of the two vectors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" line="999" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/VectorOps.h" bodystart="999" bodyend="1005"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>General purpose math vector. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref> is a class that represents an element of a <computeroutput>N</computeroutput>-dimensional space. It is used throughout the library for different purposes.</para><para>The template parameter <computeroutput>T</computeroutput> is the type of coordinates. . It can be any type that supports arithmetic operations (+, -, *, /) and relational operators (==, !=, &lt;, &gt;).</para><para>Several specializations are defined for common use cases:</para><para><itemizedlist>
+<listitem><para>For dimension 2: <ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">gf::Vector&lt;T, 2&gt;</ref></para></listitem><listitem><para>For dimension 3: <ref refid="structgf_1_1_vector_3_01_t_00_013_01_4" kindref="compound">gf::Vector&lt;T, 3&gt;</ref></para></listitem><listitem><para>For dimension 4: <ref refid="structgf_1_1_vector_3_01_t_00_014_01_4" kindref="compound">gf::Vector&lt;T, 4&gt;</ref></para></listitem></itemizedlist>
+</para><para>This class was designed according to the article <ulink url="http://www.reedbeta.com/blog/2013/12/28/on-vector-math-libraries/">On Vector Math Libraries</ulink> by Nathan Reed. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1074">
+        <label>T</label>
+      </node>
+      <node id="1073">
+        <label>gf::Vector&lt; T, N &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" line="60" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Vector.h" bodystart="60" bodyend="252"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_vector_1a68a904f7008f374c70a3da29cdbfa35a" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>abs</name></member>
+      <member refid="structgf_1_1_vector_1a18e6f216b07d4883920dc5677a4fe92c" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>angle</name></member>
+      <member refid="structgf_1_1_vector_1ae6a7e4261a4e635745f3bbb26fe2788c" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>begin</name></member>
+      <member refid="structgf_1_1_vector_1ab686f01403d3538412d38defb0343222" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>begin</name></member>
+      <member refid="structgf_1_1_vector_1a86883c0bb9011b4790c30a2e74f73583" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>cbegin</name></member>
+      <member refid="structgf_1_1_vector_1a173c44a2b1a98eb4d50a93fbe980e4ed" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>cend</name></member>
+      <member refid="structgf_1_1_vector_1a8b7e8d54b4bfa8292c7927c5fc9f2386" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>chebyshevDistance</name></member>
+      <member refid="structgf_1_1_vector_1aafea65ac04f9577ddf229f2b67250db6" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>chebyshevLength</name></member>
+      <member refid="structgf_1_1_vector_1a3bf31cce3551be5d6d1966f83050d483" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>clamp</name></member>
+      <member refid="structgf_1_1_vector_1a210e3ef17e716b9c72fa9c0f35a19093" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>clamp</name></member>
+      <member refid="structgf_1_1_vector_1ac9c7b0f2832ebb10c93344ada3e196c2" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>cross</name></member>
+      <member refid="structgf_1_1_vector_1ace7dc23b70392429718b79fe1d8b5e36" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>cross</name></member>
+      <member refid="structgf_1_1_vector_1a247825a4b27adde52e67107d87987ca8" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>data</name></member>
+      <member refid="structgf_1_1_vector_1a85c05c082b028916436d768e0dc33a00" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>dot</name></member>
+      <member refid="structgf_1_1_vector_1abbb2b2ee77259b73e2b8ae8eadcf8a8c" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>end</name></member>
+      <member refid="structgf_1_1_vector_1a20a7f448aaf57c9c8057f32dcdb2b17b" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>end</name></member>
+      <member refid="structgf_1_1_vector_1adad3f5ad89d4b066415deb088a0212da" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>equals</name></member>
+      <member refid="structgf_1_1_vector_1a1bbcb2190ca4bd2fb435f1e74f00c7db" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>euclideanDistance</name></member>
+      <member refid="structgf_1_1_vector_1a5b81f7458166ea6cf9a7365b947cf6a0" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>euclideanLength</name></member>
+      <member refid="structgf_1_1_vector_1a1f6fb725344c746cd7ca54519df1b5e8" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>greaterThan</name></member>
+      <member refid="structgf_1_1_vector_1a36ada12630bfc23d6720b07328ebdf40" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>inverseVectorTripleProduct</name></member>
+      <member refid="structgf_1_1_vector_1a49c2f35ee5198f5e17dc43dacac166e0" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>lerp</name></member>
+      <member refid="structgf_1_1_vector_1a6c3c7d536643aeeaec15a9f488aca06e" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>lessThan</name></member>
+      <member refid="structgf_1_1_vector_1ab7ac075b031168cc0333c60bf5f9ed91" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>manhattanDistance</name></member>
+      <member refid="structgf_1_1_vector_1a13e84f24664d006f2fff11c89059ef52" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>manhattanLength</name></member>
+      <member refid="structgf_1_1_vector_1a5a4cbdb80d7c0e4b36833df472ca7180" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>max</name></member>
+      <member refid="structgf_1_1_vector_1a4472d084dcbc697572b455b5fc107140" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>min</name></member>
+      <member refid="structgf_1_1_vector_1aa156019ca0df0875f1905e24dc008d05" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>naturalDistance</name></member>
+      <member refid="structgf_1_1_vector_1a9e5d34e6962eb33c8d23a67c2a67a691" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>naturalLength</name></member>
+      <member refid="structgf_1_1_vector_1a4ff13e50288e1deeb196aa12df06d883" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>normalize</name></member>
+      <member refid="structgf_1_1_vector_1a194e3ab10cac9d61a1b7cb5179a2a045" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator!=</name></member>
+      <member refid="structgf_1_1_vector_1a564559a8e1875530649fa57c59af24f0" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator&amp;&amp;</name></member>
+      <member refid="structgf_1_1_vector_1a585873ed563da32008b584ed878bf9ff" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_vector_1a409504167f553a88cb2a5664703b3ac2" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_vector_1a919ff69530aacf912ab061b5c54f0696" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_vector_1a3811d6c420b6e8d37a2c6529f1695401" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator*=</name></member>
+      <member refid="structgf_1_1_vector_1a3868eb2530937c190ca12d86a76539ae" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator*=</name></member>
+      <member refid="structgf_1_1_vector_1a8e0a6cadb46b506bc913deb4b18a1516" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator+</name></member>
+      <member refid="structgf_1_1_vector_1a00e172b44efd3aad4cf74adbbfa9a6e7" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator+</name></member>
+      <member refid="structgf_1_1_vector_1a5015b6c77ebbd2690707c43deb298d0c" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator+</name></member>
+      <member refid="structgf_1_1_vector_1a101fbd6e3dbcddd1d856666d59326c5f" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator+=</name></member>
+      <member refid="structgf_1_1_vector_1a406d276bfe7acaa751a9b85417aee3c6" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator+=</name></member>
+      <member refid="structgf_1_1_vector_1acb6c3010ab2bda198e324c826f933360" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_vector_1a8a07db68d257f670491de216befd832d" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_vector_1af30f0d7c7488c76df6c71d51d913de32" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_vector_1acd174ac192406cd11b091cd69dbb7553" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_vector_1a96a7faa11e7244c26d0b290cd8be2894" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-=</name></member>
+      <member refid="structgf_1_1_vector_1afec7d861fcc4d7b371e74635767b09b7" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator-=</name></member>
+      <member refid="structgf_1_1_vector_1af7a62691c378af8f5e949e9660673c72" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator/</name></member>
+      <member refid="structgf_1_1_vector_1ad43a1fd611e6ebae0fd6121336907d24" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator/</name></member>
+      <member refid="structgf_1_1_vector_1abc1f8173b7503ffbe19f780ff262acd1" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator/</name></member>
+      <member refid="structgf_1_1_vector_1a9281898f141cd2de6fe2d2e0fcf2fa03" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator/=</name></member>
+      <member refid="structgf_1_1_vector_1a9efbe36172735f3ea47b292dee469c0c" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator/=</name></member>
+      <member refid="structgf_1_1_vector_1a6c56cba56a195d5f2bfafd96d6a8dee0" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator=</name></member>
+      <member refid="structgf_1_1_vector_1addfc879a55660b67f701dc5b8f7ee2e2" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator==</name></member>
+      <member refid="structgf_1_1_vector_1ae29bcf6cda25b990b08c600711375649" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator[]</name></member>
+      <member refid="structgf_1_1_vector_1a7e288fdab18a04d3a5cbbf92b438fac2" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator[]</name></member>
+      <member refid="structgf_1_1_vector_1a21f5f97b31b1fe83154a4220ca1c294f" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>operator||</name></member>
+      <member refid="structgf_1_1_vector_1a1aceef07438afe7fb1157efe584591cc" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>perp</name></member>
+      <member refid="structgf_1_1_vector_1ae03b8997d14c491f8ac6ed43d819a92f" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>select</name></member>
+      <member refid="structgf_1_1_vector_1ac03ffe695fc3042053f55e576581a697" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>sign</name></member>
+      <member refid="structgf_1_1_vector_1a6c2b906d7231d200eb766187b5f51936" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>squareDistance</name></member>
+      <member refid="structgf_1_1_vector_1a1955a31725e521021b0be0ab2871be50" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>squareLength</name></member>
+      <member refid="structgf_1_1_vector_1a1ba83d14d9bc5292fcf5ab39f596440b" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>unit</name></member>
+      <member refid="structgf_1_1_vector_1a067a3d3bd29d65b7519afdbdcc6fb5bc" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1a207af73fa887a1bf398cd55a16927de9" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1abac7b6a8a72ab952ac01c96bc39e9056" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1a7db6a2e3790bc19db75529442433e659" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1af4497f220f69f24804b8e2481c8c161b" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1acb90d5ec3ce8008c2f6c75135f41625a" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>Vector</name></member>
+      <member refid="structgf_1_1_vector_1a3fac9c8378201cc97b5d09608e2fdf31" prot="public" virt="non-virtual"><scope>gf::Vector</scope><name>vectorTripleProduct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

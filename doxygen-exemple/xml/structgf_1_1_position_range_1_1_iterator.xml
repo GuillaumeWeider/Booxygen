@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_position_range_1_1_iterator" kind="struct" language="C++" prot="public">
+    <compoundname>gf::PositionRange::Iterator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::iterator&lt; std::input_iterator_tag, T &gt;</basecompoundref>
+    <includes refid="_range_8h" local="no">gf/Range.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_position_range_1_1_iterator_1a02428499f514482652b721c30624ab6e" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+        <definition>Range&lt;T&gt; gf::PositionRange&lt; T &gt;::Iterator::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="233" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_position_range_1_1_iterator_1ade8f4b3a5943c697415e34dc1d62128a" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt;T, 2&gt; gf::PositionRange&lt; T &gt;::Iterator::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="234" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1abfd61c0c1573b99ea1d2c3ae162e24d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::PositionRange&lt; T &gt;::Iterator::Iterator</definition>
+        <argsstring>(Range&lt; T &gt; iteratorRange, Vector&lt; T, 2 &gt; iteratorPosition) noexcept</argsstring>
+        <name>Iterator</name>
+        <param>
+          <type><ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+          <declname>iteratorRange</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+          <declname>iteratorPosition</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iteratorRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The range in the first dimension </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iteratorPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current position in 2D </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="242" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="242" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1a006695bda188808a458ae0defe64e9bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt;T, 2&gt; gf::PositionRange&lt; T &gt;::Iterator::operator*</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Dereference operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="254" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1a10882f60980538379603f06fc75d4d98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; gf::PositionRange&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Increment operator (prefix) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="263" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1a7e8a2afe39b8c52ee994e0806ea1896e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator gf::PositionRange&lt; T &gt;::Iterator::operator++</definition>
+        <argsstring>(int) noexcept</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Increment operator (postfix) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="273" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="273" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1af87ec29095b8a2e61b3d1966854e2db7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::PositionRange&lt; T &gt;::Iterator::operator!=</definition>
+        <argsstring>(const Iterator &amp;other) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the iterator are different </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="285" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1ae4e9edd2f9310915363dcc3827d38e2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::PositionRange&lt; T &gt;::Iterator::operator==</definition>
+        <argsstring>(const Iterator &amp;other) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the iterator are the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="295" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="295" bodyend="297"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structgf_1_1_position_range_1_1_iterator_1a7ab9b0d8e3b979cbc5a7d8701bb3fea4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PositionRange&lt; T &gt;::Iterator::step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="300" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="300" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iterator for a 2D range. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="402">
+        <label>std::iterator&lt; std::input_iterator_tag, T &gt;</label>
+      </node>
+      <node id="401">
+        <label>gf::PositionRange&lt; T &gt;::Iterator</label>
+        <link refid="structgf_1_1_position_range_1_1_iterator"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="406">
+        <label>T</label>
+      </node>
+      <node id="404">
+        <label>std::iterator&lt; std::input_iterator_tag, T &gt;</label>
+      </node>
+      <node id="403">
+        <label>gf::PositionRange&lt; T &gt;::Iterator</label>
+        <link refid="structgf_1_1_position_range_1_1_iterator"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="405" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="405">
+        <label>gf::Vector&lt; T, 2 &gt;</label>
+        <link refid="structgf_1_1_vector_3_01_t_00_012_01_4"/>
+        <childnode refid="405" relation="usage">
+          <edgelabel>@23</edgelabel>
+        </childnode>
+        <childnode refid="406" relation="usage">
+          <edgelabel>width</edgelabel>
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>row</edgelabel>
+          <edgelabel>height</edgelabel>
+          <edgelabel>col</edgelabel>
+          <edgelabel>data</edgelabel>
+          <edgelabel>s</edgelabel>
+          <edgelabel>t</edgelabel>
+          <edgelabel>u</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="232" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="232" bodyend="308"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1abfd61c0c1573b99ea1d2c3ae162e24d6" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>Iterator</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1af87ec29095b8a2e61b3d1966854e2db7" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>operator!=</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1a006695bda188808a458ae0defe64e9bb" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1a10882f60980538379603f06fc75d4d98" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>operator++</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1a7e8a2afe39b8c52ee994e0806ea1896e" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>operator++</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1ae4e9edd2f9310915363dcc3827d38e2d" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>operator==</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1ade8f4b3a5943c697415e34dc1d62128a" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>position</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1a02428499f514482652b721c30624ab6e" prot="public" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>range</name></member>
+      <member refid="structgf_1_1_position_range_1_1_iterator_1a7ab9b0d8e3b979cbc5a7d8701bb3fea4" prot="private" virt="non-virtual"><scope>gf::PositionRange::Iterator</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

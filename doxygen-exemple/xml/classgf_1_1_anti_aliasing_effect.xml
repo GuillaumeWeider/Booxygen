@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_anti_aliasing_effect" kind="class" language="C++" prot="public">
+    <compoundname>gf::AntiAliasingEffect</compoundname>
+    <basecompoundref refid="classgf_1_1_effect" prot="public" virt="non-virtual">gf::Effect</basecompoundref>
+    <includes refid="_effects_8h" local="no">gf/Effects.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_anti_aliasing_effect_1a860f93988d015b39f3c6d9682afcd4a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::AntiAliasingEffect::AntiAliasingEffect</definition>
+        <argsstring>()</argsstring>
+        <name>AntiAliasingEffect</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_anti_aliasing_effect_1a88dc9ee2d70dd8d846e33ae6cf4a6b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::AntiAliasingEffect::setFramebufferSize</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>setFramebufferSize</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set the framebuffer size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call this function when the size of the framebuffer changes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Anti-aliasing effect. </para>    </briefdescription>
+    <detaileddescription>
+<para>This effect uses <ulink url="https://en.wikipedia.org/wiki/Fast_approximate_anti-aliasing">Fast Approximate Anti-Aliasing (FXAA)</ulink>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>gf::AntiAliasingEffect</label>
+        <link refid="classgf_1_1_anti_aliasing_effect"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gf::Shader</label>
+        <link refid="classgf_1_1_shader"/>
+      </node>
+      <node id="42">
+        <label>gf::Effect</label>
+        <link refid="classgf_1_1_effect"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>gf::AntiAliasingEffect</label>
+        <link refid="classgf_1_1_anti_aliasing_effect"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>gf::Shader</label>
+        <link refid="classgf_1_1_shader"/>
+      </node>
+      <node id="45">
+        <label>gf::Effect</label>
+        <link refid="classgf_1_1_effect"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" bodystart="53" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_anti_aliasing_effect_1a860f93988d015b39f3c6d9682afcd4a1" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>AntiAliasingEffect</name></member>
+      <member refid="classgf_1_1_shader_1a21f61fdeab80da2b4e3c5b2308017ce3" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>bind</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227a582ea2a544a29dcf181fd3ac837b5199" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>Fragment</name></member>
+      <member refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a3718f44bb7179162fc6bd478f63ceb3f" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1ae23130240044b2f765e93a6abf874452" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a5eb464468e1a8f27a546b14ccb0691e0" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a3761570c34abae63574afe373fd78515" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_anti_aliasing_effect_1a88dc9ee2d70dd8d846e33ae6cf4a6b09" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setFramebufferSize</name></member>
+      <member refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a18ee6fb09f42d8326f1de7dc07d6aa42" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ac26d37abd3cb8cc0e71a81bc4e89f734" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1adb1d146542c0c727db6d9b79e754f6d0" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a41792cd93bd178ec2bac04ede18b04e3" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ad91743c1e70bc2925e2b94da215b0c16" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ace674a07f82cd88e0d0287a085be2e28" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1aa7986a4d762df6f94f5aa9d238752b4b" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a2a7a09355bc8c85e5cc9ebbf129a8ce7" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1ab369b72dbf021d3777029122a2c01db5" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>Type</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227abd13198f949b8b612939dba17ddace08" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>Vertex</name></member>
+      <member refid="classgf_1_1_shader_1a2f551c64a14e24e9980f778ad2004e83" prot="public" virt="non-virtual"><scope>gf::AntiAliasingEffect</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

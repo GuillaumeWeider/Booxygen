@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="math" kind="page">
+    <compoundname>math</compoundname>
+    <title>Math functions and constants</title>
+    <detaileddescription>
+<para>gf provides common functions and constants that are not in the <ulink url="http://en.cppreference.com/w/cpp/numeric/math">standard library</ulink>.</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/Math.h&gt;</highlight></codeline>
+</programlisting></para><sect1 id="math_1math_functions">
+<title>Math functions</title>
+<sect2 id="math_1math_common_functions">
+<title>Common functions</title>
+<para>The <ref refid="group__core_1ga0e22be4ddd625e4c235dbf0ef2d1f43f" kindref="member">gf::square()</ref> function computes the square of an expression. Squaring is a common operation and is better done doing a simple multiplication (instead of calling <computeroutput>std::pow</computeroutput>). When you have a simple variable, it is easy. But when you have an expression, it&apos;s a bit complicated and error-prone. Hence this simple but useful function.</para><para><formula id="127">\[ \text{square}(x) = x^2 \]</formula></para><para>The <ref refid="group__core_1gac274bd90d63716ed5b514331c90288e9" kindref="member">gf::lerp()</ref> function computes a <ulink url="https://en.wikipedia.org/wiki/Linear_interpolation">linear interpolation</ulink> between two numbers. If you want a smoother interpolation, you can replace the last parameter with a call to a step function with this parameter (see <ref refid="math_1math_steps" kindref="member">Step functions</ref>).</para><para><formula id="128">\[ \text{lerp}(x_1, x_2, t) = (1 - t) * x_1 + t * x_2 \]</formula></para><para>The <ref refid="group__core_1ga671bdda5a52c335e68d391147c70cc16" kindref="member">gf::clamp()</ref> function computes the <ulink url="https://en.wikipedia.org/wiki/Clamping_%28graphics%29">nearest value in a range</ulink>. It can be used when a computation gives a value that may sits oustside a given range <formula id="129">$ [l, h] $</formula>. In this case, a clamp puts the value inside the range.</para><para><formula id="130">\[ \text{clamp}(x, l, h) = \begin{cases} l &amp; \text{if $x &lt; l$} \\ h &amp; \text{if $x &gt; h$} \\ x &amp; \text{otherwise} \end{cases} \]</formula></para><para>The <ref refid="group__core_1ga55d7afb6ae7f894776bb0244465ac497" kindref="member">gf::sign()</ref> function computes the <ulink url="https://en.wikipedia.org/wiki/Sign_function">sign</ulink> of a number (float or integer) and returns an integer reflecting that sign.</para><para><formula id="131">\[ \text{sign}(x) = \begin{cases} -1 &amp; \text{if $x &lt; 0$} \\ 0 &amp; \text{if $x = 0$} \\ 1 &amp; \text{if $x &gt; 0$} \end{cases} \]</formula></para><para>The <ref refid="group__core_1ga162af6026bb8a59762e87c918f634006" kindref="member">gf::absdiff()</ref> function computes the <ulink url="https://en.wikipedia.org/wiki/Absolute_difference">absolute difference</ulink> of two values.</para><para><formula id="132">\[ \text{absdiff}(x_1, x_2) = | x_1 - x_2 | \]</formula></para></sect2>
+<sect2 id="math_1math_steps">
+<title>Step functions</title>
+<para>A step <formula id="57">$ f $</formula> is a (mathematical) function which has the following properties:</para><para><itemizedlist>
+<listitem><para><formula id="24">$ f(0) = 0 $</formula></para></listitem><listitem><para><formula id="25">$ f(1) = 1 $</formula></para></listitem></itemizedlist>
+</para><para>It can be used to smooth a linear interpolation. Step functions may have additional properties (especially regarding derivatives).</para><para>Here are the step functions that are provided by gf:</para><para><table rows="5" cols="3"><row>
+<entry thead="yes"><para>Function </para></entry><entry thead="yes"><para>Implementation </para></entry><entry thead="yes"><para>Plot  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gae4f9435d5873af1b503a277ddae35bd9" kindref="member">gf::linearStep()</ref> </para></entry><entry thead="no"><para><formula id="133">$ f(t) = t $</formula> </para></entry><entry thead="no"><para><image type="html" name="linearstep.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gab353056685420de64599bb422adaf701" kindref="member">gf::cubicStep()</ref> </para></entry><entry thead="no"><para><formula id="134">$ f(t) = -2 * t^3 + 3 * t^2 $</formula> </para></entry><entry thead="no"><para><image type="html" name="cubicstep.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1ga6f9ca6f1bc9622a4c7e68a3f956d8415" kindref="member">gf::quinticStep()</ref> </para></entry><entry thead="no"><para><formula id="135">$ f(t) = 6 * t^5 - 15 * t^4 + 10 * t^3 $</formula> </para></entry><entry thead="no"><para><image type="html" name="quinticstep.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1ga0e9fce6526516ba6bee65bf802888cd3" kindref="member">gf::cosineStep()</ref> </para></entry><entry thead="no"><para><formula id="136">$ f(t) = (1 - \cos(\pi * t)) * 0.5 $</formula> </para></entry><entry thead="no"><para><image type="html" name="cosinestep.png"></image>
+ </para></entry></row>
+</table>
+The type <ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> is a function pointer to a step function.</para></sect2>
+<sect2 id="math_1maths_other_functions">
+<title>Other functions</title>
+<para>gf has some other useful functions.</para><para><ref refid="group__core_1ga7ed0adec6b897c228288a41a757b96a2" kindref="member">gf::almostEquals()</ref> compares two floats taking into account the rounding errors. This function takes care of <ulink url="http://floating-point-gui.de/errors/comparison/">many cases</ulink>.</para><para><ref refid="group__core_1ga4f3a61189703ec2b8dc9e9a27a398bb5" kindref="member">gf::degreesToRadians()</ref> and <ref refid="group__core_1ga1965ca9c0aa332a0a9fff72398f29c69" kindref="member">gf::radiansToDegrees()</ref> helps in converting angles from degrees to radians and from radians to degrees. These functions are defined as <computeroutput>constepxr</computeroutput> so you can use them for the initialisation of any variable without any runtime cost.</para></sect2>
+</sect1>
+<sect1 id="math_1math_constants">
+<title>Math constants</title>
+<sect2 id="math_1math_common_constants">
+<title>Common mathematical constants</title>
+<para>gf provides several common mathematical constants. All these constants are defined as <computeroutput>constexpr</computeroutput> so that they can be used in other <computeroutput>constexpr</computeroutput> expressions. The following table shows all the constants, their value and the approximation used in gf. The constants without an approximation are defined with another constant directly.</para><para><table rows="7" cols="3"><row>
+<entry thead="yes"><para>Constant </para></entry><entry thead="yes"><para>Value </para></entry><entry thead="yes"><para>Approximation  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gafea71ec62ea0c47eb8e65dba77940b40" kindref="member">gf::Pi</ref> </para></entry><entry thead="no"><para><formula id="0">$ \pi $</formula> </para></entry><entry thead="no"><para><formula id="137">$ 3.14159265358979323846 $</formula> </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gaac3ad99d9b813b1cea8802abbfed6d80" kindref="member">gf::Pi2</ref> </para></entry><entry thead="no"><para><formula id="53">$ \frac{\pi}{2} $</formula> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gaab6d74eaf8f5a1744b6de68ad463edf2" kindref="member">gf::Pi4</ref> </para></entry><entry thead="no"><para><formula id="54">$ \frac{\pi}{4} $</formula> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1ga8aa2d6dc9c8fb96810fe47dff3c9b00a" kindref="member">gf::Sqrt2</ref> </para></entry><entry thead="no"><para><formula id="52">$ \sqrt{2} $</formula> </para></entry><entry thead="no"><para><formula id="138">$ 1.41421356237309504880 $</formula> </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gab6ba065d81cdb7021ba7e47bea500580" kindref="member">gf::InvSqrt2</ref> </para></entry><entry thead="no"><para><formula id="55">$ \frac{1}{\sqrt{2}} $</formula> </para></entry><entry thead="no"><para></para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="group__core_1gad32b4a332d77de3d25eae25cfbcb3fb2" kindref="member">gf::Sqrt3</ref> </para></entry><entry thead="no"><para><formula id="56">$ \sqrt{3} $</formula> </para></entry><entry thead="no"><para><formula id="139">$ 1.7320508075688772935 $</formula> </para></entry></row>
+</table>
+</para></sect2>
+<sect2 id="math_1math_epsilon">
+<title>Machine epsilon</title>
+<para>A special constant is defined for floating point computation: the <ulink url="https://en.wikipedia.org/wiki/Machine_epsilon">machine epsilon</ulink>, noted <formula id="140">$ \varepsilon $</formula>. In gf, it can be accessed with <ref refid="group__core_1gab4aa74a0cbea2a97c107bc5a1dc63a64" kindref="member">gf::Epsilon</ref>. It is defined thanks to <ulink url="http://en.cppreference.com/w/cpp/types/numeric_limits/epsilon">std::numeric_limits</ulink> but is more easily accessible. </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

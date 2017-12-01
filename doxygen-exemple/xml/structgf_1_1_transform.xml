@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_transform" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Transform</compoundname>
+    <includes refid="_transform_8h" local="no">gf/Transform.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref></type>
+        <definition>Rotation gf::Transform::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+<para>The rotation of the transformation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="205" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_translation" kindref="compound">Translation</ref></type>
+        <definition>Translation gf::Transform::translation</definition>
+        <argsstring></argsstring>
+        <name>translation</name>
+        <briefdescription>
+<para>The translation of the transformation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="206" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_transform_1a7c9f041fc16d2ab34ab2864f636c0d9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Transform::Transform</definition>
+        <argsstring>()</argsstring>
+        <name>Transform</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default transform is the identity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="213" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1ae41c36e3f63235ae64dc0f4b63fe4fe5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Transform::Transform</definition>
+        <argsstring>(float angle, Vector2f offset)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a rotation and a translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation offset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="224" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1aed77ac925e8ed1810886c585cea2f54a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Transform::Transform</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a rotation. </para>        </briefdescription>
+        <detaileddescription>
+<para>There is no translation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="237" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="237" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a901387ef8a2fb2469edec52800ab03b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Transform::Transform</definition>
+        <argsstring>(Vector2f offset)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a translation. </para>        </briefdescription>
+        <detaileddescription>
+<para>There is no rotation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation offset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="250" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="250" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a3bffb7833981d7fd0c3b90bf29f5f527" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transform::setAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="261" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a2e346b9232ef296b71b7db5c70a1db4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Transform::getAngle</definition>
+        <argsstring>() const</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+<para>Get the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The rotation angle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="270" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="270" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a9a82fbb211550d16869c9256be5d2f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transform::setOffset</definition>
+        <argsstring>(Vector2f offset) noexcept</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Set the translation offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation offset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="279" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a8390eb139a634b21de3ca326f088255e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transform::getOffset</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getOffset</name>
+        <briefdescription>
+<para>Get the translation offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The translation offset </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="288" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="288" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_transform_1a780e6e6fe20655cc3bbe01559947ab75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>constexpr Vector2f transform</definition>
+        <argsstring>(const Transform &amp;trans, Vector2f point)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Apply a transformation to a 2D point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="303" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_transform_1a98a60b50bc93414d2081cb92673c6030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>constexpr Vector2f inverseTransform</definition>
+        <argsstring>(const Transform &amp;trans, Vector2f point)</argsstring>
+        <name>inverseTransform</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Apply an inverse transformation to a 2D point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="316" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="316" bodyend="318"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A simple transformation (rotation then translation) </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is meant for simple transformation as can be seen in physics. It is the composition of a rotation and a translation.</para><para>For more complex affine transformation, you can use <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref>.</para><para><simplesect kind="see"><para><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref>, <ref refid="structgf_1_1_rotation" kindref="compound">gf::Rotation</ref>, <ref refid="structgf_1_1_translation" kindref="compound">gf::Translation</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1020">
+        <label>gf::Translation</label>
+        <link refid="structgf_1_1_translation"/>
+        <childnode refid="1021" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>gf::Transform</label>
+        <link refid="structgf_1_1_transform"/>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>translation</edgelabel>
+        </childnode>
+        <childnode refid="1022" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>gf::Rotation</label>
+        <link refid="structgf_1_1_rotation"/>
+      </node>
+      <node id="1021">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="204" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="204" bodyend="292"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_transform_1a2e346b9232ef296b71b7db5c70a1db4c" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>getAngle</name></member>
+      <member refid="structgf_1_1_transform_1a8390eb139a634b21de3ca326f088255e" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>getOffset</name></member>
+      <member refid="structgf_1_1_transform_1a98a60b50bc93414d2081cb92673c6030" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>inverseTransform</name></member>
+      <member refid="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>rotation</name></member>
+      <member refid="structgf_1_1_transform_1a3bffb7833981d7fd0c3b90bf29f5f527" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>setAngle</name></member>
+      <member refid="structgf_1_1_transform_1a9a82fbb211550d16869c9256be5d2f01" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>setOffset</name></member>
+      <member refid="structgf_1_1_transform_1a7c9f041fc16d2ab34ab2864f636c0d9f" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>Transform</name></member>
+      <member refid="structgf_1_1_transform_1ae41c36e3f63235ae64dc0f4b63fe4fe5" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>Transform</name></member>
+      <member refid="structgf_1_1_transform_1aed77ac925e8ed1810886c585cea2f54a" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>Transform</name></member>
+      <member refid="structgf_1_1_transform_1a901387ef8a2fb2469edec52800ab03b9" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>Transform</name></member>
+      <member refid="structgf_1_1_transform_1a780e6e6fe20655cc3bbe01559947ab75" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>transform</name></member>
+      <member refid="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" prot="public" virt="non-virtual"><scope>gf::Transform</scope><name>translation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

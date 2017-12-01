@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_event" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Event</compoundname>
+    <includes refid="_event_8h" local="no">gf/Event.h</includes>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_axis_event" prot="public">gf::Event::GamepadAxisEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_button_event" prot="public">gf::Event::GamepadButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_connection" prot="public">gf::Event::GamepadConnection</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_disconnection" prot="public">gf::Event::GamepadDisconnection</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_key_event" prot="public">gf::Event::KeyEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_button_event" prot="public">gf::Event::MouseButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_cursor_event" prot="public">gf::Event::MouseCursorEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_wheel_event" prot="public">gf::Event::MouseWheelEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_text_event" prot="public">gf::Event::TextEvent</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1ga244fb10415539f03cde7ed0ae916018d" kindref="member">EventType</ref></type>
+        <definition>EventType gf::Event::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Type of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="188" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Event::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da22995988de764d7a8cb4165fbff371cb" kindref="member">EventType::Resized</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="191" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_key_event" kindref="compound">KeyEvent</ref></type>
+        <definition>KeyEvent gf::Event::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>Key event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">EventType::KeyPressed</ref>, <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da4a77f07c8ad223b71ab4ce78a63841ab" kindref="member">EventType::KeyReleased</ref>, <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7ee0b7f842e837fe969eb195acaf2efd" kindref="member">EventType::KeyRepeated</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="192" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a023f326966947eba1129f7fe27d287a4" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_text_event" kindref="compound">TextEvent</ref></type>
+        <definition>TextEvent gf::Event::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_text" kindref="compound">Text</ref> event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da8ed4d3c0783d6f909907e1592ffe47ac" kindref="member">EventType::TextEntered</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="193" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a8e867ca093b5159838125028dff7754c" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_mouse_button_event" kindref="compound">MouseButtonEvent</ref></type>
+        <definition>MouseButtonEvent gf::Event::mouseButton</definition>
+        <argsstring></argsstring>
+        <name>mouseButton</name>
+        <briefdescription>
+<para>Mouse button event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7349f643d689997b7c54bf93e4095f5c" kindref="member">EventType::MouseButtonPressed</ref>, <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7584c169de594c27f00084b93186fd7c" kindref="member">EventType::MouseButtonReleased</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="194" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a1ffa80a9804c81a452b01ce6fc8ba11d" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_mouse_cursor_event" kindref="compound">MouseCursorEvent</ref></type>
+        <definition>MouseCursorEvent gf::Event::mouseCursor</definition>
+        <argsstring></argsstring>
+        <name>mouseCursor</name>
+        <briefdescription>
+<para>Mouse cursor move event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac2770ad109c8063ce69a3608a9a16c08" kindref="member">EventType::MouseMoved</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="195" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1abb11582bde51fbb6f08c00d637a98160" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_mouse_wheel_event" kindref="compound">MouseWheelEvent</ref></type>
+        <definition>MouseWheelEvent gf::Event::mouseWheel</definition>
+        <argsstring></argsstring>
+        <name>mouseWheel</name>
+        <briefdescription>
+<para>Mouse wheel event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da9787e93d7821ce61637e6f9f19ef955b" kindref="member">EventType::MouseWheelScrolled</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="196" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a8d71827e9b3672af8f45c48405818adf" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_gamepad_button_event" kindref="compound">GamepadButtonEvent</ref></type>
+        <definition>GamepadButtonEvent gf::Event::gamepadButton</definition>
+        <argsstring></argsstring>
+        <name>gamepadButton</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_gamepad" kindref="compound">Gamepad</ref> button event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dae2a9941e644616b8853693e7b3b22c96" kindref="member">EventType::GamepadButtonPressed</ref>, <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018daf4590195d79da4a322ee9beb6b44ef66" kindref="member">EventType::GamepadButtonReleased</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="197" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a809da03aa4090c59f03e82e22d0bfcc5" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_gamepad_axis_event" kindref="compound">GamepadAxisEvent</ref></type>
+        <definition>GamepadAxisEvent gf::Event::gamepadAxis</definition>
+        <argsstring></argsstring>
+        <name>gamepadAxis</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_gamepad" kindref="compound">Gamepad</ref> axis event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da18389e2bd7b6b426f7b9d9164bf4a5ba" kindref="member">EventType::GamepadAxisMoved</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="198" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a6c64e1db6097737c548e8615678da58d" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_gamepad_connection" kindref="compound">GamepadConnection</ref></type>
+        <definition>GamepadConnection gf::Event::gamepadConnection</definition>
+        <argsstring></argsstring>
+        <name>gamepadConnection</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_gamepad" kindref="compound">Gamepad</ref> connection event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dad5909d240c46150dc002123ef8abcc2f" kindref="member">EventType::GamepadConnected</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="199" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a0c34004fd4bfcbfbc83b0632d6ad4ec4" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_event_1_1_gamepad_disconnection" kindref="compound">GamepadDisconnection</ref></type>
+        <definition>GamepadDisconnection gf::Event::gamepadDisconnection</definition>
+        <argsstring></argsstring>
+        <name>gamepadDisconnection</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_gamepad" kindref="compound">Gamepad</ref> disconnection event parameters (<ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac1c12a889ebdc886dc3738b5a146def0" kindref="member">EventType::GamepadDisconnected</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="200" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_event_1a98ff04af613baed84fe33693cd54e43b" prot="public" static="no" mutable="no">
+        <type>union gf::Event::@0</type>
+        <definition>union gf::Event::@0 gf::Event::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="201" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a system event and its parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref> holds all the informations about a system event that just happened. Events are retrieved using the <computeroutput><ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">gf::Window::pollEvent()</ref></computeroutput> and <computeroutput><ref refid="classgf_1_1_window_1a9d0c88cab494e08929fac337fee090f6" kindref="member">gf::Window::waitEvent()</ref></computeroutput> functions.</para><para>A <ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref> instance contains the type of the event (mouse moved, key pressed, window closed, ...) as well as the details about this particular event. Please note that the event parameters are defined in a union, which means that only the member matching the type of the event will be properly filled; all other members will have undefined values and must not be read if the type of the event doesn&apos;t match. For example, if you received a <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">KeyType::KeyPressed</ref> event, then you must read the <computeroutput>event.key</computeroutput> member, all other members such as <computeroutput>event.mouse</computeroutput> or <computeroutput>event.text</computeroutput> will have undefined values.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Request<sp/>for<sp/>closing<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>escape<sp/>key<sp/>was<sp/>pressed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref><sp/>&amp;&amp;<sp/>event.<ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>.<ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref><sp/>==<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a013ec032d3460d4be4431c6ab1f8f224" kindref="member">gf::Keycode::Escape</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>window<sp/>was<sp/>resized</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da22995988de764d7a8cb4165fbff371cb" kindref="member">gf::EventType::Resized</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>doSomethingWithTheNewSize(event.<ref refid="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" kindref="member">size</ref>.width,<sp/>event.<ref refid="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" kindref="member">size</ref>.height);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>etc<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="group__window_1ga244fb10415539f03cde7ed0ae916018d" kindref="member">gf::EventType</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="281">
+        <label>gf::Event::GamepadConnection</label>
+        <link refid="structgf_1_1_event_1_1_gamepad_connection"/>
+      </node>
+      <node id="287">
+        <label>gf::Event::MouseCursorEvent</label>
+        <link refid="structgf_1_1_event_1_1_mouse_cursor_event"/>
+        <childnode refid="277" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+      </node>
+      <node id="279">
+        <label>gf::Flags&lt; Mod &gt;</label>
+        <link refid="classgf_1_1_flags"/>
+      </node>
+      <node id="277">
+        <label>gf::Vector&lt; int, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="286">
+        <label>gf::Event::GamepadAxisEvent</label>
+        <link refid="structgf_1_1_event_1_1_gamepad_axis_event"/>
+      </node>
+      <node id="275">
+        <label>gf::Event</label>
+        <link refid="structgf_1_1_event"/>
+        <childnode refid="276" relation="usage">
+          <edgelabel>mouseWheel</edgelabel>
+        </childnode>
+        <childnode refid="278" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+        <childnode refid="280" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>gamepadConnection</edgelabel>
+        </childnode>
+        <childnode refid="282" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+        <childnode refid="284" relation="usage">
+          <edgelabel>mouseButton</edgelabel>
+        </childnode>
+        <childnode refid="285" relation="usage">
+          <edgelabel>gamepadDisconnection</edgelabel>
+        </childnode>
+        <childnode refid="286" relation="usage">
+          <edgelabel>gamepadAxis</edgelabel>
+        </childnode>
+        <childnode refid="287" relation="usage">
+          <edgelabel>mouseCursor</edgelabel>
+        </childnode>
+        <childnode refid="288" relation="usage">
+          <edgelabel>gamepadButton</edgelabel>
+        </childnode>
+      </node>
+      <node id="283">
+        <label>gf::Rune</label>
+        <link refid="structgf_1_1_rune"/>
+      </node>
+      <node id="285">
+        <label>gf::Event::GamepadDisconnection</label>
+        <link refid="structgf_1_1_event_1_1_gamepad_disconnection"/>
+      </node>
+      <node id="278">
+        <label>gf::Event::KeyEvent</label>
+        <link refid="structgf_1_1_event_1_1_key_event"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>modifiers</edgelabel>
+        </childnode>
+      </node>
+      <node id="282">
+        <label>gf::Event::TextEvent</label>
+        <link refid="structgf_1_1_event_1_1_text_event"/>
+        <childnode refid="283" relation="usage">
+          <edgelabel>rune</edgelabel>
+        </childnode>
+      </node>
+      <node id="276">
+        <label>gf::Event::MouseWheelEvent</label>
+        <link refid="structgf_1_1_event_1_1_mouse_wheel_event"/>
+        <childnode refid="277" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+      </node>
+      <node id="288">
+        <label>gf::Event::GamepadButtonEvent</label>
+        <link refid="structgf_1_1_event_1_1_gamepad_button_event"/>
+      </node>
+      <node id="284">
+        <label>gf::Event::MouseButtonEvent</label>
+        <link refid="structgf_1_1_event_1_1_mouse_button_event"/>
+        <childnode refid="277" relation="usage">
+          <edgelabel>coords</edgelabel>
+        </childnode>
+      </node>
+      <node id="280">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="118" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="118" bodyend="203"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_event_1a809da03aa4090c59f03e82e22d0bfcc5" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>gamepadAxis</name></member>
+      <member refid="structgf_1_1_event_1a8d71827e9b3672af8f45c48405818adf" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>gamepadButton</name></member>
+      <member refid="structgf_1_1_event_1a6c64e1db6097737c548e8615678da58d" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>gamepadConnection</name></member>
+      <member refid="structgf_1_1_event_1a0c34004fd4bfcbfbc83b0632d6ad4ec4" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>gamepadDisconnection</name></member>
+      <member refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>key</name></member>
+      <member refid="structgf_1_1_event_1a8e867ca093b5159838125028dff7754c" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>mouseButton</name></member>
+      <member refid="structgf_1_1_event_1a1ffa80a9804c81a452b01ce6fc8ba11d" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>mouseCursor</name></member>
+      <member refid="structgf_1_1_event_1abb11582bde51fbb6f08c00d637a98160" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>mouseWheel</name></member>
+      <member refid="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>size</name></member>
+      <member refid="structgf_1_1_event_1a023f326966947eba1129f7fe27d287a4" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>text</name></member>
+      <member refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" prot="public" virt="non-virtual"><scope>gf::Event</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

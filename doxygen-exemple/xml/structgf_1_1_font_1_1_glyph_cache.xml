@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_font_1_1_glyph_cache" kind="struct" language="C++" prot="private">
+    <compoundname>gf::Font::GlyphCache</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_font_1_1_glyph_cache_1a6f442963f8474a0e30ec7e87c554aa48" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_alpha_texture" kindref="compound">AlphaTexture</ref></type>
+        <definition>AlphaTexture gf::Font::GlyphCache::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="296" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_font_1_1_glyph_cache_1a76c012026bb33936505f265188244084" prot="public" static="no" mutable="no">
+        <type>std::map&lt; uint64_t, <ref refid="structgf_1_1_glyph" kindref="compound">Glyph</ref> &gt;</type>
+        <definition>std::map&lt;uint64_t, Glyph&gt; gf::Font::GlyphCache::glyphs</definition>
+        <argsstring></argsstring>
+        <name>glyphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="297" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_font_1_1_glyph_cache_1a43e372fcc8eb8b671f6802c6cf100ba0" prot="public" static="no" mutable="no">
+        <type>Packing</type>
+        <definition>Packing gf::Font::GlyphCache::packing</definition>
+        <argsstring></argsstring>
+        <name>packing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="298" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="366">
+        <label>gf::Rect&lt; float &gt;</label>
+        <link refid="structgf_1_1_rect"/>
+        <childnode refid="367" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>gf::Font::GlyphCache</label>
+        <childnode refid="362" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+        <childnode refid="364" relation="usage">
+          <edgelabel>glyphs</edgelabel>
+        </childnode>
+        <childnode refid="368" relation="usage">
+          <edgelabel>packing</edgelabel>
+        </childnode>
+      </node>
+      <node id="362">
+        <label>gf::AlphaTexture</label>
+        <link refid="classgf_1_1_alpha_texture"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>std::map&lt; uint64_t, gf::Glyph &gt;</label>
+        <childnode refid="365" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="367">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="365">
+        <label>gf::Glyph</label>
+        <link refid="structgf_1_1_glyph"/>
+        <childnode refid="366" relation="usage">
+          <edgelabel>textureRect</edgelabel>
+          <edgelabel>bounds</edgelabel>
+        </childnode>
+      </node>
+      <node id="363">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+      <node id="368">
+        <label>gf::Font::Packing</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="295" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="295" bodyend="299"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_font_1_1_glyph_cache_1a76c012026bb33936505f265188244084" prot="public" virt="non-virtual"><scope>gf::Font::GlyphCache</scope><name>glyphs</name></member>
+      <member refid="structgf_1_1_font_1_1_glyph_cache_1a43e372fcc8eb8b671f6802c6cf100ba0" prot="public" virt="non-virtual"><scope>gf::Font::GlyphCache</scope><name>packing</name></member>
+      <member refid="structgf_1_1_font_1_1_glyph_cache_1a6f442963f8474a0e30ec7e87c554aa48" prot="public" virt="non-virtual"><scope>gf::Font::GlyphCache</scope><name>texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

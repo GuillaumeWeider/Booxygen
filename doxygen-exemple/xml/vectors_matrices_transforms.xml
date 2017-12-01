@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="vectors_matrices_transforms" kind="page">
+    <compoundname>vectors_matrices_transforms</compoundname>
+    <title>Vectors, matrices and transforms</title>
+    <detaileddescription>
+<para>gf provides a generic <ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref> type and a generic <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref> type that are used throughout the library.</para><sect1 id="vectors_matrices_transforms_1vmt_vectors">
+<title>Vectors</title>
+<sect2 id="vectors_matrices_transforms_1vmt_vector_types">
+<title>Vector types</title>
+<para>A <ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref> represents a <ulink url="https://en.wikipedia.org/wiki/Euclidean_vector">mathematical vector</ulink> in a <formula id="141">$ N $</formula>-dimensional space. It has a broad range of applications. The most obvious is to represent the position of an object in the world space but it&apos;s not the only one.</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/Vector.h&gt;</highlight></codeline>
+</programlisting></para><para>The <ref refid="structgf_1_1_vector" kindref="compound">gf::Vector</ref> type is totally generic regarding its type but also its dimension <formula id="141">$ N $</formula>.</para></sect2>
+<sect2 id="vectors_matrices_transforms_1vmt_vectors_ops">
+<title>Operations on vectors</title>
+<para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/VectorOps.h&gt;</highlight></codeline>
+</programlisting></para><para>gf defines common mathematical operators for two vectors but also for a vector and a scalar. In each case, type conversion is made if necessary, following the usual rules of the language. The following table gives the semantics of the main operations between two vectors <formula id="113">$ \mathbf{a} $</formula> and <formula id="114">$ \mathbf{b} $</formula>, or between a vector <formula id="113">$ \mathbf{a} $</formula> and a scalar <formula id="142">$ \lambda $</formula>. These operations are all defined component-wise.</para><para><table rows="5" cols="4"><row>
+<entry thead="yes"><para><formula id="143">$ \bullet $</formula> </para></entry><entry thead="yes"><para><formula id="144">$ \mathbf{a} \bullet \mathbf{b} $</formula> </para></entry><entry thead="yes"><para><formula id="145">$ \mathbf{a} \bullet \lambda $</formula> </para></entry><entry thead="yes"><para><formula id="146">$ \lambda \bullet \mathbf{a} $</formula>  </para></entry></row>
+<row>
+<entry thead="no"><para><formula id="147">$ + $</formula> </para></entry><entry thead="no"><para><formula id="148">$ a_i + b_i $</formula> </para></entry><entry thead="no"><para><formula id="149">$ a_i + \lambda $</formula> </para></entry><entry thead="no"><para><formula id="150">$ \lambda + a_i $</formula> </para></entry></row>
+<row>
+<entry thead="no"><para><formula id="151">$ - $</formula> </para></entry><entry thead="no"><para><formula id="152">$ a_i - b_i $</formula> </para></entry><entry thead="no"><para><formula id="153">$ a_i - \lambda $</formula> </para></entry><entry thead="no"><para><formula id="154">$ \lambda - a_i $</formula> </para></entry></row>
+<row>
+<entry thead="no"><para><formula id="155">$ * $</formula> </para></entry><entry thead="no"><para><formula id="156">$ a_i * b_i $</formula> </para></entry><entry thead="no"><para><formula id="157">$ a_i * \lambda $</formula> </para></entry><entry thead="no"><para><formula id="158">$ \lambda * a_i $</formula> </para></entry></row>
+<row>
+<entry thead="no"><para><formula id="159">$ / $</formula> </para></entry><entry thead="no"><para><formula id="160">$ a_i / b_i $</formula> </para></entry><entry thead="no"><para><formula id="161">$ a_i / \lambda $</formula> </para></entry><entry thead="no"><para><formula id="162">$ \lambda / a_i $</formula> </para></entry></row>
+</table>
+</para><para>gf also defines equality and inequality operators for vectors.</para></sect2>
+<sect2 id="vectors_matrices_transforms_1vmt_vectors_functions">
+<title>Functions on vectors</title>
+<para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/VectorOps.h&gt;</highlight></codeline>
+</programlisting></para></sect2>
+</sect1>
+<sect1 id="vectors_matrices_transforms_1vmt_matrices">
+<title>Matrices</title>
+</sect1>
+<sect1 id="vectors_matrices_transforms_1vmt_transforms">
+<title>Transforms</title>
+<sect2 id="vectors_matrices_transforms_1vmt_simple_transformation">
+<title>Simple transformation</title>
+<para>A simple transformation in gf is a rotation followed by a translation. A simple rotation is represented by the <ref refid="structgf_1_1_rotation" kindref="compound">gf::Rotation</ref> type, a simple translation is represented by the <ref refid="structgf_1_1_translation" kindref="compound">gf::Translation</ref> type, and the simple transformation is represented by the <ref refid="structgf_1_1_transform" kindref="compound">gf::Transform</ref> type.</para><para>These simple transformations are useful in the physics engine.</para></sect2>
+<sect2 id="vectors_matrices_transforms_1vmt_affine_transformation">
+<title>Affine transformation</title>
+<para>You can define a generic affine transformation in 2D with a <ulink url="https://en.wikipedia.org/wiki/Transformation_matrix">transformation matrix</ulink> thanks to the <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref> type. </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

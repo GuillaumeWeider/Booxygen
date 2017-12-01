@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_square_map" kind="class" language="C++" prot="public">
+    <compoundname>gf::SquareMap</compoundname>
+    <includes refid="_map_8h" local="no">gf/Map.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Cell properties</header>
+      <memberdef kind="function" id="classgf_1_1_square_map_1afa43cf7855d8bbad41916a17ec7ed9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::setCell</definition>
+        <argsstring>(Vector2i pos, CellFlags flags)</argsstring>
+        <name>setCell</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="group__game_1gae210e17d82de9239110f20f97c5e4a2a" kindref="member">CellFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set the properties of a cell. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function directly set all the properties of a cell. You should use the other functions that set a particular property.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties of the cell</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9e18a64367bf298330c17cd53c325722" kindref="member">setTransparent()</ref>, <ref refid="classgf_1_1_square_map_1a5e0c6b09f5507dee579ea5eb8d8585de" kindref="member">setWalkable()</ref>, <ref refid="classgf_1_1_square_map_1a2ffd7d330fb240fc2ed78a7a05510c63" kindref="member">setEmpty()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1ae115bdca151dc147181e4608b2f11a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::clear</definition>
+        <argsstring>(CellFlags flags)</argsstring>
+        <name>clear</name>
+        <param>
+          <type><ref refid="group__game_1gae210e17d82de9239110f20f97c5e4a2a" kindref="member">CellFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the cells with some properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a9e18a64367bf298330c17cd53c325722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::setTransparent</definition>
+        <argsstring>(Vector2i pos)</argsstring>
+        <name>setTransparent</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Make a cell transparent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1ab3a30126aa8839dd4540d022628e10ed" kindref="member">isTransparent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1ab3a30126aa8839dd4540d022628e10ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SquareMap::isTransparent</definition>
+        <argsstring>(Vector2i pos) const</argsstring>
+        <name>isTransparent</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if a cell is transparent. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the cell is transparent</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9e18a64367bf298330c17cd53c325722" kindref="member">setTransparent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a5e0c6b09f5507dee579ea5eb8d8585de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::setWalkable</definition>
+        <argsstring>(Vector2i pos)</argsstring>
+        <name>setWalkable</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Make a cell walkable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a6d71bfd5723c7c9ed5f4316e6dfb23ce" kindref="member">isWalkable()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a6d71bfd5723c7c9ed5f4316e6dfb23ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SquareMap::isWalkable</definition>
+        <argsstring>(Vector2i pos) const</argsstring>
+        <name>isWalkable</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if a cell is walkable. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a5e0c6b09f5507dee579ea5eb8d8585de" kindref="member">setWalkable()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a2ffd7d330fb240fc2ed78a7a05510c63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::setEmpty</definition>
+        <argsstring>(Vector2i pos)</argsstring>
+        <name>setEmpty</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Make a cell empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty cell is walkable and transparent</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="209" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Field of Vision</header>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a59d6d9a061ed896b81c494b358da60a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::clearFieldOfVision</definition>
+        <argsstring>()</argsstring>
+        <name>clearFieldOfVision</name>
+        <briefdescription>
+<para>Make the whole map not visible. </para>        </briefdescription>
+        <detaileddescription>
+<para>You should call this function before computing a new field of vision.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" kindref="member">computeFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1aca558709549a4968daf99e74a4107563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::clearExplored</definition>
+        <argsstring>()</argsstring>
+        <name>clearExplored</name>
+        <briefdescription>
+<para>Make the whole map not explored. </para>        </briefdescription>
+        <detaileddescription>
+<para>You should call this function before exploring a new map.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" kindref="member">computeFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::computeFieldOfVision</definition>
+        <argsstring>(Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)</argsstring>
+        <name>computeFieldOfVision</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRadius</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="group__game_1gae6054347bb8a3a23255c73431e200e1f" kindref="member">FieldOfVisionLimit</ref></type>
+          <declname>limit</declname>
+          <defval><ref refid="group__game_1ggae6054347bb8a3a23255c73431e200e1fa984ceac16fab685fc50b8d8a5eabf7de" kindref="member">FieldOfVisionLimit::Included</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="group__game_1ga74d29b35a0c62fa4662b9d13dfdb6a9c" kindref="member">FieldOfVision</ref></type>
+          <declname>algorithm</declname>
+          <defval><ref refid="group__game_1gga74d29b35a0c62fa4662b9d13dfdb6a9ca972e73b7a882d0802a4e3a16946a2f94" kindref="member">FieldOfVision::Basic</ref></defval>
+        </param>
+        <briefdescription>
+<para>Compute a field of vision. </para>        </briefdescription>
+        <detaileddescription>
+<para>The map is not cleared before computing the field of vision. The algorithm use the transparent property of the cells. After calling this function, some cells are marked visible.</para><para>This algorithm marks visible cells as explored.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the entity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum radius that the entity can see </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the limit included in the field of vision? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The algorithm to use for computing the field of vision</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a59d6d9a061ed896b81c494b358da60a6" kindref="member">clearFieldOfVision()</ref>, <ref refid="classgf_1_1_square_map_1a556ce64e728c8924114a913bd881e171" kindref="member">isInFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1acfb6d30a2ccf3c27bd9ed8dffc3e27b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SquareMap::computeLocalFieldOfVision</definition>
+        <argsstring>(Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)</argsstring>
+        <name>computeLocalFieldOfVision</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRadius</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="group__game_1gae6054347bb8a3a23255c73431e200e1f" kindref="member">FieldOfVisionLimit</ref></type>
+          <declname>limit</declname>
+          <defval><ref refid="group__game_1ggae6054347bb8a3a23255c73431e200e1fa984ceac16fab685fc50b8d8a5eabf7de" kindref="member">FieldOfVisionLimit::Included</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="group__game_1ga74d29b35a0c62fa4662b9d13dfdb6a9c" kindref="member">FieldOfVision</ref></type>
+          <declname>algorithm</declname>
+          <defval><ref refid="group__game_1gga74d29b35a0c62fa4662b9d13dfdb6a9ca972e73b7a882d0802a4e3a16946a2f94" kindref="member">FieldOfVision::Basic</ref></defval>
+        </param>
+        <briefdescription>
+<para>Compute a local field of vision. </para>        </briefdescription>
+        <detaileddescription>
+<para>The map is not cleared before computing the field of vision. The algorithm use the transparent property of the cells. After calling this function, some cells are marked visible.</para><para>This algorithm does not mark visible cells as explored. It can be used for computing an ennemy field of view without modifying the explored area of the hero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the entity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum radius that the entity can see </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the limit included in the field of vision? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The algorithm to use for computing the field of vision</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a59d6d9a061ed896b81c494b358da60a6" kindref="member">clearFieldOfVision()</ref>, <ref refid="classgf_1_1_square_map_1a556ce64e728c8924114a913bd881e171" kindref="member">isInFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a556ce64e728c8924114a913bd881e171" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SquareMap::isInFieldOfVision</definition>
+        <argsstring>(Vector2i pos) const</argsstring>
+        <name>isInFieldOfVision</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if a cell is visible. </para>        </briefdescription>
+        <detaileddescription>
+<para>Cells can be made visible by computing a field of vision.</para><para><simplesect kind="return"><para>True if the cell is visible</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" kindref="member">computeFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1ad7d67457c44e78b811bd56879eb6c7d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SquareMap::isExplored</definition>
+        <argsstring>(Vector2i pos) const</argsstring>
+        <name>isExplored</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if a cell is explored. </para>        </briefdescription>
+        <detaileddescription>
+<para>Cells are explored if they have been in the field of vision after a call to <ref refid="classgf_1_1_square_map_1aca558709549a4968daf99e74a4107563" kindref="member">clearExplored()</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" kindref="member">computeFieldOfVision()</ref>, <ref refid="classgf_1_1_square_map_1a556ce64e728c8924114a913bd881e171" kindref="member">isInFieldOfVision()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="295" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Route</header>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a3260b594356c906e82e038565ded2c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2i&gt; gf::SquareMap::computeRoute</definition>
+        <argsstring>(Vector2i origin, Vector2i target, float diagonalCost=Sqrt2, Route algorithm=Route::AStar)</argsstring>
+        <name>computeRoute</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>diagonalCost</declname>
+          <defval><ref refid="group__core_1ga8aa2d6dc9c8fb96810fe47dff3c9b00a" kindref="member">Sqrt2</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="group__game_1gab9ae4451ababe77363f782b6f6b1a0b0" kindref="member">Route</ref></type>
+          <declname>algorithm</declname>
+          <defval><ref refid="group__game_1ggab9ae4451ababe77363f782b6f6b1a0b0a5dd57ad2903b807a288f1519c98dfc29" kindref="member">Route::AStar</ref></defval>
+        </param>
+        <briefdescription>
+<para>Compute a route between two points. </para>        </briefdescription>
+        <detaileddescription>
+<para>The algorithm use the walkable property of the cells. Diagonal movement can be allowed and its cost can be adjusted (defaults to <formula id="52">$ \sqrt{2} $</formula>).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin of the route </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target of the route </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>diagonalCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cost of going diagonal between two cells (0 means no diagonal movement) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The algorithm to use for computing the route </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The route between the two points (included) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="319" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_square_map_1af715e51253715eb713c61349a09180a3" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&lt; <ref refid="group__game_1gae210e17d82de9239110f20f97c5e4a2a" kindref="member">CellFlags</ref>, int &gt;</type>
+        <definition>Array2D&lt;CellFlags, int&gt; gf::SquareMap::m_cells</definition>
+        <argsstring></argsstring>
+        <name>m_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="326" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_square_map_1a934f20da2a0707e4eb0737d744f7fa93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SquareMap::SquareMap</definition>
+        <argsstring>(Vector2i size)</argsstring>
+        <name>SquareMap</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a472354c567835368d5d893187499bc35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::SquareMap::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the map. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the map </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_square_map_1a2f3d4ef05f3e7e5f871a6bc62813503a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_position_range" kindref="compound">PositionRange</ref>&lt; int &gt;</type>
+        <definition>PositionRange&lt;int&gt; gf::SquareMap::getRange</definition>
+        <argsstring>() const</argsstring>
+        <name>getRange</name>
+        <briefdescription>
+<para>Get a range of the positions of the map. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A 2D range of all the positions</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" kindref="member">Array2D::getPositionRange()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="141" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A square map. </para>    </briefdescription>
+    <detaileddescription>
+<para>A square map is a model of map where cells are organized in a square grid. This type of map is quite common in games. gf provides some useful algorithms related to square maps: field of vision, route finding.</para><para>A cell can be transparent and/or walkable. By default, all cells are neither transparent nor walkable i.e. they are walls. The transparent property of a cell is used to compute the field of vision. The walkable property of a cell is used to compute routes. A cell can be transparent and not walkable (e.g. lava or water), it can be walkable and not transparent (e.g. a secret passage).</para><para><simplesect kind="see"><para><ref refid="group__game_1gad82e9592419fd671caafe4af9b4f89e7" kindref="member">gf::CellProperty</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="116" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="116" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_square_map_1ae115bdca151dc147181e4608b2f11a46" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>clear</name></member>
+      <member refid="classgf_1_1_square_map_1aca558709549a4968daf99e74a4107563" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>clearExplored</name></member>
+      <member refid="classgf_1_1_square_map_1a59d6d9a061ed896b81c494b358da60a6" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>clearFieldOfVision</name></member>
+      <member refid="classgf_1_1_square_map_1a9af3454bc9028bce089a4f4e60942451" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>computeFieldOfVision</name></member>
+      <member refid="classgf_1_1_square_map_1acfb6d30a2ccf3c27bd9ed8dffc3e27b2" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>computeLocalFieldOfVision</name></member>
+      <member refid="classgf_1_1_square_map_1a3260b594356c906e82e038565ded2c04" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>computeRoute</name></member>
+      <member refid="classgf_1_1_square_map_1a2f3d4ef05f3e7e5f871a6bc62813503a" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>getRange</name></member>
+      <member refid="classgf_1_1_square_map_1a472354c567835368d5d893187499bc35" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_square_map_1ad7d67457c44e78b811bd56879eb6c7d3" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>isExplored</name></member>
+      <member refid="classgf_1_1_square_map_1a556ce64e728c8924114a913bd881e171" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>isInFieldOfVision</name></member>
+      <member refid="classgf_1_1_square_map_1ab3a30126aa8839dd4540d022628e10ed" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>isTransparent</name></member>
+      <member refid="classgf_1_1_square_map_1a6d71bfd5723c7c9ed5f4316e6dfb23ce" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>isWalkable</name></member>
+      <member refid="classgf_1_1_square_map_1af715e51253715eb713c61349a09180a3" prot="private" virt="non-virtual"><scope>gf::SquareMap</scope><name>m_cells</name></member>
+      <member refid="classgf_1_1_square_map_1afa43cf7855d8bbad41916a17ec7ed9cb" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>setCell</name></member>
+      <member refid="classgf_1_1_square_map_1a2ffd7d330fb240fc2ed78a7a05510c63" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>setEmpty</name></member>
+      <member refid="classgf_1_1_square_map_1a9e18a64367bf298330c17cd53c325722" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>setTransparent</name></member>
+      <member refid="classgf_1_1_square_map_1a5e0c6b09f5507dee579ea5eb8d8585de" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>setWalkable</name></member>
+      <member refid="classgf_1_1_square_map_1a934f20da2a0707e4eb0737d744f7fa93" prot="public" virt="non-virtual"><scope>gf::SquareMap</scope><name>SquareMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

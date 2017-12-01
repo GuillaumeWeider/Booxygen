@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_star_shape" kind="class" language="C++" prot="public">
+    <compoundname>gf::StarShape</compoundname>
+    <basecompoundref refid="classgf_1_1_shape" prot="public" virt="non-virtual">gf::Shape</basecompoundref>
+    <includes refid="_shapes_8h" local="no">gf/Shapes.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_star_shape_1ad5932d7fd3cb0a4c3d2fae75f210e13d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::StarShape::m_minRadius</definition>
+        <argsstring></argsstring>
+        <name>m_minRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="366" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_star_shape_1aff0af3fdbc3aee11152fa03e3d6a8382" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::StarShape::m_maxRadius</definition>
+        <argsstring></argsstring>
+        <name>m_maxRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="367" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_star_shape_1aee0312e159582111b4e19b779380441c" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::StarShape::m_branches</definition>
+        <argsstring></argsstring>
+        <name>m_branches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="368" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_star_shape_1a0ba5c43ccb96e08e1fcc429e4c369e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::StarShape::StarShape</definition>
+        <argsstring>(float minRadius=0, float maxRadius=0, std::size_t branches=7)</argsstring>
+        <name>StarShape</name>
+        <param>
+          <type>float</type>
+          <declname>minRadius</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxRadius</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>branches</declname>
+          <defval>7</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum radius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum radius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>branches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of branches of the star </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1adae3c207b9c9d7ec7e45c57711aaa119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::StarShape::setMinRadius</definition>
+        <argsstring>(float minRadius)</argsstring>
+        <name>setMinRadius</name>
+        <param>
+          <type>float</type>
+          <declname>minRadius</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum radius. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum radius </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1a1b1d513acb531bc8b9f2a9f24e4ace23" kindref="member">getMinRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1a1b1d513acb531bc8b9f2a9f24e4ace23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::StarShape::getMinRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinRadius</name>
+        <briefdescription>
+<para>Get the minimum radius. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The minimum radius </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1adae3c207b9c9d7ec7e45c57711aaa119" kindref="member">setMinRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="322" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="322" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1ac589a54201231d09a54eb489876f245f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::StarShape::setMaxRadius</definition>
+        <argsstring>(float maxRadius)</argsstring>
+        <name>setMaxRadius</name>
+        <param>
+          <type>float</type>
+          <declname>maxRadius</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum radius. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum radius </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1aa59c87e5a543fcc4b64e84c1f907fae0" kindref="member">getMaxRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="332" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1aa59c87e5a543fcc4b64e84c1f907fae0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::StarShape::getMaxRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxRadius</name>
+        <briefdescription>
+<para>Get the maximum radius. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maximum radius </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1ac589a54201231d09a54eb489876f245f" kindref="member">setMaxRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="340" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="340" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1aba90fe1a5d938c1b997cbb3d1fb978bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::StarShape::setBranches</definition>
+        <argsstring>(std::size_t branches)</argsstring>
+        <name>setBranches</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>branches</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of branches. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>branches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of branches </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1a2066ef3d55d5ed024925b6d06cbc00a4" kindref="member">getBranches()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1a2066ef3d55d5ed024925b6d06cbc00a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::StarShape::getBranches</definition>
+        <argsstring>() const</argsstring>
+        <name>getBranches</name>
+        <briefdescription>
+<para>Get the number of branches. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of branches </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1aba90fe1a5d938c1b997cbb3d1fb978bf" kindref="member">setBranches()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="358" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="358" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1abe3452a84c472360ffc71ddb5dfb1be3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::StarShape::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1af4a3a012618e33e93c350b4691d04f1f" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="362" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_star_shape_1af4a3a012618e33e93c350b4691d04f1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::StarShape::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the shape&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the shape.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_star_shape_1abe3452a84c472360ffc71ddb5dfb1be3" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="363" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized shape representing a star. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_star_shape" kindref="compound">gf::StarShape</ref><sp/>star;</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_star_shape_1adae3c207b9c9d7ec7e45c57711aaa119" kindref="member">setMinRadius</ref>(25.0f);</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_star_shape_1ac589a54201231d09a54eb489876f245f" kindref="member">setMaxRadius</ref>(50.0f);</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_star_shape_1aba90fe1a5d938c1b997cbb3d1fb978bf" kindref="member">setBranches</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor</ref>(<ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" kindref="member">setOutlineThickness</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal">star.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>10.0f,<sp/>20.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">window.draw(star);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="748">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="747">
+        <label>gf::StarShape</label>
+        <link refid="classgf_1_1_star_shape"/>
+        <childnode refid="748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="752">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="751">
+        <label>gf::StarShape</label>
+        <link refid="classgf_1_1_star_shape"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="297" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="297" bodyend="369"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" virt="virtual"><scope>gf::StarShape</scope><name>draw</name></member>
+      <member refid="classgf_1_1_star_shape_1a2066ef3d55d5ed024925b6d06cbc00a4" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getBranches</name></member>
+      <member refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_star_shape_1aa59c87e5a543fcc4b64e84c1f907fae0" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getMaxRadius</name></member>
+      <member refid="classgf_1_1_star_shape_1a1b1d513acb531bc8b9f2a9f24e4ace23" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getMinRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_star_shape_1af4a3a012618e33e93c350b4691d04f1f" prot="public" virt="virtual"><scope>gf::StarShape</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_star_shape_1abe3452a84c472360ffc71ddb5dfb1be3" prot="public" virt="virtual"><scope>gf::StarShape</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_star_shape_1aee0312e159582111b4e19b779380441c" prot="private" virt="non-virtual"><scope>gf::StarShape</scope><name>m_branches</name></member>
+      <member refid="classgf_1_1_star_shape_1aff0af3fdbc3aee11152fa03e3d6a8382" prot="private" virt="non-virtual"><scope>gf::StarShape</scope><name>m_maxRadius</name></member>
+      <member refid="classgf_1_1_star_shape_1ad5932d7fd3cb0a4c3d2fae75f210e13d" prot="private" virt="non-virtual"><scope>gf::StarShape</scope><name>m_minRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_star_shape_1aba90fe1a5d938c1b997cbb3d1fb978bf" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setBranches</name></member>
+      <member refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_star_shape_1ac589a54201231d09a54eb489876f245f" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setMaxRadius</name></member>
+      <member refid="classgf_1_1_star_shape_1adae3c207b9c9d7ec7e45c57711aaa119" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setMinRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::StarShape</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>Shape</name></member>
+      <member refid="classgf_1_1_star_shape_1a0ba5c43ccb96e08e1fcc429e4c369e68" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>StarShape</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" virt="non-virtual"><scope>gf::StarShape</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" virt="non-virtual"><scope>gf::StarShape</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::StarShape</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

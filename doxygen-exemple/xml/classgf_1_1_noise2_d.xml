@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_noise2_d" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Noise2D</compoundname>
+    <derivedcompoundref refid="classgf_1_1_better_gradient_noise2_d" prot="public" virt="non-virtual">gf::BetterGradientNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_fractal_noise2_d" prot="public" virt="non-virtual">gf::FractalNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_gradient_noise2_d" prot="public" virt="non-virtual">gf::GradientNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_hetero_terrain2_d" prot="public" virt="non-virtual">gf::HeteroTerrain2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_hybrid_multifractal2_d" prot="public" virt="non-virtual">gf::HybridMultifractal2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_multifractal2_d" prot="public" virt="non-virtual">gf::Multifractal2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_noise3_d_to2_d_adapter" prot="public" virt="non-virtual">gf::Noise3DTo2DAdapter</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_open_simplex_noise2_d" prot="public" virt="non-virtual">gf::OpenSimplexNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_perlin_noise2_d" prot="public" virt="non-virtual">gf::PerlinNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_ridged_multifractal2_d" prot="public" virt="non-virtual">gf::RidgedMultifractal2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_simplex_noise2_d" prot="public" virt="non-virtual">gf::SimplexNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_value_noise2_d" prot="public" virt="non-virtual">gf::ValueNoise2D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_worley_noise2_d" prot="public" virt="non-virtual">gf::WorleyNoise2D</derivedcompoundref>
+    <includes refid="_noise_8h" local="no">gf/Noise.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Noise2D::~Noise2D</definition>
+        <argsstring>()</argsstring>
+        <name>~Noise2D</name>
+        <briefdescription>
+<para>Virtual destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gf::Noise2D::getValue</definition>
+        <argsstring>(double x, double y)=0</argsstring>
+        <name>getValue</name>
+        <reimplementedby refid="classgf_1_1_value_noise2_d_1a42cdc3a21317452a7e30670b6cf62ab3">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_gradient_noise2_d_1a23bfcda346af235e25fc6f1c66ccb84f">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_better_gradient_noise2_d_1a5e1ce865e77d05f1913f3bd1a585a884">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fractal_noise2_d_1a1289318aa87038f6748ae2ecd2d70eda">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_perlin_noise2_d_1a1a4808d7826d038a697e5a4348256b89">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_simplex_noise2_d_1a477a07e0ad7730fafb301907cc0ebf6c">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_open_simplex_noise2_d_1acf5d2bdb65a1339752a39f896e1dc01e">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_worley_noise2_d_1a0d3189af625c4619ea04cfb953d6e3bf">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_multifractal2_d_1a89564f0b5ebaa850e7783ba5b8bbad13">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_hetero_terrain2_d_1a0ad69590f51b7f4172792cbacec14bad">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_hybrid_multifractal2_d_1aa3552570495377a1f54e942212719ef4">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_ridged_multifractal2_d_1a31e0db554a080dcdb85d266f490cf222">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_noise3_d_to2_d_adapter_1a5321be1d1fa088f5aa5e1985273aacc4">getValue</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double gf::Noise2D::operator()</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e" kindref="member">getValue()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="60" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>2D A noise function </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="508">
+        <label>gf::PerlinNoise2D</label>
+        <link refid="classgf_1_1_perlin_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>gf::Noise3DTo2DAdapter</label>
+        <link refid="classgf_1_1_noise3_d_to2_d_adapter"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>gf::HybridMultifractal2D</label>
+        <link refid="classgf_1_1_hybrid_multifractal2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>gf::FractalNoise2D</label>
+        <link refid="classgf_1_1_fractal_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>gf::SimplexNoise2D</label>
+        <link refid="classgf_1_1_simplex_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>gf::Multifractal2D</label>
+        <link refid="classgf_1_1_multifractal2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>gf::OpenSimplexNoise2D</label>
+        <link refid="classgf_1_1_open_simplex_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>gf::BetterGradientNoise2D</label>
+        <link refid="classgf_1_1_better_gradient_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>gf::HeteroTerrain2D</label>
+        <link refid="classgf_1_1_hetero_terrain2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+      <node id="509">
+        <label>gf::RidgedMultifractal2D</label>
+        <link refid="classgf_1_1_ridged_multifractal2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>gf::GradientNoise2D</label>
+        <link refid="classgf_1_1_gradient_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>gf::WorleyNoise2D</label>
+        <link refid="classgf_1_1_worley_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>gf::ValueNoise2D</label>
+        <link refid="classgf_1_1_value_noise2_d"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="35" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" bodystart="35" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e" prot="public" virt="pure-virtual"><scope>gf::Noise2D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" virt="non-virtual"><scope>gf::Noise2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" virt="virtual"><scope>gf::Noise2D</scope><name>~Noise2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

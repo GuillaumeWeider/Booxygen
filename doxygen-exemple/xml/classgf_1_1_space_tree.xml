@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_space_tree" kind="class" language="C++" prot="public">
+    <compoundname>gf::SpaceTree</compoundname>
+    <includes refid="_space_tree_8h" local="no">gf/SpaceTree.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_space_tree_1a9fcab5f7e0037d98a04b25df95d2cb68" prot="private" static="no">
+        <name>Split</name>
+        <enumvalue id="classgf_1_1_space_tree_1a9fcab5f7e0037d98a04b25df95d2cb68a6adf97f83acf6453d4a6a4b1070f3754" prot="private">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_space_tree_1a9fcab5f7e0037d98a04b25df95d2cb68a06ce2a25e5d12c166a36f654dbea6012" prot="private">
+          <name>Vertical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_space_tree_1a9fcab5f7e0037d98a04b25df95d2cb68ac1b5fa03ecdb95d4a45dd1c40b02527f" prot="private">
+          <name>Horizontal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="215" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="215" bodyend="219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" prot="public" static="no">
+        <type>std::function&lt; bool(const <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> &amp;)&gt;</type>
+        <definition>using gf::SpaceTree::Callback =  std::function&lt;bool(const SpaceTree&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+<para>A callback function for traversing the tree. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function returns a boolean indicating if the traversal can continue. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="55" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1a0868797a8049b0006abb6190c9dd29ae" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref></type>
+        <definition>RectI gf::SpaceTree::m_area</definition>
+        <argsstring></argsstring>
+        <name>m_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="221" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1ad21b092bbe4aafff93d6996c14a8766e" prot="private" static="no" mutable="no">
+        <type>Split</type>
+        <definition>Split gf::SpaceTree::m_split</definition>
+        <argsstring></argsstring>
+        <name>m_split</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="223" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1aae71869b4c03200a8e4e897cc176dfb9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gf::SpaceTree::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1aafd17aebdff530a2874a38a72633d769" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gf::SpaceTree::m_level</definition>
+        <argsstring></argsstring>
+        <name>m_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="226" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1a953c4d1398307ce2e086a6d362b25894" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;SpaceTree&gt; gf::SpaceTree::m_left</definition>
+        <argsstring></argsstring>
+        <name>m_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="228" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1a496b96ab16f5260c59490236d5512970" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;SpaceTree&gt; gf::SpaceTree::m_right</definition>
+        <argsstring></argsstring>
+        <name>m_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="229" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_space_tree_1a52e68fab33ef70caba69815867f9f8d7" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> *</type>
+        <definition>SpaceTree* gf::SpaceTree::m_father</definition>
+        <argsstring></argsstring>
+        <name>m_father</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="231" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_space_tree_1aa98ebb65a493a9d2ce33930be0c791b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SpaceTree::SpaceTree</definition>
+        <argsstring>(const RectI &amp;area)</argsstring>
+        <name>SpaceTree</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area to split for this node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a263e021be898be8e55dc73dad00d0faf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+        <definition>const RectI&amp; gf::SpaceTree::getArea</definition>
+        <argsstring>() const</argsstring>
+        <name>getArea</name>
+        <briefdescription>
+<para>Get the area of the node. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The area of the node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="69" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1abb31e04f19948f17b0015d4e99ddb6b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::SpaceTree::getLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>getLevel</name>
+        <briefdescription>
+<para>Get the level of the node in the tree. </para>        </briefdescription>
+        <detaileddescription>
+<para>The root of the tree is at level 0, its children at level 1, etc.</para><para><simplesect kind="return"><para>The level of the node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="80" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a0c1ece59e87cd33b29e56d60c561d103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpaceTree::removeChildren</definition>
+        <argsstring>()</argsstring>
+        <name>removeChildren</name>
+        <briefdescription>
+<para>Remove the children of the node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a43977ff8132117ac056c5da003b3f2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::splitOnce</definition>
+        <argsstring>(Random &amp;random, Vector2i minSize, float maxRatio=1.5f)</argsstring>
+        <name>splitOnce</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>minSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxRatio</declname>
+          <defval>1.5f</defval>
+        </param>
+        <briefdescription>
+<para>Split the node once. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function may create two children if the conditions are met.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum size under which a node cannot be split </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum ratio between the width and height </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the node has actually been split </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a649f845ce1e75039cc06e06676ccd7ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpaceTree::splitRecursive</definition>
+        <argsstring>(Random &amp;random, int levelMax, Vector2i minSize, Vector2i maxSize, float maxRatio=1.5f)</argsstring>
+        <name>splitRecursive</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>levelMax</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>minSize</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>maxSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxRatio</declname>
+          <defval>1.5f</defval>
+        </param>
+        <briefdescription>
+<para>Split a node recursively. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>levelMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum level of a node </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum size under which a node cannot be split </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum size over which a node must be split </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum ratio between the width and height </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1aa3f37785dbfbebe63be924bb9dc35351" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::isLeaf</definition>
+        <argsstring>() const</argsstring>
+        <name>isLeaf</name>
+        <briefdescription>
+<para>Check if a node is a leaf. </para>        </briefdescription>
+        <detaileddescription>
+<para>A leaf has no children.</para><para><simplesect kind="return"><para>True if the node is a leaf </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="119" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a4d84231b3285a513de6a2a12b39b3c84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> *</type>
+        <definition>const SpaceTree* gf::SpaceTree::getLeftChild</definition>
+        <argsstring>() const</argsstring>
+        <name>getLeftChild</name>
+        <briefdescription>
+<para>Get the left child. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The left child if it exists or <computeroutput>nullptr</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="128" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1ae061aafbcb13e0c02652c35915887645" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> *</type>
+        <definition>const SpaceTree* gf::SpaceTree::getRightChild</definition>
+        <argsstring>() const</argsstring>
+        <name>getRightChild</name>
+        <briefdescription>
+<para>Get the right child. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The right child if it exists or <computeroutput>nullptr</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="137" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1af0f2ef77776aa83c18b9434e3914b480" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> *</type>
+        <definition>const SpaceTree* gf::SpaceTree::getFather</definition>
+        <argsstring>() const</argsstring>
+        <name>getFather</name>
+        <briefdescription>
+<para>Get the father of the node. </para>        </briefdescription>
+        <detaileddescription>
+<para>The root of the tree has no father.</para><para><simplesect kind="return"><para>The father of the node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="148" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1aec87a1eae162f44bf2330f695cada760" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::contains</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Check if the area of the node contains a position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to check </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a04d634e379594f7ee6c8d3e46509ab68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_space_tree" kindref="compound">SpaceTree</ref> *</type>
+        <definition>const SpaceTree* gf::SpaceTree::find</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>find</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Find the deepest node containing a position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to find </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A node or <computeroutput>nullptr</computeroutput> if the position is outside the tree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a52348fbe1896be459b5bb4f714d995a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::traversePreOrder</definition>
+        <argsstring>(Callback callback) const</argsstring>
+        <name>traversePreOrder</name>
+        <param>
+          <type><ref refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" kindref="member">Callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Traverse the nodes in pre-order. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function to call on each node</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Tree_traversal">Tree traversal - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a3f757f8e9d677e7e3ee7ea140f7b8627" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::traverseInOrder</definition>
+        <argsstring>(Callback callback) const</argsstring>
+        <name>traverseInOrder</name>
+        <param>
+          <type><ref refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" kindref="member">Callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Traverse the nodes in in-order. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function to call on each node</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Tree_traversal">Tree traversal - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1ad745cfda36ca5eacac0745b53d9e9471" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::traversePostOrder</definition>
+        <argsstring>(Callback callback) const</argsstring>
+        <name>traversePostOrder</name>
+        <param>
+          <type><ref refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" kindref="member">Callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Traverse the nodes in post-order. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function to call on each node</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Tree_traversal">Tree traversal - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1afbbf193f2c2955f103df029c1f389b67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::traverseLevelOrder</definition>
+        <argsstring>(Callback callback) const</argsstring>
+        <name>traverseLevelOrder</name>
+        <param>
+          <type><ref refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" kindref="member">Callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Traverse the nodes in level-order. </para>        </briefdescription>
+        <detaileddescription>
+<para>Level-order is also known as breadth first search</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function to call on each node</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Tree_traversal">Tree traversal - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_space_tree_1a400015a388da534227e01f65dd445ddf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::SpaceTree::traverseInvertedLevelOrder</definition>
+        <argsstring>(Callback callback) const</argsstring>
+        <name>traverseInvertedLevelOrder</name>
+        <param>
+          <type><ref refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" kindref="member">Callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Traverse the nodes in inverted level-order. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function to call on each node</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Tree_traversal">Tree traversal - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="212" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Binary space random partionning tree. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements a random binary space partitioning tree. More precisely, this class is a node in the tree. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" line="47" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpaceTree.h" bodystart="47" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_space_tree_1a8bd4660affab69f5e212b36ffe4c4e8c" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>Callback</name></member>
+      <member refid="classgf_1_1_space_tree_1aec87a1eae162f44bf2330f695cada760" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>contains</name></member>
+      <member refid="classgf_1_1_space_tree_1a04d634e379594f7ee6c8d3e46509ab68" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>find</name></member>
+      <member refid="classgf_1_1_space_tree_1a263e021be898be8e55dc73dad00d0faf" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>getArea</name></member>
+      <member refid="classgf_1_1_space_tree_1af0f2ef77776aa83c18b9434e3914b480" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>getFather</name></member>
+      <member refid="classgf_1_1_space_tree_1a4d84231b3285a513de6a2a12b39b3c84" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>getLeftChild</name></member>
+      <member refid="classgf_1_1_space_tree_1abb31e04f19948f17b0015d4e99ddb6b9" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>getLevel</name></member>
+      <member refid="classgf_1_1_space_tree_1ae061aafbcb13e0c02652c35915887645" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>getRightChild</name></member>
+      <member refid="classgf_1_1_space_tree_1aa3f37785dbfbebe63be924bb9dc35351" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>isLeaf</name></member>
+      <member refid="classgf_1_1_space_tree_1a0868797a8049b0006abb6190c9dd29ae" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_area</name></member>
+      <member refid="classgf_1_1_space_tree_1a52e68fab33ef70caba69815867f9f8d7" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_father</name></member>
+      <member refid="classgf_1_1_space_tree_1a953c4d1398307ce2e086a6d362b25894" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_left</name></member>
+      <member refid="classgf_1_1_space_tree_1aafd17aebdff530a2874a38a72633d769" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_level</name></member>
+      <member refid="classgf_1_1_space_tree_1aae71869b4c03200a8e4e897cc176dfb9" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_position</name></member>
+      <member refid="classgf_1_1_space_tree_1a496b96ab16f5260c59490236d5512970" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_right</name></member>
+      <member refid="classgf_1_1_space_tree_1ad21b092bbe4aafff93d6996c14a8766e" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>m_split</name></member>
+      <member refid="classgf_1_1_space_tree_1a0c1ece59e87cd33b29e56d60c561d103" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>removeChildren</name></member>
+      <member refid="classgf_1_1_space_tree_1aa98ebb65a493a9d2ce33930be0c791b7" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>SpaceTree</name></member>
+      <member refid="classgf_1_1_space_tree_1a9fcab5f7e0037d98a04b25df95d2cb68" prot="private" virt="non-virtual"><scope>gf::SpaceTree</scope><name>Split</name></member>
+      <member refid="classgf_1_1_space_tree_1a43977ff8132117ac056c5da003b3f2cf" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>splitOnce</name></member>
+      <member refid="classgf_1_1_space_tree_1a649f845ce1e75039cc06e06676ccd7ce" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>splitRecursive</name></member>
+      <member refid="classgf_1_1_space_tree_1a3f757f8e9d677e7e3ee7ea140f7b8627" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>traverseInOrder</name></member>
+      <member refid="classgf_1_1_space_tree_1a400015a388da534227e01f65dd445ddf" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>traverseInvertedLevelOrder</name></member>
+      <member refid="classgf_1_1_space_tree_1afbbf193f2c2955f103df029c1f389b67" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>traverseLevelOrder</name></member>
+      <member refid="classgf_1_1_space_tree_1ad745cfda36ca5eacac0745b53d9e9471" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>traversePostOrder</name></member>
+      <member refid="classgf_1_1_space_tree_1a52348fbe1896be459b5bb4f714d995a6" prot="public" virt="non-virtual"><scope>gf::SpaceTree</scope><name>traversePreOrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

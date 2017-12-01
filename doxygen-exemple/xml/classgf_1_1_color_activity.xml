@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_color_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::ColorActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_color_activity_1a2a59536c1b0b384f2d994ddcba2eed70" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tween" kindref="compound">Tween</ref>&lt; <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &gt;</type>
+        <definition>Tween&lt;Color4f&gt; gf::ColorActivity::m_tween</definition>
+        <argsstring></argsstring>
+        <name>m_tween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="359" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_color_activity_1a469d9a0d1a3ef349cf35f3e171093917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ColorActivity::ColorActivity</definition>
+        <argsstring>(Color4f origin, Color4f target, Color4f &amp;color, Time duration, Easing easing=Ease::linear)</argsstring>
+        <name>ColorActivity</name>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref></type>
+          <declname>easing</declname>
+          <defval><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference on the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the tween </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>easing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The easing for the interpolation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1ae18c2bb5e2e96e126de58842953e7223" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ColorActivity::setOrigin</definition>
+        <argsstring>(Color4f origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Change the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new origin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="306" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="306" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1a0a813fd70b1555c223d715f8a93b7a6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::ColorActivity::getOrigin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getOrigin</name>
+        <briefdescription>
+<para>Get the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current origin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="315" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="315" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1a76b8b0719dec9c1492045597a4755f48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ColorActivity::setTarget</definition>
+        <argsstring>(Color4f target)</argsstring>
+        <name>setTarget</name>
+        <param>
+          <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Change the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="324" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="324" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1afa3ada0916d66756ec934a47e4570d7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::ColorActivity::getTarget</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+<para>Get the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current target </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="333" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1a2341cac2533f5e291fb2012b9b3dd952" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ColorActivity::setDuration</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>setDuration</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Change the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new duration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="342" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="342" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1ab8bae28720035edd29ad187094af3bdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::ColorActivity::getDuration</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDuration</name>
+        <briefdescription>
+<para>Get the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current duration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="351" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="351" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1acafa7a46195317b8297c68aa3933362d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::ColorActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_activity_1a3e37d957702aa76256eda917f05de274" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::ColorActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="356" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity for a change of color. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_tween" kindref="compound">gf::Tween</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="113">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="112">
+        <label>gf::ColorActivity</label>
+        <link refid="classgf_1_1_color_activity"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="115">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="114">
+        <label>gf::ColorActivity</label>
+        <link refid="classgf_1_1_color_activity"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="288" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="288" bodyend="360"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_color_activity_1a469d9a0d1a3ef349cf35f3e171093917" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>ColorActivity</name></member>
+      <member refid="classgf_1_1_color_activity_1ab8bae28720035edd29ad187094af3bdb" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>getDuration</name></member>
+      <member refid="classgf_1_1_color_activity_1a0a813fd70b1555c223d715f8a93b7a6a" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_color_activity_1afa3ada0916d66756ec934a47e4570d7a" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>getTarget</name></member>
+      <member refid="classgf_1_1_color_activity_1a2a59536c1b0b384f2d994ddcba2eed70" prot="private" virt="non-virtual"><scope>gf::ColorActivity</scope><name>m_tween</name></member>
+      <member refid="classgf_1_1_color_activity_1a3e37d957702aa76256eda917f05de274" prot="public" virt="virtual"><scope>gf::ColorActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_color_activity_1acafa7a46195317b8297c68aa3933362d" prot="public" virt="virtual"><scope>gf::ColorActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_color_activity_1a2341cac2533f5e291fb2012b9b3dd952" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>setDuration</name></member>
+      <member refid="classgf_1_1_color_activity_1ae18c2bb5e2e96e126de58842953e7223" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_color_activity_1a76b8b0719dec9c1492045597a4755f48" prot="public" virt="non-virtual"><scope>gf::ColorActivity</scope><name>setTarget</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::ColorActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_post_processing" kind="class" language="C++" prot="public">
+    <compoundname>gf::PostProcessing</compoundname>
+    <basecompoundref refid="classgf_1_1_drawable" prot="public" virt="non-virtual">gf::Drawable</basecompoundref>
+    <includes refid="_post_processing_8h" local="no">gf/PostProcessing.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_post_processing_1af23451325acda211f619e6c13ea63310" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>const Texture* gf::PostProcessing::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="83" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_post_processing_1a41690e43c50fa6688a4b211864d0fd14" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::PostProcessing::m_textureRect</definition>
+        <argsstring></argsstring>
+        <name>m_textureRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="84" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_post_processing_1a4f71b7b4c1f727fddb385fd3c2a88363" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_effect" kindref="compound">Effect</ref> *</type>
+        <definition>Effect* gf::PostProcessing::m_effect</definition>
+        <argsstring></argsstring>
+        <name>m_effect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="85" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_post_processing_1af15a1c8c4e78e73a7c2cf1f1033ffe35" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex gf::PostProcessing::m_vertices[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_post_processing_1a8e776043888740f8a896e6ea4d8085ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PostProcessing::PostProcessing</definition>
+        <argsstring>()</argsstring>
+        <name>PostProcessing</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_post_processing_1a10aacae6823a55ce81519c18a6f494a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PostProcessing::setTexture</definition>
+        <argsstring>(const Texture &amp;texture)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Set the source texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_post_processing_1ad597b746976435dad84fc400ed4f86ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PostProcessing::setTextureRect</definition>
+        <argsstring>(const RectF &amp;textureRect)</argsstring>
+        <name>setTextureRect</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>textureRect</declname>
+        </param>
+        <briefdescription>
+<para>Set the texture rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textureRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture rectangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_post_processing_1a608d4c322024b2895b040113491480e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PostProcessing::setEffect</definition>
+        <argsstring>(Effect &amp;effect)</argsstring>
+        <name>setEffect</name>
+        <param>
+          <type><ref refid="classgf_1_1_effect" kindref="compound">Effect</ref> &amp;</type>
+          <declname>effect</declname>
+        </param>
+        <briefdescription>
+<para>Set the effect to apply. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The post-processing effect </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_post_processing_1acdc64e9ea8fda09aefcc82c463e9024e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::PostProcessing::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_post_processing_1a38822ddd296586cde04b123b73a06d31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PostProcessing::updatePositions</definition>
+        <argsstring>()</argsstring>
+        <name>updatePositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_post_processing_1a2f45fae9717dbf4da548484e73e275aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PostProcessing::updateTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>updateTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A post-processing drawable. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is a light-weight object to apply a post-processing effect to a texture. The texture generally comes froma <ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="585">
+        <label>gf::PostProcessing</label>
+        <link refid="classgf_1_1_post_processing"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="587">
+        <label>gf::PostProcessing</label>
+        <link refid="classgf_1_1_post_processing"/>
+        <childnode refid="588" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" line="46" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PostProcessing.h" bodystart="46" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_post_processing_1acdc64e9ea8fda09aefcc82c463e9024e" prot="public" virt="virtual"><scope>gf::PostProcessing</scope><name>draw</name></member>
+      <member refid="classgf_1_1_post_processing_1a4f71b7b4c1f727fddb385fd3c2a88363" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>m_effect</name></member>
+      <member refid="classgf_1_1_post_processing_1af23451325acda211f619e6c13ea63310" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_post_processing_1a41690e43c50fa6688a4b211864d0fd14" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>m_textureRect</name></member>
+      <member refid="classgf_1_1_post_processing_1af15a1c8c4e78e73a7c2cf1f1033ffe35" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_post_processing_1a8e776043888740f8a896e6ea4d8085ec" prot="public" virt="non-virtual"><scope>gf::PostProcessing</scope><name>PostProcessing</name></member>
+      <member refid="classgf_1_1_post_processing_1a608d4c322024b2895b040113491480e3" prot="public" virt="non-virtual"><scope>gf::PostProcessing</scope><name>setEffect</name></member>
+      <member refid="classgf_1_1_post_processing_1a10aacae6823a55ce81519c18a6f494a4" prot="public" virt="non-virtual"><scope>gf::PostProcessing</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_post_processing_1ad597b746976435dad84fc400ed4f86ff" prot="public" virt="non-virtual"><scope>gf::PostProcessing</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_post_processing_1a38822ddd296586cde04b123b73a06d31" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>updatePositions</name></member>
+      <member refid="classgf_1_1_post_processing_1a2f45fae9717dbf4da548484e73e275aa" prot="private" virt="non-virtual"><scope>gf::PostProcessing</scope><name>updateTexCoords</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::PostProcessing</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

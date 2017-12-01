@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_gradient_noise2_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::GradientNoise2D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise2_d" prot="public" virt="non-virtual">gf::Noise2D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise2_d_1a6b01bdee5e8ff28668ec92f13996ff27" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">Step</ref>&lt; double &gt;</type>
+        <definition>Step&lt;double&gt; gf::GradientNoise2D::m_step</definition>
+        <argsstring></argsstring>
+        <name>m_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="95" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise2_d_1a6f2d5b3fa9109e249fb626d830cb1dd8" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, 256 &gt;</type>
+        <definition>std::array&lt;uint8_t, 256&gt; gf::GradientNoise2D::m_perm</definition>
+        <argsstring></argsstring>
+        <name>m_perm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise2_d_1a32518bf62a41c0ffc6b1cd54a7e85cb0" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="group__core_1gaf000d77b14f910bee6329245832d66af" kindref="member">Vector2d</ref>, 256 &gt;</type>
+        <definition>std::array&lt;Vector2d, 256&gt; gf::GradientNoise2D::m_gradients2D</definition>
+        <argsstring></argsstring>
+        <name>m_gradients2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="97" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_gradient_noise2_d_1a1e8b15f2059253a9fa145770500af547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::GradientNoise2D::GradientNoise2D</definition>
+        <argsstring>(Random &amp;random, Step&lt; double &gt; step)</argsstring>
+        <name>GradientNoise2D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">Step</ref>&lt; double &gt;</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gradient_noise2_d_1a23bfcda346af235e25fc6f1c66ccb84f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::GradientNoise2D::getValue</definition>
+        <argsstring>(double x, double y) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_gradient_noise2_d_1a5b03d73adf4933eac32336a2d278ce55" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1gaf000d77b14f910bee6329245832d66af" kindref="member">Vector2d</ref> &amp;</type>
+        <definition>const Vector2d&amp; gf::GradientNoise2D::at</definition>
+        <argsstring>(uint8_t i, uint8_t j) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="99" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gradient 2D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Gradient_noise">Gradient noise</ulink> is a lattice-based noise based on gradients. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="370">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+      <node id="369">
+        <label>gf::GradientNoise2D</label>
+        <link refid="classgf_1_1_gradient_noise2_d"/>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="372">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+      <node id="371">
+        <label>gf::GradientNoise2D</label>
+        <link refid="classgf_1_1_gradient_noise2_d"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="80" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="80" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_gradient_noise2_d_1a5b03d73adf4933eac32336a2d278ce55" prot="private" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>at</name></member>
+      <member refid="classgf_1_1_gradient_noise2_d_1a23bfcda346af235e25fc6f1c66ccb84f" prot="public" virt="virtual"><scope>gf::GradientNoise2D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_gradient_noise2_d_1a1e8b15f2059253a9fa145770500af547" prot="public" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>GradientNoise2D</name></member>
+      <member refid="classgf_1_1_gradient_noise2_d_1a32518bf62a41c0ffc6b1cd54a7e85cb0" prot="private" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>m_gradients2D</name></member>
+      <member refid="classgf_1_1_gradient_noise2_d_1a6f2d5b3fa9109e249fb626d830cb1dd8" prot="private" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>m_perm</name></member>
+      <member refid="classgf_1_1_gradient_noise2_d_1a6b01bdee5e8ff28668ec92f13996ff27" prot="private" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>m_step</name></member>
+      <member refid="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" virt="non-virtual"><scope>gf::GradientNoise2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" virt="virtual"><scope>gf::GradientNoise2D</scope><name>~Noise2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

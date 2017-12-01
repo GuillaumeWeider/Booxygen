@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_animation" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxAnimation</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_animation_1a1c75ec081e54acd3f7b8e6b17d5efd7b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgf_1_1_tmx_frame" kindref="compound">TmxFrame</ref> &gt;</type>
+        <definition>std::vector&lt;TmxFrame&gt; gf::TmxAnimation::frames</definition>
+        <argsstring></argsstring>
+        <name>frames</name>
+        <briefdescription>
+<para>The frames of the animation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="534" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A tile animation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="794">
+        <label>std::vector&lt; gf::TmxFrame &gt;</label>
+        <childnode refid="795" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="796">
+        <label>gf::Time</label>
+        <link refid="classgf_1_1_time"/>
+        <childnode refid="796" relation="usage">
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="795">
+        <label>gf::TmxFrame</label>
+        <link refid="structgf_1_1_tmx_frame"/>
+        <childnode refid="796" relation="usage">
+          <edgelabel>duration</edgelabel>
+        </childnode>
+      </node>
+      <node id="793">
+        <label>gf::TmxAnimation</label>
+        <link refid="structgf_1_1_tmx_animation"/>
+        <childnode refid="794" relation="usage">
+          <edgelabel>frames</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="533" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="533" bodyend="535"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_animation_1a1c75ec081e54acd3f7b8e6b17d5efd7b" prot="public" virt="non-virtual"><scope>gf::TmxAnimation</scope><name>frames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

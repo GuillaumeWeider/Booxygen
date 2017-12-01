@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_library" kind="class" language="C++" prot="public">
+    <compoundname>gf::Library</compoundname>
+    <includes refid="_library_8h" local="no">gf/Library.h</includes>
+    <innerclass refid="structgf_1_1_library_1_1_version" prot="public">gf::Library::Version</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6f" prot="public" static="no">
+        <name>Dependency</name>
+        <enumvalue id="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fab8c9180416765ab4e073740856943c56" prot="public">
+          <name>Boost</name>
+          <briefdescription>
+<para>Boost. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fa1e9dda63c2294ad44bdbd3a12786205a" prot="public">
+          <name>SimpleDirectMediaLayer</name>
+          <briefdescription>
+<para>SDL. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fa175ebab04c203978a143c46a5ffa3cdd" prot="public">
+          <name>FreeType</name>
+          <briefdescription>
+<para>FreeType. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Depedencies of gf. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_library_1ad19fcc13f93a6468778c1b20aa4b8c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Library::Library</definition>
+        <argsstring>()</argsstring>
+        <name>Library</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function initialize the library </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1a3556bd5984461238ef29be5d6c66ffea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Library::Library</definition>
+        <argsstring>(const Library &amp;)=delete</argsstring>
+        <name>Library</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1afad779d1697e3d7f7c4ab78f9f849a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;</type>
+        <definition>Library&amp; gf::Library::operator=</definition>
+        <argsstring>(const Library &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1adb013f105a790e590e43364ab9a00b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Library::Library</definition>
+        <argsstring>(Library &amp;&amp;)</argsstring>
+        <name>Library</name>
+        <param>
+          <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1abdcd40d50b08c269e03212693cb383b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;</type>
+        <definition>Library&amp; gf::Library::operator=</definition>
+        <argsstring>(Library &amp;&amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1a2dd26f31423b0f5b323d364c2a78be36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Library::~Library</definition>
+        <argsstring>()</argsstring>
+        <name>~Library</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function quits the library </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_library_1ab8eadae75c72e60d571043ef4db4ad9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_library_1_1_version" kindref="compound">Version</ref></type>
+        <definition>static Version gf::Library::getVersion</definition>
+        <argsstring>()</argsstring>
+        <name>getVersion</name>
+        <briefdescription>
+<para>Get the version of the gf library. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The version of the gf library </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_library_1a9aa76f4a19c993cd32137efdfbd7c62a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; <ref refid="structgf_1_1_library_1_1_version" kindref="compound">Version</ref>, <ref refid="structgf_1_1_library_1_1_version" kindref="compound">Version</ref> &gt;</type>
+        <definition>static std::tuple&lt;Version, Version&gt; gf::Library::getDependencyVersion</definition>
+        <argsstring>(Dependency dep)</argsstring>
+        <name>getDependencyVersion</name>
+        <param>
+          <type><ref refid="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6f" kindref="member">Dependency</ref></type>
+          <declname>dep</declname>
+        </param>
+        <briefdescription>
+<para>Get the version information about the library dependencies. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A tuple with the compiled version and the linked version </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to represent the library. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is used to initialize the library (especially SDL). Normally, you do not have to care about it if you use a <ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref> or a <ref refid="classgf_1_1_monitor" kindref="compound">gf::Monitor</ref> as the library is automatically initialized with these classes.</para><para>Internally, the class uses reference couting to avoid multiple initializations. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Library.h" bodystart="44" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fab8c9180416765ab4e073740856943c56" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>Boost</name></member>
+      <member refid="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6f" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>Dependency</name></member>
+      <member refid="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fa175ebab04c203978a143c46a5ffa3cdd" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>FreeType</name></member>
+      <member refid="classgf_1_1_library_1a9aa76f4a19c993cd32137efdfbd7c62a" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>getDependencyVersion</name></member>
+      <member refid="classgf_1_1_library_1ab8eadae75c72e60d571043ef4db4ad9a" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>getVersion</name></member>
+      <member refid="classgf_1_1_library_1ad19fcc13f93a6468778c1b20aa4b8c20" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>Library</name></member>
+      <member refid="classgf_1_1_library_1a3556bd5984461238ef29be5d6c66ffea" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>Library</name></member>
+      <member refid="classgf_1_1_library_1adb013f105a790e590e43364ab9a00b5e" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>Library</name></member>
+      <member refid="classgf_1_1_library_1afad779d1697e3d7f7c4ab78f9f849a98" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_library_1abdcd40d50b08c269e03212693cb383b7" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_library_1a9a4e0a4b9cec3f49e491586a25acda6fa1e9dda63c2294ad44bdbd3a12786205a" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>SimpleDirectMediaLayer</name></member>
+      <member refid="classgf_1_1_library_1a2dd26f31423b0f5b323d364c2a78be36" prot="public" virt="non-virtual"><scope>gf::Library</scope><name>~Library</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_fractal_noise2_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::FractalNoise2D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise2_d" prot="public" virt="non-virtual">gf::Noise2D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1a87479d858db695fd8b3fd24bcd4b8411" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_noise2_d" kindref="compound">Noise2D</ref> &amp;</type>
+        <definition>Noise2D&amp; gf::FractalNoise2D::m_noise</definition>
+        <argsstring></argsstring>
+        <name>m_noise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="186" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1a019d9dad19ded73119bcbf2bd0e25243" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gf::FractalNoise2D::m_scale</definition>
+        <argsstring></argsstring>
+        <name>m_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="187" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1aff06c0cad0066c03b24c6cee3d9c7b7a" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::FractalNoise2D::m_octaves</definition>
+        <argsstring></argsstring>
+        <name>m_octaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="188" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1a4488c9ad8d7be73dc79e98170a6c7903" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gf::FractalNoise2D::m_lacunarity</definition>
+        <argsstring></argsstring>
+        <name>m_lacunarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="189" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1afc4790c4f7f91f48909962c226419b17" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gf::FractalNoise2D::m_persistence</definition>
+        <argsstring></argsstring>
+        <name>m_persistence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="190" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fractal_noise2_d_1a611e546db1298bd3df701740811f6f89" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gf::FractalNoise2D::m_dimension</definition>
+        <argsstring></argsstring>
+        <name>m_dimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="191" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_fractal_noise2_d_1aff1b249b0169bb807cd024db7f32a478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::FractalNoise2D::FractalNoise2D</definition>
+        <argsstring>(Noise2D &amp;noise, double scale, std::size_t octaves=8, double lacunarity=2.0, double persistence=0.5, double dimension=1.0)</argsstring>
+        <name>FractalNoise2D</name>
+        <param>
+          <type><ref refid="classgf_1_1_noise2_d" kindref="compound">Noise2D</ref> &amp;</type>
+          <declname>noise</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>octaves</declname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lacunarity</declname>
+          <defval>2.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>persistence</declname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dimension</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The basic noise function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>octaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of octaves </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lacunarity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The factor applied to frequency </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>persistence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The factor applied to amplitude </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dimension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contrast between the layers </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_fractal_noise2_d_1a1289318aa87038f6748ae2ecd2d70eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::FractalNoise2D::getValue</definition>
+        <argsstring>(double x, double y) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise2_d_1a53991824bca9e9eeb36f4beabcae2b9e">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Take a 2D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="183" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fractal 2D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para>Fractal noise is based of fractional Brownian motion (fBm). It consists in adding several octaves of a basic noise at different amplitudes. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="323">
+        <label>gf::FractalNoise2D</label>
+        <link refid="classgf_1_1_fractal_noise2_d"/>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="325">
+        <label>gf::FractalNoise2D</label>
+        <link refid="classgf_1_1_fractal_noise2_d"/>
+        <childnode refid="326" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>gf::Noise2D</label>
+        <link refid="classgf_1_1_noise2_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="168" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="168" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_fractal_noise2_d_1aff1b249b0169bb807cd024db7f32a478" prot="public" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>FractalNoise2D</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1a1289318aa87038f6748ae2ecd2d70eda" prot="public" virt="virtual"><scope>gf::FractalNoise2D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1a611e546db1298bd3df701740811f6f89" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_dimension</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1a4488c9ad8d7be73dc79e98170a6c7903" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_lacunarity</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1a87479d858db695fd8b3fd24bcd4b8411" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_noise</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1aff06c0cad0066c03b24c6cee3d9c7b7a" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_octaves</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1afc4790c4f7f91f48909962c226419b17" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_persistence</name></member>
+      <member refid="classgf_1_1_fractal_noise2_d_1a019d9dad19ded73119bcbf2bd0e25243" prot="private" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>m_scale</name></member>
+      <member refid="classgf_1_1_noise2_d_1aa69393d0a36cb09eccbbca6c76a0abb9" prot="public" virt="non-virtual"><scope>gf::FractalNoise2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise2_d_1a481848cc8f63e53fbb8c6637f0895c80" prot="public" virt="virtual"><scope>gf::FractalNoise2D</scope><name>~Noise2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

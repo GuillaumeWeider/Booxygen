@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Matrix&lt; T, 4, 4 &gt;</compoundname>
+    <includes refid="_matrix_8h" local="no">gf/Matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a159a43b8eebc35975d2e7509a433530a" prot="public" static="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>using gf::Matrix&lt; T, 4, 4 &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>The value type of the elements of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="259" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac11538b744372663efa74e7e0ddfd8da" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, 4, 4 &gt;::Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>The number of rows in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="264" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aa0bd521cde478e861a91218f6aa7dd06" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, 4, 4 &gt;::Cols</definition>
+        <argsstring></argsstring>
+        <name>Cols</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>The number of columns in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="269" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a62ee98dff2906e5254bc7c292801ece6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::grid[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>grid</name>
+        <briefdescription>
+<para>Grid representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="301" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4569e2ac9d4bf65cf42d975b7df82348" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::data[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Array representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="302" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ad7b6d2f3a82af43290f3101ea3c30414" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::xx</definition>
+        <argsstring></argsstring>
+        <name>xx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="304" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a13dd5b99a6a53831683ca515d2336497" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::xy</definition>
+        <argsstring></argsstring>
+        <name>xy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="304" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a0dd01236f8d5e42af91cf02b3d89612a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::xz</definition>
+        <argsstring></argsstring>
+        <name>xz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="304" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5caf7ea801f6eee044113942e0e9807d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::xw</definition>
+        <argsstring></argsstring>
+        <name>xw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="304" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a028e0350a0dfca8b722723c39a7fe98a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::yx</definition>
+        <argsstring></argsstring>
+        <name>yx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="305" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a33f5a0d9daa29dcaad52dd7f231420e8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::yy</definition>
+        <argsstring></argsstring>
+        <name>yy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="305" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac44d05077c7a87ad3dc03e8ddc28388d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::yz</definition>
+        <argsstring></argsstring>
+        <name>yz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="305" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a71e9e012f10325bf5757723cc0ef87" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::yw</definition>
+        <argsstring></argsstring>
+        <name>yw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="305" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aec57f3456453157b486d2f57a6d29a78" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::zx</definition>
+        <argsstring></argsstring>
+        <name>zx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="306" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac4ae315931730ec11f45049f2099558a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::zy</definition>
+        <argsstring></argsstring>
+        <name>zy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="306" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a6698bb80eb60a3eee027d389d0a41db8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::zz</definition>
+        <argsstring></argsstring>
+        <name>zz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="306" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a8b53f0d2ba7e2898e34a39f66938a494" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::zw</definition>
+        <argsstring></argsstring>
+        <name>zw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="306" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a94ae84ffbb631a9ef7e12b3a270b23ce" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::wx</definition>
+        <argsstring></argsstring>
+        <name>wx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="307" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ab71c688dc5043c1d206ccc054c94bb09" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::wy</definition>
+        <argsstring></argsstring>
+        <name>wy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="307" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a4922aa0a0e7213fd27b830846b2222" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::wz</definition>
+        <argsstring></argsstring>
+        <name>wz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="307" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aa2d1e27e09bb41e1047558295edcefcf" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 4, 4 &gt;::ww</definition>
+        <argsstring></argsstring>
+        <name>ww</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="307" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1acadf6a64eb6ab9c488e0a4e213266ca9" prot="public" static="no" mutable="no">
+        <type>union <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 4, 4 &gt;::@12</type>
+        <definition>union gf::Matrix&lt; T, 4, 4 &gt;::@12 gf::Matrix&lt; T, 4, 4 &gt;::@13</definition>
+        <argsstring></argsstring>
+        <name>@13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An anonymous union to handle the various representations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="309" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5eee260dabb51b67890390d0f700158c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Matrix&lt; T, 4, 4 &gt;::Matrix</definition>
+        <argsstring>(T xx, T xy, T xz, T xw, T yx, T yy, T yz, T yw, T zx, T zy, T zz, T zw, T wx, T wy, T wz, T ww)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xz</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xw</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yy</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yz</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yw</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>zx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>zy</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>zz</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>zw</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>wx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>wy</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>wz</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>ww</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that takes all the elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and second column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and third column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and fourth column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and second column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and third column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and fourth column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the third row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the third row and second column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the third row and third column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the third row and fourth column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the fourth row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the fourth row and second column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the fourth row and third column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ww</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the fourth row and fourth column </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="291" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="291" bodyend="295"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A 4x4 matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>This specialization of <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref> handles affine transformation of 3D vectors (using homogeneous coordinates).</para><para>Each element of the matrix can be accessed through a name with a double letter indicating the column and row of the element (e.g. <computeroutput>xy</computeroutput> indicates the first row and second column).</para><para>A common typedef is defined:</para><para><itemizedlist>
+<listitem><para><ref refid="group__core_1ga602d9345cc8ee188179c52bc1c854771" kindref="member">gf::Matrix4f</ref> with <computeroutput>float</computeroutput> as <computeroutput>T</computeroutput> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="455">
+        <label>T</label>
+      </node>
+      <node id="454">
+        <label>gf::Matrix&lt; T, 4, 4 &gt;</label>
+        <link refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4"/>
+        <childnode refid="454" relation="usage">
+          <edgelabel>@13</edgelabel>
+        </childnode>
+        <childnode refid="455" relation="usage">
+          <edgelabel>ww</edgelabel>
+          <edgelabel>zz</edgelabel>
+          <edgelabel>yy</edgelabel>
+          <edgelabel>xx</edgelabel>
+          <edgelabel>wx</edgelabel>
+          <edgelabel>yz</edgelabel>
+          <edgelabel>xy</edgelabel>
+          <edgelabel>wy</edgelabel>
+          <edgelabel>xz</edgelabel>
+          <edgelabel>wz</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="255" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="255" bodyend="310"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aa0bd521cde478e861a91218f6aa7dd06" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>Cols</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4569e2ac9d4bf65cf42d975b7df82348" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>data</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a62ee98dff2906e5254bc7c292801ece6" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>grid</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5eee260dabb51b67890390d0f700158c" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>Matrix</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac11538b744372663efa74e7e0ddfd8da" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>Rows</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a159a43b8eebc35975d2e7509a433530a" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>value_type</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aa2d1e27e09bb41e1047558295edcefcf" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>ww</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a94ae84ffbb631a9ef7e12b3a270b23ce" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>wx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ab71c688dc5043c1d206ccc054c94bb09" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>wy</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a4922aa0a0e7213fd27b830846b2222" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>wz</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a5caf7ea801f6eee044113942e0e9807d" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>xw</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ad7b6d2f3a82af43290f3101ea3c30414" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>xx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a13dd5b99a6a53831683ca515d2336497" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>xy</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a0dd01236f8d5e42af91cf02b3d89612a" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>xz</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a4a71e9e012f10325bf5757723cc0ef87" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>yw</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a028e0350a0dfca8b722723c39a7fe98a" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>yx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a33f5a0d9daa29dcaad52dd7f231420e8" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>yy</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac44d05077c7a87ad3dc03e8ddc28388d" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>yz</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a8b53f0d2ba7e2898e34a39f66938a494" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>zw</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1aec57f3456453157b486d2f57a6d29a78" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>zx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1ac4ae315931730ec11f45049f2099558a" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>zy</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4_1a6698bb80eb60a3eee027d389d0a41db8" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 4, 4 &gt;</scope><name>zz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_terrain" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxTerrain</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_terrain_1a4a1b91c80b32734c30b7627bf1af08f2" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tmx_properties" kindref="compound">TmxProperties</ref></type>
+        <definition>TmxProperties gf::TmxTerrain::properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+<para>The properties of the terrain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="544" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_terrain_1a5ccdbd0b72a36b7f8deb7e102ec76628" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gf::TmxTerrain::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the terrain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="545" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_terrain_1a61fe9dfabb85d7b4890817b042d386e3" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::TmxTerrain::tile</definition>
+        <argsstring></argsstring>
+        <name>tile</name>
+        <briefdescription>
+<para>The representing tile for the terrain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="546" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A description of a kind of terrain on the map. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_tmx_tileset" kindref="compound">gf::TmxTileset</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="935">
+        <label>gf::TmxTerrain</label>
+        <link refid="structgf_1_1_tmx_terrain"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="938" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="937">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="938">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="936">
+        <label>std::string</label>
+        <childnode refid="937" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="543" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="543" bodyend="547"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_terrain_1a5ccdbd0b72a36b7f8deb7e102ec76628" prot="public" virt="non-virtual"><scope>gf::TmxTerrain</scope><name>name</name></member>
+      <member refid="structgf_1_1_tmx_terrain_1a4a1b91c80b32734c30b7627bf1af08f2" prot="public" virt="non-virtual"><scope>gf::TmxTerrain</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_terrain_1a61fe9dfabb85d7b4890817b042d386e3" prot="public" virt="non-virtual"><scope>gf::TmxTerrain</scope><name>tile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

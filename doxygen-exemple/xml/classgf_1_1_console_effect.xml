@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_console_effect" kind="class" language="C++" prot="public">
+    <compoundname>gf::ConsoleEffect</compoundname>
+    <includes refid="_console_8h" local="no">gf/Console.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" prot="public" static="no">
+        <name>Kind</name>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a2005f43694b321ba19ce85f841ec61ec" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>Do not change the background color. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a75fe4a57ff6ba867a325e6ce4f634caa" prot="public">
+          <name>Set</name>
+          <briefdescription>
+<para><formula id="9">\[ \textbf{r} = \textbf{c} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abfb59848237a615bfd79b142e1142b9f" prot="public">
+          <name>Multiply</name>
+          <briefdescription>
+<para><formula id="10">\[ \textbf{r} = \textbf{b} \cdot \textbf{c} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a3592819c788cd5b58a5e48cae9b3bd00" prot="public">
+          <name>Lighten</name>
+          <briefdescription>
+<para><formula id="11">\[ \textbf{r} = \max(\textbf{b}, \textbf{c}) \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a048b6077943696c37a800e6b4a2ff182" prot="public">
+          <name>Darken</name>
+          <briefdescription>
+<para><formula id="12">\[ \textbf{r} = \min(\textbf{b}, \textbf{c}) \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596aa3e4b09504169469f508eb01f22cc71b" prot="public">
+          <name>Screen</name>
+          <briefdescription>
+<para><formula id="13">\[ \textbf{r} = 1 - (1 - \textbf{b}) \cdot (1 - \textbf{c}) \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596addc82ca50e7f889098b907aecacca09c" prot="public">
+          <name>ColorDodge</name>
+          <briefdescription>
+<para><formula id="14">\[ \textbf{r} = \frac{\textbf{c}}{1 - \textbf{b}} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a86bbec1ff01eba8859e74d9659602ca8" prot="public">
+          <name>ColorBurn</name>
+          <briefdescription>
+<para><formula id="15">\[ \textbf{r} = 1 - \frac{1 - \textbf{b}}{\textbf{c}} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596ae98152302917301f2850c13078329e89" prot="public">
+          <name>Add</name>
+          <briefdescription>
+<para><formula id="16">\[ \textbf{r} = \textbf{b} + \textbf{c} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596af274ec01e4705bf0e491c5265db0e578" prot="public">
+          <name>AddAlpha</name>
+          <briefdescription>
+<para><formula id="17">\[ \textbf{r} = \textbf{b} + \alpha \cdot \textbf{c} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a82df4e29168c567b3ea45c93f34db3b4" prot="public">
+          <name>Burn</name>
+          <briefdescription>
+<para><formula id="18">\[ \textbf{r} = \textbf{b} + \textbf{c} - 1 \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a3d5ae72720ad361dd16d20ab4ca24fe7" prot="public">
+          <name>Overlay</name>
+          <briefdescription>
+<para><formula id="19">\[ \textbf{r} = \begin{cases} 2 \cdot \textbf{b} \cdot \textbf{c} &amp; \text{if } \textbf{b} \leq 0.5 \\ 1 - 2 \cdot (1 - \textbf{b}) \cdot (1 - \textbf{c}) &amp; \text{otherwise} \end{cases} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abad4725f1e6c0478a02e144bd67b1a8d" prot="public">
+          <name>Alpha</name>
+          <briefdescription>
+<para><formula id="20">\[ \textbf{r} = (1 - \alpha) \cdot \textbf{b} + \alpha \cdot \textbf{c} \]</formula> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" prot="public">
+          <name>Default</name>
+          <briefdescription>
+<para>Use the default console effect. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The kind of console effect. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="132" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="132" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_console_effect_1aaef080c31706b6564225d5ae2214809d" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" kindref="member">Kind</ref></type>
+        <definition>Kind gf::ConsoleEffect::m_kind</definition>
+        <argsstring></argsstring>
+        <name>m_kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="202" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_effect_1addad48c1ff341e23f83b765808b2f754" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::ConsoleEffect::m_alpha</definition>
+        <argsstring></argsstring>
+        <name>m_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="203" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_console_effect_1afe9169c64acc45489d706e2a50f00c37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::ConsoleEffect::ConsoleEffect</definition>
+        <argsstring>(Kind kind)</argsstring>
+        <name>ConsoleEffect</name>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" kindref="member">Kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a kind only. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor sould be used with all the effects, except <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596af274ec01e4705bf0e491c5265db0e578" kindref="member">ConsoleEffect::AddAlpha</ref> and <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abad4725f1e6c0478a02e144bd67b1a8d" kindref="member">ConsoleEffect::Alpha</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind of effect </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="157" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_effect_1a969eff1d05d71c6c5fa06756ac8561d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::ConsoleEffect::ConsoleEffect</definition>
+        <argsstring>(Kind kind, float alpha)</argsstring>
+        <name>ConsoleEffect</name>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" kindref="member">Kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a kind and <formula id="8">$ \alpha $</formula>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor should be used with <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596af274ec01e4705bf0e491c5265db0e578" kindref="member">ConsoleEffect::AddAlpha</ref> and <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abad4725f1e6c0478a02e144bd67b1a8d" kindref="member">ConsoleEffect::Alpha</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind of effect </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <formula id="8">$ \alpha $</formula> value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="173" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_effect_1a1ae3867c25108b92f5408aa8bbb351f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" kindref="member">Kind</ref></type>
+        <definition>constexpr Kind gf::ConsoleEffect::getKind</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getKind</name>
+        <briefdescription>
+<para>Get the kind of effect. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="183" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_effect_1a52fa34235f7e4ad1108220ebb9ee707b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::ConsoleEffect::isDefault</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isDefault</name>
+        <briefdescription>
+<para>Check if the effect if <ref refid="group__graphics_1ggafa2fae07fe31387c721a9c3bf1aef7cba7a1920d61156abc05a60135aefe8bc67" kindref="member">Console::Default</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="190" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="190" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_effect_1a3376624e9dc2dc9bc263eddbf9ab38b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::ConsoleEffect::getAlpha</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Get the alpha value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="197" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A console effect on the background color. </para>    </briefdescription>
+    <detaileddescription>
+<para>A console effect is used to modify the background color of the console.</para><para>If <formula id="5">$ \textbf{b} $</formula> is the current background color, and <formula id="6">$ \textbf{c} $</formula> is the wanted color, then the result color <formula id="7">$ \textbf{r} $</formula> is given by the following description. Note that <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596af274ec01e4705bf0e491c5265db0e578" kindref="member">ConsoleEffect::AddAlpha</ref> and <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abad4725f1e6c0478a02e144bd67b1a8d" kindref="member">ConsoleEffect::Alpha</ref> need an <formula id="8">$ \alpha $</formula> value.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="126" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596ae98152302917301f2850c13078329e89" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Add</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596af274ec01e4705bf0e491c5265db0e578" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>AddAlpha</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abad4725f1e6c0478a02e144bd67b1a8d" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Alpha</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a82df4e29168c567b3ea45c93f34db3b4" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Burn</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a86bbec1ff01eba8859e74d9659602ca8" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>ColorBurn</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596addc82ca50e7f889098b907aecacca09c" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>ColorDodge</name></member>
+      <member refid="classgf_1_1_console_effect_1afe9169c64acc45489d706e2a50f00c37" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>ConsoleEffect</name></member>
+      <member refid="classgf_1_1_console_effect_1a969eff1d05d71c6c5fa06756ac8561d1" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>ConsoleEffect</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a048b6077943696c37a800e6b4a2ff182" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Darken</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Default</name></member>
+      <member refid="classgf_1_1_console_effect_1a3376624e9dc2dc9bc263eddbf9ab38b8" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>getAlpha</name></member>
+      <member refid="classgf_1_1_console_effect_1a1ae3867c25108b92f5408aa8bbb351f9" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>getKind</name></member>
+      <member refid="classgf_1_1_console_effect_1a52fa34235f7e4ad1108220ebb9ee707b" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>isDefault</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Kind</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a3592819c788cd5b58a5e48cae9b3bd00" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Lighten</name></member>
+      <member refid="classgf_1_1_console_effect_1addad48c1ff341e23f83b765808b2f754" prot="private" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>m_alpha</name></member>
+      <member refid="classgf_1_1_console_effect_1aaef080c31706b6564225d5ae2214809d" prot="private" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>m_kind</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596abfb59848237a615bfd79b142e1142b9f" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Multiply</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a2005f43694b321ba19ce85f841ec61ec" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>None</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a3d5ae72720ad361dd16d20ab4ca24fe7" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Overlay</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596aa3e4b09504169469f508eb01f22cc71b" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Screen</name></member>
+      <member refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a75fe4a57ff6ba867a325e6ce4f634caa" prot="public" virt="non-virtual"><scope>gf::ConsoleEffect</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

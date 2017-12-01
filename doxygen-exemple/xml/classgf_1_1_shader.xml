@@ -1,0 +1,846 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_shader" kind="class" language="C++" prot="public">
+    <compoundname>gf::Shader</compoundname>
+    <derivedcompoundref refid="classgf_1_1_effect" prot="public" virt="non-virtual">gf::Effect</derivedcompoundref>
+    <includes refid="_shader_8h" local="no">gf/Shader.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Loading</header>
+      <memberdef kind="function" id="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromFile</definition>
+        <argsstring>(const Path &amp;filename, Type type)</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load the vertex of fragment shader from a file. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads a single shader, vertex or fragment, identified by the second argument.</para><para>The source must be a text file containing a valid shader in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the vertex or fragment shader file to load </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of shader (vertex or fragment)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a3718f44bb7179162fc6bd478f63ceb3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromFile</definition>
+        <argsstring>(const Path &amp;vertexShaderFilename, const Path &amp;fragmentShaderFilename)</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>vertexShaderFilename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>fragmentShaderFilename</declname>
+        </param>
+        <briefdescription>
+<para>Load both the vertex and fragment shaders from files. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads both the vertex and the fragment shaders. If one of them fails to load, the shader is left empty (the valid shader is unloaded).</para><para>The sources must be a text files containing a valid shader in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertexShaderFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the vertex shader file to load </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fragmentShaderFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the fragment shader file to load</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromMemory</definition>
+        <argsstring>(StringRef shader, Type type)</argsstring>
+        <name>loadFromMemory</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load the vertex or fragment shader from a source code in memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads a single shader, vertex or fragment, identified by the second argument.</para><para>The source code must be a valid shader in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the source code of the shader </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of shader (vertex or fragment)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1ae23130240044b2f765e93a6abf874452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromMemory</definition>
+        <argsstring>(StringRef vertexShader, StringRef fragmentShader)</argsstring>
+        <name>loadFromMemory</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>vertexShader</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>fragmentShader</declname>
+        </param>
+        <briefdescription>
+<para>Load both the vertex and fragment shaders from source codes in memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads both the vertex and the fragment shaders. If one of them fails to load, the shader is left empty (the valid shader is unloaded).</para><para>The source codes must be a valid shaders in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertexShader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the source code of the vertex shader </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fragmentShader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the source code of the fragment shader</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromStream</definition>
+        <argsstring>(InputStream &amp;stream, Type type)</argsstring>
+        <name>loadFromStream</name>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Load the vertex or fragment shader from a custom stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads a single shader, vertex or fragment, identified by the second argument.</para><para>The source code must be a valid shader in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of shader (vertex, geometry or fragment)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" kindref="member">loadFromMemory()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a5eb464468e1a8f27a546b14ccb0691e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::loadFromStream</definition>
+        <argsstring>(InputStream &amp;vertexShaderStream, InputStream &amp;fragmentShaderStream)</argsstring>
+        <name>loadFromStream</name>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>vertexShaderStream</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>fragmentShaderStream</declname>
+        </param>
+        <briefdescription>
+<para>Load both the vertex and fragment shaders from custom streams. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function loads both the vertex and the fragment shaders. If one of them fails to load, the shader is left empty (the valid shader is unloaded).</para><para>The source codes must be valid shaders in GLSL language. GLSL is a C-like language dedicated to OpenGL shaders; you&apos;ll probably need to read a good documentation for it before writing your own shaders.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertexShaderStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read the vertex shader from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fragmentShaderStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read the fragment shader from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" kindref="member">loadFromMemory()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="282" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Uniform setting</header>
+      <memberdef kind="function" id="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, float val)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>float</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>float</computeroutput> scalar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a18ee6fb09f42d8326f1de7dc07d6aa42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, int val)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>int</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>int</computeroutput> scalar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="305" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1ac26d37abd3cb8cc0e71a81bc4e89f734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const Vector2f &amp;vec)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>vec2</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>vec2</computeroutput> vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1adb1d146542c0c727db6d9b79e754f6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const Vector3f &amp;vec)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gaefd1239e3c713d51c3dfdeb3f4f7cb08" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>vec3</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>vec3</computeroutput> vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a41792cd93bd178ec2bac04ede18b04e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const Vector4f &amp;vec)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga80e84250d4f3b2b46e723056d5795ffb" kindref="member">Vector4f</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>vec4</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>vec4</computeroutput> vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1ad91743c1e70bc2925e2b94da215b0c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const Matrix3f &amp;mat)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>mat3</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>mat3</computeroutput> matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1ace674a07f82cd88e0d0287a085be2e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const Matrix4f &amp;mat)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga602d9345cc8ee188179c52bc1c854771" kindref="member">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Specify value for a <computeroutput>mat4</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>mat4</computeroutput> matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1aa7986a4d762df6f94f5aa9d238752b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Shader::setUniform</definition>
+        <argsstring>(StringRef name, const BareTexture &amp;tex)</argsstring>
+        <name>setUniform</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> &amp;</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+<para>Specify a texture for a <computeroutput>sampler2D</computeroutput> uniform. </para>        </briefdescription>
+        <detaileddescription>
+<para>The corresponding parameter in the shader must be a 2D texture, i.e. a <computeroutput>sampler2D</computeroutput> GLSL type.</para><para>In the shader code:</para><para><programlisting><codeline><highlight class="normal">uniform<sp/>sampler2D<sp/>the_texture;<sp/>//<sp/>this<sp/>is<sp/>the<sp/>variable<sp/>in<sp/>the<sp/>shader</highlight></codeline>
+</programlisting></para><para>In the source code:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">shader.<ref refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" kindref="member">setUniform</ref>(</highlight><highlight class="stringliteral">&quot;the_texture&quot;</highlight><highlight class="normal">,<sp/>texture);</highlight></codeline>
+</programlisting></para><para>It is important to note that the texture must remain alive as long as the shader uses it, no copy is made internally.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the uniform variable in GLSL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the <computeroutput>sampler2D</computeroutput> texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="373" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227abd13198f949b8b612939dba17ddace08" prot="public">
+          <name>Vertex</name>
+          <briefdescription>
+<para>Type for a vertex shader. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227a582ea2a544a29dcf181fd3ac837b5199" prot="public">
+          <name>Fragment</name>
+          <briefdescription>
+<para>Type for a fragment (or pixel) shader. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of shaders. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgf_1_1_shader_1aa5afc6f82b7b587ed5ada4d227ce32aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class RenderTarget</definition>
+        <argsstring></argsstring>
+        <name>RenderTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="388" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_shader_1a55162e7327181be316bbb2fad6943e9a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::Shader::m_program</definition>
+        <argsstring></argsstring>
+        <name>m_program</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="396" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_shader_1a93f93ff01f089059e342bd550fe09006" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> * &gt;</type>
+        <definition>std::map&lt;int, const BareTexture *&gt; gf::Shader::m_textures</definition>
+        <argsstring></argsstring>
+        <name>m_textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="398" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_shader_1a2a7a09355bc8c85e5cc9ebbf129a8ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Shader::Shader</definition>
+        <argsstring>()</argsstring>
+        <name>Shader</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates an invalid shader. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a2f551c64a14e24e9980f778ad2004e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Shader::~Shader</definition>
+        <argsstring>()</argsstring>
+        <name>~Shader</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1ab369b72dbf021d3777029122a2c01db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Shader::Shader</definition>
+        <argsstring>(const Shader &amp;)=delete</argsstring>
+        <name>Shader</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_shader" kindref="compound">Shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a3761570c34abae63574afe373fd78515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_shader" kindref="compound">Shader</ref> &amp;</type>
+        <definition>Shader&amp; gf::Shader::operator=</definition>
+        <argsstring>(const Shader &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_shader" kindref="compound">Shader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_shader_1a21f61fdeab80da2b4e3c5b2308017ce3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Shader::bind</definition>
+        <argsstring>(const Shader *shader)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_shader" kindref="compound">Shader</ref> *</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+<para>Bind a shader for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is for internal use only.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgf_1_1_shader" kindref="compound">Shader</ref> to bind, can be null to use no shader </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="385" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_shader_1a17feaa7b796bc3db2a1a2da93dc97409" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Shader::compile</definition>
+        <argsstring>(const char *vertexShaderCode, const char *fragmentShaderCode)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>const char *</type>
+          <declname>vertexShaderCode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fragmentShaderCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a708750aa30729563302e73510caeecfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Shader::getUniformLocation</definition>
+        <argsstring>(StringRef name)</argsstring>
+        <name>getUniformLocation</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_shader_1a0847ca693858050781cbb72af34186b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Shader::getAttributeLocation</definition>
+        <argsstring>(StringRef name)</argsstring>
+        <name>getAttributeLocation</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="391" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An OpenGL vertex and/or fragment shader. </para>    </briefdescription>
+    <detaileddescription>
+<para>Shaders are programs written using a specific language, executed directly by the graphics card and allowing to apply real-time operations to the rendered entities.</para><para>There are two kinds of shaders:</para><para><itemizedlist>
+<listitem><para>vertex shaders, that process vertices</para></listitem><listitem><para>fragment (or pixel) shaders, that process pixels</para></listitem></itemizedlist>
+</para><para>A <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref> can be composed of either a vertex shader alone, a geometry shader alone, a fragment shader alone, or any combination of them. (see the variants of the load functions).</para><para>Shaders are written in GLSL, which is a C-like language dedicated to OpenGL shaders. You&apos;ll probably need to learn its basics before writing your own shaders for gf. See also <ref refid="shader" kindref="compound">How to write your own shader</ref>.</para><para>Like any C/C++ program, a GLSL shader has its own variables called <emphasis>uniforms</emphasis> that you can set from your C++ application. <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref> handles different types of uniforms:</para><para><itemizedlist>
+<listitem><para>scalars: <computeroutput>float</computeroutput>, <computeroutput>int</computeroutput></para></listitem><listitem><para>vectors (2, 3 or 4 components)</para></listitem><listitem><para>matrices (3x3 or 4x4)</para></listitem><listitem><para>samplers (textures)</para></listitem></itemizedlist>
+</para><para>Every uniform variable in a shader can be set through one of the <ref refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" kindref="member">setUniform()</ref> overloads. For example, if you have a shader with the following uniforms:</para><para><programlisting><codeline><highlight class="normal">uniform<sp/>float<sp/>offset;</highlight></codeline>
+<codeline><highlight class="normal">uniform<sp/>vec3<sp/>point;</highlight></codeline>
+<codeline><highlight class="normal">uniform<sp/>vec4<sp/>color;</highlight></codeline>
+<codeline><highlight class="normal">uniform<sp/>mat3<sp/>matrix;</highlight></codeline>
+<codeline><highlight class="normal">uniform<sp/>sampler2D<sp/>overlay;</highlight></codeline>
+</programlisting></para><para>You can set their values from C++ code as follows:</para><para><programlisting><codeline><highlight class="normal">shader.setUniform(&quot;offset&quot;,<sp/>2.0f);</highlight></codeline>
+<codeline><highlight class="normal">shader.setUniform(&quot;point&quot;,<sp/>gf::Vector3f(0.5f,<sp/>0.8f,<sp/>0.3f));</highlight></codeline>
+<codeline><highlight class="normal">shader.setUniform(&quot;color&quot;,<sp/>color);<sp/>//<sp/>color<sp/>is<sp/>a<sp/>gf::Color4f</highlight></codeline>
+<codeline><highlight class="normal">shader.setUniform(&quot;matrix&quot;,<sp/>trans);<sp/>//<sp/>trans<sp/>is<sp/>a<sp/>gf::Matrix3f</highlight></codeline>
+<codeline><highlight class="normal">shader.setUniform(&quot;overlay&quot;,<sp/>texture);<sp/>//<sp/>texture<sp/>is<sp/>a<sp/>gf::Texture</highlight></codeline>
+</programlisting></para><para>To apply a shader to a drawable, you must pass it as part of the <ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref> in the call to <ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">RenderTarget::draw()</ref> function:</para><para><programlisting><codeline><highlight class="normal"><ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref><sp/>states;</highlight></codeline>
+<codeline><highlight class="normal">states.<ref refid="structgf_1_1_render_states_1a38b5fe28cff8f7760bbb9904e3a13f11" kindref="member">shader</ref><sp/>=<sp/>&amp;shader;</highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite,<sp/>states);</highlight></codeline>
+</programlisting></para><para>In the code above we pass a pointer to the shader, because it may be null (which means &quot;default shader&quot;).</para><para>Shaders can be used on any drawable, but some combinations are not interesting. For example, using a vertex shader on a <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> is limited because there are only 4 vertices, the sprite would have to be subdivided in order to apply wave effects. Another bad example is a fragment shader with <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>: the texture of the text is not the actual text that you see on screen, it is a big texture containing all the characters of the font in an arbitrary order; thus, texture lookups on pixels other than the current one may not give you the expected result. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="690">
+        <label>gf::AntiAliasingEffect</label>
+        <link refid="classgf_1_1_anti_aliasing_effect"/>
+        <childnode refid="689" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>gf::ColorMatrixEffect</label>
+        <link refid="classgf_1_1_color_matrix_effect"/>
+        <childnode refid="689" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>gf::ColorEffect</label>
+        <link refid="classgf_1_1_color_effect"/>
+        <childnode refid="691" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>gf::Shader</label>
+        <link refid="classgf_1_1_shader"/>
+      </node>
+      <node id="695">
+        <label>gf::EdgeEffect</label>
+        <link refid="classgf_1_1_edge_effect"/>
+        <childnode refid="689" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>gf::Effect</label>
+        <link refid="classgf_1_1_effect"/>
+        <childnode refid="688" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>gf::DefaultEffect</label>
+        <link refid="classgf_1_1_default_effect"/>
+        <childnode refid="689" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>gf::ColorBlindEffect</label>
+        <link refid="classgf_1_1_color_blind_effect"/>
+        <childnode refid="691" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" line="120" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shader.h" bodystart="120" bodyend="399"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shader_1a21f61fdeab80da2b4e3c5b2308017ce3" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>bind</name></member>
+      <member refid="classgf_1_1_shader_1a17feaa7b796bc3db2a1a2da93dc97409" prot="private" virt="non-virtual"><scope>gf::Shader</scope><name>compile</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227a582ea2a544a29dcf181fd3ac837b5199" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>Fragment</name></member>
+      <member refid="classgf_1_1_shader_1a0847ca693858050781cbb72af34186b0" prot="private" virt="non-virtual"><scope>gf::Shader</scope><name>getAttributeLocation</name></member>
+      <member refid="classgf_1_1_shader_1a708750aa30729563302e73510caeecfa" prot="private" virt="non-virtual"><scope>gf::Shader</scope><name>getUniformLocation</name></member>
+      <member refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a3718f44bb7179162fc6bd478f63ceb3f" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1ae23130240044b2f765e93a6abf874452" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a5eb464468e1a8f27a546b14ccb0691e0" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a55162e7327181be316bbb2fad6943e9a" prot="private" virt="non-virtual"><scope>gf::Shader</scope><name>m_program</name></member>
+      <member refid="classgf_1_1_shader_1a93f93ff01f089059e342bd550fe09006" prot="private" virt="non-virtual"><scope>gf::Shader</scope><name>m_textures</name></member>
+      <member refid="classgf_1_1_shader_1a3761570c34abae63574afe373fd78515" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a18ee6fb09f42d8326f1de7dc07d6aa42" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ac26d37abd3cb8cc0e71a81bc4e89f734" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1adb1d146542c0c727db6d9b79e754f6d0" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a41792cd93bd178ec2bac04ede18b04e3" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ad91743c1e70bc2925e2b94da215b0c16" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ace674a07f82cd88e0d0287a085be2e28" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1aa7986a4d762df6f94f5aa9d238752b4b" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a2a7a09355bc8c85e5cc9ebbf129a8ce7" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1ab369b72dbf021d3777029122a2c01db5" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>Type</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227abd13198f949b8b612939dba17ddace08" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>Vertex</name></member>
+      <member refid="classgf_1_1_shader_1a2f551c64a14e24e9980f778ad2004e83" prot="public" virt="non-virtual"><scope>gf::Shader</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__graphics" kind="group">
+    <compoundname>graphics</compoundname>
+    <title>Graphics classes</title>
+    <innerclass refid="classgf_1_1_animated_sprite" prot="public">gf::AnimatedSprite</innerclass>
+    <innerclass refid="structgf_1_1_animation_1_1_frame" prot="private">gf::Animation::Frame</innerclass>
+    <innerclass refid="classgf_1_1_animation" prot="public">gf::Animation</innerclass>
+    <innerclass refid="structgf_1_1_blend_mode" prot="public">gf::BlendMode</innerclass>
+    <innerclass refid="classgf_1_1_buffered_geometry" prot="public">gf::BufferedGeometry</innerclass>
+    <innerclass refid="structgf_1_1_color" prot="public">gf::Color</innerclass>
+    <innerclass refid="structgf_1_1_color_ramp" prot="public">gf::ColorRamp</innerclass>
+    <innerclass refid="classgf_1_1_coordinates" prot="public">gf::Coordinates</innerclass>
+    <innerclass refid="classgf_1_1_curve" prot="public">gf::Curve</innerclass>
+    <innerclass refid="classgf_1_1_drawable" prot="public">gf::Drawable</innerclass>
+    <innerclass refid="classgf_1_1_effect" prot="public">gf::Effect</innerclass>
+    <innerclass refid="classgf_1_1_default_effect" prot="public">gf::DefaultEffect</innerclass>
+    <innerclass refid="classgf_1_1_anti_aliasing_effect" prot="public">gf::AntiAliasingEffect</innerclass>
+    <innerclass refid="classgf_1_1_color_matrix_effect" prot="public">gf::ColorMatrixEffect</innerclass>
+    <innerclass refid="classgf_1_1_color_effect" prot="public">gf::ColorEffect</innerclass>
+    <innerclass refid="classgf_1_1_color_blind_effect" prot="public">gf::ColorBlindEffect</innerclass>
+    <innerclass refid="classgf_1_1_edge_effect" prot="public">gf::EdgeEffect</innerclass>
+    <innerclass refid="structgf_1_1_glyph" prot="public">gf::Glyph</innerclass>
+    <innerclass refid="structgf_1_1_font_1_1_packing" prot="private">gf::Font::Packing</innerclass>
+    <innerclass refid="structgf_1_1_font_1_1_glyph_cache" prot="private">gf::Font::GlyphCache</innerclass>
+    <innerclass refid="classgf_1_1_font" prot="public">gf::Font</innerclass>
+    <innerclass refid="structgf_1_1_graphics_info_1_1_format" prot="public">gf::GraphicsInfo::Format</innerclass>
+    <innerclass refid="classgf_1_1_graphics_info" prot="public">gf::GraphicsInfo</innerclass>
+    <innerclass refid="classgf_1_1_square_grid" prot="public">gf::SquareGrid</innerclass>
+    <innerclass refid="classgf_1_1_image" prot="public">gf::Image</innerclass>
+    <innerclass refid="classgf_1_1_logo" prot="public">gf::Logo</innerclass>
+    <innerclass refid="classgf_1_1_nine_patch" prot="public">gf::NinePatch</innerclass>
+    <innerclass refid="classgf_1_1_point_particles" prot="public">gf::PointParticles</innerclass>
+    <innerclass refid="classgf_1_1_shape_particles" prot="public">gf::ShapeParticles</innerclass>
+    <innerclass refid="classgf_1_1_sprite_particles" prot="public">gf::SpriteParticles</innerclass>
+    <innerclass refid="classgf_1_1_post_processing" prot="public">gf::PostProcessing</innerclass>
+    <innerclass refid="structgf_1_1_render_pipeline_1_1_texture_buffer" prot="private">gf::RenderPipeline::TextureBuffer</innerclass>
+    <innerclass refid="classgf_1_1_render_pipeline" prot="public">gf::RenderPipeline</innerclass>
+    <innerclass refid="structgf_1_1_render_states" prot="public">gf::RenderStates</innerclass>
+    <innerclass refid="structgf_1_1_render_target_1_1_locations" prot="private">gf::RenderTarget::Locations</innerclass>
+    <innerclass refid="classgf_1_1_render_target" prot="public">gf::RenderTarget</innerclass>
+    <innerclass refid="classgf_1_1_render_texture" prot="public">gf::RenderTexture</innerclass>
+    <innerclass refid="classgf_1_1_render_window" prot="public">gf::RenderWindow</innerclass>
+    <innerclass refid="classgf_1_1_shader" prot="public">gf::Shader</innerclass>
+    <innerclass refid="classgf_1_1_shape" prot="public">gf::Shape</innerclass>
+    <innerclass refid="classgf_1_1_rectangle_shape" prot="public">gf::RectangleShape</innerclass>
+    <innerclass refid="classgf_1_1_circle_shape" prot="public">gf::CircleShape</innerclass>
+    <innerclass refid="classgf_1_1_convex_shape" prot="public">gf::ConvexShape</innerclass>
+    <innerclass refid="classgf_1_1_star_shape" prot="public">gf::StarShape</innerclass>
+    <innerclass refid="classgf_1_1_rounded_rectangle_shape" prot="public">gf::RoundedRectangleShape</innerclass>
+    <innerclass refid="classgf_1_1_sprite" prot="public">gf::Sprite</innerclass>
+    <innerclass refid="classgf_1_1_sprite_batch" prot="public">gf::SpriteBatch</innerclass>
+    <innerclass refid="structgf_1_1_text_1_1_line" prot="private">gf::Text::Line</innerclass>
+    <innerclass refid="structgf_1_1_text_1_1_paragraph" prot="private">gf::Text::Paragraph</innerclass>
+    <innerclass refid="classgf_1_1_text" prot="public">gf::Text</innerclass>
+    <innerclass refid="classgf_1_1_bare_texture" prot="public">gf::BareTexture</innerclass>
+    <innerclass refid="classgf_1_1_texture" prot="public">gf::Texture</innerclass>
+    <innerclass refid="classgf_1_1_alpha_texture" prot="public">gf::AlphaTexture</innerclass>
+    <innerclass refid="classgf_1_1_tile_layer" prot="public">gf::TileLayer</innerclass>
+    <innerclass refid="classgf_1_1_transformable" prot="public">gf::Transformable</innerclass>
+    <innerclass refid="structgf_1_1_u_i_edit_type" prot="public">gf::UIEditType</innerclass>
+    <innerclass refid="structgf_1_1_u_i_browser" prot="public">gf::UIBrowser</innerclass>
+    <innerclass refid="classgf_1_1_u_i" prot="public">gf::UI</innerclass>
+    <innerclass refid="structgf_1_1_vertex" prot="public">gf::Vertex</innerclass>
+    <innerclass refid="classgf_1_1_vertex_array" prot="public">gf::VertexArray</innerclass>
+    <innerclass refid="classgf_1_1_vertex_buffer" prot="public">gf::VertexBuffer</innerclass>
+    <innerclass refid="classgf_1_1_view" prot="public">gf::View</innerclass>
+    <innerclass refid="classgf_1_1_adaptative_view" prot="public">gf::AdaptativeView</innerclass>
+    <innerclass refid="classgf_1_1_zooming_view_adaptor" prot="public">gf::ZoomingViewAdaptor</innerclass>
+    <innerclass refid="classgf_1_1_view_container" prot="public">gf::ViewContainer</innerclass>
+    <innerclass refid="classgf_1_1_stretch_view" prot="public">gf::StretchView</innerclass>
+    <innerclass refid="classgf_1_1_fit_view" prot="public">gf::FitView</innerclass>
+    <innerclass refid="classgf_1_1_fill_view" prot="public">gf::FillView</innerclass>
+    <innerclass refid="classgf_1_1_extend_view" prot="public">gf::ExtendView</innerclass>
+    <innerclass refid="classgf_1_1_locked_view" prot="public">gf::LockedView</innerclass>
+    <innerclass refid="classgf_1_1_screen_view" prot="public">gf::ScreenView</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__graphics_1ga5229ccbffec1016d760ddfe296fd2edf" prot="public" static="no">
+        <name>Alignment</name>
+        <enumvalue id="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>No alignement. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>Left alignement. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>Right alignement. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <briefdescription>
+<para>Centered alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa4b425d212a2e7b36c38703bfdcd57823" prot="public">
+          <name>Justify</name>
+          <briefdescription>
+<para>Justified alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The alignement of a text. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Alignment.h" line="33" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Alignment.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" prot="public" static="no">
+        <name>Anchor</name>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066ab32beb056fbfe36afbabc6c88c81ab36" prot="public">
+          <name>TopLeft</name>
+          <briefdescription>
+<para>Top-left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a91b8ede24b7f93a98ae4dcaade15d468" prot="public">
+          <name>TopCenter</name>
+          <briefdescription>
+<para>Top-center. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a1d85a557894c340c318493f33bfa8efb" prot="public">
+          <name>TopRight</name>
+          <briefdescription>
+<para>Top-right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a9f44821a7b58abb265709f49e54ef8ca" prot="public">
+          <name>CenterLeft</name>
+          <briefdescription>
+<para>Center-left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <briefdescription>
+<para>Center. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066aa538ef718186c9e0967239bb60043d1f" prot="public">
+          <name>CenterRight</name>
+          <briefdescription>
+<para>Center-right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a98e5a1c44509157ebcaf46c515c78875" prot="public">
+          <name>BottomLeft</name>
+          <briefdescription>
+<para>Bottom-left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066abf7d9c8ad2f89a37cf5378b5fec0b420" prot="public">
+          <name>BottomCenter</name>
+          <briefdescription>
+<para>Bottom-center. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a9146bfc669fddc88db2c4d89297d0e9a" prot="public">
+          <name>BottomRight</name>
+          <briefdescription>
+<para>Bottom-right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An anchor of a box. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is used to define the origin in transformable objects. It is also used to compute coordinates for HUD.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref>, <ref refid="classgf_1_1_coordinates" kindref="compound">gf::Coordinates</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Anchor.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Anchor.h" bodystart="41" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" prot="public" static="no">
+        <name>BlendEquation</name>
+        <enumvalue id="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" prot="public">
+          <name>Add</name>
+          <briefdescription>
+<para>Pixel = Src * SrcFactor + Dst * DstFactor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56abb2c356401c2d3c0be676d940cfddaf6" prot="public">
+          <name>Substract</name>
+          <briefdescription>
+<para>Pixel = Src * SrcFactor - Dst * DstFactor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aefb0fd0487d043b5ce9a21b5a1f6fe94" prot="public">
+          <name>ReverseSubstract</name>
+          <briefdescription>
+<para>Pixel = Dst * DstFactor - Src * SrcFactor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of the blending equations. </para>        </briefdescription>
+        <detaileddescription>
+<para>The equations are mapped directly to their OpenGL equivalents, specified by <ulink url="http://docs.gl/es2/glBlendEquation">glBlendEquation()</ulink> or <ulink url="http://docs.gl/es2/glBlendEquationSeparate">glBlendEquationSeparate()</ulink>.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" prot="public" static="no">
+        <name>BlendFactor</name>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" prot="public">
+          <name>Zero</name>
+          <briefdescription>
+<para>(0, 0, 0, 0) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" prot="public">
+          <name>One</name>
+          <briefdescription>
+<para>(1, 1, 1, 1) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea2ad714e29d37896d79187312086bc6fe" prot="public">
+          <name>SrcColor</name>
+          <briefdescription>
+<para>(src.r, src.g, src.b, src.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea09d3240b4e2481b1a729da24e9bfddf7" prot="public">
+          <name>OneMinusSrcColor</name>
+          <briefdescription>
+<para>(1, 1, 1, 1) - (src.r, src.g, src.b, src.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeafaedf511c99a5461048fd6a3b73da26c" prot="public">
+          <name>DstColor</name>
+          <briefdescription>
+<para>(dst.r, dst.g, dst.b, dst.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea09f1a054ebd4d3850fd248bd2fa7b325" prot="public">
+          <name>OneMinusDstColor</name>
+          <briefdescription>
+<para>(1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead5c7b7f0102df3f7305c43f73fc3a498" prot="public">
+          <name>SrcAlpha</name>
+          <briefdescription>
+<para>(src.a, src.a, src.a, src.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeac00a6016489cff63d50d489ce52254cc" prot="public">
+          <name>OneMinusSrcAlpha</name>
+          <briefdescription>
+<para>(1, 1, 1, 1) - (src.a, src.a, src.a, src.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeaf72dbe2436b38a39e5927ed644e6818b" prot="public">
+          <name>DstAlpha</name>
+          <briefdescription>
+<para>(dst.a, dst.a, dst.a, dst.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea4132e4b87a8d461be2c6ee8fc620cfb2" prot="public">
+          <name>OneMinusDstAlpha</name>
+          <briefdescription>
+<para>(1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of the blending factors. </para>        </briefdescription>
+        <detaileddescription>
+<para>The factors are mapped directly to their OpenGL equivalents, specified by <ulink url="http://docs.gl/es2/glBlendFunc">glBlendFunc()</ulink> or <ulink url="http://docs.gl/es2/glBlendFuncSeparate">glBlendFuncSeparate()</ulink>.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="60" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="60" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" prot="public" static="no">
+        <name>PrimitiveType</name>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a75dd5f1160a3f02b6fae89c54361a1b3" prot="public">
+          <name>Points</name>
+          <briefdescription>
+<para>List of individual points. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1ae7f9e73b8edd21f420a63b3ace5768a2" prot="public">
+          <name>LineStrip</name>
+          <briefdescription>
+<para>List of connected lines, a point uses the previous point to form a line. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a2ba065d2b3004087cc8f111bf56f134b" prot="public">
+          <name>LineLoop</name>
+          <briefdescription>
+<para>List of connected lines, a point uses the previous point to form a line, the last point is connected to the first. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1aa0b0293a2db49f5f93c15a62e095c819" prot="public">
+          <name>Lines</name>
+          <briefdescription>
+<para>List of individual lines. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a1da0b9ead8b051940a89214bae22831c" prot="public">
+          <name>TriangleStrip</name>
+          <briefdescription>
+<para>List of connected triangles, a point uses the two previous points to form a triangle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a18d58fde618e4a30e2dfdc122e693047" prot="public">
+          <name>TriangleFan</name>
+          <briefdescription>
+<para>List of connected triangles, a point uses the common center and the previous point to form a triangle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga147b34accfb774f4ea41ab0cb94f28e1a7ca66fdfaad3eb33fc65d7490178f856" prot="public">
+          <name>Triangles</name>
+          <briefdescription>
+<para>List of individual triangles. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Kind of primitives to render. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">gf::PrimitiveType</ref> represents a kind of primitive to render. The primitives are mapped to their OpenGL equivalents, specified by <ulink url="http://docs.gl/es2/glDrawArrays">glDrawArrays</ulink> or <ulink url="http://docs.gl/es2/glDrawElements">glDrawElements</ulink>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">gf::RenderTarget::draw</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PrimitiveType.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PrimitiveType.h" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga1f6e0cfb0a30fef018c7dfa724ae6e20" prot="public" static="no">
+        <name>UIWindow</name>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" prot="public">
+          <name>Border</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+<para>The window has a border. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a7088d0affb208681b3cdbec3f72c59e3" prot="public">
+          <name>Movable</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+<para>The window can be moved by the user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a28cb2468ce3a85b4d10668ec48f5e4d6" prot="public">
+          <name>Scalable</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+<para>The window is scalable by the user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070e2ab109093b213de9ede8dd0a5973" prot="public">
+          <name>Closable</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+<para>The window can be closed with an icon in the header. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a29de8fcd22d85fb565a80b66657f957f" prot="public">
+          <name>Minimizable</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+<para>The window can be minimized with an icon in the header. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20aae89bf06303fdc372f34ec166a263749" prot="public">
+          <name>NoScrollbar</name>
+          <initializer>= 0x0020</initializer>
+          <briefdescription>
+<para>The window has no scrollbar. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <initializer>= 0x0040</initializer>
+          <briefdescription>
+<para>The window has a title in the header. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a812c082104465776d40a9fc355b89248" prot="public">
+          <name>ScrollAutoHide</name>
+          <initializer>= 0x0080</initializer>
+          <briefdescription>
+<para>The window&apos;s scrollbar can hide automatically. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20aa9ded1e5ce5d75814730bb4caaf49419" prot="public">
+          <name>Background</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+<para>The window is in the background. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ac90e35be297aaa5e8d4e0b4358117516" prot="public">
+          <name>ScaleLeft</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+<para>The window&apos;s scaler is on the left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ac16d72b5333aafd481dce6c0fb0b8211" prot="public">
+          <name>NoInput</name>
+          <initializer>= 0x0400</initializer>
+          <briefdescription>
+<para>The window can not scale, move or get focus. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Properties for windows and window-like elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" kindref="member">gf::UIWindowFlags</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="52" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" prot="public" static="no">
+        <name>UICollapse</name>
+        <enumvalue id="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a074afcc50ae51f248cbae4950845549e" prot="public">
+          <name>Minimized</name>
+          <initializer>= false</initializer>
+          <briefdescription>
+<para>The tree is minimized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a49d903a5c02560cf79bf6b516cc89457" prot="public">
+          <name>Maximized</name>
+          <initializer>= true</initializer>
+          <briefdescription>
+<para>The tree is maximized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Collapse property of a tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga6a42c4039729410b3839e01afe754719" prot="public" static="no">
+        <name>UILayout</name>
+        <enumvalue id="group__graphics_1gga6a42c4039729410b3839e01afe754719a971fd8cc345d8bd9f92e9f7d88fdf20c" prot="public">
+          <name>Dynamic</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The row has a dynamic layout. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga6a42c4039729410b3839e01afe754719a84a8921b25f505d0d2077aeb5db4bc16" prot="public">
+          <name>Static</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The row has a static layout. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Layout property for rows. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="87" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga08e52c09767f611e8578fb66a0c4644e" prot="public" static="no">
+        <name>UITree</name>
+        <enumvalue id="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea6c3a6944a808a7c0bbb6788dbec54a9f" prot="public">
+          <name>Node</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The tree is a node, generally an internal node of the tree. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea5c6ba25104401c9ee0650230fc6ba413" prot="public">
+          <name>Tab</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The tree is a tabulation, generally the root of the tree. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga31776587350367deca1b5d8cfa15c6d7" prot="public" static="no">
+        <name>UIAlignment</name>
+        <enumvalue id="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <initializer>= 0x10 | 0x01</initializer>
+          <briefdescription>
+<para>Left alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <initializer>= 0x10 | 0x02</initializer>
+          <briefdescription>
+<para>Centered alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga31776587350367deca1b5d8cfa15c6d7a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <initializer>= 0x10 | 0x04</initializer>
+          <briefdescription>
+<para>Right alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The alignment of the text. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__graphics_1ga5229ccbffec1016d760ddfe296fd2edf" kindref="member">gf::Alignment</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="107" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1gafa2fae07fe31387c721a9c3bf1aef7cb" prot="public" static="no">
+        <name>UIButtonBehavior</name>
+        <enumvalue id="group__graphics_1ggafa2fae07fe31387c721a9c3bf1aef7cba7a1920d61156abc05a60135aefe8bc67" prot="public">
+          <name>Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The button is active once. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggafa2fae07fe31387c721a9c3bf1aef7cbad3b3350cb648f345b0a21a048df0cf45" prot="public">
+          <name>Repeater</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The button is active as long as it is pressed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Behavior for buttons. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="123" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga118728035ca7e2268496ed0acd9a2aeb" prot="public" static="no">
+        <name>UIProgress</name>
+        <enumvalue id="group__graphics_1gga118728035ca7e2268496ed0acd9a2aeba4457d440870ad6d42bab9082d9bf9b61" prot="public">
+          <name>Fixed</name>
+          <initializer>= false</initializer>
+          <briefdescription>
+<para>The progress bar is fixed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga118728035ca7e2268496ed0acd9a2aeba1aab5637508446595a70c7e15ef50bc6" prot="public">
+          <name>Modifyable</name>
+          <initializer>= true</initializer>
+          <briefdescription>
+<para>The progress bar can be modified. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of the progress bar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="132" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1gae198f69e6728461e7bcd56493afd2f42" prot="public" static="no">
+        <name>UISymbol</name>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>No symbol. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+<para>X symbol. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a3744017c618a81cd7a01ff4872f3cf76" prot="public">
+          <name>Underscore</name>
+          <briefdescription>
+<para>Underscore. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42adaf6d7ce2e3f8b3c054ce92545f9cff5" prot="public">
+          <name>CircleSolid</name>
+          <briefdescription>
+<para>Solid circle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a23f3ece3fa5dc1b7f26f8c80c50cc307" prot="public">
+          <name>CircleOutline</name>
+          <briefdescription>
+<para>Outline circle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a60f917904b1649ce93b14893c5cf5cf3" prot="public">
+          <name>RectSolid</name>
+          <briefdescription>
+<para>Solid rectangle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a9f1b510e3fc9b37c01a1bf92b9a0e8fc" prot="public">
+          <name>RectOutline</name>
+          <briefdescription>
+<para>Outline rectangle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42acc8b4d708cd6657a142e0ed0861e22e5" prot="public">
+          <name>TriangleUp</name>
+          <briefdescription>
+<para>Triangle up. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a84d5dab02246a5db0018fac6251bfeb8" prot="public">
+          <name>TriangleDown</name>
+          <briefdescription>
+<para>Triangle down. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42ae5df3626957bbdaa6de4e3e7190b36c1" prot="public">
+          <name>TriangleLeft</name>
+          <briefdescription>
+<para>Triangle left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a9bb547f4cfe205fae637ac29a274f591" prot="public">
+          <name>TriangleRight</name>
+          <briefdescription>
+<para>Triangle right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a32ba78fe43257d3e7f88e3935a8ea0d4" prot="public">
+          <name>Plus</name>
+          <briefdescription>
+<para>Plus. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggae198f69e6728461e7bcd56493afd2f42a453fb623e752c5993f65bc410fd74fe5" prot="public">
+          <name>Minus</name>
+          <briefdescription>
+<para>Minus. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A representative symbol. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="141" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="141" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1gaf9412ddd0eb331c99ba2292e7979b666" prot="public" static="no">
+        <name>UIEdit</name>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a7a1920d61156abc05a60135aefe8bc67" prot="public">
+          <name>Default</name>
+          <initializer>= 0x0000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a131fb182a881796e7606ed6da27f1197" prot="public">
+          <name>ReadOnly</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a240e404abd9c6c912ed443cb5ec86f4d" prot="public">
+          <name>AutoSelect</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666afa5989393191716e67fc79f61b87b7a4" prot="public">
+          <name>SigEnter</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a760e4875f01181b6b58fc10a3c7883c0" prot="public">
+          <name>AllowTab</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a9ee376c659f3a08c48dbd70113d96e0d" prot="public">
+          <name>NoCursor</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a8318ce1c96df6ce21eb2ed428c6d0f85" prot="public">
+          <name>Selectable</name>
+          <initializer>= 0x0020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a23e5a7b7976e412ece233ceaf8257bc2" prot="public">
+          <name>Clipboard</name>
+          <initializer>= 0x0040</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666aa6bf46e5f9795b0730274d75b2f570b8" prot="public">
+          <name>CtrlEnterNewline</name>
+          <initializer>= 0x0080</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a0f025399f9907332f3c7d322048256e5" prot="public">
+          <name>NoHorizontalScroll</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a36fdcf163bbfcc158a513973b88882fd" prot="public">
+          <name>AlwaysInsertMode</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666a9ef28508538c9b6936b69e7ea8e1a7b7" prot="public">
+          <name>Multiline</name>
+          <initializer>= 0x0400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1ggaf9412ddd0eb331c99ba2292e7979b666abc90512b7a29c0a3382017609ddb5c67" prot="public">
+          <name>GotoEndOnActivate</name>
+          <initializer>= 0x0800</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Properties for edit widgets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="161" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga38f4a5ad680eb7ada3c9a5c261976eef" prot="public" static="no">
+        <name>UIEditEvent</name>
+        <enumvalue id="group__graphics_1gga38f4a5ad680eb7ada3c9a5c261976eefa4d3d769b812b6faa6b76e1a8abaece2d" prot="public">
+          <name>Active</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+<para>Edit widget is currently being modified. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga38f4a5ad680eb7ada3c9a5c261976eefa3cab03c00dbd11bc3569afa0748013f0" prot="public">
+          <name>Inactive</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+<para>Edit widget is not active and is not being modified. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga38f4a5ad680eb7ada3c9a5c261976eefacb456215c3333db0551bd0788bc258c7" prot="public">
+          <name>Activated</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+<para>Edit widget went from state inactive to state active. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga38f4a5ad680eb7ada3c9a5c261976eefa43c7582c40594c3fe32a6634ef9dcb07" prot="public">
+          <name>Deactivated</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+<para>Edit widget went from state active to state inactive. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga38f4a5ad680eb7ada3c9a5c261976eefaf8f720f6969d0bee490017f213c1c076" prot="public">
+          <name>Commited</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+<para>Edit widget has received an enter and lost focus. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Properties for edit events. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="200" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="200" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga8530c5fb4e1d7ea911ccc1281af1afa8" prot="public" static="no">
+        <name>UIEditFilter</name>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a7a1920d61156abc05a60135aefe8bc67" prot="public">
+          <name>Default</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a76b8d0dcd02ccaf203c167ced6d7ef31" prot="public">
+          <name>Ascii</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a22ae0e2b89e5e3d477f988cc36d3272b" prot="public">
+          <name>Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a937504f318f04eaf0f1d701df4c4d7f3" prot="public">
+          <name>Decimal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a92640bd72988395b326c888614f8937a" prot="public">
+          <name>Hex</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a594be08882c8e9d5efb9eeb62f303744" prot="public">
+          <name>Oct</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga8530c5fb4e1d7ea911ccc1281af1afa8a6ce976e8f061b2b5cfe4d0c50c3405dd" prot="public">
+          <name>Binary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Filters for edit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="220" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="220" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga513bd020a398cf8584c5c548bcc73988" prot="public" static="no">
+        <name>UIPopup</name>
+        <enumvalue id="group__graphics_1gga513bd020a398cf8584c5c548bcc73988a84a8921b25f505d0d2077aeb5db4bc16" prot="public">
+          <name>Static</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The popup is static. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga513bd020a398cf8584c5c548bcc73988a971fd8cc345d8bd9f92e9f7d88fdf20c" prot="public">
+          <name>Dynamic</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The popup is dynamic. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of popup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="245" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__graphics_1ga2fb32ce205a3b79af32b7c176d49c961" prot="public" static="no">
+        <name>UIPredefinedStyle</name>
+        <enumvalue id="group__graphics_1gga2fb32ce205a3b79af32b7c176d49c961a7a1920d61156abc05a60135aefe8bc67" prot="public">
+          <name>Default</name>
+          <briefdescription>
+<para>The default style. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga2fb32ce205a3b79af32b7c176d49c961a25a81701fbfa4a1efdf660a950c1d006" prot="public">
+          <name>White</name>
+          <briefdescription>
+<para>A light gray style. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga2fb32ce205a3b79af32b7c176d49c961aee38e4d5dd68c4e440825018d549cb47" prot="public">
+          <name>Red</name>
+          <briefdescription>
+<para>A red and gray style. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga2fb32ce205a3b79af32b7c176d49c961a9594eec95be70e7b1710f730fdda33d9" prot="public">
+          <name>Blue</name>
+          <briefdescription>
+<para>A blue and light gray style. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__graphics_1gga2fb32ce205a3b79af32b7c176d49c961aa18366b217ebf811ad1886e4f4f865b2" prot="public">
+          <name>Dark</name>
+          <briefdescription>
+<para>A dark gray and dark blue style. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A predefined style. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="254" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="254" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__graphics_1ga237b3cb55ffb1ee83a9b621704887fc3" prot="public" static="no">
+        <type>Flags&lt; UIWindow &gt;</type>
+        <definition>using gf::UIWindowFlags = typedef Flags&lt;UIWindow&gt;</definition>
+        <argsstring></argsstring>
+        <name>UIWindowFlags</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> composed of window properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__graphics_1ga1f6e0cfb0a30fef018c7dfa724ae6e20" kindref="member">gf::UIWindow</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__graphics_1gafb0b0f22d014392d732a2f727bab9476" prot="public" static="no">
+        <type>Vector2u</type>
+        <definition>using gf::UIScroll = typedef Vector2u</definition>
+        <argsstring></argsstring>
+        <name>UIScroll</name>
+        <briefdescription>
+<para>State for scrollbar in groups. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="117" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__graphics_1ga5164ab4d2380f9f086ee1e5468888c67" prot="public" static="no">
+        <type>Flags&lt; UIEdit &gt;</type>
+        <definition>using gf::UIEditFlags = typedef Flags&lt;UIEdit&gt;</definition>
+        <argsstring></argsstring>
+        <name>UIEditFlags</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> composed of edit properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__graphics_1gaf9412ddd0eb331c99ba2292e7979b666" kindref="member">gf::UIEdit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="183" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__graphics_1ga3a98cef8d7a7ecab5af92b2a0be47b42" prot="public" static="no">
+        <type>Flags&lt; UIEditEvent &gt;</type>
+        <definition>using gf::UIEditEventFlags = typedef Flags&lt;UIEditEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>UIEditEventFlags</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> composed of edit events properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__graphics_1ga38f4a5ad680eb7ada3c9a5c261976eef" kindref="member">gf::UIEditEvent</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" line="214" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/UI.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__graphics_1ga1fa131411a6a7f3bf3827e46fecc316f" prot="public" static="no" mutable="no">
+        <type>constexpr BlendMode</type>
+        <definition>constexpr BlendMode gf::BlendAlpha</definition>
+        <argsstring></argsstring>
+        <name>BlendAlpha</name>
+        <briefdescription>
+<para>Alpha blend mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Blend source and dest according to dest alpha. Also known as <ulink url="https://en.wikipedia.org/wiki/Alpha_compositing#Alpha_blending">alpha blending</ulink>.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="210" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__graphics_1ga5c5641126a6f83a8724a1bd63cc669c5" prot="public" static="no" mutable="no">
+        <type>constexpr BlendMode</type>
+        <definition>constexpr BlendMode gf::BlendAdd</definition>
+        <argsstring></argsstring>
+        <name>BlendAdd</name>
+        <briefdescription>
+<para>Additive blend mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Add source to dest.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="227" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__graphics_1ga5c274a128bf38122d38bf3c05ac89c7f" prot="public" static="no" mutable="no">
+        <type>constexpr BlendMode</type>
+        <definition>constexpr BlendMode gf::BlendMultiply</definition>
+        <argsstring></argsstring>
+        <name>BlendMultiply</name>
+        <briefdescription>
+<para>Multiplicative blend mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Multiply source and dest.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="244" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__graphics_1ga278e0a0da765e621f5f9077372add90b" prot="public" static="no" mutable="no">
+        <type>constexpr BlendMode</type>
+        <definition>constexpr BlendMode gf::BlendNone</definition>
+        <argsstring></argsstring>
+        <name>BlendNone</name>
+        <briefdescription>
+<para>No blend mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Overwrite dest with source.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" line="258" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__graphics_1gafcaee43a461682ade9b7fa4c6db75e51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const RenderStates &amp;lhs, const RenderStates &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const RenderStates &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const RenderStates &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Check render states equality. </para>        </briefdescription>
+        <detaileddescription>
+<para>Two render states are equals if their blend mode, their transform matrix, their texture and their shader are the same. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderStates.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderStates.h" bodystart="99" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All the classes related to graphics. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>GPU Resources: <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref>, <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>, <ref refid="structgf_1_1_blend_mode" kindref="compound">gf::BlendMode</ref>, <ref refid="classgf_1_1_vertex_buffer" kindref="compound">gf::VertexBuffer</ref></para></listitem><listitem><para>Resources: <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>, <ref refid="classgf_1_1_animation" kindref="compound">gf::Animation</ref></para></listitem><listitem><para>Drawables: <ref refid="classgf_1_1_drawable" kindref="compound">gf::Drawable</ref>, <ref refid="classgf_1_1_vertex_array" kindref="compound">gf::VertexArray</ref>, <ref refid="classgf_1_1_post_processing" kindref="compound">gf::PostProcessing</ref>, <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref>, <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref>, <ref refid="classgf_1_1_curve" kindref="compound">gf::Curve</ref>, <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref>, <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>, <ref refid="classgf_1_1_nine_patch" kindref="compound">gf::NinePatch</ref>, <ref refid="classgf_1_1_buffered_geometry" kindref="compound">gf::BufferedGeometry</ref>, <ref refid="classgf_1_1_tile_layer" kindref="compound">gf::TileLayer</ref>, <ref refid="classgf_1_1_logo" kindref="compound">gf::Logo</ref></para></listitem><listitem><para>Targets: <ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>, <ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref>, <ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref>, <ref refid="classgf_1_1_render_pipeline" kindref="compound">gf::RenderPipeline</ref>, <ref refid="classgf_1_1_view" kindref="compound">gf::View</ref></para></listitem><listitem><para>Utility: <ref refid="classgf_1_1_sprite_batch" kindref="compound">gf::SpriteBatch</ref>, <ref refid="structgf_1_1_color" kindref="compound">gf::Color</ref>, <ref refid="structgf_1_1_color_ramp" kindref="compound">gf::ColorRamp</ref>, <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref>, <ref refid="classgf_1_1_graphics_info" kindref="compound">gf::GraphicsInfo</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

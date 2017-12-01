@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_activities_8h" kind="file" language="C++">
+    <compoundname>Activities.h</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_activity_8h" local="yes">Activity.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_tween_8h" local="yes">Tween.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>Activity.h</label>
+        <link refid="_activity_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>functional</label>
+      </node>
+      <node id="28">
+        <label>limits</label>
+      </node>
+      <node id="21">
+        <label>cstdint</label>
+      </node>
+      <node id="19">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="26">
+        <label>cmath</label>
+      </node>
+      <node id="29">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ratio</label>
+      </node>
+      <node id="25">
+        <label>Easings.h</label>
+        <link refid="_easings_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Activities.h</label>
+        <link refid="_activities_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+      <node id="27">
+        <label>Math.h</label>
+        <link refid="_math_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>cstddef</label>
+      </node>
+      <node id="22">
+        <label>chrono</label>
+      </node>
+      <node id="24">
+        <label>Tween.h</label>
+        <link refid="_tween_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>type_traits</label>
+      </node>
+      <node id="31">
+        <label>algorithm</label>
+      </node>
+      <node id="20">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="34">
+        <label>Activities.h</label>
+        <link refid="_activities_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgf_1_1_value_activity" prot="public">gf::ValueActivity</innerclass>
+    <innerclass refid="classgf_1_1_rotate_to_activity" prot="public">gf::RotateToActivity</innerclass>
+    <innerclass refid="classgf_1_1_move_to_activity" prot="public">gf::MoveToActivity</innerclass>
+    <innerclass refid="classgf_1_1_color_activity" prot="public">gf::ColorActivity</innerclass>
+    <innerclass refid="classgf_1_1_callback_activity" prot="public">gf::CallbackActivity</innerclass>
+    <innerclass refid="classgf_1_1_delay_activity" prot="public">gf::DelayActivity</innerclass>
+    <innerclass refid="classgf_1_1_sequence_activity" prot="public">gf::SequenceActivity</innerclass>
+    <innerclass refid="classgf_1_1_repeat_activity" prot="public">gf::RepeatActivity</innerclass>
+    <innerclass refid="classgf_1_1_parallel_activity" prot="public">gf::ParallelActivity</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_ACTIVITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_ACTIVITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Activity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Tween.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classgf_1_1_value_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_value_activity" kindref="compound">ValueActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_value_activity" kindref="compound">ValueActivity</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>origin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>target,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>value,<sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration,<sp/><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref><sp/>easing<sp/>=<sp/><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classgf_1_1_value_activity_1a1c3cf2d3782fb9820cb2c2c33de52a51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_value_activity_1a1c3cf2d3782fb9820cb2c2c33de52a51" kindref="member">setOrigin</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>origin)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setOrigin(origin);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classgf_1_1_value_activity_1ab1b4b8f1f7eaf3511b846f5dcb10ee5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_value_activity_1ab1b4b8f1f7eaf3511b846f5dcb10ee5b" kindref="member">getOrigin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getOrigin();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classgf_1_1_value_activity_1a98139139fd3a2cfe70863be39ccfad75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_value_activity_1a98139139fd3a2cfe70863be39ccfad75" kindref="member">setTarget</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setTarget(target);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classgf_1_1_value_activity_1a331bc2e14aee56b786f0c25b50649cba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_value_activity_1a331bc2e14aee56b786f0c25b50649cba" kindref="member">getTarget</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getTarget();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classgf_1_1_value_activity_1a261c9dc4dd65242b5ce8901ef5b57fc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_value_activity_1a261c9dc4dd65242b5ce8901ef5b57fc7" kindref="member">setDuration</ref>(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setDuration(duration);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classgf_1_1_value_activity_1a478f280c9af65bb7be3dbbf815a13633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/><ref refid="classgf_1_1_value_activity_1a478f280c9af65bb7be3dbbf815a13633" kindref="member">getDuration</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getDuration();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_tween" kindref="compound">Tween&lt;float&gt;</ref><sp/>m_tween;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classgf_1_1_rotate_to_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_rotate_to_activity" kindref="compound">RotateToActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_rotate_to_activity" kindref="compound">RotateToActivity</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>origin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>target,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>,<sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration,<sp/><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref><sp/>easing<sp/>=<sp/><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classgf_1_1_rotate_to_activity_1a08271660c753de5e8dc910125304ff73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_rotate_to_activity_1a08271660c753de5e8dc910125304ff73" kindref="member">setOrigin</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>origin)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setOrigin(origin);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classgf_1_1_rotate_to_activity_1a7a5b8688942555f3a1b4507bbbc98984" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_rotate_to_activity_1a7a5b8688942555f3a1b4507bbbc98984" kindref="member">getOrigin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getOrigin();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classgf_1_1_rotate_to_activity_1ac1068f35ca0c3ff5141267b666b1e708" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_rotate_to_activity_1ac1068f35ca0c3ff5141267b666b1e708" kindref="member">setTarget</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setTarget(target);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="classgf_1_1_rotate_to_activity_1a017a25f178f34a605e1b6f2684675c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_rotate_to_activity_1a017a25f178f34a605e1b6f2684675c7d" kindref="member">getTarget</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getTarget();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classgf_1_1_rotate_to_activity_1aea591bf937dee296984dfc8f3098753c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_rotate_to_activity_1aea591bf937dee296984dfc8f3098753c" kindref="member">setDuration</ref>(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setDuration(duration);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classgf_1_1_rotate_to_activity_1ae8e07ccfbc5262c3418a9910a46438fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/><ref refid="classgf_1_1_rotate_to_activity_1ae8e07ccfbc5262c3418a9910a46438fb" kindref="member">getDuration</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getDuration();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_tween" kindref="compound">Tween&lt;float&gt;</ref><sp/>m_tween;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classgf_1_1_move_to_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_move_to_activity" kindref="compound">MoveToActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_move_to_activity" kindref="compound">MoveToActivity</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>origin,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>target,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref>&amp;<sp/>position,<sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration,<sp/><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref><sp/>easing<sp/>=<sp/><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classgf_1_1_move_to_activity_1ade341be12347e6262fc8bf7e6a6720b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_move_to_activity_1ade341be12347e6262fc8bf7e6a6720b9" kindref="member">setOrigin</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>origin)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setOrigin(origin);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="classgf_1_1_move_to_activity_1ac5f0633e985fe46bae87d729792cf5be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="classgf_1_1_move_to_activity_1ac5f0633e985fe46bae87d729792cf5be" kindref="member">getOrigin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getOrigin();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="classgf_1_1_move_to_activity_1a9c7d45004c7f8bd4d38eb936be458348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_move_to_activity_1a9c7d45004c7f8bd4d38eb936be458348" kindref="member">setTarget</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setTarget(target);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="classgf_1_1_move_to_activity_1a07ea1358626d3db6242d47dbeabdb09e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="classgf_1_1_move_to_activity_1a07ea1358626d3db6242d47dbeabdb09e" kindref="member">getTarget</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getTarget();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="classgf_1_1_move_to_activity_1a807e0a1d88ef5adcbe847cda8cdbf7af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_move_to_activity_1a807e0a1d88ef5adcbe847cda8cdbf7af" kindref="member">setDuration</ref>(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setDuration(duration);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="classgf_1_1_move_to_activity_1abc32e073d1323ca461b7df9af719bfda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/><ref refid="classgf_1_1_move_to_activity_1abc32e073d1323ca461b7df9af719bfda" kindref="member">getDuration</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getDuration();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_tween" kindref="compound">Tween&lt;Vector2f&gt;</ref><sp/>m_tween;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="classgf_1_1_color_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_color_activity" kindref="compound">ColorActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_color_activity" kindref="compound">ColorActivity</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/>origin,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/>target,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref>&amp;<sp/>color,<sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration,<sp/><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref><sp/>easing<sp/>=<sp/><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="classgf_1_1_color_activity_1ae18c2bb5e2e96e126de58842953e7223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_color_activity_1ae18c2bb5e2e96e126de58842953e7223" kindref="member">setOrigin</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/>origin)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setOrigin(origin);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="classgf_1_1_color_activity_1a0a813fd70b1555c223d715f8a93b7a6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/><ref refid="classgf_1_1_color_activity_1a0a813fd70b1555c223d715f8a93b7a6a" kindref="member">getOrigin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getOrigin();</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="classgf_1_1_color_activity_1a76b8b0719dec9c1492045597a4755f48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_color_activity_1a76b8b0719dec9c1492045597a4755f48" kindref="member">setTarget</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setTarget(target);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="classgf_1_1_color_activity_1afa3ada0916d66756ec934a47e4570d7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Color4f</ref><sp/><ref refid="classgf_1_1_color_activity_1afa3ada0916d66756ec934a47e4570d7a" kindref="member">getTarget</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getTarget();</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="classgf_1_1_color_activity_1a2341cac2533f5e291fb2012b9b3dd952" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_color_activity_1a2341cac2533f5e291fb2012b9b3dd952" kindref="member">setDuration</ref>(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration)<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_tween.setDuration(duration);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="classgf_1_1_color_activity_1ab8bae28720035edd29ad187094af3bdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/><ref refid="classgf_1_1_color_activity_1ab8bae28720035edd29ad187094af3bdb" kindref="member">getDuration</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_tween.getDuration();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_tween" kindref="compound">Tween&lt;Color4f&gt;</ref><sp/>m_tween;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="classgf_1_1_callback_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_callback_activity" kindref="compound">CallbackActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_callback_activity" kindref="compound">CallbackActivity</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>callback);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>std::function&lt;void()&gt;<sp/>m_callback;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_called;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="classgf_1_1_delay_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_delay_activity" kindref="compound">DelayActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_delay_activity" kindref="compound">DelayActivity</ref>(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>duration);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>m_elapsed;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>m_duration;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411" refid="classgf_1_1_sequence_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_sequence_activity" kindref="compound">SequenceActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_sequence_activity" kindref="compound">SequenceActivity</ref>();</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addActivity(<ref refid="classgf_1_1_activity" kindref="compound">Activity</ref>&amp;<sp/>activity);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/>m_current;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Activity*&gt;<sp/>m_activities;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438" refid="classgf_1_1_repeat_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_repeat_activity" kindref="compound">RepeatActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_repeat_activity" kindref="compound">RepeatActivity</ref>(<ref refid="classgf_1_1_activity" kindref="compound">Activity</ref>&amp;<sp/>activity,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>repeat<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref>&amp;<sp/>m_activity;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>m_count;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>m_repeat;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="classgf_1_1_parallel_activity" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="classgf_1_1_parallel_activity" kindref="compound">ParallelActivity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref><sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="466" refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" kindref="member">Finish</ref><sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Any,<sp/><sp/></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__core_1ga21fb73589fe7966a778a8b77ff9f16b8" kindref="member">All</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_parallel_activity" kindref="compound">ParallelActivity</ref>(<ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" kindref="member">Finish</ref><sp/>finish<sp/>=<sp/>Finish::Any);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addActivity(<ref refid="classgf_1_1_activity" kindref="compound">Activity</ref>&amp;<sp/>activity);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>run(<ref refid="classgf_1_1_time" kindref="compound">Time</ref><sp/>time)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restart()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_parallel_activity_1ad9a95c9374e9c4f0787ad08db5f85be4" kindref="member">Finish</ref><sp/>m_finish;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref><sp/>m_status;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Activity*&gt;<sp/>m_activities;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_ACTIVITIES_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h"/>
+  </compounddef>
+</doxygen>

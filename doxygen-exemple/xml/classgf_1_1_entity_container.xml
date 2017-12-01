@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_entity_container" kind="class" language="C++" prot="public">
+    <compoundname>gf::EntityContainer</compoundname>
+    <includes refid="_entity_container_8h" local="no">gf/EntityContainer.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Entities management</header>
+      <memberdef kind="function" id="classgf_1_1_entity_container_1a7a4f7ba3172011d6b982d4e016f706c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::EntityContainer::addEntity</definition>
+        <argsstring>(Entity &amp;entity)</argsstring>
+        <name>addEntity</name>
+        <param>
+          <type><ref refid="classgf_1_1_entity" kindref="compound">Entity</ref> &amp;</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Add an entity to the collection. </para>        </briefdescription>
+        <detaileddescription>
+<para>The entity must not be deleted while it is handled by the entity manager.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_container_1a2bcc874668741d3f114d82844a79339a" kindref="member">removeEntity()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_container_1a2bcc874668741d3f114d82844a79339a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_entity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* gf::EntityContainer::removeEntity</definition>
+        <argsstring>(Entity *entity)</argsstring>
+        <name>removeEntity</name>
+        <param>
+          <type><ref refid="classgf_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Remove an entity from the collection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The entity to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The removed entity or <computeroutput>nullptr</computeroutput> if the entity was not present </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_container_1a7a4f7ba3172011d6b982d4e016f706c1" kindref="member">addEntity()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_container_1ad8f8cca180048568f1c0bbc0749c3d00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref> *</type>
+        <definition>E* gf::EntityContainer::removeTypedEntity</definition>
+        <argsstring>(E *entity)</argsstring>
+        <name>removeTypedEntity</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref> *</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Remove a typed entity from the collection. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut to avoid typecasting.</para><para>Example:</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Foo<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Entity<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Foo<sp/>foo;</highlight></codeline>
+<codeline><highlight class="normal">manager.addEntity(foo);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Foo<sp/>*removed<sp/>=<sp/>manager.removeTypedEntity&lt;Foo&gt;(&amp;foo);</highlight></codeline>
+<codeline><highlight class="normal">removed-&gt;doSomething();</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_entity_container_1a2bcc874668741d3f114d82844a79339a" kindref="member">removeEntity()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="135" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_entity_container_1ad55e3592896b6e9fd01c9e78d722aa9e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_entity" kindref="compound">Entity</ref> * &gt;</type>
+        <definition>std::vector&lt;Entity *&gt; gf::EntityContainer::m_entities</definition>
+        <argsstring></argsstring>
+        <name>m_entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="143" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::EntityContainer::update</definition>
+        <argsstring>(Time time)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the entities. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function first eliminates the dead entities, then sort them by priority. Finally, each entity is updated.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_1ac0e67948dc2be7a9fbb6206dc6dcaac7" kindref="member">gf::Entity::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::EntityContainer::render</definition>
+        <argsstring>(RenderTarget &amp;target, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>render</name>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Render the entities on the target. </para>        </briefdescription>
+        <detaileddescription>
+<para>The entities are rendered by priority: lower priority first and higher priority last.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_entity_1a594f75d48d112e3020679b5d33f75d1e" kindref="member">gf::Entity::render()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A collection of entities. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref> represents a collection of entities that are updated and rendered automatically. The entity manager takes care of the liveness of the entities and remove the dead entities from the collection.</para><para>The entity manager is <emphasis>not</emphasis> responsible for the memory of the entities. The entities must be allocated by the user and not deleted while they are handled by the entity manager.</para><para>Generally, you only need one entity manager in your game. You create it at the beginning of the game and put all your entities in it. Then you can call <ref refid="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" kindref="member">gf::EntityContainer::update()</ref> and <ref refid="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" kindref="member">gf::EntityContainer::render()</ref> in your game loop.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/EntityContainer.h" bodystart="59" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_entity_container_1a7a4f7ba3172011d6b982d4e016f706c1" prot="public" virt="non-virtual"><scope>gf::EntityContainer</scope><name>addEntity</name></member>
+      <member refid="classgf_1_1_entity_container_1ad55e3592896b6e9fd01c9e78d722aa9e" prot="private" virt="non-virtual"><scope>gf::EntityContainer</scope><name>m_entities</name></member>
+      <member refid="classgf_1_1_entity_container_1a2bcc874668741d3f114d82844a79339a" prot="public" virt="non-virtual"><scope>gf::EntityContainer</scope><name>removeEntity</name></member>
+      <member refid="classgf_1_1_entity_container_1ad8f8cca180048568f1c0bbc0749c3d00" prot="public" virt="non-virtual"><scope>gf::EntityContainer</scope><name>removeTypedEntity</name></member>
+      <member refid="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" prot="public" virt="non-virtual"><scope>gf::EntityContainer</scope><name>render</name></member>
+      <member refid="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" prot="public" virt="non-virtual"><scope>gf::EntityContainer</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

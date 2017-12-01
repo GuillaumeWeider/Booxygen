@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_random" kind="class" language="C++" prot="public">
+    <compoundname>gf::Random</compoundname>
+    <includes refid="_random_8h" local="no">gf/Random.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_random_1adf1174452db3b84d90e4779daddb7259" prot="private" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 gf::Random::m_engine</definition>
+        <argsstring></argsstring>
+        <name>m_engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="131" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_random_1a27f5287d06f2d4f58f1796906f466204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Random::Random</definition>
+        <argsstring>()</argsstring>
+        <name>Random</name>
+        <briefdescription>
+<para>Default constructor with complex initialization. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes the Mersenne Twister thanks to a random device and a seed sequence. This ensures that the state of the engine is different for each instanciation. Choose this constructor if you need good statistical randomness. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1a19401dba57cc2780114389c4875b1413" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Random::Random</definition>
+        <argsstring>(std::uint_fast32_t seed)</argsstring>
+        <name>Random</name>
+        <param>
+          <type>std::uint_fast32_t</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with simple initialization. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes the Mersenne Twister with a single seed. This method is easy but not very good because it allows only <formula id="82">$ 2^{32} $</formula> possible states. Choose this constructor if you need reproducible randomness as a same seed will always provide the same sequence.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The seed for the engine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="65" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1af53df683709acde299fd329dc96225b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Random::computeUniformInteger</definition>
+        <argsstring>(T min, T max)</argsstring>
+        <name>computeUniformInteger</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Compute an integer with a uniform distribution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value (inclusive) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value (inclusive) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value between <computeroutput>min</computeroutput> and <computeroutput>max</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="79" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1a42d392ae9b78810209498300baf0158f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Random::computeUniformFloat</definition>
+        <argsstring>(T min, T max)</argsstring>
+        <name>computeUniformFloat</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Compute a float with a uniform distribution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value (inclusive) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value (exclusive) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value between <computeroutput>min</computeroutput> and <computeroutput>max</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="92" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1a7d03561d34d91c6aac6f7d9f96e6cf58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Random::computeNormalFloat</definition>
+        <argsstring>(T mean, T stddev)</argsstring>
+        <name>computeNormalFloat</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>stddev</declname>
+        </param>
+        <briefdescription>
+<para>Compute a float with a normal (Gaussian) distribution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mean of the distribution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stddev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standard deviation of the distribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value with a normal distribution </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="105" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1a360f6193816c428a02b3fe9c2a4ed40e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Random::computeBernoulli</definition>
+        <argsstring>(double p)</argsstring>
+        <name>computeBernoulli</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Compute a boolean with a Bernoulli distribution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The probability of true </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true with a probability of <formula id="83">$ p $</formula>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="116" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_random_1a016df7d6b394bde106913a540f46803d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::mt19937 &amp;</type>
+        <definition>std::mt19937&amp; gf::Random::getEngine</definition>
+        <argsstring>()</argsstring>
+        <name>getEngine</name>
+        <briefdescription>
+<para>Get the underlying engine. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the engine </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A random engine. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_random" kindref="compound">gf::Random</ref> is a wrapper around <ulink url="http://en.cppreference.com/w/cpp/numeric/random">C++11 standard random features</ulink>. It embeds a Mersenne Twister engine and provides several distributions above this engine. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Random.h" bodystart="43" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_random_1a360f6193816c428a02b3fe9c2a4ed40e" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>computeBernoulli</name></member>
+      <member refid="classgf_1_1_random_1a7d03561d34d91c6aac6f7d9f96e6cf58" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>computeNormalFloat</name></member>
+      <member refid="classgf_1_1_random_1a42d392ae9b78810209498300baf0158f" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>computeUniformFloat</name></member>
+      <member refid="classgf_1_1_random_1af53df683709acde299fd329dc96225b9" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>computeUniformInteger</name></member>
+      <member refid="classgf_1_1_random_1a016df7d6b394bde106913a540f46803d" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>getEngine</name></member>
+      <member refid="classgf_1_1_random_1adf1174452db3b84d90e4779daddb7259" prot="private" virt="non-virtual"><scope>gf::Random</scope><name>m_engine</name></member>
+      <member refid="classgf_1_1_random_1a27f5287d06f2d4f58f1796906f466204" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>Random</name></member>
+      <member refid="classgf_1_1_random_1a19401dba57cc2780114389c4875b1413" prot="public" virt="non-virtual"><scope>gf::Random</scope><name>Random</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

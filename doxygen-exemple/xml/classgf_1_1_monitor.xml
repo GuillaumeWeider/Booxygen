@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_monitor" kind="class" language="C++" prot="public">
+    <compoundname>gf::Monitor</compoundname>
+    <includes refid="_monitor_8h" local="no">gf/Monitor.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgf_1_1_monitor_1a553f958a25683445088050a69d3de8e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="121" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_monitor_1ade6b4b025b6fbef9f2f1a0a6316964f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_library" kindref="compound">Library</ref></type>
+        <definition>Library gf::Monitor::m_lib</definition>
+        <argsstring></argsstring>
+        <name>m_lib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_monitor_1a7b2cc38365c7bbff9e8f3053b9170561" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gf::Monitor::m_index</definition>
+        <argsstring></argsstring>
+        <name>m_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_monitor_1a5d5afc082bcd9db2d312424ed1b8bc77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref></type>
+        <definition>static Monitor gf::Monitor::getPrimaryMonitor</definition>
+        <argsstring>()</argsstring>
+        <name>getPrimaryMonitor</name>
+        <briefdescription>
+<para>Get the primary monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The primary monitor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a5a97e061f968b2c1a669dea459ef916b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &gt;</type>
+        <definition>static std::vector&lt;Monitor&gt; gf::Monitor::getAvailableMonitors</definition>
+        <argsstring>()</argsstring>
+        <name>getAvailableMonitors</name>
+        <briefdescription>
+<para>Get all the available monitors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_monitor_1ad7495e4031870c82a0d8cb6cd6c45cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Monitor::Monitor</definition>
+        <argsstring>(const Monitor &amp;)=delete</argsstring>
+        <name>Monitor</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1acb8a2370da43162932d43fa565844fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;</type>
+        <definition>Monitor&amp; gf::Monitor::operator=</definition>
+        <argsstring>(const Monitor &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a047d3b1be51f1a3032d6f55203d4f838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Monitor::Monitor</definition>
+        <argsstring>(Monitor &amp;&amp;other)=default</argsstring>
+        <name>Monitor</name>
+        <param>
+          <type><ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1ab82355e91d26189a5fe56bba17a3c073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;</type>
+        <definition>Monitor&amp; gf::Monitor::operator=</definition>
+        <argsstring>(Monitor &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_monitor" kindref="compound">Monitor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a32a6d1649241146e4effc47072931db4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gf::Monitor::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get the name of the monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string containing the name of the monitor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a12d511e9f95eca55833ece06a40c4de4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Monitor::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>Get the position of the monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The position of the monitor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a9eac534d871f577df405f211407ebce8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Monitor::getPhysicalSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getPhysicalSize</name>
+        <briefdescription>
+<para>Get the physical size of the monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The physical size of the monitor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1af7205fc885467c034b0d148f75ad73fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgf_1_1_video_mode" kindref="compound">VideoMode</ref> &gt;</type>
+        <definition>std::vector&lt;VideoMode&gt; gf::Monitor::getAvailableVideoModes</definition>
+        <argsstring>() const</argsstring>
+        <name>getAvailableVideoModes</name>
+        <briefdescription>
+<para>Get the available video modes for this monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The video modes for this monitor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_monitor_1a61912218b6ba8f2f003275d0e5ed2e2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_video_mode" kindref="compound">VideoMode</ref></type>
+        <definition>VideoMode gf::Monitor::getCurrentVideoMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentVideoMode</name>
+        <briefdescription>
+<para>Get the current video mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current video mode </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_monitor_1a1ff9da416d10cf9e12d4bc7114933426" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Monitor::Monitor</definition>
+        <argsstring>(int index)</argsstring>
+        <name>Monitor</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A monitor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Monitor.h" bodystart="51" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_monitor_1a5a97e061f968b2c1a669dea459ef916b" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getAvailableMonitors</name></member>
+      <member refid="classgf_1_1_monitor_1af7205fc885467c034b0d148f75ad73fa" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getAvailableVideoModes</name></member>
+      <member refid="classgf_1_1_monitor_1a61912218b6ba8f2f003275d0e5ed2e2b" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getCurrentVideoMode</name></member>
+      <member refid="classgf_1_1_monitor_1a32a6d1649241146e4effc47072931db4" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getName</name></member>
+      <member refid="classgf_1_1_monitor_1a9eac534d871f577df405f211407ebce8" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getPhysicalSize</name></member>
+      <member refid="classgf_1_1_monitor_1a12d511e9f95eca55833ece06a40c4de4" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_monitor_1a5d5afc082bcd9db2d312424ed1b8bc77" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>getPrimaryMonitor</name></member>
+      <member refid="classgf_1_1_monitor_1a7b2cc38365c7bbff9e8f3053b9170561" prot="private" virt="non-virtual"><scope>gf::Monitor</scope><name>m_index</name></member>
+      <member refid="classgf_1_1_monitor_1ade6b4b025b6fbef9f2f1a0a6316964f3" prot="private" virt="non-virtual"><scope>gf::Monitor</scope><name>m_lib</name></member>
+      <member refid="classgf_1_1_monitor_1ad7495e4031870c82a0d8cb6cd6c45cef" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>Monitor</name></member>
+      <member refid="classgf_1_1_monitor_1a047d3b1be51f1a3032d6f55203d4f838" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>Monitor</name></member>
+      <member refid="classgf_1_1_monitor_1a1ff9da416d10cf9e12d4bc7114933426" prot="private" virt="non-virtual"><scope>gf::Monitor</scope><name>Monitor</name></member>
+      <member refid="classgf_1_1_monitor_1acb8a2370da43162932d43fa565844fd7" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_monitor_1ab82355e91d26189a5fe56bba17a3c073" prot="public" virt="non-virtual"><scope>gf::Monitor</scope><name>operator=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

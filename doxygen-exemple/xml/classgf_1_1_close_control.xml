@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_close_control" kind="class" language="C++" prot="public">
+    <compoundname>gf::CloseControl</compoundname>
+    <basecompoundref refid="classgf_1_1_control" prot="public" virt="non-virtual">gf::Control</basecompoundref>
+    <includes refid="_controls_8h" local="no">gf/Controls.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_close_control_1abf754fce4c1f18e404ab1e83b121ae6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::CloseControl::CloseControl</definition>
+        <argsstring>()</argsstring>
+        <name>CloseControl</name>
+        <briefdescription>
+<para>Construct a close control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_close_control_1aaa6ddf2d436acd467ba4c0e477210d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::CloseControl::processEvent</definition>
+        <argsstring>(const Event &amp;event) override</argsstring>
+        <name>processEvent</name>
+        <reimplements refid="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc">processEvent</reimplements>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the control thanks to an event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to update the control.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" kindref="member">Action::processEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A close control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="105">
+        <label>gf::CloseControl</label>
+        <link refid="classgf_1_1_close_control"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="108">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="107">
+        <label>gf::CloseControl</label>
+        <link refid="classgf_1_1_close_control"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" line="143" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Controls.h" bodystart="143" bodyend="151"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_close_control_1abf754fce4c1f18e404ab1e83b121ae6e" prot="public" virt="non-virtual"><scope>gf::CloseControl</scope><name>CloseControl</name></member>
+      <member refid="classgf_1_1_control_1ad97882f2c328b5f235a87bb608cf8cb5" prot="public" virt="non-virtual"><scope>gf::CloseControl</scope><name>Control</name></member>
+      <member refid="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" prot="public" virt="non-virtual"><scope>gf::CloseControl</scope><name>isActive</name></member>
+      <member refid="classgf_1_1_close_control_1aaa6ddf2d436acd467ba4c0e477210d85" prot="public" virt="virtual"><scope>gf::CloseControl</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" prot="public" virt="non-virtual"><scope>gf::CloseControl</scope><name>reset</name></member>
+      <member refid="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" prot="public" virt="non-virtual"><scope>gf::CloseControl</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_control_1a85333ef810395ee3fd2ddba48cce76fc" prot="public" virt="virtual"><scope>gf::CloseControl</scope><name>~Control</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_noise3_d" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Noise3D</compoundname>
+    <derivedcompoundref refid="classgf_1_1_fractal_noise3_d" prot="public" virt="non-virtual">gf::FractalNoise3D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_gradient_noise3_d" prot="public" virt="non-virtual">gf::GradientNoise3D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_open_simplex_noise3_d" prot="public" virt="non-virtual">gf::OpenSimplexNoise3D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_perlin_noise3_d" prot="public" virt="non-virtual">gf::PerlinNoise3D</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_wavelet_noise3_d" prot="public" virt="non-virtual">gf::WaveletNoise3D</derivedcompoundref>
+    <includes refid="_noise_8h" local="no">gf/Noise.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Noise3D::~Noise3D</definition>
+        <argsstring>()</argsstring>
+        <name>~Noise3D</name>
+        <briefdescription>
+<para>Virtual destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double gf::Noise3D::getValue</definition>
+        <argsstring>(double x, double y, double z)=0</argsstring>
+        <name>getValue</name>
+        <reimplementedby refid="classgf_1_1_gradient_noise3_d_1a7f1b26765db03610aeebf77c7d2048db">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fractal_noise3_d_1a89e9776ba4d785ac42609af68220db74">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_perlin_noise3_d_1abac860f0e8c09854797999a2c3605b21">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_open_simplex_noise3_d_1a19fa005a2687947254e62faa49a38040">getValue</reimplementedby>
+        <reimplementedby refid="classgf_1_1_wavelet_noise3_d_1aa2b256aee7fb8d24402a8ca498abc44c">getValue</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double gf::Noise3D::operator()</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>3D A noise function </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="518">
+        <label>gf::PerlinNoise3D</label>
+        <link refid="classgf_1_1_perlin_noise3_d"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>gf::FractalNoise3D</label>
+        <link refid="classgf_1_1_fractal_noise3_d"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>gf::OpenSimplexNoise3D</label>
+        <link refid="classgf_1_1_open_simplex_noise3_d"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>gf::WaveletNoise3D</label>
+        <link refid="classgf_1_1_wavelet_noise3_d"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+      <node id="516">
+        <label>gf::GradientNoise3D</label>
+        <link refid="classgf_1_1_gradient_noise3_d"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noise.h" bodystart="71" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f" prot="public" virt="pure-virtual"><scope>gf::Noise3D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" virt="non-virtual"><scope>gf::Noise3D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" virt="virtual"><scope>gf::Noise3D</scope><name>~Noise3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

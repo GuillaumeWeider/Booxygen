@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_model" kind="class" language="C++" prot="public">
+    <compoundname>gf::Model</compoundname>
+    <derivedcompoundref refid="classgf_1_1_fixed_timestep_model" prot="public" virt="non-virtual">gf::FixedTimestepModel</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_physics_model" prot="public" virt="non-virtual">gf::PhysicsModel</derivedcompoundref>
+    <includes refid="_model_8h" local="no">gf/Model.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_model_1aed31deb703dcc9daa2862c20682abc13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Model::~Model</definition>
+        <argsstring>()</argsstring>
+        <name>~Model</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Model.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_model_1a8b5f07e8e362d5b6326690566a719324" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Model::update</definition>
+        <argsstring>(Time time)</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classgf_1_1_fixed_timestep_model_1a39128be2df8cd081d2ab98f8a54262a4">update</reimplementedby>
+        <reimplementedby refid="classgf_1_1_physics_model_1ab9afd38d5609a914b6d6be35fe8e92ad">update</reimplementedby>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the model&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Models are updated each frame. The time between two frames is given as a parameter to help in the update. This time is in seconds.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" kindref="member">gf::ModelContainer::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Model.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A game object that can be updated. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_model" kindref="compound">gf::Model</ref> represents a game object that is updated but not rendered. It is simpler than a <ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref> because it has no priority and no liveness property.</para><para>It can typically be used to encapsulate a physics engine.</para><para>Models can be grouped in a <ref refid="classgf_1_1_model_container" kindref="compound">gf::ModelContainer</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_model_container" kindref="compound">gf::ModelContainer</ref>, <ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="465">
+        <label>gf::FixedTimestepModel</label>
+        <link refid="classgf_1_1_fixed_timestep_model"/>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>gf::Model</label>
+        <link refid="classgf_1_1_model"/>
+      </node>
+      <node id="466">
+        <label>gf::PhysicsModel</label>
+        <link refid="classgf_1_1_physics_model"/>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Model.h" line="46" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Model.h" bodystart="46" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_model_1a8b5f07e8e362d5b6326690566a719324" prot="public" virt="virtual"><scope>gf::Model</scope><name>update</name></member>
+      <member refid="classgf_1_1_model_1aed31deb703dcc9daa2862c20682abc13" prot="public" virt="virtual"><scope>gf::Model</scope><name>~Model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

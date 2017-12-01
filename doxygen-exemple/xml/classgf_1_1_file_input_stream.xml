@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_file_input_stream" kind="class" language="C++" prot="public">
+    <compoundname>gf::FileInputStream</compoundname>
+    <basecompoundref refid="classgf_1_1_input_stream" prot="public" virt="non-virtual">gf::InputStream</basecompoundref>
+    <includes refid="_input_streams_8h" local="no">gf/InputStreams.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_file_input_stream_1a03c7b853e444b2e9a53305b5b39c8139" prot="private" static="no" mutable="no">
+        <type>std::FILE *</type>
+        <definition>std::FILE* gf::FileInputStream::m_file</definition>
+        <argsstring></argsstring>
+        <name>m_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_file_input_stream_1a2dbaacde5b0a5bffba69db32a12d083e" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::FileInputStream::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1ab8df5a1122e1827b3a70f549dc7428cd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::FileInputStream::FileInputStream</definition>
+        <argsstring>(const Path &amp;path)</argsstring>
+        <name>FileInputStream</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The constructor opens the file. If the file is not opened, the operations will return default values.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1abe1184849dc1aba4de62d47d44fbf3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::FileInputStream::~FileInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>~FileInputStream</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The destructor closes the file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1a4aaa80f835213155301bdc89a2a17cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::FileInputStream::read</definition>
+        <argsstring>(void *data, std::size_t size) override</argsstring>
+        <name>read</name>
+        <reimplements refid="classgf_1_1_input_stream_1ac44463f69ba794fe40a78fdc6cfc2559">read</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read data from the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>After reading, the stream&apos;s reading position must be advanced by the amount of bytes read.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer where to copy the read data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1a962d5893ee39cedaadcb2beb3690b98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>virtual long gf::FileInputStream::seek</definition>
+        <argsstring>(long position) override</argsstring>
+        <name>seek</name>
+        <reimplements refid="classgf_1_1_input_stream_1a919a3dd478126dceaab913b5ed596e6f">seek</reimplements>
+        <param>
+          <type>long</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Change the current reading position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to seek to, from the beginning</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The position actually sought to </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1a94ec3f0d1ee0da8e969a3a581735311c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>virtual long gf::FileInputStream::tell</definition>
+        <argsstring>() override</argsstring>
+        <name>tell</name>
+        <reimplements refid="classgf_1_1_input_stream_1add7bc9c5eed9d0937b01715a2ca0de5b">tell</reimplements>
+        <briefdescription>
+<para>Get the current reading position in the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_file_input_stream_1a851c9b5a2a20d7599b9f2a0226f1436e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::FileInputStream::getSize</definition>
+        <argsstring>() override</argsstring>
+        <name>getSize</name>
+        <reimplements refid="classgf_1_1_input_stream_1a5778d908d8432613675de0b8bda4708a">getSize</reimplements>
+        <briefdescription>
+<para>Return the size of the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total number of bytes available in the stream </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File based input stream. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="295">
+        <label>gf::FileInputStream</label>
+        <link refid="classgf_1_1_file_input_stream"/>
+        <childnode refid="296" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>gf::InputStream</label>
+        <link refid="classgf_1_1_input_stream"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="297">
+        <label>gf::FileInputStream</label>
+        <link refid="classgf_1_1_file_input_stream"/>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>gf::InputStream</label>
+        <link refid="classgf_1_1_input_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/InputStreams.h" bodystart="43" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_file_input_stream_1ab8df5a1122e1827b3a70f549dc7428cd" prot="public" virt="non-virtual"><scope>gf::FileInputStream</scope><name>FileInputStream</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a851c9b5a2a20d7599b9f2a0226f1436e" prot="public" virt="virtual"><scope>gf::FileInputStream</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_input_stream_1acd2fb7a2b818da4b5272af4d94798316" prot="public" virt="non-virtual"><scope>gf::FileInputStream</scope><name>InputStream</name></member>
+      <member refid="classgf_1_1_input_stream_1aab58620305c53a2806975e61bcba5101" prot="public" virt="non-virtual"><scope>gf::FileInputStream</scope><name>InputStream</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a03c7b853e444b2e9a53305b5b39c8139" prot="private" virt="non-virtual"><scope>gf::FileInputStream</scope><name>m_file</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a2dbaacde5b0a5bffba69db32a12d083e" prot="private" virt="non-virtual"><scope>gf::FileInputStream</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_input_stream_1afe446bb2a0fad563352fa25eb9c3eb21" prot="public" virt="non-virtual"><scope>gf::FileInputStream</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a4aaa80f835213155301bdc89a2a17cba" prot="public" virt="virtual"><scope>gf::FileInputStream</scope><name>read</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a962d5893ee39cedaadcb2beb3690b98d" prot="public" virt="virtual"><scope>gf::FileInputStream</scope><name>seek</name></member>
+      <member refid="classgf_1_1_file_input_stream_1a94ec3f0d1ee0da8e969a3a581735311c" prot="public" virt="virtual"><scope>gf::FileInputStream</scope><name>tell</name></member>
+      <member refid="classgf_1_1_file_input_stream_1abe1184849dc1aba4de62d47d44fbf3e3" prot="public" virt="non-virtual"><scope>gf::FileInputStream</scope><name>~FileInputStream</name></member>
+      <member refid="classgf_1_1_input_stream_1a36008267c17d67733ddab113378c263a" prot="public" virt="virtual"><scope>gf::FileInputStream</scope><name>~InputStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

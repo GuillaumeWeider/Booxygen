@@ -1,0 +1,861 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_matrix" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Matrix</compoundname>
+    <includes refid="_matrix_8h" local="no">gf/Matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>ROWS</declname>
+        <defname>ROWS</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>COLS</declname>
+        <defname>COLS</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structgf_1_1_matrix_1ac8ff968abb67be292136990a382b9662" prot="public" static="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>using gf::Matrix&lt; T, ROWS, COLS &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>The value type of the elements of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="68" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_1a3b1cc3ba50dc4021a0b5304b68fba297" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, ROWS, COLS &gt;::Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <initializer>= ROWS</initializer>
+        <briefdescription>
+<para>The number of rows in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_1a61c06d9b075d17d49208df69bfd86a39" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, ROWS, COLS &gt;::Cols</definition>
+        <argsstring></argsstring>
+        <name>Cols</name>
+        <initializer>= COLS</initializer>
+        <briefdescription>
+<para>The number of columns in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, ROWS, COLS &gt;::grid[ROWS][COLS]</definition>
+        <argsstring>[ROWS][COLS]</argsstring>
+        <name>grid</name>
+        <briefdescription>
+<para>Grid representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_1aa211c76b5b51c90d40a95ef6c80f1ddd" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, ROWS, COLS &gt;::data[ROWS *COLS]</definition>
+        <argsstring>[ROWS *COLS]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Array representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="97" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_1a413ec7bf78dc09d92aa5e7373ab79d3f" prot="public" static="no" mutable="no">
+        <type>union gf::Matrix::@2</type>
+        <definition>union gf::Matrix::@2 gf::Matrix&lt; T, ROWS, COLS &gt;::@3</definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An anonymous union to handle the various representations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="98" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_matrix_1a9a55f0fdd6421e47f7722f91bd632eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Matrix&lt; T, ROWS, COLS &gt;::Matrix</definition>
+        <argsstring>()=default</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1ab7dcd4b3222cbd291200ffaf02ed8bdc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Matrix&lt; T, ROWS, COLS &gt;::Matrix</definition>
+        <argsstring>(T val)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that fills the matrix with a value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_matrix_1a3fae58c56124d6da3f13dd6ce09d5be8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator between two matrices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="353" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="353" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1aaf854087604c8e76c1d65d7425662458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator between two matrices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="371" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="371" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a175ad214c0035feb093ed8f0f21a4aba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator-</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;val)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise unary minus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="385" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="385" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1ad1d8308b257224ea492a151a4acd334b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator+</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise addition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="407" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="407" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1ae4bbdc6d64dc049d4ae10ec02c5cf606" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; &amp; operator+=</definition>
+        <argsstring>(Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise addition and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="425" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="425" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1ac26aa74331714f1eab998729e55d8de5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator-</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise substraction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="442" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="442" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a58965ee565b58748c00fd837148f55ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; &amp; operator-=</definition>
+        <argsstring>(Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Component-wise substraction and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="460" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="460" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a6bc29b6563af3ff0733a7a96b07553d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator*</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, T rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="480" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="480" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a1896f0873100ff725cf5e878037b5781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; &amp; operator*=</definition>
+        <argsstring>(Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, T rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar multiplication and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="498" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="498" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1aad1e642c2558507bd953b6d6e169ece5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator*</definition>
+        <argsstring>(T lhs, const Matrix&lt; T, ROWS, COLS &gt; &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Left scalar multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="514" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="514" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1afdda645b618aa15d0b7dc5a7cb6cd768" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; operator/</definition>
+        <argsstring>(const Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, T rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar division. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="532" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="532" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a1fd5f4f6e232f151e470f7dd435a9025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>ROWS</declname>
+            <defname>ROWS</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>COLS</declname>
+            <defname>COLS</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+        <definition>Matrix&lt; T, ROWS, COLS &gt; &amp; operator/=</definition>
+        <argsstring>(Matrix&lt; T, ROWS, COLS &gt; &amp;lhs, T rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, ROWS, COLS &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Right scalar division and assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="550" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="550" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a9cbdbaf0c2e82269adcf7d91a58ba29e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S1</declname>
+            <defname>S1</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S2</declname>
+            <defname>S2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1 &gt;</type>
+        <definition>Vector&lt; T, S1 &gt; operator*</definition>
+        <argsstring>(const Matrix&lt; T, S1, S2 &gt; &amp;lhs, const Vector&lt; T, S2 &gt; &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1, S2 &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S2 &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Matrix-vector multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="566" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="566" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a04f3ddcef53ccd6efc1f791adf2c8aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S1</declname>
+            <defname>S1</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S2</declname>
+            <defname>S2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S2 &gt;</type>
+        <definition>Vector&lt; T, S2 &gt; operator*</definition>
+        <argsstring>(const Vector&lt; T, S1 &gt; &amp;lhs, const Matrix&lt; T, S1, S2 &gt; &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1 &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1, S2 &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Vector-matrix multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="588" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="588" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a547c1dbd7ede968e6c359bbe5a02813e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S1</declname>
+            <defname>S1</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S2</declname>
+            <defname>S2</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S3</declname>
+            <defname>S3</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1, S3 &gt;</type>
+        <definition>Matrix&lt; T, S1, S3 &gt; operator*</definition>
+        <argsstring>(const Matrix&lt; T, S1, S2 &gt; &amp;lhs, const Matrix&lt; T, S2, S3 &gt; &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1, S2 &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S2, S3 &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Matrix-matrix multiplication. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="611" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="611" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a678f083b331b43ba919af9a55ca24e6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+        <definition>Matrix&lt; T, N, N &gt; &amp; operator*=</definition>
+        <argsstring>(Matrix&lt; T, N, N &gt; &amp;lhs, const Matrix&lt; T, N, N &gt; &amp;rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Matrix-matrix multiplication and assignment. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operation is only available for square matrices. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="637" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="637" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a523fecc4b735d067a99e364f3244311d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>MatrixType</type>
+        <definition>MatrixType identity</definition>
+        <argsstring>()</argsstring>
+        <name>identity</name>
+        <briefdescription>
+<para>Identity matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1ga6dda386c75e98622d0c0759c5284afc4" kindref="member">gf::identityTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="654" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="654" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a7d5d2aa15c3d405aea61149e82acd0f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S1</declname>
+            <defname>S1</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>S2</declname>
+            <defname>S2</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S2, S1 &gt;</type>
+        <definition>Matrix&lt; T, S2, S1 &gt; transpose</definition>
+        <argsstring>(const Matrix&lt; T, S1, S2 &gt; &amp;mat)</argsstring>
+        <name>transpose</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, S1, S2 &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Transposition of a matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="676" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="676" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1a2b8bad7d2cc95572352513a6e8963a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2, 2 &gt;</type>
+        <definition>Matrix&lt; T, 2, 2 &gt; invert</definition>
+        <argsstring>(const Matrix&lt; T, 2, 2 &gt; &amp;mat)</argsstring>
+        <name>invert</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2, 2 &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Inversion of a 2x2 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="696" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="696" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_1aa0086ad26b9fdc2b4010eaf37aa5f2e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 3, 3 &gt;</type>
+        <definition>Matrix&lt; T, 3, 3 &gt; invert</definition>
+        <argsstring>(const Matrix&lt; T, 3, 3 &gt; &amp;mat)</argsstring>
+        <name>invert</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_matrix" kindref="compound">Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 3, 3 &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Inversion of a 3x3 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="715" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="715" bodyend="731"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>General purpose math matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref> represents a matrix with <computeroutput>ROWS</computeroutput> rows and <computeroutput>COLS</computeroutput> columns. The internal representation uses a <ulink url="https://en.wikipedia.org/wiki/Row-major_order">row-major order</ulink>.</para><para>The template parameter <computeroutput>T</computeroutput> is the type of coordinates. It can be any type that supports arithmetic operations (+, -, *, /).</para><para>Several specializations are defined for common use cases, especially for <ulink url="https://en.wikipedia.org/wiki/Square_matrix">square matrices</ulink>:</para><para><itemizedlist>
+<listitem><para>For dimension 2: <ref refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kindref="compound">gf::Matrix&lt;T, 2, 2&gt;</ref></para></listitem><listitem><para>For dimension 3: <ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">gf::Matrix&lt;T, 3, 3&gt;</ref></para></listitem><listitem><para>For dimension 4: <ref refid="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4" kindref="compound">gf::Matrix&lt;T, 4, 4&gt;</ref></para></listitem></itemizedlist>
+</para><para>This class was designed according to the article <ulink url="http://www.reedbeta.com/blog/2013/12/28/on-vector-math-libraries/">On Vector Math Libraries</ulink> by Nathan Reed.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_array2_d" kindref="compound">gf::Array2D</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="447">
+        <label>T</label>
+      </node>
+      <node id="446">
+        <label>gf::Matrix&lt; T, ROWS, COLS &gt;</label>
+        <link refid="structgf_1_1_matrix"/>
+        <childnode refid="447" relation="usage">
+          <edgelabel>grid</edgelabel>
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="59" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_matrix_1a61c06d9b075d17d49208df69bfd86a39" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>Cols</name></member>
+      <member refid="structgf_1_1_matrix_1aa211c76b5b51c90d40a95ef6c80f1ddd" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>data</name></member>
+      <member refid="structgf_1_1_matrix_1a3c7f1ae48c0890418dbff40acdb868dd" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>grid</name></member>
+      <member refid="structgf_1_1_matrix_1a523fecc4b735d067a99e364f3244311d" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>identity</name></member>
+      <member refid="structgf_1_1_matrix_1a2b8bad7d2cc95572352513a6e8963a76" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>invert</name></member>
+      <member refid="structgf_1_1_matrix_1aa0086ad26b9fdc2b4010eaf37aa5f2e5" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>invert</name></member>
+      <member refid="structgf_1_1_matrix_1a9a55f0fdd6421e47f7722f91bd632eaf" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>Matrix</name></member>
+      <member refid="structgf_1_1_matrix_1ab7dcd4b3222cbd291200ffaf02ed8bdc" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>Matrix</name></member>
+      <member refid="structgf_1_1_matrix_1aaf854087604c8e76c1d65d7425662458" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator!=</name></member>
+      <member refid="structgf_1_1_matrix_1a6bc29b6563af3ff0733a7a96b07553d1" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_matrix_1aad1e642c2558507bd953b6d6e169ece5" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_matrix_1a9cbdbaf0c2e82269adcf7d91a58ba29e" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_matrix_1a04f3ddcef53ccd6efc1f791adf2c8aa7" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_matrix_1a547c1dbd7ede968e6c359bbe5a02813e" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*</name></member>
+      <member refid="structgf_1_1_matrix_1a1896f0873100ff725cf5e878037b5781" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*=</name></member>
+      <member refid="structgf_1_1_matrix_1a678f083b331b43ba919af9a55ca24e6b" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator*=</name></member>
+      <member refid="structgf_1_1_matrix_1ad1d8308b257224ea492a151a4acd334b" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator+</name></member>
+      <member refid="structgf_1_1_matrix_1ae4bbdc6d64dc049d4ae10ec02c5cf606" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator+=</name></member>
+      <member refid="structgf_1_1_matrix_1a175ad214c0035feb093ed8f0f21a4aba" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_matrix_1ac26aa74331714f1eab998729e55d8de5" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator-</name></member>
+      <member refid="structgf_1_1_matrix_1a58965ee565b58748c00fd837148f55ae" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator-=</name></member>
+      <member refid="structgf_1_1_matrix_1afdda645b618aa15d0b7dc5a7cb6cd768" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator/</name></member>
+      <member refid="structgf_1_1_matrix_1a1fd5f4f6e232f151e470f7dd435a9025" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator/=</name></member>
+      <member refid="structgf_1_1_matrix_1a3fae58c56124d6da3f13dd6ce09d5be8" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>operator==</name></member>
+      <member refid="structgf_1_1_matrix_1a3b1cc3ba50dc4021a0b5304b68fba297" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>Rows</name></member>
+      <member refid="structgf_1_1_matrix_1a7d5d2aa15c3d405aea61149e82acd0f4" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>transpose</name></member>
+      <member refid="structgf_1_1_matrix_1ac8ff968abb67be292136990a382b9662" prot="public" virt="non-virtual"><scope>gf::Matrix</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

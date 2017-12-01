@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_move_to_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::MoveToActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_move_to_activity_1a2a7596f1945c4e82b4ab562d6e812539" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tween" kindref="compound">Tween</ref>&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+        <definition>Tween&lt;Vector2f&gt; gf::MoveToActivity::m_tween</definition>
+        <argsstring></argsstring>
+        <name>m_tween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="278" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a4c931564501d4fd64f1a4a8e29d907a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::MoveToActivity::MoveToActivity</definition>
+        <argsstring>(Vector2f origin, Vector2f target, Vector2f &amp;position, Time duration, Easing easing=Ease::linear)</argsstring>
+        <name>MoveToActivity</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref></type>
+          <declname>easing</declname>
+          <defval><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference on the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the tween </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>easing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The easing for the interpolation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1ade341be12347e6262fc8bf7e6a6720b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::MoveToActivity::setOrigin</definition>
+        <argsstring>(Vector2f origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Change the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new origin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="225" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1ac5f0633e985fe46bae87d729792cf5be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::MoveToActivity::getOrigin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getOrigin</name>
+        <briefdescription>
+<para>Get the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current origin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="234" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a9c7d45004c7f8bd4d38eb936be458348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::MoveToActivity::setTarget</definition>
+        <argsstring>(Vector2f target)</argsstring>
+        <name>setTarget</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Change the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="243" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="243" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a07ea1358626d3db6242d47dbeabdb09e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::MoveToActivity::getTarget</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+<para>Get the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current target </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="252" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="252" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a807e0a1d88ef5adcbe847cda8cdbf7af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::MoveToActivity::setDuration</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>setDuration</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Change the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new duration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="261" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1abc32e073d1323ca461b7df9af719bfda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::MoveToActivity::getDuration</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDuration</name>
+        <briefdescription>
+<para>Get the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current duration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="270" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="270" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a8d984c84c98790beac6fee9a1e0a7384" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::MoveToActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_move_to_activity_1a3a506eb7a1d97d68f05deaf173f7ae81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::MoveToActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="275" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity for a change of position. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_tween" kindref="compound">gf::Tween</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="486">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="485">
+        <label>gf::MoveToActivity</label>
+        <link refid="classgf_1_1_move_to_activity"/>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="488">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="487">
+        <label>gf::MoveToActivity</label>
+        <link refid="classgf_1_1_move_to_activity"/>
+        <childnode refid="488" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="207" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="207" bodyend="279"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_move_to_activity_1abc32e073d1323ca461b7df9af719bfda" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>getDuration</name></member>
+      <member refid="classgf_1_1_move_to_activity_1ac5f0633e985fe46bae87d729792cf5be" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a07ea1358626d3db6242d47dbeabdb09e" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>getTarget</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a2a7596f1945c4e82b4ab562d6e812539" prot="private" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>m_tween</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a4c931564501d4fd64f1a4a8e29d907a7" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>MoveToActivity</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a3a506eb7a1d97d68f05deaf173f7ae81" prot="public" virt="virtual"><scope>gf::MoveToActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a8d984c84c98790beac6fee9a1e0a7384" prot="public" virt="virtual"><scope>gf::MoveToActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a807e0a1d88ef5adcbe847cda8cdbf7af" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>setDuration</name></member>
+      <member refid="classgf_1_1_move_to_activity_1ade341be12347e6262fc8bf7e6a6720b9" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_move_to_activity_1a9c7d45004c7f8bd4d38eb936be458348" prot="public" virt="non-virtual"><scope>gf::MoveToActivity</scope><name>setTarget</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::MoveToActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

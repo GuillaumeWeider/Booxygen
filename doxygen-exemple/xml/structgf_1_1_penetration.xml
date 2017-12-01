@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_penetration" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Penetration</compoundname>
+    <includes refid="_collision_8h" local="no">gf/Collision.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_penetration_1aeaf3bc011f6dc5f907e1b7275d76d944" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Penetration::normal</definition>
+        <argsstring></argsstring>
+        <name>normal</name>
+        <briefdescription>
+<para>Collision normal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_penetration_1a3cfe6bf8074172b18e6a792917ecac8f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Penetration::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+<para><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> depth. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_penetration_1a131ba15dad1286f4604d4de8334e09ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const CircF &amp;lhs, const Transform &amp;lhsTrans, const CircF &amp;rhs, const Transform &amp;rhsTrans, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>lhsTrans</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>rhsTrans</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if two circles collides. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the first circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the second circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1af3c91c1b44ce1b533d73fbc8d668742d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const CircF &amp;lhs, const CircF &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if two circles collides. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a736399bd6f1faa9733872839148df2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const RectF &amp;lhs, const CircF &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a rectangle collides with a circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a5008715e0ec7ccd3c0825a0f0ee121ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const CircF &amp;lhs, const RectF &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a circle collides with a rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a9220cae916a2702c48f9bad36761b448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const RectF &amp;lhs, const RectF &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if two rectangles collides. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1abe3b4396183b3c2f0c230cbb55e003bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const CircF &amp;lhs, const Transform &amp;lhsTrans, const Polygon &amp;rhs, const Transform &amp;rhsTrans, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>lhsTrans</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>rhsTrans</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a circle collides with a polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1ac61f10f3d26ce9f88b6fa728202e1ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const CircF &amp;lhs, const Polygon &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a circle collides with a polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a288ad92459e8b97d3181a32508dd1363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const Polygon &amp;lhs, const Transform &amp;lhsTrans, const CircF &amp;rhs, const Transform &amp;rhsTrans, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>lhsTrans</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>rhsTrans</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a polygon collides with a circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a28de7b8f9f2fa4dc03bf75150bfc3bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const Polygon &amp;lhs, const CircF &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if a polygon collides with a circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1a945eb959d8d506bae7d63d2446085610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const Polygon &amp;lhs, const Transform &amp;lhsTrans, const Polygon &amp;rhs, const Transform &amp;rhsTrans, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>lhsTrans</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>rhsTrans</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if two polygons collides. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the first polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhsTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation of the second polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_penetration_1ad83142d314c3332fa0f586d58525c486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool collides</definition>
+        <argsstring>(const Polygon &amp;lhs, const Polygon &amp;rhs, Penetration &amp;p)</argsstring>
+        <name>collides</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_penetration" kindref="compound">Penetration</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Check if two polygons collides. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second polygon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to fill if there is a collision </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if there is a collision </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="175" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data about the collision between two objects. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://gamedevelopment.tutsplus.com/series/how-to-create-a-custom-physics-engine--gamedev-12715">How to Create a Custom Physics Engine</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="549">
+        <label>gf::Penetration</label>
+        <link refid="structgf_1_1_penetration"/>
+        <childnode refid="550" relation="usage">
+          <edgelabel>normal</edgelabel>
+        </childnode>
+      </node>
+      <node id="550">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Collision.h" bodystart="43" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_penetration_1a131ba15dad1286f4604d4de8334e09ee" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1af3c91c1b44ce1b533d73fbc8d668742d" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a736399bd6f1faa9733872839148df2cc" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a5008715e0ec7ccd3c0825a0f0ee121ad" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a9220cae916a2702c48f9bad36761b448" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1abe3b4396183b3c2f0c230cbb55e003bd" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1ac61f10f3d26ce9f88b6fa728202e1ca2" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a288ad92459e8b97d3181a32508dd1363" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a28de7b8f9f2fa4dc03bf75150bfc3bac" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a945eb959d8d506bae7d63d2446085610" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1ad83142d314c3332fa0f586d58525c486" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>collides</name></member>
+      <member refid="structgf_1_1_penetration_1a3cfe6bf8074172b18e6a792917ecac8f" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>depth</name></member>
+      <member refid="structgf_1_1_penetration_1aeaf3bc011f6dc5f907e1b7275d76d944" prot="public" virt="non-virtual"><scope>gf::Penetration</scope><name>normal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

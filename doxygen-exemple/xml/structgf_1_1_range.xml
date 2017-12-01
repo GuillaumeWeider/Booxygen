@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_range" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Range</compoundname>
+    <includes refid="_range_8h" local="no">gf/Range.h</includes>
+    <innerclass refid="structgf_1_1_range_1_1_iterator" prot="public">gf::Range::Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Range&lt; T &gt;::lo</definition>
+        <argsstring></argsstring>
+        <name>lo</name>
+        <briefdescription>
+<para>The lower endpoint (included) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Range&lt; T &gt;::hi</definition>
+        <argsstring></argsstring>
+        <name>hi</name>
+        <briefdescription>
+<para>The higher endpoint (excluded) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_range_1a4fd86736bca7b0e08d9c2a903728eddf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Range&lt; T &gt;::contains</definition>
+        <argsstring>(T value) const noexcept</argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Check if a value is in a range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the value is in the range </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1aad0071043af7d74ec32722ba09e736f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>constexpr Iterator gf::Range&lt; T &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get a begin iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A begin iterator </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_range_1a7449f0a2cb37e507d9ba3dd3158b6c91" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="132" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1a7449f0a2cb37e507d9ba3dd3158b6c91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>constexpr Iterator gf::Range&lt; T &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get a end iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A end iterator </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_range_1aad0071043af7d74ec32722ba09e736f5" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="142" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1ad878f909f1ccd2ea561a36c7836da50a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>constexpr T gf::Range&lt; T &gt;::length</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Get the length of the range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of the range </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="151" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1a9a9844ea321bec5dc8dd7aab7de4ad62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Range&lt; T &gt;::isEmpty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the range is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the range is empty </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_range_1ad7a1d88f30b7d09c3232eef71deff937" kindref="member">isValid()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_range_1ad7a1d88f30b7d09c3232eef71deff937" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Range&lt; T &gt;::isValid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+<para>Check is the range is valid. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the range is valid </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_range_1a9a9844ea321bec5dc8dd7aab7de4ad62" kindref="member">isEmpty()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="171" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A half-open range of values. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_range" kindref="compound">gf::Range</ref> represents a half-open range of values. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="606">
+        <label>T</label>
+      </node>
+      <node id="605">
+        <label>gf::Range&lt; T &gt;</label>
+        <link refid="structgf_1_1_range"/>
+        <childnode refid="606" relation="usage">
+          <edgelabel>hi</edgelabel>
+          <edgelabel>lo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="42" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_range_1aad0071043af7d74ec32722ba09e736f5" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>begin</name></member>
+      <member refid="structgf_1_1_range_1a4fd86736bca7b0e08d9c2a903728eddf" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>contains</name></member>
+      <member refid="structgf_1_1_range_1a7449f0a2cb37e507d9ba3dd3158b6c91" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>end</name></member>
+      <member refid="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>hi</name></member>
+      <member refid="structgf_1_1_range_1a9a9844ea321bec5dc8dd7aab7de4ad62" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>isEmpty</name></member>
+      <member refid="structgf_1_1_range_1ad7a1d88f30b7d09c3232eef71deff937" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>isValid</name></member>
+      <member refid="structgf_1_1_range_1ad878f909f1ccd2ea561a36c7836da50a" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>length</name></member>
+      <member refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" prot="public" virt="non-virtual"><scope>gf::Range</scope><name>lo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

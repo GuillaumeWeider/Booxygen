@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_animation_1_1_frame" kind="struct" language="C++" prot="private">
+    <compoundname>gf::Animation::Frame</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_animation_1_1_frame_1a2a7bebdb118f334711eacba5ce6852e7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>const Texture* gf::Animation::Frame::texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_animation_1_1_frame_1a01303338ddddef8344e64db1d1e205cc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Animation::Frame::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="95" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_animation_1_1_frame_1adf1a053cf3567f85d711dc68d1325c42" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::Animation::Frame::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="332">
+        <label>gf::Animation::Frame</label>
+        <childnode refid="333" relation="usage">
+          <edgelabel>bounds</edgelabel>
+        </childnode>
+        <childnode refid="335" relation="usage">
+          <edgelabel>duration</edgelabel>
+        </childnode>
+        <childnode refid="336" relation="usage">
+          <edgelabel>texture</edgelabel>
+        </childnode>
+      </node>
+      <node id="333">
+        <label>gf::Rect&lt; float &gt;</label>
+        <link refid="structgf_1_1_rect"/>
+        <childnode refid="334" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="336">
+        <label>gf::Texture</label>
+        <link refid="classgf_1_1_texture"/>
+        <childnode refid="337" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>gf::Time</label>
+        <link refid="classgf_1_1_time"/>
+        <childnode refid="335" relation="usage">
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="334">
+        <label>gf::Vector&lt; float, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="337">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="93" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="93" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_animation_1_1_frame_1a01303338ddddef8344e64db1d1e205cc" prot="public" virt="non-virtual"><scope>gf::Animation::Frame</scope><name>bounds</name></member>
+      <member refid="structgf_1_1_animation_1_1_frame_1adf1a053cf3567f85d711dc68d1325c42" prot="public" virt="non-virtual"><scope>gf::Animation::Frame</scope><name>duration</name></member>
+      <member refid="structgf_1_1_animation_1_1_frame_1a2a7bebdb118f334711eacba5ce6852e7" prot="public" virt="non-virtual"><scope>gf::Animation::Frame</scope><name>texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

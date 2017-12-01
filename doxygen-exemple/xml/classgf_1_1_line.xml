@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_line" kind="class" language="C++" prot="public">
+    <compoundname>gf::Line</compoundname>
+    <basecompoundref refid="classgf_1_1_curve" prot="public" virt="non-virtual">gf::Curve</basecompoundref>
+    <includes refid="_curves_8h" local="no">gf/Curves.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_line_1a5ef8369017cbb04806779a8ef57495bb" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Line::m_p0</definition>
+        <argsstring></argsstring>
+        <name>m_p0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="54" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_line_1ae12c3c668ece1c7372dbed402da89af0" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Line::m_p1</definition>
+        <argsstring></argsstring>
+        <name>m_p1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="55" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_line_1a19894abaf1eaaec5d72bdb9d6e92a29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Line::Line</definition>
+        <argsstring>(Vector2f p0, Vector2f p1)</argsstring>
+        <name>Line</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first end point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second end point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_line_1ae6aef7d6582dae2eebc1d58d123dbb14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::Line::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_line_1a9341e0eeb3279ea570274df701931ff1" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_line_1a9341e0eeb3279ea570274df701931ff1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::Line::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the curve&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the curve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_line_1ae6aef7d6582dae2eebc1d58d123dbb14" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A line. </para>    </briefdescription>
+    <detaileddescription>
+<para>A line is a straight curve. It is defined by two end points. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="421">
+        <label>gf::Line</label>
+        <link refid="classgf_1_1_line"/>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="423">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="423" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="425">
+        <label>gf::Line</label>
+        <link refid="classgf_1_1_line"/>
+        <childnode refid="426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="427">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="428" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="427" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" line="39" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curves.h" bodystart="39" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_curve_1a1cff9947e7a2ca8bd819af431460845b" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_curve_1a81cdd96a68982a3f51a0c4a4f9ac4353" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_curve_1a564dba3050a213392a10d23f4ed1ba90" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Curve</name></member>
+      <member refid="classgf_1_1_curve_1aa54fc04c78d0e2c4471647728ca29c95" prot="public" virt="virtual"><scope>gf::Line</scope><name>draw</name></member>
+      <member refid="classgf_1_1_curve_1a71ee8668036208a3a26b84fd7686172b" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_curve_1a4924072750e0aab38e10272786bf7a7b" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_curve_1a6dcca32a07306fd868dc732bb246c134" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1a5ea717b424d865f3b52cabda32754542" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_line_1a9341e0eeb3279ea570274df701931ff1" prot="public" virt="virtual"><scope>gf::Line</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_line_1ae6aef7d6582dae2eebc1d58d123dbb14" prot="public" virt="virtual"><scope>gf::Line</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_curve_1a8bcfb3e49fed7d6a38bfd4065c16a9c1" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getType</name></member>
+      <member refid="classgf_1_1_curve_1a6b74eb47e582346ff9e8706a9a5d0eb8" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>getWidth</name></member>
+      <member refid="classgf_1_1_line_1a19894abaf1eaaec5d72bdb9d6e92a29f" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Line</name></member>
+      <member refid="classgf_1_1_line_1a5ef8369017cbb04806779a8ef57495bb" prot="private" virt="non-virtual"><scope>gf::Line</scope><name>m_p0</name></member>
+      <member refid="classgf_1_1_line_1ae12c3c668ece1c7372dbed402da89af0" prot="private" virt="non-virtual"><scope>gf::Line</scope><name>m_p1</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>move</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a306eccd159d833238a04d882d7d9a321" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Outlined</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>scale</name></member>
+      <member refid="classgf_1_1_curve_1af7a049cb925bb1b7d4de1ffe36056133" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_curve_1a984074936efb2cb0fa03d37f3330eece" prot="protected" virt="non-virtual"><scope>gf::Line</scope><name>setClosed</name></member>
+      <member refid="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Line</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1ae5c7357a6ebb37fd978486b430f8286d" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_curve_1afa5e524b5de1d869e7cd83524f7dfbda" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setType</name></member>
+      <member refid="classgf_1_1_curve_1a4d1ee3635fa82957c94f3f2085f8651f" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>setWidth</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a119907af16879acca1aafb34e91d5c1d" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Simple</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" prot="public" virt="non-virtual"><scope>gf::Line</scope><name>Type</name></member>
+      <member refid="classgf_1_1_curve_1a3dee8a7f5d153f4f276dd4127f5bd391" prot="protected" virt="non-virtual"><scope>gf::Line</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Line</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

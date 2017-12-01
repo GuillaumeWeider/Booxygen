@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_rounded_rectangle_shape" kind="class" language="C++" prot="public">
+    <compoundname>gf::RoundedRectangleShape</compoundname>
+    <basecompoundref refid="classgf_1_1_shape" prot="public" virt="non-virtual">gf::Shape</basecompoundref>
+    <includes refid="_shapes_8h" local="no">gf/Shapes.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_rounded_rectangle_shape_1a6bb85e34e738c66f6049af026235f058" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::RoundedRectangleShape::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="471" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_rounded_rectangle_shape_1a8282f2101efac638828ffbf3a778aac8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::RoundedRectangleShape::m_radius</definition>
+        <argsstring></argsstring>
+        <name>m_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="472" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_rounded_rectangle_shape_1af012337b1e58c22a12a42a99444a2343" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::RoundedRectangleShape::m_cornerPointCount</definition>
+        <argsstring></argsstring>
+        <name>m_cornerPointCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="473" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a2c4e029cb157ee3f6ad182a0e90d95a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RoundedRectangleShape::RoundedRectangleShape</definition>
+        <argsstring>(Vector2f size=Vector2f{ 0.0f, 0.0f }, float radius=0.0f, std::size_t cornerPointCount=8)</argsstring>
+        <name>RoundedRectangleShape</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+          <defval><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref>{ 0.0f, 0.0f }</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>cornerPointCount</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the corner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cornerPointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points in the corner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="404" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a14fb440ebfea2b83f4c7aa7fee06bbb2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RoundedRectangleShape::RoundedRectangleShape</definition>
+        <argsstring>(const RectF &amp;rect, float radius=0.0f, std::size_t cornerPointCount=8)</argsstring>
+        <name>RoundedRectangleShape</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>cornerPointCount</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with a rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para>The shape takes the size of the rectangle and the position of the rectangle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle with a size and a position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the corner </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cornerPointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points in the corner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1afc880b9fe7f0da670e48bfac19cc0009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RoundedRectangleShape::setSize</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set the size of the rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of the rectangle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1a4bf972638ec64d5043f3f00a075aa7e5" kindref="member">getSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a4bf972638ec64d5043f3f00a075aa7e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::RoundedRectangleShape::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the rectangle</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1afc880b9fe7f0da670e48bfac19cc0009" kindref="member">setSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="434" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="434" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a8425ce470f94f8a3f265fb2777dbd54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RoundedRectangleShape::setRadius</definition>
+        <argsstring>(float radius)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Set the radius of the corner. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New radius of the corner</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1a3686c211ab1e134a93d3eb8dbf7f12f9" kindref="member">getRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a3686c211ab1e134a93d3eb8dbf7f12f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::RoundedRectangleShape::getRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getRadius</name>
+        <briefdescription>
+<para>Get the radius of the corner. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Radius of the corner</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1a8425ce470f94f8a3f265fb2777dbd54c" kindref="member">setRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="454" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="454" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a60c20a8803fc42393a24ba53385835a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RoundedRectangleShape::setCornerPointCount</definition>
+        <argsstring>(std::size_t cornerPointCount)</argsstring>
+        <name>setCornerPointCount</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>cornerPointCount</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of points of a corner. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>cornerPointCount</computeroutput> must be greater than 2 to define a valid shape.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cornerPointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New number of points of a corner </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="465" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a38fa96147f6393d2ad2cfab11e7181db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::RoundedRectangleShape::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1a0ccf4a25a844a212fd10e4be0b1e3b9d" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="467" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rounded_rectangle_shape_1a0ccf4a25a844a212fd10e4be0b1e3b9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::RoundedRectangleShape::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the shape&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the shape.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_rounded_rectangle_shape_1a38fa96147f6393d2ad2cfab11e7181db" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="468" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized shape representing a rounded rectangle. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_rounded_rectangle_shape" kindref="compound">gf::RoundedRectangleShape</ref><sp/>rectangle;</highlight></codeline>
+<codeline><highlight class="normal">rectangle.<ref refid="classgf_1_1_rounded_rectangle_shape_1afc880b9fe7f0da670e48bfac19cc0009" kindref="member">setSize</ref>({<sp/>100.0f,<sp/>50.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">rectangle.<ref refid="classgf_1_1_rounded_rectangle_shape_1a8425ce470f94f8a3f265fb2777dbd54c" kindref="member">setRadius</ref>(10);</highlight></codeline>
+<codeline><highlight class="normal">rectangle.<ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor</ref>(<ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal">rectangle.<ref refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" kindref="member">setOutlineThickness</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal">rectangle.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>10.0f,<sp/>20.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">window.draw(rect);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="665">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="666" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>gf::RoundedRectangleShape</label>
+        <link refid="classgf_1_1_rounded_rectangle_shape"/>
+        <childnode refid="665" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="666">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="667" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="669">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="670" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>gf::RoundedRectangleShape</label>
+        <link refid="classgf_1_1_rounded_rectangle_shape"/>
+        <childnode refid="669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="670">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="671" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="395" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="395" bodyend="474"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" virt="virtual"><scope>gf::RoundedRectangleShape</scope><name>draw</name></member>
+      <member refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a0ccf4a25a844a212fd10e4be0b1e3b9d" prot="public" virt="virtual"><scope>gf::RoundedRectangleShape</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a38fa96147f6393d2ad2cfab11e7181db" prot="public" virt="virtual"><scope>gf::RoundedRectangleShape</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a3686c211ab1e134a93d3eb8dbf7f12f9" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a4bf972638ec64d5043f3f00a075aa7e5" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1af012337b1e58c22a12a42a99444a2343" prot="private" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>m_cornerPointCount</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a8282f2101efac638828ffbf3a778aac8" prot="private" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>m_radius</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a6bb85e34e738c66f6049af026235f058" prot="private" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a2c4e029cb157ee3f6ad182a0e90d95a4" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>RoundedRectangleShape</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a14fb440ebfea2b83f4c7aa7fee06bbb2" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>RoundedRectangleShape</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a60c20a8803fc42393a24ba53385835a4" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setCornerPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1a8425ce470f94f8a3f265fb2777dbd54c" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setRadius</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_rounded_rectangle_shape_1afc880b9fe7f0da670e48bfac19cc0009" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setSize</name></member>
+      <member refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>Shape</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" virt="non-virtual"><scope>gf::RoundedRectangleShape</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::RoundedRectangleShape</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

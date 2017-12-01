@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_convex_shape" kind="class" language="C++" prot="public">
+    <compoundname>gf::ConvexShape</compoundname>
+    <basecompoundref refid="classgf_1_1_shape" prot="public" virt="non-virtual">gf::Shape</basecompoundref>
+    <includes refid="_shapes_8h" local="no">gf/Shapes.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_convex_shape_1a7dc8afb1f358bba04673e5d8680625c5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::ConvexShape::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="269" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1a4ab359fa7211ba731b37ea6271e8791f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ConvexShape::ConvexShape</definition>
+        <argsstring>(std::size_t pointCount)</argsstring>
+        <name>ConvexShape</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points of the polygon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1a6bf15dd3d4fc9bebd00544cc608c3444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ConvexShape::ConvexShape</definition>
+        <argsstring>(const Polygon &amp;polygon)</argsstring>
+        <name>ConvexShape</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+          <declname>polygon</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The polygon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1abbec645b33fd5f3a78caf0d570d819c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConvexShape::setPointCount</definition>
+        <argsstring>(std::size_t pointCount)</argsstring>
+        <name>setPointCount</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>pointCount</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of points of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>pointCount</computeroutput> must be greater than 2 to define a valid shape.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New number of points of the polygon</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_convex_shape_1a6e0feb913ff058352de99f088c1bd65e" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConvexShape::setPoint</definition>
+        <argsstring>(std::size_t index, Vector2f point)</argsstring>
+        <name>setPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of points of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the polygon</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_convex_shape_1abbec645b33fd5f3a78caf0d570d819c0" kindref="member">setPointCount()</ref>, <ref refid="classgf_1_1_convex_shape_1a7d43d98ab4615413958a783651687fc6" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1a6e0feb913ff058352de99f088c1bd65e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::ConvexShape::getPointCount</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPointCount</name>
+        <reimplements refid="classgf_1_1_shape_1a0c5b82272c76f32b7986498f8cc6cbd7">getPointCount</reimplements>
+        <briefdescription>
+<para>Get the total number of points of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_convex_shape_1a7d43d98ab4615413958a783651687fc6" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_convex_shape_1a7d43d98ab4615413958a783651687fc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::ConvexShape::getPoint</definition>
+        <argsstring>(std::size_t index) const override</argsstring>
+        <name>getPoint</name>
+        <reimplements refid="classgf_1_1_shape_1a871dc08eece7607815f8c820739156f4">getPoint</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the shape&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the shape.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the shape </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_convex_shape_1a6e0feb913ff058352de99f088c1bd65e" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="266" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized shape representing a convex polygon. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>It is important to keep in mind that a convex shape must always be... convex, otherwise it may not be drawn correctly. Moreover, the points must be defined in order; using a random order would result in an incorrect shape.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_convex_shape" kindref="compound">gf::ConvexShape</ref><sp/>polygon;</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1abbec645b33fd5f3a78caf0d570d819c0" kindref="member">setPointCount</ref>(3);</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" kindref="member">setPoint</ref>(0,<sp/>{<sp/><sp/>0.0f,<sp/><sp/>0.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" kindref="member">setPoint</ref>(1,<sp/>{<sp/><sp/>0.0f,<sp/>10.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" kindref="member">setPoint</ref>(2,<sp/>{<sp/>25.0f,<sp/><sp/>5.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" kindref="member">setOutlineColor</ref>(<ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" kindref="member">setOutlineThickness</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>({<sp/>10.0f,<sp/>20.0f<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">window.draw(polygon);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="184">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="185">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>gf::ConvexShape</label>
+        <link refid="classgf_1_1_convex_shape"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="188">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="189">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>gf::ConvexShape</label>
+        <link refid="classgf_1_1_convex_shape"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" line="229" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Shapes.h" bodystart="229" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shape_1a022a0cdf2594decc44593f71bd09426d" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_shape_1a9825fb860d790fb02df5f3cfb3972e53" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_convex_shape_1a4ab359fa7211ba731b37ea6271e8791f" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>ConvexShape</name></member>
+      <member refid="classgf_1_1_convex_shape_1a6bf15dd3d4fc9bebd00544cc608c3444" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>ConvexShape</name></member>
+      <member refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289" prot="public" virt="virtual"><scope>gf::ConvexShape</scope><name>draw</name></member>
+      <member refid="classgf_1_1_shape_1a1a3a16346de54693f357a6a004a6ef4d" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_shape_1a57d6473124c6f862cc3e7620bd1c72a5" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_shape_1a26149666c85dfee7eced05ddcc6d2140" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a708193f352c6917fbe065dd301942973" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_convex_shape_1a7d43d98ab4615413958a783651687fc6" prot="public" virt="virtual"><scope>gf::ConvexShape</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_convex_shape_1a6e0feb913ff058352de99f088c1bd65e" prot="public" virt="virtual"><scope>gf::ConvexShape</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_shape_1af747e3a1c596bb28fd53c7a0ab4ae970" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_shape_1af988dfec234318f5febd1ab4c6c8e6c3" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_shape_1a54dfb0e8c4fd05be0a8b35fb019aaa38" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_convex_shape_1a7dc8afb1f358bba04673e5d8680625c5" prot="private" virt="non-virtual"><scope>gf::ConvexShape</scope><name>m_points</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>scale</name></member>
+      <member refid="classgf_1_1_shape_1aa3c7747526858588ac7c7faed1773fc9" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_shape_1ad16d0f0b8138fd06a01c050662259577" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_shape_1a47e97612eccde5930d2bd5e4569ff5c4" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_shape_1a956e759ca015359dd229abfb12d22b2d" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setPoint</name></member>
+      <member refid="classgf_1_1_convex_shape_1abbec645b33fd5f3a78caf0d570d819c0" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_shape_1af54252135f941cba50ff175e030ef6b9" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_shape_1aed6d5f907378f80a5c16a8b11b532f99" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>setTextureRect</name></member>
+      <member refid="classgf_1_1_shape_1a75cfdcf4f220db8675871c3513807899" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>Shape</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_shape_1a2d6252072140f0e2ee246e41a1e25684" prot="public" virt="non-virtual"><scope>gf::ConvexShape</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_shape_1a09cace6b9c611d730219f51b7fd39063" prot="protected" virt="non-virtual"><scope>gf::ConvexShape</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::ConvexShape</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

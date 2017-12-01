@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_keyboard" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Keyboard</compoundname>
+    <includes refid="_keyboard_8h" local="no">gf/Keyboard.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structgf_1_1_keyboard_1a1eb028d805890221636e7ed12841014d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* gf::Keyboard::getScancodeName</definition>
+        <argsstring>(Scancode scancode)</argsstring>
+        <name>getScancodeName</name>
+        <param>
+          <type><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref></type>
+          <declname>scancode</declname>
+        </param>
+        <briefdescription>
+<para>Get the representation of a scancode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scancode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scancode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representing the scancode </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_keyboard_1afc56f440bc38302c224a2ea46bfb58de" kindref="member">getScancodeFromName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="514" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_keyboard_1afc56f440bc38302c224a2ea46bfb58de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref></type>
+        <definition>static Scancode gf::Keyboard::getScancodeFromName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>getScancodeFromName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the scancode associated to a name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the scancode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A scancode </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_keyboard_1a1eb028d805890221636e7ed12841014d" kindref="member">getScancodeName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="523" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_keyboard_1a0ca81db0a5147267b3221aa0d696ad83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* gf::Keyboard::getKeycodeName</definition>
+        <argsstring>(Keycode keycode)</argsstring>
+        <name>getKeycodeName</name>
+        <param>
+          <type><ref refid="group__window_1gac7037fec22d5d5215cffce98fc7dca64" kindref="member">Keycode</ref></type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+<para>Get the representation of a keycode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keycode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The keycode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representing the keycode </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_keyboard_1a2af684add60e3d2be05a0690bb6f5c84" kindref="member">getKeycodeFromName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_keyboard_1a2af684add60e3d2be05a0690bb6f5c84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__window_1gac7037fec22d5d5215cffce98fc7dca64" kindref="member">Keycode</ref></type>
+        <definition>static Keycode gf::Keyboard::getKeycodeFromName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>getKeycodeFromName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the keycode associated to a name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the keycode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A keycode </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_keyboard_1a0ca81db0a5147267b3221aa0d696ad83" kindref="member">getKeycodeName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="541" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_keyboard_1a7638302ba32305ab7947e1ac227fdd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Keyboard::Keyboard</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Keyboard</name>
+        <briefdescription>
+<para>Deleted constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="546" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Some keyboard related functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="506" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" bodystart="506" bodyend="548"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_keyboard_1a2af684add60e3d2be05a0690bb6f5c84" prot="public" virt="non-virtual"><scope>gf::Keyboard</scope><name>getKeycodeFromName</name></member>
+      <member refid="structgf_1_1_keyboard_1a0ca81db0a5147267b3221aa0d696ad83" prot="public" virt="non-virtual"><scope>gf::Keyboard</scope><name>getKeycodeName</name></member>
+      <member refid="structgf_1_1_keyboard_1afc56f440bc38302c224a2ea46bfb58de" prot="public" virt="non-virtual"><scope>gf::Keyboard</scope><name>getScancodeFromName</name></member>
+      <member refid="structgf_1_1_keyboard_1a1eb028d805890221636e7ed12841014d" prot="public" virt="non-virtual"><scope>gf::Keyboard</scope><name>getScancodeName</name></member>
+      <member refid="structgf_1_1_keyboard_1a7638302ba32305ab7947e1ac227fdd7b" prot="public" virt="non-virtual"><scope>gf::Keyboard</scope><name>Keyboard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

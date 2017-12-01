@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_event_8h" kind="file" language="C++">
+    <compoundname>Event.h</compoundname>
+    <includes refid="_gamepad_8h" local="yes">Gamepad.h</includes>
+    <includes refid="_keyboard_8h" local="yes">Keyboard.h</includes>
+    <includes refid="_mouse_8h" local="yes">Mouse.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_rune_8h" local="yes">Rune.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_u_i_8h" local="yes">UI.h</includedby>
+    <incdepgraph>
+      <node id="619">
+        <label>Rune.h</label>
+        <link refid="_rune_8h_source"/>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>cstdint</label>
+      </node>
+      <node id="617">
+        <label>Types.h</label>
+        <link refid="_types_8h_source"/>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="611">
+        <label>Gamepad.h</label>
+        <link refid="_gamepad_8h_source"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>Mouse.h</label>
+        <link refid="_mouse_8h_source"/>
+      </node>
+      <node id="614">
+        <label>Keyboard.h</label>
+        <link refid="_keyboard_8h_source"/>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>Flags.h</label>
+        <link refid="_flags_8h_source"/>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>cstddef</label>
+      </node>
+      <node id="610">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>type_traits</label>
+      </node>
+      <node id="622">
+        <label>algorithm</label>
+      </node>
+      <node id="623">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="625">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="626">
+        <label>UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="625" relation="include">
+        </childnode>
+      </node>
+      <node id="624">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="625" relation="include">
+        </childnode>
+        <childnode refid="626" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_event" prot="public">gf::Event</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_key_event" prot="public">gf::Event::KeyEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_text_event" prot="public">gf::Event::TextEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_button_event" prot="public">gf::Event::MouseButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_cursor_event" prot="public">gf::Event::MouseCursorEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_wheel_event" prot="public">gf::Event::MouseWheelEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_button_event" prot="public">gf::Event::GamepadButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_axis_event" prot="public">gf::Event::GamepadAxisEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_connection" prot="public">gf::Event::GamepadConnection</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_disconnection" prot="public">gf::Event::GamepadDisconnection</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Part<sp/>of<sp/>this<sp/>file<sp/>comes<sp/>from<sp/>SFML,<sp/>with<sp/>the<sp/>same<sp/>license:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2007-2015<sp/>Laurent<sp/>Gomila<sp/>(laurent@sfml-dev.org)</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Gamepad.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Keyboard.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Mouse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Rune.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="group__window_1ga244fb10415539f03cde7ed0ae916018d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="group__window_1ga244fb10415539f03cde7ed0ae916018d" kindref="member">EventType</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>window<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da22995988de764d7a8cb4165fbff371cb" kindref="member">Resized</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">Closed</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da14696db38b4e50b90abffffad50ab44c" kindref="member">FocusGained</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018daed3925e40166423f755045b0c3882868" kindref="member">FocusLost</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>inputs<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">KeyPressed</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7ee0b7f842e837fe969eb195acaf2efd" kindref="member">KeyRepeated</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da4a77f07c8ad223b71ab4ce78a63841ab" kindref="member">KeyReleased</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da9787e93d7821ce61637e6f9f19ef955b" kindref="member">MouseWheelScrolled</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7349f643d689997b7c54bf93e4095f5c" kindref="member">MouseButtonPressed</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da7584c169de594c27f00084b93186fd7c" kindref="member">MouseButtonReleased</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac2770ad109c8063ce69a3608a9a16c08" kindref="member">MouseMoved</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da16f54b4d882ac6f33bfa92572918ac6a" kindref="member">MouseEntered</ref>,<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dabce0118bd8f5bf5e7f849dff486de57f" kindref="member">MouseLeft</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dae2a9941e644616b8853693e7b3b22c96" kindref="member">GamepadButtonPressed</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018daf4590195d79da4a322ee9beb6b44ef66" kindref="member">GamepadButtonReleased</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da18389e2bd7b6b426f7b9d9164bf4a5ba" kindref="member">GamepadAxisMoved</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dad5909d240c46150dc002123ef8abcc2f" kindref="member">GamepadConnected</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac1c12a889ebdc886dc3738b5a146def0" kindref="member">GamepadDisconnected</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da8ed4d3c0783d6f909907e1592ffe47ac" kindref="member">TextEntered</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structgf_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_event" kindref="compound">Event</ref><sp/>{</highlight></codeline>
+<codeline lineno="122" refid="structgf_1_1_event_1_1_key_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_key_event" kindref="compound">KeyEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="123" refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gac7037fec22d5d5215cffce98fc7dca64" kindref="member">Keycode</ref><sp/><ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="structgf_1_1_event_1_1_key_event_1a8a896a0db3c71edac9d7d6ac72942876" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref><sp/><ref refid="structgf_1_1_event_1_1_key_event_1a8a896a0db3c71edac9d7d6ac72942876" kindref="member">scancode</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structgf_1_1_event_1_1_key_event_1a37901cef9d5688a9a56301914cbac416" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Modifiers</ref><sp/><ref refid="structgf_1_1_event_1_1_key_event_1a37901cef9d5688a9a56301914cbac416" kindref="member">modifiers</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structgf_1_1_event_1_1_text_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_text_event" kindref="compound">TextEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="132" refid="structgf_1_1_event_1_1_text_event_1a7919975852904d295dd032cb1e092821" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rune" kindref="compound">Rune</ref><sp/><ref refid="structgf_1_1_event_1_1_text_event_1a7919975852904d295dd032cb1e092821" kindref="member">rune</ref>;<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="structgf_1_1_event_1_1_mouse_button_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_mouse_button_event" kindref="compound">MouseButtonEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="139" refid="structgf_1_1_event_1_1_mouse_button_event_1a62a2ab6e0234516d7a406beef530ef48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga5af782cd2d72913508f6b31f01acc03e" kindref="member">MouseButton</ref><sp/><ref refid="structgf_1_1_event_1_1_mouse_button_event_1a62a2ab6e0234516d7a406beef530ef48" kindref="member">button</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="structgf_1_1_event_1_1_mouse_button_event_1a86bc32db1e37229aebbda38f38c38597" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2i</ref><sp/><ref refid="structgf_1_1_event_1_1_mouse_button_event_1a86bc32db1e37229aebbda38f38c38597" kindref="member">coords</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="structgf_1_1_event_1_1_mouse_cursor_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_mouse_cursor_event" kindref="compound">MouseCursorEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="147" refid="structgf_1_1_event_1_1_mouse_cursor_event_1a80990b4c639919dbdfae3ae20d4578f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2i</ref><sp/><ref refid="structgf_1_1_event_1_1_mouse_cursor_event_1a80990b4c639919dbdfae3ae20d4578f3" kindref="member">coords</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="structgf_1_1_event_1_1_mouse_wheel_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_mouse_wheel_event" kindref="compound">MouseWheelEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="154" refid="structgf_1_1_event_1_1_mouse_wheel_event_1a038548ff93b7a14ba1f65560577b4bea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2i</ref><sp/><ref refid="structgf_1_1_event_1_1_mouse_wheel_event_1a038548ff93b7a14ba1f65560577b4bea" kindref="member">offset</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structgf_1_1_event_1_1_gamepad_button_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_gamepad_button_event" kindref="compound">GamepadButtonEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="161" refid="structgf_1_1_event_1_1_gamepad_button_event_1af2b802df9d86dbadaa756f3e0343d030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_button_event_1af2b802df9d86dbadaa756f3e0343d030" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="162" refid="structgf_1_1_event_1_1_gamepad_button_event_1aaa52cee19742f4c997b66b9494651cad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" kindref="member">GamepadButton</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_button_event_1aaa52cee19742f4c997b66b9494651cad" kindref="member">button</ref>;<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="structgf_1_1_event_1_1_gamepad_axis_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_gamepad_axis_event" kindref="compound">GamepadAxisEvent</ref><sp/>{</highlight></codeline>
+<codeline lineno="169" refid="structgf_1_1_event_1_1_gamepad_axis_event_1a22242d07a7f32429c181bfe2748e8242" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_axis_event_1a22242d07a7f32429c181bfe2748e8242" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="170" refid="structgf_1_1_event_1_1_gamepad_axis_event_1a8681c930472959469a5526293265936d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga40276d90e4e5efa68433fd9040c08b86" kindref="member">GamepadAxis</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_axis_event_1a8681c930472959469a5526293265936d" kindref="member">axis</ref>;<sp/></highlight></codeline>
+<codeline lineno="171" refid="structgf_1_1_event_1_1_gamepad_axis_event_1a941185048f9e708288340fa935e98982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="structgf_1_1_event_1_1_gamepad_axis_event_1a941185048f9e708288340fa935e98982" kindref="member">value</ref>;<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="structgf_1_1_event_1_1_gamepad_connection" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_gamepad_connection" kindref="compound">GamepadConnection</ref><sp/>{</highlight></codeline>
+<codeline lineno="178" refid="structgf_1_1_event_1_1_gamepad_connection_1a1717f8014fc15bedcc47477a5487e02f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gab3aed9942f731ce33866e921d443c5ee" kindref="member">GamepadHwId</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_connection_1a1717f8014fc15bedcc47477a5487e02f" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="structgf_1_1_event_1_1_gamepad_disconnection" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_event_1_1_gamepad_disconnection" kindref="compound">GamepadDisconnection</ref><sp/>{</highlight></codeline>
+<codeline lineno="185" refid="structgf_1_1_event_1_1_gamepad_disconnection_1a4ece3ed8114f6baeaebe74e8ba3f3420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref><sp/><ref refid="structgf_1_1_event_1_1_gamepad_disconnection_1a4ece3ed8114f6baeaebe74e8ba3f3420" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1ga244fb10415539f03cde7ed0ae916018d" kindref="member">EventType</ref><sp/><ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191" refid="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2u</ref><sp/><ref refid="structgf_1_1_event_1abc89690ccc90b26e0e3ba3288419cc64" kindref="member">size</ref>;<sp/></highlight></codeline>
+<codeline lineno="192" refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_key_event" kindref="compound">KeyEvent</ref><sp/><ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>;<sp/></highlight></codeline>
+<codeline lineno="193" refid="structgf_1_1_event_1a023f326966947eba1129f7fe27d287a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_text_event" kindref="compound">TextEvent</ref><sp/><ref refid="structgf_1_1_event_1a023f326966947eba1129f7fe27d287a4" kindref="member">text</ref>;<sp/></highlight></codeline>
+<codeline lineno="194" refid="structgf_1_1_event_1a8e867ca093b5159838125028dff7754c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_mouse_button_event" kindref="compound">MouseButtonEvent</ref><sp/><ref refid="structgf_1_1_event_1a8e867ca093b5159838125028dff7754c" kindref="member">mouseButton</ref>;<sp/></highlight></codeline>
+<codeline lineno="195" refid="structgf_1_1_event_1a1ffa80a9804c81a452b01ce6fc8ba11d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_mouse_cursor_event" kindref="compound">MouseCursorEvent</ref><sp/><ref refid="structgf_1_1_event_1a1ffa80a9804c81a452b01ce6fc8ba11d" kindref="member">mouseCursor</ref>;<sp/></highlight></codeline>
+<codeline lineno="196" refid="structgf_1_1_event_1abb11582bde51fbb6f08c00d637a98160" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_mouse_wheel_event" kindref="compound">MouseWheelEvent</ref><sp/><ref refid="structgf_1_1_event_1abb11582bde51fbb6f08c00d637a98160" kindref="member">mouseWheel</ref>;<sp/></highlight></codeline>
+<codeline lineno="197" refid="structgf_1_1_event_1a8d71827e9b3672af8f45c48405818adf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_gamepad_button_event" kindref="compound">GamepadButtonEvent</ref><sp/><ref refid="structgf_1_1_event_1a8d71827e9b3672af8f45c48405818adf" kindref="member">gamepadButton</ref>;<sp/></highlight></codeline>
+<codeline lineno="198" refid="structgf_1_1_event_1a809da03aa4090c59f03e82e22d0bfcc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_gamepad_axis_event" kindref="compound">GamepadAxisEvent</ref><sp/><ref refid="structgf_1_1_event_1a809da03aa4090c59f03e82e22d0bfcc5" kindref="member">gamepadAxis</ref>;<sp/></highlight></codeline>
+<codeline lineno="199" refid="structgf_1_1_event_1a6c64e1db6097737c548e8615678da58d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_gamepad_connection" kindref="compound">GamepadConnection</ref><sp/><ref refid="structgf_1_1_event_1a6c64e1db6097737c548e8615678da58d" kindref="member">gamepadConnection</ref>;<sp/></highlight></codeline>
+<codeline lineno="200" refid="structgf_1_1_event_1a0c34004fd4bfcbfbc83b0632d6ad4ec4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event_1_1_gamepad_disconnection" kindref="compound">GamepadDisconnection</ref><sp/><ref refid="structgf_1_1_event_1a0c34004fd4bfcbfbc83b0632d6ad4ec4" kindref="member">gamepadDisconnection</ref>;<sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GL_EVENT_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h"/>
+  </compounddef>
+</doxygen>

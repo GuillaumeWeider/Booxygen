@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_wavelet_noise3_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::WaveletNoise3D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise3_d" prot="public" virt="non-virtual">gf::Noise3D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_wavelet_noise3_d_1ae7a3d3c2ab1b758394ae2e8d7ea0a6d1" prot="private" static="no" mutable="no">
+        <type>std::ptrdiff_t</type>
+        <definition>std::ptrdiff_t gf::WaveletNoise3D::m_n</definition>
+        <argsstring></argsstring>
+        <name>m_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="385" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_wavelet_noise3_d_1a93a1d5bde8a34c622bdec1aaca824d71" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; gf::WaveletNoise3D::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="386" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_wavelet_noise3_d_1ab3dd2fa965498edb82bd7adafb19b587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::WaveletNoise3D::WaveletNoise3D</definition>
+        <argsstring>(Random &amp;random, std::ptrdiff_t n=32)</argsstring>
+        <name>WaveletNoise3D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>std::ptrdiff_t</type>
+          <declname>n</declname>
+          <defval>32</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wavelet tile size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="380" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_wavelet_noise3_d_1aa2b256aee7fb8d24402a8ca498abc44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::WaveletNoise3D::getValue</definition>
+        <argsstring>(double x, double y, double z) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="382" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wavelet 3D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://graphics.pixar.com/library/WaveletNoise/paper.pdf">Wavelet Noise. Robert L. Cook, Tony DeRose, Pixar Animation Studios.</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1113">
+        <label>gf::WaveletNoise3D</label>
+        <link refid="classgf_1_1_wavelet_noise3_d"/>
+        <childnode refid="1114" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1115">
+        <label>gf::WaveletNoise3D</label>
+        <link refid="classgf_1_1_wavelet_noise3_d"/>
+        <childnode refid="1116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="372" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="372" bodyend="387"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_wavelet_noise3_d_1aa2b256aee7fb8d24402a8ca498abc44c" prot="public" virt="virtual"><scope>gf::WaveletNoise3D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_wavelet_noise3_d_1a93a1d5bde8a34c622bdec1aaca824d71" prot="private" virt="non-virtual"><scope>gf::WaveletNoise3D</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_wavelet_noise3_d_1ae7a3d3c2ab1b758394ae2e8d7ea0a6d1" prot="private" virt="non-virtual"><scope>gf::WaveletNoise3D</scope><name>m_n</name></member>
+      <member refid="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" virt="non-virtual"><scope>gf::WaveletNoise3D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_wavelet_noise3_d_1ab3dd2fa965498edb82bd7adafb19b587" prot="public" virt="non-virtual"><scope>gf::WaveletNoise3D</scope><name>WaveletNoise3D</name></member>
+      <member refid="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" virt="virtual"><scope>gf::WaveletNoise3D</scope><name>~Noise3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

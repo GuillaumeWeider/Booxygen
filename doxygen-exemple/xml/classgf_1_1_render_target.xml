@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_render_target" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::RenderTarget</compoundname>
+    <derivedcompoundref refid="classgf_1_1_render_pipeline" prot="public" virt="non-virtual">gf::RenderPipeline</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_render_texture" prot="public" virt="non-virtual">gf::RenderTexture</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_render_window" prot="public" virt="non-virtual">gf::RenderWindow</derivedcompoundref>
+    <includes refid="_render_target_8h" local="no">gf/RenderTarget.h</includes>
+    <innerclass refid="structgf_1_1_render_target_1_1_locations" prot="private">gf::RenderTarget::Locations</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Drawing commands</header>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a76ae398641a9171c45bc31abd6e42112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_region" kindref="compound">Region</ref></type>
+        <definition>Region gf::RenderTarget::getCanonicalScissorBox</definition>
+        <argsstring>()</argsstring>
+        <name>getCanonicalScissorBox</name>
+        <briefdescription>
+<para>Get the current canonical scissor box. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current canonical scissor box </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ab47783a4937a88fcf72e282030b86c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::setCanonicalScissorBox</definition>
+        <argsstring>(const Region &amp;box)</argsstring>
+        <name>setCanonicalScissorBox</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_region" kindref="compound">Region</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Define the canonical scissor box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>box</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new canonical scissor box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a29797883fe14f6e1c49c6290adbd4a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref></type>
+        <definition>RectI gf::RenderTarget::getScissorBox</definition>
+        <argsstring>()</argsstring>
+        <name>getScissorBox</name>
+        <briefdescription>
+<para>Get the current scissor box. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current scissor box </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ac400fc5713a745e5459a285ca4c3c11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::setScissorBox</definition>
+        <argsstring>(const RectI &amp;box)</argsstring>
+        <name>setScissorBox</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Define the scissor box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>box</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new scissor box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::clear</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>clear</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Clear the entire target with a single color. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is usually called once every frame, to clear the previous contents of the target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color to use to clear the render target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a878f6ffa9ba25da18db791fa83eac4c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear the entire target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is usually called once every frame, to clear the previous contents of the target.</para><para>The color used to clear the target is the last color passed to the other version of <ref refid="classgf_1_1_render_target_1a878f6ffa9ba25da18db791fa83eac4c3" kindref="member">clear()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1aa1814c8b195d2a1a5e6525a3cba3c26f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga875aab9d7de883344d72355cc09597e6" kindref="member">RangeF</ref></type>
+        <definition>RangeF gf::RenderTarget::getAliasedLineWidthRange</definition>
+        <argsstring>() const</argsstring>
+        <name>getAliasedLineWidthRange</name>
+        <briefdescription>
+<para>Get the range for aliased line width. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A range for the line width </para></simplesect>
+<simplesect kind="see"><para>setLineWidth(), <ref refid="classgf_1_1_render_target_1af7b6eeeca709f64b81ea6a09d13ac8d9" kindref="member">getLineWidth()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1af7b6eeeca709f64b81ea6a09d13ac8d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::RenderTarget::getLineWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getLineWidth</name>
+        <briefdescription>
+<para>Get the line width. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current line width </para></simplesect>
+<simplesect kind="see"><para>setLineWidth(), <ref refid="classgf_1_1_render_target_1aa1814c8b195d2a1a5e6525a3cba3c26f" kindref="member">getAliasedLineWidthRange()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(const Vertex *vertices, std::size_t count, PrimitiveType type, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw primitives defined by an array of vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a56eaf8b36e55cac0f2fd946443a72a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(const Vertex *vertices, const uint16_t *indices, std::size_t count, PrimitiveType type, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw primitives defined by an array of vertices and their indices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of indices in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1aa2c4723f1953113890771b1659096ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(const Vertex *vertices, int *first, const std::size_t *count, std::size_t primcount, PrimitiveType type, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>const std::size_t *</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>primcount</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw primitives defined by an array of vertices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of starting indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of number of vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>primcount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements in <computeroutput>first</computeroutput> and <computeroutput>count</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a71d282bd4078463487daac06e544f199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(const Vertex *vertices, const uint16_t **indices, const std::size_t *count, std::size_t primcount, PrimitiveType type, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>const uint16_t **</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>const std::size_t *</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>primcount</declname>
+        </param>
+        <param>
+          <type><ref refid="group__graphics_1ga147b34accfb774f4ea41ab0cb94f28e1" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw primitives defined by an array of vertices and their indices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the vertices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of pointers to the indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of number of indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>primcount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements in <computeroutput>indices</computeroutput> and <computeroutput>count</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of primitives to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a7a31eaa2a6710e4ec164807e46977159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(const VertexBuffer &amp;buffer, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw a vertex buffer to the render target. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vertex buffer containing a geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a39de6116a654206f146ce4d713713f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::draw</definition>
+        <argsstring>(Drawable &amp;drawable, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type><ref refid="classgf_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>drawable</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Draw a drawable object to the render target. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>drawable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render states to use for drawing </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="225" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>View management</header>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::setView</definition>
+        <argsstring>(const View &amp;view)</argsstring>
+        <name>setView</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Change the current active view. </para>        </briefdescription>
+        <detaileddescription>
+<para>The view is like a 2D camera, it controls which part of the 2D scene is visible, and how it is viewed in the render target.</para><para>The new view will affect everything that is drawn, until another view is set.</para><para>The render target keeps its own copy of the view object, so it is not necessary to keep the original one alive after calling this function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New view to use</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" kindref="member">getView()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+        <definition>const View&amp; gf::RenderTarget::getView</definition>
+        <argsstring>() const</argsstring>
+        <name>getView</name>
+        <briefdescription>
+<para>Get the view currently in use in the render target. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The view object that is currently used</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" kindref="member">setView()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="261" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1afcb4bee93cdb4b5449dfbf823773f512" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_region" kindref="compound">Region</ref></type>
+        <definition>Region gf::RenderTarget::getCanonicalViewport</definition>
+        <argsstring>(const View &amp;view) const</argsstring>
+        <name>getCanonicalViewport</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Get the canonical viewport of a view, applied to this render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>The viewport is defined in the view as a ratio, this function simply applies this ratio to the current dimensions of the render target to calculate the pixels rectangle that the viewport actually covers in the target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view for which we want to compute the viewport</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Canonical viewport rectangle, expressed in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a51f479ce259f75e323549980cc3f014e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref></type>
+        <definition>RectI gf::RenderTarget::getViewport</definition>
+        <argsstring>(const View &amp;view) const</argsstring>
+        <name>getViewport</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Get the viewport of a view, applied to this render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>The viewport is defined in the view as a ratio, this function simply applies this ratio to the current dimensions of the render target to calculate the pixels rectangle that the viewport actually covers in the target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view for which we want to compute the viewport</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Viewport rectangle, expressed in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="291" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::RenderTarget::mapPixelToCoords</definition>
+        <argsstring>(Vector2i point, const View &amp;view) const</argsstring>
+        <name>mapPixelToCoords</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Convert a point from target coordinates to world coordinates. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function finds the 2D position that matches the given pixel of the render target. In other words, it does the inverse of what the graphics card does, to find the initial position of a rendered pixel.</para><para>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at <formula id="84">$(10, 50)$</formula> in your render target may map to the point <formula id="85">$(150, 75)$</formula> in your 2D world <ndash/> if the view is translated by <formula id="86">$(140, 25)$</formula>.</para><para>For windows, this function is typically used to find which point (or object) is located below the mouse cursor.</para><para>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixel to convert </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view to use for converting the point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted point, in world coordinates</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" kindref="member">mapCoordsToPixel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a78fae041fa10cd9a3a960f816b1147cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::RenderTarget::mapPixelToCoords</definition>
+        <argsstring>(Vector2i point) const</argsstring>
+        <name>mapPixelToCoords</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Convert a point from target coordinates to world coordinates, using the current view. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is an overload of the <ref refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" kindref="member">mapPixelToCoords()</ref> function that implicitly uses the current view.</para><para>It is equivalent to:</para><para><programlisting><codeline><highlight class="normal">target.<ref refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" kindref="member">mapPixelToCoords</ref>(point,<sp/>target.<ref refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" kindref="member">getView</ref>());</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixel to convert</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted point, in world coordinates</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" kindref="member">mapCoordsToPixel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::RenderTarget::mapCoordsToPixel</definition>
+        <argsstring>(Vector2f point, const View &amp;view) const</argsstring>
+        <name>mapCoordsToPixel</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Convert a point from world coordinates to target coordinates. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function finds the pixel of the render target that matches the given 2D point. In other words, it goes through the same process as the graphics card, to compute the final position of a rendered point.</para><para>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at <formula id="85">$(150, 75)$</formula> in your 2D world may map to the pixel <formula id="84">$(10, 50)$</formula> of your render target <ndash/> if the view is translated by <formula id="86">$(140, 25)$</formula>.</para><para>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to convert </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view to use for converting the point</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted point, in target coordinates (pixels)</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" kindref="member">mapPixelToCoords()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1aebfe664cad224644a04f2a82cb4acad7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::RenderTarget::mapCoordsToPixel</definition>
+        <argsstring>(Vector2f point) const</argsstring>
+        <name>mapCoordsToPixel</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Convert a point from world coordinates to target coordinates, using the current view. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is an overload of the mapCoordsToPixel function that implicitly uses the current view.</para><para>It is equivalent to:</para><para><programlisting><codeline><highlight class="normal">target.<ref refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" kindref="member">mapCoordsToPixel</ref>(point,<sp/>target.<ref refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" kindref="member">getView</ref>());</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to convert</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted point, in target coordinates (pixels)</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" kindref="member">mapPixelToCoords()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="391" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_render_target_1ab429f48bd46fa2da2589f8a86c6c055b" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_view" kindref="compound">View</ref></type>
+        <definition>View gf::RenderTarget::m_view</definition>
+        <argsstring></argsstring>
+        <name>m_view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="427" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_render_target_1ae38db743beef9bb0131a6c7b234d69e2" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_shader" kindref="compound">Shader</ref></type>
+        <definition>Shader gf::RenderTarget::m_defaultShader</definition>
+        <argsstring></argsstring>
+        <name>m_defaultShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="428" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_render_target_1afb7cb6663d711fff55aba27df6f1fcbf" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_shader" kindref="compound">Shader</ref></type>
+        <definition>Shader gf::RenderTarget::m_defaultAlphaShader</definition>
+        <argsstring></argsstring>
+        <name>m_defaultAlphaShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="429" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_render_target_1a0dfc70e1b6a5a2d4e701e25681b1ad81" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref></type>
+        <definition>Texture gf::RenderTarget::m_defaultTexture</definition>
+        <argsstring></argsstring>
+        <name>m_defaultTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="430" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_render_target_1a42e965c05374a9bd8f9bef9630572479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RenderTarget::RenderTarget</definition>
+        <argsstring>()=default</argsstring>
+        <name>RenderTarget</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a7d5128d6f88500fdc8b526ca24844431" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::RenderTarget::~RenderTarget</definition>
+        <argsstring>()</argsstring>
+        <name>~RenderTarget</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1af36a6312551fa0e297a9f6651b9fee82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RenderTarget::RenderTarget</definition>
+        <argsstring>(const RenderTarget &amp;)=delete</argsstring>
+        <name>RenderTarget</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a06233abc86a7db72c62b012ed151dc62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+        <definition>RenderTarget&amp; gf::RenderTarget::operator=</definition>
+        <argsstring>(const RenderTarget &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a6dc4ae258436db802fa4a2848a4010a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>virtual Vector2u gf::RenderTarget::getSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getSize</name>
+        <reimplementedby refid="classgf_1_1_render_window_1aa7024ba44b085483b89c029851b0e2f2">getSize</reimplementedby>
+        <reimplementedby refid="classgf_1_1_render_pipeline_1a1fde5eca1a18130be54fc01033dad809">getSize</reimplementedby>
+        <reimplementedby refid="classgf_1_1_render_texture_1addd1b857dcf658ca3807a9d3dc62d55b">getSize</reimplementedby>
+        <briefdescription>
+<para>Return the size of the rendering region of the target. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_render_target_1ac870325bffb142b4675ee2b3e9936b66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+<para>Performs the common initialization step after creation. </para>        </briefdescription>
+        <detaileddescription>
+<para>The derived classes must call this function after the target is created and ready for drawing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a4c83cb262854ad4b3cf77bc811c1bff1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::RenderTarget::captureFramebuffer</definition>
+        <argsstring>(unsigned name) const</argsstring>
+        <name>captureFramebuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Capture the given framebuffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the framebuffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="410" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_render_target_1a6ea8192de2a9834faca3acb61526945a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::initializeViews</definition>
+        <argsstring>()</argsstring>
+        <name>initializeViews</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1ad07f6224dca761a03ffdfcf5c0d2b465" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::initializeShader</definition>
+        <argsstring>()</argsstring>
+        <name>initializeShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a94d2dc4fdd799b9e4452d5543923497c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::initializeTexture</definition>
+        <argsstring>()</argsstring>
+        <name>initializeTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a962a08e4939f00bab73b4423244cbff8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::drawStart</definition>
+        <argsstring>(const Vertex *vertices, const RenderStates &amp;states, Locations &amp;locations)</argsstring>
+        <name>drawStart</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>Locations &amp;</type>
+          <declname>locations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_target_1a000e05fe8439e1b60ed619342fec951d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTarget::drawFinish</definition>
+        <argsstring>(const Locations &amp;locations)</argsstring>
+        <name>drawFinish</name>
+        <param>
+          <type>const Locations &amp;</type>
+          <declname>locations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="424" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all render targets (window, texture, ...) </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref> defines the common behavior of all the 2D render targets usable in the graphics module. It makes it possible to draw 2D entities like sprites, shapes, text without using any OpenGL command directly.</para><para>A <ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref> is also able to use views (<ref refid="classgf_1_1_view" kindref="compound">gf::View</ref>), which are a kind of 2D cameras. With views you can globally scroll, rotate or zoom everything that is drawn, without having to transform every single entity. See the documentation of <ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> for more details and sample pieces of code about this class.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref>, <ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref>, <ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="633">
+        <label>gf::RenderTexture</label>
+        <link refid="classgf_1_1_render_texture"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>gf::RenderPipeline</label>
+        <link refid="classgf_1_1_render_pipeline"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>gf::RenderTarget</label>
+        <link refid="classgf_1_1_render_target"/>
+      </node>
+      <node id="634">
+        <label>gf::RenderWindow</label>
+        <link refid="classgf_1_1_render_window"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" line="66" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTarget.h" bodystart="66" bodyend="431"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_render_target_1a4c83cb262854ad4b3cf77bc811c1bff1" prot="protected" virt="non-virtual"><scope>gf::RenderTarget</scope><name>captureFramebuffer</name></member>
+      <member refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_target_1a878f6ffa9ba25da18db791fa83eac4c3" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a56eaf8b36e55cac0f2fd946443a72a9c" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1aa2c4723f1953113890771b1659096ad1" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a71d282bd4078463487daac06e544f199" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a7a31eaa2a6710e4ec164807e46977159" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a39de6116a654206f146ce4d713713f93" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a000e05fe8439e1b60ed619342fec951d" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>drawFinish</name></member>
+      <member refid="classgf_1_1_render_target_1a962a08e4939f00bab73b4423244cbff8" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>drawStart</name></member>
+      <member refid="classgf_1_1_render_target_1aa1814c8b195d2a1a5e6525a3cba3c26f" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getAliasedLineWidthRange</name></member>
+      <member refid="classgf_1_1_render_target_1a76ae398641a9171c45bc31abd6e42112" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1afcb4bee93cdb4b5449dfbf823773f512" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getCanonicalViewport</name></member>
+      <member refid="classgf_1_1_render_target_1af7b6eeeca709f64b81ea6a09d13ac8d9" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getLineWidth</name></member>
+      <member refid="classgf_1_1_render_target_1a29797883fe14f6e1c49c6290adbd4a8c" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1a6dc4ae258436db802fa4a2848a4010a6" prot="public" virt="pure-virtual"><scope>gf::RenderTarget</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getView</name></member>
+      <member refid="classgf_1_1_render_target_1a51f479ce259f75e323549980cc3f014e" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>getViewport</name></member>
+      <member refid="classgf_1_1_render_target_1ac870325bffb142b4675ee2b3e9936b66" prot="protected" virt="non-virtual"><scope>gf::RenderTarget</scope><name>initialize</name></member>
+      <member refid="classgf_1_1_render_target_1ad07f6224dca761a03ffdfcf5c0d2b465" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>initializeShader</name></member>
+      <member refid="classgf_1_1_render_target_1a94d2dc4fdd799b9e4452d5543923497c" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>initializeTexture</name></member>
+      <member refid="classgf_1_1_render_target_1a6ea8192de2a9834faca3acb61526945a" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>initializeViews</name></member>
+      <member refid="classgf_1_1_render_target_1afb7cb6663d711fff55aba27df6f1fcbf" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>m_defaultAlphaShader</name></member>
+      <member refid="classgf_1_1_render_target_1ae38db743beef9bb0131a6c7b234d69e2" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>m_defaultShader</name></member>
+      <member refid="classgf_1_1_render_target_1a0dfc70e1b6a5a2d4e701e25681b1ad81" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>m_defaultTexture</name></member>
+      <member refid="classgf_1_1_render_target_1ab429f48bd46fa2da2589f8a86c6c055b" prot="private" virt="non-virtual"><scope>gf::RenderTarget</scope><name>m_view</name></member>
+      <member refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1aebfe664cad224644a04f2a82cb4acad7" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a78fae041fa10cd9a3a960f816b1147cb" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a06233abc86a7db72c62b012ed151dc62" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_render_target_1a42e965c05374a9bd8f9bef9630572479" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_target_1af36a6312551fa0e297a9f6651b9fee82" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_target_1ab47783a4937a88fcf72e282030b86c54" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>setCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1ac400fc5713a745e5459a285ca4c3c11c" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>setScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" prot="public" virt="non-virtual"><scope>gf::RenderTarget</scope><name>setView</name></member>
+      <member refid="classgf_1_1_render_target_1a7d5128d6f88500fdc8b526ca24844431" prot="public" virt="virtual"><scope>gf::RenderTarget</scope><name>~RenderTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

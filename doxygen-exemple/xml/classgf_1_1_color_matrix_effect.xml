@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_color_matrix_effect" kind="class" language="C++" prot="public">
+    <compoundname>gf::ColorMatrixEffect</compoundname>
+    <basecompoundref refid="classgf_1_1_effect" prot="public" virt="non-virtual">gf::Effect</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_color_blind_effect" prot="public" virt="non-virtual">gf::ColorBlindEffect</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_color_effect" prot="public" virt="non-virtual">gf::ColorEffect</derivedcompoundref>
+    <includes refid="_effects_8h" local="no">gf/Effects.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_color_matrix_effect_1a3c2bdf727146eca17378302d14e011df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ColorMatrixEffect::ColorMatrixEffect</definition>
+        <argsstring>()</argsstring>
+        <name>ColorMatrixEffect</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_color_matrix_effect_1a466b537c33ecb6a1db77a2116d264c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ColorMatrixEffect::setColorMatrix</definition>
+        <argsstring>(const Matrix4f &amp;mat)</argsstring>
+        <name>setColorMatrix</name>
+        <param>
+          <type>const <ref refid="group__core_1ga602d9345cc8ee188179c52bc1c854771" kindref="member">Matrix4f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Set the color matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>You can use this function to set your own color matrix. The color of the texture is left-multiplied by the color matrix to get the final color.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic color matrix effect. </para>    </briefdescription>
+    <detaileddescription>
+<para>This effect uses a color matrix. You can use it directly or use a subclass that defines their own color matrix for various needs.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_color_effect" kindref="compound">gf::ColorEffect</ref>, <ref refid="classgf_1_1_color_blind_effect" kindref="compound">gf::ColorBlindEffect</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="139">
+        <label>gf::ColorMatrixEffect</label>
+        <link refid="classgf_1_1_color_matrix_effect"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>gf::ColorEffect</label>
+        <link refid="classgf_1_1_color_effect"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>gf::Shader</label>
+        <link refid="classgf_1_1_shader"/>
+      </node>
+      <node id="140">
+        <label>gf::Effect</label>
+        <link refid="classgf_1_1_effect"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>gf::ColorBlindEffect</label>
+        <link refid="classgf_1_1_color_blind_effect"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="144">
+        <label>gf::ColorMatrixEffect</label>
+        <link refid="classgf_1_1_color_matrix_effect"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>gf::Shader</label>
+        <link refid="classgf_1_1_shader"/>
+      </node>
+      <node id="145">
+        <label>gf::Effect</label>
+        <link refid="classgf_1_1_effect"/>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Effects.h" bodystart="78" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_shader_1a21f61fdeab80da2b4e3c5b2308017ce3" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>bind</name></member>
+      <member refid="classgf_1_1_color_matrix_effect_1a3c2bdf727146eca17378302d14e011df" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>ColorMatrixEffect</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227a582ea2a544a29dcf181fd3ac837b5199" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>Fragment</name></member>
+      <member refid="classgf_1_1_shader_1a00c2793d2d1973c62d12c1d0b75ada26" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a3718f44bb7179162fc6bd478f63ceb3f" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_shader_1a4b5bc20399f348dce7a48a868fe451e9" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1ae23130240044b2f765e93a6abf874452" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_shader_1a7d58b1c326d1c7f34db8ee6599dd0715" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a5eb464468e1a8f27a546b14ccb0691e0" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_shader_1a3761570c34abae63574afe373fd78515" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_color_matrix_effect_1a466b537c33ecb6a1db77a2116d264c5c" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setColorMatrix</name></member>
+      <member refid="classgf_1_1_shader_1ac083437e59677e779e3508e2f0097fbf" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a18ee6fb09f42d8326f1de7dc07d6aa42" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ac26d37abd3cb8cc0e71a81bc4e89f734" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1adb1d146542c0c727db6d9b79e754f6d0" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a41792cd93bd178ec2bac04ede18b04e3" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ad91743c1e70bc2925e2b94da215b0c16" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1ace674a07f82cd88e0d0287a085be2e28" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1aa7986a4d762df6f94f5aa9d238752b4b" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>setUniform</name></member>
+      <member refid="classgf_1_1_shader_1a2a7a09355bc8c85e5cc9ebbf129a8ce7" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1ab369b72dbf021d3777029122a2c01db5" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>Shader</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>Type</name></member>
+      <member refid="classgf_1_1_shader_1a5478f3e7a221048427bae061d0576227abd13198f949b8b612939dba17ddace08" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>Vertex</name></member>
+      <member refid="classgf_1_1_shader_1a2f551c64a14e24e9980f778ad2004e83" prot="public" virt="non-virtual"><scope>gf::ColorMatrixEffect</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

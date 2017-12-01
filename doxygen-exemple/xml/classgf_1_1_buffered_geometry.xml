@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_buffered_geometry" kind="class" language="C++" prot="public">
+    <compoundname>gf::BufferedGeometry</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <includes refid="_buffered_geometry_8h" local="no">gf/BufferedGeometry.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_buffered_geometry_1aea95787b0d8c5f633e6b37bf3109b770" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> *</type>
+        <definition>const VertexBuffer* gf::BufferedGeometry::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="194" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_buffered_geometry_1aa515083a9a05510c92ed5dec71400bca" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> *</type>
+        <definition>const VertexBuffer* gf::BufferedGeometry::m_outlineBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_outlineBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="195" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_buffered_geometry_1a1a3c380c5395f0e8ed6e46edfebeb793" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> *</type>
+        <definition>const BareTexture* gf::BufferedGeometry::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="196" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_buffered_geometry_1a7400c927ed920b6d8362bac18e00261b" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::BufferedGeometry::m_bounds</definition>
+        <argsstring></argsstring>
+        <name>m_bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="197" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a5ef09dda7f624a420d919561d5a41c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::BufferedGeometry::BufferedGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>BufferedGeometry</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a45cb20dc6c0f55d1d89863d9505b6358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::BufferedGeometry::BufferedGeometry</definition>
+        <argsstring>(const VertexBuffer &amp;buffer)</argsstring>
+        <name>BufferedGeometry</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vertex buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a560dbfbcedfd665f242421b9661856c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::BufferedGeometry::BufferedGeometry</definition>
+        <argsstring>(const VertexBuffer &amp;buffer, const VertexBuffer &amp;outlineBuffer)</argsstring>
+        <name>BufferedGeometry</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>outlineBuffer</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a buffer and an outline buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vertex buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outlineBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An outline buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a48a306aae3ff919d7fc43491f94a6349" kindref="member">setBuffer()</ref>, <ref refid="classgf_1_1_buffered_geometry_1a0d0666348c6158f445601d664abd2c0f" kindref="member">setOutlineBuffer()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a48a306aae3ff919d7fc43491f94a6349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::setBuffer</definition>
+        <argsstring>(const VertexBuffer &amp;buffer)</argsstring>
+        <name>setBuffer</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Set the vertex buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vertex buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a0d0666348c6158f445601d664abd2c0f" kindref="member">setOutlineBuffer()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="84" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a0d0666348c6158f445601d664abd2c0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::setOutlineBuffer</definition>
+        <argsstring>(const VertexBuffer &amp;outlineBuffer)</argsstring>
+        <name>setOutlineBuffer</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>outlineBuffer</declname>
+        </param>
+        <briefdescription>
+<para>Set the outline buffer, if any. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outlineBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An outline buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a48a306aae3ff919d7fc43491f94a6349" kindref="member">setBuffer()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::setTexture</definition>
+        <argsstring>(const BareTexture &amp;texture)</argsstring>
+        <name>setTexture</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Change the source texture of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The texture must exist as long as the geometry uses it. Indeed, the geometry doesn&apos;t store its own copy of the texture, but rather keeps a pointer to the one that you passed to this function. If the source texture is destroyed and the geometry tries to use it, the behavior is undefined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a950f1d13063e89bfe314b6d725fec770" kindref="member">getTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="111" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a950f1d13063e89bfe314b6d725fec770" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> &amp;</type>
+        <definition>const BareTexture&amp; gf::BufferedGeometry::getTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>getTexture</name>
+        <briefdescription>
+<para>Get the source texture of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned reference is const, which means that you can&apos;t modify the texture when you retrieve it with this function.</para><para><simplesect kind="return"><para>Reference to the geometry&apos;s texture</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a5784820ee7936b4fb4be7090bb85cd9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::BufferedGeometry::hasTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>hasTexture</name>
+        <briefdescription>
+<para>Check if a texture is set. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a texture is already set</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" kindref="member">setTexture()</ref>, <ref refid="classgf_1_1_buffered_geometry_1a950f1d13063e89bfe314b6d725fec770" kindref="member">getTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="136" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a647d20add2364d692a9dd81df988980e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::unsetTexture</definition>
+        <argsstring>()</argsstring>
+        <name>unsetTexture</name>
+        <briefdescription>
+<para>Unset the source texture of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>After a call to this function, the geometry has no source texture.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" kindref="member">setTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="147" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a78b8e1fc25fffe7e480595318ac0ccb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::setLocalBounds</definition>
+        <argsstring>(const RectF &amp;bounds)</argsstring>
+        <name>setLocalBounds</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Set the local bounds of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>There is no way to compute the bounds of the object with the vertex buffer. So you have to set it directly with this function when you create the geometry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local bounds of the object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="160" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1ad516d82c8aea4b27aa11f5ada5709346" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::BufferedGeometry::getLocalBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalBounds</name>
+        <briefdescription>
+<para>Get the local bounding rectangle of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned rectangle is in local coordinates, which means that it ignores the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the entity in the entity&apos;s coordinate system.</para><para><simplesect kind="return"><para>Local bounding rectangle of the entity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="175" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1ac9806516b9f9ab9d4cf5beea8d1055a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::BufferedGeometry::setAnchor</definition>
+        <argsstring>(Anchor anchor)</argsstring>
+        <name>setAnchor</name>
+        <param>
+          <type><ref refid="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" kindref="member">Anchor</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+<para>Set the anchor origin of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>Compute the origin of the entity based on the local bounds and the specified anchor. Internally, this function calls <computeroutput><ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor of the entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffered_geometry_1ad516d82c8aea4b27aa11f5ada5709346" kindref="member">getLocalBounds()</ref>, <ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffered_geometry_1a88c3b2cdccdde3be5ed3256ab06fc83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::BufferedGeometry::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="191" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A drawable for buffers. </para>    </briefdescription>
+    <detaileddescription>
+<para>A buffered geometry is a lightweight object to draw vertex buffers. It can handle two vertex buffers, one for the main object and one for the outline when it exists. The outline is drawn first and the main object second.</para><para>In addition to the geometry, a buffered geometry can store a texture if needed because a vertex buffer has no notion of texture.</para><para>Finally, a buffered geometry can remember the local bounds of the original object, so that it can be used for setting an anchor.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_vertex_buffer" kindref="compound">gf::VertexBuffer</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="72">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="71">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>gf::BufferedGeometry</label>
+        <link refid="classgf_1_1_buffered_geometry"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="75">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="74">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gf::BufferedGeometry</label>
+        <link refid="classgf_1_1_buffered_geometry"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" line="55" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferedGeometry.h" bodystart="55" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_buffered_geometry_1a5ef09dda7f624a420d919561d5a41c44" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>BufferedGeometry</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a45cb20dc6c0f55d1d89863d9505b6358" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>BufferedGeometry</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a560dbfbcedfd665f242421b9661856c8" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>BufferedGeometry</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a88c3b2cdccdde3be5ed3256ab06fc83e" prot="public" virt="virtual"><scope>gf::BufferedGeometry</scope><name>draw</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1ad516d82c8aea4b27aa11f5ada5709346" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a950f1d13063e89bfe314b6d725fec770" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a5784820ee7936b4fb4be7090bb85cd9b" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>hasTexture</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a7400c927ed920b6d8362bac18e00261b" prot="private" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>m_bounds</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1aea95787b0d8c5f633e6b37bf3109b770" prot="private" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>m_buffer</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1aa515083a9a05510c92ed5dec71400bca" prot="private" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>m_outlineBuffer</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a1a3c380c5395f0e8ed6e46edfebeb793" prot="private" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>scale</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1ac9806516b9f9ab9d4cf5beea8d1055a8" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a48a306aae3ff919d7fc43491f94a6349" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setBuffer</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a78b8e1fc25fffe7e480595318ac0ccb1" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a0d0666348c6158f445601d664abd2c0f" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setOutlineBuffer</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a4b4c46d8b66e5f4e428ebb2feb1795aa" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>setTexture</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_buffered_geometry_1a647d20add2364d692a9dd81df988980e" prot="public" virt="non-virtual"><scope>gf::BufferedGeometry</scope><name>unsetTexture</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::BufferedGeometry</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

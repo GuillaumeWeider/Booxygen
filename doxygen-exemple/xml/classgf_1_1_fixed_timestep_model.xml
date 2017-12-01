@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_fixed_timestep_model" kind="class" language="C++" prot="public">
+    <compoundname>gf::FixedTimestepModel</compoundname>
+    <basecompoundref refid="classgf_1_1_model" prot="public" virt="non-virtual">gf::Model</basecompoundref>
+    <includes refid="_models_8h" local="no">gf/Models.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_fixed_timestep_model_1a4545d474e2a392888263c83e619fb347" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_model" kindref="compound">Model</ref> &amp;</type>
+        <definition>Model&amp; gf::FixedTimestepModel::m_model</definition>
+        <argsstring></argsstring>
+        <name>m_model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fixed_timestep_model_1ac4ab3025b62222938751489290e35975" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::FixedTimestepModel::m_timestep</definition>
+        <argsstring></argsstring>
+        <name>m_timestep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="54" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_fixed_timestep_model_1a72fcb70103d7deba186144651bdf8793" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::FixedTimestepModel::m_elapsed</definition>
+        <argsstring></argsstring>
+        <name>m_elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="55" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_fixed_timestep_model_1a3a4e0f120f896b58c619ca087523aa8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::FixedTimestepModel::FixedTimestepModel</definition>
+        <argsstring>(Model &amp;model, Time timestep=gf::seconds(1/60.0f))</argsstring>
+        <name>FixedTimestepModel</name>
+        <param>
+          <type><ref refid="classgf_1_1_model" kindref="compound">Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>timestep</declname>
+          <defval>gf::seconds(1/60.0f)</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original model </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fixed timestep </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_fixed_timestep_model_1a39128be2df8cd081d2ab98f8a54262a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::FixedTimestepModel::update</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>update</name>
+        <reimplements refid="classgf_1_1_model_1a8b5f07e8e362d5b6326690566a719324">update</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the model&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para>Models are updated each frame. The time between two frames is given as a parameter to help in the update. This time is in seconds.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" kindref="member">gf::ModelContainer::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fixed timestep model. </para>    </briefdescription>
+    <detaileddescription>
+<para>This model takes another model that needs a fixed timestep and provides it event if the original timestep is not fixed. This may be useful for physics model, for example. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="311">
+        <label>gf::FixedTimestepModel</label>
+        <link refid="classgf_1_1_fixed_timestep_model"/>
+        <childnode refid="312" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>gf::Model</label>
+        <link refid="classgf_1_1_model"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="313">
+        <label>gf::FixedTimestepModel</label>
+        <link refid="classgf_1_1_fixed_timestep_model"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>gf::Model</label>
+        <link refid="classgf_1_1_model"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" line="40" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Models.h" bodystart="40" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_fixed_timestep_model_1a3a4e0f120f896b58c619ca087523aa8f" prot="public" virt="non-virtual"><scope>gf::FixedTimestepModel</scope><name>FixedTimestepModel</name></member>
+      <member refid="classgf_1_1_fixed_timestep_model_1a72fcb70103d7deba186144651bdf8793" prot="private" virt="non-virtual"><scope>gf::FixedTimestepModel</scope><name>m_elapsed</name></member>
+      <member refid="classgf_1_1_fixed_timestep_model_1a4545d474e2a392888263c83e619fb347" prot="private" virt="non-virtual"><scope>gf::FixedTimestepModel</scope><name>m_model</name></member>
+      <member refid="classgf_1_1_fixed_timestep_model_1ac4ab3025b62222938751489290e35975" prot="private" virt="non-virtual"><scope>gf::FixedTimestepModel</scope><name>m_timestep</name></member>
+      <member refid="classgf_1_1_fixed_timestep_model_1a39128be2df8cd081d2ab98f8a54262a4" prot="public" virt="virtual"><scope>gf::FixedTimestepModel</scope><name>update</name></member>
+      <member refid="classgf_1_1_model_1aed31deb703dcc9daa2862c20682abc13" prot="public" virt="virtual"><scope>gf::FixedTimestepModel</scope><name>~Model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

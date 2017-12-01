@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_texture" kind="class" language="C++" prot="public">
+    <compoundname>gf::Texture</compoundname>
+    <basecompoundref refid="classgf_1_1_bare_texture" prot="public" virt="non-virtual">gf::BareTexture</basecompoundref>
+    <includes refid="_texture_8h" local="no">gf/Texture.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_texture_1a39b5c41efa692255ba9e5e6ab4449535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Texture::Texture</definition>
+        <argsstring>()</argsstring>
+        <name>Texture</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>No texture is created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1af86c4608f02a62308a06c24c97a03b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Texture::create</definition>
+        <argsstring>(Vector2u size)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create the texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if creation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Texture::loadFromImage</definition>
+        <argsstring>(const Image &amp;image)</argsstring>
+        <name>loadFromImage</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Load the texture from an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgf_1_1_image" kindref="compound">Image</ref> to load into the texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_texture_1afdd704786023b50caff9f19ebfb3c5b5" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_texture_1a5de048aec20115625a6070120c45cf6b" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Texture::loadFromFile</definition>
+        <argsstring>(const Path &amp;filename)</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load the texture from a file on disk. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut for the following code:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>image;</highlight></codeline>
+<codeline><highlight class="normal">image.<ref refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" kindref="member">loadFromFile</ref>(filename);</highlight></codeline>
+<codeline><highlight class="normal">texture.<ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage</ref>(image);</highlight></codeline>
+</programlisting></para><para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the image file to load</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_texture_1afdd704786023b50caff9f19ebfb3c5b5" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_texture_1a5de048aec20115625a6070120c45cf6b" kindref="member">loadFromStream()</ref>, <ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1a5de048aec20115625a6070120c45cf6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Texture::loadFromStream</definition>
+        <argsstring>(InputStream &amp;stream)</argsstring>
+        <name>loadFromStream</name>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Load the texture from a custom stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut for the following code:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>image;</highlight></codeline>
+<codeline><highlight class="normal">image.<ref refid="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" kindref="member">loadFromStream</ref>(stream);</highlight></codeline>
+<codeline><highlight class="normal">texture.<ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage</ref>(image);</highlight></codeline>
+</programlisting></para><para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_texture_1afdd704786023b50caff9f19ebfb3c5b5" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1afdd704786023b50caff9f19ebfb3c5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Texture::loadFromMemory</definition>
+        <argsstring>(const uint8_t *data, std::size_t length)</argsstring>
+        <name>loadFromMemory</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Load the texture from a file in memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut for the following code:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>image;</highlight></codeline>
+<codeline><highlight class="normal">image.<ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory</ref>(data,<sp/>length);</highlight></codeline>
+<codeline><highlight class="normal">texture.<ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage</ref>(image);</highlight></codeline>
+</programlisting></para><para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the file data in memory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data to load, in bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_texture_1a5de048aec20115625a6070120c45cf6b" kindref="member">loadFromStream()</ref>, <ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1a563b5d7bc990cfd2bd299f508638741e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Texture::update</definition>
+        <argsstring>(const Image &amp;image)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Update the texture from an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>Although the source image can be smaller than the texture, this function is usually used for updating the whole texture.</para><para>No additional check is performed on the size of the image, passing an image bigger than the texture will lead to an undefined behavior.</para><para>This function does nothing if the texture was not previously created.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgf_1_1_image" kindref="compound">Image</ref> to copy to the texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="449" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_texture_1a1af75df8d5d4a561e71a7bc73f0a95eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::Texture::copyToImage</definition>
+        <argsstring>() const</argsstring>
+        <name>copyToImage</name>
+        <briefdescription>
+<para>Copy the texture pixels to an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function performs a slow operation that downloads the texture&apos;s pixels from the graphics card and copies them to a new image, potentially applying transformations to pixels if necessary (texture may be padded or flipped).</para><para><simplesect kind="return"><para>An image containing the texture&apos;s pixels</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">loadFromImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="463" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A texture for colored images. </para>    </briefdescription>
+    <detaileddescription>
+<para>A texture can be loaded from an image, but also directly from a file/memory/stream. The necessary shortcuts are defined so that you don&apos;t need an image first for the most common cases. However, if you want to perform some modifications on the pixels before creating the final texture, you can load your file to a <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, do whatever you need with the pixels, and then call <ref refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" kindref="member">Texture::loadFromImage</ref>.</para><para>Like <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> can handle a unique internal representation of pixels, which is RGBA. This means that a pixel must be composed of 8 bits red, green, blue and alpha channels.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>This<sp/>example<sp/>shows<sp/>the<sp/>most<sp/>common<sp/>use<sp/>of<sp/>gf::Texture:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>drawing<sp/>a<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Load<sp/>a<sp/>texture<sp/>from<sp/>a<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!texture.<ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;texture.png&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Assign<sp/>it<sp/>to<sp/>a<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite;</highlight></codeline>
+<codeline><highlight class="normal">sprite.<ref refid="classgf_1_1_sprite_1ac4f384f2bd71d8bbff2a5b4739d523bf" kindref="member">setTexture</ref>(texture);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Draw<sp/>the<sp/>textured<sp/>sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">window.draw(sprite);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref>, <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, <ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="774">
+        <label>gf::Texture</label>
+        <link refid="classgf_1_1_texture"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="776">
+        <label>gf::Texture</label>
+        <link refid="classgf_1_1_texture"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="339" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" bodystart="339" bodyend="465"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_bare_texture_1af0338d095a74651505e53f6ef07df5f0" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1afb1321b7d497a0af42655d872bb32db7" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1a4db166107e9337fa4369de44758b45e4" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1ae0a5581f2c93ff3029e14e3cbac72471" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>bind</name></member>
+      <member refid="classgf_1_1_bare_texture_1aaa8072ea8cb3e77c430786c02a4cd383" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>computeTextureCoords</name></member>
+      <member refid="classgf_1_1_texture_1a1af75df8d5d4a561e71a7bc73f0a95eb" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>copyToImage</name></member>
+      <member refid="classgf_1_1_texture_1af86c4608f02a62308a06c24c97a03b1e" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>create</name></member>
+      <member refid="classgf_1_1_bare_texture_1a9822c02c7010d2261673e9da58229a8f" prot="protected" virt="non-virtual" ambiguityscope="gf::BareTexture::"><scope>gf::Texture</scope><name>create</name></member>
+      <member refid="classgf_1_1_bare_texture_1aba5939a29c39c87a20b4ae74e95c59e3" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>Format</name></member>
+      <member refid="classgf_1_1_bare_texture_1a303a01f6bd42fde0a6cae9787f66565c" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>generateMipmap</name></member>
+      <member refid="classgf_1_1_bare_texture_1a5c719e0fcb28f65a3c3d52e60ab2de95" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>getFormat</name></member>
+      <member refid="classgf_1_1_bare_texture_1a3f98880e7ad13968b80c570a96f251bb" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>getName</name></member>
+      <member refid="classgf_1_1_bare_texture_1a8d05c2de026e2c15423f22f4155ac23d" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_bare_texture_1aeb2ec79e47a8548775eca60fa9ab5ca6" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>isRepeated</name></member>
+      <member refid="classgf_1_1_bare_texture_1ae3cb1cf572a84531a1e8e70d6a67777b" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>isSmooth</name></member>
+      <member refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_texture_1a41b0c0263b7906a86b0ef1d483945f33" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>loadFromImage</name></member>
+      <member refid="classgf_1_1_texture_1afdd704786023b50caff9f19ebfb3c5b5" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_texture_1a5de048aec20115625a6070120c45cf6b" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_bare_texture_1a4552991d4ed054f9f728e4b2cbc60e15" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_bare_texture_1a44f40465aecce44c8f9b3f870053710a" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_bare_texture_1a34860c67cf5bd39b7d04d290ecee427c" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>setRepeated</name></member>
+      <member refid="classgf_1_1_bare_texture_1a92130ad8a7d9f530c15418f9188c95ee" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>setSmooth</name></member>
+      <member refid="classgf_1_1_texture_1a39b5c41efa692255ba9e5e6ab4449535" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>Texture</name></member>
+      <member refid="classgf_1_1_texture_1a563b5d7bc990cfd2bd299f508638741e" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>update</name></member>
+      <member refid="classgf_1_1_bare_texture_1aa601abc5feec107d624fba1fe867d484" prot="public" virt="non-virtual" ambiguityscope="gf::BareTexture::"><scope>gf::Texture</scope><name>update</name></member>
+      <member refid="classgf_1_1_bare_texture_1af482a584253838c378e893785133bab7" prot="public" virt="non-virtual" ambiguityscope="gf::BareTexture::"><scope>gf::Texture</scope><name>update</name></member>
+      <member refid="classgf_1_1_bare_texture_1a5973dc8f7580398de2b90f824b4d72d3" prot="public" virt="non-virtual"><scope>gf::Texture</scope><name>~BareTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

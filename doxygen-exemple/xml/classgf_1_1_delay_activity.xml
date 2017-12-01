@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_delay_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::DelayActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_delay_activity_1a3332362bf1885aea2da03f97d6f07894" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::DelayActivity::m_elapsed</definition>
+        <argsstring></argsstring>
+        <name>m_elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="402" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_delay_activity_1a27a50d9ce99c7297999237b657f8d19c" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::DelayActivity::m_duration</definition>
+        <argsstring></argsstring>
+        <name>m_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="403" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_delay_activity_1a16bed6609824fe44e5a2d43b9c172533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::DelayActivity::DelayActivity</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>DelayActivity</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration to wait for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_delay_activity_1ac545d779445a67c2d9eac6e05669c5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::DelayActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_delay_activity_1abda63350639efd63b6f8bca4feafb4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::DelayActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="399" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity to wait for a predefined duration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="220">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="219">
+        <label>gf::DelayActivity</label>
+        <link refid="classgf_1_1_delay_activity"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="222">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="221">
+        <label>gf::DelayActivity</label>
+        <link refid="classgf_1_1_delay_activity"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="389" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="389" bodyend="404"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_delay_activity_1a16bed6609824fe44e5a2d43b9c172533" prot="public" virt="non-virtual"><scope>gf::DelayActivity</scope><name>DelayActivity</name></member>
+      <member refid="classgf_1_1_delay_activity_1a27a50d9ce99c7297999237b657f8d19c" prot="private" virt="non-virtual"><scope>gf::DelayActivity</scope><name>m_duration</name></member>
+      <member refid="classgf_1_1_delay_activity_1a3332362bf1885aea2da03f97d6f07894" prot="private" virt="non-virtual"><scope>gf::DelayActivity</scope><name>m_elapsed</name></member>
+      <member refid="classgf_1_1_delay_activity_1abda63350639efd63b6f8bca4feafb4cf" prot="public" virt="virtual"><scope>gf::DelayActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_delay_activity_1ac545d779445a67c2d9eac6e05669c5a4" prot="public" virt="virtual"><scope>gf::DelayActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::DelayActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

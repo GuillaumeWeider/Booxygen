@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="start_game" kind="page">
+    <compoundname>start_game</compoundname>
+    <title>Start a game with gf</title>
+    <detaileddescription>
+<para>Here is a template you can use to start your game. Do not forget to <ulink url="http://choosealicense.com/">choose a license</ulink> and add the relevant text at the beginning of the file.</para><para>This template uses high level features (<ref refid="classgf_1_1_action_container" kindref="compound">gf::ActionContainer</ref>, <ref refid="classgf_1_1_view_container" kindref="compound">gf::ViewContainer</ref>, <ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref>) instead of low-level features presented in <ref refid="gamedev_101" kindref="compound">Gamedev 101</ref>. You may also need some other features, depending on your game (<ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>, <ref refid="classgf_1_1_resource_manager" kindref="compound">gf::ResourceManager</ref>, <ref refid="classgf_1_1_random" kindref="compound">gf::Random</ref>, etc).</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/Action.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Clock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Color.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/EntityContainer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/RenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/ViewContainer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Views.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Window.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2u</ref><sp/>ScreenSize(1024,<sp/>576);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>ViewSize(100.0f,<sp/>100.0f);<sp/></highlight><highlight class="comment">//<sp/>dummy<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>ViewCenter(0.0f,<sp/>0.0f);<sp/></highlight><highlight class="comment">//<sp/>dummy<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;Game&quot;</highlight><highlight class="normal">,<sp/>ScreenSize);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>window.setVerticalSyncEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>window.setFramerateLimit(60);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>views</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_view_container" kindref="compound">gf::ViewContainer</ref><sp/>views;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_extend_view" kindref="compound">gf::ExtendView</ref><sp/>mainView(ViewCenter,<sp/>ViewSize);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" kindref="member">addView</ref>(mainView);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_screen_view" kindref="compound">gf::ScreenView</ref><sp/>hudView;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" kindref="member">addView</ref>(hudView);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1af1c6132257c4838da5c0db61793a18cd" kindref="member">setInitialScreenSize</ref>(ScreenSize);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>actions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action_container" kindref="compound">gf::ActionContainer</ref><sp/>actions;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>closeWindowAction(</highlight><highlight class="stringliteral">&quot;Close<sp/>window&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>closeWindowAction.addCloseControl();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>closeWindowAction.addKeycodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a013ec032d3460d4be4431c6ab1f8f224" kindref="member">gf::Keycode::Escape</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(closeWindowAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>fullscreenAction(</highlight><highlight class="stringliteral">&quot;Fullscreen&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>fullscreenAction.addKeycodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a800618943025315f869e4e1f09471012" kindref="member">gf::Keycode::F</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(fullscreenAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>leftAction(</highlight><highlight class="stringliteral">&quot;Left&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>leftAction.addScancodeKeyControl(<ref refid="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa7fc56270e7a70fa81a5935b72eacbe29" kindref="member">gf::Scancode::A</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>leftAction.addScancodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::Scancode::Left</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>leftAction.setContinuous();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(leftAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>rightAction(</highlight><highlight class="stringliteral">&quot;Right&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>rightAction.addScancodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af623e75af30e62bbd73d6df5b50bb7b5" kindref="member">gf::Scancode::D</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>rightAction.addScancodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::Scancode::Right</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>rightAction.setContinuous();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(rightAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>upAction(</highlight><highlight class="stringliteral">&quot;Up&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>upAction.addScancodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a61e9c06ea9a85a5088a499df6458d276" kindref="member">gf::Scancode::W</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>upAction.addScancodeKeyControl(<ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" kindref="member">gf::Scancode::Up</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>upAction.setContinuous();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(upAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref><sp/>downAction(</highlight><highlight class="stringliteral">&quot;Down&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>downAction.addScancodeKeyControl(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5dbc98dcc983a70728bd082d1a47546e" kindref="member">gf::Scancode::S</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>downAction.addScancodeKeyControl(<ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" kindref="member">gf::Scancode::Down</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>downAction.setContinuous();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a523c6281eded46899531222db4b71b2f" kindref="member">addAction</ref>(downAction);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>entities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref><sp/>mainEntities;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>entities<sp/>to<sp/>mainEntities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref><sp/>hudEntities;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>entities<sp/>to<sp/>hudEntities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>game<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.clear(<ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref><sp/>clock;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.isOpen())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1a034be36a032acdaf1367770751cbfd30" kindref="member">processEvent</ref>(event);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1a61734888f06a8c8629c39c78a7346639" kindref="member">processEvent</ref>(event);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(closeWindowAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fullscreenAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window.toggleFullscreen();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rightAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(leftAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(upAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(downAction.isActive())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref><sp/>time<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mainEntities.<ref refid="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" kindref="member">update</ref>(time);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hudEntities.<ref refid="classgf_1_1_entity_container_1af1a5d4e626f525b81dfd1d19893f9f8a" kindref="member">update</ref>(time);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.setView(mainView);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mainEntities.<ref refid="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" kindref="member">render</ref>(renderer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.setView(hudView);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>hudEntities.<ref refid="classgf_1_1_entity_container_1a4095f785ae1f2b90d2c89c25ea1df2d5" kindref="member">render</ref>(renderer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>actions.<ref refid="classgf_1_1_action_container_1ae645f2f827c81ba97a4ce2208e4370d2" kindref="member">reset</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>    </detaileddescription>
+  </compounddef>
+</doxygen>

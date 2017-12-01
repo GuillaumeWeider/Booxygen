@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Matrix&lt; T, 2, 2 &gt;</compoundname>
+    <includes refid="_matrix_8h" local="no">gf/Matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a225ece6e3b0582b2962cbc64661e1d46" prot="public" static="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>using gf::Matrix&lt; T, 2, 2 &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+<para>The value type of the elements of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="123" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a5222d715f0c309b086f7c3fa17b44ee3" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, 2, 2 &gt;::Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>The number of rows in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="128" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54988a14d3a02cc33d058cab02f57159" prot="public" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::Matrix&lt; T, 2, 2 &gt;::Cols</definition>
+        <argsstring></argsstring>
+        <name>Cols</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>The number of columns in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="133" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a805168cb03f6c88ad9db7b1c5f36cade" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::grid[2][2]</definition>
+        <argsstring>[2][2]</argsstring>
+        <name>grid</name>
+        <briefdescription>
+<para>Grid representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="158" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a7ea8fc39c94f1ac5424a9e087dd36541" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::data[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Array representation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="159" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1ae9d7d326d46a9416bdb72983dccb160d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::xx</definition>
+        <argsstring></argsstring>
+        <name>xx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::xy</definition>
+        <argsstring></argsstring>
+        <name>xy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af900d8eb98a3cda9a6e72d2709db6967" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::yx</definition>
+        <argsstring></argsstring>
+        <name>yx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Matrix&lt; T, 2, 2 &gt;::yy</definition>
+        <argsstring></argsstring>
+        <name>yy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af52f08488e4e298b1f6f317556d823b3" prot="public" static="no" mutable="no">
+        <type>union <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2, 2 &gt;::@4</type>
+        <definition>union gf::Matrix&lt; T, 2, 2 &gt;::@4 gf::Matrix&lt; T, 2, 2 &gt;::@5</definition>
+        <argsstring></argsstring>
+        <name>@5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An anonymous union to handle the various representations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="164" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1aa7e2399fc973b8430ede1f4b6a00cd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Matrix&lt; T, 2, 2 &gt;::Matrix</definition>
+        <argsstring>()=default</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a121310c4df0a8e5d770851d0fb2b0596" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Matrix&lt; T, 2, 2 &gt;::Matrix</definition>
+        <argsstring>(T xx, T xy, T yx, T yy)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yx</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>yy</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that takes all the elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the first row and second column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and first column </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element in the second row and second column </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="148" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="148" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A 2x2 matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>This specialization of <ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref> handles linear transformation of 2D vectors. As translation is not a linear transformation but an affine transformation, this specialization is not used in the library. Instead use a <ref refid="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4" kindref="compound">gf::Matrix&lt;T, 3, 3&gt;</ref>. It is provided for convinience.</para><para>Each element of the matrix can be accessed through a name with a double letter indicating the column and row of the element (e.g. <computeroutput>xy</computeroutput> indicates the first row and second column).</para><para>A common typedef is defined:</para><para><itemizedlist>
+<listitem><para><ref refid="group__core_1ga15242198f27434d7c9945ff0657b3347" kindref="member">gf::Matrix2f</ref> with <computeroutput>float</computeroutput> as <computeroutput>T</computeroutput> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="450">
+        <label>T</label>
+      </node>
+      <node id="449">
+        <label>gf::Matrix&lt; T, 2, 2 &gt;</label>
+        <link refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4"/>
+        <childnode refid="449" relation="usage">
+          <edgelabel>@5</edgelabel>
+        </childnode>
+        <childnode refid="450" relation="usage">
+          <edgelabel>yy</edgelabel>
+          <edgelabel>xx</edgelabel>
+          <edgelabel>xy</edgelabel>
+          <edgelabel>grid</edgelabel>
+          <edgelabel>data</edgelabel>
+          <edgelabel>yx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" line="119" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Matrix.h" bodystart="119" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54988a14d3a02cc33d058cab02f57159" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>Cols</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a7ea8fc39c94f1ac5424a9e087dd36541" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>data</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a805168cb03f6c88ad9db7b1c5f36cade" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>grid</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1aa7e2399fc973b8430ede1f4b6a00cd00" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>Matrix</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a121310c4df0a8e5d770851d0fb2b0596" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>Matrix</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a5222d715f0c309b086f7c3fa17b44ee3" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>Rows</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a225ece6e3b0582b2962cbc64661e1d46" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>value_type</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1ae9d7d326d46a9416bdb72983dccb160d" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>xx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1a54035fe7bd8f31a63dc450e3af1d1512" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>xy</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af900d8eb98a3cda9a6e72d2709db6967" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>yx</name></member>
+      <member refid="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4_1af3ddbba4e0967907ed09cccc0cadca94" prot="public" virt="non-virtual"><scope>gf::Matrix&lt; T, 2, 2 &gt;</scope><name>yy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_buffer_ref" kind="class" language="C++" prot="public">
+    <compoundname>gf::BufferRef</compoundname>
+    <includes refid="_buffer_ref_8h" local="no">gf/BufferRef.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_buffer_ref_1a32bb9eb9765033d22e9e2310a8434658" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::BufferRef&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="175" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_buffer_ref_1a035d20b86d286f57fdd54577fd761664" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::BufferRef&lt; T &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="176" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1acf5eedb9be405a0ae796ce7fbe16edee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>()</argsstring>
+        <name>BufferRef</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="50" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a14a1707b2260d02acf1a15abc592f7bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>BufferRef</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+<para>Null constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a61d37985d36b29807cb5f7d6a1e73351" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>(T *data, std::size_t size)</argsstring>
+        <name>BufferRef</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a pointer and a size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of elements in the buffer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a564ab595e2f37ba02965f9ec40c148fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;values)</argsstring>
+        <name>BufferRef</name>
+        <param>
+          <type>std::vector&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a <computeroutput>std::vector</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector of elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="87" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1af24ad594aa31890cd2c9429d26467352" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>(std::array&lt; T, N &gt; &amp;values)</argsstring>
+        <name>BufferRef</name>
+        <param>
+          <type>std::array&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a <computeroutput>std::array</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="100" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a38f5a772204de54c3c56607e822f1c37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr gf::BufferRef&lt; T &gt;::BufferRef</definition>
+        <argsstring>(T(&amp;data)[N])</argsstring>
+        <name>BufferRef</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>(&amp;)</type>
+          <declname>data</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+<para>Constructor from a static array. </para>        </briefdescription>
+        <detaileddescription>
+<para>The size is computed at compile-time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The static array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="115" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a6faba44c8e0da85c2d7c317ebc3025fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::BufferRef&lt; T &gt;::getData</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get a pointer to the elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first element in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="127" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a44d178a1aaa1ba47bb6ae4cfa706e962" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::BufferRef&lt; T &gt;::getSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the number of elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of elements in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="136" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a07803ae555243760e4f25313c048fce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::BufferRef&lt; T &gt;::begin</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first element. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first element</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffer_ref_1a545c6bc0d8f5bc3a7c629e7daad34c39" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="147" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a545c6bc0d8f5bc3a7c629e7daad34c39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::BufferRef&lt; T &gt;::end</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator past the last element. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer past the last element</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_buffer_ref_1a07803ae555243760e4f25313c048fce1" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="158" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_buffer_ref_1a9453904f6ea174e0a041a40ac8b33e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>T&amp; gf::BufferRef&lt; T &gt;::operator[]</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get an element at a given index. </para>        </briefdescription>
+        <detaileddescription>
+<para>No verification is done on the index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element at the given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="170" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A reference to a modifiable buffer and its size. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class stores a pointer to a buffer and its size. It can be built from various inputs: <computeroutput>std::vector</computeroutput>, <computeroutput>std::array</computeroutput>, static array, pointer and size.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_array_ref" kindref="compound">gf::ArrayRef</ref>, <ref refid="classgf_1_1_string_ref" kindref="compound">gf::StringRef</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/BufferRef.h" bodystart="43" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_buffer_ref_1a07803ae555243760e4f25313c048fce1" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>begin</name></member>
+      <member refid="classgf_1_1_buffer_ref_1acf5eedb9be405a0ae796ce7fbe16edee" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a14a1707b2260d02acf1a15abc592f7bf" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a61d37985d36b29807cb5f7d6a1e73351" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a564ab595e2f37ba02965f9ec40c148fe" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1af24ad594aa31890cd2c9429d26467352" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a38f5a772204de54c3c56607e822f1c37" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>BufferRef</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a545c6bc0d8f5bc3a7c629e7daad34c39" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>end</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a6faba44c8e0da85c2d7c317ebc3025fb" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>getData</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a44d178a1aaa1ba47bb6ae4cfa706e962" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a32bb9eb9765033d22e9e2310a8434658" prot="private" virt="non-virtual"><scope>gf::BufferRef</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a035d20b86d286f57fdd54577fd761664" prot="private" virt="non-virtual"><scope>gf::BufferRef</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_buffer_ref_1a9453904f6ea174e0a041a40ac8b33e0c" prot="public" virt="non-virtual"><scope>gf::BufferRef</scope><name>operator[]</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_log" kind="class" language="C++" prot="public">
+    <compoundname>gf::Log</compoundname>
+    <includes refid="_log_8h" local="no">gf/Log.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9" prot="public" static="no">
+        <name>Level</name>
+        <enumvalue id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9aee60afc6cba066b732b213601778a367" prot="public">
+          <name>Debug</name>
+          <briefdescription>
+<para>The debug level. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9a7c5b65d5b2e371bcf8f87b0c76e3c9a4" prot="public">
+          <name>Info</name>
+          <briefdescription>
+<para>The info level. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9ada3339d51ffda45fedd7e2e3cb3a1a4d" prot="public">
+          <name>Warn</name>
+          <briefdescription>
+<para>The warn level. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9a118521004409bf63749d72d44fefc6be" prot="public">
+          <name>Error</name>
+          <briefdescription>
+<para>The error level. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9af8edecce5f04d5303579a7b73f6922f5" prot="public">
+          <name>Fatal</name>
+          <briefdescription>
+<para>The fatal level. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The severity level of the log. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="69" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="69" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgf_1_1_log_1a044f5eaf3e787d4102ab4ffb788ee775" prot="private" static="yes" mutable="no">
+        <type><ref refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9" kindref="member">Level</ref></type>
+        <definition>Level gf::Log::s_level</definition>
+        <argsstring></argsstring>
+        <name>s_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="147" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_log_1a37a1a29dd628ded2678a1b3bf819e502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Log::Log</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Log</name>
+        <briefdescription>
+<para>Deleted constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_log_1a22ba07cbabde5c05498b719d4b0c1881" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::setLevel</definition>
+        <argsstring>(Level level)</argsstring>
+        <name>setLevel</name>
+        <param>
+          <type><ref refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9" kindref="member">Level</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set a global severity level. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The severity level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_log_1a1914b7e55ed934bc01fc50d78602fae0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::debug</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a debug message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="89" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_log_1aac6d0440d94f42b8834f44256bbdb01e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::info</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>info</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print an info message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="101" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_log_1aa4d71938c073d439a4eb35a61fb51f52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::warning</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>warning</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a warning message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="113" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_log_1aa0a0d0af1636e2c19abbca9591e266fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::error</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print an error message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_log_1a40b55ae5841af7607d217614bcacc911" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::fatal</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>fatal</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a fatal message and quit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="137" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="137" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classgf_1_1_log_1aa0b6ab075f3032a8947780b2a4c55406" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Log::log</definition>
+        <argsstring>(Level level, const char *fmt, va_list ap)</argsstring>
+        <name>log</name>
+        <param>
+          <type><ref refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9" kindref="member">Level</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logging functions. </para>    </briefdescription>
+    <detaileddescription>
+<para>Logging functions are used to report some events that have happened in the system. These functions print messages to the standard error. It uses <computeroutput>printf</computeroutput>-like format strings.</para><para>A message is associated to a severity level. The severity level indicates the severity of the message and range from a simple debug message to a fatal message.</para><para>You can set the minimum severity for which messages are displayed. By default, the minimum severity level is gf::Log::Warning (or <ref refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9aee60afc6cba066b732b213601778a367" kindref="member">gf::Log::Debug</ref> if debug mode is activated at build time).</para><para>Example:</para><para><programlisting><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>entity<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_log_1aa4d71938c073d439a4eb35a61fb51f52" kindref="member">gf::Log::warning</ref>(</highlight><highlight class="stringliteral">&quot;Something<sp/>weird<sp/>happened<sp/>to<sp/>entity<sp/>%i!\n&quot;</highlight><highlight class="normal">,<sp/>entity);</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Log.h" bodystart="59" bodyend="151"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9aee60afc6cba066b732b213601778a367" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Debug</name></member>
+      <member refid="classgf_1_1_log_1a1914b7e55ed934bc01fc50d78602fae0" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>debug</name></member>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9a118521004409bf63749d72d44fefc6be" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Error</name></member>
+      <member refid="classgf_1_1_log_1aa0a0d0af1636e2c19abbca9591e266fa" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>error</name></member>
+      <member refid="classgf_1_1_log_1a40b55ae5841af7607d217614bcacc911" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>fatal</name></member>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9af8edecce5f04d5303579a7b73f6922f5" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Fatal</name></member>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9a7c5b65d5b2e371bcf8f87b0c76e3c9a4" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Info</name></member>
+      <member refid="classgf_1_1_log_1aac6d0440d94f42b8834f44256bbdb01e" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>info</name></member>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Level</name></member>
+      <member refid="classgf_1_1_log_1a37a1a29dd628ded2678a1b3bf819e502" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Log</name></member>
+      <member refid="classgf_1_1_log_1aa0b6ab075f3032a8947780b2a4c55406" prot="private" virt="non-virtual"><scope>gf::Log</scope><name>log</name></member>
+      <member refid="classgf_1_1_log_1a044f5eaf3e787d4102ab4ffb788ee775" prot="private" virt="non-virtual"><scope>gf::Log</scope><name>s_level</name></member>
+      <member refid="classgf_1_1_log_1a22ba07cbabde5c05498b719d4b0c1881" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>setLevel</name></member>
+      <member refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9ada3339d51ffda45fedd7e2e3cb3a1a4d" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>Warn</name></member>
+      <member refid="classgf_1_1_log_1aa4d71938c073d439a4eb35a61fb51f52" prot="public" virt="non-virtual"><scope>gf::Log</scope><name>warning</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

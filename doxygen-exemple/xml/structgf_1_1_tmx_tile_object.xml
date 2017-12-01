@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_tile_object" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxTileObject</compoundname>
+    <basecompoundref refid="structgf_1_1_tmx_object" prot="public" virt="non-virtual">gf::TmxObject</basecompoundref>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_object_1a22434af59401dd3e676eb888d1287b3a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::TmxTileObject::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="410" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_object_1aae1ad577c021f25ad5f72020351f5fdc" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>&lt; <ref refid="group__game_1ga20b906ea380de1bb09eda6a9b94b3a20" kindref="member">TmxFlip</ref> &gt;</type>
+        <definition>Flags&lt;TmxFlip&gt; gf::TmxTileObject::flip</definition>
+        <argsstring></argsstring>
+        <name>flip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="411" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An image put in the map identified by its global id. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="981">
+        <label>gf::TmxTileObject</label>
+        <link refid="structgf_1_1_tmx_tile_object"/>
+        <childnode refid="982" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="982">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="983">
+        <label>gf::TmxTileObject</label>
+        <link refid="structgf_1_1_tmx_tile_object"/>
+        <childnode refid="984" relation="public-inheritance">
+        </childnode>
+        <childnode refid="989" relation="usage">
+          <edgelabel>flip</edgelabel>
+        </childnode>
+      </node>
+      <node id="987">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="984">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+        <childnode refid="985" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="986" relation="usage">
+          <edgelabel>type</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="988" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="988">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="989">
+        <label>gf::Flags&lt; TmxFlip &gt;</label>
+        <link refid="classgf_1_1_flags"/>
+      </node>
+      <node id="985">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="986">
+        <label>std::string</label>
+        <childnode refid="987" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="409" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="409" bodyend="412"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a57e97a32a5fd8a5ed53b27335b51e401" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Ellipse</name></member>
+      <member refid="structgf_1_1_tmx_tile_object_1aae1ad577c021f25ad5f72020351f5fdc" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>flip</name></member>
+      <member refid="structgf_1_1_tmx_tile_object_1a22434af59401dd3e676eb888d1287b3a" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>gid</name></member>
+      <member refid="structgf_1_1_tmx_object_1a77819e6cdbda911f028b3671011ce9a3" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>id</name></member>
+      <member refid="structgf_1_1_tmx_object_1af2d23b1185e47142226972045994315f" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1ab4bf14ca4004b953b9e9e11e3493eb59" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>name</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168add2828e016dcee09dbdd3cc018c2a70d" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Polygon</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a2ab19cd59ad53327f8d5d7975d774783" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Polyline</name></member>
+      <member refid="structgf_1_1_tmx_object_1a559942ef79105749b0f3de149931df08" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>position</name></member>
+      <member refid="structgf_1_1_tmx_object_1ad533c3e4bdd90574920db1d00e35ea9d" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a01469baa84de6f6b21d39bf8e3799cdd" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Rectangle</name></member>
+      <member refid="structgf_1_1_tmx_object_1a360e63ca427b9553eab107c108ab5d40" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>rotation</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a7d369c38d593a38d1a5f42253e8a9149" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Text</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a407201fbe7915218a90b03afe7ef8cc8" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>Tile</name></member>
+      <member refid="structgf_1_1_tmx_object_1aa84fe4ca99482976e846fe4d6a7104aa" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>type</name></member>
+      <member refid="structgf_1_1_tmx_object_1a06ba9659e6f01caf9a46e0289202039c" prot="public" virt="non-virtual"><scope>gf::TmxTileObject</scope><name>visible</name></member>
+      <member refid="structgf_1_1_tmx_object_1aeb01bda0b2b4c991084aaf7a38f9a05c" prot="public" virt="virtual"><scope>gf::TmxTileObject</scope><name>~TmxObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

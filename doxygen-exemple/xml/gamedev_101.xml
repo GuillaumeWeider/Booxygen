@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="gamedev_101" kind="page">
+    <compoundname>gamedev_101</compoundname>
+    <title>Gamedev 101</title>
+    <detaileddescription>
+<para>The aim of this tutorial is to teach you the basics of game development. More precisely, you will learn the structure of a game, and the main aspects of its development. To follow this tutorial, you must have some knowledge about programming, especially in C++. You don&apos;t have to be an expert.</para><sect1 id="gamedev_101_1gamedev_101_overview">
+<title>Overview</title>
+<para>A game is split in two main steps. The first step is the initialization of the game.The second step is the main loop.</para><sect2 id="gamedev_101_1gamedev_101_init">
+<title>Initialization</title>
+<para>During initialization, your goal is to setup the window and to load the resources.</para><para>For the setup of the window, you just have to indicate a title and the initial size of the window. In gf, the window is responsible for handling all the events, inputs from the player and window events (like resizing). To be able to draw something in the window, you have to define a renderer for that window.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;My<sp/>great<sp/>game&quot;</highlight><highlight class="normal">,<sp/>{<sp/>1024,<sp/>768<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+</programlisting> Then you have to load all the resources that the game need. Or at least, you have to load enough resources for your game to start. But at the beginning (and for quite a long time), you can load everything in the initialization phase.</para><para>What resources? Well, basically everything. Images must be loaded and transfered in the GPU memory: they are then called textures. Fonts must be loaded in the main memory, ready to be used for text rendering. Sounds must be loaded in the main memory, ready to be played. And then, all the game-related data must be loaded: levels, maps, characters, quests, etc.</para><para>gf helps you for the loading of multimedia resources. <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> and <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> can be loaded directly from a file.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;path/to/Arial.ttf&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>texture;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>texture.<ref refid="classgf_1_1_texture_1a4382398a8c7bcde5a4a2fba892a63ca7" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;path/to/image.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> If all your multimedia data is in a single directory, you can also use a <ref refid="classgf_1_1_resource_manager" kindref="compound">gf::ResourceManager</ref>. You juste have to indicate the directory and then load textures and fonts with a relative path. The main advantage of a resource manager is that the resources are loaded only once and kept in a cache for the subsequent uses.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_resource_manager" kindref="compound">gf::ResourceManager</ref><sp/>resources;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>resources.<ref refid="classgf_1_1_asset_manager_1ae7c7359062b5a44dcd7c14b83b2de880" kindref="member">addSearchDir</ref>(</highlight><highlight class="stringliteral">&quot;path/to/data&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>&amp;<sp/>font<sp/>=<sp/>resources.<ref refid="classgf_1_1_resource_manager_1a8598aba56bfe2a6228131871e1e61b0e" kindref="member">getFont</ref>(</highlight><highlight class="stringliteral">&quot;Arial.ttf&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>&amp;<sp/>texture<sp/>=<sp/>resources.<ref refid="classgf_1_1_resource_manager_1a4b9046e93c19d509872302de924f442a" kindref="member">getTexture</ref>(</highlight><highlight class="stringliteral">&quot;image.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>&amp;<sp/>anotherFont<sp/>=<sp/>resources.<ref refid="classgf_1_1_resource_manager_1a8598aba56bfe2a6228131871e1e61b0e" kindref="member">getFont</ref>(</highlight><highlight class="stringliteral">&quot;Arial.ttf&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>the<sp/>font<sp/>is<sp/>not<sp/>loaded<sp/>a<sp/>second<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="gamedev_101_1gamedev_101_game_loop">
+<title>The game loop</title>
+<para>The game loop is the most important part of your game. It&apos;s where everything will happen. It must be very fast: at least 60 times per seconds. That means you have 16.6<nonbreakablespace/>ms to do all you have to do: easy!</para><para>A game loop is divided in three steps:</para><para><orderedlist>
+<listitem><para>Process the input from the player</para></listitem><listitem><para>Update the state of the game</para></listitem><listitem><para>Draw everything</para></listitem></orderedlist>
+</para><para>The game loop finishes when the player closes the window or quits the game. So, in the <computeroutput>main</computeroutput> function, after initialization, you have a loop like this.</para><para><programlisting><codeline><highlight class="comment">//<sp/>game<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.isOpen())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><sect3 id="gamedev_101_1gamedev_101_input">
+<title>Process input</title>
+<para>On each frame, you get the input from the player. This is done with the help of the library you use. For gf, it&apos;s the mission of <ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref> to give you the input. In fact, you have to deal with the input from the player and the window events (like resizing). For now, we will forget about window events except the event for closing the window.</para><para>The events are given in a <ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref> structure. This structure has a <computeroutput>type</computeroutput> field that indicates the type of event. For example, if <computeroutput>type</computeroutput> is <ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref>, that means the user pressed a keyboard key and you get the specific data in the <computeroutput>key</computeroutput> field.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> For each user event, you define the action that must be taken into account for the update of the state.</para></sect3>
+<sect3 id="gamedev_101_1gamedev_101_update">
+<title>Update</title>
+<para>Before updating the state of the game, you need to know the amount of time that has passed since the last update. This time is needed in many cases, especially for everything that deals with physics (even a simple movement). The idea in the update step is that you must modify the state as if a small amount of time had passed. As a game is a (soft) real-time application, this small amount of time is the real amount of time that has passed.</para><para>Before the game loop, you must declare a clock that will be used to measure time.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref><sp/>clock;</highlight></codeline>
+</programlisting> Then, in the game loop, you can measure the time since the last update.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>().<ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds</ref>();</highlight></codeline>
+</programlisting> You get <computeroutput>dt</computeroutput> in seconds. If your display is at 60<nonbreakablespace/>Hz and is synchronized, then <computeroutput>dt</computeroutput> will be roughly <formula id="126">$ \frac{1}{60} $</formula> seconds. But it can be very different. You cannot assume that it is exactly <formula id="126">$ \frac{1}{60} $</formula> seconds.</para><para>Then, you have to update your game state. This can be very different from one game to another. It depends on the objects of your game. Here are a few examples:</para><para><itemizedlist>
+<listitem><para>Update the position of an object thanks to its velocity</para></listitem><listitem><para>Update the state of an animation i.e. define the frame to display</para></listitem><listitem><para>Update the behavior of a non-playing character</para></listitem><listitem><para>Update the physics simulation of the world</para></listitem></itemizedlist>
+</para></sect3>
+<sect3 id="gamedev_101_1gamedev_101_draw">
+<title>Draw</title>
+<para>The last step in the game loop is to draw everything. Yes, you draw everything on each frame. The bad idea here is to think that you can only draw the items that have changed since the last frame. Desktop graphical interfaces work like that. But not games. In games, it&apos;s far easier to draw everything from scratch on each frame. The reason is simple: there may be several thousands of elements to draw and it&apos;s easier to draw everything that to track what have changed since the last frame. Moreover, GPUs are designed to work this way.</para><para>Before the game loop, you can clear the display with a color that will be used every time you clear the display in the game loop.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/>renderer.clear(<ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>);</highlight></codeline>
+</programlisting> Then, in the game loop, you start the drawing step by clearing the display. Then you draw everything. The order is important, because you do not want the background of the game to be drawn last, you want to draw it first.</para><para>In fact, when you draw something, it&apos;s not put on the sreen immediately. In most cases, double buffering is used to prevent flicker or tearing. That means that your drawing commands arrive in the back buffer. Then, when you have finished, you call <computeroutput>display()</computeroutput> that exchanges the front buffer and the back buffer.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>everything</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+</programlisting></para></sect3>
+</sect2>
+<sect2 id="gamedev_101_1gamedev_101_template">
+<title>Simple template</title>
+<para>Here is a simple template you can use as a starter:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/Clock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Color.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/RenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Window.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;My<sp/>great<sp/>game&quot;</highlight><highlight class="normal">,<sp/>{<sp/>1024,<sp/>768<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>game<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref><sp/>clock;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.clear(<ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.isOpen())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>().<ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds</ref>();</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>everything</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="gamedev_101_1gamedev_101_entities">
+<title>Game entities</title>
+<para>An entity (a.k.a. game object) is an element of the game. It can be anything that is involved in the game. As a consequence, an entity needs to be updated and/or rendered every frame. C++ is an object oriented language. So, instead of putting the code directly in the game loop, you can have a base class with an <computeroutput>update</computeroutput> method and a <computeroutput>render</computeroutput> method. That is exactly what <ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref> is.</para><para>For your game entites, you can derive from <ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref>, but it&apos;s not mandatory.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyEntity<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_entity_1ac0e67948dc2be7a9fbb6206dc6dcaac7" kindref="member">update</ref>(<ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref><sp/>dt)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_entity_1a594f75d48d112e3020679b5d33f75d1e" kindref="member">render</ref>(<ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>&amp;<sp/>target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref>&amp;<sp/>states)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>data<sp/>of<sp/>my<sp/>entity</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para></sect2>
+</sect1>
+<sect1 id="gamedev_101_1gamedev_101_it_moves">
+<title>It moves!</title>
+<para>In this section, we show a simple example of a square that will move thanks to the keyboard arrows.</para><sect2 id="gamedev_101_1gamedev_101_square_entity">
+<title>The square entity</title>
+<para>The only entity here is the square. The square is defined by:</para><para><itemizedlist>
+<listitem><para>a <emphasis>position</emphasis>, that is the center of the square</para></listitem><listitem><para>the <emphasis>velocity</emphasis> the square, this value will be given by the arrows</para></listitem><listitem><para>the <emphasis>size</emphasis> of the square</para></listitem><listitem><para>a <emphasis>color</emphasis></para></listitem></itemizedlist>
+</para><para>The update step of this entity is very simple, we compute the new position thanks to its velocity. As a velocity is a distance divided by a time, we multiply the velocity by <computeroutput>dt</computeroutput> to obtain the difference between the previous position and the current one.</para><para>The draw step consists in drawing a rectangle. We use <ref refid="classgf_1_1_rectangle_shape" kindref="compound">gf::RectangleShape</ref> to achieve this goal. We can set the size, the position and the color of the shape. The only difficulty is that the position of the rectangle is fixed at the center of the square. So we call <computeroutput>setAnchor</computeroutput> to set the anchor to the center of the square. The anchor is the base point of the shape.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Square<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Square(<ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Color4f</ref><sp/>color)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>:<sp/>m_position(position)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_velocity(0,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_size(size)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_color(color)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setVelocity(<ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>velocity)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_velocity<sp/>=<sp/>velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_position<sp/>+=<sp/>dt<sp/>*<sp/>m_velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>render(<ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_rectangle_shape" kindref="compound">gf::RectangleShape</ref><sp/>shape({<sp/>m_size,<sp/>m_size<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>(m_position);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.setColor(m_color);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.setAnchor(<ref refid="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a4f1f6016fc9f3f2353c0cc7c67b292bd" kindref="member">gf::Anchor::Center</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(shape);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_position;<sp/></highlight><highlight class="comment">//<sp/>center<sp/>of<sp/>the<sp/>square</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Color4f</ref><sp/>m_color;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> We declare an entity of type <computeroutput>Square</computeroutput> at the initialization of the game. We put it at the center of the screen and make it red.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/>Square<sp/>entity(ScreenSize<sp/>/<sp/>2,<sp/>50.0f,<sp/><ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+</programlisting> Then, we declare a variable to store the current velocity. The velocity will be changed by the keyboard arrows. We also declare a constant called <computeroutput>Speed</computeroutput> that represents the maximum speed that can be reached horizontally or vertically. This constant is in pixels per seconds.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Speed<sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>velocity(0,<sp/>0);</highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="gamedev_101_1gamedev_101_square_game_loop">
+<title>Inside the game loop</title>
+<para>We enter the game loop and process the input events. In our case, pressing an arrow key moves the square. And releasing the key stops the square. Horizontal speed and vertical speed are treated separately. Pressing add a constant speed, releasing substract a constant speed. So, for example, if you press both left and right, the square does not move.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>.<ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" kindref="member">gf::Keycode::Up</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" kindref="member">gf::Keycode::Down</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::Keycode::Left</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::Keycode::Right</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da4a77f07c8ad223b71ab4ce78a63841ab" kindref="member">gf::EventType::KeyReleased</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>.<ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" kindref="member">gf::Keycode::Up</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" kindref="member">gf::Keycode::Down</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::Keycode::Left</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::Keycode::Right</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+</programlisting> The rest of the game loop is quite straightforward as everything is done in the <computeroutput>Square</computeroutput> class. In the update step, we set the velocity that was computed in the previous step. And then, we call <computeroutput>update</computeroutput>.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.setVelocity(velocity);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>().<ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.update(dt);</highlight></codeline>
+</programlisting> Finally, we draw the square.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.render(renderer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+</programlisting> And that&apos;s all!</para></sect2>
+<sect2 id="gamedev_101_1gamedev_101_it_moves_full">
+<title>Full example</title>
+<para>Here is the full source code for the example:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;gf/Clock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Color.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/RenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Shapes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Vector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gf/Window.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Square<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Square(<ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Color4f</ref><sp/>color)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>:<sp/>m_position(position)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_velocity(0,<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_size(size)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>,<sp/>m_color(color)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setVelocity(<ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>velocity)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_velocity<sp/>=<sp/>velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_position<sp/>+=<sp/>dt<sp/>*<sp/>m_velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>render(<ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_rectangle_shape" kindref="compound">gf::RectangleShape</ref><sp/>shape({<sp/>m_size,<sp/>m_size<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.<ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref>(m_position);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.setColor(m_color);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>shape.setAnchor(<ref refid="group__graphics_1ggadeb9cdf9d7e8eec2eb8cc638c54b5066a4f1f6016fc9f3f2353c0cc7c67b292bd" kindref="member">gf::Anchor::Center</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(shape);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_position;<sp/></highlight><highlight class="comment">//<sp/>center<sp/>of<sp/>the<sp/>square</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_velocity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Color4f</ref><sp/>m_color;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2u</ref><sp/>ScreenSize(500,<sp/>500);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;It<sp/>moves&quot;</highlight><highlight class="normal">,<sp/>ScreenSize);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>entities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Square<sp/>entity(ScreenSize<sp/>/<sp/>2,<sp/>50.0f,<sp/><ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>game<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref><sp/>clock;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.clear(<ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Speed<sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>velocity(0,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.isOpen())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" kindref="member">gf::EventType::KeyPressed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>.<ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" kindref="member">gf::Keycode::Up</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" kindref="member">gf::Keycode::Down</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::Keycode::Left</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::Keycode::Right</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da4a77f07c8ad223b71ab4ce78a63841ab" kindref="member">gf::EventType::KeyReleased</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1ac4bc17972a3e39e63720c2bcc284d7e7" kindref="member">key</ref>.<ref refid="structgf_1_1_event_1_1_key_event_1a1bdf031a230d3c618b2728b3a2656106" kindref="member">keycode</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba258f49887ef8d14ac268c92b02503aaa" kindref="member">gf::Keycode::Up</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__core_1gga919ab8047a14333e1ed3e12dc536650ba08a38277b0309070706f6652eeae9a53" kindref="member">gf::Keycode::Down</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.y<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::Keycode::Left</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>+=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::Keycode::Right</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.x<sp/>-=<sp/>Speed;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.setVelocity(velocity);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>().<ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.update(dt);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.clear();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entity.render(renderer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.display();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> And here is a screenshot of the result.</para><para><image type="html" name="it_moves.png"></image>
+</para></sect2>
+</sect1>
+<sect1 id="gamedev_101_1gamedev_101_conclusion">
+<title>Conclusion</title>
+<para>In this tutorial, we have explained the structure of a game and we have created a simple example of entity that moves. Now, you can imagine that the square is just a character, or a race car, or anything else. You can start a real game.</para></sect1>
+<sect1 id="gamedev_101_1gamedev_101_references">
+<title>References</title>
+<para><itemizedlist>
+<listitem><para><ref refid="start_game" kindref="compound">Start a game with gf</ref></para></listitem><listitem><para><ulink url="http://gameprogrammingpatterns.com/contents.html">Game Programming Patterns</ulink> </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_input_stream" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::InputStream</compoundname>
+    <derivedcompoundref refid="classgf_1_1_file_input_stream" prot="public" virt="non-virtual">gf::FileInputStream</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_memory_input_stream" prot="public" virt="non-virtual">gf::MemoryInputStream</derivedcompoundref>
+    <includes refid="_input_stream_8h" local="no">gf/InputStream.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_input_stream_1acd2fb7a2b818da4b5272af4d94798316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::InputStream::InputStream</definition>
+        <argsstring>()=default</argsstring>
+        <name>InputStream</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1aab58620305c53a2806975e61bcba5101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::InputStream::InputStream</definition>
+        <argsstring>(const InputStream &amp;)=delete</argsstring>
+        <name>InputStream</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1afe446bb2a0fad563352fa25eb9c3eb21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+        <definition>InputStream&amp; gf::InputStream::operator=</definition>
+        <argsstring>(const InputStream &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1a36008267c17d67733ddab113378c263a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::InputStream::~InputStream</definition>
+        <argsstring>()</argsstring>
+        <name>~InputStream</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1ac44463f69ba794fe40a78fdc6cfc2559" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::InputStream::read</definition>
+        <argsstring>(void *data, std::size_t size)=0</argsstring>
+        <name>read</name>
+        <reimplementedby refid="classgf_1_1_file_input_stream_1a4aaa80f835213155301bdc89a2a17cba">read</reimplementedby>
+        <reimplementedby refid="classgf_1_1_memory_input_stream_1ad9ce2d1c30b23f0afcb481438100862b">read</reimplementedby>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read data from the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>After reading, the stream&apos;s reading position must be advanced by the amount of bytes read.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer where to copy the read data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1a919a3dd478126dceaab913b5ed596e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gf::InputStream::seek</definition>
+        <argsstring>(long position)=0</argsstring>
+        <name>seek</name>
+        <reimplementedby refid="classgf_1_1_file_input_stream_1a962d5893ee39cedaadcb2beb3690b98d">seek</reimplementedby>
+        <reimplementedby refid="classgf_1_1_memory_input_stream_1a981d3a011d4611600e1bbb0bfd75df18">seek</reimplementedby>
+        <param>
+          <type>long</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Change the current reading position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position to seek to, from the beginning</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The position actually sought to </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1add7bc9c5eed9d0937b01715a2ca0de5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long gf::InputStream::tell</definition>
+        <argsstring>()=0</argsstring>
+        <name>tell</name>
+        <reimplementedby refid="classgf_1_1_file_input_stream_1a94ec3f0d1ee0da8e969a3a581735311c">tell</reimplementedby>
+        <reimplementedby refid="classgf_1_1_memory_input_stream_1ab8bff0a874c63ede9603d275595d7908">tell</reimplementedby>
+        <briefdescription>
+<para>Get the current reading position in the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_input_stream_1a5778d908d8432613675de0b8bda4708a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::InputStream::getSize</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSize</name>
+        <reimplementedby refid="classgf_1_1_file_input_stream_1a851c9b5a2a20d7599b9f2a0226f1436e">getSize</reimplementedby>
+        <reimplementedby refid="classgf_1_1_memory_input_stream_1ad1993a39e4d31fda20deede32b5d476e">getSize</reimplementedby>
+        <briefdescription>
+<para>Return the size of the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total number of bytes available in the stream </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="107" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class for custom file input streams. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class allows users to define their own file input sources from which Gamedev Framework can load resources.</para><para>Gamedev Framework resource classes like <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> and <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref> provide <computeroutput>loadFromFile()</computeroutput> and <computeroutput>loadFromMemory()</computeroutput> functions, which read data from conventional sources. However, if you have data coming from a different source (over a network, embedded, encrypted, compressed, etc) you can derive your own class from <ref refid="classgf_1_1_input_stream" kindref="compound">gf::InputStream</ref> and load SFML resources with their <computeroutput>loadFromStream()</computeroutput> function. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="394">
+        <label>gf::FileInputStream</label>
+        <link refid="classgf_1_1_file_input_stream"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>gf::InputStream</label>
+        <link refid="classgf_1_1_input_stream"/>
+      </node>
+      <node id="395">
+        <label>gf::MemoryInputStream</label>
+        <link refid="classgf_1_1_memory_input_stream"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/InputStream.h" bodystart="51" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_input_stream_1a5778d908d8432613675de0b8bda4708a" prot="public" virt="pure-virtual"><scope>gf::InputStream</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_input_stream_1acd2fb7a2b818da4b5272af4d94798316" prot="public" virt="non-virtual"><scope>gf::InputStream</scope><name>InputStream</name></member>
+      <member refid="classgf_1_1_input_stream_1aab58620305c53a2806975e61bcba5101" prot="public" virt="non-virtual"><scope>gf::InputStream</scope><name>InputStream</name></member>
+      <member refid="classgf_1_1_input_stream_1afe446bb2a0fad563352fa25eb9c3eb21" prot="public" virt="non-virtual"><scope>gf::InputStream</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_input_stream_1ac44463f69ba794fe40a78fdc6cfc2559" prot="public" virt="pure-virtual"><scope>gf::InputStream</scope><name>read</name></member>
+      <member refid="classgf_1_1_input_stream_1a919a3dd478126dceaab913b5ed596e6f" prot="public" virt="pure-virtual"><scope>gf::InputStream</scope><name>seek</name></member>
+      <member refid="classgf_1_1_input_stream_1add7bc9c5eed9d0937b01715a2ca0de5b" prot="public" virt="pure-virtual"><scope>gf::InputStream</scope><name>tell</name></member>
+      <member refid="classgf_1_1_input_stream_1a36008267c17d67733ddab113378c263a" prot="public" virt="virtual"><scope>gf::InputStream</scope><name>~InputStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

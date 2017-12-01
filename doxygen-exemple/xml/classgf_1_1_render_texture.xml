@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_render_texture" kind="class" language="C++" prot="public">
+    <compoundname>gf::RenderTexture</compoundname>
+    <basecompoundref refid="classgf_1_1_render_target" prot="public" virt="non-virtual">gf::RenderTarget</basecompoundref>
+    <includes refid="_render_texture_8h" local="no">gf/RenderTexture.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_render_texture_1a53b3e3b243993ebda033fbfebdf4d3bb" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::RenderTexture::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="230" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_render_texture_1abbb15b3a2127768209b0e2b1d71a5bac" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref></type>
+        <definition>Texture gf::RenderTexture::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="231" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_render_texture_1ac7945541b98c0866ecfce828f0229a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RenderTexture::RenderTexture</definition>
+        <argsstring>()</argsstring>
+        <name>RenderTexture</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructs an empty, invalid render-texture. You must call <computeroutput><ref refid="classgf_1_1_render_texture_1a93718fcf938abe72ef734f592d2e9a8b" kindref="member">create()</ref></computeroutput> to have a valid render-texture.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_texture_1a93718fcf938abe72ef734f592d2e9a8b" kindref="member">create()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a491d696070f3c71773b9f234928ee665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RenderTexture::~RenderTexture</definition>
+        <argsstring>()</argsstring>
+        <name>~RenderTexture</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a93718fcf938abe72ef734f592d2e9a8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::RenderTexture::create</definition>
+        <argsstring>(Vector2u size)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create the render-texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>Before calling this function, the render-texture is in an invalid state, thus it is mandatory to call it before doing anything with the render-texture.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the render-texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if creation has been successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a8e7c831c8cb1c52ba3d08b4b55d361f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTexture::setSmooth</definition>
+        <argsstring>(bool smooth=true)</argsstring>
+        <name>setSmooth</name>
+        <param>
+          <type>bool</type>
+          <declname>smooth</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Enable or disable texture smoothing. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is similar to <computeroutput><ref refid="classgf_1_1_bare_texture_1a92130ad8a7d9f530c15418f9188c95ee" kindref="member">Texture::setSmooth()</ref></computeroutput>. This parameter is disabled by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>smooth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable smoothing, false to disable it</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_texture_1a3d7013e54346d6bba18fd22151351083" kindref="member">isSmooth()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="142" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a3d7013e54346d6bba18fd22151351083" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::RenderTexture::isSmooth</definition>
+        <argsstring>() const</argsstring>
+        <name>isSmooth</name>
+        <briefdescription>
+<para>Check if the smooth filtering is enabled or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if texture smoothing is enabled</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_texture_1a8e7c831c8cb1c52ba3d08b4b55d361f8" kindref="member">setSmooth()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="153" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a9fe8e4c5dcca46c10ae3b4d28bcb3ed9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTexture::setRepeated</definition>
+        <argsstring>(bool repeated=true)</argsstring>
+        <name>setRepeated</name>
+        <param>
+          <type>bool</type>
+          <declname>repeated</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Enable or disable texture repeating. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is similar to <computeroutput><ref refid="classgf_1_1_bare_texture_1a34860c67cf5bd39b7d04d290ecee427c" kindref="member">Texture::setRepeated()</ref></computeroutput>. This parameter is disabled by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>repeated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable repeating, false to disable it</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_texture_1adf95c990efd177dc7c229d198a27dedb" kindref="member">isRepeated()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="167" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1adf95c990efd177dc7c229d198a27dedb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::RenderTexture::isRepeated</definition>
+        <argsstring>() const</argsstring>
+        <name>isRepeated</name>
+        <briefdescription>
+<para>Check if the texture is repeated or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if texture is repeated</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_render_texture_1a9fe8e4c5dcca46c10ae3b4d28bcb3ed9" kindref="member">setRepeated()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="178" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1addd1b857dcf658ca3807a9d3dc62d55b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>virtual Vector2u gf::RenderTexture::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <reimplements refid="classgf_1_1_render_target_1a6dc4ae258436db802fa4a2848a4010a6">getSize</reimplements>
+        <briefdescription>
+<para>Return the size of the rendering region of the target. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a9adac598a52ab54707959baf09bd4ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTexture::setActive</definition>
+        <argsstring>()</argsstring>
+        <name>setActive</name>
+        <briefdescription>
+<para>Activate the render-texture for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function activates the render-texture so that all draw calls are targeted to the texture. You should call this function before you want to draw something to the target. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1ab79514bc3756c73ef7b963bb436b922b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderTexture::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+<para>Update the contents of the target texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function updates the target texture with what has been drawn so far. Like for windows, calling this function is mandatory at the end of rendering. Not calling it may leave the texture in an undefined state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1ac78562c405d17bab10c9a11e0cb5fb80" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::RenderTexture::capture</definition>
+        <argsstring>() const</argsstring>
+        <name>capture</name>
+        <briefdescription>
+<para>Copy the current contents of the render texture to an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a slow operation, whose main purpose is to make screenshots of the application. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_texture_1a7bfdfa3ecdf12af04994c4573a6925ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+        <definition>const Texture&amp; gf::RenderTexture::getTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>getTexture</name>
+        <briefdescription>
+<para>Get a read-only reference to the target texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>After drawing to the render-texture and calling <computeroutput><ref refid="classgf_1_1_render_texture_1ab79514bc3756c73ef7b963bb436b922b" kindref="member">display()</ref></computeroutput>, you can retrieve the updated texture using this function, and draw it using a sprite (for example).</para><para>The internal sf::Texture of a render-texture is always the same instance, so that it is possible to call this function once and keep a reference to the texture even after it is modified.</para><para><simplesect kind="return"><para>Const reference to the texture </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="225" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Target for off-screen 2D rendering into a texture. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref> is the little brother of <ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref>. It implements the same 2D drawing and OpenGL-related functions (see their base class <ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref> for more details), the difference is that the result is stored in an off-screen texture rather than being show in a window.</para><para>Rendering to a texture can be useful in a variety of situations:</para><para><itemizedlist>
+<listitem><para>precomputing a complex static texture (like a level&apos;s background from multiple tiles)</para></listitem><listitem><para>applying post-effects to the whole scene with shaders (See <ref refid="classgf_1_1_post_processing" kindref="compound">gf::PostProcessing</ref>)</para></listitem><listitem><para>creating a sprite from a 3D object rendered with OpenGL</para></listitem><listitem><para>etc.</para></listitem></itemizedlist>
+</para><para>Usage example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>render-window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>render-texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref><sp/>textureRenderer;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!textureRenderer.<ref refid="classgf_1_1_render_texture_1a93718fcf938abe72ef734f592d2e9a8b" kindref="member">create</ref>(500,<sp/>500))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>main<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" kindref="member">isOpen</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Event<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Activate<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_texture_1a9adac598a52ab54707959baf09bd4ed2" kindref="member">setActive</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>whole<sp/>texture<sp/>with<sp/>red<sp/>color</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" kindref="member">clear</ref>(<ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>stuff<sp/>to<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite);<sp/><sp/></highlight><highlight class="comment">//<sp/>sprite<sp/>is<sp/>a<sp/>gf::Sprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(shape);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>shape<sp/>is<sp/>a<sp/>gf::Shape</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(text);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>text<sp/>is<sp/>a<sp/>gf::Text</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>We&apos;re<sp/>done<sp/>drawing<sp/>to<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>textureRenderer.<ref refid="classgf_1_1_render_texture_1ab79514bc3756c73ef7b963bb436b922b" kindref="member">display</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>we<sp/>start<sp/>rendering<sp/>to<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Activate<sp/>it<sp/>first<sp/>and<sp/>then<sp/>clear<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_window_1a371ef7bab8a2957643bdf714c4270b2e" kindref="member">setActive</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" kindref="member">clear</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>sprite(textureRenderer.<ref refid="classgf_1_1_render_texture_1a7bfdfa3ecdf12af04994c4573a6925ca" kindref="member">getTexture</ref>());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>End<sp/>the<sp/>current<sp/>frame<sp/>and<sp/>display<sp/>its<sp/>contents<sp/>on<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" kindref="member">display</ref>();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>, <ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref>, <ref refid="classgf_1_1_view" kindref="compound">gf::View</ref>, <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="636">
+        <label>gf::RenderTexture</label>
+        <link refid="classgf_1_1_render_texture"/>
+        <childnode refid="637" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="637">
+        <label>gf::RenderTarget</label>
+        <link refid="classgf_1_1_render_target"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="638">
+        <label>gf::RenderTexture</label>
+        <link refid="classgf_1_1_render_texture"/>
+        <childnode refid="639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>gf::RenderTarget</label>
+        <link refid="classgf_1_1_render_target"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" line="102" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderTexture.h" bodystart="102" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_render_texture_1ac78562c405d17bab10c9a11e0cb5fb80" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>capture</name></member>
+      <member refid="classgf_1_1_render_target_1a4c83cb262854ad4b3cf77bc811c1bff1" prot="protected" virt="non-virtual"><scope>gf::RenderTexture</scope><name>captureFramebuffer</name></member>
+      <member refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_target_1a878f6ffa9ba25da18db791fa83eac4c3" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_texture_1a93718fcf938abe72ef734f592d2e9a8b" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>create</name></member>
+      <member refid="classgf_1_1_render_texture_1ab79514bc3756c73ef7b963bb436b922b" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>display</name></member>
+      <member refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a56eaf8b36e55cac0f2fd946443a72a9c" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1aa2c4723f1953113890771b1659096ad1" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a71d282bd4078463487daac06e544f199" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a7a31eaa2a6710e4ec164807e46977159" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a39de6116a654206f146ce4d713713f93" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1aa1814c8b195d2a1a5e6525a3cba3c26f" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getAliasedLineWidthRange</name></member>
+      <member refid="classgf_1_1_render_target_1a76ae398641a9171c45bc31abd6e42112" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1afcb4bee93cdb4b5449dfbf823773f512" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getCanonicalViewport</name></member>
+      <member refid="classgf_1_1_render_target_1af7b6eeeca709f64b81ea6a09d13ac8d9" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getLineWidth</name></member>
+      <member refid="classgf_1_1_render_target_1a29797883fe14f6e1c49c6290adbd4a8c" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getScissorBox</name></member>
+      <member refid="classgf_1_1_render_texture_1addd1b857dcf658ca3807a9d3dc62d55b" prot="public" virt="virtual"><scope>gf::RenderTexture</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_render_texture_1a7bfdfa3ecdf12af04994c4573a6925ca" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getView</name></member>
+      <member refid="classgf_1_1_render_target_1a51f479ce259f75e323549980cc3f014e" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>getViewport</name></member>
+      <member refid="classgf_1_1_render_target_1ac870325bffb142b4675ee2b3e9936b66" prot="protected" virt="non-virtual"><scope>gf::RenderTexture</scope><name>initialize</name></member>
+      <member refid="classgf_1_1_render_texture_1adf95c990efd177dc7c229d198a27dedb" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>isRepeated</name></member>
+      <member refid="classgf_1_1_render_texture_1a3d7013e54346d6bba18fd22151351083" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>isSmooth</name></member>
+      <member refid="classgf_1_1_render_texture_1a53b3e3b243993ebda033fbfebdf4d3bb" prot="private" virt="non-virtual"><scope>gf::RenderTexture</scope><name>m_name</name></member>
+      <member refid="classgf_1_1_render_texture_1abbb15b3a2127768209b0e2b1d71a5bac" prot="private" virt="non-virtual"><scope>gf::RenderTexture</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1aebfe664cad224644a04f2a82cb4acad7" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a78fae041fa10cd9a3a960f816b1147cb" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a06233abc86a7db72c62b012ed151dc62" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_render_target_1a42e965c05374a9bd8f9bef9630572479" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_target_1af36a6312551fa0e297a9f6651b9fee82" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_texture_1ac7945541b98c0866ecfce828f0229a69" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>RenderTexture</name></member>
+      <member refid="classgf_1_1_render_texture_1a9adac598a52ab54707959baf09bd4ed2" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_render_target_1ab47783a4937a88fcf72e282030b86c54" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_texture_1a9fe8e4c5dcca46c10ae3b4d28bcb3ed9" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setRepeated</name></member>
+      <member refid="classgf_1_1_render_target_1ac400fc5713a745e5459a285ca4c3c11c" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setScissorBox</name></member>
+      <member refid="classgf_1_1_render_texture_1a8e7c831c8cb1c52ba3d08b4b55d361f8" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setSmooth</name></member>
+      <member refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>setView</name></member>
+      <member refid="classgf_1_1_render_target_1a7d5128d6f88500fdc8b526ca24844431" prot="public" virt="virtual"><scope>gf::RenderTexture</scope><name>~RenderTarget</name></member>
+      <member refid="classgf_1_1_render_texture_1a491d696070f3c71773b9f234928ee665" prot="public" virt="non-virtual"><scope>gf::RenderTexture</scope><name>~RenderTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

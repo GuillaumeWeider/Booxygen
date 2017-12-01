@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__game" kind="group">
+    <compoundname>game</compoundname>
+    <title>Game classes</title>
+    <innerclass refid="classgf_1_1_value_activity" prot="public">gf::ValueActivity</innerclass>
+    <innerclass refid="classgf_1_1_rotate_to_activity" prot="public">gf::RotateToActivity</innerclass>
+    <innerclass refid="classgf_1_1_move_to_activity" prot="public">gf::MoveToActivity</innerclass>
+    <innerclass refid="classgf_1_1_color_activity" prot="public">gf::ColorActivity</innerclass>
+    <innerclass refid="classgf_1_1_callback_activity" prot="public">gf::CallbackActivity</innerclass>
+    <innerclass refid="classgf_1_1_delay_activity" prot="public">gf::DelayActivity</innerclass>
+    <innerclass refid="classgf_1_1_sequence_activity" prot="public">gf::SequenceActivity</innerclass>
+    <innerclass refid="classgf_1_1_repeat_activity" prot="public">gf::RepeatActivity</innerclass>
+    <innerclass refid="classgf_1_1_parallel_activity" prot="public">gf::ParallelActivity</innerclass>
+    <innerclass refid="classgf_1_1_activity" prot="public">gf::Activity</innerclass>
+    <innerclass refid="classgf_1_1_asset_manager" prot="public">gf::AssetManager</innerclass>
+    <innerclass refid="structgf_1_1_penetration" prot="public">gf::Penetration</innerclass>
+    <innerclass refid="structgf_1_1_console_1_1_cell" prot="private">gf::Console::Cell</innerclass>
+    <innerclass refid="structgf_1_1_console_1_1_color_control" prot="private">gf::Console::ColorControl</innerclass>
+    <innerclass refid="classgf_1_1_console" prot="public">gf::Console</innerclass>
+    <innerclass refid="structgf_1_1_console_char" prot="public">gf::ConsoleChar</innerclass>
+    <innerclass refid="structgf_1_1_console_font_format" prot="public">gf::ConsoleFontFormat</innerclass>
+    <innerclass refid="structgf_1_1_console_font_element" prot="public">gf::ConsoleFontElement</innerclass>
+    <innerclass refid="structgf_1_1_predefined_console_font_format" prot="public">gf::PredefinedConsoleFontFormat</innerclass>
+    <innerclass refid="classgf_1_1_console_font" prot="public">gf::ConsoleFont</innerclass>
+    <innerclass refid="classgf_1_1_bitmap_console_font" prot="public">gf::BitmapConsoleFont</innerclass>
+    <innerclass refid="classgf_1_1_colored_console_font" prot="public">gf::ColoredConsoleFont</innerclass>
+    <innerclass refid="classgf_1_1_entity" prot="public">gf::Entity</innerclass>
+    <innerclass refid="classgf_1_1_entity_container" prot="public">gf::EntityContainer</innerclass>
+    <innerclass refid="classgf_1_1_square_map" prot="public">gf::SquareMap</innerclass>
+    <innerclass refid="structgf_1_1_message" prot="public">gf::Message</innerclass>
+    <innerclass refid="structgf_1_1_message_manager_1_1_handler" prot="private">gf::MessageManager::Handler</innerclass>
+    <innerclass refid="classgf_1_1_message_manager" prot="public">gf::MessageManager</innerclass>
+    <innerclass refid="classgf_1_1_model" prot="public">gf::Model</innerclass>
+    <innerclass refid="classgf_1_1_model_container" prot="public">gf::ModelContainer</innerclass>
+    <innerclass refid="classgf_1_1_fixed_timestep_model" prot="public">gf::FixedTimestepModel</innerclass>
+    <innerclass refid="classgf_1_1_physics_body" prot="public">gf::PhysicsBody</innerclass>
+    <innerclass refid="classgf_1_1_physics_geometry" prot="public">gf::PhysicsGeometry</innerclass>
+    <innerclass refid="classgf_1_1_physics_model" prot="public">gf::PhysicsModel</innerclass>
+    <innerclass refid="classgf_1_1_resource_cache" prot="public">gf::ResourceCache</innerclass>
+    <innerclass refid="classgf_1_1_resource_manager" prot="public">gf::ResourceManager</innerclass>
+    <innerclass refid="classgf_1_1_space_tree" prot="public">gf::SpaceTree</innerclass>
+    <innerclass refid="classgf_1_1_texture_atlas" prot="public">gf::TextureAtlas</innerclass>
+    <innerclass refid="classgf_1_1_tmx_properties" prot="public">gf::TmxProperties</innerclass>
+    <innerclass refid="classgf_1_1_tmx_visitor" prot="public">gf::TmxVisitor</innerclass>
+    <innerclass refid="structgf_1_1_tmx_layer" prot="public">gf::TmxLayer</innerclass>
+    <innerclass refid="structgf_1_1_tmx_cell" prot="public">gf::TmxCell</innerclass>
+    <innerclass refid="structgf_1_1_tmx_tile_layer" prot="public">gf::TmxTileLayer</innerclass>
+    <innerclass refid="structgf_1_1_tmx_object" prot="public">gf::TmxObject</innerclass>
+    <innerclass refid="structgf_1_1_tmx_rectangle" prot="public">gf::TmxRectangle</innerclass>
+    <innerclass refid="structgf_1_1_tmx_ellipse" prot="public">gf::TmxEllipse</innerclass>
+    <innerclass refid="structgf_1_1_tmx_tile_object" prot="public">gf::TmxTileObject</innerclass>
+    <innerclass refid="structgf_1_1_tmx_polyline" prot="public">gf::TmxPolyline</innerclass>
+    <innerclass refid="structgf_1_1_tmx_polygon" prot="public">gf::TmxPolygon</innerclass>
+    <innerclass refid="structgf_1_1_tmx_text" prot="public">gf::TmxText</innerclass>
+    <innerclass refid="structgf_1_1_tmx_object_layer" prot="public">gf::TmxObjectLayer</innerclass>
+    <innerclass refid="structgf_1_1_tmx_image" prot="public">gf::TmxImage</innerclass>
+    <innerclass refid="structgf_1_1_tmx_image_layer" prot="public">gf::TmxImageLayer</innerclass>
+    <innerclass refid="structgf_1_1_tmx_group_layer" prot="public">gf::TmxGroupLayer</innerclass>
+    <innerclass refid="structgf_1_1_tmx_frame" prot="public">gf::TmxFrame</innerclass>
+    <innerclass refid="structgf_1_1_tmx_animation" prot="public">gf::TmxAnimation</innerclass>
+    <innerclass refid="structgf_1_1_tmx_terrain" prot="public">gf::TmxTerrain</innerclass>
+    <innerclass refid="structgf_1_1_tmx_tile" prot="public">gf::TmxTile</innerclass>
+    <innerclass refid="structgf_1_1_tmx_tileset" prot="public">gf::TmxTileset</innerclass>
+    <innerclass refid="structgf_1_1_tmx_layers" prot="public">gf::TmxLayers</innerclass>
+    <innerclass refid="classgf_1_1_tween" prot="public">gf::Tween</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__game_1gac51a053dba8754067dd4bbbf793754df" prot="public" static="no">
+        <name>ActivityStatus</name>
+        <enumvalue id="group__game_1ggac51a053dba8754067dd4bbbf793754dfa5bda814c4aedb126839228f1a3d92f09" prot="public">
+          <name>Running</name>
+          <briefdescription>
+<para>The activity is still running. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggac51a053dba8754067dd4bbbf793754dfa8f3d10eb21bd36347c258679eba9e92b" prot="public">
+          <name>Finished</name>
+          <briefdescription>
+<para>The activity is finished. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Status of an activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_activity" kindref="compound">gf::Activity</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" line="38" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga79cfe1ad310880da0b2586645db3af32" prot="public" static="no">
+        <name>ConsoleAlignment</name>
+        <enumvalue id="group__game_1gga79cfe1ad310880da0b2586645db3af32a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>Left alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga79cfe1ad310880da0b2586645db3af32a4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <briefdescription>
+<para>Centered alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga79cfe1ad310880da0b2586645db3af32a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>Right alignment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The alignment of the text in the console. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="50" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1gad82e9592419fd671caafe4af9b4f89e7" prot="public" static="no">
+        <name>CellProperty</name>
+        <enumvalue id="group__game_1ggad82e9592419fd671caafe4af9b4f89e7a3d971943089a3388c01fb297a32d9ba7" prot="public">
+          <name>Transparent</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>The cell is transparent. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggad82e9592419fd671caafe4af9b4f89e7a69266ac9c6970974587fe7f8b6b3c0a4" prot="public">
+          <name>Walkable</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>The cell is walkable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggad82e9592419fd671caafe4af9b4f89e7aec24d78ce33048dc73a2b6b1a0690192" prot="public">
+          <name>Visible</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>The cell is visible (computed by FoV) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggad82e9592419fd671caafe4af9b4f89e7aae1f26f8b07a89ba8a7a85a4d860274b" prot="public">
+          <name>Explored</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>The cell has been explored (computed by FoV) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A property of a cell. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__game_1gae210e17d82de9239110f20f97c5e4a2a" kindref="member">gf::CellFlags</ref>, <ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="40" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga74d29b35a0c62fa4662b9d13dfdb6a9c" prot="public" static="no">
+        <name>FieldOfVision</name>
+        <enumvalue id="group__game_1gga74d29b35a0c62fa4662b9d13dfdb6a9ca972e73b7a882d0802a4e3a16946a2f94" prot="public">
+          <name>Basic</name>
+          <briefdescription>
+<para>A basic algorithm based on ray casting. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Algorithm for computing a field of vision. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1gae6054347bb8a3a23255c73431e200e1f" prot="public" static="no">
+        <name>FieldOfVisionLimit</name>
+        <enumvalue id="group__game_1ggae6054347bb8a3a23255c73431e200e1fa984ceac16fab685fc50b8d8a5eabf7de" prot="public">
+          <name>Included</name>
+          <briefdescription>
+<para>The limits are included in the field of vision. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggae6054347bb8a3a23255c73431e200e1fa122180683375b33fd7171ebba4660f80" prot="public">
+          <name>Excluded</name>
+          <briefdescription>
+<para>The limits are <emphasis>not</emphasis> included in the field of vision. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Constant to indicate if the limit is part of the field of vision. </para>        </briefdescription>
+        <detaileddescription>
+<para>The limit is generally a wall that is next to a visible ground cell.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="83" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1gab9ae4451ababe77363f782b6f6b1a0b0" prot="public" static="no">
+        <name>Route</name>
+        <enumvalue id="group__game_1ggab9ae4451ababe77363f782b6f6b1a0b0a5dd57ad2903b807a288f1519c98dfc29" prot="public">
+          <name>AStar</name>
+          <briefdescription>
+<para>The A* algorithm. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggab9ae4451ababe77363f782b6f6b1a0b0a052d7289884a0d0dae24aa88a7e62e83" prot="public">
+          <name>Dijkstra</name>
+          <briefdescription>
+<para>The Dijkstra algorithm. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Algorithm for computing a route. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" prot="public" static="no">
+        <name>MessageStatus</name>
+        <enumvalue id="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" prot="public">
+          <name>Keep</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The handler must be kept </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a952f8d52fbca6da722e72d520acd6edd" prot="public">
+          <name>Die</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The handler can be removed </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A message status. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref> indicates if a handler should be kept by the message manager or can be removed so that it will not receive any more messages.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>, <ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1gaa06269a0ca3ce240f9792972de3376c6" prot="public" static="no">
+        <name>TmxOrientation</name>
+        <enumvalue id="group__game_1ggaa06269a0ca3ce240f9792972de3376c6a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>An unknown orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggaa06269a0ca3ce240f9792972de3376c6a7b2e80981e360c8634aef96cbcb62e57" prot="public">
+          <name>Orthogonal</name>
+          <briefdescription>
+<para>An orthogonal orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggaa06269a0ca3ce240f9792972de3376c6a93fe1f7c5ca2e09af063aca96d0625cc" prot="public">
+          <name>Isometric</name>
+          <briefdescription>
+<para>An isometric orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggaa06269a0ca3ce240f9792972de3376c6af421d06a10620aa57ae6ebaec46cffe9" prot="public">
+          <name>Staggered</name>
+          <briefdescription>
+<para>A staggered orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggaa06269a0ca3ce240f9792972de3376c6a28666f62a0ffe4485fb7c7e878234dda" prot="public">
+          <name>Hexagonal</name>
+          <briefdescription>
+<para>A hexagonal orientation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The orientation of the map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="47" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga7dded5127e19cd08787a6c9efecda264" prot="public" static="no">
+        <name>TmxStaggerIndex</name>
+        <enumvalue id="group__game_1gga7dded5127e19cd08787a6c9efecda264a37b6bd7fe61d651735cec3d3b0356c66" prot="public">
+          <name>Odd</name>
+          <briefdescription>
+<para>A odd stagger index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga7dded5127e19cd08787a6c9efecda264a35537fbc25d87ffe59e4f35fefcd34b7" prot="public">
+          <name>Even</name>
+          <briefdescription>
+<para>An even stagger index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Stagger index of the hexagonal map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1gaebdb27245ae512fc02acfa9546f97a65" prot="public" static="no">
+        <name>TmxStaggerAxis</name>
+        <enumvalue id="group__game_1ggaebdb27245ae512fc02acfa9546f97a65a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+<para>The x stagger axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1ggaebdb27245ae512fc02acfa9546f97a65a57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <briefdescription>
+<para>The y stagger axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Stagger axis of the hexagonal map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="68" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga00765bffce68194b1326a881d3013533" prot="public" static="no">
+        <name>TmxRenderOrder</name>
+        <enumvalue id="group__game_1gga00765bffce68194b1326a881d3013533ac7ff24224bc4b699e06c58a663ac618c" prot="public">
+          <name>RightDown</name>
+          <briefdescription>
+<para>Right down order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga00765bffce68194b1326a881d3013533a41f885e8adf5274339a2cad184e99912" prot="public">
+          <name>RightUp</name>
+          <briefdescription>
+<para>Right up order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga00765bffce68194b1326a881d3013533ac0301e45191901ce8040ef1c1695f832" prot="public">
+          <name>LeftDown</name>
+          <briefdescription>
+<para>Left down order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga00765bffce68194b1326a881d3013533a105736deb2f54f03c011e5f053e08d00" prot="public">
+          <name>LeftUp</name>
+          <briefdescription>
+<para>Left up order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>the render order of the tiles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="77" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga20b906ea380de1bb09eda6a9b94b3a20" prot="public" static="no">
+        <name>TmxFlip</name>
+        <enumvalue id="group__game_1gga20b906ea380de1bb09eda6a9b94b3a20a82d96265a801bd741cb308aea729e587" prot="public">
+          <name>Horizontally</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Flip horizontally. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga20b906ea380de1bb09eda6a9b94b3a20a2f956b64560e7307c699c3492cb37607" prot="public">
+          <name>Vertically</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Flip vertically. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga20b906ea380de1bb09eda6a9b94b3a20afe039fc6b7f1e91e011ad8e765172326" prot="public">
+          <name>Diagonally</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Flip diagonally. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A flag to indicate how to flip a tile in a cell. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_tmx_cell" kindref="compound">gf::TmxCell</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="309" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="309" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__game_1ga1814e976191efb6b2df16979cbbad63e" prot="public" static="no">
+        <name>TmxDrawOrder</name>
+        <enumvalue id="group__game_1gga1814e976191efb6b2df16979cbbad63ead9504b07e71879cc2a511f9b6fcd6606" prot="public">
+          <name>TopDown</name>
+          <briefdescription>
+<para>Top-down order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__game_1gga1814e976191efb6b2df16979cbbad63ea88fa71f0a6e0dfedbb46d91cc0b37a50" prot="public">
+          <name>Index</name>
+          <briefdescription>
+<para>Index order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The draw order of the objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="338" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="338" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__game_1ga797f1ec5600b131777b7cb9800adcda4" prot="public" static="no">
+        <type>char</type>
+        <definition>using gf::ConsoleColorControl = typedef char</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl</name>
+        <briefdescription>
+<para>A type for color controls in a console. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__game_1gae210e17d82de9239110f20f97c5e4a2a" prot="public" static="no">
+        <type>Flags&lt; CellProperty &gt;</type>
+        <definition>using gf::CellFlags = typedef Flags&lt;CellProperty&gt;</definition>
+        <argsstring></argsstring>
+        <name>CellFlags</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> composed of cell properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__game_1gad82e9592419fd671caafe4af9b4f89e7" kindref="member">gf::CellProperty</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" prot="public" static="no">
+        <type>std::function&lt; MessageStatus(Id, Message *)&gt;</type>
+        <definition>using gf::MessageHandler = typedef std::function&lt;MessageStatus(Id, Message *)&gt;</definition>
+        <argsstring></argsstring>
+        <name>MessageHandler</name>
+        <briefdescription>
+<para>A message handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref> is a function that can be called when a message is sent in a message handler. It can be a free function:</para><para><programlisting><codeline><highlight class="normal"><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref><sp/>onHeroPosition(<ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/>type,<sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>assert(type<sp/>==<sp/>HeroPosition::type);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>heroPosition<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">HeroPosition*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>with<sp/>heroPosition-&gt;position<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" kindref="member">gf::MessageStatus::Keep</ref>;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref><sp/>handler<sp/>=<sp/>onHeroPosition;</highlight></codeline>
+</programlisting></para><para>It can also be a member function (which is, in fact, the most probable use case).</para><para><programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref><sp/>onHeroPosition(<ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/>type,<sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(type<sp/>==<sp/>HeroPosition::type);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>heroPosition<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">HeroPosition*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>with<sp/>heroPosition-&gt;position<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" kindref="member">gf::MessageStatus::Keep</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Foo<sp/>foo;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref><sp/>handler<sp/>=<sp/>std::bind(&amp;Foo::onHeroPosition,<sp/>&amp;foo);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>, <ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref>, <ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" line="121" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__game_1ga6c620c63dd07ac6064f87f0ddafd1e87" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>using gf::MessageHandlerId = typedef uint64_t</definition>
+        <argsstring></argsstring>
+        <name>MessageHandlerId</name>
+        <briefdescription>
+<para>An identifier for a message handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/MessageManager.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/MessageManager.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__game_1gaacde5b93f2abb57973093ef86a39aea8" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControl1</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl1</name>
+        <initializer>= &apos;\x01&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control #1. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1gad4e9414ae3fe12d1c4419cbec1f6de97" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControl2</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl2</name>
+        <initializer>= &apos;\x02&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control #2. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1gac255d057740c130a6e69625eb6ddcc9f" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControl3</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl3</name>
+        <initializer>= &apos;\x03&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control #3. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1gaae3d0e16f399946d0cffa254d67eae5f" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControl4</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl4</name>
+        <initializer>= &apos;\x04&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control #4. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1ga025f8097e70254392eee43c7f80291c8" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControl5</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControl5</name>
+        <initializer>= &apos;\x05&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control #5. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="102" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1gae91305b923e63fd3d4df361b375da7a5" prot="public" static="no" mutable="no">
+        <type>constexpr ConsoleColorControl</type>
+        <definition>constexpr ConsoleColorControl gf::ConsoleColorControlStop</definition>
+        <argsstring></argsstring>
+        <name>ConsoleColorControlStop</name>
+        <initializer>= &apos;\x06&apos;</initializer>
+        <briefdescription>
+<para>The constant for color control stop. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="110" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__game_1gabde4b40b7057b604d7be3e3ee6e44f83" prot="public" static="no" mutable="no">
+        <type>constexpr CellFlags</type>
+        <definition>constexpr CellFlags gf::EmptyCell</definition>
+        <argsstring></argsstring>
+        <name>EmptyCell</name>
+        <initializer>= <ref refid="classgf_1_1_flags_1aeee3d1b4959f81d8b8518389db7acc96" kindref="member">combineFlags</ref>(CellProperty::Transparent, CellProperty::Walkable)</initializer>
+        <briefdescription>
+<para>An empty cell. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty cell is transparent and walkable.</para><para><simplesect kind="see"><para><ref refid="group__game_1gad82e9592419fd671caafe4af9b4f89e7" kindref="member">gf::CellProperty</ref>, <ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" line="63" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Map.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All the classes related to game systems and game entities. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Entities and models: <ref refid="classgf_1_1_entity" kindref="compound">gf::Entity</ref>, <ref refid="classgf_1_1_entity_container" kindref="compound">gf::EntityContainer</ref>, <ref refid="classgf_1_1_model" kindref="compound">gf::Model</ref>, <ref refid="classgf_1_1_model_container" kindref="compound">gf::ModelContainer</ref></para></listitem><listitem><para>Application messages: <ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>, <ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref></para></listitem><listitem><para>Resources: <ref refid="classgf_1_1_asset_manager" kindref="compound">gf::AssetManager</ref>, <ref refid="classgf_1_1_resource_cache" kindref="compound">gf::ResourceCache</ref>, <ref refid="classgf_1_1_resource_manager" kindref="compound">gf::ResourceManager</ref>, <ref refid="classgf_1_1_texture_atlas" kindref="compound">gf::TextureAtlas</ref></para></listitem><listitem><para>Physics: <ref refid="classgf_1_1_physics_body" kindref="compound">gf::PhysicsBody</ref>, <ref refid="classgf_1_1_physics_geometry" kindref="compound">gf::PhysicsGeometry</ref>, <ref refid="classgf_1_1_physics_model" kindref="compound">gf::PhysicsModel</ref></para></listitem><listitem><para>Animations: <ref refid="classgf_1_1_activity" kindref="compound">gf::Activity</ref>, <ref refid="classgf_1_1_tween" kindref="compound">gf::Tween</ref></para></listitem><listitem><para>Geometry: <ref refid="group__core_1ga1ef096f0d24fef43c511b1a384a48e57" kindref="member">gf::generateLine()</ref>, <ref refid="group__core_1ga488a9efee6bb0ff4d2cb1028a60a83c6" kindref="member">gf::midpointDisplacement1D()</ref></para></listitem><listitem><para>Virtual console: <ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref>, <ref refid="classgf_1_1_console_font" kindref="compound">gf::ConsoleFont</ref>, <ref refid="structgf_1_1_console_char" kindref="compound">gf::ConsoleChar</ref></para></listitem><listitem><para>Roguelike toolkit: <ref refid="classgf_1_1_square_map" kindref="compound">gf::SquareMap</ref>, <ref refid="classgf_1_1_space_tree" kindref="compound">gf::SpaceTree</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_control" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Control</compoundname>
+    <derivedcompoundref refid="classgf_1_1_close_control" prot="public" virt="non-virtual">gf::CloseControl</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_gamepad_axis_control" prot="public" virt="non-virtual">gf::GamepadAxisControl</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_gamepad_button_control" prot="public" virt="non-virtual">gf::GamepadButtonControl</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_keycode_key_control" prot="public" virt="non-virtual">gf::KeycodeKeyControl</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_mouse_button_control" prot="public" virt="non-virtual">gf::MouseButtonControl</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_scancode_key_control" prot="public" virt="non-virtual">gf::ScancodeKeyControl</derivedcompoundref>
+    <includes refid="_control_8h" local="no">gf/Control.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_control_1aa159aa3c1f4cb52ebd3565f80e0940b7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gf::Control::m_active</definition>
+        <argsstring></argsstring>
+        <name>m_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_control_1ad97882f2c328b5f235a87bb608cf8cb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Control::Control</definition>
+        <argsstring>()</argsstring>
+        <name>Control</name>
+        <briefdescription>
+<para>Construct a control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_control_1a85333ef810395ee3fd2ddba48cce76fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Control::~Control</definition>
+        <argsstring>()</argsstring>
+        <name>~Control</name>
+        <briefdescription>
+<para>Destroy the control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Control::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+<para>Check if the control is active. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the control is active.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_action_1a0fbb05c8d27eb08854200a4d7518debd" kindref="member">Action::isActive()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Control::setActive</definition>
+        <argsstring>(bool active=true)</argsstring>
+        <name>setActive</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Change the active state of the control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the control. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Control::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Desactivate the control. </para>        </briefdescription>
+        <detaileddescription>
+<para>This call is equivalent to:</para><para><programlisting><codeline><highlight class="normal">this.<ref refid="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" kindref="member">setActive</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" kindref="member">Action::reset()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="85" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gf::Control::processEvent</definition>
+        <argsstring>(const Event &amp;event)=0</argsstring>
+        <name>processEvent</name>
+        <reimplementedby refid="classgf_1_1_keycode_key_control_1ad6cb45242d80909584e7001f023055af">processEvent</reimplementedby>
+        <reimplementedby refid="classgf_1_1_scancode_key_control_1aa35c61ff584d66bd38831d98f380b911">processEvent</reimplementedby>
+        <reimplementedby refid="classgf_1_1_mouse_button_control_1a0de368c65c7f7f4f37133c9e777450f4">processEvent</reimplementedby>
+        <reimplementedby refid="classgf_1_1_gamepad_button_control_1a409ddb7a9639100681cf9137691dee1a">processEvent</reimplementedby>
+        <reimplementedby refid="classgf_1_1_gamepad_axis_control_1a2217a478cb4acc2cb541ec085a739c6a">processEvent</reimplementedby>
+        <reimplementedby refid="classgf_1_1_close_control_1aaa6ddf2d436acd467ba4c0e477210d85">processEvent</reimplementedby>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the control thanks to an event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event to update the control.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" kindref="member">Action::processEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A physical control. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="175">
+        <label>gf::Control</label>
+        <link refid="classgf_1_1_control"/>
+      </node>
+      <node id="178">
+        <label>gf::GamepadButtonControl</label>
+        <link refid="classgf_1_1_gamepad_button_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>gf::GamepadAxisControl</label>
+        <link refid="classgf_1_1_gamepad_axis_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>gf::CloseControl</label>
+        <link refid="classgf_1_1_close_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>gf::ScancodeKeyControl</label>
+        <link refid="classgf_1_1_scancode_key_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>gf::KeycodeKeyControl</label>
+        <link refid="classgf_1_1_keycode_key_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>gf::MouseButtonControl</label>
+        <link refid="classgf_1_1_mouse_button_control"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" line="38" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Control.h" bodystart="38" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_control_1ad97882f2c328b5f235a87bb608cf8cb5" prot="public" virt="non-virtual"><scope>gf::Control</scope><name>Control</name></member>
+      <member refid="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" prot="public" virt="non-virtual"><scope>gf::Control</scope><name>isActive</name></member>
+      <member refid="classgf_1_1_control_1aa159aa3c1f4cb52ebd3565f80e0940b7" prot="private" virt="non-virtual"><scope>gf::Control</scope><name>m_active</name></member>
+      <member refid="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc" prot="public" virt="pure-virtual"><scope>gf::Control</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" prot="public" virt="non-virtual"><scope>gf::Control</scope><name>reset</name></member>
+      <member refid="classgf_1_1_control_1a68143b6a1493ae1a41b951aa54f2b050" prot="public" virt="non-virtual"><scope>gf::Control</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_control_1a85333ef810395ee3fd2ddba48cce76fc" prot="public" virt="virtual"><scope>gf::Control</scope><name>~Control</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

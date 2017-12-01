@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_transform_8h" kind="file" language="C++">
+    <compoundname>Transform.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="_matrix_8h" local="yes">Matrix.h</includes>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_rect_8h" local="yes">Rect.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_render_states_8h" local="yes">RenderStates.h</includedby>
+    <includedby refid="_physics_body_8h" local="yes">PhysicsBody.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <incdepgraph>
+      <node id="2256">
+        <label>cstdint</label>
+      </node>
+      <node id="2254">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="2250">
+        <label>cmath</label>
+      </node>
+      <node id="2255">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="2252" relation="include">
+        </childnode>
+        <childnode refid="2256" relation="include">
+        </childnode>
+        <childnode refid="2253" relation="include">
+        </childnode>
+        <childnode refid="2257" relation="include">
+        </childnode>
+        <childnode refid="2258" relation="include">
+        </childnode>
+        <childnode refid="2254" relation="include">
+        </childnode>
+      </node>
+      <node id="2251">
+        <label>Matrix.h</label>
+        <link refid="_matrix_8h_source"/>
+        <childnode refid="2252" relation="include">
+        </childnode>
+        <childnode refid="2253" relation="include">
+        </childnode>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2252">
+        <label>cstddef</label>
+      </node>
+      <node id="2258">
+        <label>type_traits</label>
+      </node>
+      <node id="2249">
+        <label>Transform.h</label>
+        <link refid="_transform_8h"/>
+        <childnode refid="2250" relation="include">
+        </childnode>
+        <childnode refid="2251" relation="include">
+        </childnode>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2253">
+        <label>algorithm</label>
+      </node>
+      <node id="2259">
+        <label>Rect.h</label>
+        <link refid="_rect_8h_source"/>
+        <childnode refid="2252" relation="include">
+        </childnode>
+        <childnode refid="2253" relation="include">
+        </childnode>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2257">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2280">
+        <label>PostProcessing.h</label>
+        <link refid="_post_processing_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2271">
+        <label>Grid.h</label>
+        <link refid="_grid_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2273">
+        <label>NinePatch.h</label>
+        <link refid="_nine_patch_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2287">
+        <label>SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2275">
+        <label>Shape.h</label>
+        <link refid="_shape_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2276" relation="include">
+        </childnode>
+      </node>
+      <node id="2265">
+        <label>AnimatedSprite.h</label>
+        <link refid="_animated_sprite_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2276">
+        <label>Shapes.h</label>
+        <link refid="_shapes_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2284">
+        <label>RenderPipeline.h</label>
+        <link refid="_render_pipeline_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2283">
+        <label>RenderTarget.h</label>
+        <link refid="_render_target_8h_source"/>
+        <childnode refid="2284" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2285" relation="include">
+        </childnode>
+        <childnode refid="2286" relation="include">
+        </childnode>
+      </node>
+      <node id="2282">
+        <label>EntityContainer.h</label>
+        <link refid="_entity_container_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2285">
+        <label>RenderTexture.h</label>
+        <link refid="_render_texture_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2261">
+        <label>RenderStates.h</label>
+        <link refid="_render_states_8h_source"/>
+        <childnode refid="2262" relation="include">
+        </childnode>
+        <childnode refid="2282" relation="include">
+        </childnode>
+        <childnode refid="2283" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2287" relation="include">
+        </childnode>
+      </node>
+      <node id="2262">
+        <label>Drawable.h</label>
+        <link refid="_drawable_8h_source"/>
+        <childnode refid="2263" relation="include">
+        </childnode>
+        <childnode refid="2279" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2280" relation="include">
+        </childnode>
+        <childnode refid="2281" relation="include">
+        </childnode>
+      </node>
+      <node id="2274">
+        <label>Particles.h</label>
+        <link refid="_particles_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2263">
+        <label>Transformable.h</label>
+        <link refid="_transformable_8h_source"/>
+        <childnode refid="2264" relation="include">
+        </childnode>
+        <childnode refid="2267" relation="include">
+        </childnode>
+        <childnode refid="2268" relation="include">
+        </childnode>
+        <childnode refid="2269" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+        <childnode refid="2273" relation="include">
+        </childnode>
+        <childnode refid="2274" relation="include">
+        </childnode>
+        <childnode refid="2275" relation="include">
+        </childnode>
+        <childnode refid="2277" relation="include">
+        </childnode>
+        <childnode refid="2278" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2264">
+        <label>Sprite.h</label>
+        <link refid="_sprite_8h_source"/>
+        <childnode refid="2265" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2266">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="2286">
+        <label>RenderWindow.h</label>
+        <link refid="_render_window_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>BufferedGeometry.h</label>
+        <link refid="_buffered_geometry_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2272">
+        <label>Logo.h</label>
+        <link refid="_logo_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2269">
+        <label>Curve.h</label>
+        <link refid="_curve_8h_source"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2281">
+        <label>UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2279">
+        <label>VertexArray.h</label>
+        <link refid="_vertex_array_8h_source"/>
+        <childnode refid="2269" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2274" relation="include">
+        </childnode>
+        <childnode refid="2275" relation="include">
+        </childnode>
+        <childnode refid="2277" relation="include">
+        </childnode>
+        <childnode refid="2278" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2277">
+        <label>Text.h</label>
+        <link refid="_text_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2288">
+        <label>PhysicsBody.h</label>
+        <link refid="_physics_body_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2260">
+        <label>Transform.h</label>
+        <link refid="_transform_8h"/>
+        <childnode refid="2261" relation="include">
+        </childnode>
+        <childnode refid="2288" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2268">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2278">
+        <label>TileLayer.h</label>
+        <link refid="_tile_layer_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2270">
+        <label>Curves.h</label>
+        <link refid="_curves_8h_source"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_rotation" prot="public">gf::Rotation</innerclass>
+    <innerclass refid="structgf_1_1_translation" prot="public">gf::Translation</innerclass>
+    <innerclass refid="structgf_1_1_transform" prot="public">gf::Transform</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_TRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_TRANSFORM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Matrix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Rect.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structgf_1_1_rotation" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" kindref="member">cos</ref>;<sp/></highlight></codeline>
+<codeline lineno="43" refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" kindref="member">sin</ref>;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structgf_1_1_rotation_1a004206f69db5bdb93090670879f57b9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rotation_1a004206f69db5bdb93090670879f57b9d" kindref="member">Rotation</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>cos(1.0f),<sp/>sin(0.0f)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structgf_1_1_rotation_1a93b9e5052c95e95e0daa07cbe4a6b960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rotation_1a93b9e5052c95e95e0daa07cbe4a6b960" kindref="member">Rotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>cos(<ref refid="namespacestd" kindref="compound">std</ref>::cos(angle)),<sp/>sin(<ref refid="namespacestd" kindref="compound">std</ref>::sin(angle))</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structgf_1_1_rotation_1a1b378afd0e49704581e504ce7009c548" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation_1a1b378afd0e49704581e504ce7009c548" kindref="member">setAngle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cos<sp/>=<sp/>std::cos(angle);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sin<sp/>=<sp/>std::sin(angle);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structgf_1_1_rotation_1a229245042693d89293e2101807d6f039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation_1a229245042693d89293e2101807d6f039" kindref="member">getAngle</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::atan2(sin,<sp/>cos);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="96" refid="structgf_1_1_rotation_1af8998a99b4e389ed4b2bebd7aee01aca" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_rotation_1af8998a99b4e389ed4b2bebd7aee01aca" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref>&amp;<sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rotation.<ref refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" kindref="member">cos</ref><sp/>*<sp/>point.x<sp/>-<sp/>rotation.<ref refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" kindref="member">sin</ref><sp/>*<sp/>point.y,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rotation.<ref refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" kindref="member">sin</ref><sp/>*<sp/>point.x<sp/>+<sp/>rotation.<ref refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" kindref="member">cos</ref><sp/>*<sp/>point.y</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="112" refid="structgf_1_1_rotation_1a92f2aa928982ffad75d64629d9289268" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_rotation_1a92f2aa928982ffad75d64629d9289268" kindref="member">inverseTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref>&amp;<sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rotation.<ref refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" kindref="member">cos</ref><sp/>*<sp/>point.x<sp/>+<sp/>rotation.<ref refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" kindref="member">sin</ref><sp/>*<sp/>point.y,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-rotation.<ref refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" kindref="member">sin</ref><sp/>*<sp/>point.x<sp/>+<sp/>rotation.<ref refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" kindref="member">cos</ref><sp/>*<sp/>point.y</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structgf_1_1_translation" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_translation" kindref="compound">Translation</ref><sp/>{</highlight></codeline>
+<codeline lineno="125" refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" kindref="member">offset</ref>;<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structgf_1_1_translation_1a4b69dde94ddf693010609e42892a66bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_translation_1a4b69dde94ddf693010609e42892a66bf" kindref="member">Translation</ref>()</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>offset(0.0f,<sp/>0.0f)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="structgf_1_1_translation_1a1ca05fbf3ef10cf962ac490e41acd353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_translation_1a1ca05fbf3ef10cf962ac490e41acd353" kindref="member">Translation</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>translationOffset)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>offset(translationOffset)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="structgf_1_1_translation_1ac5b3faa4461586ea8b51e0687d366bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_translation_1ac5b3faa4461586ea8b51e0687d366bb7" kindref="member">setOffset</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>newOffset)<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>newOffset;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="structgf_1_1_translation_1adfe8ad256de93d8b49b591d906ed4c9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_translation_1adfe8ad256de93d8b49b591d906ed4c9f" kindref="member">getOffset</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="177" refid="structgf_1_1_translation_1ac5888e04bd1ecd5a79d86322bcdfc8ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_translation_1ac5888e04bd1ecd5a79d86322bcdfc8ae" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_translation" kindref="compound">Translation</ref>&amp;<sp/><ref refid="group__core_1gaeae9632c54968101254761769e1106b8" kindref="member">translation</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>point.x<sp/>+<sp/>translation.<ref refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" kindref="member">offset</ref>.x,<sp/>point.y<sp/>+<sp/>translation.<ref refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" kindref="member">offset</ref>.y<sp/>};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="190" refid="structgf_1_1_translation_1a82dcc3d1dff022ef454bfda34973e2d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_translation_1a82dcc3d1dff022ef454bfda34973e2d7" kindref="member">inverseTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_translation" kindref="compound">Translation</ref>&amp;<sp/><ref refid="group__core_1gaeae9632c54968101254761769e1106b8" kindref="member">translation</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>point.x<sp/>-<sp/>translation.<ref refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" kindref="member">offset</ref>.x,<sp/>point.y<sp/>-<sp/>translation.<ref refid="structgf_1_1_translation_1a1ba62437657a4892c06739c98d499e2f" kindref="member">offset</ref>.y<sp/>};</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="structgf_1_1_transform" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref><sp/>{</highlight></codeline>
+<codeline lineno="205" refid="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref><sp/><ref refid="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" kindref="member">rotation</ref>;<sp/></highlight></codeline>
+<codeline lineno="206" refid="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_translation" kindref="compound">Translation</ref><sp/><ref refid="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" kindref="member">translation</ref>;<sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="structgf_1_1_transform_1a7c9f041fc16d2ab34ab2864f636c0d9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_transform_1a7c9f041fc16d2ab34ab2864f636c0d9f" kindref="member">Transform</ref>()</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="structgf_1_1_transform_1ae41c36e3f63235ae64dc0f4b63fe4fe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_transform_1ae41c36e3f63235ae64dc0f4b63fe4fe5" kindref="member">Transform</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>rotation(angle),<sp/>translation(offset)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="structgf_1_1_transform_1aed77ac925e8ed1810886c585cea2f54a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_transform_1aed77ac925e8ed1810886c585cea2f54a" kindref="member">Transform</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>rotation(angle)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="structgf_1_1_transform_1a901387ef8a2fb2469edec52800ab03b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_transform_1a901387ef8a2fb2469edec52800ab03b9" kindref="member">Transform</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>translation(offset)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="structgf_1_1_transform_1a3bffb7833981d7fd0c3b90bf29f5f527" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_transform_1a3bffb7833981d7fd0c3b90bf29f5f527" kindref="member">setAngle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rotation.<ref refid="structgf_1_1_rotation_1a1b378afd0e49704581e504ce7009c548" kindref="member">setAngle</ref>(angle);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="structgf_1_1_transform_1a2e346b9232ef296b71b7db5c70a1db4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_transform_1a2e346b9232ef296b71b7db5c70a1db4c" kindref="member">getAngle</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rotation.<ref refid="structgf_1_1_rotation_1a229245042693d89293e2101807d6f039" kindref="member">getAngle</ref>();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="structgf_1_1_transform_1a9a82fbb211550d16869c9256be5d2f01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_transform_1a9a82fbb211550d16869c9256be5d2f01" kindref="member">setOffset</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset)<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>translation.<ref refid="structgf_1_1_translation_1ac5b3faa4461586ea8b51e0687d366bb7" kindref="member">setOffset</ref>(offset);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="structgf_1_1_transform_1a8390eb139a634b21de3ca326f088255e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_transform_1a8390eb139a634b21de3ca326f088255e" kindref="member">getOffset</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>translation.<ref refid="structgf_1_1_translation_1adfe8ad256de93d8b49b591d906ed4c9f" kindref="member">getOffset</ref>();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="303" refid="structgf_1_1_transform_1a780e6e6fe20655cc3bbe01559947ab75" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_transform_1a780e6e6fe20655cc3bbe01559947ab75" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref>&amp;<sp/>trans,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__core_1gac4e4c75521a6691a917073fa54a99dcf" kindref="member">transform</ref>(trans.<ref refid="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" kindref="member">translation</ref>,<sp/><ref refid="group__core_1gac4e4c75521a6691a917073fa54a99dcf" kindref="member">transform</ref>(trans.<ref refid="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" kindref="member">rotation</ref>,<sp/>point));</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="316" refid="structgf_1_1_transform_1a98a60b50bc93414d2081cb92673c6030" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="structgf_1_1_transform_1a98a60b50bc93414d2081cb92673c6030" kindref="member">inverseTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref>&amp;<sp/>trans,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>inverseTransform(trans.<ref refid="structgf_1_1_transform_1a6ac07c54ec7f30529aa86be7312fd600" kindref="member">rotation</ref>,<sp/>inverseTransform(trans.<ref refid="structgf_1_1_transform_1a1a10310dc4eba637fd616757b316b693" kindref="member">translation</ref>,<sp/>point));</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>https://en.wikipedia.org/wiki/Homogeneous_coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="331" refid="group__core_1gac4e4c75521a6691a917073fa54a99dcf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="group__core_1gac4e4c75521a6691a917073fa54a99dcf" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>point)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>mat.xx<sp/>*<sp/>point.x<sp/>+<sp/>mat.xy<sp/>*<sp/>point.y<sp/>+<sp/>mat.xz,<sp/>mat.yx<sp/>*<sp/>point.x<sp/>+<sp/>mat.yy<sp/>*<sp/>point.y<sp/>+<sp/>mat.yz<sp/>};</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref><sp/><ref refid="group__core_1gac4e4c75521a6691a917073fa54a99dcf" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_rect" kindref="compound">RectF</ref>&amp;<sp/>rect);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="group__core_1ga6dda386c75e98622d0c0759c5284afc4" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1ga6dda386c75e98622d0c0759c5284afc4" kindref="member">identityTransform</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref>(1.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="group__core_1gaeae9632c54968101254761769e1106b8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1gaeae9632c54968101254761769e1106b8" kindref="member">translation</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/>0.0f,<sp/>offset.x,</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>1.0f,<sp/>offset.y,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1gaba689074f1862658d024cdedb15baafa" kindref="member">translate</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>offset);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cos<sp/>=<sp/>std::cos(angle);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sin<sp/>=<sp/>std::sin(angle);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cos,<sp/>-sin,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sin,<sp/><sp/>cos,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="group__core_1ga891a5614f8c6ad16bc166974c52af497" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1ga2f3aae300e286c768ba2787216d24e36" kindref="member">rotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center)<sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cos<sp/>=<sp/>std::cos(angle);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sin<sp/>=<sp/>std::sin(angle);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>{</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cos,<sp/>-sin,<sp/>center.x<sp/>*<sp/>(1<sp/>-<sp/>cos)<sp/>+<sp/>center.y<sp/>*<sp/>sin,</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sin,<sp/><sp/>cos,<sp/>center.y<sp/>*<sp/>(1<sp/>-<sp/>cos)<sp/>-<sp/>center.x<sp/>*<sp/>sin,</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga81ce505749755aad267e094ed99277e8" kindref="member">rotate</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga81ce505749755aad267e094ed99277e8" kindref="member">rotate</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="group__core_1gac742d644af9304a2a313cea7b001bcc3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1gac742d644af9304a2a313cea7b001bcc3" kindref="member">scaling</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>factor)<sp/>{</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>factor.x,<sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>factor.y,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464" refid="group__core_1ga68d7e16bd252b39e53a6da4ba70cbb8b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref><sp/><ref refid="group__core_1gac742d644af9304a2a313cea7b001bcc3" kindref="member">scaling</ref>(<ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>factor,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center)<sp/>{</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>{</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>factor.x,<sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>center.x<sp/>*<sp/>(1.0f<sp/>-<sp/>factor.x),</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>factor.y,<sp/>center.y<sp/>*<sp/>(1.0f<sp/>-<sp/>factor.y),</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,<sp/><sp/><sp/><sp/><sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga9a28734646b10ca5179fc221c103545a" kindref="member">scale</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>factor);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga9a28734646b10ca5179fc221c103545a" kindref="member">scale</ref>(<ref refid="structgf_1_1_matrix" kindref="compound">Matrix3f</ref>&amp;<sp/>mat,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>factor,<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/>center);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_TRANSFORM_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h"/>
+  </compounddef>
+</doxygen>

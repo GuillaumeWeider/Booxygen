@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_rotation" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Rotation</compoundname>
+    <includes refid="_transform_8h" local="no">gf/Transform.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Rotation::cos</definition>
+        <argsstring></argsstring>
+        <name>cos</name>
+        <briefdescription>
+<para>The cosine of the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Rotation::sin</definition>
+        <argsstring></argsstring>
+        <name>sin</name>
+        <briefdescription>
+<para>The sine of the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_rotation_1a004206f69db5bdb93090670879f57b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Rotation::Rotation</definition>
+        <argsstring>()</argsstring>
+        <name>Rotation</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default rotation is a rotation of angle <formula id="3">$ 0 $</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="50" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_rotation_1a93b9e5052c95e95e0daa07cbe4a6b960" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Rotation::Rotation</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>Rotation</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with an angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_rotation_1a1b378afd0e49704581e504ce7009c548" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Rotation::setAngle</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setAngle</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new rotation angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_rotation_1a229245042693d89293e2101807d6f039" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Rotation::getAngle</definition>
+        <argsstring>() const</argsstring>
+        <name>getAngle</name>
+        <briefdescription>
+<para>Get the rotation angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current rotation angle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="82" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_rotation_1af8998a99b4e389ed4b2bebd7aee01aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>constexpr Vector2f transform</definition>
+        <argsstring>(const Rotation &amp;rotation, Vector2f point)</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Apply a rotation to a 2D point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_rotation_1a92f2aa928982ffad75d64629d9289268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>constexpr Vector2f inverseTransform</definition>
+        <argsstring>(const Rotation &amp;rotation, Vector2f point)</argsstring>
+        <name>inverseTransform</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_rotation" kindref="compound">Rotation</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Apply an inverse rotation to a 2D point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transformed point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="112" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="112" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A rotation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_translation" kindref="compound">gf::Translation</ref>, <ref refid="structgf_1_1_transform" kindref="compound">gf::Transform</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transform.h" bodystart="41" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_rotation_1a91611a44f726637755f0c01fd2796d92" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>cos</name></member>
+      <member refid="structgf_1_1_rotation_1a229245042693d89293e2101807d6f039" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>getAngle</name></member>
+      <member refid="structgf_1_1_rotation_1a92f2aa928982ffad75d64629d9289268" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>inverseTransform</name></member>
+      <member refid="structgf_1_1_rotation_1a004206f69db5bdb93090670879f57b9d" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>Rotation</name></member>
+      <member refid="structgf_1_1_rotation_1a93b9e5052c95e95e0daa07cbe4a6b960" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>Rotation</name></member>
+      <member refid="structgf_1_1_rotation_1a1b378afd0e49704581e504ce7009c548" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>setAngle</name></member>
+      <member refid="structgf_1_1_rotation_1a826742fbebf8b6ad8a5c586066956aa0" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>sin</name></member>
+      <member refid="structgf_1_1_rotation_1af8998a99b4e389ed4b2bebd7aee01aca" prot="public" virt="non-virtual"><scope>gf::Rotation</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

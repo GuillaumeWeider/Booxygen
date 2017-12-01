@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_clipboard" kind="class" language="C++" prot="public">
+    <compoundname>gf::Clipboard</compoundname>
+    <includes refid="_clipboard_8h" local="no">gf/Clipboard.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_clipboard_1a782340bc6af167d3cd2c01f6ecce7dff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::Clipboard::getString</definition>
+        <argsstring>()</argsstring>
+        <name>getString</name>
+        <briefdescription>
+<para>Get the content of the clipboard as string data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the content of the clipboard as a string. If the clipboard does not contain string it returns an empty string.</para><para><simplesect kind="return"><para>The clipboard contents </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clipboard.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_clipboard_1a7d68331dc8aadfdd68b4cc5716950b53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Clipboard::setString</definition>
+        <argsstring>(const std::string &amp;text)</argsstring>
+        <name>setString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Set the content of the clipboard as string data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the content of the clipboard as a string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string containing the data to be sent to the clipboard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clipboard.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classgf_1_1_clipboard" kindref="compound">gf::Clipboard</ref> provides an interface for getting and setting the contents of the system clipboard. </para>    </briefdescription>
+    <detaileddescription>
+<para>Usage example: <programlisting><codeline><highlight class="normal">//<sp/>get<sp/>the<sp/>clipboard<sp/>content<sp/>as<sp/>a<sp/>string</highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>string<sp/>=<sp/>gf::Clipboard::getString();</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>or<sp/>use<sp/>it<sp/>in<sp/>the<sp/>event<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">gf::Event<sp/>event;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">while<sp/>(window.pollEvent(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if(event.type<sp/>==<sp/>gf::EventType::Closed)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(event.type<sp/>==<sp/>gf::EventType::KeyPressed)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Using<sp/>Ctrl<sp/>+<sp/>V<sp/>to<sp/>paste<sp/>a<sp/>string</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(event.key.modifiers.test(gf::Mod::Control)<sp/>&amp;&amp;<sp/>event.key.keycode<sp/>==<sp/>gf::Keycode::V)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>=<sp/>gf::Clipboard::getString();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>set<sp/>the<sp/>clipboard<sp/>to<sp/>a<sp/>string</highlight></codeline>
+<codeline><highlight class="normal">gf::Clipboard::setString(&quot;Hello<sp/>World!&quot;);</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clipboard.h" line="67" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Clipboard.h" bodystart="67" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_clipboard_1a782340bc6af167d3cd2c01f6ecce7dff" prot="public" virt="non-virtual"><scope>gf::Clipboard</scope><name>getString</name></member>
+      <member refid="classgf_1_1_clipboard_1a7d68331dc8aadfdd68b4cc5716950b53" prot="public" virt="non-virtual"><scope>gf::Clipboard</scope><name>setString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

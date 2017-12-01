@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_gradient_noise3_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::GradientNoise3D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise3_d" prot="public" virt="non-virtual">gf::Noise3D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise3_d_1a43532230d725bda5bae972f0062cf7a2" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">Step</ref>&lt; double &gt;</type>
+        <definition>Step&lt;double&gt; gf::GradientNoise3D::m_step</definition>
+        <argsstring></argsstring>
+        <name>m_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="124" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise3_d_1a0588e34bdcfaa13d683c1f0fc4083f38" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, 256 &gt;</type>
+        <definition>std::array&lt;uint8_t, 256&gt; gf::GradientNoise3D::m_perm</definition>
+        <argsstring></argsstring>
+        <name>m_perm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_gradient_noise3_d_1aa61e3b9a54ae8c3622fffe04a76976b2" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="group__core_1gaebefd2196203ab24f579f910ca253570" kindref="member">Vector3d</ref>, 256 &gt;</type>
+        <definition>std::array&lt;Vector3d, 256&gt; gf::GradientNoise3D::m_gradients3D</definition>
+        <argsstring></argsstring>
+        <name>m_gradients3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_gradient_noise3_d_1ae819def44d0b13693fff192189f79828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::GradientNoise3D::GradientNoise3D</definition>
+        <argsstring>(Random &amp;random, Step&lt; double &gt; step)</argsstring>
+        <name>GradientNoise3D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">Step</ref>&lt; double &gt;</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A step</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__core_1ga44b429e4f47cceab994f3b20b811d681" kindref="member">gf::Step</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gradient_noise3_d_1a7f1b26765db03610aeebf77c7d2048db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::GradientNoise3D::getValue</definition>
+        <argsstring>(double x, double y, double z) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="121" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_gradient_noise3_d_1a7bf7e2f0a9ec11109b7330040d9e7b6a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1gaebefd2196203ab24f579f910ca253570" kindref="member">Vector3d</ref> &amp;</type>
+        <definition>const Vector3d&amp; gf::GradientNoise3D::at</definition>
+        <argsstring>(uint8_t i, uint8_t j, uint8_t k) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gradient 3D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Gradient_noise">Gradient noise</ulink> is a lattice-based noise based on gradients. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="374">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+      <node id="373">
+        <label>gf::GradientNoise3D</label>
+        <link refid="classgf_1_1_gradient_noise3_d"/>
+        <childnode refid="374" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="376">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+      <node id="375">
+        <label>gf::GradientNoise3D</label>
+        <link refid="classgf_1_1_gradient_noise3_d"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="109" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="109" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_gradient_noise3_d_1a7bf7e2f0a9ec11109b7330040d9e7b6a" prot="private" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>at</name></member>
+      <member refid="classgf_1_1_gradient_noise3_d_1a7f1b26765db03610aeebf77c7d2048db" prot="public" virt="virtual"><scope>gf::GradientNoise3D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_gradient_noise3_d_1ae819def44d0b13693fff192189f79828" prot="public" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>GradientNoise3D</name></member>
+      <member refid="classgf_1_1_gradient_noise3_d_1aa61e3b9a54ae8c3622fffe04a76976b2" prot="private" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>m_gradients3D</name></member>
+      <member refid="classgf_1_1_gradient_noise3_d_1a0588e34bdcfaa13d683c1f0fc4083f38" prot="private" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>m_perm</name></member>
+      <member refid="classgf_1_1_gradient_noise3_d_1a43532230d725bda5bae972f0062cf7a2" prot="private" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>m_step</name></member>
+      <member refid="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" virt="non-virtual"><scope>gf::GradientNoise3D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" virt="virtual"><scope>gf::GradientNoise3D</scope><name>~Noise3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

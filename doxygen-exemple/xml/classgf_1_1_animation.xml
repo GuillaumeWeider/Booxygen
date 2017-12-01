@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_animation" kind="class" language="C++" prot="public">
+    <compoundname>gf::Animation</compoundname>
+    <includes refid="_animation_8h" local="no">gf/Animation.h</includes>
+    <innerclass refid="structgf_1_1_animation_1_1_frame" prot="private">gf::Animation::Frame</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_animation_1adff63e839c98b1e181cad876a923c530" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::Animation::m_currentFrame</definition>
+        <argsstring></argsstring>
+        <name>m_currentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_animation_1a54fc94cf0b1fde535dae47ff2a1b07b4" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::Animation::m_currentDurationInFrame</definition>
+        <argsstring></argsstring>
+        <name>m_currentDurationInFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="100" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_animation_1ae729b353ddd7611a43bfdb92a426fa83" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Frame &gt;</type>
+        <definition>std::vector&lt;Frame&gt; gf::Animation::m_frames</definition>
+        <argsstring></argsstring>
+        <name>m_frames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="101" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_animation_1a2c71c6cde481edae93ecb60b6dee5004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Animation::Animation</definition>
+        <argsstring>()</argsstring>
+        <name>Animation</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_animation_1aec468d51d77b6b93ccc9e6c1f38bd0fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Animation::addFrame</definition>
+        <argsstring>(const Texture &amp;texture, const RectF &amp;bounds, Time duration)</argsstring>
+        <name>addFrame</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Add a frame to the animation. </para>        </briefdescription>
+        <detaileddescription>
+<para>The frame of an animation is defined by the texture of the frame, the texture rectangle (in texture coordinates) and an amount of time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture where the sprite is </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture rectangle where the sprite is </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of time to display the frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_animation_1a359982e59f3f92298478f6167ca37ffc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+        <definition>const Texture&amp; gf::Animation::getCurrentTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentTexture</name>
+        <briefdescription>
+<para>Get the current texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current texture </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the animation is empty </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_animation_1a69fe66362be11f4fa9a34ea5c79a6f8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Animation::getCurrentBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentBounds</name>
+        <briefdescription>
+<para>Get the current texture rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current texture rectangle </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the animation is empty </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_animation_1a70da12266b007992e3b1dc36c0d1bd25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Animation::update</definition>
+        <argsstring>(Time time)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the animation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the current frame has changed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An animation. </para>    </briefdescription>
+    <detaileddescription>
+<para>An animation is a collection of frames that are displayed consecutively during a predefined amount of time.</para><para>To display an animation, you need a <ref refid="classgf_1_1_animated_sprite" kindref="compound">gf::AnimatedSprite</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_animated_sprite" kindref="compound">gf::AnimatedSprite</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" line="49" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Animation.h" bodystart="49" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_animation_1aec468d51d77b6b93ccc9e6c1f38bd0fc" prot="public" virt="non-virtual"><scope>gf::Animation</scope><name>addFrame</name></member>
+      <member refid="classgf_1_1_animation_1a2c71c6cde481edae93ecb60b6dee5004" prot="public" virt="non-virtual"><scope>gf::Animation</scope><name>Animation</name></member>
+      <member refid="classgf_1_1_animation_1a69fe66362be11f4fa9a34ea5c79a6f8b" prot="public" virt="non-virtual"><scope>gf::Animation</scope><name>getCurrentBounds</name></member>
+      <member refid="classgf_1_1_animation_1a359982e59f3f92298478f6167ca37ffc" prot="public" virt="non-virtual"><scope>gf::Animation</scope><name>getCurrentTexture</name></member>
+      <member refid="classgf_1_1_animation_1a54fc94cf0b1fde535dae47ff2a1b07b4" prot="private" virt="non-virtual"><scope>gf::Animation</scope><name>m_currentDurationInFrame</name></member>
+      <member refid="classgf_1_1_animation_1adff63e839c98b1e181cad876a923c530" prot="private" virt="non-virtual"><scope>gf::Animation</scope><name>m_currentFrame</name></member>
+      <member refid="classgf_1_1_animation_1ae729b353ddd7611a43bfdb92a426fa83" prot="private" virt="non-virtual"><scope>gf::Animation</scope><name>m_frames</name></member>
+      <member refid="classgf_1_1_animation_1a70da12266b007992e3b1dc36c0d1bd25" prot="public" virt="non-virtual"><scope>gf::Animation</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

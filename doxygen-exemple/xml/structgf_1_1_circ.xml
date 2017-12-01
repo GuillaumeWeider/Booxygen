@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_circ" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Circ</compoundname>
+    <includes refid="_circ_8h" local="no">gf/Circ.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_circ_1a290e2d5d2d613428ac69e19c1a336758" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+<para>Center of the circle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="74" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_circ_1a562f6a6f7f0a4c294c050f850becca34" prot="public" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::Circ&lt; T &gt;::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+<para>Radius of the circle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_circ_1a0d56d73887f302d1f7ed128e87e39d80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Circ&lt; T &gt;::Circ</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Circ</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty circle (it is equivalent to calling <computeroutput><ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>({ 0, 0 }, 0</computeroutput>). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="83" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="83" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1aa33df911358e20a2bf0709390419d3e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Circ&lt; T &gt;::Circ</definition>
+        <argsstring>(const Vector&lt; T, 2 &gt; &amp;circCenter, T circRadius) noexcept</argsstring>
+        <name>Circ</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt; &amp;</type>
+          <declname>circCenter</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          <declname>circRadius</declname>
+        </param>
+        <briefdescription>
+<para>Construct the circle from center and radius. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circCenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center of the circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>circRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of the circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a9832961896ea6effb4ece796ff9e59f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::getCenter</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+<para>Get the center of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is a synonym for the <computeroutput>center</computeroutput> member</para><para><simplesect kind="return"><para>The center of the circle </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_circ_1a253226e20e17d666cf9b1574c37ff597" kindref="member">getRadius()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="111" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a253226e20e17d666cf9b1574c37ff597" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>constexpr T gf::Circ&lt; T &gt;::getRadius</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getRadius</name>
+        <briefdescription>
+<para>Get the radius of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is a synonym for the <computeroutput>radius</computeroutput> member</para><para><simplesect kind="return"><para>The radius of the circle </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_circ_1a9832961896ea6effb4ece796ff9e59f0" kindref="member">getCenter()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="123" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1af2cec2c491336130f2ec497cf066865f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Circ&lt; T &gt;::isEmpty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the circle is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty circle is a circle with a zero radius.</para><para><simplesect kind="return"><para>True if the circle is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="134" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a2db38d52692623aa387e4d959fd4f31e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::getTop</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getTop</name>
+        <briefdescription>
+<para>Get the top of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The top of the circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="143" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a1459001ab9d465674793963d4b1c306d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::getBottom</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getBottom</name>
+        <briefdescription>
+<para>Get the bottom of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The bottom of the circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="152" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a1cd54089e9043ea3a994ddade502bcdf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::getLeft</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getLeft</name>
+        <briefdescription>
+<para>Get the left of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The left of the circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1aefc60faff3ce459dcad07fc55eaca394" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;T, 2&gt; gf::Circ&lt; T &gt;::getRight</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getRight</name>
+        <briefdescription>
+<para>Get the right of the circle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The right of the circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="170" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1af78ebefd5c0ddd818930e76420c27fcb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Circ&lt; T &gt;::contains</definition>
+        <argsstring>(const Vector&lt; T, 2 &gt; &amp;point) const noexcept</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, 2 &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Check if a point is insied a circle&apos;s area. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the point is inside, false otherwise </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_circ_1a477600eb8e6b192a614b90b850c2903f" kindref="member">intersects()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="181" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a477600eb8e6b192a614b90b850c2903f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Circ&lt; T &gt;::intersects</definition>
+        <argsstring>(const Circ&lt; T &gt; &amp;other) const noexcept</argsstring>
+        <name>intersects</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check the intersection between two circles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Circle to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if circles overlap, false otherwise </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_circ_1af78ebefd5c0ddd818930e76420c27fcb" kindref="member">contains()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="192" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="structgf_1_1_circ_1a1f514504e7bb76e980057f7255f8d8e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Circ&lt; T &gt; &amp;lhs, const Circ&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the two circles are the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="248" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_circ_1a9d75e7db184e941d55993919d5a7bf12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Circ&lt; T &gt; &amp;lhs, const Circ&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_circ" kindref="compound">Circ</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First circle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second circle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the two circles are different </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="262" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="262" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility class for manipulating circles. </para>    </briefdescription>
+    <detaileddescription>
+<para>A circle is defined by its center and its radius. It is a very simple class defined for convenience, so its member variables (<computeroutput>center</computeroutput> and <computeroutput>radius</computeroutput>) are public and can be accessed directly.</para><para><ref refid="structgf_1_1_circ" kindref="compound">gf::Circ</ref> is a template and may be used with any numeric type, but for simplicity, some common typedef are defined:</para><para><itemizedlist>
+<listitem><para><ref refid="group__core_1ga17920b628fd118fd63fc79a46362b216" kindref="member">gf::CircI</ref> with <computeroutput>int</computeroutput> as <computeroutput>T</computeroutput></para></listitem><listitem><para><ref refid="group__core_1gaab2b7e5663dff487d15d6747e93ccbd5" kindref="member">gf::CircU</ref> with <computeroutput>unsigned</computeroutput> as <computeroutput>T</computeroutput></para></listitem><listitem><para><ref refid="group__core_1ga3943cb9c4063f7c9ed154bd5e039c5e9" kindref="member">gf::CircZ</ref> with <computeroutput>std::size_t</computeroutput> as <computeroutput>T</computeroutput></para></listitem><listitem><para><ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">gf::CircF</ref> with <computeroutput>float</computeroutput> as <computeroutput>T</computeroutput></para></listitem></itemizedlist>
+</para><para>So that you don&apos;t have to care about the temlate syntax.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Define<sp/>a<sp/>circle,<sp/>with<sp/>a<sp/>center<sp/>at<sp/><sp/>(10,<sp/>10)<sp/>and<sp/>a<sp/>radius<sp/>of<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_circ" kindref="compound">gf::CircI</ref><sp/>c1({<sp/>10,<sp/>10<sp/>},<sp/>20);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>a<sp/>circle<sp/>with<sp/>a<sp/>center<sp/>at<sp/>(0,<sp/>0)<sp/>and<sp/>a<sp/>radius<sp/>of<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_circ" kindref="compound">gf::CircI</ref><sp/>c2({<sp/>0,<sp/>0<sp/>},<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>intersections<sp/>with<sp/>the<sp/>point<sp/>(3,<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b1<sp/>=<sp/>c1.<ref refid="structgf_1_1_circ_1af78ebefd5c0ddd818930e76420c27fcb" kindref="member">contains</ref>({<sp/>3,<sp/>1<sp/>});<sp/></highlight><highlight class="comment">//<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b2<sp/>=<sp/>c2.contains({<sp/>3,<sp/>1<sp/>});<sp/></highlight><highlight class="comment">//<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>the<sp/>intersection<sp/>between<sp/>c1<sp/>and<sp/>c2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b3<sp/>=<sp/>c1.intersects(c2);<sp/></highlight><highlight class="comment">//<sp/>true</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="88">
+        <label>T</label>
+      </node>
+      <node id="87">
+        <label>gf::Vector&lt; T, 2 &gt;</label>
+        <link refid="structgf_1_1_vector_3_01_t_00_012_01_4"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>@23</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>width</edgelabel>
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>row</edgelabel>
+          <edgelabel>height</edgelabel>
+          <edgelabel>col</edgelabel>
+          <edgelabel>data</edgelabel>
+          <edgelabel>s</edgelabel>
+          <edgelabel>t</edgelabel>
+          <edgelabel>u</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gf::Circ&lt; T &gt;</label>
+        <link refid="structgf_1_1_circ"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>center</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>radius</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Circ.h" bodystart="73" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_circ_1a290e2d5d2d613428ac69e19c1a336758" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>center</name></member>
+      <member refid="structgf_1_1_circ_1a0d56d73887f302d1f7ed128e87e39d80" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>Circ</name></member>
+      <member refid="structgf_1_1_circ_1aa33df911358e20a2bf0709390419d3e5" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>Circ</name></member>
+      <member refid="structgf_1_1_circ_1af78ebefd5c0ddd818930e76420c27fcb" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>contains</name></member>
+      <member refid="structgf_1_1_circ_1a1459001ab9d465674793963d4b1c306d" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getBottom</name></member>
+      <member refid="structgf_1_1_circ_1a9832961896ea6effb4ece796ff9e59f0" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getCenter</name></member>
+      <member refid="structgf_1_1_circ_1a1cd54089e9043ea3a994ddade502bcdf" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getLeft</name></member>
+      <member refid="structgf_1_1_circ_1a253226e20e17d666cf9b1574c37ff597" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getRadius</name></member>
+      <member refid="structgf_1_1_circ_1aefc60faff3ce459dcad07fc55eaca394" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getRight</name></member>
+      <member refid="structgf_1_1_circ_1a2db38d52692623aa387e4d959fd4f31e" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>getTop</name></member>
+      <member refid="structgf_1_1_circ_1a477600eb8e6b192a614b90b850c2903f" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>intersects</name></member>
+      <member refid="structgf_1_1_circ_1af2cec2c491336130f2ec497cf066865f" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>isEmpty</name></member>
+      <member refid="structgf_1_1_circ_1a9d75e7db184e941d55993919d5a7bf12" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>operator!=</name></member>
+      <member refid="structgf_1_1_circ_1a1f514504e7bb76e980057f7255f8d8e9" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>operator==</name></member>
+      <member refid="structgf_1_1_circ_1a562f6a6f7f0a4c294c050f850becca34" prot="public" virt="non-virtual"><scope>gf::Circ</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

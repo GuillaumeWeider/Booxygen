@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_sprite_batch" kind="class" language="C++" prot="public">
+    <compoundname>gf::SpriteBatch</compoundname>
+    <includes refid="_sprite_batch_8h" local="no">gf/SpriteBatch.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a4ac6c6e8684c1434d3683034dec9ae6a" prot="private" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::SpriteBatch::MaxSpriteCount</definition>
+        <argsstring></argsstring>
+        <name>MaxSpriteCount</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="121" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a78f5a346e7723282647fae5688fb7f19" prot="private" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::SpriteBatch::VerticesPerSprite</definition>
+        <argsstring></argsstring>
+        <name>VerticesPerSprite</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1ab56d021d85e13a656141205c78e89c33" prot="private" static="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::SpriteBatch::MaxVertexCount</definition>
+        <argsstring></argsstring>
+        <name>MaxVertexCount</name>
+        <initializer>= MaxSpriteCount * VerticesPerSprite</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="123" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a718a49e2475779a367672b4313633e9b" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+        <definition>RenderTarget&amp; gf::SpriteBatch::m_target</definition>
+        <argsstring></argsstring>
+        <name>m_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="125" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a04c4047e5f07f04d9345fa6a6c11d06a" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+        <definition>RenderStates gf::SpriteBatch::m_currentRenderStates</definition>
+        <argsstring></argsstring>
+        <name>m_currentRenderStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a98bb321a0aa1a8bfabf032019d3caebf" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::SpriteBatch::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="127" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sprite_batch_1a9e66915887cc6ffa9c5652843da00d73" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="structgf_1_1_vertex" kindref="compound">Vertex</ref>, MaxVertexCount &gt;</type>
+        <definition>std::array&lt;Vertex, MaxVertexCount&gt; gf::SpriteBatch::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="128" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1ae384c4836505d05e8da2c170b2743f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SpriteBatch::SpriteBatch</definition>
+        <argsstring>(RenderTarget &amp;target)</argsstring>
+        <name>SpriteBatch</name>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A render target where the sprites will be drawn </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Begin the batch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1ab95640ff5f4193f43e347dfec1441d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::draw</definition>
+        <argsstring>(Sprite &amp;sprite, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type><ref refid="classgf_1_1_sprite" kindref="compound">Sprite</ref> &amp;</type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Add a sprite to the batch. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput> before calling this function, and <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput> once you have finished to draw the sprites.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sprite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sprite to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1a7fdeba0ed474395c07221a42f61e55c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::draw</definition>
+        <argsstring>(const Texture &amp;texture, Vector2f position, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Add a raw texture to the batch. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput> before calling this function, and <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput> once you have finished to draw the sprites.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1acec7c5c0cc939981568273048cb55689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::draw</definition>
+        <argsstring>(const Texture &amp;texture, const RectF &amp;textureRect, Vector2f position, const RenderStates &amp;states=RenderStates())</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>textureRect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+          <defval><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Add a portion of a raw texture to the batch. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput> before calling this function, and <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput> once you have finished to draw the sprites.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-rectangle of the texture to draw </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the texture </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>End the batch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="115" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_sprite_batch_1a6ef8439da72a4e2a3a99e6194ca41326" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SpriteBatch::renderBatch</definition>
+        <argsstring>()</argsstring>
+        <name>renderBatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A sprite batch. </para>    </briefdescription>
+    <detaileddescription>
+<para>A sprite batch is responsible for minimizing the number of draw calls by concatenating the different calls for sprites.</para><para>Before using a sprite batch, you have to call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput>, then call <computeroutput><ref refid="classgf_1_1_sprite_batch_1ab95640ff5f4193f43e347dfec1441d40" kindref="member">draw()</ref></computeroutput> for each sprite you want to draw, and finally call <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput>.</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_sprite_batch" kindref="compound">gf::SpriteBatch</ref><sp/>batch(renderer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">batch.begin();</highlight></codeline>
+<codeline><highlight class="normal">batch.draw(sprite1);</highlight></codeline>
+<codeline><highlight class="normal">batch.draw(sprite2);</highlight></codeline>
+<codeline><highlight class="normal">batch.draw(sprite3);</highlight></codeline>
+<codeline><highlight class="normal">batch.end();</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SpriteBatch.h" bodystart="62" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>begin</name></member>
+      <member refid="classgf_1_1_sprite_batch_1ab95640ff5f4193f43e347dfec1441d40" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>draw</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a7fdeba0ed474395c07221a42f61e55c7" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>draw</name></member>
+      <member refid="classgf_1_1_sprite_batch_1acec7c5c0cc939981568273048cb55689" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>draw</name></member>
+      <member refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>end</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a98bb321a0aa1a8bfabf032019d3caebf" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>m_count</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a04c4047e5f07f04d9345fa6a6c11d06a" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>m_currentRenderStates</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a718a49e2475779a367672b4313633e9b" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>m_target</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a9e66915887cc6ffa9c5652843da00d73" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a4ac6c6e8684c1434d3683034dec9ae6a" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>MaxSpriteCount</name></member>
+      <member refid="classgf_1_1_sprite_batch_1ab56d021d85e13a656141205c78e89c33" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>MaxVertexCount</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a6ef8439da72a4e2a3a99e6194ca41326" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>renderBatch</name></member>
+      <member refid="classgf_1_1_sprite_batch_1ae384c4836505d05e8da2c170b2743f86" prot="public" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>SpriteBatch</name></member>
+      <member refid="classgf_1_1_sprite_batch_1a78f5a346e7723282647fae5688fb7f19" prot="private" virt="non-virtual"><scope>gf::SpriteBatch</scope><name>VerticesPerSprite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

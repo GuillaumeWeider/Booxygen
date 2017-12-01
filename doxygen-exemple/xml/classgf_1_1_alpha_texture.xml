@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_alpha_texture" kind="class" language="C++" prot="public">
+    <compoundname>gf::AlphaTexture</compoundname>
+    <basecompoundref refid="classgf_1_1_bare_texture" prot="public" virt="non-virtual">gf::BareTexture</basecompoundref>
+    <includes refid="_texture_8h" local="no">gf/Texture.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_alpha_texture_1a0065e7b1e659dc8beb473a27e2421efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::AlphaTexture::AlphaTexture</definition>
+        <argsstring>()</argsstring>
+        <name>AlphaTexture</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>No texture is created </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="481" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_alpha_texture_1a67e299bfd6f0782b99f8adc963408216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::AlphaTexture::create</definition>
+        <argsstring>(Vector2u size)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Create the texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this function fails, the texture is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if creation was successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="492" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A texture with a single alpha channel. </para>    </briefdescription>
+    <detaileddescription>
+<para>This texture is used internally by <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>gf::AlphaTexture</label>
+        <link refid="classgf_1_1_alpha_texture"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>gf::AlphaTexture</label>
+        <link refid="classgf_1_1_alpha_texture"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gf::BareTexture</label>
+        <link refid="classgf_1_1_bare_texture"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" line="474" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Texture.h" bodystart="474" bodyend="493"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_alpha_texture_1a0065e7b1e659dc8beb473a27e2421efc" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>AlphaTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1af0338d095a74651505e53f6ef07df5f0" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1afb1321b7d497a0af42655d872bb32db7" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1a4db166107e9337fa4369de44758b45e4" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>BareTexture</name></member>
+      <member refid="classgf_1_1_bare_texture_1ae0a5581f2c93ff3029e14e3cbac72471" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>bind</name></member>
+      <member refid="classgf_1_1_bare_texture_1aaa8072ea8cb3e77c430786c02a4cd383" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>computeTextureCoords</name></member>
+      <member refid="classgf_1_1_alpha_texture_1a67e299bfd6f0782b99f8adc963408216" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>create</name></member>
+      <member refid="classgf_1_1_bare_texture_1a9822c02c7010d2261673e9da58229a8f" prot="protected" virt="non-virtual" ambiguityscope="gf::BareTexture::"><scope>gf::AlphaTexture</scope><name>create</name></member>
+      <member refid="classgf_1_1_bare_texture_1aba5939a29c39c87a20b4ae74e95c59e3" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>Format</name></member>
+      <member refid="classgf_1_1_bare_texture_1a303a01f6bd42fde0a6cae9787f66565c" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>generateMipmap</name></member>
+      <member refid="classgf_1_1_bare_texture_1a5c719e0fcb28f65a3c3d52e60ab2de95" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>getFormat</name></member>
+      <member refid="classgf_1_1_bare_texture_1a3f98880e7ad13968b80c570a96f251bb" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>getName</name></member>
+      <member refid="classgf_1_1_bare_texture_1a8d05c2de026e2c15423f22f4155ac23d" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_bare_texture_1aeb2ec79e47a8548775eca60fa9ab5ca6" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>isRepeated</name></member>
+      <member refid="classgf_1_1_bare_texture_1ae3cb1cf572a84531a1e8e70d6a67777b" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>isSmooth</name></member>
+      <member refid="classgf_1_1_bare_texture_1a4552991d4ed054f9f728e4b2cbc60e15" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_bare_texture_1a44f40465aecce44c8f9b3f870053710a" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_bare_texture_1a34860c67cf5bd39b7d04d290ecee427c" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>setRepeated</name></member>
+      <member refid="classgf_1_1_bare_texture_1a92130ad8a7d9f530c15418f9188c95ee" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>setSmooth</name></member>
+      <member refid="classgf_1_1_bare_texture_1aa601abc5feec107d624fba1fe867d484" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>update</name></member>
+      <member refid="classgf_1_1_bare_texture_1af482a584253838c378e893785133bab7" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>update</name></member>
+      <member refid="classgf_1_1_bare_texture_1a5973dc8f7580398de2b90f824b4d72d3" prot="public" virt="non-virtual"><scope>gf::AlphaTexture</scope><name>~BareTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

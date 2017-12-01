@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_flags_8h" kind="file" language="C++">
+    <compoundname>Flags.h</compoundname>
+    <includes local="no">type_traits</includes>
+    <includes refid="_types_8h" local="yes">Types.h</includes>
+    <includedby refid="_keyboard_8h" local="yes">Keyboard.h</includedby>
+    <includedby refid="_console_8h" local="yes">Console.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_map_8h" local="yes">Map.h</includedby>
+    <includedby refid="_tmx_8h" local="yes">Tmx.h</includedby>
+    <includedby refid="_u_i_8h" local="yes">UI.h</includedby>
+    <includedby refid="_window_8h" local="yes">Window.h</includedby>
+    <incdepgraph>
+      <node id="633">
+        <label>Types.h</label>
+        <link refid="_types_8h_source"/>
+        <childnode refid="634" relation="include">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="631">
+        <label>Flags.h</label>
+        <link refid="_flags_8h"/>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="633" relation="include">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="637">
+        <label>Action.h</label>
+        <link refid="_action_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>Controls.h</label>
+        <link refid="_controls_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>Tmx.h</label>
+        <link refid="_tmx_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>Map.h</label>
+        <link refid="_map_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>Keyboard.h</label>
+        <link refid="_keyboard_8h_source"/>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="635">
+        <label>Flags.h</label>
+        <link refid="_flags_8h"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="640">
+        <label>Event.h</label>
+        <link refid="_event_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>Window.h</label>
+        <link refid="_window_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgf_1_1_flags" prot="public">gf::Flags</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_FLAGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_FLAGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="68" refid="classgf_1_1_flags" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classgf_1_1_flags_1a15eadb1ca64e2d0b86663b5bb1bd11e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags_1a15eadb1ca64e2d0b86663b5bb1bd11e3" kindref="member">Flags</ref>(<ref refid="structgf_1_1_none_type" kindref="compound">NoneType</ref>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_data(0)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classgf_1_1_flags_1aeb4a6661c9a5800d6b8a0ee0c7d8a25a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags_1aeb4a6661c9a5800d6b8a0ee0c7d8a25a" kindref="member">Flags</ref>(<ref refid="structgf_1_1_all_type" kindref="compound">AllType</ref>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_data(~0)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classgf_1_1_flags_1a0b9c091b5cc8f4d1d534bfcb918b63ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags_1a0b9c091b5cc8f4d1d534bfcb918b63ab" kindref="member">Flags</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>e)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_data(static_cast&lt;<ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref>&gt;(e))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classgf_1_1_flags_1a68a5382c456d4591d260ebb96c68f8b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/><ref refid="classgf_1_1_flags_1a68a5382c456d4591d260ebb96c68f8b3" kindref="member">operator~</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>(~m_data);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classgf_1_1_flags_1a9c270212f03b03d3c7e358caad1ddfe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref><sp/><ref refid="classgf_1_1_flags_1a9c270212f03b03d3c7e358caad1ddfe5" kindref="member">operator|</ref>(<ref refid="classgf_1_1_flags" kindref="compound">Flags</ref><sp/>flags)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>(m_data<sp/>|<sp/>flags.m_data);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classgf_1_1_flags_1a9dbcca8fa649ea76c8a461a2bd243c89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>&amp;<sp/><ref refid="classgf_1_1_flags_1a9dbcca8fa649ea76c8a461a2bd243c89" kindref="member">operator|=</ref>(<ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>flags)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_data<sp/>|=<sp/>flags.m_data;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classgf_1_1_flags_1aa140280497e96f5372716c8232d81cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref><sp/><ref refid="classgf_1_1_flags_1aa140280497e96f5372716c8232d81cd1" kindref="member">operator&amp;</ref>(<ref refid="classgf_1_1_flags" kindref="compound">Flags</ref><sp/>flags)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>(m_data<sp/>&amp;<sp/>flags.m_data);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classgf_1_1_flags_1ad1555d20e0d8c89cd990a7e5a6e97938" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>&amp;<sp/><ref refid="classgf_1_1_flags_1ad1555d20e0d8c89cd990a7e5a6e97938" kindref="member">operator&amp;=</ref>(<ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>flags)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_data<sp/>&amp;=<sp/>flags.m_data;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classgf_1_1_flags_1a2cfcdb3b582a0ab20ed132e432fe607b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>bool()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classgf_1_1_flags_1aebb262f6354eaa3af73ea36ce82dcc3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags_1aebb262f6354eaa3af73ea36ce82dcc3b" kindref="member">test</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>flag)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_data<sp/>&amp;<sp/>static_cast&lt;Type&gt;(flag))<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="classgf_1_1_flags_1a7add558107e334c0cfe71893fced16f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_data<sp/>|=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(flag);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classgf_1_1_flags_1adde5305aaee77d68eb4f491ef8c10f6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags_1adde5305aaee77d68eb4f491ef8c10f6d" kindref="member">reset</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_data<sp/>&amp;=<sp/>~static_cast&lt;<ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref>&gt;(flag);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::underlying_type&lt;E&gt;::type;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classgf_1_1_flags_1a6166a51066228d991f34b27e933704cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref><sp/><ref refid="classgf_1_1_flags_1a6166a51066228d991f34b27e933704cf" kindref="member">getValue</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_data;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>(<ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref><sp/>data)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_data(data)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgf_1_1_flags_1a264a89d5e519c458d6be4e887f3d903e" kindref="member">Type</ref><sp/>m_data;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="225" refid="classgf_1_1_flags_1a578fc40bf2bc5f6e2f2a73346b01636b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/><ref refid="classgf_1_1_flags_1a578fc40bf2bc5f6e2f2a73346b01636b" kindref="member">operator|</ref>(<ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>|<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(rhs);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="239" refid="classgf_1_1_flags_1a7ff4184dad4d3e3b8061e4d0a8361936" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/><ref refid="classgf_1_1_flags_1a7ff4184dad4d3e3b8061e4d0a8361936" kindref="member">operator|</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>lhs,<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(lhs)<sp/>|<sp/>rhs;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="253" refid="classgf_1_1_flags_1a2864923cdbb543cf11d1b109547d78f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>operator&amp;(<ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs<sp/>&amp;<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(rhs);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>constexpr</highlight></codeline>
+<codeline lineno="267" refid="classgf_1_1_flags_1a02435f34f5e6a9738654e7c6b643b691" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>operator&amp;(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>lhs,<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(lhs)<sp/>&amp;<sp/>rhs;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="280" refid="classgf_1_1_flags_1aeee3d1b4959f81d8b8518389db7acc96" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/><ref refid="classgf_1_1_flags_1aeee3d1b4959f81d8b8518389db7acc96" kindref="member">combineFlags</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(flag);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref>,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a800618943025315f869e4e1f09471012" kindref="member">F</ref>&gt;</highlight></codeline>
+<codeline lineno="293" refid="classgf_1_1_flags_1a01f1db7a1a2b0963fd84327a2c5292eb" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref><sp/><ref refid="classgf_1_1_flags_1a01f1db7a1a2b0963fd84327a2c5292eb" kindref="member">combineFlags</ref>(E<sp/>flag,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a800618943025315f869e4e1f09471012" kindref="member">F</ref><sp/>...<sp/>others)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">Flags&lt;E&gt;</ref>(flag)<sp/>|<sp/>combineFlags(others<sp/>...);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>traits<sp/>is<sp/>not<sp/>versioned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">EnableBitmaskOperators<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//<sp/>these<sp/>overloads<sp/>are<sp/>only<sp/>available<sp/>to<sp/>gf<sp/>enum<sp/>types<sp/>and<sp/>gf<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unless<sp/>you<sp/>add:<sp/>&quot;using<sp/>gf::operator|;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">constexpr</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::enable_if&lt;EnableBitmaskOperators&lt;E&gt;::value,<sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>&gt;::type</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">operator|(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>(lhs)<sp/>|<sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>(rhs);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">constexpr</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::enable_if&lt;EnableBitmaskOperators&lt;E&gt;::value,<sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>&gt;::type</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">operator&amp;(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>lhs,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>(lhs)<sp/>&amp;<sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>(rhs);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>E&gt;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">constexpr</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::enable_if&lt;EnableBitmaskOperators&lt;E&gt;::value,<sp/><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;E&gt;</ref>&gt;::type</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">operator~(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" kindref="member">E</ref><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>~<ref refid="namespacegf" kindref="compound">gf</ref><ref refid="classgf_1_1_flags" kindref="compound">::Flags&lt;E&gt;</ref>(val);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_FLAGS_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Flags.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_model_container" kind="class" language="C++" prot="public">
+    <compoundname>gf::ModelContainer</compoundname>
+    <includes refid="_model_container_8h" local="no">gf/ModelContainer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_model_container_1af93713bb87cfccc6c827da2c5e026edc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_model" kindref="compound">Model</ref> * &gt;</type>
+        <definition>std::vector&lt;Model *&gt; gf::ModelContainer::m_models</definition>
+        <argsstring></argsstring>
+        <name>m_models</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" line="84" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ModelContainer::update</definition>
+        <argsstring>(Time time)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Update the models. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_1a8b5f07e8e362d5b6326690566a719324" kindref="member">gf::Model::update()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_model_container_1a4bae12cd7503bd53c046596dd820d9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ModelContainer::addModel</definition>
+        <argsstring>(Model &amp;model)</argsstring>
+        <name>addModel</name>
+        <param>
+          <type><ref refid="classgf_1_1_model" kindref="compound">Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Add a model to the collection. </para>        </briefdescription>
+        <detaileddescription>
+<para>The model must not be deleted while it is handled by the model manager.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A model </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_container_1a8bc2e5bd242c21dcfda247c6c35ac018" kindref="member">removeModel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_model_container_1a8bc2e5bd242c21dcfda247c6c35ac018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_model" kindref="compound">Model</ref> *</type>
+        <definition>Model* gf::ModelContainer::removeModel</definition>
+        <argsstring>(Model *model)</argsstring>
+        <name>removeModel</name>
+        <param>
+          <type><ref refid="classgf_1_1_model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Remove a model from the collection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The model to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The removed model or <computeroutput>nullptr</computeroutput> if the model was not present </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_model_container_1a4bae12cd7503bd53c046596dd820d9a3" kindref="member">addModel()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A collection of models. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_model_container" kindref="compound">gf::ModelContainer</ref> represents a collection of models that are updated automatically.</para><para>The model manager is <emphasis>not</emphasis> responsible for the memory of the models. The models must be allocated by the user and not deleted while they are handled by the model manager.</para><para>Generally, you only need one model manager in your game. You create it at the beginning of the game and put all your models in it. Then you can call <ref refid="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" kindref="member">gf::ModelContainer::update()</ref> in your game loop.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_model" kindref="compound">gf::Model</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ModelContainer.h" bodystart="53" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_model_container_1a4bae12cd7503bd53c046596dd820d9a3" prot="public" virt="non-virtual"><scope>gf::ModelContainer</scope><name>addModel</name></member>
+      <member refid="classgf_1_1_model_container_1af93713bb87cfccc6c827da2c5e026edc" prot="private" virt="non-virtual"><scope>gf::ModelContainer</scope><name>m_models</name></member>
+      <member refid="classgf_1_1_model_container_1a8bc2e5bd242c21dcfda247c6c35ac018" prot="public" virt="non-virtual"><scope>gf::ModelContainer</scope><name>removeModel</name></member>
+      <member refid="classgf_1_1_model_container_1ab24d704146dc0e331095342b69d6efd6" prot="public" virt="non-virtual"><scope>gf::ModelContainer</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

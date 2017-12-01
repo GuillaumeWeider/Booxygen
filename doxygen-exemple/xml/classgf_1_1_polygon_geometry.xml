@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_polygon_geometry" kind="class" language="C++" prot="public">
+    <compoundname>gf::PolygonGeometry</compoundname>
+    <basecompoundref refid="classgf_1_1_physics_geometry" prot="public" virt="non-virtual">gf::PhysicsGeometry</basecompoundref>
+    <includes refid="_physics_geometry_8h" local="no">gf/PhysicsGeometry.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_polygon_geometry_1a003326154a5e7a9ce368171b54ac7bfb" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref></type>
+        <definition>Polygon gf::PolygonGeometry::m_polygon</definition>
+        <argsstring></argsstring>
+        <name>m_polygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="190" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_polygon_geometry_1af8580c5635e3176b1ca05edeab1a4376" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref></type>
+        <definition>CircF gf::PolygonGeometry::m_boundingCircle</definition>
+        <argsstring></argsstring>
+        <name>m_boundingCircle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="191" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1a331eb4edc3352c589726cfce580d7874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PolygonGeometry::PolygonGeometry</definition>
+        <argsstring>(Polygon polygon)</argsstring>
+        <name>PolygonGeometry</name>
+        <param>
+          <type><ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref></type>
+          <declname>polygon</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base polygon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1aa60ae6bad18fb538e46397d742d324b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PolygonGeometry::PolygonGeometry</definition>
+        <argsstring>(Vector2f size)</argsstring>
+        <name>PolygonGeometry</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is centered in <formula id="80">$ (0,0) $</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the rectangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1a9f6aca3a286077ac2d49480fac908f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PolygonGeometry::PolygonGeometry</definition>
+        <argsstring>(RectF rectangle)</argsstring>
+        <name>PolygonGeometry</name>
+        <param>
+          <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+          <declname>rectangle</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rectangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base rectangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1a293fedfaf29ed81e190ae13895797064" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_polygon" kindref="compound">Polygon</ref> &amp;</type>
+        <definition>const Polygon&amp; gf::PolygonGeometry::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Get the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current polygon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1aa720bf42fdd710aeed17dda0389f60d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float gf::PolygonGeometry::getArea</definition>
+        <argsstring>() const override</argsstring>
+        <name>getArea</name>
+        <reimplements refid="classgf_1_1_physics_geometry_1a44b36d13e95ebaace7ff85b9365ebd14">getArea</reimplements>
+        <briefdescription>
+<para>Compute the area of the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The area in world units </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1acc984684858b7c2eac25758666b4f28a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1gac6236125c5f69ba470c41e18f5085803" kindref="member">CircF</ref></type>
+        <definition>virtual CircF gf::PolygonGeometry::getBoundingCircle</definition>
+        <argsstring>() const override</argsstring>
+        <name>getBoundingCircle</name>
+        <reimplements refid="classgf_1_1_physics_geometry_1a67bf19f8f71100305a0f4583eddcba3e">getBoundingCircle</reimplements>
+        <briefdescription>
+<para>Get a bouding circle. </para>        </briefdescription>
+        <detaileddescription>
+<para>The circle may not be the <ulink url="https://en.wikipedia.org/wiki/Smallest-circle_problem">minimum bouding circle</ulink>.</para><para><simplesect kind="return"><para>A bounding circle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1ad1094236f9dd07f9921645fd451ca6e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::PolygonGeometry::renderAt</definition>
+        <argsstring>(RenderTarget &amp;target, const RenderStates &amp;states, Vector2f position, float angle) const override</argsstring>
+        <name>renderAt</name>
+        <reimplements refid="classgf_1_1_physics_geometry_1a14a54c7cfa3b5ace7d80868fbdd292c4">renderAt</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Render the geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render states to use for drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the geometry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle of the geometry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="184" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_polygon_geometry_1ab365da4390e00bbf4189ff2ef49c1d21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::PolygonGeometry::computeBoundingCircle</definition>
+        <argsstring>()</argsstring>
+        <name>computeBoundingCircle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="187" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A polygon physics geometry. </para>    </briefdescription>
+    <detaileddescription>
+<para>This geometry includes rectangles. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="577">
+        <label>gf::PolygonGeometry</label>
+        <link refid="classgf_1_1_polygon_geometry"/>
+        <childnode refid="578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>gf::PhysicsGeometry</label>
+        <link refid="classgf_1_1_physics_geometry"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="579">
+        <label>gf::PolygonGeometry</label>
+        <link refid="classgf_1_1_polygon_geometry"/>
+        <childnode refid="580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>gf::PhysicsGeometry</label>
+        <link refid="classgf_1_1_physics_geometry"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" line="150" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/PhysicsGeometry.h" bodystart="150" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_polygon_geometry_1ab365da4390e00bbf4189ff2ef49c1d21" prot="private" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>computeBoundingCircle</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1a293fedfaf29ed81e190ae13895797064" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>get</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1aa720bf42fdd710aeed17dda0389f60d0" prot="public" virt="virtual"><scope>gf::PolygonGeometry</scope><name>getArea</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1acc984684858b7c2eac25758666b4f28a" prot="public" virt="virtual"><scope>gf::PolygonGeometry</scope><name>getBoundingCircle</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a2f83779b89b8761371650453ca1a0541" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>getType</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1af8580c5635e3176b1ca05edeab1a4376" prot="private" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>m_boundingCircle</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1a003326154a5e7a9ce368171b54ac7bfb" prot="private" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>m_polygon</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a9e91c7774d891b67e1fc730b308366b3" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>PhysicsGeometry</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1a331eb4edc3352c589726cfce580d7874" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>PolygonGeometry</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1aa60ae6bad18fb538e46397d742d324b4" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>PolygonGeometry</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1a9f6aca3a286077ac2d49480fac908f29" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>PolygonGeometry</name></member>
+      <member refid="classgf_1_1_polygon_geometry_1ad1094236f9dd07f9921645fd451ca6e2" prot="public" virt="virtual"><scope>gf::PolygonGeometry</scope><name>renderAt</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a60a6912a7554d027cf4653272b284579" prot="public" virt="non-virtual"><scope>gf::PolygonGeometry</scope><name>Type</name></member>
+      <member refid="classgf_1_1_physics_geometry_1a7b2c4ac9871a7d0fac875f1f6240a5c7" prot="public" virt="virtual"><scope>gf::PolygonGeometry</scope><name>~PhysicsGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

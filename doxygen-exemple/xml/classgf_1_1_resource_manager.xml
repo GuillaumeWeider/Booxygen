@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_resource_manager" kind="class" language="C++" prot="public">
+    <compoundname>gf::ResourceManager</compoundname>
+    <basecompoundref refid="classgf_1_1_asset_manager" prot="public" virt="non-virtual">gf::AssetManager</basecompoundref>
+    <includes refid="_resource_manager_8h" local="no">gf/ResourceManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_resource_manager_1a6effab3ec974b8e4a381e4eb96030a64" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_resource_cache" kindref="compound">ResourceCache</ref>&lt; <ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>ResourceCache&lt;Texture&gt; gf::ResourceManager::m_textures</definition>
+        <argsstring></argsstring>
+        <name>m_textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_resource_manager_1a15f8525ac03e7a4b1e3bd0bce4179248" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_resource_cache" kindref="compound">ResourceCache</ref>&lt; <ref refid="classgf_1_1_font" kindref="compound">Font</ref> &gt;</type>
+        <definition>ResourceCache&lt;Font&gt; gf::ResourceManager::m_fonts</definition>
+        <argsstring></argsstring>
+        <name>m_fonts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_resource_manager_1a6c78eebdb8ba1fe1ccc10533a0b68349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ResourceManager::ResourceManager</definition>
+        <argsstring>()</argsstring>
+        <name>ResourceManager</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_resource_manager_1a4b9046e93c19d509872302de924f442a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> &amp;</type>
+        <definition>Texture&amp; gf::ResourceManager::getTexture</definition>
+        <argsstring>(const Path &amp;path)</argsstring>
+        <name>getTexture</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Get a texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A path to the texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the texture </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the texture is not found </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="145" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_resource_manager_1a8598aba56bfe2a6228131871e1e61b0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+        <definition>Font&amp; gf::ResourceManager::getFont</definition>
+        <argsstring>(const Path &amp;path)</argsstring>
+        <name>getFont</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Get a font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A path to the font </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the font </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the font is not found </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="156" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A resource manager. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_resource_cache" kindref="compound">gf::ResourceCache</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="650">
+        <label>gf::ResourceManager</label>
+        <link refid="classgf_1_1_resource_manager"/>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>gf::AssetManager</label>
+        <link refid="classgf_1_1_asset_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="652">
+        <label>gf::ResourceManager</label>
+        <link refid="classgf_1_1_resource_manager"/>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>gf::AssetManager</label>
+        <link refid="classgf_1_1_asset_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" line="131" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ResourceManager.h" bodystart="131" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_asset_manager_1ae7c7359062b5a44dcd7c14b83b2de880" prot="public" virt="non-virtual"><scope>gf::ResourceManager</scope><name>addSearchDir</name></member>
+      <member refid="classgf_1_1_asset_manager_1a74a37db9fa1173593a20d58169d5226e" prot="public" virt="non-virtual"><scope>gf::ResourceManager</scope><name>getAbsolutePath</name></member>
+      <member refid="classgf_1_1_resource_manager_1a8598aba56bfe2a6228131871e1e61b0e" prot="public" virt="non-virtual"><scope>gf::ResourceManager</scope><name>getFont</name></member>
+      <member refid="classgf_1_1_resource_manager_1a4b9046e93c19d509872302de924f442a" prot="public" virt="non-virtual"><scope>gf::ResourceManager</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_resource_manager_1a15f8525ac03e7a4b1e3bd0bce4179248" prot="private" virt="non-virtual"><scope>gf::ResourceManager</scope><name>m_fonts</name></member>
+      <member refid="classgf_1_1_resource_manager_1a6effab3ec974b8e4a381e4eb96030a64" prot="private" virt="non-virtual"><scope>gf::ResourceManager</scope><name>m_textures</name></member>
+      <member refid="classgf_1_1_resource_manager_1a6c78eebdb8ba1fe1ccc10533a0b68349" prot="public" virt="non-virtual"><scope>gf::ResourceManager</scope><name>ResourceManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

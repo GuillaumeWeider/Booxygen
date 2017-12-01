@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_asset_manager" kind="class" language="C++" prot="public">
+    <compoundname>gf::AssetManager</compoundname>
+    <derivedcompoundref refid="classgf_1_1_resource_manager" prot="public" virt="non-virtual">gf::ResourceManager</derivedcompoundref>
+    <includes refid="_asset_manager_8h" local="no">gf/AssetManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_asset_manager_1a86e98e29372ff056cfb277009af287af" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &gt;</type>
+        <definition>std::vector&lt;Path&gt; gf::AssetManager::m_searchdirs</definition>
+        <argsstring></argsstring>
+        <name>m_searchdirs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" line="71" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_asset_manager_1ae7c7359062b5a44dcd7c14b83b2de880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::AssetManager::addSearchDir</definition>
+        <argsstring>(Path path)</argsstring>
+        <name>addSearchDir</name>
+        <param>
+          <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Add a search directory. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the provided path is not a directory, it is not added to the current search directories.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the directory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_asset_manager_1a74a37db9fa1173593a20d58169d5226e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref></type>
+        <definition>Path gf::AssetManager::getAbsolutePath</definition>
+        <argsstring>(const Path &amp;relativePath) const</argsstring>
+        <name>getAbsolutePath</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>relativePath</declname>
+        </param>
+        <briefdescription>
+<para>Search a file in the search directories. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function tries to build absolute paths by joining a search directory and the relative path to the file.</para><para>If the provided path is absolute, then it is returned without searching in the search directories.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>relativePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A path to the file, relative to a search directory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The absolute path to the file if it has been found or an empty path otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An asset manager. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_asset_manager" kindref="compound">gf::AssetManager</ref> is a base class for searching files in some seach directories. If you are looking for some more sophisticated manager, you should look at <ref refid="classgf_1_1_resource_manager" kindref="compound">gf::ResourceManager</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_resource_manager" kindref="compound">ResourceManager</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>gf::ResourceManager</label>
+        <link refid="classgf_1_1_resource_manager"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gf::AssetManager</label>
+        <link refid="classgf_1_1_asset_manager"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/AssetManager.h" bodystart="44" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_asset_manager_1ae7c7359062b5a44dcd7c14b83b2de880" prot="public" virt="non-virtual"><scope>gf::AssetManager</scope><name>addSearchDir</name></member>
+      <member refid="classgf_1_1_asset_manager_1a74a37db9fa1173593a20d58169d5226e" prot="public" virt="non-virtual"><scope>gf::AssetManager</scope><name>getAbsolutePath</name></member>
+      <member refid="classgf_1_1_asset_manager_1a86e98e29372ff056cfb277009af287af" prot="private" virt="non-virtual"><scope>gf::AssetManager</scope><name>m_searchdirs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

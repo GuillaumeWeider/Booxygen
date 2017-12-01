@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_drawable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Drawable</compoundname>
+    <derivedcompoundref refid="classgf_1_1_post_processing" prot="public" virt="non-virtual">gf::PostProcessing</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_u_i" prot="public" virt="non-virtual">gf::UI</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_vertex_array" prot="public" virt="non-virtual">gf::VertexArray</derivedcompoundref>
+    <includes refid="_drawable_8h" local="no">gf/Drawable.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Drawable::~Drawable</definition>
+        <argsstring>()</argsstring>
+        <name>~Drawable</name>
+        <briefdescription>
+<para>Virtual desctructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Drawable.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gf::Drawable::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states)=0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classgf_1_1_point_particles_1a203d20fd09d0d5f198f861f9acab461c">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_logo_1ab00b287fa43c907c6bde64ca63932265">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_post_processing_1acdc64e9ea8fda09aefcc82c463e9024e">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_shape_particles_1ae01f9d9337deda40d31acc9a0272dbe8">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_sprite_particles_1aa5d0e80d2691b72af6fc578c0c7499c5">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_square_grid_1a24e3ec4c3f017484cc06a9ce35b075f5">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_buffered_geometry_1a88c3b2cdccdde3be5ed3256ab06fc83e">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_vertex_array_1abeb5048610ce99319d6f650defe184ea">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_curve_1aa54fc04c78d0e2c4471647728ca29c95">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_sprite_1ae58a494382f66020f65d53bafd030f81">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_tile_layer_1a8e6dd64acb44a0000f8d27c87a43ed23">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_nine_patch_1aa1294e55d739541c4e6e6dd80c7f98a5">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_shape_1aaa3b90060e3719d07a51563198397289">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_text_1acf6574bce3190b15c0ff3b648e09b507">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_console_1ab38a181b83718f8172d2f5aacc14cb4e">draw</reimplementedby>
+        <reimplementedby refid="classgf_1_1_u_i_1ae3f55b7784e4db1aa450d1c4d49f7772">draw</reimplementedby>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Drawable.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for objects that can be drawn to a render window. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_drawable" kindref="compound">gf::Drawable</ref> is a very simple base class that allows objects of derived classes to be drawn to a sf::RenderTarget.</para><para>All you have to do in your derived class is to override the <computeroutput><ref refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" kindref="member">draw()</ref></computeroutput> virtual function.</para><para>Note that inheriting from <computeroutput><ref refid="classgf_1_1_drawable" kindref="compound">gf::Drawable</ref></computeroutput> is not mandatory, but it allows this nice syntax <computeroutput>target.draw(object)</computeroutput> rather than <computeroutput>object.draw(target)</computeroutput>, which is more consistent with other classes.</para><para>Example:</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyDrawable<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_drawable" kindref="compound">gf::Drawable</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" kindref="member">draw</ref>(<ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>&amp;<sp/>target,<sp/><ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref><sp/>states)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>draw<sp/>other<sp/>high-level<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(m_sprite,<sp/>states);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>or<sp/>use<sp/>the<sp/>low-level<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="structgf_1_1_render_states_1a9e118f46b7e520ad9eb4ea0b9bdbff4d" kindref="member">texture</ref><sp/>=<sp/>&amp;m_texture;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(m_vertices,<sp/>states);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref><sp/>m_sprite;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref><sp/>m_texture;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_vertex_array" kindref="compound">gf::VertexArray</ref><sp/>m_vertices;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="229">
+        <label>gf::CompoundCurve</label>
+        <link refid="classgf_1_1_compound_curve"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>gf::Line</label>
+        <link refid="classgf_1_1_line"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>gf::CircleShape</label>
+        <link refid="classgf_1_1_circle_shape"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>gf::SpriteParticles</label>
+        <link refid="classgf_1_1_sprite_particles"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>gf::PointParticles</label>
+        <link refid="classgf_1_1_point_particles"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>gf::Logo</label>
+        <link refid="classgf_1_1_logo"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>gf::NinePatch</label>
+        <link refid="classgf_1_1_nine_patch"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>gf::SquareGrid</label>
+        <link refid="classgf_1_1_square_grid"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>gf::RoundedRectangleShape</label>
+        <link refid="classgf_1_1_rounded_rectangle_shape"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>gf::QuadraticBezierCurve</label>
+        <link refid="classgf_1_1_quadratic_bezier_curve"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>gf::PostProcessing</label>
+        <link refid="classgf_1_1_post_processing"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="250">
+        <label>gf::VertexArray</label>
+        <link refid="classgf_1_1_vertex_array"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>gf::Text</label>
+        <link refid="classgf_1_1_text"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>gf::Sprite</label>
+        <link refid="classgf_1_1_sprite"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>gf::StarShape</label>
+        <link refid="classgf_1_1_star_shape"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>gf::CubicBezierCurve</label>
+        <link refid="classgf_1_1_cubic_bezier_curve"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>gf::UI</label>
+        <link refid="classgf_1_1_u_i"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>gf::AnimatedSprite</label>
+        <link refid="classgf_1_1_animated_sprite"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>gf::Console</label>
+        <link refid="classgf_1_1_console"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>gf::ConvexShape</label>
+        <link refid="classgf_1_1_convex_shape"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>gf::TileLayer</label>
+        <link refid="classgf_1_1_tile_layer"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>gf::ShapeParticles</label>
+        <link refid="classgf_1_1_shape_particles"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>gf::BufferedGeometry</label>
+        <link refid="classgf_1_1_buffered_geometry"/>
+        <childnode refid="225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>gf::RectangleShape</label>
+        <link refid="classgf_1_1_rectangle_shape"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Drawable.h" line="79" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Drawable.h" bodystart="79" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" prot="public" virt="pure-virtual"><scope>gf::Drawable</scope><name>draw</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Drawable</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

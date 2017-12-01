@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_bresenham" kind="class" language="C++" prot="public">
+    <compoundname>gf::Bresenham</compoundname>
+    <includes refid="_geometry_8h" local="no">gf/Geometry.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_bresenham_1a5dfdac2c54cafb10409389e5165e51fd" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Bresenham::m_p0</definition>
+        <argsstring></argsstring>
+        <name>m_p0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="63" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_bresenham_1a7df047950f52abdc3a0ec938dfa13464" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Bresenham::m_p1</definition>
+        <argsstring></argsstring>
+        <name>m_p1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="64" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_bresenham_1a14d9c93a40bba747de1a753591f298fe" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Bresenham::m_delta</definition>
+        <argsstring></argsstring>
+        <name>m_delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="65" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_bresenham_1aa940d33eb292b53314f6a1b3e99b3058" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Bresenham::m_step</definition>
+        <argsstring></argsstring>
+        <name>m_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="66" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_bresenham_1a0b0d26a2f92b40da106295760e3acaa0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gf::Bresenham::m_error</definition>
+        <argsstring></argsstring>
+        <name>m_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="67" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_bresenham_1a961de3bf3f9e3c10bc99872234412a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Bresenham::Bresenham</definition>
+        <argsstring>(Vector2i p0, Vector2i p1)</argsstring>
+        <name>Bresenham</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first point of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The last point of the line </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_bresenham_1a3264df6d89a1251564ecb2f7a4b1549e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Bresenham::step</definition>
+        <argsstring>(Vector2i &amp;res)</argsstring>
+        <name>step</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Generate a new point on the line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resulting point if one was generated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the algorithm is finished </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="60" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State for the <ref refid="classgf_1_1_bresenham" kindref="compound">Bresenham</ref>&apos;s line algorithm. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1ga1ef096f0d24fef43c511b1a384a48e57" kindref="member">gf::generateLine()</ref> </para></simplesect>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham&apos;s line algorithm - Wikipedia</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Geometry.h" bodystart="44" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_bresenham_1a961de3bf3f9e3c10bc99872234412a35" prot="public" virt="non-virtual"><scope>gf::Bresenham</scope><name>Bresenham</name></member>
+      <member refid="classgf_1_1_bresenham_1a14d9c93a40bba747de1a753591f298fe" prot="private" virt="non-virtual"><scope>gf::Bresenham</scope><name>m_delta</name></member>
+      <member refid="classgf_1_1_bresenham_1a0b0d26a2f92b40da106295760e3acaa0" prot="private" virt="non-virtual"><scope>gf::Bresenham</scope><name>m_error</name></member>
+      <member refid="classgf_1_1_bresenham_1a5dfdac2c54cafb10409389e5165e51fd" prot="private" virt="non-virtual"><scope>gf::Bresenham</scope><name>m_p0</name></member>
+      <member refid="classgf_1_1_bresenham_1a7df047950f52abdc3a0ec938dfa13464" prot="private" virt="non-virtual"><scope>gf::Bresenham</scope><name>m_p1</name></member>
+      <member refid="classgf_1_1_bresenham_1aa940d33eb292b53314f6a1b3e99b3058" prot="private" virt="non-virtual"><scope>gf::Bresenham</scope><name>m_step</name></member>
+      <member refid="classgf_1_1_bresenham_1a3264df6d89a1251564ecb2f7a4b1549e" prot="public" virt="non-virtual"><scope>gf::Bresenham</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

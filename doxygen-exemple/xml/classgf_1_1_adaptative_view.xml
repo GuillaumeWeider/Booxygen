@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_adaptative_view" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::AdaptativeView</compoundname>
+    <basecompoundref refid="classgf_1_1_view" prot="public" virt="non-virtual">gf::View</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_extend_view" prot="public" virt="non-virtual">gf::ExtendView</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_fill_view" prot="public" virt="non-virtual">gf::FillView</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_fit_view" prot="public" virt="non-virtual">gf::FitView</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_locked_view" prot="public" virt="non-virtual">gf::LockedView</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_screen_view" prot="public" virt="non-virtual">gf::ScreenView</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_stretch_view" prot="public" virt="non-virtual">gf::StretchView</derivedcompoundref>
+    <includes refid="_view_8h" local="no">gf/View.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_adaptative_view_1aa3096315aeb04895152c857f9acf5899" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::AdaptativeView::AdaptativeView</definition>
+        <argsstring>()</argsstring>
+        <name>AdaptativeView</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates a default view of <formula id="122">$(0, 0, 1000, 1000)$</formula>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="390" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="390" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_adaptative_view_1a345f031d31abbf50eaec549720a25540" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::AdaptativeView::AdaptativeView</definition>
+        <argsstring>(const RectF &amp;rect)</argsstring>
+        <name>AdaptativeView</name>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Construct the view from a rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle defining the zone to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="401" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="401" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_adaptative_view_1a5867d055403b738a2794f7a8a0c170d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::AdaptativeView::AdaptativeView</definition>
+        <argsstring>(Vector2f center, Vector2f size)</argsstring>
+        <name>AdaptativeView</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct the view from its center and size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center of the zone to display </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the zone to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="413" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="413" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_adaptative_view_1a1dc3ad1cd2e2355ba102e4d9e1c29ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::AdaptativeView::setInitialScreenSize</definition>
+        <argsstring>(Vector2u screenSize)</argsstring>
+        <name>setInitialScreenSize</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>screenSize</declname>
+        </param>
+        <briefdescription>
+<para>Set the initial screen size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial size of the screen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="424" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_adaptative_view_1ada5e089ccb8d82c22e30b96ff01a8df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gf::AdaptativeView::onScreenSizeChange</definition>
+        <argsstring>(Vector2u screenSize)=0</argsstring>
+        <name>onScreenSizeChange</name>
+        <reimplementedby refid="classgf_1_1_stretch_view_1a74ef23d964efc0c4f66b0b073e4fb160">onScreenSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fit_view_1a2b15c00916bb5664901b7ce22211d2ce">onScreenSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_fill_view_1a34cfb2ad1588dcaf5634331d2e857fe6">onScreenSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_extend_view_1aee1117630019cb8dfa3fb6aa02d1519f">onScreenSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_locked_view_1a46c6712eb6b90f1c0056dd6d62b23ddb">onScreenSizeChange</reimplementedby>
+        <reimplementedby refid="classgf_1_1_screen_view_1a340f125998c585eb220c3ee208948986">onScreenSizeChange</reimplementedby>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>screenSize</declname>
+        </param>
+        <briefdescription>
+<para>Callback when the screen has just been resized. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new size of the screen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="431" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Adaptative view. </para>    </briefdescription>
+    <detaileddescription>
+<para>An adaptative view is a view that adapts automatically to screen resolution change.</para><para>There are several kinds of adaptative views, according to the policy that is adopted when the resolution changes. In the examples below, The screen is represented by the black rectangle and the world is the red square. If red dashed lines appears, it means that the world has been modified.</para><para><table rows="7" cols="2"><row>
+<entry thead="yes"><para>Class </para></entry><entry thead="yes"><para>Example  </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_stretch_view" kindref="compound">gf::StretchView</ref> </para></entry><entry thead="no"><para><image type="html" name="stretchview.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_fit_view" kindref="compound">gf::FitView</ref> </para></entry><entry thead="no"><para><image type="html" name="fitview.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_fill_view" kindref="compound">gf::FillView</ref> </para></entry><entry thead="no"><para><image type="html" name="fillview.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_extend_view" kindref="compound">gf::ExtendView</ref> </para></entry><entry thead="no"><para><image type="html" name="extendview.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_locked_view" kindref="compound">gf::LockedView</ref> </para></entry><entry thead="no"><para><image type="html" name="lockedview.png"></image>
+ </para></entry></row>
+<row>
+<entry thead="no"><para><ref refid="classgf_1_1_screen_view" kindref="compound">gf::ScreenView</ref> </para></entry><entry thead="no"><para><image type="html" name="screenview.png"></image>
+ </para></entry></row>
+</table>
+<simplesect kind="see"><para><ref refid="classgf_1_1_view_container" kindref="compound">gf::ViewContainer</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>gf::ExtendView</label>
+        <link refid="classgf_1_1_extend_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gf::FillView</label>
+        <link refid="classgf_1_1_fill_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gf::View</label>
+        <link refid="classgf_1_1_view"/>
+      </node>
+      <node id="21">
+        <label>gf::ScreenView</label>
+        <link refid="classgf_1_1_screen_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gf::FitView</label>
+        <link refid="classgf_1_1_fit_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gf::AdaptativeView</label>
+        <link refid="classgf_1_1_adaptative_view"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gf::LockedView</label>
+        <link refid="classgf_1_1_locked_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gf::StretchView</label>
+        <link refid="classgf_1_1_stretch_view"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>gf::View</label>
+        <link refid="classgf_1_1_view"/>
+      </node>
+      <node id="23">
+        <label>gf::AdaptativeView</label>
+        <link refid="classgf_1_1_adaptative_view"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="383" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="383" bodyend="433"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_adaptative_view_1aa3096315aeb04895152c857f9acf5899" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>AdaptativeView</name></member>
+      <member refid="classgf_1_1_adaptative_view_1a345f031d31abbf50eaec549720a25540" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>AdaptativeView</name></member>
+      <member refid="classgf_1_1_adaptative_view_1a5867d055403b738a2794f7a8a0c170d2" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>AdaptativeView</name></member>
+      <member refid="classgf_1_1_view_1aa3c2ef587d06325329be70b39aa018ad" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getCenter</name></member>
+      <member refid="classgf_1_1_view_1a78048d0236c2569710d5ce5e860b4e6e" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_view_1abf128c762bee4fe21d6eff0b2b98552a" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_view_1adc0dfb3b0b4b93a3d5694680057e73ea" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_view_1afbd0c88f80b5bef08f0d18d1cb286191" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_view_1a320906e3a7d37bc313a12c28c1ec002c" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>getViewport</name></member>
+      <member refid="classgf_1_1_view_1ab5301bb8bdd3990441242e3e0a463567" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>move</name></member>
+      <member refid="classgf_1_1_adaptative_view_1ada5e089ccb8d82c22e30b96ff01a8df0" prot="public" virt="pure-virtual"><scope>gf::AdaptativeView</scope><name>onScreenSizeChange</name></member>
+      <member refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" prot="protected" virt="virtual"><scope>gf::AdaptativeView</scope><name>onSizeChange</name></member>
+      <member refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" prot="protected" virt="virtual"><scope>gf::AdaptativeView</scope><name>onViewportChange</name></member>
+      <member refid="classgf_1_1_view_1a4a8327e3636d0e65b1202185891947cd" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>reset</name></member>
+      <member refid="classgf_1_1_view_1a29093517f27574b493b6b032bed2b81d" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_view_1a96c5c4ce95a1ab3882a98b405dcb871d" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setCenter</name></member>
+      <member refid="classgf_1_1_adaptative_view_1a1dc3ad1cd2e2355ba102e4d9e1c29ddd" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setInitialScreenSize</name></member>
+      <member refid="classgf_1_1_view_1a5681e7429bc7f7d2df6c1e0fb914e006" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setSize</name></member>
+      <member refid="classgf_1_1_view_1a59e869018b8024110ec5d2571d87c15c" prot="protected" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setSizeNoCallback</name></member>
+      <member refid="classgf_1_1_view_1a1f39e06d2340af95c897a649a2b86e56" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setViewport</name></member>
+      <member refid="classgf_1_1_view_1abec8761ca794fa0cdb950f967d206769" prot="protected" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>setViewportNoCallback</name></member>
+      <member refid="classgf_1_1_view_1adfd0d6e4d3d4206a6804b9cb2c391e36" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1a5cb93b3d2069f74aa24be70439979120" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1adafd0b8f28754639b7ae5bceb7aa8b4d" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>View</name></member>
+      <member refid="classgf_1_1_view_1a6815a934484902eaa122adf2c4aed7c2" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>zoom</name></member>
+      <member refid="classgf_1_1_view_1af3674f5b8a2d44eff9f22c48802d1a91" prot="public" virt="non-virtual"><scope>gf::AdaptativeView</scope><name>zoom</name></member>
+      <member refid="classgf_1_1_view_1ae95b6b57bffffe92693f2f372e994f76" prot="public" virt="virtual"><scope>gf::AdaptativeView</scope><name>~View</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

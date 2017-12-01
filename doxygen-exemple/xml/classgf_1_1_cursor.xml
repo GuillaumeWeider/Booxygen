@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_cursor" kind="class" language="C++" prot="public">
+    <compoundname>gf::Cursor</compoundname>
+    <includes refid="_cursor_8h" local="no">gf/Cursor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a25b919906281f922869605e6f2f672a1" prot="public">
+          <name>Arrow</name>
+          <briefdescription>
+<para>Arrow cursor (default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ac087eb69713be21880fe6a59dc054e26" prot="public">
+          <name>ArrowWait</name>
+          <briefdescription>
+<para>Busy arrow cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ab925b2f97b9f3cce5ed2922fa6286aeb" prot="public">
+          <name>Wait</name>
+          <briefdescription>
+<para>Busy cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49acee561ffbc398c85966d587a7d884c24" prot="public">
+          <name>Text</name>
+          <briefdescription>
+<para>I-beam, cursor when hovering over a field allowing text entry. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49aa55c208b1c2436eed83f2435ffdf1103" prot="public">
+          <name>Hand</name>
+          <briefdescription>
+<para>Pointing hand cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ab1188d3d430faaa5df59662b14996be5" prot="public">
+          <name>SizeHorizontal</name>
+          <briefdescription>
+<para>Horizontal double arrow cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a59b4bf3bceb5e2f810b65049b6c2fd01" prot="public">
+          <name>SizeVertical</name>
+          <briefdescription>
+<para>Vertical double arrow cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a2631436c27011d4152de2235b01ed6ca" prot="public">
+          <name>SizeTopLeftBottomRight</name>
+          <briefdescription>
+<para>Double arrow cursor going from top-left to bottom-right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a6a72ebde234daa28d81ad7d49b388234" prot="public">
+          <name>SizeBottomLeftTopRight</name>
+          <briefdescription>
+<para>Double arrow cursor going from bottom-left to top-right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a473f8c21c3da072f993f43a17229b44b" prot="public">
+          <name>SizeAll</name>
+          <briefdescription>
+<para>Combination of SizeHorizontal and SizeVertical. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a641d711a2721b05181333b41f35f3e61" prot="public">
+          <name>Cross</name>
+          <briefdescription>
+<para>Crosshair cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49acb38c8fd4917ce29ef56b9d6ff555e06" prot="public">
+          <name>NotAllowed</name>
+          <briefdescription>
+<para><ref refid="classgf_1_1_action" kindref="compound">Action</ref> not allowed cursor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of the native system cursor types. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="78" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" bodystart="78" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgf_1_1_cursor_1a553f958a25683445088050a69d3de8e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="178" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_cursor_1aac6f91e16dd94a9627486aabae6eb3b4" prot="private" static="no" mutable="no">
+        <type>SDL_Cursor *</type>
+        <definition>SDL_Cursor* gf::Cursor::m_cursor</definition>
+        <argsstring></argsstring>
+        <name>m_cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="179" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_cursor_1af4ee2f5f987918c7176079722b6b8b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Cursor::Cursor</definition>
+        <argsstring>()</argsstring>
+        <name>Cursor</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor doesn&apos;t actually create the cursor; initially the new instance is invalid and must not be used until either <ref refid="classgf_1_1_cursor_1a44a3417fa273d17e0f4793b2ed437065" kindref="member">loadFromPixels()</ref> or <ref refid="classgf_1_1_cursor_1a7fdcfc6496e98b7efc35c09ba431eeb8" kindref="member">loadFromSystem()</ref> is called and successfully created a cursor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a76bf3d06801ccf44914790d40363781b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Cursor::Cursor</definition>
+        <argsstring>(const Cursor &amp;)=delete</argsstring>
+        <name>Cursor</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a1f0f50834dd82d3607f3cd57225521e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;</type>
+        <definition>Cursor&amp; gf::Cursor::operator=</definition>
+        <argsstring>(const Cursor &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1ab16729d0f64f9b74afe632564ae0b638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Cursor::Cursor</definition>
+        <argsstring>(Cursor &amp;&amp;other)</argsstring>
+        <name>Cursor</name>
+        <param>
+          <type><ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a0219fbdf8562f755409095658883590f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;</type>
+        <definition>Cursor&amp; gf::Cursor::operator=</definition>
+        <argsstring>(Cursor &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_cursor" kindref="compound">Cursor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1af4a272c7a1ea1b794c3488f86c8ebfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Cursor::~Cursor</definition>
+        <argsstring>()</argsstring>
+        <name>~Cursor</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor releases the system resources associated with this cursor, if any. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a44a3417fa273d17e0f4793b2ed437065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Cursor::loadFromPixels</definition>
+        <argsstring>(const uint8_t *pixels, Vector2u size, Vector2u hotspot)</argsstring>
+        <name>loadFromPixels</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pixels</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>hotspot</declname>
+        </param>
+        <briefdescription>
+<para>Create a cursor with the provided pixels. </para>        </briefdescription>
+        <detaileddescription>
+<para><emphasis>pixels</emphasis> must be an array of <emphasis>width</emphasis> by <emphasis>height</emphasis> pixels in 32-bit RGBA format. If not, this will cause undefined behavior.</para><para>If <emphasis>pixels</emphasis> is null or either <emphasis>width</emphasis> or <emphasis>height</emphasis> are 0, the current cursor is left unchanged and the function will return false.</para><para>In addition to specifying the pixel data, you can also specify the location of the hotspot of the cursor. The hotspot is the pixel coordinate within the cursor image which will be located exactly where the mouse pointer position is. Any mouse actions that are performed will return the window/screen location of the hotspot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pixels of the image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width and height of the image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hotspot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location of the hotspot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the cursor was successfully loaded; false otherwise</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_cursor_1a865d04413e8e7c49d3bf4d5bb76e1a0b" kindref="member">loadFromImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a865d04413e8e7c49d3bf4d5bb76e1a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Cursor::loadFromImage</definition>
+        <argsstring>(const Image &amp;image, Vector2u hotspot)</argsstring>
+        <name>loadFromImage</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>hotspot</declname>
+        </param>
+        <briefdescription>
+<para>Create a cursor from the provided image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hotspot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>THe location of the hotspot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the cursor was successfully loaded; false otherwise</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_cursor_1a44a3417fa273d17e0f4793b2ed437065" kindref="member">loadFromPixels()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_cursor_1a7fdcfc6496e98b7efc35c09ba431eeb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Cursor::loadFromSystem</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>loadFromSystem</name>
+        <param>
+          <type><ref refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Create a native system cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The native system cursor type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the cursor was successfully loaded; false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="175" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A mouse cursor. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class abstracts the operating system resources associated with either a native system cursor or a custom cursor.</para><para>After loading the cursor the graphical appearance with either <ref refid="classgf_1_1_cursor_1a44a3417fa273d17e0f4793b2ed437065" kindref="member">loadFromPixels()</ref> or <ref refid="classgf_1_1_cursor_1a7fdcfc6496e98b7efc35c09ba431eeb8" kindref="member">loadFromSystem()</ref>, the cursor can be changed with <ref refid="classgf_1_1_window_1a6bb93be3a77f1fab046201fc3af655d6" kindref="member">gf::Window::setMouseCursor()</ref>.</para><para>The behaviour is undefined if the cursor is destroyed while in use by the window.</para><para>Usage example: <programlisting><codeline><highlight class="normal">gf::Window<sp/>window;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>...<sp/>create<sp/>window<sp/>as<sp/>usual<sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">gf::Cursor<sp/>cursor;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>(cursor.loadFromSystem(gf::Cursor::Hand))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>window.setMouseCursor(cursor);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_window_1a6bb93be3a77f1fab046201fc3af655d6" kindref="member">gf::Window::setMouseCursor()</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" line="72" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Cursor.h" bodystart="72" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a25b919906281f922869605e6f2f672a1" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Arrow</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ac087eb69713be21880fe6a59dc054e26" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>ArrowWait</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a641d711a2721b05181333b41f35f3e61" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Cross</name></member>
+      <member refid="classgf_1_1_cursor_1af4ee2f5f987918c7176079722b6b8b28" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Cursor</name></member>
+      <member refid="classgf_1_1_cursor_1a76bf3d06801ccf44914790d40363781b" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Cursor</name></member>
+      <member refid="classgf_1_1_cursor_1ab16729d0f64f9b74afe632564ae0b638" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Cursor</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49aa55c208b1c2436eed83f2435ffdf1103" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Hand</name></member>
+      <member refid="classgf_1_1_cursor_1a865d04413e8e7c49d3bf4d5bb76e1a0b" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>loadFromImage</name></member>
+      <member refid="classgf_1_1_cursor_1a44a3417fa273d17e0f4793b2ed437065" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>loadFromPixels</name></member>
+      <member refid="classgf_1_1_cursor_1a7fdcfc6496e98b7efc35c09ba431eeb8" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>loadFromSystem</name></member>
+      <member refid="classgf_1_1_cursor_1aac6f91e16dd94a9627486aabae6eb3b4" prot="private" virt="non-virtual"><scope>gf::Cursor</scope><name>m_cursor</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49acb38c8fd4917ce29ef56b9d6ff555e06" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>NotAllowed</name></member>
+      <member refid="classgf_1_1_cursor_1a1f0f50834dd82d3607f3cd57225521e0" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_cursor_1a0219fbdf8562f755409095658883590f" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a473f8c21c3da072f993f43a17229b44b" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>SizeAll</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a6a72ebde234daa28d81ad7d49b388234" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>SizeBottomLeftTopRight</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ab1188d3d430faaa5df59662b14996be5" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>SizeHorizontal</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a2631436c27011d4152de2235b01ed6ca" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>SizeTopLeftBottomRight</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49a59b4bf3bceb5e2f810b65049b6c2fd01" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>SizeVertical</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49acee561ffbc398c85966d587a7d884c24" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Text</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Type</name></member>
+      <member refid="classgf_1_1_cursor_1ab0a2a0075ec20bf14a992f8120d9bf49ab925b2f97b9f3cce5ed2922fa6286aeb" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>Wait</name></member>
+      <member refid="classgf_1_1_cursor_1af4a272c7a1ea1b794c3488f86c8ebfa3" prot="public" virt="non-virtual"><scope>gf::Cursor</scope><name>~Cursor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

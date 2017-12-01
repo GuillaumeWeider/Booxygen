@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_console_font" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::ConsoleFont</compoundname>
+    <derivedcompoundref refid="classgf_1_1_bitmap_console_font" prot="public" virt="non-virtual">gf::BitmapConsoleFont</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_colored_console_font" prot="public" virt="non-virtual">gf::ColoredConsoleFont</derivedcompoundref>
+    <includes refid="_console_font_8h" local="no">gf/ConsoleFont.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Properties</header>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a195f1fac89d1020197a2a9cb48c591e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref></type>
+        <definition>ConsoleFontFormat gf::ConsoleFont::getFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getFormat</name>
+        <briefdescription>
+<para>Get the format of the font. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="132" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a6b33d57e9171c0e339086ae0b405fe5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::ConsoleFont::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the fonts. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size in characters of the font </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="141" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1aa973bbd5867bf5c085296ecf9a83d3f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::ConsoleFont::getCharacterSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getCharacterSize</name>
+        <briefdescription>
+<para>Get the size of the characters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size in pixels of the characters </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="150" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Mapping</header>
+      <memberdef kind="function" id="classgf_1_1_console_font_1aba7b3f7217455d73c3c8eab4acb08575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::mapCode</definition>
+        <argsstring>(char16_t c, Vector2u position)</argsstring>
+        <name>mapCode</name>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Map a character to a position in the font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A character </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position, in characters, of the character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a4a24f59f85289cb38b0e4bf8b89f15e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::mapCodeRange</definition>
+        <argsstring>(char16_t c, unsigned count, Vector2u position)</argsstring>
+        <name>mapCodeRange</name>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Map a range of characters to consecutive positions in the font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first character in the range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of character in the range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position, in characters, of the first character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1aad2e4e4abcb011478dd7085559949dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::mapString</definition>
+        <argsstring>(StringRef str, Vector2u position)</argsstring>
+        <name>mapString</name>
+        <param>
+          <type><ref refid="classgf_1_1_string_ref" kindref="compound">StringRef</ref></type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Map characters from a string to consecutive positions in the font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string with the characters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position, in characters, of the first character of the string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a01d02f5198db67d73c96ec8dde6a6aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::mapElement</definition>
+        <argsstring>(ConsoleFontElement element)</argsstring>
+        <name>mapElement</name>
+        <param>
+          <type><ref refid="structgf_1_1_console_font_element" kindref="compound">ConsoleFontElement</ref></type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Map an element in the font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A font element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1ad949467e0fd2512df6d38bd8b709f18d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::mapElements</definition>
+        <argsstring>(ArrayRef&lt; ConsoleFontElement &gt; elements)</argsstring>
+        <name>mapElements</name>
+        <param>
+          <type><ref refid="classgf_1_1_array_ref" kindref="compound">ArrayRef</ref>&lt; <ref refid="structgf_1_1_console_font_element" kindref="compound">ConsoleFontElement</ref> &gt;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Map some elements in the font. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a42f356a05fc8d0c8c58d5dd5a39af399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::clearMapping</definition>
+        <argsstring>()</argsstring>
+        <name>clearMapping</name>
+        <briefdescription>
+<para>Clear the mapping. </para>        </briefdescription>
+        <detaileddescription>
+<para>All characters are mapped to the first position in the font. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="207" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Texture</header>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a0f365ac984ffbfad1abc02c71356d454" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga1831a8313850243834b07340b4e3b22c" kindref="member">RectU</ref></type>
+        <definition>RectU gf::ConsoleFont::getSubTexture</definition>
+        <argsstring>(char16_t c) const</argsstring>
+        <name>getSubTexture</name>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get the sub-texture rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding sub-texture rectangle</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_font_1a98a09d3771ee8fa87cfa10fe911063ea" kindref="member">getTexture()</ref>, <ref refid="classgf_1_1_console_font_1acba4fb444545562da39bef22958c511d" kindref="member">getTextureRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1acba4fb444545562da39bef22958c511d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::ConsoleFont::getTextureRect</definition>
+        <argsstring>(char16_t c) const</argsstring>
+        <name>getTextureRect</name>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get the texture rectangle for a character. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding texture rectangle</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_font_1a98a09d3771ee8fa87cfa10fe911063ea" kindref="member">getTexture()</ref>, <ref refid="classgf_1_1_console_font_1a0f365ac984ffbfad1abc02c71356d454" kindref="member">getSubTexture()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a98a09d3771ee8fa87cfa10fe911063ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> *</type>
+        <definition>virtual const BareTexture* gf::ConsoleFont::getTexture</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getTexture</name>
+        <reimplementedby refid="classgf_1_1_bitmap_console_font_1a1d3c6699f9267c5348f1bf861ff71a97">getTexture</reimplementedby>
+        <reimplementedby refid="classgf_1_1_colored_console_font_1a1a8628def8d00f81c2285925a7d9e4c2">getTexture</reimplementedby>
+        <briefdescription>
+<para>Get the texture of the console font. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The texture of the font </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="243" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_console_font_1ac804017318af39bb6d7a7a8667bab16c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gf::ConsoleFont::m_mapping</definition>
+        <argsstring></argsstring>
+        <name>m_mapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="282" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_font_1a5b4a075c56e46e41dfe0094ef4bbb2a9" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref></type>
+        <definition>ConsoleFontFormat gf::ConsoleFont::m_format</definition>
+        <argsstring></argsstring>
+        <name>m_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="283" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_font_1a11dd4f410411ab533c1391aeed90fe16" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::ConsoleFont::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="284" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_font_1ae8e023782225689f6ec96f3f8a6051ed" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::ConsoleFont::m_characterSize</definition>
+        <argsstring></argsstring>
+        <name>m_characterSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="285" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_console_font_1aff1942d952c5da6ab780be02eec11043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ConsoleFont::ConsoleFont</definition>
+        <argsstring>()</argsstring>
+        <name>ConsoleFont</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>No font is loaded. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1ad8a9f59168343a99ffca9f98907f862c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::ConsoleFont::~ConsoleFont</definition>
+        <argsstring>()</argsstring>
+        <name>~ConsoleFont</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="122" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_console_font_1a57ffce54d0630a7e3ae787eeb592fe98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::ConsoleFont::setFormatAndComputeSizes</definition>
+        <argsstring>(ConsoleFontFormat format, Vector2u size, Vector2u imageSize)</argsstring>
+        <name>setFormatAndComputeSizes</name>
+        <param>
+          <type><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>imageSize</declname>
+        </param>
+        <briefdescription>
+<para>Set the format of the font. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the format of the font and computes the actual size in characters of the font and the size of the characters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the font </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size given by the user, may be <formula id="21">$ (0, 0) $</formula> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imageSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the source image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a94664ae4a81cac48bd489dafb71e03df" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ConsoleFont::logFormat</definition>
+        <argsstring>(const Path &amp;filename) const</argsstring>
+        <name>logFormat</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Print the format of the font. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function logs the format of the font</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filename of the source image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_font_1a78bce544b371d58d3a60268350890999" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::ConsoleFont::getColorKeyPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorKeyPosition</name>
+        <briefdescription>
+<para>Get the color key position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function gives the position of a pixel of the space character in the font.</para><para><simplesect kind="return"><para>A pixel position where to find the color key </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="279" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A console font. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref>, <ref refid="structgf_1_1_console_font_format" kindref="compound">gf::ConsoleFontFormat</ref>, <ref refid="structgf_1_1_console_font_element" kindref="compound">gf::ConsoleFontElement</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="169">
+        <label>gf::ColoredConsoleFont</label>
+        <link refid="classgf_1_1_colored_console_font"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>gf::ConsoleFont</label>
+        <link refid="classgf_1_1_console_font"/>
+      </node>
+      <node id="168">
+        <label>gf::BitmapConsoleFont</label>
+        <link refid="classgf_1_1_bitmap_console_font"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="110" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="110" bodyend="286"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_console_font_1a42f356a05fc8d0c8c58d5dd5a39af399" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>clearMapping</name></member>
+      <member refid="classgf_1_1_console_font_1aff1942d952c5da6ab780be02eec11043" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>ConsoleFont</name></member>
+      <member refid="classgf_1_1_console_font_1aa973bbd5867bf5c085296ecf9a83d3f2" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getCharacterSize</name></member>
+      <member refid="classgf_1_1_console_font_1a78bce544b371d58d3a60268350890999" prot="protected" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getColorKeyPosition</name></member>
+      <member refid="classgf_1_1_console_font_1a195f1fac89d1020197a2a9cb48c591e1" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getFormat</name></member>
+      <member refid="classgf_1_1_console_font_1a6b33d57e9171c0e339086ae0b405fe5a" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_console_font_1a0f365ac984ffbfad1abc02c71356d454" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getSubTexture</name></member>
+      <member refid="classgf_1_1_console_font_1a98a09d3771ee8fa87cfa10fe911063ea" prot="public" virt="pure-virtual"><scope>gf::ConsoleFont</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_console_font_1acba4fb444545562da39bef22958c511d" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_console_font_1a94664ae4a81cac48bd489dafb71e03df" prot="protected" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>logFormat</name></member>
+      <member refid="classgf_1_1_console_font_1ae8e023782225689f6ec96f3f8a6051ed" prot="private" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>m_characterSize</name></member>
+      <member refid="classgf_1_1_console_font_1a5b4a075c56e46e41dfe0094ef4bbb2a9" prot="private" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>m_format</name></member>
+      <member refid="classgf_1_1_console_font_1ac804017318af39bb6d7a7a8667bab16c" prot="private" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>m_mapping</name></member>
+      <member refid="classgf_1_1_console_font_1a11dd4f410411ab533c1391aeed90fe16" prot="private" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_console_font_1aba7b3f7217455d73c3c8eab4acb08575" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>mapCode</name></member>
+      <member refid="classgf_1_1_console_font_1a4a24f59f85289cb38b0e4bf8b89f15e5" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>mapCodeRange</name></member>
+      <member refid="classgf_1_1_console_font_1a01d02f5198db67d73c96ec8dde6a6aca" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>mapElement</name></member>
+      <member refid="classgf_1_1_console_font_1ad949467e0fd2512df6d38bd8b709f18d" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>mapElements</name></member>
+      <member refid="classgf_1_1_console_font_1aad2e4e4abcb011478dd7085559949dc1" prot="public" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>mapString</name></member>
+      <member refid="classgf_1_1_console_font_1a57ffce54d0630a7e3ae787eeb592fe98" prot="protected" virt="non-virtual"><scope>gf::ConsoleFont</scope><name>setFormatAndComputeSizes</name></member>
+      <member refid="classgf_1_1_console_font_1ad8a9f59168343a99ffca9f98907f862c" prot="public" virt="virtual"><scope>gf::ConsoleFont</scope><name>~ConsoleFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

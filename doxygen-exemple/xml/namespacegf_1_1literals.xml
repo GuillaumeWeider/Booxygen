@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegf_1_1literals" kind="namespace" language="C++">
+    <compoundname>gf::literals</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegf_1_1literals_1aec3130535a52fd1c241a4bfecffcbffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref></type>
+        <definition>constexpr gf::Id gf::literals::operator&quot;&quot; _id</definition>
+        <argsstring>(const char *str, std::size_t sz)</argsstring>
+        <name>operator&quot;&quot; _id</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+<para>User defined operator for creating compile time ids from strings. </para>        </briefdescription>
+        <detaileddescription>
+<para>To use it, you have to use the <computeroutput><ref refid="namespacegf_1_1literals" kindref="compound">gf::literals</ref></computeroutput> namespace:</para><para><programlisting><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf_1_1literals" kindref="compound">gf::literals</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">Id</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;FooBar&quot;</highlight><highlight class="normal">_id;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="96" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The namespace for literals. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Id.h" line="82" column="1"/>
+  </compounddef>
+</doxygen>

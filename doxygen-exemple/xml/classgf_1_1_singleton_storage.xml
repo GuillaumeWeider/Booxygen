@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_singleton_storage" kind="class" language="C++" prot="public">
+    <compoundname>gf::SingletonStorage</compoundname>
+    <includes refid="_singleton_8h" local="no">gf/Singleton.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_singleton_storage_1a38e59b6e51455ed1e1072cb503c32369" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+        <definition>T gf::SingletonStorage&lt; T &gt;::m_storage</definition>
+        <argsstring></argsstring>
+        <name>m_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" line="167" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_singleton_storage_1a7317dc9064e0e0c47e89b2aadabe95b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::SingletonStorage&lt; T &gt;::SingletonStorage</definition>
+        <argsstring>(Singleton&lt; T &gt; &amp;ref, Args &amp;&amp;... args)</argsstring>
+        <name>SingletonStorage</name>
+        <param>
+          <type><ref refid="classgf_1_1_singleton" kindref="compound">Singleton</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct a storage for a singleton. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to a singleton (a global variable) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arguments for the constructor of class <computeroutput>T</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" line="160" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" bodystart="160" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A storage for a singleton. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is a wrapper around an object of class <computeroutput>T</computeroutput> that should be unique in the system. It works in cooperation with a global variable of type gf::Singleton&lt;T&gt;. The global variable is for the access of the object while this class is for the storage of the object. The global variable is initialized at the storage construction.</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton&lt;Foo&gt;</ref><sp/>gFoo;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><ref refid="classgf_1_1_singleton_storage" kindref="compound">gf::SingletonStorage&lt;Foo&gt;</ref><sp/>fooStorage(gFoo);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>gFoo().bar();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" line="35" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Singleton.h" bodystart="35" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_singleton_storage_1a38e59b6e51455ed1e1072cb503c32369" prot="private" virt="non-virtual"><scope>gf::SingletonStorage</scope><name>m_storage</name></member>
+      <member refid="classgf_1_1_singleton_storage_1a7317dc9064e0e0c47e89b2aadabe95b6" prot="public" virt="non-virtual"><scope>gf::SingletonStorage</scope><name>SingletonStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

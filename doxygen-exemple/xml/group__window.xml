@@ -1,0 +1,3995 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__window" kind="group">
+    <compoundname>window</compoundname>
+    <title>Window classes</title>
+    <innerclass refid="classgf_1_1_action" prot="public">gf::Action</innerclass>
+    <innerclass refid="classgf_1_1_action_container" prot="public">gf::ActionContainer</innerclass>
+    <innerclass refid="classgf_1_1_clipboard" prot="public">gf::Clipboard</innerclass>
+    <innerclass refid="classgf_1_1_control" prot="public">gf::Control</innerclass>
+    <innerclass refid="classgf_1_1_keycode_key_control" prot="public">gf::KeycodeKeyControl</innerclass>
+    <innerclass refid="classgf_1_1_scancode_key_control" prot="public">gf::ScancodeKeyControl</innerclass>
+    <innerclass refid="classgf_1_1_mouse_button_control" prot="public">gf::MouseButtonControl</innerclass>
+    <innerclass refid="classgf_1_1_gamepad_button_control" prot="public">gf::GamepadButtonControl</innerclass>
+    <innerclass refid="classgf_1_1_gamepad_axis_control" prot="public">gf::GamepadAxisControl</innerclass>
+    <innerclass refid="classgf_1_1_close_control" prot="public">gf::CloseControl</innerclass>
+    <innerclass refid="classgf_1_1_cursor" prot="public">gf::Cursor</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_key_event" prot="public">gf::Event::KeyEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_text_event" prot="public">gf::Event::TextEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_button_event" prot="public">gf::Event::MouseButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_cursor_event" prot="public">gf::Event::MouseCursorEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_mouse_wheel_event" prot="public">gf::Event::MouseWheelEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_button_event" prot="public">gf::Event::GamepadButtonEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_axis_event" prot="public">gf::Event::GamepadAxisEvent</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_connection" prot="public">gf::Event::GamepadConnection</innerclass>
+    <innerclass refid="structgf_1_1_event_1_1_gamepad_disconnection" prot="public">gf::Event::GamepadDisconnection</innerclass>
+    <innerclass refid="structgf_1_1_event" prot="public">gf::Event</innerclass>
+    <innerclass refid="classgf_1_1_gamepad" prot="public">gf::Gamepad</innerclass>
+    <innerclass refid="structgf_1_1_keyboard" prot="public">gf::Keyboard</innerclass>
+    <innerclass refid="structgf_1_1_video_mode" prot="public">gf::VideoMode</innerclass>
+    <innerclass refid="classgf_1_1_monitor" prot="public">gf::Monitor</innerclass>
+    <innerclass refid="structgf_1_1_region" prot="public">gf::Region</innerclass>
+    <innerclass refid="structgf_1_1_rune" prot="public">gf::Rune</innerclass>
+    <innerclass refid="classgf_1_1_window" prot="public">gf::Window</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__window_1ga244fb10415539f03cde7ed0ae916018d" prot="public" static="no">
+        <name>EventType</name>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da22995988de764d7a8cb4165fbff371cb" prot="public">
+          <name>Resized</name>
+          <briefdescription>
+<para>The window was resized (data in event.size) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" prot="public">
+          <name>Closed</name>
+          <briefdescription>
+<para>The window requested to be closed (no data) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da14696db38b4e50b90abffffad50ab44c" prot="public">
+          <name>FocusGained</name>
+          <briefdescription>
+<para>The window gained focus (no data) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018daed3925e40166423f755045b0c3882868" prot="public">
+          <name>FocusLost</name>
+          <briefdescription>
+<para>The window lost focus (no data) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dac17e6984c1e5a887a49831beadee6bca" prot="public">
+          <name>KeyPressed</name>
+          <briefdescription>
+<para>A key was pressed (data in event.key) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da7ee0b7f842e837fe969eb195acaf2efd" prot="public">
+          <name>KeyRepeated</name>
+          <briefdescription>
+<para>A key was repeated (data in event.key) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da4a77f07c8ad223b71ab4ce78a63841ab" prot="public">
+          <name>KeyReleased</name>
+          <briefdescription>
+<para>A key was released (data in event.key) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da9787e93d7821ce61637e6f9f19ef955b" prot="public">
+          <name>MouseWheelScrolled</name>
+          <briefdescription>
+<para>The mouse wheel was scrolled (data in event.mouseWheel) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da7349f643d689997b7c54bf93e4095f5c" prot="public">
+          <name>MouseButtonPressed</name>
+          <briefdescription>
+<para>A mouse button was pressed (data in event.mouseButton) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da7584c169de594c27f00084b93186fd7c" prot="public">
+          <name>MouseButtonReleased</name>
+          <briefdescription>
+<para>A mouse button was released (data in event.mouseButton) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dac2770ad109c8063ce69a3608a9a16c08" prot="public">
+          <name>MouseMoved</name>
+          <briefdescription>
+<para>The mouse cursor moved (data in event.mouseCursor) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da16f54b4d882ac6f33bfa92572918ac6a" prot="public">
+          <name>MouseEntered</name>
+          <briefdescription>
+<para>The mouse cursor entered the window (no data) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dabce0118bd8f5bf5e7f849dff486de57f" prot="public">
+          <name>MouseLeft</name>
+          <briefdescription>
+<para>The mouse cursor left the window (no data) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dae2a9941e644616b8853693e7b3b22c96" prot="public">
+          <name>GamepadButtonPressed</name>
+          <briefdescription>
+<para>A gamepad button was pressed (data in event.gamepadButton) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018daf4590195d79da4a322ee9beb6b44ef66" prot="public">
+          <name>GamepadButtonReleased</name>
+          <briefdescription>
+<para>A gamepad button was released (data in event.gamepadButton) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da18389e2bd7b6b426f7b9d9164bf4a5ba" prot="public">
+          <name>GamepadAxisMoved</name>
+          <briefdescription>
+<para>A gamepad axis was moved (data in event.gamepadAxis) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dad5909d240c46150dc002123ef8abcc2f" prot="public">
+          <name>GamepadConnected</name>
+          <briefdescription>
+<para>A gamepad was connected (data in event.gamepadConnection) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018dac1c12a889ebdc886dc3738b5a146def0" prot="public">
+          <name>GamepadDisconnected</name>
+          <briefdescription>
+<para>A gamepad was disconnected (data in event.gamepadDisconnection) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga244fb10415539f03cde7ed0ae916018da8ed4d3c0783d6f909907e1592ffe47ac" prot="public">
+          <name>TextEntered</name>
+          <briefdescription>
+<para>A text was entered (data in event.text) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of the different types of events. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" line="43" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Event.h" bodystart="43" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" prot="public" static="no">
+        <name>GamepadButton</name>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <briefdescription>
+<para>Invalid button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <briefdescription>
+<para>The A button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <briefdescription>
+<para>The B button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+<para>The X button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <briefdescription>
+<para>The Y button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa0557fa923dcee4d0f86b1409f5c2167f" prot="public">
+          <name>Back</name>
+          <briefdescription>
+<para>The Back button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa6602bbeb2956c035fb4cb5e844a4861b" prot="public">
+          <name>Guide</name>
+          <briefdescription>
+<para>The Guide button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529faa6122a65eaa676f700ae68d393054a37" prot="public">
+          <name>Start</name>
+          <briefdescription>
+<para>The Start button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa78dfae506443f078a68242fa3989e7d2" prot="public">
+          <name>LeftStick</name>
+          <briefdescription>
+<para>The left stick button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa8e2f56dca504cbbdf54b6ba95989aed7" prot="public">
+          <name>RightStick</name>
+          <briefdescription>
+<para>The right stick button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa91aac15641d2e4fce8e8aef22a4ce4c7" prot="public">
+          <name>LeftBumper</name>
+          <briefdescription>
+<para>The left bumper button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa509b4eb4dd040194b2aa506683ccfbad" prot="public">
+          <name>RightBumper</name>
+          <briefdescription>
+<para>The right bumper button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa6e53ad4e24c7b597e15b2193883bf7f2" prot="public">
+          <name>DPadUp</name>
+          <briefdescription>
+<para>The directional pad up button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa826b0ea5950d9f05469d6f3ded8b570f" prot="public">
+          <name>DPadDown</name>
+          <briefdescription>
+<para>The directional pad down button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529fa1afff4bd4c22275dff273ca6f01952f1" prot="public">
+          <name>DPadLeft</name>
+          <briefdescription>
+<para>The directional pad left button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga66e2d144e71b76a0499edc3d0a68529faee57d4f85b132ca155ad4f77e71b7df1" prot="public">
+          <name>DPadRight</name>
+          <briefdescription>
+<para>The directional pad right button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The gamepad buttons. </para>        </briefdescription>
+        <detaileddescription>
+<para>The buttons are named after the <ulink url="https://en.wikipedia.org/wiki/Xbox_360_controller">Xbox 360 controller</ulink>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_1a77bfb31ecf0ec9a495bdfbff46457e0d" kindref="member">gf::Gamepad::getButtonName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="42" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga40276d90e4e5efa68433fd9040c08b86" prot="public" static="no">
+        <name>GamepadAxis</name>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86a4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <briefdescription>
+<para>Invalid axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86acc8c4dd7729fa8d6a4a56bdb6109b480" prot="public">
+          <name>LeftX</name>
+          <briefdescription>
+<para>The left stick X axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86aabe4297ac7e7b4b9dec427c6f8e65708" prot="public">
+          <name>LeftY</name>
+          <briefdescription>
+<para>The left stick Y axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86af65093a3b6fbe7ca323cdd462c394ca6" prot="public">
+          <name>RightX</name>
+          <briefdescription>
+<para>The right stick X axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86afcca84f800ce96085bd389237137ecc3" prot="public">
+          <name>RightY</name>
+          <briefdescription>
+<para>The right stick Y axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86a482d1c1190728d3c4be1ffcbcce2dd49" prot="public">
+          <name>TriggerLeft</name>
+          <briefdescription>
+<para>The left trigger axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga40276d90e4e5efa68433fd9040c08b86a82dbfad1d5cd42e420ca679ff68bd0a0" prot="public">
+          <name>TriggerRight</name>
+          <briefdescription>
+<para>The right trigger axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The gamepad axis. </para>        </briefdescription>
+        <detaileddescription>
+<para>The axis are named after the <ulink url="https://en.wikipedia.org/wiki/Xbox_360_controller">Xbox 360 controller</ulink>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_1a96b215ab79c892a21212fc76f06c52e6" kindref="member">gf::Gamepad::getAxisName()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1gac51b68f03b85350446f51a932fc20de3" prot="public" static="no">
+        <name>GamepadAxisDirection</name>
+        <enumvalue id="group__window_1ggac51b68f03b85350446f51a932fc20de3a3289297424e01eda5b788c083bbf3147" prot="public">
+          <name>Positive</name>
+          <briefdescription>
+<para>Positive direction of the axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac51b68f03b85350446f51a932fc20de3affb9356ff2b7da85c75c92fa7ea03b8b" prot="public">
+          <name>Negative</name>
+          <briefdescription>
+<para>Negative direction of the axis. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A gamepad axis direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>The positive direction is right with a X axis and down with a Y axis.</para><para>For triggers, there is only a positive direction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="88" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1gab3aed9942f731ce33866e921d443c5ee" prot="public" static="no">
+        <name>GamepadHwId</name>
+        <briefdescription>
+<para>A gamepad hardware identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para>This identifier is given when a gamepad has just been connected. It must be transformed in a <ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">gf::GamepadId</ref> with <ref refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" kindref="member">gf::Gamepad::open()</ref>.</para><para><simplesect kind="see"><para><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="105" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" prot="public" static="no">
+        <name>GamepadId</name>
+        <briefdescription>
+<para>A gamepad identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para>This identifier is the representation of a connected gamepad that has been opened with <ref refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" kindref="member">gf::Gamepad::open()</ref>. It is used in the subsequent events related to this gamepad.</para><para><simplesect kind="see"><para><ref refid="group__window_1gab3aed9942f731ce33866e921d443c5ee" kindref="member">GamepadHwId</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="122" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga446ce8f75d3f0c83dcf854d8eb2f1df1" prot="public" static="no">
+        <name>Mod</name>
+        <enumvalue id="group__window_1gga446ce8f75d3f0c83dcf854d8eb2f1df1a825a3d98017bab11815ad2817201324c" prot="public">
+          <name>Shift</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+<para>Is the Shift key pressed? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga446ce8f75d3f0c83dcf854d8eb2f1df1aa1595abbb4c3a326636dd178757cd6c1" prot="public">
+          <name>Control</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+<para>Is the <ref refid="classgf_1_1_control" kindref="compound">Control</ref> key pressed? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga446ce8f75d3f0c83dcf854d8eb2f1df1aa2e92861b757ab878312dd57993d60cf" prot="public">
+          <name>Alt</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+<para>Is the Alt key pressed? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga446ce8f75d3f0c83dcf854d8eb2f1df1a0ce3266d4eb71ad50f7a90aee6d21dcd" prot="public">
+          <name>Super</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+<para>Is the Super key pressed? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Modifier enumeration. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__window_1ga04034cec1030d4b31a2b51865ce6beeb" kindref="member">gf::Modifiers</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="38" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" prot="public" static="no">
+        <name>Scancode</name>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af623e75af30e62bbd73d6df5b50bb7b5" prot="public">
+          <name>D</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a3ea00cfc35332cedf6e5e9a32e94da" prot="public">
+          <name>E</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a800618943025315f869e4e1f09471012" prot="public">
+          <name>F</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626adfcf28d0734569a6a693bc8194de62bf" prot="public">
+          <name>G</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac1d9f50f86825a1a2302ec2449c17196" prot="public">
+          <name>H</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" prot="public">
+          <name>I</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aff44570aca8241914870afbc310cdb85" prot="public">
+          <name>J</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa5f3c6a11b03839d46af9fb43c97c188" prot="public">
+          <name>K</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad20caec3b48a1eef164cb4ca81ba2587" prot="public">
+          <name>L</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a69691c7bdcc3ce6d5d8a1361f22d04ac" prot="public">
+          <name>M</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" prot="public">
+          <name>N</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af186217753c37b9b9f958d906208506e" prot="public">
+          <name>O</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a44c29edb103a2872f519ad0c9a0fdaaa" prot="public">
+          <name>P</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af09564c9ca56850d4cd6b3319e541aee" prot="public">
+          <name>Q</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae1e1d3d40573127e9ee0480caf1283d6" prot="public">
+          <name>R</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5dbc98dcc983a70728bd082d1a47546e" prot="public">
+          <name>S</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" prot="public">
+          <name>T</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4c614360da93c0a041b22e537de151eb" prot="public">
+          <name>U</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5206560a306a2e085a437fd258eb57ce" prot="public">
+          <name>V</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a61e9c06ea9a85a5088a499df6458d276" prot="public">
+          <name>W</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a21c2e59531c8710156d34a3c30ac81d5" prot="public">
+          <name>Z</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626abacb69a042a9fdc268a672919052d1f2" prot="public">
+          <name>Num1</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a72bd76d6e2b68a539c8d1a77b564ed72" prot="public">
+          <name>Num2</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa3a965b443a13522aa59fbdea31d00ce" prot="public">
+          <name>Num3</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae0af89b5f83c670e4cc584c73c4732ca" prot="public">
+          <name>Num4</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7e89a79bbb017bfcaff80ff820a15d8a" prot="public">
+          <name>Num5</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a0581cd1de881a0f697f3b46741fb326b" prot="public">
+          <name>Num6</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4911ceac5c68b5a3f1499d68b27b0938" prot="public">
+          <name>Num7</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a894e7d9b7dcced78e8007ba2d38b8dd2" prot="public">
+          <name>Num8</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad7b1dbe22119bc7acf6e4a1afcc06e46" prot="public">
+          <name>Num9</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a845787798a45b48e825e9b99a338537a" prot="public">
+          <name>Num0</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a988fd738de9c6d177440c5dcf69e73ce" prot="public">
+          <name>Return</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a013ec032d3460d4be4431c6ab1f8f224" prot="public">
+          <name>Escape</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626acd7d13ceea728b08555f7c818cfb13ef" prot="public">
+          <name>Backspace</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c6ba25104401c9ee0650230fc6ba413" prot="public">
+          <name>Tab</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad511f8439ecde36647437fbba67a4394" prot="public">
+          <name>Space</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a453fb623e752c5993f65bc410fd74fe5" prot="public">
+          <name>Minus</name>
+          <initializer>= 45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a0ccb67e7eaae09d9e4078d161eeca100" prot="public">
+          <name>Equals</name>
+          <initializer>= 46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a481c09f513474b2d31ba5c2992947b17" prot="public">
+          <name>LeftBracket</name>
+          <initializer>= 47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a455364d8991395f71ef9ccc5cc449e5c" prot="public">
+          <name>RightBracket</name>
+          <initializer>= 48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af6c6379402dce27659f7cffee6bc1f00" prot="public">
+          <name>Backslash</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa28d599126377355ccbcc854cd8b2f10" prot="public">
+          <name>NonUsHash</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9806fa37a3ecd39bf637c203aa011ed0" prot="public">
+          <name>Semicolon</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab6ac6f84bcb33f9b5186bda6b4c8b399" prot="public">
+          <name>Apostrophe</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aed24ff8971b1fa43a1efbb386618ce35" prot="public">
+          <name>Grave</name>
+          <initializer>= 53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a58be47db9455679e6a44df2eff9c9fa6" prot="public">
+          <name>Comma</name>
+          <initializer>= 54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1901606ea069a83dc7beea17881ef95a" prot="public">
+          <name>Period</name>
+          <initializer>= 55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a358cfe58715d680d9ab09f82e4010cbc" prot="public">
+          <name>Slash</name>
+          <initializer>= 56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d0f4171170104d094d8b6d4f8bf49e6" prot="public">
+          <name>CapsLock</name>
+          <initializer>= 57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae1dffc8709f31a4987c8a88334107e89" prot="public">
+          <name>F1</name>
+          <initializer>= 58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626afe5c3684dce76cdd9f7f42430868aa74" prot="public">
+          <name>F2</name>
+          <initializer>= 59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4b6bf4b531770872d4328ce69bef5627" prot="public">
+          <name>F3</name>
+          <initializer>= 60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae7e0e72401a9f2718ed0f39f2861d702" prot="public">
+          <name>F4</name>
+          <initializer>= 61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a37f438df6a6d5ba4c17ef8ca58562f00" prot="public">
+          <name>F5</name>
+          <initializer>= 62</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1faf42f2823f184eb2c9f0dffe5d73f2" prot="public">
+          <name>F6</name>
+          <initializer>= 63</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a47489eb597b7db34caa24b1fc78fc839" prot="public">
+          <name>F7</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4787509ad9f9d747a81a30e9dde3d4a7" prot="public">
+          <name>F8</name>
+          <initializer>= 65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a892a245e287c163080b23db737d3c4c9" prot="public">
+          <name>F9</name>
+          <initializer>= 66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab213ce22ca6ad4eda8db82966b9b6e5a" prot="public">
+          <name>F10</name>
+          <initializer>= 67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a643b0662422d1d0dffa3fca2e2bf28a8" prot="public">
+          <name>F11</name>
+          <initializer>= 68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae902674982fc99aa343cdd94da7476c3" prot="public">
+          <name>F12</name>
+          <initializer>= 69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626abf54024481cd2ad6bbb9ae44b7312472" prot="public">
+          <name>PrintScreen</name>
+          <initializer>= 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7d7902d5e2998e4fb2b8694a2de4ff65" prot="public">
+          <name>ScrollLock</name>
+          <initializer>= 71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a105b296a83f9c105355403f3332af50f" prot="public">
+          <name>Pause</name>
+          <initializer>= 72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa458be0f08b7e4ff3c0f633c100176c0" prot="public">
+          <name>Insert</name>
+          <initializer>= 73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8cf04a9734132302f96da8e113e80ce5" prot="public">
+          <name>Home</name>
+          <initializer>= 74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9b869c510c75c5827ac82e49d4340927" prot="public">
+          <name>PageUp</name>
+          <initializer>= 75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af2a6c498fb90ee345d997f888fce3b18" prot="public">
+          <name>Delete</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a87557f11575c0ad78e4e28abedc13b6e" prot="public">
+          <name>End</name>
+          <initializer>= 77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aee3677bcca83ece9384b01e43952bf33" prot="public">
+          <name>PageDown</name>
+          <initializer>= 78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <initializer>= 79</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <initializer>= 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a08a38277b0309070706f6652eeae9a53" prot="public">
+          <name>Down</name>
+          <initializer>= 81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a258f49887ef8d14ac268c92b02503aaa" prot="public">
+          <name>Up</name>
+          <initializer>= 82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa0d353252a1e8d8e5cd953539583bfe9" prot="public">
+          <name>NumLockClear</name>
+          <initializer>= 83</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab582ce65eec2e991f25b15018972a331" prot="public">
+          <name>NumpadDivide</name>
+          <initializer>= 84</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3a144014ebb167532263bd99b76c72b3" prot="public">
+          <name>NumpadMultiply</name>
+          <initializer>= 85</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626afaa5b4e9d867f8e56e0188e8ba8eb279" prot="public">
+          <name>NumpadMinus</name>
+          <initializer>= 86</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa8ce91fccd1f82a1df5d379178db2301" prot="public">
+          <name>NumpadPlus</name>
+          <initializer>= 87</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a49d8361832bab5aa5c7a56623862e95e" prot="public">
+          <name>NumpadEnter</name>
+          <initializer>= 88</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac8e841f6b917061dd15aedb19a80cb77" prot="public">
+          <name>Numpad1</name>
+          <initializer>= 89</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af7303042267ef3576930c1f4cd79348a" prot="public">
+          <name>Numpad2</name>
+          <initializer>= 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5e23a433a108a85788894b705ec11cdd" prot="public">
+          <name>Numpad3</name>
+          <initializer>= 91</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a50b622a0442de23f15effc7fc46f3892" prot="public">
+          <name>Numpad4</name>
+          <initializer>= 92</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a6252c5b171a2982612e31042b953f558" prot="public">
+          <name>Numpad5</name>
+          <initializer>= 93</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4d9afa3da3cc40661d50a925dd3010ad" prot="public">
+          <name>Numpad6</name>
+          <initializer>= 94</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4314bbf1a297c4b03a5246a71c9c93b6" prot="public">
+          <name>Numpad7</name>
+          <initializer>= 95</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8bf3a062ba0e0fa6ef21508d15e7820e" prot="public">
+          <name>Numpad8</name>
+          <initializer>= 96</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a15f7ca721fe2b648a34d498084f70919" prot="public">
+          <name>Numpad9</name>
+          <initializer>= 97</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1b1118fbe9aecd479f93d37449578365" prot="public">
+          <name>Numpad0</name>
+          <initializer>= 98</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a78793098755f8a5946242dc0fba9a141" prot="public">
+          <name>NumpadPeriod</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac35a3006a1d15c7517c1a9127d7e7ed7" prot="public">
+          <name>NonUsBackslash</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae498749f3c42246d50b15c81c101d988" prot="public">
+          <name>Application</name>
+          <initializer>= 101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add4fe0cc913f704600b97d1f5dd285de" prot="public">
+          <name>Power</name>
+          <initializer>= 102</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac7d238e2e1ee45502d5be70067fd8e18" prot="public">
+          <name>NumpadEquals</name>
+          <initializer>= 103</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a95dfde4807d4d6a9eec499203b3c24a0" prot="public">
+          <name>F13</name>
+          <initializer>= 104</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a2468649b6215c4cdd2aef5095b3f5932" prot="public">
+          <name>F14</name>
+          <initializer>= 105</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae53b55851b9ff4979f2c3ff434a4a138" prot="public">
+          <name>F15</name>
+          <initializer>= 106</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a56d8353718e6fdc78b8d69078a2cdb94" prot="public">
+          <name>F16</name>
+          <initializer>= 107</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626affa5882d1ddcf903bf0d0dbc30bfc604" prot="public">
+          <name>F17</name>
+          <initializer>= 108</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a810b30cdfc07fd7fff553a94b828ff78" prot="public">
+          <name>F18</name>
+          <initializer>= 109</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626acd7c2a221ef5d0a34acc0bcd679b2054" prot="public">
+          <name>F19</name>
+          <initializer>= 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626afc335adb3d69d3d8270769e1923ea4dc" prot="public">
+          <name>F20</name>
+          <initializer>= 111</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a77e9eee7c579eef5f3731ecf1053c02e" prot="public">
+          <name>F21</name>
+          <initializer>= 112</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7fa06ead699fcbd63132370ffe13335a" prot="public">
+          <name>F22</name>
+          <initializer>= 113</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a889645d530078147e7dc69a9caadc31e" prot="public">
+          <name>F23</name>
+          <initializer>= 114</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aebd7820c520d05eca2d775c37d141273" prot="public">
+          <name>F24</name>
+          <initializer>= 115</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a40cd014b7b6251e3a22e6a45a73a64e1" prot="public">
+          <name>Execute</name>
+          <initializer>= 116</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a6a26f548831e6a8c26bfbbd9f6ec61e0" prot="public">
+          <name>Help</name>
+          <initializer>= 117</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab61541208db7fa7dba42c85224405911" prot="public">
+          <name>Menu</name>
+          <initializer>= 118</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae0626222614bdee31951d84c64e5e9ff" prot="public">
+          <name>Select</name>
+          <initializer>= 119</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a11a755d598c0c417f9a36758c3da7481" prot="public">
+          <name>Stop</name>
+          <initializer>= 120</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a13db2d9fb60836915205ff15c64af1d9" prot="public">
+          <name>Again</name>
+          <initializer>= 121</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1cdc076b28f70afac5fcedadf99fa119" prot="public">
+          <name>Undo</name>
+          <initializer>= 122</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aeb334dca00e390e0d3ebf52d205807d7" prot="public">
+          <name>Cut</name>
+          <initializer>= 123</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5fb63579fc981698f97d55bfecb213ea" prot="public">
+          <name>Copy</name>
+          <initializer>= 124</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a36bb6559696dc9124986ae120515984f" prot="public">
+          <name>Paste</name>
+          <initializer>= 125</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4cfa6c981549e990fe2344e4c805405e" prot="public">
+          <name>Find</name>
+          <initializer>= 126</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a00cd7be4cb21c59179316d7844a8cfc4" prot="public">
+          <name>Mute</name>
+          <initializer>= 127</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af5311ec6ce071e43882685428cc9d56a" prot="public">
+          <name>VolumeUp</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a91f1f883ea91306f79dbf0ca1b108bad" prot="public">
+          <name>VolumeDown</name>
+          <initializer>= 129</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a13c2bdca983ff7e95fe95a43c1b2cc8b" prot="public">
+          <name>NumpadComma</name>
+          <initializer>= 133</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae49b16dc4df7a2bee0e7c338dd541898" prot="public">
+          <name>NumpadEqualsAs400</name>
+          <initializer>= 134</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a2bee0d5051900e935d65ef501a02813a" prot="public">
+          <name>International1</name>
+          <initializer>= 135</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a43befe515f0a6960f4bef2528cc9053f" prot="public">
+          <name>International2</name>
+          <initializer>= 136</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a785dfdb9f4449a3f3802548f33641c81" prot="public">
+          <name>International3</name>
+          <initializer>= 137</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab0551b12b11844660cb01491db7ef2e3" prot="public">
+          <name>International4</name>
+          <initializer>= 138</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac7f6ba0372ccabe479add65f87e05884" prot="public">
+          <name>International5</name>
+          <initializer>= 139</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a314e093e54884bbb52d8a4d2a65588cb" prot="public">
+          <name>International6</name>
+          <initializer>= 140</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a51968d25e092949cc7b95fdd58691ec3" prot="public">
+          <name>International7</name>
+          <initializer>= 141</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aece9aeba74741f4a172a796235cd4321" prot="public">
+          <name>International8</name>
+          <initializer>= 142</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a910a6b3ecb78c7c511639d6a82c7033b" prot="public">
+          <name>International9</name>
+          <initializer>= 143</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad946f3bbfac6369efb3be4ce1ea01481" prot="public">
+          <name>Lang1</name>
+          <initializer>= 144</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a72ce47d17399cf81e8c744213e54b41f" prot="public">
+          <name>Lang2</name>
+          <initializer>= 145</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae7ec35fe196f4a165eddc04e55e46cba" prot="public">
+          <name>Lang3</name>
+          <initializer>= 146</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a345e00e12b77961450fdbf604007008f" prot="public">
+          <name>Lang4</name>
+          <initializer>= 147</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3e2a0ba7a54ffe519885a70e3f981876" prot="public">
+          <name>Lang5</name>
+          <initializer>= 148</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a2a46c32d93a6446cc445d47ea6a7cccd" prot="public">
+          <name>Lang6</name>
+          <initializer>= 149</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a6fda09e8a98f5972cd1364dfe26e3547" prot="public">
+          <name>Lang7</name>
+          <initializer>= 150</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7f7642b8bdfee9c69205bf752fd47e08" prot="public">
+          <name>Lang8</name>
+          <initializer>= 151</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac2ceadd923383f140c177a8c9ee85f6a" prot="public">
+          <name>Lang9</name>
+          <initializer>= 152</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac7614de381937e1616ecd0016c7dcbad" prot="public">
+          <name>AltErase</name>
+          <initializer>= 153</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626acfbfe503012e612edb9d60eefc68d5af" prot="public">
+          <name>SysReq</name>
+          <initializer>= 154</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aea4788705e6873b424c65e91c2846b19" prot="public">
+          <name>Cancel</name>
+          <initializer>= 155</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626adc30bc0c7914db5918da4263fce93ad2" prot="public">
+          <name>Clear</name>
+          <initializer>= 156</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ae3d5e88745fd884d551c7f25237a5b5e" prot="public">
+          <name>Prior</name>
+          <initializer>= 157</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a19afaa7e659a02073a12c68632bdbe31" prot="public">
+          <name>Return2</name>
+          <initializer>= 158</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a04b2e4188d4ef8051e4699da8af01335" prot="public">
+          <name>Separator</name>
+          <initializer>= 159</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a7c147cda9e49590f6abe83d118b7353b" prot="public">
+          <name>Out</name>
+          <initializer>= 160</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a187a83175ba770ab0eef0aec7e50b813" prot="public">
+          <name>Oper</name>
+          <initializer>= 161</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5672990189fb1faa95099b89e58c4f42" prot="public">
+          <name>ClearAgain</name>
+          <initializer>= 162</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a95498e386a9b635e064bcd80809e5b79" prot="public">
+          <name>CrSel</name>
+          <initializer>= 163</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9c9e473de4b3e4e4247ec95812446a17" prot="public">
+          <name>ExSel</name>
+          <initializer>= 164</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af3e5a6541c2dc69b908700bf766b6e54" prot="public">
+          <name>Numpad00</name>
+          <initializer>= 176</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aedc11ddace8e61ebf05b0c580bd52a2f" prot="public">
+          <name>Numpad000</name>
+          <initializer>= 177</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a4753e623209ad95b08580ae1c218fce2" prot="public">
+          <name>ThousandsSeparator</name>
+          <initializer>= 178</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a512a2f1096d2f55d95f3d486b107a11a" prot="public">
+          <name>DecimalSeparator</name>
+          <initializer>= 179</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9ddec94874b3a6a6e40a38a5283a7ab6" prot="public">
+          <name>CurrencyUnit</name>
+          <initializer>= 180</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a107911dccb643f7786f995f63d20bdd0" prot="public">
+          <name>CurrencySubUnit</name>
+          <initializer>= 181</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9c6795e8113a8b12121c6bf740c0e5c6" prot="public">
+          <name>NumpadLeftParen</name>
+          <initializer>= 182</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626abb24e36c0239b47bb049916b80a7a408" prot="public">
+          <name>NumpadRightParen</name>
+          <initializer>= 183</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a09da5489b9ec321d651b26dbd28d56dc" prot="public">
+          <name>NumpadLeftBrace</name>
+          <initializer>= 184</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9e2d3adb0e708dc66d7cba49432fc032" prot="public">
+          <name>NumpadRightBrace</name>
+          <initializer>= 185</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8f81cb91737d32cb3c9d38d6e58b3ca2" prot="public">
+          <name>NumpadTab</name>
+          <initializer>= 186</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a55ada2b346f77879ddf42ace29ed59dd" prot="public">
+          <name>NumpadBackspace</name>
+          <initializer>= 187</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a12088f965426f455e87ee478a4907f89" prot="public">
+          <name>NumpadA</name>
+          <initializer>= 188</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a43871839ae078728d21e23c1b4b75046" prot="public">
+          <name>NumpadB</name>
+          <initializer>= 189</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a91f7dd8995d67a5c1c88f767fd859b8a" prot="public">
+          <name>NumpadC</name>
+          <initializer>= 190</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aea344229a798aa9d415d73ebf8e639ce" prot="public">
+          <name>NumpadD</name>
+          <initializer>= 191</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a6dccd92c53f742e334ba1d941c557aca" prot="public">
+          <name>NumpadE</name>
+          <initializer>= 192</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab613c5329156c90d54cb83f8a8861361" prot="public">
+          <name>NumpadF</name>
+          <initializer>= 193</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a321a166bc732e0256281542db39c6af1" prot="public">
+          <name>NumpadXor</name>
+          <initializer>= 194</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a0fdf05e49aaf2e3dd12fb50c88833e5c" prot="public">
+          <name>NumpadPower</name>
+          <initializer>= 195</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1ee3e8064018a47e0fb5417f615ccd4b" prot="public">
+          <name>NumpadPercent</name>
+          <initializer>= 196</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a59f7616bbd68725c102451c3b036a529" prot="public">
+          <name>NumpadLess</name>
+          <initializer>= 197</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aab62794802001d2f61dac6801e1584bc" prot="public">
+          <name>NumpadGreater</name>
+          <initializer>= 198</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa5a57b169839195901c8fe5baebcec8e" prot="public">
+          <name>NumpadAmpersand</name>
+          <initializer>= 199</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aee16ded3d64aa27af09b7e998ea52246" prot="public">
+          <name>NumpadDblAmpersand</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a28af4f1cb3d13ebe1cf745534cb51455" prot="public">
+          <name>NumpadVerticalBar</name>
+          <initializer>= 201</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a52943b1cba979950a5a88f8763ef49ca" prot="public">
+          <name>NumpadDblVerticalBar</name>
+          <initializer>= 202</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a6fa2f5cdaca234d048888b4fa44e9a93" prot="public">
+          <name>NumpadColon</name>
+          <initializer>= 203</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa659f0a90d408cd37079b9845d884a5f" prot="public">
+          <name>NumpadHash</name>
+          <initializer>= 204</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac1f56a18e9879faf049a2323beeacab4" prot="public">
+          <name>NumpadSpace</name>
+          <initializer>= 205</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8c5459b3b4510a45d1c962eef0e1f9b7" prot="public">
+          <name>NumpadAt</name>
+          <initializer>= 206</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3169e2d3c9592ebf7d68b1d85a93f06e" prot="public">
+          <name>NumpadExclam</name>
+          <initializer>= 207</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a15cedbf9d6b87e8f78efca6a5556d8a8" prot="public">
+          <name>NumpadMemStore</name>
+          <initializer>= 208</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac16a6b7be0a0a520300c83ee25ce46c4" prot="public">
+          <name>NumpadMemRecall</name>
+          <initializer>= 209</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a3c63e5593e3950c1d198c55ea4657ef7" prot="public">
+          <name>NumpadMemClear</name>
+          <initializer>= 210</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1c43f86c35da94316a0edbc4c1b2d682" prot="public">
+          <name>NumpadMemAdd</name>
+          <initializer>= 211</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a38adf49579c7dfa9a40a7c987260d8a9" prot="public">
+          <name>NumpadMemSubtract</name>
+          <initializer>= 212</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a42e88fa3b30a7f9f3f6f37f60a89a82c" prot="public">
+          <name>NumpadMemMultiply</name>
+          <initializer>= 213</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac6e39b0b993da38c2a8dc8b73b8e908d" prot="public">
+          <name>NumpadMemDivide</name>
+          <initializer>= 214</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a1be91aa56bf77b09802c2255963abc11" prot="public">
+          <name>NumpadPlusMinus</name>
+          <initializer>= 215</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ac353adbdfbde47e4514417be9b53812b" prot="public">
+          <name>NumpadClear</name>
+          <initializer>= 216</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a9c8c4b8d19c9e383c5c0fc7ef6beb35f" prot="public">
+          <name>NumpadClearEntry</name>
+          <initializer>= 217</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626adcd84583649f2725aa6029228c7b7c6e" prot="public">
+          <name>NumpadBinary</name>
+          <initializer>= 218</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626adabe9046aedfb45406d3df249140d4ae" prot="public">
+          <name>NumpadOctal</name>
+          <initializer>= 219</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626aa652eda5c682a4c6efa8eaf658ea5831" prot="public">
+          <name>NumpadDecimal</name>
+          <initializer>= 220</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad881bb841595766cd0f89c8087d5ffc8" prot="public">
+          <name>NumpadHexadecimal</name>
+          <initializer>= 221</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af2be247d68aadad6e9ba07db1885cd1c" prot="public">
+          <name>LeftCtrl</name>
+          <initializer>= 224</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a982621712db76f723b7bb88b631dc64d" prot="public">
+          <name>LeftShift</name>
+          <initializer>= 225</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a96f9c4eb595a467d02e35c723f63ebf7" prot="public">
+          <name>LeftAlt</name>
+          <initializer>= 226</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c78a94104b44c9348e4fd941e35097e" prot="public">
+          <name>LeftGui</name>
+          <initializer>= 227</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626af298b75d2207818c0459c063a21fd172" prot="public">
+          <name>RightCtrl</name>
+          <initializer>= 228</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a317d4a7487ee62605713987d4a037f83" prot="public">
+          <name>RightShift</name>
+          <initializer>= 229</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad88bad98046b623323aa6ca28eefa6d5" prot="public">
+          <name>RightAlt</name>
+          <initializer>= 230</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ad2e103d87a9708e1cb3a872955d2d51a" prot="public">
+          <name>RightGui</name>
+          <initializer>= 231</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a650be61892bf690026089544abbd9d26" prot="public">
+          <name>Mode</name>
+          <initializer>= 257</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Scancodes. </para>        </briefdescription>
+        <detaileddescription>
+<para>These codes corresponds to <ulink url="http://www.usb.org/developers/hidpage/Hut1_12v2.pdf">USB key codes</ulink>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" bodystart="59" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1gac7037fec22d5d5215cffce98fc7dca64" prot="public" static="no">
+        <name>Keycode</name>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a988fd738de9c6d177440c5dcf69e73ce" prot="public">
+          <name>Return</name>
+          <initializer>= &apos;\r&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a013ec032d3460d4be4431c6ab1f8f224" prot="public">
+          <name>Escape</name>
+          <initializer>= &apos;\033&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64acd7d13ceea728b08555f7c818cfb13ef" prot="public">
+          <name>Backspace</name>
+          <initializer>= &apos;\b&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5c6ba25104401c9ee0650230fc6ba413" prot="public">
+          <name>Tab</name>
+          <initializer>= &apos;\t&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad511f8439ecde36647437fbba67a4394" prot="public">
+          <name>Space</name>
+          <initializer>= &apos; &apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5857253973446eb0b7cb150438e26ce1" prot="public">
+          <name>Exclaim</name>
+          <initializer>= &apos;!&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aef4e1f00cdd8c1e6d669a542b8f615ae" prot="public">
+          <name>QuoteDbl</name>
+          <initializer>= &apos;&quot;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64afae8a9257e154175da4193dbf6552ef6" prot="public">
+          <name>Hash</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aadaaee4b22041c27198d410c68d952c9" prot="public">
+          <name>Percent</name>
+          <initializer>= &apos;%&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4ef781b1cb5e5d83fec0ebb0dd3c5761" prot="public">
+          <name>Dollar</name>
+          <initializer>= &apos;$&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a42d346f22274dcff52c108f28d8ac897" prot="public">
+          <name>Ampersand</name>
+          <initializer>= &apos;&amp;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac48e929b2b1eabba2ba036884433345e" prot="public">
+          <name>Quote</name>
+          <initializer>= &apos;\&apos;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af02071a8b56c676adabcad98429fa14e" prot="public">
+          <name>LeftParen</name>
+          <initializer>= &apos;(&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a2d7e137ea20e2c01ce105573d47ce525" prot="public">
+          <name>RightParen</name>
+          <initializer>= &apos;)&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9c8ae0945940e5baec5a93c4c8ec869e" prot="public">
+          <name>Asterisk</name>
+          <initializer>= &apos;*&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a32ba78fe43257d3e7f88e3935a8ea0d4" prot="public">
+          <name>Plus</name>
+          <initializer>= &apos;+&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a58be47db9455679e6a44df2eff9c9fa6" prot="public">
+          <name>Comma</name>
+          <initializer>= &apos;,&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a453fb623e752c5993f65bc410fd74fe5" prot="public">
+          <name>Minus</name>
+          <initializer>= &apos;-&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1901606ea069a83dc7beea17881ef95a" prot="public">
+          <name>Period</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a358cfe58715d680d9ab09f82e4010cbc" prot="public">
+          <name>Slash</name>
+          <initializer>= &apos;/&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a845787798a45b48e825e9b99a338537a" prot="public">
+          <name>Num0</name>
+          <initializer>= &apos;0&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64abacb69a042a9fdc268a672919052d1f2" prot="public">
+          <name>Num1</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a72bd76d6e2b68a539c8d1a77b564ed72" prot="public">
+          <name>Num2</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa3a965b443a13522aa59fbdea31d00ce" prot="public">
+          <name>Num3</name>
+          <initializer>= &apos;3&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae0af89b5f83c670e4cc584c73c4732ca" prot="public">
+          <name>Num4</name>
+          <initializer>= &apos;4&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a7e89a79bbb017bfcaff80ff820a15d8a" prot="public">
+          <name>Num5</name>
+          <initializer>= &apos;5&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a0581cd1de881a0f697f3b46741fb326b" prot="public">
+          <name>Num6</name>
+          <initializer>= &apos;6&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4911ceac5c68b5a3f1499d68b27b0938" prot="public">
+          <name>Num7</name>
+          <initializer>= &apos;7&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a894e7d9b7dcced78e8007ba2d38b8dd2" prot="public">
+          <name>Num8</name>
+          <initializer>= &apos;8&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad7b1dbe22119bc7acf6e4a1afcc06e46" prot="public">
+          <name>Num9</name>
+          <initializer>= &apos;9&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3ccf74d463f8895cef06727cb9709d83" prot="public">
+          <name>Colon</name>
+          <initializer>= &apos;:&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a787bbf4b07cc43f0ecfca56aa513707c" prot="public">
+          <name>SemiColon</name>
+          <initializer>= &apos;;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1cfdf0e8d0c87a228c1f40d9bee7888b" prot="public">
+          <name>Less</name>
+          <initializer>= &apos;&lt;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a0ccb67e7eaae09d9e4078d161eeca100" prot="public">
+          <name>Equals</name>
+          <initializer>= &apos;=&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8768a6821cd735aea4f5b0df88c1fc6a" prot="public">
+          <name>Greater</name>
+          <initializer>= &apos;&gt;&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa97ea56b0e00b2379736ae60869ff66a" prot="public">
+          <name>Question</name>
+          <initializer>= &apos;?&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64adc5f499e83aef4f6811faa4081631740" prot="public">
+          <name>At</name>
+          <initializer>= &apos;@&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a481c09f513474b2d31ba5c2992947b17" prot="public">
+          <name>LeftBracket</name>
+          <initializer>= &apos;[&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af6c6379402dce27659f7cffee6bc1f00" prot="public">
+          <name>Backslash</name>
+          <initializer>= &apos;\\&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a455364d8991395f71ef9ccc5cc449e5c" prot="public">
+          <name>RightBracket</name>
+          <initializer>= &apos;]&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64acf0aa280383530e27035f2d533841703" prot="public">
+          <name>Caret</name>
+          <initializer>= &apos;^&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3744017c618a81cd7a01ff4872f3cf76" prot="public">
+          <name>Underscore</name>
+          <initializer>= &apos;_&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a242f46f77c7bc68feb14704514de1079" prot="public">
+          <name>Backquote</name>
+          <initializer>= &apos;`&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <initializer>= &apos;a&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <initializer>= &apos;b&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <initializer>= &apos;c&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af623e75af30e62bbd73d6df5b50bb7b5" prot="public">
+          <name>D</name>
+          <initializer>= &apos;d&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3a3ea00cfc35332cedf6e5e9a32e94da" prot="public">
+          <name>E</name>
+          <initializer>= &apos;e&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a800618943025315f869e4e1f09471012" prot="public">
+          <name>F</name>
+          <initializer>= &apos;f&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64adfcf28d0734569a6a693bc8194de62bf" prot="public">
+          <name>G</name>
+          <initializer>= &apos;g&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac1d9f50f86825a1a2302ec2449c17196" prot="public">
+          <name>H</name>
+          <initializer>= &apos;h&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64add7536794b63bf90eccfd37f9b147d7f" prot="public">
+          <name>I</name>
+          <initializer>= &apos;i&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aff44570aca8241914870afbc310cdb85" prot="public">
+          <name>J</name>
+          <initializer>= &apos;j&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa5f3c6a11b03839d46af9fb43c97c188" prot="public">
+          <name>K</name>
+          <initializer>= &apos;k&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad20caec3b48a1eef164cb4ca81ba2587" prot="public">
+          <name>L</name>
+          <initializer>= &apos;l&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a69691c7bdcc3ce6d5d8a1361f22d04ac" prot="public">
+          <name>M</name>
+          <initializer>= &apos;m&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8d9c307cb7f3c4a32822a51922d1ceaa" prot="public">
+          <name>N</name>
+          <initializer>= &apos;n&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af186217753c37b9b9f958d906208506e" prot="public">
+          <name>O</name>
+          <initializer>= &apos;o&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a44c29edb103a2872f519ad0c9a0fdaaa" prot="public">
+          <name>P</name>
+          <initializer>= &apos;p&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af09564c9ca56850d4cd6b3319e541aee" prot="public">
+          <name>Q</name>
+          <initializer>= &apos;q&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae1e1d3d40573127e9ee0480caf1283d6" prot="public">
+          <name>R</name>
+          <initializer>= &apos;r&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5dbc98dcc983a70728bd082d1a47546e" prot="public">
+          <name>S</name>
+          <initializer>= &apos;s&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ab9ece18c950afbfa6b0fdbfa4ff731d3" prot="public">
+          <name>T</name>
+          <initializer>= &apos;t&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4c614360da93c0a041b22e537de151eb" prot="public">
+          <name>U</name>
+          <initializer>= &apos;u&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5206560a306a2e085a437fd258eb57ce" prot="public">
+          <name>V</name>
+          <initializer>= &apos;v&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a61e9c06ea9a85a5088a499df6458d276" prot="public">
+          <name>W</name>
+          <initializer>= &apos;w&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <initializer>= &apos;x&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <initializer>= &apos;y&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a21c2e59531c8710156d34a3c30ac81d5" prot="public">
+          <name>Z</name>
+          <initializer>= &apos;z&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8d0f4171170104d094d8b6d4f8bf49e6" prot="public">
+          <name>CapsLock</name>
+          <initializer>= getKeycodeFromScancode(Scancode::CapsLock)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae1dffc8709f31a4987c8a88334107e89" prot="public">
+          <name>F1</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64afe5c3684dce76cdd9f7f42430868aa74" prot="public">
+          <name>F2</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4b6bf4b531770872d4328ce69bef5627" prot="public">
+          <name>F3</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae7e0e72401a9f2718ed0f39f2861d702" prot="public">
+          <name>F4</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a37f438df6a6d5ba4c17ef8ca58562f00" prot="public">
+          <name>F5</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1faf42f2823f184eb2c9f0dffe5d73f2" prot="public">
+          <name>F6</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a47489eb597b7db34caa24b1fc78fc839" prot="public">
+          <name>F7</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4787509ad9f9d747a81a30e9dde3d4a7" prot="public">
+          <name>F8</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a892a245e287c163080b23db737d3c4c9" prot="public">
+          <name>F9</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F9)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ab213ce22ca6ad4eda8db82966b9b6e5a" prot="public">
+          <name>F10</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F10)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a643b0662422d1d0dffa3fca2e2bf28a8" prot="public">
+          <name>F11</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F11)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae902674982fc99aa343cdd94da7476c3" prot="public">
+          <name>F12</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F12)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64abf54024481cd2ad6bbb9ae44b7312472" prot="public">
+          <name>PrintScreen</name>
+          <initializer>= getKeycodeFromScancode(Scancode::PrintScreen)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a7d7902d5e2998e4fb2b8694a2de4ff65" prot="public">
+          <name>ScrollLock</name>
+          <initializer>= getKeycodeFromScancode(Scancode::ScrollLock)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a105b296a83f9c105355403f3332af50f" prot="public">
+          <name>Pause</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Pause)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa458be0f08b7e4ff3c0f633c100176c0" prot="public">
+          <name>Insert</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Insert)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8cf04a9734132302f96da8e113e80ce5" prot="public">
+          <name>Home</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Home)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9b869c510c75c5827ac82e49d4340927" prot="public">
+          <name>PageUp</name>
+          <initializer>= getKeycodeFromScancode(Scancode::PageUp)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af2a6c498fb90ee345d997f888fce3b18" prot="public">
+          <name>Delete</name>
+          <initializer>= &apos;\177&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a87557f11575c0ad78e4e28abedc13b6e" prot="public">
+          <name>End</name>
+          <initializer>= getKeycodeFromScancode(Scancode::End)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aee3677bcca83ece9384b01e43952bf33" prot="public">
+          <name>PageDown</name>
+          <initializer>= getKeycodeFromScancode(Scancode::PageDown)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Right)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Left)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a08a38277b0309070706f6652eeae9a53" prot="public">
+          <name>Down</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Down)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a258f49887ef8d14ac268c92b02503aaa" prot="public">
+          <name>Up</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Up)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa0d353252a1e8d8e5cd953539583bfe9" prot="public">
+          <name>NumLockClear</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumLockClear)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ab582ce65eec2e991f25b15018972a331" prot="public">
+          <name>NumpadDivide</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadDivide)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3a144014ebb167532263bd99b76c72b3" prot="public">
+          <name>NumpadMultiply</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMultiply)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64afaa5b4e9d867f8e56e0188e8ba8eb279" prot="public">
+          <name>NumpadMinus</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMinus)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa8ce91fccd1f82a1df5d379178db2301" prot="public">
+          <name>NumpadPlus</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadPlus)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a49d8361832bab5aa5c7a56623862e95e" prot="public">
+          <name>NumpadEnter</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadEnter)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac8e841f6b917061dd15aedb19a80cb77" prot="public">
+          <name>Numpad1</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af7303042267ef3576930c1f4cd79348a" prot="public">
+          <name>Numpad2</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5e23a433a108a85788894b705ec11cdd" prot="public">
+          <name>Numpad3</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a50b622a0442de23f15effc7fc46f3892" prot="public">
+          <name>Numpad4</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a6252c5b171a2982612e31042b953f558" prot="public">
+          <name>Numpad5</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4d9afa3da3cc40661d50a925dd3010ad" prot="public">
+          <name>Numpad6</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4314bbf1a297c4b03a5246a71c9c93b6" prot="public">
+          <name>Numpad7</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8bf3a062ba0e0fa6ef21508d15e7820e" prot="public">
+          <name>Numpad8</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a15f7ca721fe2b648a34d498084f70919" prot="public">
+          <name>Numpad9</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad9)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1b1118fbe9aecd479f93d37449578365" prot="public">
+          <name>Numpad0</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a78793098755f8a5946242dc0fba9a141" prot="public">
+          <name>NumpadPeriod</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadPeriod)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae498749f3c42246d50b15c81c101d988" prot="public">
+          <name>Application</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Application)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64add4fe0cc913f704600b97d1f5dd285de" prot="public">
+          <name>Power</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Power)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac7d238e2e1ee45502d5be70067fd8e18" prot="public">
+          <name>NumpadEquals</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadEquals)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a95dfde4807d4d6a9eec499203b3c24a0" prot="public">
+          <name>F13</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F13)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a2468649b6215c4cdd2aef5095b3f5932" prot="public">
+          <name>F14</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F14)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae53b55851b9ff4979f2c3ff434a4a138" prot="public">
+          <name>F15</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F15)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a56d8353718e6fdc78b8d69078a2cdb94" prot="public">
+          <name>F16</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64affa5882d1ddcf903bf0d0dbc30bfc604" prot="public">
+          <name>F17</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F17)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a810b30cdfc07fd7fff553a94b828ff78" prot="public">
+          <name>F18</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F18)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64acd7c2a221ef5d0a34acc0bcd679b2054" prot="public">
+          <name>F19</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F19)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64afc335adb3d69d3d8270769e1923ea4dc" prot="public">
+          <name>F20</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F20)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a77e9eee7c579eef5f3731ecf1053c02e" prot="public">
+          <name>F21</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F21)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a7fa06ead699fcbd63132370ffe13335a" prot="public">
+          <name>F22</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F22)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a889645d530078147e7dc69a9caadc31e" prot="public">
+          <name>F23</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F23)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aebd7820c520d05eca2d775c37d141273" prot="public">
+          <name>F24</name>
+          <initializer>= getKeycodeFromScancode(Scancode::F24)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a40cd014b7b6251e3a22e6a45a73a64e1" prot="public">
+          <name>Execute</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Execute)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a6a26f548831e6a8c26bfbbd9f6ec61e0" prot="public">
+          <name>Help</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Help)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ab61541208db7fa7dba42c85224405911" prot="public">
+          <name>Menu</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Menu)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae0626222614bdee31951d84c64e5e9ff" prot="public">
+          <name>Select</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Select)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a11a755d598c0c417f9a36758c3da7481" prot="public">
+          <name>Stop</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Stop)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a13db2d9fb60836915205ff15c64af1d9" prot="public">
+          <name>Again</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Again)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1cdc076b28f70afac5fcedadf99fa119" prot="public">
+          <name>Undo</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Undo)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aeb334dca00e390e0d3ebf52d205807d7" prot="public">
+          <name>Cut</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Cut)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5fb63579fc981698f97d55bfecb213ea" prot="public">
+          <name>Copy</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Copy)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a36bb6559696dc9124986ae120515984f" prot="public">
+          <name>Paste</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Paste)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4cfa6c981549e990fe2344e4c805405e" prot="public">
+          <name>Find</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Find)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a00cd7be4cb21c59179316d7844a8cfc4" prot="public">
+          <name>Mute</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Mute)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af5311ec6ce071e43882685428cc9d56a" prot="public">
+          <name>VolumeUp</name>
+          <initializer>= getKeycodeFromScancode(Scancode::VolumeUp)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a91f1f883ea91306f79dbf0ca1b108bad" prot="public">
+          <name>VolumeDown</name>
+          <initializer>= getKeycodeFromScancode(Scancode::VolumeDown)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a13c2bdca983ff7e95fe95a43c1b2cc8b" prot="public">
+          <name>NumpadComma</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadComma)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae49b16dc4df7a2bee0e7c338dd541898" prot="public">
+          <name>NumpadEqualsAs400</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadEqualsAs400)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac7614de381937e1616ecd0016c7dcbad" prot="public">
+          <name>AltErase</name>
+          <initializer>= getKeycodeFromScancode(Scancode::AltErase)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64acfbfe503012e612edb9d60eefc68d5af" prot="public">
+          <name>SysReq</name>
+          <initializer>= getKeycodeFromScancode(Scancode::SysReq)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aea4788705e6873b424c65e91c2846b19" prot="public">
+          <name>Cancel</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Cancel)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64adc30bc0c7914db5918da4263fce93ad2" prot="public">
+          <name>Clear</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Clear)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ae3d5e88745fd884d551c7f25237a5b5e" prot="public">
+          <name>Prior</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Prior)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a19afaa7e659a02073a12c68632bdbe31" prot="public">
+          <name>Return2</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Return2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a04b2e4188d4ef8051e4699da8af01335" prot="public">
+          <name>Separator</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Separator)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a7c147cda9e49590f6abe83d118b7353b" prot="public">
+          <name>Out</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Out)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a187a83175ba770ab0eef0aec7e50b813" prot="public">
+          <name>Oper</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Oper)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5672990189fb1faa95099b89e58c4f42" prot="public">
+          <name>ClearAgain</name>
+          <initializer>= getKeycodeFromScancode(Scancode::ClearAgain)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a95498e386a9b635e064bcd80809e5b79" prot="public">
+          <name>CrSel</name>
+          <initializer>= getKeycodeFromScancode(Scancode::CrSel)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9c9e473de4b3e4e4247ec95812446a17" prot="public">
+          <name>ExSel</name>
+          <initializer>= getKeycodeFromScancode(Scancode::ExSel)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af3e5a6541c2dc69b908700bf766b6e54" prot="public">
+          <name>Numpad00</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad00)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aedc11ddace8e61ebf05b0c580bd52a2f" prot="public">
+          <name>Numpad000</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Numpad000)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a4753e623209ad95b08580ae1c218fce2" prot="public">
+          <name>ThousandsSeparator</name>
+          <initializer>= getKeycodeFromScancode(Scancode::ThousandsSeparator)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a512a2f1096d2f55d95f3d486b107a11a" prot="public">
+          <name>DecimalSeparator</name>
+          <initializer>= getKeycodeFromScancode(Scancode::DecimalSeparator)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9ddec94874b3a6a6e40a38a5283a7ab6" prot="public">
+          <name>CurrencyUnit</name>
+          <initializer>= getKeycodeFromScancode(Scancode::CurrencyUnit)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a107911dccb643f7786f995f63d20bdd0" prot="public">
+          <name>CurrencySubUnit</name>
+          <initializer>= getKeycodeFromScancode(Scancode::CurrencySubUnit)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9c6795e8113a8b12121c6bf740c0e5c6" prot="public">
+          <name>NumpadLeftParen</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadLeftParen)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64abb24e36c0239b47bb049916b80a7a408" prot="public">
+          <name>NumpadRightParen</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadRightParen)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a09da5489b9ec321d651b26dbd28d56dc" prot="public">
+          <name>NumpadLeftBrace</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadLeftBrace)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9e2d3adb0e708dc66d7cba49432fc032" prot="public">
+          <name>NumpadRightBrace</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadRightBrace)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8f81cb91737d32cb3c9d38d6e58b3ca2" prot="public">
+          <name>NumpadTab</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadTab)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a55ada2b346f77879ddf42ace29ed59dd" prot="public">
+          <name>NumpadBackspace</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadBackspace)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a12088f965426f455e87ee478a4907f89" prot="public">
+          <name>NumpadA</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadA)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a43871839ae078728d21e23c1b4b75046" prot="public">
+          <name>NumpadB</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadB)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a91f7dd8995d67a5c1c88f767fd859b8a" prot="public">
+          <name>NumpadC</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadC)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aea344229a798aa9d415d73ebf8e639ce" prot="public">
+          <name>NumpadD</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadD)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a6dccd92c53f742e334ba1d941c557aca" prot="public">
+          <name>NumpadE</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadE)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ab613c5329156c90d54cb83f8a8861361" prot="public">
+          <name>NumpadF</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadF)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a321a166bc732e0256281542db39c6af1" prot="public">
+          <name>NumpadXor</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadXor)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a0fdf05e49aaf2e3dd12fb50c88833e5c" prot="public">
+          <name>NumpadPower</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadPower)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1ee3e8064018a47e0fb5417f615ccd4b" prot="public">
+          <name>NumpadPercent</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadPercent)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a59f7616bbd68725c102451c3b036a529" prot="public">
+          <name>NumpadLess</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadLess)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aab62794802001d2f61dac6801e1584bc" prot="public">
+          <name>NumpadGreater</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadGreater)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa5a57b169839195901c8fe5baebcec8e" prot="public">
+          <name>NumpadAmpersand</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadAmpersand)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aee16ded3d64aa27af09b7e998ea52246" prot="public">
+          <name>NumpadDblAmpersand</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadDblAmpersand)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a28af4f1cb3d13ebe1cf745534cb51455" prot="public">
+          <name>NumpadVerticalBar</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadVerticalBar)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a52943b1cba979950a5a88f8763ef49ca" prot="public">
+          <name>NumpadDblVerticalBar</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadDblVerticalBar)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a6fa2f5cdaca234d048888b4fa44e9a93" prot="public">
+          <name>NumpadColon</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadColon)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa659f0a90d408cd37079b9845d884a5f" prot="public">
+          <name>NumpadHash</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadHash)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac1f56a18e9879faf049a2323beeacab4" prot="public">
+          <name>NumpadSpace</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadSpace)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a8c5459b3b4510a45d1c962eef0e1f9b7" prot="public">
+          <name>NumpadAt</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadAt)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3169e2d3c9592ebf7d68b1d85a93f06e" prot="public">
+          <name>NumpadExclam</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadExclam)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a15cedbf9d6b87e8f78efca6a5556d8a8" prot="public">
+          <name>NumpadMemStore</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemStore)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac16a6b7be0a0a520300c83ee25ce46c4" prot="public">
+          <name>NumpadMemRecall</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemRecall)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a3c63e5593e3950c1d198c55ea4657ef7" prot="public">
+          <name>NumpadMemClear</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemClear)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1c43f86c35da94316a0edbc4c1b2d682" prot="public">
+          <name>NumpadMemAdd</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemAdd)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a38adf49579c7dfa9a40a7c987260d8a9" prot="public">
+          <name>NumpadMemSubtract</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemSubtract)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a42e88fa3b30a7f9f3f6f37f60a89a82c" prot="public">
+          <name>NumpadMemMultiply</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemMultiply)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac6e39b0b993da38c2a8dc8b73b8e908d" prot="public">
+          <name>NumpadMemDivide</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadMemDivide)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a1be91aa56bf77b09802c2255963abc11" prot="public">
+          <name>NumpadPlusMinus</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadPlusMinus)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ac353adbdfbde47e4514417be9b53812b" prot="public">
+          <name>NumpadClear</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadClear)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a9c8c4b8d19c9e383c5c0fc7ef6beb35f" prot="public">
+          <name>NumpadClearEntry</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadClearEntry)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64adcd84583649f2725aa6029228c7b7c6e" prot="public">
+          <name>NumpadBinary</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadBinary)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64adabe9046aedfb45406d3df249140d4ae" prot="public">
+          <name>NumpadOctal</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadOctal)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64aa652eda5c682a4c6efa8eaf658ea5831" prot="public">
+          <name>NumpadDecimal</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadDecimal)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad881bb841595766cd0f89c8087d5ffc8" prot="public">
+          <name>NumpadHexadecimal</name>
+          <initializer>= getKeycodeFromScancode(Scancode::NumpadHexadecimal)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af2be247d68aadad6e9ba07db1885cd1c" prot="public">
+          <name>LeftCtrl</name>
+          <initializer>= getKeycodeFromScancode(Scancode::LeftCtrl)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a982621712db76f723b7bb88b631dc64d" prot="public">
+          <name>LeftShift</name>
+          <initializer>= getKeycodeFromScancode(Scancode::LeftShift)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a96f9c4eb595a467d02e35c723f63ebf7" prot="public">
+          <name>LeftAlt</name>
+          <initializer>= getKeycodeFromScancode(Scancode::LeftAlt)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a5c78a94104b44c9348e4fd941e35097e" prot="public">
+          <name>LeftGui</name>
+          <initializer>= getKeycodeFromScancode(Scancode::LeftGui)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64af298b75d2207818c0459c063a21fd172" prot="public">
+          <name>RightCtrl</name>
+          <initializer>= getKeycodeFromScancode(Scancode::RightCtrl)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a317d4a7487ee62605713987d4a037f83" prot="public">
+          <name>RightShift</name>
+          <initializer>= getKeycodeFromScancode(Scancode::RightShift)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad88bad98046b623323aa6ca28eefa6d5" prot="public">
+          <name>RightAlt</name>
+          <initializer>= getKeycodeFromScancode(Scancode::RightAlt)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64ad2e103d87a9708e1cb3a872955d2d51a" prot="public">
+          <name>RightGui</name>
+          <initializer>= getKeycodeFromScancode(Scancode::RightGui)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1ggac7037fec22d5d5215cffce98fc7dca64a650be61892bf690026089544abbd9d26" prot="public">
+          <name>Mode</name>
+          <initializer>= getKeycodeFromScancode(Scancode::Mode)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Keycodes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="288" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" bodystart="288" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga5af782cd2d72913508f6b31f01acc03e" prot="public" static="no">
+        <name>MouseButton</name>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03ea945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>The left mouse button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03eab1ca34f82e83c52b010f86955f264e05" prot="public">
+          <name>Middle</name>
+          <briefdescription>
+<para>The middle (wheel) mouse button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03ea92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>The right mouse button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03eaac8e5aa1a680bd64e6fb9313db5b4428" prot="public">
+          <name>XButton1</name>
+          <briefdescription>
+<para>The first extra mouse button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03ea7af9d9a16f813c045a3dbe8068a13f4d" prot="public">
+          <name>XButton2</name>
+          <briefdescription>
+<para>The second extra mouse button. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga5af782cd2d72913508f6b31f01acc03ea6311ae17c1ee52b36e68aaf4ad066387" prot="public">
+          <name>Other</name>
+          <briefdescription>
+<para>Another unknown button (may happen with touchpads) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Mouse buttons. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Mouse.h" line="36" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Mouse.h" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__window_1ga62cc170c1e16539e4bad1d9f27c6b752" prot="public" static="no">
+        <name>WindowHints</name>
+        <enumvalue id="group__window_1gga62cc170c1e16539e4bad1d9f27c6b752aaff10bf1618da00a8a80b74044e719b2" prot="public">
+          <name>Resizable</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+<para>Is the window resizable? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga62cc170c1e16539e4bad1d9f27c6b752aec24d78ce33048dc73a2b6b1a0690192" prot="public">
+          <name>Visible</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+<para>Is the window visible? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__window_1gga62cc170c1e16539e4bad1d9f27c6b752a37c71f1e0f41cdad32aa3d4add9f2f86" prot="public">
+          <name>Decorated</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+<para>Is the window decorated? </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Hints for window creation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__window_1gaddbdac9d343e47408a923ec5fc5a5090" kindref="member">gf::WindowFlags</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="52" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__window_1ga04034cec1030d4b31a2b51865ce6beeb" prot="public" static="no">
+        <type>Flags&lt; Mod &gt;</type>
+        <definition>using gf::Modifiers = typedef Flags&lt;Mod&gt;</definition>
+        <argsstring></argsstring>
+        <name>Modifiers</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> for keyboard modifiers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__window_1ga446ce8f75d3f0c83dcf854d8eb2f1df1" kindref="member">gf::Mod</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Keyboard.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__window_1gaddbdac9d343e47408a923ec5fc5a5090" prot="public" static="no">
+        <type>Flags&lt; WindowHints &gt;</type>
+        <definition>using gf::WindowFlags = typedef Flags&lt;WindowHints&gt;</definition>
+        <argsstring></argsstring>
+        <name>WindowFlags</name>
+        <briefdescription>
+<para><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref> for window creation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags</ref>, <ref refid="group__window_1ga62cc170c1e16539e4bad1d9f27c6b752" kindref="member">gf::WindowHints</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" line="63" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Window.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All the classes related to window management. </para>    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Monitor management: <ref refid="classgf_1_1_monitor" kindref="compound">gf::Monitor</ref>, <ref refid="structgf_1_1_video_mode" kindref="compound">gf::VideoMode</ref></para></listitem><listitem><para>Window management: <ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref>, <ref refid="group__window_1ga62cc170c1e16539e4bad1d9f27c6b752" kindref="member">gf::WindowHints</ref>, <ref refid="classgf_1_1_coordinates" kindref="compound">gf::Coordinates</ref></para></listitem><listitem><para>Input: <ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref>, <ref refid="classgf_1_1_control" kindref="compound">gf::Control</ref>, <ref refid="classgf_1_1_action" kindref="compound">gf::Action</ref></para></listitem><listitem><para>Device: <ref refid="structgf_1_1_keyboard" kindref="compound">gf::Keyboard</ref>, <ref refid="classgf_1_1_gamepad" kindref="compound">gf::Gamepad</ref>, <ref refid="group__window_1ga04034cec1030d4b31a2b51865ce6beeb" kindref="member">gf::Modifiers</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_clock" kind="class" language="C++" prot="public">
+    <compoundname>gf::Clock</compoundname>
+    <includes refid="_clock_8h" local="no">gf/Clock.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_clock_1af350b5733b08c4e94bcdbd9ba4e8763b" prot="private" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point gf::Clock::m_start</definition>
+        <argsstring></argsstring>
+        <name>m_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" line="98" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_clock_1a2d1e2eb53f411370fb68404e16a9bbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Clock::Clock</definition>
+        <argsstring>()</argsstring>
+        <name>Clock</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The clock starts automatically after being constructed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_clock_1a9d7e654bef586f23105f61860367a85c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::Clock::getElapsedTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getElapsedTime</name>
+        <briefdescription>
+<para>Get the elapsed time. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the time elapsed since the last call to <computeroutput><ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart()</ref></computeroutput> (or the construction of the instance if <computeroutput><ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart()</ref></computeroutput> has not been called).</para><para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> elapsed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::Clock::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <briefdescription>
+<para>Restart the clock. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function puts the time counter back to zero. It also returns the time elapsed since the clock was started.</para><para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> elapsed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" line="95" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility class that measures the elapsed time. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref> is a lightweight class for measuring time. It is a thin wrapper around C++11 <ulink url="http://en.cppreference.com/w/cpp/chrono/steady_clock">std::chrono::steady_clock</ulink>.</para><para>Its provides the most precise time that the underlying OS can achieve (generally microseconds or nanoseconds). It also ensures monotonicity, which means that the returned time can never go backward, even if the system time is changed.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref><sp/>clock;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">gf::Time<sp/>time1<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1a9d7e654bef586f23105f61860367a85c" kindref="member">getElapsedTime</ref>();</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">gf::Time<sp/>time2<sp/>=<sp/>clock.<ref refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" kindref="member">restart</ref>();</highlight></codeline>
+</programlisting></para><para>The <ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref> value returned by the clock can then be converted to a number of seconds, milliseconds or even microseconds.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" line="67" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Clock.h" bodystart="67" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_clock_1a2d1e2eb53f411370fb68404e16a9bbfb" prot="public" virt="non-virtual"><scope>gf::Clock</scope><name>Clock</name></member>
+      <member refid="classgf_1_1_clock_1a9d7e654bef586f23105f61860367a85c" prot="public" virt="non-virtual"><scope>gf::Clock</scope><name>getElapsedTime</name></member>
+      <member refid="classgf_1_1_clock_1af350b5733b08c4e94bcdbd9ba4e8763b" prot="private" virt="non-virtual"><scope>gf::Clock</scope><name>m_start</name></member>
+      <member refid="classgf_1_1_clock_1ad6af1a88379d543468335bece8dd5a1c" prot="public" virt="non-virtual"><scope>gf::Clock</scope><name>restart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

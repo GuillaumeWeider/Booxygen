@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_message" kind="struct" language="C++" prot="public">
+    <compoundname>gf::Message</compoundname>
+    <includes refid="_message_8h" local="no">gf/Message.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgf_1_1_message_1a77f4fd285961ddc80b93b0ee878ab3b1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">Id</ref></type>
+        <definition>const Id gf::Message::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= <ref refid="group__core_1ga63cc77139085fae86503ed552b1c52ee" kindref="member">InvalidId</ref></initializer>
+        <briefdescription>
+<para>The default (invalid) type. </para>        </briefdescription>
+        <detaileddescription>
+<para>It must be redefined in child classes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" line="59" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The base class for all messages. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref> is the base class for all the messages that are sent to a message manager. A message must derive from this class and define a static unique type.</para><para>Here is an example for defining a new message type:</para><para><programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HeroPosition<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">Id</ref><sp/><ref refid="structgf_1_1_message_1a77f4fd285961ddc80b93b0ee878ab3b1" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;HeroPosition&quot;</highlight><highlight class="normal">_id;<sp/></highlight><highlight class="comment">//<sp/>compile-time<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>position;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>, <ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" line="53" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Message.h" bodystart="53" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_message_1a77f4fd285961ddc80b93b0ee878ab3b1" prot="public" virt="non-virtual"><scope>gf::Message</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

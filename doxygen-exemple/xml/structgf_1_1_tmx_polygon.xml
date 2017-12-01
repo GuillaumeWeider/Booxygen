@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_polygon" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxPolygon</compoundname>
+    <basecompoundref refid="structgf_1_1_tmx_object" prot="public" virt="non-virtual">gf::TmxObject</basecompoundref>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_polygon_1a8c62c6f1831ba42de342127018ef6807" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2i&gt; gf::TmxPolygon::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+<para>The points of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="431" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A polygon object. </para>    </briefdescription>
+    <detaileddescription>
+<para>A polygon is a closed set of lines </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="905">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+      </node>
+      <node id="904">
+        <label>gf::TmxPolygon</label>
+        <link refid="structgf_1_1_tmx_polygon"/>
+        <childnode refid="905" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="913">
+        <label>gf::Vector&lt; int, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="910">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="907">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+        <childnode refid="908" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="909" relation="usage">
+          <edgelabel>type</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="911" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="911">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="906">
+        <label>gf::TmxPolygon</label>
+        <link refid="structgf_1_1_tmx_polygon"/>
+        <childnode refid="907" relation="public-inheritance">
+        </childnode>
+        <childnode refid="912" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+      </node>
+      <node id="912">
+        <label>std::vector&lt; Vector&lt; int, 2 &gt; &gt;</label>
+        <childnode refid="913" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="908">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="909">
+        <label>std::string</label>
+        <childnode refid="910" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="430" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="430" bodyend="432"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a57e97a32a5fd8a5ed53b27335b51e401" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Ellipse</name></member>
+      <member refid="structgf_1_1_tmx_object_1a77819e6cdbda911f028b3671011ce9a3" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>id</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1af2d23b1185e47142226972045994315f" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1ab4bf14ca4004b953b9e9e11e3493eb59" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>name</name></member>
+      <member refid="structgf_1_1_tmx_polygon_1a8c62c6f1831ba42de342127018ef6807" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>points</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168add2828e016dcee09dbdd3cc018c2a70d" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Polygon</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a2ab19cd59ad53327f8d5d7975d774783" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Polyline</name></member>
+      <member refid="structgf_1_1_tmx_object_1a559942ef79105749b0f3de149931df08" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>position</name></member>
+      <member refid="structgf_1_1_tmx_object_1ad533c3e4bdd90574920db1d00e35ea9d" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a01469baa84de6f6b21d39bf8e3799cdd" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Rectangle</name></member>
+      <member refid="structgf_1_1_tmx_object_1a360e63ca427b9553eab107c108ab5d40" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>rotation</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a7d369c38d593a38d1a5f42253e8a9149" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Text</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a407201fbe7915218a90b03afe7ef8cc8" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>Tile</name></member>
+      <member refid="structgf_1_1_tmx_object_1aa84fe4ca99482976e846fe4d6a7104aa" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>type</name></member>
+      <member refid="structgf_1_1_tmx_object_1a06ba9659e6f01caf9a46e0289202039c" prot="public" virt="non-virtual"><scope>gf::TmxPolygon</scope><name>visible</name></member>
+      <member refid="structgf_1_1_tmx_object_1aeb01bda0b2b4c991084aaf7a38f9a05c" prot="public" virt="virtual"><scope>gf::TmxPolygon</scope><name>~TmxObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

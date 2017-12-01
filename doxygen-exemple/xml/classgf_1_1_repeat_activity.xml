@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_repeat_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::RepeatActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_repeat_activity_1a8c4de8f67b15d56003b3e530ee6e76a1" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> &amp;</type>
+        <definition>Activity&amp; gf::RepeatActivity::m_activity</definition>
+        <argsstring></argsstring>
+        <name>m_activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="452" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_repeat_activity_1a47da3b54da781ba8c5570aa193ca3d45" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::RepeatActivity::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="453" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_repeat_activity_1ade7160907d41bb6cb2901f0600e9d670" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::RepeatActivity::m_repeat</definition>
+        <argsstring></argsstring>
+        <name>m_repeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="454" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_repeat_activity_1a553f1ac103b805d14826e12b0548dcb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RepeatActivity::RepeatActivity</definition>
+        <argsstring>(Activity &amp;activity, unsigned repeat=0)</argsstring>
+        <name>RepeatActivity</name>
+        <param>
+          <type><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>repeat</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activity to run serveral times </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of time to repeat the activity or 0 for infinite </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_repeat_activity_1a1c0da363fdb8e9ffc400efeaf16332cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::RepeatActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_repeat_activity_1a8ffb22ffc777bf6c66b880a8aa84d854" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::RepeatActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="449" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity to run an activity several times. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="645">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="644">
+        <label>gf::RepeatActivity</label>
+        <link refid="classgf_1_1_repeat_activity"/>
+        <childnode refid="645" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="647">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="646">
+        <label>gf::RepeatActivity</label>
+        <link refid="classgf_1_1_repeat_activity"/>
+        <childnode refid="647" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="438" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="438" bodyend="455"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_repeat_activity_1a8c4de8f67b15d56003b3e530ee6e76a1" prot="private" virt="non-virtual"><scope>gf::RepeatActivity</scope><name>m_activity</name></member>
+      <member refid="classgf_1_1_repeat_activity_1a47da3b54da781ba8c5570aa193ca3d45" prot="private" virt="non-virtual"><scope>gf::RepeatActivity</scope><name>m_count</name></member>
+      <member refid="classgf_1_1_repeat_activity_1ade7160907d41bb6cb2901f0600e9d670" prot="private" virt="non-virtual"><scope>gf::RepeatActivity</scope><name>m_repeat</name></member>
+      <member refid="classgf_1_1_repeat_activity_1a553f1ac103b805d14826e12b0548dcb3" prot="public" virt="non-virtual"><scope>gf::RepeatActivity</scope><name>RepeatActivity</name></member>
+      <member refid="classgf_1_1_repeat_activity_1a8ffb22ffc777bf6c66b880a8aa84d854" prot="public" virt="virtual"><scope>gf::RepeatActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_repeat_activity_1a1c0da363fdb8e9ffc400efeaf16332cc" prot="public" virt="virtual"><scope>gf::RepeatActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::RepeatActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

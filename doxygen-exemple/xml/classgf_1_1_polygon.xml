@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_polygon" kind="class" language="C++" prot="public">
+    <compoundname>gf::Polygon</compoundname>
+    <includes refid="_polygon_8h" local="no">gf/Polygon.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_polygon_1ad7e84796002ed2d942695b78b3edcb06" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; gf::Polygon::m_points</definition>
+        <argsstring></argsstring>
+        <name>m_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="183" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_polygon_1af357de928fe5a18428e958ba807b2e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Polygon::Polygon</definition>
+        <argsstring>()=default</argsstring>
+        <name>Polygon</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a2d6afa90da978d78c788ac78fd6e4e89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Polygon::Polygon</definition>
+        <argsstring>(ArrayRef&lt; Vector2f &gt; points)</argsstring>
+        <name>Polygon</name>
+        <param>
+          <type><ref refid="classgf_1_1_array_ref" kindref="compound">ArrayRef</ref>&lt; <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> &gt;</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from an array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of points </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a1afe5d43ef0385b447950317454d3d47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::Polygon::Polygon</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>Polygon</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from points. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator to the first point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator after the last point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1afb06da3442994b32ec6a4ac0b572028a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Polygon::addPoint</definition>
+        <argsstring>(Vector2f point)</argsstring>
+        <name>addPoint</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Add a point to the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to add to the polygon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a888ddeaf60b1fae4d8b5e721c0f6fbc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::Polygon::getPointCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointCount</name>
+        <briefdescription>
+<para>Get the number of points of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of points of the polygon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a930b858be3130f0b42dde0eda8b70836" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polygon::getPoint</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>getPoint</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the i-th point of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a33b63d5a347a990189398e2c76bb1cd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polygon::getCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+<para>Get the center of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para>As the polygon is convex, the center is inside the polygon</para><para><simplesect kind="return"><para>The center of the polygon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a1c879c09584585d19698834df21f6e00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polygon::getSupport</definition>
+        <argsstring>(Vector2f direction, const Transform &amp;transform) const</argsstring>
+        <name>getSupport</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Get the farthest point in a direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to search (in world coordinates) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation of the polygon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The farthest point of the polygon in the given direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1aff78c20fb2e56cf77bfd6b81a584dbdb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Polygon::getSupport</definition>
+        <argsstring>(Vector2f direction) const</argsstring>
+        <name>getSupport</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Get the farthest point in a direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to search </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The farthest point of the polygon in the given direction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a01e73a5ab1f80418469682f685bef263" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> *</type>
+        <definition>const Vector2f* gf::Polygon::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first point. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polygon_1a5fef8c11b0392a2deb8d876ef4f3a00b" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a5fef8c11b0392a2deb8d876ef4f3a00b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref> *</type>
+        <definition>const Vector2f* gf::Polygon::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator past the last point. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer past the last point</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_polygon_1a01e73a5ab1f80418469682f685bef263" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a8ab16960a8ac814c1e2235e1a6b929dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Polygon::isConvex</definition>
+        <argsstring>() const</argsstring>
+        <name>isConvex</name>
+        <briefdescription>
+<para>Check if the polygon is convex. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function should return true, otherwise you may have problems in other functions which assume that the polygon is convex.</para><para><simplesect kind="return"><para>True if the polygon is convex </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1ad8ea9fb77bc3e7a5945c348820d33a6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga834b7c90c6d90647e9ba10caad190efa" kindref="member">Winding</ref></type>
+        <definition>Winding gf::Polygon::getWinding</definition>
+        <argsstring>() const</argsstring>
+        <name>getWinding</name>
+        <briefdescription>
+<para>Compute the winding of a convex polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para>Complexity: <formula id="81">$ O(n) $</formula></para><para><simplesect kind="return"><para>The winding of the convex polygon </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__core_1ga834b7c90c6d90647e9ba10caad190efa" kindref="member">gf::Winding</ref>, <ref refid="classgf_1_1_polygon_1a8ab16960a8ac814c1e2235e1a6b929dd" kindref="member">isConvex()</ref> </para></simplesect>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Curve_orientation">Curve orientation - Wikipedia</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1addfad1eaf807afd005d51099ed3b2bb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Polygon::getArea</definition>
+        <argsstring>() const</argsstring>
+        <name>getArea</name>
+        <briefdescription>
+<para>Compute the area of the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para>Complexity: <formula id="81">$ O(n) $</formula></para><para><simplesect kind="return"><para>The area of the polygon </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_polygon_1a4f4627cf173ab944887afeb64a2a57d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Polygon::applyTransform</definition>
+        <argsstring>(const Matrix3f &amp;mat)</argsstring>
+        <name>applyTransform</name>
+        <param>
+          <type>const <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Apply a transformation to the polygon. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="180" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A convex polygon. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" line="52" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Polygon.h" bodystart="52" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_polygon_1afb06da3442994b32ec6a4ac0b572028a" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>addPoint</name></member>
+      <member refid="classgf_1_1_polygon_1a4f4627cf173ab944887afeb64a2a57d3" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>applyTransform</name></member>
+      <member refid="classgf_1_1_polygon_1a01e73a5ab1f80418469682f685bef263" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>begin</name></member>
+      <member refid="classgf_1_1_polygon_1a5fef8c11b0392a2deb8d876ef4f3a00b" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>end</name></member>
+      <member refid="classgf_1_1_polygon_1addfad1eaf807afd005d51099ed3b2bb4" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getArea</name></member>
+      <member refid="classgf_1_1_polygon_1a33b63d5a347a990189398e2c76bb1cd8" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getCenter</name></member>
+      <member refid="classgf_1_1_polygon_1a930b858be3130f0b42dde0eda8b70836" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_polygon_1a888ddeaf60b1fae4d8b5e721c0f6fbc2" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_polygon_1a1c879c09584585d19698834df21f6e00" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getSupport</name></member>
+      <member refid="classgf_1_1_polygon_1aff78c20fb2e56cf77bfd6b81a584dbdb" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getSupport</name></member>
+      <member refid="classgf_1_1_polygon_1ad8ea9fb77bc3e7a5945c348820d33a6f" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>getWinding</name></member>
+      <member refid="classgf_1_1_polygon_1a8ab16960a8ac814c1e2235e1a6b929dd" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>isConvex</name></member>
+      <member refid="classgf_1_1_polygon_1ad7e84796002ed2d942695b78b3edcb06" prot="private" virt="non-virtual"><scope>gf::Polygon</scope><name>m_points</name></member>
+      <member refid="classgf_1_1_polygon_1af357de928fe5a18428e958ba807b2e71" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>Polygon</name></member>
+      <member refid="classgf_1_1_polygon_1a2d6afa90da978d78c788ac78fd6e4e89" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>Polygon</name></member>
+      <member refid="classgf_1_1_polygon_1a1afe5d43ef0385b447950317454d3d47" prot="public" virt="non-virtual"><scope>gf::Polygon</scope><name>Polygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

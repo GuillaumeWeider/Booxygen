@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_action" kind="class" language="C++" prot="public">
+    <compoundname>gf::Action</compoundname>
+    <includes refid="_action_8h" local="no">gf/Action.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Type of the action</header>
+      <memberdef kind="function" id="classgf_1_1_action_1a8f0c4413e002b2920964ff18b50b621e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::setContinuous</definition>
+        <argsstring>()</argsstring>
+        <name>setContinuous</name>
+        <briefdescription>
+<para>Set the action continuous. </para>        </briefdescription>
+        <detaileddescription>
+<para>A continuous action is an action that is active as long as the user do not desactivate it. A <ref refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" kindref="member">reset()</ref> call does not desactivate the action.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" kindref="member">reset()</ref>, <ref refid="classgf_1_1_action_1ad8ed28e15a5289a5a633e43a1aa3b0b2" kindref="member">setInstantaneous()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1afcbe41560ca95d61ac89f144422dba4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Action::isContinuous</definition>
+        <argsstring>() const</argsstring>
+        <name>isContinuous</name>
+        <briefdescription>
+<para>Check if the action is continuous. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the action is continuous. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1ad8ed28e15a5289a5a633e43a1aa3b0b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::setInstantaneous</definition>
+        <argsstring>()</argsstring>
+        <name>setInstantaneous</name>
+        <briefdescription>
+<para>Set the action instantaneous. </para>        </briefdescription>
+        <detaileddescription>
+<para>An instantaneous action is an action that is active until the next <ref refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" kindref="member">reset()</ref> call.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" kindref="member">reset()</ref>, <ref refid="classgf_1_1_action_1a8f0c4413e002b2920964ff18b50b621e" kindref="member">setContinuous()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a59606f50c885a70f96d53c012fa8233a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Action::isInstantaneous</definition>
+        <argsstring>() const</argsstring>
+        <name>isInstantaneous</name>
+        <briefdescription>
+<para>Check if the action is instantaneous. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the action is instantaneous. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Controls for the action</header>
+      <memberdef kind="function" id="classgf_1_1_action_1abb96f1937e48fdc0f93c786d93c0ec65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addKeycodeKeyControl</definition>
+        <argsstring>(Keycode code)</argsstring>
+        <name>addKeycodeKeyControl</name>
+        <param>
+          <type><ref refid="group__window_1gac7037fec22d5d5215cffce98fc7dca64" kindref="member">Keycode</ref></type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Add a key control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the keycode of the key</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_keycode_key_control" kindref="compound">KeycodeKeyControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1aa70629a303902f615aa2019a8065c655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addScancodeKeyControl</definition>
+        <argsstring>(Scancode code)</argsstring>
+        <name>addScancodeKeyControl</name>
+        <param>
+          <type><ref refid="group__window_1ga795d7d5e2f2a4f38b16b95e0e78cb626" kindref="member">Scancode</ref></type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Add a key control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scancode of the key</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_scancode_key_control" kindref="compound">ScancodeKeyControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a146f54a9e4a93d8bbf2da1098c123753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addMouseButtonControl</definition>
+        <argsstring>(MouseButton button)</argsstring>
+        <name>addMouseButtonControl</name>
+        <param>
+          <type><ref refid="group__window_1ga5af782cd2d72913508f6b31f01acc03e" kindref="member">MouseButton</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Add a mouse button control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button of the mouse.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_mouse_button_control" kindref="compound">MouseButtonControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a39505eb3f17ca3dfc40d737a8f3027ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addGamepadButtonControl</definition>
+        <argsstring>(GamepadId id, GamepadButton button)</argsstring>
+        <name>addGamepadButtonControl</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" kindref="member">GamepadButton</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Add a gamepad button control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the gamepad. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the button of the gamepad</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_button_control" kindref="compound">GamepadButtonControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1af04eed7284b173a87295e8990672fb91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addGamepadAxisControl</definition>
+        <argsstring>(GamepadId id, GamepadAxis axis, GamepadAxisDirection dir)</argsstring>
+        <name>addGamepadAxisControl</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1ga40276d90e4e5efa68433fd9040c08b86" kindref="member">GamepadAxis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gac51b68f03b85350446f51a932fc20de3" kindref="member">GamepadAxisDirection</ref></type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+<para>Add a gamepad axis control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the gamepad. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis of the gamepad. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the direction of the axis of the gamepad.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_axis_control" kindref="compound">GamepadAxisControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a2afafdabda04ab4115e814e676811926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addCloseControl</definition>
+        <argsstring>()</argsstring>
+        <name>addCloseControl</name>
+        <briefdescription>
+<para>Add a close control. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classgf_1_1_close_control" kindref="compound">CloseControl</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a1fe4f521a912be50d96403fe645769f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::addControl</definition>
+        <argsstring>(Control &amp;control)</argsstring>
+        <name>addControl</name>
+        <param>
+          <type><ref refid="classgf_1_1_control" kindref="compound">Control</ref> &amp;</type>
+          <declname>control</declname>
+        </param>
+        <briefdescription>
+<para>Add a user-defined control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The control </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="179" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>State of the action</header>
+      <memberdef kind="function" id="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::processEvent</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>processEvent</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the state of the action thanks to an event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event to update the action.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_control_1ac97e9019a57cd6d9ec90c9b945cfe8cc" kindref="member">Control::processEvent()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a0fbb05c8d27eb08854200a4d7518debd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Action::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+<para>Check if the action is active. </para>        </briefdescription>
+        <detaileddescription>
+<para>An action is active if at least one of its control is active.</para><para><simplesect kind="return"><para>true if the action is active.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_control_1aa44d857ba7b98ac425a5535227a6198a" kindref="member">Control::isActive()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Action::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the state of the action. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function depends of the type of the action.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_action_1a8f0c4413e002b2920964ff18b50b621e" kindref="member">setContinuous()</ref>, <ref refid="classgf_1_1_action_1ad8ed28e15a5289a5a633e43a1aa3b0b2" kindref="member">setInstantaneous()</ref>, <ref refid="classgf_1_1_control_1a54adda2641dac5201871d18f83985c67" kindref="member">Control::reset()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="213" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_action_1a891b27cbf41d829451e867507fe30ec1" prot="private" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_action_1a891b27cbf41d829451e867507fe30ec1a124d04ef3071fd95c1cd0f7ab83fb331" prot="private">
+          <name>Instantaneous</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_action_1a891b27cbf41d829451e867507fe30ec1a535863a82f163709557e59e2eb8139a7" prot="private">
+          <name>Continuous</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="217" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_action_1abfc60760f0a79bbdd5f002a9bec2ac4e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gf::Action::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="222" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_action_1a409a489d65bf5f643c18724b1988edc1" prot="private" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type gf::Action::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="223" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_action_1ad8724e4974eff4287d443f750386a6b3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classgf_1_1_control" kindref="compound">Control</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Control&gt; &gt; gf::Action::m_ownedControls</definition>
+        <argsstring></argsstring>
+        <name>m_ownedControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_action_1a599ce256fe45010fc5ad58d6a135730f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_control" kindref="compound">Control</ref> * &gt;</type>
+        <definition>std::vector&lt;Control *&gt; gf::Action::m_controls</definition>
+        <argsstring></argsstring>
+        <name>m_controls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="225" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_action_1ae5df27039e11f70aefe38dd85af6c5ef" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Action::Action</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>Action</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Construct an action with a name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the action. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1af7454c437c7e9eeaa3450f885bb4fcfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Action::Action</definition>
+        <argsstring>(const Action &amp;)=delete</argsstring>
+        <name>Action</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_action" kindref="compound">Action</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1a8d814ccf4a47ad71a4069bcc361c3af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_action" kindref="compound">Action</ref> &amp;</type>
+        <definition>Action&amp; gf::Action::operator=</definition>
+        <argsstring>(const Action &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_action" kindref="compound">Action</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_action_1af46c6661d743c88535bb9b256426a7cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; gf::Action::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get the name of the action. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name of the action. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An action that can be triggered by different controls. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" line="46" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Action.h" bodystart="46" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_action_1ae5df27039e11f70aefe38dd85af6c5ef" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>Action</name></member>
+      <member refid="classgf_1_1_action_1af7454c437c7e9eeaa3450f885bb4fcfc" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>Action</name></member>
+      <member refid="classgf_1_1_action_1a2afafdabda04ab4115e814e676811926" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addCloseControl</name></member>
+      <member refid="classgf_1_1_action_1a1fe4f521a912be50d96403fe645769f8" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addControl</name></member>
+      <member refid="classgf_1_1_action_1af04eed7284b173a87295e8990672fb91" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addGamepadAxisControl</name></member>
+      <member refid="classgf_1_1_action_1a39505eb3f17ca3dfc40d737a8f3027ca" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addGamepadButtonControl</name></member>
+      <member refid="classgf_1_1_action_1abb96f1937e48fdc0f93c786d93c0ec65" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addKeycodeKeyControl</name></member>
+      <member refid="classgf_1_1_action_1a146f54a9e4a93d8bbf2da1098c123753" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addMouseButtonControl</name></member>
+      <member refid="classgf_1_1_action_1aa70629a303902f615aa2019a8065c655" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>addScancodeKeyControl</name></member>
+      <member refid="classgf_1_1_action_1af46c6661d743c88535bb9b256426a7cd" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>getName</name></member>
+      <member refid="classgf_1_1_action_1a0fbb05c8d27eb08854200a4d7518debd" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>isActive</name></member>
+      <member refid="classgf_1_1_action_1afcbe41560ca95d61ac89f144422dba4a" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>isContinuous</name></member>
+      <member refid="classgf_1_1_action_1a59606f50c885a70f96d53c012fa8233a" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>isInstantaneous</name></member>
+      <member refid="classgf_1_1_action_1a599ce256fe45010fc5ad58d6a135730f" prot="private" virt="non-virtual"><scope>gf::Action</scope><name>m_controls</name></member>
+      <member refid="classgf_1_1_action_1abfc60760f0a79bbdd5f002a9bec2ac4e" prot="private" virt="non-virtual"><scope>gf::Action</scope><name>m_name</name></member>
+      <member refid="classgf_1_1_action_1ad8724e4974eff4287d443f750386a6b3" prot="private" virt="non-virtual"><scope>gf::Action</scope><name>m_ownedControls</name></member>
+      <member refid="classgf_1_1_action_1a409a489d65bf5f643c18724b1988edc1" prot="private" virt="non-virtual"><scope>gf::Action</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_action_1a8d814ccf4a47ad71a4069bcc361c3af4" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_action_1a06f00c13c70e38ec5afa4609568cdf74" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_action_1ad5e4d6c50596ad67356eec888dc095d0" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>reset</name></member>
+      <member refid="classgf_1_1_action_1a8f0c4413e002b2920964ff18b50b621e" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>setContinuous</name></member>
+      <member refid="classgf_1_1_action_1ad8ed28e15a5289a5a633e43a1aa3b0b2" prot="public" virt="non-virtual"><scope>gf::Action</scope><name>setInstantaneous</name></member>
+      <member refid="classgf_1_1_action_1a891b27cbf41d829451e867507fe30ec1" prot="private" virt="non-virtual"><scope>gf::Action</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

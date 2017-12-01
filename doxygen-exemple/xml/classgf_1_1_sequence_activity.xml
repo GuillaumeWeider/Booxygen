@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_sequence_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::SequenceActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_sequence_activity_1ae0ff7ba48e55ecb6613941f37a77837c" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::SequenceActivity::m_current</definition>
+        <argsstring></argsstring>
+        <name>m_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="429" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_sequence_activity_1ade34b89712e55567ebbaa0dd6d217ac6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> * &gt;</type>
+        <definition>std::vector&lt;Activity*&gt; gf::SequenceActivity::m_activities</definition>
+        <argsstring></argsstring>
+        <name>m_activities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="430" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_sequence_activity_1a2a79b973511d3a0621dc9db95bfc299d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SequenceActivity::SequenceActivity</definition>
+        <argsstring>()</argsstring>
+        <name>SequenceActivity</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sequence_activity_1a49b8d752665e7e33915cbb8131de9596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::SequenceActivity::addActivity</definition>
+        <argsstring>(Activity &amp;activity)</argsstring>
+        <name>addActivity</name>
+        <param>
+          <type><ref refid="classgf_1_1_activity" kindref="compound">Activity</ref> &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+<para>Add an activity to the sequence. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sequence_activity_1ab3f378a832c6ac18a549b70cc1fc45e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::SequenceActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_sequence_activity_1a5e364de020c7e05f8667ec1917f384f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::SequenceActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="426" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity to run several activities sequentially. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="685">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="684">
+        <label>gf::SequenceActivity</label>
+        <link refid="classgf_1_1_sequence_activity"/>
+        <childnode refid="685" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="687">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="686">
+        <label>gf::SequenceActivity</label>
+        <link refid="classgf_1_1_sequence_activity"/>
+        <childnode refid="687" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="411" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="411" bodyend="431"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_sequence_activity_1a49b8d752665e7e33915cbb8131de9596" prot="public" virt="non-virtual"><scope>gf::SequenceActivity</scope><name>addActivity</name></member>
+      <member refid="classgf_1_1_sequence_activity_1ade34b89712e55567ebbaa0dd6d217ac6" prot="private" virt="non-virtual"><scope>gf::SequenceActivity</scope><name>m_activities</name></member>
+      <member refid="classgf_1_1_sequence_activity_1ae0ff7ba48e55ecb6613941f37a77837c" prot="private" virt="non-virtual"><scope>gf::SequenceActivity</scope><name>m_current</name></member>
+      <member refid="classgf_1_1_sequence_activity_1a5e364de020c7e05f8667ec1917f384f2" prot="public" virt="virtual"><scope>gf::SequenceActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_sequence_activity_1ab3f378a832c6ac18a549b70cc1fc45e6" prot="public" virt="virtual"><scope>gf::SequenceActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_sequence_activity_1a2a79b973511d3a0621dc9db95bfc299d" prot="public" virt="non-virtual"><scope>gf::SequenceActivity</scope><name>SequenceActivity</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::SequenceActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

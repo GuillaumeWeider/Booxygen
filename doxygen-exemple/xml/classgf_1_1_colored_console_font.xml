@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_colored_console_font" kind="class" language="C++" prot="public">
+    <compoundname>gf::ColoredConsoleFont</compoundname>
+    <basecompoundref refid="classgf_1_1_console_font" prot="public" virt="non-virtual">gf::ConsoleFont</basecompoundref>
+    <includes refid="_console_font_8h" local="no">gf/ConsoleFont.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_colored_console_font_1a996ad04da41a8e58ff7e5a9ba14bfbd2" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref></type>
+        <definition>Texture gf::ColoredConsoleFont::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="339" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_colored_console_font_1a1a8628def8d00f81c2285925a7d9e4c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classgf_1_1_bare_texture" kindref="compound">BareTexture</ref> *</type>
+        <definition>virtual const BareTexture* gf::ColoredConsoleFont::getTexture</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTexture</name>
+        <reimplements refid="classgf_1_1_console_font_1a98a09d3771ee8fa87cfa10fe911063ea">getTexture</reimplements>
+        <briefdescription>
+<para>Get the texture of the console font. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The texture of the font </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_colored_console_font_1a875d2885d2ba1006dc13475753304335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::ColoredConsoleFont::loadFromFile</definition>
+        <argsstring>(const Path &amp;filename, ConsoleFontFormat format, Vector2u size={ 0u, 0u })</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_console_font_format" kindref="compound">ConsoleFontFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+          <defval>{ 0u, 0u }</defval>
+        </param>
+        <briefdescription>
+<para>Load a console font from a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the font </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size, in characters, of the font </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the font was correctly loaded </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="336" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A colored console font. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class handles colored fonts such as the fonts created for <ulink url="http://dwarffortresswiki.org/Tileset_repository">Dwarf Fortress</ulink>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>gf::ColoredConsoleFont</label>
+        <link refid="classgf_1_1_colored_console_font"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>gf::ConsoleFont</label>
+        <link refid="classgf_1_1_console_font"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="129">
+        <label>gf::ColoredConsoleFont</label>
+        <link refid="classgf_1_1_colored_console_font"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>gf::ConsoleFont</label>
+        <link refid="classgf_1_1_console_font"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" line="323" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ConsoleFont.h" bodystart="323" bodyend="340"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_console_font_1a42f356a05fc8d0c8c58d5dd5a39af399" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>clearMapping</name></member>
+      <member refid="classgf_1_1_console_font_1aff1942d952c5da6ab780be02eec11043" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>ConsoleFont</name></member>
+      <member refid="classgf_1_1_console_font_1aa973bbd5867bf5c085296ecf9a83d3f2" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getCharacterSize</name></member>
+      <member refid="classgf_1_1_console_font_1a78bce544b371d58d3a60268350890999" prot="protected" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getColorKeyPosition</name></member>
+      <member refid="classgf_1_1_console_font_1a195f1fac89d1020197a2a9cb48c591e1" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getFormat</name></member>
+      <member refid="classgf_1_1_console_font_1a6b33d57e9171c0e339086ae0b405fe5a" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_console_font_1a0f365ac984ffbfad1abc02c71356d454" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getSubTexture</name></member>
+      <member refid="classgf_1_1_colored_console_font_1a1a8628def8d00f81c2285925a7d9e4c2" prot="public" virt="virtual"><scope>gf::ColoredConsoleFont</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_console_font_1acba4fb444545562da39bef22958c511d" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>getTextureRect</name></member>
+      <member refid="classgf_1_1_colored_console_font_1a875d2885d2ba1006dc13475753304335" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_console_font_1a94664ae4a81cac48bd489dafb71e03df" prot="protected" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>logFormat</name></member>
+      <member refid="classgf_1_1_colored_console_font_1a996ad04da41a8e58ff7e5a9ba14bfbd2" prot="private" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>m_texture</name></member>
+      <member refid="classgf_1_1_console_font_1aba7b3f7217455d73c3c8eab4acb08575" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>mapCode</name></member>
+      <member refid="classgf_1_1_console_font_1a4a24f59f85289cb38b0e4bf8b89f15e5" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>mapCodeRange</name></member>
+      <member refid="classgf_1_1_console_font_1a01d02f5198db67d73c96ec8dde6a6aca" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>mapElement</name></member>
+      <member refid="classgf_1_1_console_font_1ad949467e0fd2512df6d38bd8b709f18d" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>mapElements</name></member>
+      <member refid="classgf_1_1_console_font_1aad2e4e4abcb011478dd7085559949dc1" prot="public" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>mapString</name></member>
+      <member refid="classgf_1_1_console_font_1a57ffce54d0630a7e3ae787eeb592fe98" prot="protected" virt="non-virtual"><scope>gf::ColoredConsoleFont</scope><name>setFormatAndComputeSizes</name></member>
+      <member refid="classgf_1_1_console_font_1ad8a9f59168343a99ffca9f98907f862c" prot="public" virt="virtual"><scope>gf::ColoredConsoleFont</scope><name>~ConsoleFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

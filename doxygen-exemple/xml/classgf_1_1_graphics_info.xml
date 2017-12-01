@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_graphics_info" kind="class" language="C++" prot="public">
+    <compoundname>gf::GraphicsInfo</compoundname>
+    <includes refid="_graphics_info_8h" local="no">gf/GraphicsInfo.h</includes>
+    <innerclass refid="structgf_1_1_graphics_info_1_1_format" prot="public">gf::GraphicsInfo::Format</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a6d53ebf3c774a55fcebd1ed31e34d46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::GraphicsInfo::GraphicsInfo</definition>
+        <argsstring>()=delete</argsstring>
+        <name>GraphicsInfo</name>
+        <briefdescription>
+<para>Deleted default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a8ef6c6c74d6e78c026e627094f9667ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::GraphicsInfo::getVendor</definition>
+        <argsstring>()</argsstring>
+        <name>getVendor</name>
+        <briefdescription>
+<para>Get OpenGL vendor string. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_VENDOR</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a15e86e515ded7d3f4213c7d93dbc23cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::GraphicsInfo::getRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>getRenderer</name>
+        <briefdescription>
+<para>Get OpenGL renderer string. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_RENDERER</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1aaaea364b12cc0f3db1db2c85b7c0911e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::GraphicsInfo::getVersion</definition>
+        <argsstring>()</argsstring>
+        <name>getVersion</name>
+        <briefdescription>
+<para>Get OpenGL version string. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_VERSION</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a1162c8ae830d03239012317b63a81c43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::GraphicsInfo::getShadingLanguageVersion</definition>
+        <argsstring>()</argsstring>
+        <name>getShadingLanguageVersion</name>
+        <briefdescription>
+<para>Get OpenGL GLSL version string. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_SHADING_LANGUAGE_VERSION</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a63b9725e3ac365e2239977c8dfff4cb8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>static std::vector&lt;std::string&gt; gf::GraphicsInfo::getExtensions</definition>
+        <argsstring>()</argsstring>
+        <name>getExtensions</name>
+        <briefdescription>
+<para>Get available OpenGL extensions. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_EXTENSIONS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a065e0f8648862279011324ad4cac06a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgf_1_1_graphics_info_1_1_format" kindref="compound">Format</ref> &gt;</type>
+        <definition>static std::vector&lt;Format&gt; gf::GraphicsInfo::getCompressedTextureFormats</definition>
+        <argsstring>()</argsstring>
+        <name>getCompressedTextureFormats</name>
+        <briefdescription>
+<para>Get a list of supported compressed texture formats. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_NUM_COMPRESSED_TEXTURE_FORMATS</computeroutput> and <computeroutput>GL_COMPRESSED_TEXTURE_FORMATS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a3ef91d06b4f4b84f010d106611c7d74e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structgf_1_1_graphics_info_1_1_format" kindref="compound">Format</ref> &gt;</type>
+        <definition>static std::vector&lt;Format&gt; gf::GraphicsInfo::getShaderBinaryFormats</definition>
+        <argsstring>()</argsstring>
+        <name>getShaderBinaryFormats</name>
+        <briefdescription>
+<para>Get a list of supported shader binary formats. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_NUM_SHADER_BINARY_FORMATS</computeroutput> and <computeroutput>GL_SHADER_BINARY_FORMATS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a3096a571bb1e45cfb7acfdcf79782530" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxCombinedTextureImageUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxCombinedTextureImageUnits</name>
+        <briefdescription>
+<para>Get the maximum supported texture image units. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1aaa3c6c30e01b07c6ccdc0a4ec958e8d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxCubeMapTextureSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxCubeMapTextureSize</name>
+        <briefdescription>
+<para>Get a rough estimate of the largest cube-map texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_CUBE_MAP_TEXTURE_SIZE</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1abc5334f8faafdc67ec12e020ad2d9528" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxFragmentUniformVectors</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxFragmentUniformVectors</name>
+        <briefdescription>
+<para>Get the maximum number of four-element vectors that can be held in uniform variable storage for a fragment shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_FRAGMENT_UNIFORM_VECTORS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1ad9dc7aa254d785eca8737ac1063c6036" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxRenderbufferSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxRenderbufferSize</name>
+        <briefdescription>
+<para>Get the largest renderbuffer width and height. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_RENDERBUFFER_SIZE</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a56144b6b159bc2cb562cf77e51681111" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxTextureImageUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxTextureImageUnits</name>
+        <briefdescription>
+<para>Get the maximum supported texture image units in a fragment shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_TEXTURE_IMAGE_UNITS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a65ca89181d736562e2dd780c8ab94942" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxTextureSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxTextureSize</name>
+        <briefdescription>
+<para>Get a rough estimate of the largest texture. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_TEXTURE_SIZE</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a83c6ed9c7190c5555dc315be4d280ab1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxVaryingVectors</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxVaryingVectors</name>
+        <briefdescription>
+<para>Get the maximum number four-element vectors available for varying variables used by vertex and fragment shaders. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_VARYING_VECTORS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1ac3328790437e68f23a7c81937a60c2cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxVertexAttribs</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxVertexAttribs</name>
+        <briefdescription>
+<para>Get the maximum number of 4-component generic vertex attributes accessible to a vertex shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_VERTEX_ATTRIBS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a0c488b9a0924b616c682b5d52d672cb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxVertexTextureImageUnits</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxVertexTextureImageUnits</name>
+        <briefdescription>
+<para>Get the maximum supported texture image units in a vertex shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a089dfe48c3b4482c87f1a77d789f8677" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getMaxVertexUniformVectors</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxVertexUniformVectors</name>
+        <briefdescription>
+<para>Get the maximum number of four-element vectors that can be held in uniform variable storage for a vertex shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_VERTEX_UNIFORM_VECTORS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1a4ee2df679c7b7f9f303b576667e37bc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>static Vector2i gf::GraphicsInfo::getMaxViewportDims</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxViewportDims</name>
+        <briefdescription>
+<para>Get the maximum supported width and height of the viewport. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_MAX_VIEWPORT_DIMS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_graphics_info_1ac4cbbe5588c7e6a2cc5d8a9a82198a63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::GraphicsInfo::getSubpixelBits</definition>
+        <argsstring>()</argsstring>
+        <name>getSubpixelBits</name>
+        <briefdescription>
+<para>Get an estimate of the number of bits of subpixel resolution. </para>        </briefdescription>
+        <detaileddescription>
+<para>OpenGL name: <computeroutput>GL_SUBPIXEL_BITS</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="196" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for graphics info. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class only contains static methods. It provides convenient functions for OpenGL configuration variables. The name of the variables are given in the documentation of the functions.</para><para><simplesect kind="see"><para><ulink url="://docs.gl/es2/glGetString">glGetString() - docs.gl</ulink> </para></simplesect>
+<simplesect kind="see"><para><ulink url="http://docs.gl/es2/glGet">glGetIntegerv() - docs.gl</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" line="46" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/GraphicsInfo.h" bodystart="46" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_graphics_info_1a065e0f8648862279011324ad4cac06a3" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getCompressedTextureFormats</name></member>
+      <member refid="classgf_1_1_graphics_info_1a63b9725e3ac365e2239977c8dfff4cb8" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getExtensions</name></member>
+      <member refid="classgf_1_1_graphics_info_1a3096a571bb1e45cfb7acfdcf79782530" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxCombinedTextureImageUnits</name></member>
+      <member refid="classgf_1_1_graphics_info_1aaa3c6c30e01b07c6ccdc0a4ec958e8d5" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxCubeMapTextureSize</name></member>
+      <member refid="classgf_1_1_graphics_info_1abc5334f8faafdc67ec12e020ad2d9528" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxFragmentUniformVectors</name></member>
+      <member refid="classgf_1_1_graphics_info_1ad9dc7aa254d785eca8737ac1063c6036" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxRenderbufferSize</name></member>
+      <member refid="classgf_1_1_graphics_info_1a56144b6b159bc2cb562cf77e51681111" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxTextureImageUnits</name></member>
+      <member refid="classgf_1_1_graphics_info_1a65ca89181d736562e2dd780c8ab94942" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxTextureSize</name></member>
+      <member refid="classgf_1_1_graphics_info_1a83c6ed9c7190c5555dc315be4d280ab1" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxVaryingVectors</name></member>
+      <member refid="classgf_1_1_graphics_info_1ac3328790437e68f23a7c81937a60c2cb" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxVertexAttribs</name></member>
+      <member refid="classgf_1_1_graphics_info_1a0c488b9a0924b616c682b5d52d672cb3" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxVertexTextureImageUnits</name></member>
+      <member refid="classgf_1_1_graphics_info_1a089dfe48c3b4482c87f1a77d789f8677" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxVertexUniformVectors</name></member>
+      <member refid="classgf_1_1_graphics_info_1a4ee2df679c7b7f9f303b576667e37bc2" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getMaxViewportDims</name></member>
+      <member refid="classgf_1_1_graphics_info_1a15e86e515ded7d3f4213c7d93dbc23cd" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getRenderer</name></member>
+      <member refid="classgf_1_1_graphics_info_1a3ef91d06b4f4b84f010d106611c7d74e" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getShaderBinaryFormats</name></member>
+      <member refid="classgf_1_1_graphics_info_1a1162c8ae830d03239012317b63a81c43" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getShadingLanguageVersion</name></member>
+      <member refid="classgf_1_1_graphics_info_1ac4cbbe5588c7e6a2cc5d8a9a82198a63" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getSubpixelBits</name></member>
+      <member refid="classgf_1_1_graphics_info_1a8ef6c6c74d6e78c026e627094f9667ac" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getVendor</name></member>
+      <member refid="classgf_1_1_graphics_info_1aaaea364b12cc0f3db1db2c85b7c0911e" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>getVersion</name></member>
+      <member refid="classgf_1_1_graphics_info_1a6d53ebf3c774a55fcebd1ed31e34d46a" prot="public" virt="non-virtual"><scope>gf::GraphicsInfo</scope><name>GraphicsInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

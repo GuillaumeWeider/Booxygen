@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_activity" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Activity</compoundname>
+    <derivedcompoundref refid="classgf_1_1_callback_activity" prot="public" virt="non-virtual">gf::CallbackActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_color_activity" prot="public" virt="non-virtual">gf::ColorActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_delay_activity" prot="public" virt="non-virtual">gf::DelayActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_move_to_activity" prot="public" virt="non-virtual">gf::MoveToActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_parallel_activity" prot="public" virt="non-virtual">gf::ParallelActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_repeat_activity" prot="public" virt="non-virtual">gf::RepeatActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_rotate_to_activity" prot="public" virt="non-virtual">gf::RotateToActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_sequence_activity" prot="public" virt="non-virtual">gf::SequenceActivity</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_value_activity" prot="public" virt="non-virtual">gf::ValueActivity</derivedcompoundref>
+    <includes refid="_activity_8h" local="no">gf/Activity.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gf::Activity::~Activity</definition>
+        <argsstring>()</argsstring>
+        <name>~Activity</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::Activity::run</definition>
+        <argsstring>(Time time)=0</argsstring>
+        <name>run</name>
+        <reimplementedby refid="classgf_1_1_value_activity_1a472003ee9d0b057b57e1506cfe71a125">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_rotate_to_activity_1a6579b44cb0a709f6bfed1e47a914e528">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_move_to_activity_1a8d984c84c98790beac6fee9a1e0a7384">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_color_activity_1acafa7a46195317b8297c68aa3933362d">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_callback_activity_1a1055686ca09c7d9b7c729a356ebb4993">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_delay_activity_1ac545d779445a67c2d9eac6e05669c5a4">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_sequence_activity_1ab3f378a832c6ac18a549b70cc1fc45e6">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_repeat_activity_1a1c0da363fdb8e9ffc400efeaf16332cc">run</reimplementedby>
+        <reimplementedby refid="classgf_1_1_parallel_activity_1a52935bf3337f2ed9dc8e636968f8842a">run</reimplementedby>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Activity::restart</definition>
+        <argsstring>()</argsstring>
+        <name>restart</name>
+        <reimplementedby refid="classgf_1_1_value_activity_1ae9f5e60f66bf802d014d3540b9557748">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_rotate_to_activity_1a9b5bdb227ff03fb39756c9f86fbed637">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_move_to_activity_1a3a506eb7a1d97d68f05deaf173f7ae81">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_color_activity_1a3e37d957702aa76256eda917f05de274">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_callback_activity_1a103aea968274f6028ff8a3cfc3ad1ed7">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_delay_activity_1abda63350639efd63b6f8bca4feafb4cf">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_sequence_activity_1a5e364de020c7e05f8667ec1917f384f2">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_repeat_activity_1a8ffb22ffc777bf6c66b880a8aa84d854">restart</reimplementedby>
+        <reimplementedby refid="classgf_1_1_parallel_activity_1a55db4c401f80973dbab54f2271a93843">restart</reimplementedby>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A game activity. </para>    </briefdescription>
+    <detaileddescription>
+<para>An activity is a task that can be run over time. <computeroutput>gf</computeroutput> provides predefined activites but you can also add your own activities.</para><para>Here is a list of predefined activites:</para><para><itemizedlist>
+<listitem><para><ref refid="classgf_1_1_value_activity" kindref="compound">gf::ValueActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_rotate_to_activity" kindref="compound">gf::RotateToActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_move_to_activity" kindref="compound">gf::MoveToActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_color_activity" kindref="compound">gf::ColorActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_callback_activity" kindref="compound">gf::CallbackActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_delay_activity" kindref="compound">gf::DelayActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_sequence_activity" kindref="compound">gf::SequenceActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_repeat_activity" kindref="compound">gf::RepeatActivity</ref></para></listitem><listitem><para><ref refid="classgf_1_1_parallel_activity" kindref="compound">gf::ParallelActivity</ref> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="7">
+        <label>gf::DelayActivity</label>
+        <link refid="classgf_1_1_delay_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gf::ParallelActivity</label>
+        <link refid="classgf_1_1_parallel_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gf::RotateToActivity</label>
+        <link refid="classgf_1_1_rotate_to_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gf::ColorActivity</label>
+        <link refid="classgf_1_1_color_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gf::MoveToActivity</label>
+        <link refid="classgf_1_1_move_to_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>gf::ValueActivity</label>
+        <link refid="classgf_1_1_value_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gf::CallbackActivity</label>
+        <link refid="classgf_1_1_callback_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gf::RepeatActivity</label>
+        <link refid="classgf_1_1_repeat_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gf::SequenceActivity</label>
+        <link refid="classgf_1_1_sequence_activity"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" line="62" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activity.h" bodystart="62" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87" prot="public" virt="virtual"><scope>gf::Activity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0" prot="public" virt="pure-virtual"><scope>gf::Activity</scope><name>run</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::Activity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

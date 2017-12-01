@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_font" kind="class" language="C++" prot="public">
+    <compoundname>gf::Font</compoundname>
+    <includes refid="_font_8h" local="no">gf/Font.h</includes>
+    <innerclass refid="structgf_1_1_font_1_1_glyph_cache" prot="private">gf::Font::GlyphCache</innerclass>
+    <innerclass refid="structgf_1_1_font_1_1_packing" prot="private">gf::Font::Packing</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_font_1addd8299cf7e0044d30f0990ad6569c59" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* gf::Font::m_library</definition>
+        <argsstring></argsstring>
+        <name>m_library</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="308" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_font_1ae309541e5eae4c3c93be79950c280d31" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* gf::Font::m_stroker</definition>
+        <argsstring></argsstring>
+        <name>m_stroker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="309" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_font_1aa2c72046ab6ba8b9789b13f1b39dffdb" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* gf::Font::m_face</definition>
+        <argsstring></argsstring>
+        <name>m_face</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="310" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_font_1abb5751d06f06d8cc78be056cef34e835" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::Font::m_currentCharacterSize</definition>
+        <argsstring></argsstring>
+        <name>m_currentCharacterSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="311" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_font_1aa9f4f7076c168c03c36a08f5c5e0a0e0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned, GlyphCache &gt;</type>
+        <definition>std::map&lt;unsigned, GlyphCache&gt; gf::Font::m_cache</definition>
+        <argsstring></argsstring>
+        <name>m_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="312" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_font_1a7b9b4f1dd4a253ad2192ce5a9e0410d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Font::Font</definition>
+        <argsstring>()</argsstring>
+        <name>Font</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor defines an empty font. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1ac1bde1f928a9b1b6b875c92d0fbfd108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a54c0359feed0a9b792a353748f6bae66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Font::Font</definition>
+        <argsstring>(const Font &amp;)=delete</argsstring>
+        <name>Font</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a7d5c0e10caf7cc254ec6b441eb8d7acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+        <definition>Font&amp; gf::Font::operator=</definition>
+        <argsstring>(const Font &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Deleted copy assignement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a4eb63bb477ba0fe81a332c96c7d463d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Font::Font</definition>
+        <argsstring>(Font &amp;&amp;other)</argsstring>
+        <name>Font</name>
+        <param>
+          <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1ad3f632b85ce1094e7f09be1ea5e13cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;</type>
+        <definition>Font&amp; gf::Font::operator=</definition>
+        <argsstring>(Font &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_font" kindref="compound">Font</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Font::loadFromFile</definition>
+        <argsstring>(const Path &amp;filename)</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load the font from a file. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported font formats are: TrueType, Type 1, CFF, OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42. Note that this function know nothing about the standard fonts installed on the user&apos;s system, thus you can&apos;t load them directly.</para><para><simplesect kind="warning"><para>gf cannot preload all the font data in this function, so the file has to remain accessible until the <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> object loads a new font or is destroyed.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the font file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_font_1a675e48a8570c4f6c0a0f6bfffee211f3" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_font_1a68c7af74cf22c1ef3152775bced39c0b" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a68c7af74cf22c1ef3152775bced39c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Font::loadFromStream</definition>
+        <argsstring>(InputStream &amp;stream)</argsstring>
+        <name>loadFromStream</name>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Load the font from a custom stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported font formats are: TrueType, Type 1, CFF, OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.</para><para><simplesect kind="warning"><para>gf cannot preload all the font data in this function, so the stream has to remain accessible until the <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> object loads a new font or is destroyed.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_font_1a675e48a8570c4f6c0a0f6bfffee211f3" kindref="member">loadFromMemory()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a675e48a8570c4f6c0a0f6bfffee211f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Font::loadFromMemory</definition>
+        <argsstring>(const uint8_t *data, std::size_t length)</argsstring>
+        <name>loadFromMemory</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Load the font from a file in memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported font formats are: TrueType, Type 1, CFF, OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.</para><para><simplesect kind="warning"><para>gf cannot preload all the font data in this function, so the stream has to remain accessible until the <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> object loads a new font or is destroyed.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the file data in memory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data to load, in bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading succeeded, false if it failed</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_font_1a68c7af74cf22c1ef3152775bced39c0b" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a186516dbdc747416794171727157a610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structgf_1_1_glyph" kindref="compound">Glyph</ref> &amp;</type>
+        <definition>const Glyph&amp; gf::Font::getGlyph</definition>
+        <argsstring>(char32_t codepoint, unsigned characterSize, float outlineThickness=0.0f)</argsstring>
+        <name>getGlyph</name>
+        <param>
+          <type>char32_t</type>
+          <declname>codepoint</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outlineThickness</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+<para>Retrieve a glyph of the font. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the font is a bitmap font, not all character sizes might be available. If the glyph is not available at the requested size, an empty glyph is returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>codepoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unicode code point of the character to get </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference character size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outlineThickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thickness of outline (when != 0 the glyph will not be filled)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding glyph </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a54c35887ca8c87ac43943989c7ab020d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Font::getKerning</definition>
+        <argsstring>(char32_t left, char32_t right, unsigned characterSize)</argsstring>
+        <name>getKerning</name>
+        <param>
+          <type>char32_t</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>char32_t</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+<para>Get the kerning offset of two glyphs. </para>        </briefdescription>
+        <detaileddescription>
+<para>The kerning is an extra offset (negative) to apply between two glyphs when rendering them, to make the pair look more &quot;natural&quot;. For example, the pair &quot;AV&quot; have a special kerning to make them closer than other characters. Most of the glyphs pairs have a kerning offset of zero, though.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unicode code point of the left character </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unicode code point of the right character </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference character size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Kerning value, in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a86e11e6a4635bba5a29fd3e7b4b82610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Font::getLineSpacing</definition>
+        <argsstring>(unsigned characterSize)</argsstring>
+        <name>getLineSpacing</name>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+<para>Get the line spacing. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgf_1_1_line" kindref="compound">Line</ref> spacing is the vertical offset to apply between two consecutive lines of text.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference character size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classgf_1_1_line" kindref="compound">Line</ref> spacing, in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1aba8f1cace3451ca4c329197e4c000ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classgf_1_1_alpha_texture" kindref="compound">AlphaTexture</ref> *</type>
+        <definition>const AlphaTexture* gf::Font::getTexture</definition>
+        <argsstring>(unsigned characterSize)</argsstring>
+        <name>getTexture</name>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the texture containing the loaded glyphs of a certain size. </para>        </briefdescription>
+        <detaileddescription>
+<para>The contents of the returned texture changes as more glyphs are requested, thus it is not very relevant. It is mainly used internally by <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference character size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classgf_1_1_texture" kindref="compound">Texture</ref> containing the glyphs of the requested size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="276" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a20834a8eac5c5256617be3a784b031cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Font::generateTexture</definition>
+        <argsstring>(unsigned characterSize)</argsstring>
+        <name>generateTexture</name>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+<para>Generate the texture for a given character size. </para>        </briefdescription>
+        <detaileddescription>
+<para>After this call, the texture corresponding to the size is available through <computeroutput>getTexture</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>characterSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference character size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="286" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_font_1a1438306f3f3162332250fafc1754ccf2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GlyphCache</type>
+        <definition>GlyphCache gf::Font::createCache</definition>
+        <argsstring>(unsigned characterSize)</argsstring>
+        <name>createCache</name>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1a7c45b74e326bec8b4b9bccdbaa1af752" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgf_1_1_glyph" kindref="compound">Glyph</ref></type>
+        <definition>Glyph gf::Font::createGlyph</definition>
+        <argsstring>(char32_t codepoint, unsigned characterSize, float outlineThickness, GlyphCache &amp;cache)</argsstring>
+        <name>createGlyph</name>
+        <param>
+          <type>char32_t</type>
+          <declname>codepoint</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outlineThickness</declname>
+        </param>
+        <param>
+          <type>GlyphCache &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_font_1ac0dc2b946744e040e736a5aa9dc971a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Font::setCurrentCharacterSize</definition>
+        <argsstring>(unsigned characterSize)</argsstring>
+        <name>setCurrentCharacterSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>characterSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="305" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A character font. </para>    </briefdescription>
+    <detaileddescription>
+<para>Fonts can be loaded from a file, from memory or from a custom stream, and supports the most common types of fonts. See the <computeroutput><ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile()</ref></computeroutput> function for the complete list of supported formats.</para><para>Once it is loaded, a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> instance provides three types of information about the font:</para><para><itemizedlist>
+<listitem><para>Global metrics, such as the line spacing</para></listitem><listitem><para>Per-glyph metrics, such as bounding box or kerning</para></listitem><listitem><para>Pixel representation of glyphs</para></listitem></itemizedlist>
+</para><para>Fonts alone are not very useful: they hold the font data but cannot make anything useful of it. To do so you need to use the <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> class, which is able to properly output text with several options such as character size, style, color, position, rotation, etc.</para><para>This separation allows more flexibility and better performances: indeed a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> is a lightweight object which can combine the glyphs data and metrics of a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> to display any text on a render target.</para><para>Note that it is also possible to bind several <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> instances to the same <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>.</para><para>It is important to note that the <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> instance doesn&apos;t copy the font that it uses, it only keeps a reference to it. Thus, a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> must not be destructed while it is used by a <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> (i.e. never write a function that uses a local <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> instance for creating a text).</para><para>Usage example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Declare<sp/>a<sp/>new<sp/>font</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Load<sp/>it<sp/>from<sp/>a<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;arial.ttf&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>text<sp/>which<sp/>uses<sp/>our<sp/>font</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref><sp/>text1;</highlight></codeline>
+<codeline><highlight class="normal">text1.<ref refid="classgf_1_1_text_1a15a7a23bc26f574b29b11f1ea96867bb" kindref="member">setString</ref>(</highlight><highlight class="stringliteral">&quot;Hello<sp/>World!&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">text1.<ref refid="classgf_1_1_text_1a744ea0ad425deb12a29f9f58a6738f7b" kindref="member">setFont</ref>(font);</highlight></codeline>
+<codeline><highlight class="normal">text1.<ref refid="classgf_1_1_text_1a6672633cb3345b8d0ee61035603710bd" kindref="member">setCharacterSize</ref>(30);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>another<sp/>text<sp/>using<sp/>the<sp/>same<sp/>font,<sp/>but<sp/>with<sp/>different<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref><sp/>text2;</highlight></codeline>
+<codeline><highlight class="normal">text2.<ref refid="classgf_1_1_text_1a15a7a23bc26f574b29b11f1ea96867bb" kindref="member">setString</ref>(</highlight><highlight class="stringliteral">&quot;Goodbye<sp/>world!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">text2.<ref refid="classgf_1_1_text_1a744ea0ad425deb12a29f9f58a6738f7b" kindref="member">setFont</ref>(font);</highlight></codeline>
+<codeline><highlight class="normal">text2.<ref refid="classgf_1_1_text_1a6672633cb3345b8d0ee61035603710bd" kindref="member">setCharacterSize</ref>(50);</highlight></codeline>
+</programlisting></para><para>Apart from loading font files, and passing them to instances of <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>, you should normally not have to deal directly with this class. However, it may be useful to access the font metrics or rasterized glyphs for advanced usage. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" line="130" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Font.h" bodystart="130" bodyend="313"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_font_1a1438306f3f3162332250fafc1754ccf2" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>createCache</name></member>
+      <member refid="classgf_1_1_font_1a7c45b74e326bec8b4b9bccdbaa1af752" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>createGlyph</name></member>
+      <member refid="classgf_1_1_font_1a7b9b4f1dd4a253ad2192ce5a9e0410d1" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>Font</name></member>
+      <member refid="classgf_1_1_font_1a54c0359feed0a9b792a353748f6bae66" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>Font</name></member>
+      <member refid="classgf_1_1_font_1a4eb63bb477ba0fe81a332c96c7d463d3" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>Font</name></member>
+      <member refid="classgf_1_1_font_1a20834a8eac5c5256617be3a784b031cc" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>generateTexture</name></member>
+      <member refid="classgf_1_1_font_1a186516dbdc747416794171727157a610" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>getGlyph</name></member>
+      <member refid="classgf_1_1_font_1a54c35887ca8c87ac43943989c7ab020d" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>getKerning</name></member>
+      <member refid="classgf_1_1_font_1a86e11e6a4635bba5a29fd3e7b4b82610" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>getLineSpacing</name></member>
+      <member refid="classgf_1_1_font_1aba8f1cace3451ca4c329197e4c000ddd" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>getTexture</name></member>
+      <member refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_font_1a675e48a8570c4f6c0a0f6bfffee211f3" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_font_1a68c7af74cf22c1ef3152775bced39c0b" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_font_1aa9f4f7076c168c03c36a08f5c5e0a0e0" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>m_cache</name></member>
+      <member refid="classgf_1_1_font_1abb5751d06f06d8cc78be056cef34e835" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>m_currentCharacterSize</name></member>
+      <member refid="classgf_1_1_font_1aa2c72046ab6ba8b9789b13f1b39dffdb" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>m_face</name></member>
+      <member refid="classgf_1_1_font_1addd8299cf7e0044d30f0990ad6569c59" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>m_library</name></member>
+      <member refid="classgf_1_1_font_1ae309541e5eae4c3c93be79950c280d31" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>m_stroker</name></member>
+      <member refid="classgf_1_1_font_1a7d5c0e10caf7cc254ec6b441eb8d7acc" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_font_1ad3f632b85ce1094e7f09be1ea5e13cb4" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_font_1ac0dc2b946744e040e736a5aa9dc971a1" prot="private" virt="non-virtual"><scope>gf::Font</scope><name>setCurrentCharacterSize</name></member>
+      <member refid="classgf_1_1_font_1ac1bde1f928a9b1b6b875c92d0fbfd108" prot="public" virt="non-virtual"><scope>gf::Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

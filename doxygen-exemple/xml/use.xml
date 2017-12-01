@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="use" kind="page">
+    <compoundname>use</compoundname>
+    <title>Use gf in your project</title>
+    <detaileddescription>
+<sect1 id="use_1use_with_cmake">
+<title>Use gf with CMake</title>
+<para>At build time, gf generates a CMake module that is suitable for other projects. Once installed, it is very easy to import gf as a dependency. Here is a simple <computeroutput>CMakeLists.txt</computeroutput> for a projet that uses gf.</para><para><programlisting><codeline><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.0)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">project(FOOGAME</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>VERSION<sp/>0.1.0</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">find_package(gf<sp/>REQUIRED)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">add_executable(foogame</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>foogame.cc</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#<sp/>and<sp/>the<sp/>rest<sp/>of<sp/>your<sp/>sources</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">target_link_libraries(foogame</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>gf::gf0</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+</programlisting> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

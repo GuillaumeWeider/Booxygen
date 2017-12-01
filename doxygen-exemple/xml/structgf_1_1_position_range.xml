@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_position_range" kind="struct" language="C++" prot="public">
+    <compoundname>gf::PositionRange</compoundname>
+    <includes refid="_range_8h" local="no">gf/Range.h</includes>
+    <innerclass refid="structgf_1_1_position_range_1_1_iterator" prot="public">gf::PositionRange::Iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_position_range_1a8f1a33cd2ff09c2903711d31b5e57d0f" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+        <definition>Range&lt;T&gt; gf::PositionRange&lt; T &gt;::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+<para>The range in the first dimension. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="226" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_position_range_1ada05b8225f84d52a2c466c86596c4299" prot="public" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+        <definition>Range&lt;T&gt; gf::PositionRange&lt; T &gt;::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+<para>The range in the second dimension. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="227" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_position_range_1a9a91dbb22e19e9ac52bece42cb2cfad9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>constexpr Iterator gf::PositionRange&lt; T &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get a begin iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A begin iterator </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_position_range_1a5b8fbf11f3590586f4be9d5961e30c8b" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="316" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="316" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_position_range_1a5b8fbf11f3590586f4be9d5961e30c8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref></type>
+        <definition>constexpr Iterator gf::PositionRange&lt; T &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get a end iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A end iterator </para></simplesect>
+<simplesect kind="see"><para><ref refid="structgf_1_1_position_range_1a9a91dbb22e19e9ac52bece42cb2cfad9" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="326" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="326" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A 2D range. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structgf_1_1_position_range" kindref="compound">gf::PositionRange</ref> represents a range across a 2D area. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" line="225" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Range.h" bodystart="225" bodyend="330"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_position_range_1a9a91dbb22e19e9ac52bece42cb2cfad9" prot="public" virt="non-virtual"><scope>gf::PositionRange</scope><name>begin</name></member>
+      <member refid="structgf_1_1_position_range_1a5b8fbf11f3590586f4be9d5961e30c8b" prot="public" virt="non-virtual"><scope>gf::PositionRange</scope><name>end</name></member>
+      <member refid="structgf_1_1_position_range_1a8f1a33cd2ff09c2903711d31b5e57d0f" prot="public" virt="non-virtual"><scope>gf::PositionRange</scope><name>first</name></member>
+      <member refid="structgf_1_1_position_range_1ada05b8225f84d52a2c466c86596c4299" prot="public" virt="non-virtual"><scope>gf::PositionRange</scope><name>second</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_blend_8h" kind="file" language="C++">
+    <compoundname>Blend.h</compoundname>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includedby refid="_render_states_8h" local="yes">RenderStates.h</includedby>
+    <includedby refid="_console_8h" local="yes">Console.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <incdepgraph>
+      <node id="164">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="163">
+        <label>Blend.h</label>
+        <link refid="_blend_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="185">
+        <label>PostProcessing.h</label>
+        <link refid="_post_processing_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>Grid.h</label>
+        <link refid="_grid_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>NinePatch.h</label>
+        <link refid="_nine_patch_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>SpriteBatch.h</label>
+        <link refid="_sprite_batch_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>Shape.h</label>
+        <link refid="_shape_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>AnimatedSprite.h</label>
+        <link refid="_animated_sprite_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>Shapes.h</label>
+        <link refid="_shapes_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>RenderPipeline.h</label>
+        <link refid="_render_pipeline_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>RenderTarget.h</label>
+        <link refid="_render_target_8h_source"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>EntityContainer.h</label>
+        <link refid="_entity_container_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>RenderTexture.h</label>
+        <link refid="_render_texture_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>RenderStates.h</label>
+        <link refid="_render_states_8h_source"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>Drawable.h</label>
+        <link refid="_drawable_8h_source"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>Particles.h</label>
+        <link refid="_particles_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>Transformable.h</label>
+        <link refid="_transformable_8h_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>Sprite.h</label>
+        <link refid="_sprite_8h_source"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="191">
+        <label>RenderWindow.h</label>
+        <link refid="_render_window_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>BufferedGeometry.h</label>
+        <link refid="_buffered_geometry_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>Logo.h</label>
+        <link refid="_logo_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>Curve.h</label>
+        <link refid="_curve_8h_source"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>UI.h</label>
+        <link refid="_u_i_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>VertexArray.h</label>
+        <link refid="_vertex_array_8h_source"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>Text.h</label>
+        <link refid="_text_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>TileLayer.h</label>
+        <link refid="_tile_layer_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>Curves.h</label>
+        <link refid="_curves_8h_source"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>Blend.h</label>
+        <link refid="_blend_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_blend_mode" prot="public">gf::BlendMode</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Part<sp/>of<sp/>this<sp/>file<sp/>comes<sp/>from<sp/>SFML,<sp/>with<sp/>the<sp/>same<sp/>license:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2007-2015<sp/>Laurent<sp/>Gomila<sp/>(laurent@sfml-dev.org)</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_BLEND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_BLEND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56abb2c356401c2d3c0be676d940cfddaf6" kindref="member">Substract</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aefb0fd0487d043b5ce9a21b5a1f6fe94" kindref="member">ReverseSubstract</ref>,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" kindref="member">Zero</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">One</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea2ad714e29d37896d79187312086bc6fe" kindref="member">SrcColor</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea09d3240b4e2481b1a729da24e9bfddf7" kindref="member">OneMinusSrcColor</ref>,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeafaedf511c99a5461048fd6a3b73da26c" kindref="member">DstColor</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea09f1a054ebd4d3850fd248bd2fa7b325" kindref="member">OneMinusDstColor</ref>,<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead5c7b7f0102df3f7305c43f73fc3a498" kindref="member">SrcAlpha</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeac00a6016489cff63d50d489ce52254cc" kindref="member">OneMinusSrcAlpha</ref>,<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeaf72dbe2436b38a39e5927ed644e6818b" kindref="member">DstAlpha</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea4132e4b87a8d461be2c6ee8fc620cfb2" kindref="member">OneMinusDstAlpha</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structgf_1_1_blend_mode" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">GF_API<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="structgf_1_1_blend_mode_1a4bc1a1879601c03d0f205895ef33a696" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode_1a4bc1a1879601c03d0f205895ef33a696" kindref="member">BlendMode</ref>()</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>colorSrcFactor(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref>::<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">One</ref>)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorDstFactor(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref>::<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" kindref="member">Zero</ref>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorEquation(<ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref>::<ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaSrcFactor(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref>::<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">One</ref>)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaDstFactor(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref>::<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" kindref="member">Zero</ref>)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaEquation(<ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref>::<ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structgf_1_1_blend_mode_1a8ceaa8fc4278cfc9e3dc4acae22a530e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode_1a8ceaa8fc4278cfc9e3dc4acae22a530e" kindref="member">BlendMode</ref>(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>sourceFactor,<sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>destinationFactor,<sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/>equation<sp/>=<sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">BlendEquation::Add</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>colorSrcFactor(sourceFactor)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorDstFactor(destinationFactor)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorEquation(equation)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaSrcFactor(sourceFactor)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaDstFactor(destinationFactor)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaEquation(equation)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="structgf_1_1_blend_mode_1ab0b7bebcc2bfd73350770be026351a98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode_1ab0b7bebcc2bfd73350770be026351a98" kindref="member">BlendMode</ref>(<ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>colorSourceFactor,<sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>colorDestinationFactor,<sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/>colorBlendEquation,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>alphaSourceFactor,<sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/>alphaDestinationFactor,<sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/>alphaBlendEquation)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>colorSrcFactor(colorSourceFactor)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorDstFactor(colorDestinationFactor)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>colorEquation(colorBlendEquation)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaSrcFactor(alphaSourceFactor)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaDstFactor(alphaDestinationFactor)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>alphaEquation(alphaBlendEquation)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="structgf_1_1_blend_mode_1a6e796d5d69899ad4ad60a5d1ceb6aff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/><ref refid="structgf_1_1_blend_mode_1a6e796d5d69899ad4ad60a5d1ceb6aff6" kindref="member">colorSrcFactor</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="structgf_1_1_blend_mode_1a94c21d4f3b4a27bfaf2998a4de53e9c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/><ref refid="structgf_1_1_blend_mode_1a94c21d4f3b4a27bfaf2998a4de53e9c4" kindref="member">colorDstFactor</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195" refid="structgf_1_1_blend_mode_1a8b778f95773a9450c2ad9b55b9fa7d59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/><ref refid="structgf_1_1_blend_mode_1a8b778f95773a9450c2ad9b55b9fa7d59" kindref="member">colorEquation</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="structgf_1_1_blend_mode_1a72014b3a26ebdf610270b440d9ed452b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/><ref refid="structgf_1_1_blend_mode_1a72014b3a26ebdf610270b440d9ed452b" kindref="member">alphaSrcFactor</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197" refid="structgf_1_1_blend_mode_1a9329f38e4450a2c355972d8125b8bc3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga6f830cd8f436b449734223c382ef1aae" kindref="member">BlendFactor</ref><sp/><ref refid="structgf_1_1_blend_mode_1a9329f38e4450a2c355972d8125b8bc3b" kindref="member">alphaDstFactor</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198" refid="structgf_1_1_blend_mode_1a15fe3e46148e6486936d3543782c20cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1ga22db82123b6cf1980987d7e3ca298f56" kindref="member">BlendEquation</ref><sp/><ref refid="structgf_1_1_blend_mode_1a15fe3e46148e6486936d3543782c20cd" kindref="member">alphaEquation</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/><ref refid="group__graphics_1ga1fa131411a6a7f3bf3827e46fecc316f" kindref="member">BlendAlpha</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>=<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref>(</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead5c7b7f0102df3f7305c43f73fc3a498" kindref="member">BlendFactor::SrcAlpha</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeac00a6016489cff63d50d489ce52254cc" kindref="member">BlendFactor::OneMinusSrcAlpha</ref>,<sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">BlendEquation::Add</ref>,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">BlendFactor::One</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeac00a6016489cff63d50d489ce52254cc" kindref="member">BlendFactor::OneMinusSrcAlpha</ref>,<sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">BlendEquation::Add</ref></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="group__graphics_1ga1fa131411a6a7f3bf3827e46fecc316f" refkind="member"><highlight class="normal"><sp/><sp/>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/><ref refid="group__graphics_1ga5c5641126a6f83a8724a1bd63cc669c5" kindref="member">BlendAdd</ref></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>=<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref>(</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead5c7b7f0102df3f7305c43f73fc3a498" kindref="member">BlendFactor::SrcAlpha</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">BlendFactor::One</ref>,<sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">BlendEquation::Add</ref>,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">BlendFactor::One</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">BlendFactor::One</ref>,<sp/><ref refid="group__graphics_1gga22db82123b6cf1980987d7e3ca298f56aec211f7c20af43e742bf2570c3cb84f9" kindref="member">BlendEquation::Add</ref></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="group__graphics_1ga5c5641126a6f83a8724a1bd63cc669c5" refkind="member"><highlight class="normal"><sp/><sp/>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/><ref refid="group__graphics_1ga5c274a128bf38122d38bf3c05ac89c7f" kindref="member">BlendMultiply</ref></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>=<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/>(<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaeafaedf511c99a5461048fd6a3b73da26c" kindref="member">BlendFactor::DstColor</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" kindref="member">BlendFactor::Zero</ref>)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="group__graphics_1ga5c274a128bf38122d38bf3c05ac89c7f" refkind="member"><highlight class="normal"><sp/><sp/>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref><sp/><ref refid="group__graphics_1ga278e0a0da765e621f5f9077372add90b" kindref="member">BlendNone</ref></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>=<sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref>(<ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaea06c2cea18679d64399783748fa367bdd" kindref="member">BlendFactor::One</ref>,<sp/><ref refid="group__graphics_1gga6f830cd8f436b449734223c382ef1aaead7ed4ee1df437474d005188535f74875" kindref="member">BlendFactor::Zero</ref>)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="group__graphics_1ga278e0a0da765e621f5f9077372add90b" refkind="member"><highlight class="normal"><sp/><sp/>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structgf_1_1_blend_mode_1a48e373e0f882c3bd3dc4033baae9cf3c" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_blend_mode_1a48e373e0f882c3bd3dc4033baae9cf3c" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_blend_mode" kindref="compound">BlendMode</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a6e796d5d69899ad4ad60a5d1ceb6aff6" kindref="member">colorSrcFactor</ref><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a6e796d5d69899ad4ad60a5d1ceb6aff6" kindref="member">colorSrcFactor</ref></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a94c21d4f3b4a27bfaf2998a4de53e9c4" kindref="member">colorDstFactor</ref><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a94c21d4f3b4a27bfaf2998a4de53e9c4" kindref="member">colorDstFactor</ref></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a8b778f95773a9450c2ad9b55b9fa7d59" kindref="member">colorEquation</ref><sp/><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a8b778f95773a9450c2ad9b55b9fa7d59" kindref="member">colorEquation</ref></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a72014b3a26ebdf610270b440d9ed452b" kindref="member">alphaSrcFactor</ref><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a72014b3a26ebdf610270b440d9ed452b" kindref="member">alphaSrcFactor</ref></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a9329f38e4450a2c355972d8125b8bc3b" kindref="member">alphaDstFactor</ref><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a9329f38e4450a2c355972d8125b8bc3b" kindref="member">alphaDstFactor</ref></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="structgf_1_1_blend_mode_1a15fe3e46148e6486936d3543782c20cd" kindref="member">alphaEquation</ref><sp/><sp/>==<sp/>rhs.<ref refid="structgf_1_1_blend_mode_1a15fe3e46148e6486936d3543782c20cd" kindref="member">alphaEquation</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_BLEND_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Blend.h"/>
+  </compounddef>
+</doxygen>

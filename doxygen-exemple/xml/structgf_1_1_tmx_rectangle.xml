@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_rectangle" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxRectangle</compoundname>
+    <basecompoundref refid="structgf_1_1_tmx_object" prot="public" virt="non-virtual">gf::TmxObject</basecompoundref>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_rectangle_1a372240ce54f3cf6a285b86b8ba202036" prot="public" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::TmxRectangle::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The size of the rectangle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="394" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A rectangle object. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="926">
+        <label>gf::TmxRectangle</label>
+        <link refid="structgf_1_1_tmx_rectangle"/>
+        <childnode refid="927" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="927">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="928">
+        <label>gf::TmxRectangle</label>
+        <link refid="structgf_1_1_tmx_rectangle"/>
+        <childnode refid="929" relation="public-inheritance">
+        </childnode>
+        <childnode refid="930" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="932">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="929">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+        <childnode refid="930" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="931" relation="usage">
+          <edgelabel>type</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="933" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="933">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="930">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="931">
+        <label>std::string</label>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="393" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="393" bodyend="395"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a57e97a32a5fd8a5ed53b27335b51e401" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Ellipse</name></member>
+      <member refid="structgf_1_1_tmx_object_1a77819e6cdbda911f028b3671011ce9a3" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>id</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1af2d23b1185e47142226972045994315f" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>kind</name></member>
+      <member refid="structgf_1_1_tmx_object_1ab4bf14ca4004b953b9e9e11e3493eb59" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>name</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168add2828e016dcee09dbdd3cc018c2a70d" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Polygon</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a2ab19cd59ad53327f8d5d7975d774783" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Polyline</name></member>
+      <member refid="structgf_1_1_tmx_object_1a559942ef79105749b0f3de149931df08" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>position</name></member>
+      <member refid="structgf_1_1_tmx_object_1ad533c3e4bdd90574920db1d00e35ea9d" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a01469baa84de6f6b21d39bf8e3799cdd" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Rectangle</name></member>
+      <member refid="structgf_1_1_tmx_object_1a360e63ca427b9553eab107c108ab5d40" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>rotation</name></member>
+      <member refid="structgf_1_1_tmx_rectangle_1a372240ce54f3cf6a285b86b8ba202036" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>size</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a7d369c38d593a38d1a5f42253e8a9149" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Text</name></member>
+      <member refid="structgf_1_1_tmx_object_1a8a9aec94eb74cd045aa7716df6729168a407201fbe7915218a90b03afe7ef8cc8" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>Tile</name></member>
+      <member refid="structgf_1_1_tmx_object_1aa84fe4ca99482976e846fe4d6a7104aa" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>type</name></member>
+      <member refid="structgf_1_1_tmx_object_1a06ba9659e6f01caf9a46e0289202039c" prot="public" virt="non-virtual"><scope>gf::TmxRectangle</scope><name>visible</name></member>
+      <member refid="structgf_1_1_tmx_object_1aeb01bda0b2b4c991084aaf7a38f9a05c" prot="public" virt="virtual"><scope>gf::TmxRectangle</scope><name>~TmxObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

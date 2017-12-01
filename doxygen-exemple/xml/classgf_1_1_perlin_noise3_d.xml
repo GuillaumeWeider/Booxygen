@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_perlin_noise3_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::PerlinNoise3D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise3_d" prot="public" virt="non-virtual">gf::Noise3D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_perlin_noise3_d_1a7d9fd1f2e12ded911d80d77a78a8623c" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_gradient_noise3_d" kindref="compound">GradientNoise3D</ref></type>
+        <definition>GradientNoise3D gf::PerlinNoise3D::m_gradient</definition>
+        <argsstring></argsstring>
+        <name>m_gradient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="279" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_perlin_noise3_d_1aca9e0eadecceb21ebb5d72284c3b870a" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_fractal_noise3_d" kindref="compound">FractalNoise3D</ref></type>
+        <definition>FractalNoise3D gf::PerlinNoise3D::m_fractal</definition>
+        <argsstring></argsstring>
+        <name>m_fractal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="280" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_perlin_noise3_d_1a775f2928c19e1f2852b89b8ad25e9693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::PerlinNoise3D::PerlinNoise3D</definition>
+        <argsstring>(Random &amp;random, double scale, std::size_t octaves=8)</argsstring>
+        <name>PerlinNoise3D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>octaves</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>octaves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of octaves </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_perlin_noise3_d_1abac860f0e8c09854797999a2c3605b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::PerlinNoise3D::getValue</definition>
+        <argsstring>(double x, double y, double z) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="276" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Perlin 3D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Perlin_noise">Perlin noise</ulink> is the combination of a fractal noise and a gradient noise.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_gradient_noise3_d" kindref="compound">gf::GradientNoise3D</ref>, <ref refid="classgf_1_1_fractal_noise3_d" kindref="compound">gf::FractalNoise3D</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="555">
+        <label>gf::PerlinNoise3D</label>
+        <link refid="classgf_1_1_perlin_noise3_d"/>
+        <childnode refid="556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="557">
+        <label>gf::PerlinNoise3D</label>
+        <link refid="classgf_1_1_perlin_noise3_d"/>
+        <childnode refid="558" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="265" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="265" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_perlin_noise3_d_1abac860f0e8c09854797999a2c3605b21" prot="public" virt="virtual"><scope>gf::PerlinNoise3D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_perlin_noise3_d_1aca9e0eadecceb21ebb5d72284c3b870a" prot="private" virt="non-virtual"><scope>gf::PerlinNoise3D</scope><name>m_fractal</name></member>
+      <member refid="classgf_1_1_perlin_noise3_d_1a7d9fd1f2e12ded911d80d77a78a8623c" prot="private" virt="non-virtual"><scope>gf::PerlinNoise3D</scope><name>m_gradient</name></member>
+      <member refid="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" virt="non-virtual"><scope>gf::PerlinNoise3D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_perlin_noise3_d_1a775f2928c19e1f2852b89b8ad25e9693" prot="public" virt="non-virtual"><scope>gf::PerlinNoise3D</scope><name>PerlinNoise3D</name></member>
+      <member refid="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" virt="virtual"><scope>gf::PerlinNoise3D</scope><name>~Noise3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

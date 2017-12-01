@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_array_ref" kind="class" language="C++" prot="public">
+    <compoundname>gf::ArrayRef</compoundname>
+    <includes refid="_array_ref_8h" local="no">gf/ArrayRef.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_array_ref_1ace40473de7abcdbfb32481e652b6b41c" prot="private" static="no" mutable="no">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::ArrayRef&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="186" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_array_ref_1a11ec358f985e9abc9f62de553fc627a4" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::ArrayRef&lt; T &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="187" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a0a21d43b73fdac599a8501522fe3e042" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>()</argsstring>
+        <name>ArrayRef</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="49" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a5f8263c937039f99208e0f64b8a127c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+<para>Null constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data is <computeroutput>nullptr</computeroutput> and size is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="61" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a745f656cdcfe70b63d6337c5277c39a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(const T *data, std::size_t size)</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a pointer and a size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the elements in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of elements in the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="74" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1af14348a6ad9b334c34495f91d9fcb33c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;values)</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a <computeroutput>std::vector</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector of elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1ab35039983cff613e7437269df312a7b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(const std::array&lt; T, N &gt; &amp;values)</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>const std::array&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>, <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a8d9c307cb7f3c4a32822a51922d1ceaa" kindref="member">N</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from a <computeroutput>std::array</computeroutput> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="99" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1aca9f26846a0ea87efecd73250cf74ccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(const T(&amp;data)[N])</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref>(&amp;)</type>
+          <declname>data</declname>
+          <array>[N]</array>
+        </param>
+        <briefdescription>
+<para>Constructor from a static array. </para>        </briefdescription>
+        <detaileddescription>
+<para>The size is computed at compile-time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The static array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="114" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="114" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a38d5f85b7670197d669a775f3b512f4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::ArrayRef&lt; T &gt;::ArrayRef</definition>
+        <argsstring>(std::initializer_list&lt; T &gt; values)</argsstring>
+        <name>ArrayRef</name>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from an initializer list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of elements </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a4ba54d963db4e76efac1b1b6dfb6bfa1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>constexpr const T* gf::ArrayRef&lt; T &gt;::getData</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get a pointer to the elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first element in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="138" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a05bce7885fcccdd2b95d21a050083ac4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t gf::ArrayRef&lt; T &gt;::getSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the number of elements. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of elements in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="147" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a536d4421004bed111b17be0c496f73d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>constexpr const T* gf::ArrayRef&lt; T &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first element. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the first element</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array_ref_1a288a5dc4ba628ccb853f17c25850339b" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="158" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a288a5dc4ba628ccb853f17c25850339b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>constexpr const T* gf::ArrayRef&lt; T &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator past the last element. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer past the last element</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array_ref_1a536d4421004bed111b17be0c496f73d5" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="169" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array_ref_1a83ba809c3f473955de8612c11f08c452" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>constexpr const T&amp; gf::ArrayRef&lt; T &gt;::operator[]</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get an element at a given index. </para>        </briefdescription>
+        <detaileddescription>
+<para>No verification is done on the index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element at the given index </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="181" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="181" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A constant reference to an array and its size. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class stores a pointer to some data and its size. It can be built from various inputs: <computeroutput>std::vector</computeroutput>, static array, pointer and size.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_buffer_ref" kindref="compound">gf::BufferRef</ref>, <ref refid="classgf_1_1_string_ref" kindref="compound">gf::StringRef</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" line="42" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ArrayRef.h" bodystart="42" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_array_ref_1a0a21d43b73fdac599a8501522fe3e042" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1a5f8263c937039f99208e0f64b8a127c0" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1a745f656cdcfe70b63d6337c5277c39a8" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1af14348a6ad9b334c34495f91d9fcb33c" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1ab35039983cff613e7437269df312a7b1" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1aca9f26846a0ea87efecd73250cf74ccb" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1a38d5f85b7670197d669a775f3b512f4a" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>ArrayRef</name></member>
+      <member refid="classgf_1_1_array_ref_1a536d4421004bed111b17be0c496f73d5" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>begin</name></member>
+      <member refid="classgf_1_1_array_ref_1a288a5dc4ba628ccb853f17c25850339b" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>end</name></member>
+      <member refid="classgf_1_1_array_ref_1a4ba54d963db4e76efac1b1b6dfb6bfa1" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>getData</name></member>
+      <member refid="classgf_1_1_array_ref_1a05bce7885fcccdd2b95d21a050083ac4" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_array_ref_1ace40473de7abcdbfb32481e652b6b41c" prot="private" virt="non-virtual"><scope>gf::ArrayRef</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_array_ref_1a11ec358f985e9abc9f62de553fc627a4" prot="private" virt="non-virtual"><scope>gf::ArrayRef</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_array_ref_1a83ba809c3f473955de8612c11f08c452" prot="public" virt="non-virtual"><scope>gf::ArrayRef</scope><name>operator[]</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

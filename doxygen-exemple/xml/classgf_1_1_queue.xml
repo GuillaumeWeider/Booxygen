@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_queue" kind="class" language="C++" prot="public">
+    <compoundname>gf::Queue</compoundname>
+    <includes refid="_queue_8h" local="no">gf/Queue.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_queue_1afa9c4f3cbc8f41946c99025e64696b45" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex gf::Queue&lt; T &gt;::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="83" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_queue_1a9fadd88ce6b81cb28a38f9523f50bf1d" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+        <definition>std::deque&lt;T&gt; gf::Queue&lt; T &gt;::m_queue</definition>
+        <argsstring></argsstring>
+        <name>m_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="84" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_queue_1a903561ebf611e0d556315999569e6f89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Queue&lt; T &gt;::poll</definition>
+        <argsstring>(T &amp;value)</argsstring>
+        <name>poll</name>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Poll a value from the queue, if possible. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference for the result </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a value was poped from the queue </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="52" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="52" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_queue_1a6e868058e9ac5db97e89fb625a9b87dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Queue&lt; T &gt;::push</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>push</name>
+        <param>
+          <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Push a value on the queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to push on the queue </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="69" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_queue_1a24be99879f6ecad83affa999730e72d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Queue&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear the queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="77" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A simple concurrent queue. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is a simple concurrent queue that can be used in a multi-threaded application. For example, it can be used between a thread that receives messages from the network and the main loop that handles the messages. </para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Queue.h" bodystart="44" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_queue_1a24be99879f6ecad83affa999730e72d5" prot="public" virt="non-virtual"><scope>gf::Queue</scope><name>clear</name></member>
+      <member refid="classgf_1_1_queue_1afa9c4f3cbc8f41946c99025e64696b45" prot="private" virt="non-virtual"><scope>gf::Queue</scope><name>m_mutex</name></member>
+      <member refid="classgf_1_1_queue_1a9fadd88ce6b81cb28a38f9523f50bf1d" prot="private" virt="non-virtual"><scope>gf::Queue</scope><name>m_queue</name></member>
+      <member refid="classgf_1_1_queue_1a903561ebf611e0d556315999569e6f89" prot="public" virt="non-virtual"><scope>gf::Queue</scope><name>poll</name></member>
+      <member refid="classgf_1_1_queue_1a6e868058e9ac5db97e89fb625a9b87dd" prot="public" virt="non-virtual"><scope>gf::Queue</scope><name>push</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

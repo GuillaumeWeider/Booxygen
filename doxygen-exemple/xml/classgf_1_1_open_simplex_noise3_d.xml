@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_open_simplex_noise3_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::OpenSimplexNoise3D</compoundname>
+    <basecompoundref refid="classgf_1_1_noise3_d" prot="public" virt="non-virtual">gf::Noise3D</basecompoundref>
+    <includes refid="_noises_8h" local="no">gf/Noises.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_open_simplex_noise3_d_1a84a61d1924d453f92ecd87e1dd5ae01a" prot="private" static="no" mutable="no">
+        <type>std::array&lt; uint8_t, 256 &gt;</type>
+        <definition>std::array&lt;uint8_t, 256&gt; gf::OpenSimplexNoise3D::m_perm</definition>
+        <argsstring></argsstring>
+        <name>m_perm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="361" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_open_simplex_noise3_d_1a8b902790ad9cec8fe0cba6a0e557d496" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::OpenSimplexNoise3D::OpenSimplexNoise3D</definition>
+        <argsstring>(Random &amp;random)</argsstring>
+        <name>OpenSimplexNoise3D</name>
+        <param>
+          <type><ref refid="classgf_1_1_random" kindref="compound">Random</ref> &amp;</type>
+          <declname>random</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>random</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A random engine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_open_simplex_noise3_d_1a19fa005a2687947254e62faa49a38040" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double gf::OpenSimplexNoise3D::getValue</definition>
+        <argsstring>(double x, double y, double z) override</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classgf_1_1_noise3_d_1a7d0cb75f5b0291320736b7b47d9ba07f">getValue</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Take a 3D noise value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate of the noise value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The noise value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="358" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_open_simplex_noise3_d_1ab6b62ba2bb7b2cf493a7f12fa09791cb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1gaebefd2196203ab24f579f910ca253570" kindref="member">Vector3d</ref> &amp;</type>
+        <definition>const Vector3d&amp; gf::OpenSimplexNoise3D::at</definition>
+        <argsstring>(uint8_t i, uint8_t j, uint8_t k) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="363" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OpenSimplex3D noise. </para>    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://en.wikipedia.org/wiki/OpenSimplex_noise">OpenSimplex noise</ulink> is a lattice noise very similar to simplex noise.</para><para><simplesect kind="see"><para>gf::SimplexNoise </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="531">
+        <label>gf::OpenSimplexNoise3D</label>
+        <link refid="classgf_1_1_open_simplex_noise3_d"/>
+        <childnode refid="532" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="533">
+        <label>gf::OpenSimplexNoise3D</label>
+        <link refid="classgf_1_1_open_simplex_noise3_d"/>
+        <childnode refid="534" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>gf::Noise3D</label>
+        <link refid="classgf_1_1_noise3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" line="349" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Noises.h" bodystart="349" bodyend="364"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_open_simplex_noise3_d_1ab6b62ba2bb7b2cf493a7f12fa09791cb" prot="private" virt="non-virtual"><scope>gf::OpenSimplexNoise3D</scope><name>at</name></member>
+      <member refid="classgf_1_1_open_simplex_noise3_d_1a19fa005a2687947254e62faa49a38040" prot="public" virt="virtual"><scope>gf::OpenSimplexNoise3D</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_open_simplex_noise3_d_1a84a61d1924d453f92ecd87e1dd5ae01a" prot="private" virt="non-virtual"><scope>gf::OpenSimplexNoise3D</scope><name>m_perm</name></member>
+      <member refid="classgf_1_1_open_simplex_noise3_d_1a8b902790ad9cec8fe0cba6a0e557d496" prot="public" virt="non-virtual"><scope>gf::OpenSimplexNoise3D</scope><name>OpenSimplexNoise3D</name></member>
+      <member refid="classgf_1_1_noise3_d_1a81fd7ddb9c456ef2325a3703a9116827" prot="public" virt="non-virtual"><scope>gf::OpenSimplexNoise3D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_noise3_d_1a897756696eb9a89cc40653b45ab26da0" prot="public" virt="virtual"><scope>gf::OpenSimplexNoise3D</scope><name>~Noise3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_color_ramp" kind="struct" language="C++" prot="public">
+    <compoundname>gf::ColorRamp</compoundname>
+    <includes refid="_color_ramp_8h" local="no">gf/ColorRamp.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structgf_1_1_color_ramp_1ac6964d20d6c26c33871698ffaee7dff1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::ColorRamp::m_min</definition>
+        <argsstring></argsstring>
+        <name>m_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="74" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_color_ramp_1aa50caa38ac8509acb6d05aff57872186" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::ColorRamp::m_max</definition>
+        <argsstring></argsstring>
+        <name>m_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_color_ramp_1af76a2ee0bd1546af2e52c4d79f7049dc" prot="private" static="no" mutable="no">
+        <type>std::map&lt; float, <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &gt;</type>
+        <definition>std::map&lt;float, Color4f&gt; gf::ColorRamp::m_map</definition>
+        <argsstring></argsstring>
+        <name>m_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="76" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_color_ramp_1aea9cce0100608e9d064b5240188b7b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ColorRamp::ColorRamp</definition>
+        <argsstring>()</argsstring>
+        <name>ColorRamp</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>The color ramp is empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_color_ramp_1a08d093d6270c4e2625a58da3fcf39ee4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::ColorRamp::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the color ramp is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the ramp is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_color_ramp_1ade88b295490b663d49aa311639fcb97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ColorRamp::addColorStop</definition>
+        <argsstring>(float offset, const Color4f &amp;color)</argsstring>
+        <name>addColorStop</name>
+        <param>
+          <type>float</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Add a color stop. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the color </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structgf_1_1_color_ramp_1a64e35585ec21bde73275e38921a2c9d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::ColorRamp::computeColor</definition>
+        <argsstring>(float offset) const</argsstring>
+        <name>computeColor</name>
+        <param>
+          <type>float</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Compute a color from an offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the wanted color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A color </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A color ramp. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">gf::Color4f</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" line="41" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ColorRamp.h" bodystart="41" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_color_ramp_1ade88b295490b663d49aa311639fcb97e" prot="public" virt="non-virtual"><scope>gf::ColorRamp</scope><name>addColorStop</name></member>
+      <member refid="structgf_1_1_color_ramp_1aea9cce0100608e9d064b5240188b7b36" prot="public" virt="non-virtual"><scope>gf::ColorRamp</scope><name>ColorRamp</name></member>
+      <member refid="structgf_1_1_color_ramp_1a64e35585ec21bde73275e38921a2c9d2" prot="public" virt="non-virtual"><scope>gf::ColorRamp</scope><name>computeColor</name></member>
+      <member refid="structgf_1_1_color_ramp_1a08d093d6270c4e2625a58da3fcf39ee4" prot="public" virt="non-virtual"><scope>gf::ColorRamp</scope><name>isEmpty</name></member>
+      <member refid="structgf_1_1_color_ramp_1af76a2ee0bd1546af2e52c4d79f7049dc" prot="private" virt="non-virtual"><scope>gf::ColorRamp</scope><name>m_map</name></member>
+      <member refid="structgf_1_1_color_ramp_1aa50caa38ac8509acb6d05aff57872186" prot="private" virt="non-virtual"><scope>gf::ColorRamp</scope><name>m_max</name></member>
+      <member refid="structgf_1_1_color_ramp_1ac6964d20d6c26c33871698ffaee7dff1" prot="private" virt="non-virtual"><scope>gf::ColorRamp</scope><name>m_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

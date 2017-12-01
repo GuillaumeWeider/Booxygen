@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="messages" kind="page">
+    <compoundname>messages</compoundname>
+    <title>Game messages</title>
+    <detaileddescription>
+<sect1 id="messages_1messages_intro">
+<title>Introduction</title>
+<para>In any game, you need to pass data around multiple parts of the code. The first choice is to make direct function calls. The main drawback of this approach is the tight <ulink url="https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">coupling</ulink> between the caller and the callee. The second choice is to use the <ulink url="https://en.wikipedia.org/wiki/Observer_pattern">observer pattern</ulink>.</para><para>The purpose of <ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref> is to provide a class that implements the observer pattern.</para></sect1>
+<sect1 id="messages_1messages_howto">
+<title>How to define and use messages?</title>
+<para>In this section, we will see how to defined and use messages in your game.</para><sect2 id="messages_1messages_definition">
+<title>Defining a message</title>
+<para>A message is just a structure with your own fields. In gf, a message must derive from <ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref> and define a static unique type.</para><para><programlisting><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf_1_1literals" kindref="compound">gf::literals</ref>;<sp/></highlight><highlight class="comment">//<sp/>necessary<sp/>to<sp/>use<sp/>_id</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HeroPosition<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;HeroPosition&quot;</highlight><highlight class="normal">_id;<sp/></highlight><highlight class="comment">//<sp/>compile-time<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>position;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> This piece of code defines a message <computeroutput>HeroPosition</computeroutput> with a single field: <computeroutput>position</computeroutput>. The type of the message is <computeroutput>&quot;HeroPosition&quot;_id</computeroutput> that is transformed at compile time in an integer of type <computeroutput><ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref></computeroutput>.</para></sect2>
+<sect2 id="messages_1messages_send">
+<title>Sending a message</title>
+<para>To send a message, you need a <ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref>. Here, we suppose we have a global variable called <computeroutput>messageManager</computeroutput> of this type (see also <ref refid="singletons" kindref="compound">Safe singletons</ref>).</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref><sp/>messageManager;</highlight></codeline>
+</programlisting> Then, you only have to call <ref refid="classgf_1_1_message_manager_1ae054f2357236f7ef863607a21c971d5f" kindref="member">gf::MessageManager::sendMessage()</ref> with an instance of your message.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Hero<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compute<sp/>new<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_position<sp/>=<sp/>computeNewPosition(m_position,<sp/>dt);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>broadcast<sp/>the<sp/>new<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>HeroPosition<sp/>message;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>message.position<sp/>=<sp/>m_position;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>messageManager.<ref refid="classgf_1_1_message_manager_1ae054f2357236f7ef863607a21c971d5f" kindref="member">sendMessage</ref>(&amp;message);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_position;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para></sect2>
+<sect2 id="messages_1messages_recv">
+<title>Receiving a message</title>
+<para>To receive a message, you have to register a message handler in the message manager. A message handler is a function that will be called when a message of a given type is sent. This function can be a free function, or a member function. <ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref> provides a shortcut for this last (very comon) case.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Enemy<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Enemy()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>register<sp/>an<sp/>handler:<sp/>the<sp/>onHeroPosition<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>messageManager.<ref refid="classgf_1_1_message_manager_1a48d349a6546e304542dab9a4d73e184b" kindref="member">registerHandler</ref>&lt;HeroPosition&gt;(&amp;Enemy::onHeroPosition,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref><sp/>onHeroPosition(<ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verify<sp/>that<sp/>we<sp/>have<sp/>the<sp/>right<sp/>message<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>HeroPosition::type);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ga2c8cc7f2cd8231712c90a788692cec61" kindref="member">gf::unused</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>we<sp/>do<sp/>not<sp/>use<sp/>id<sp/>after<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>can<sp/>now<sp/>safely<sp/>cast<sp/>the<sp/>message...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>heroPosition<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">HeroPosition*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>use<sp/>its<sp/>data<sp/>to<sp/>update<sp/>the<sp/>ennemy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_target<sp/>=<sp/>heroPosition-&gt;position;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>keep<sp/>this<sp/>handler<sp/>for<sp/>future<sp/>messages</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" kindref="member">gf::MessageStatus::Keep</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_vector" kindref="compound">gf::Vector2f</ref><sp/>m_target;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para></sect2>
+</sect1>
+<sect1 id="messages_1messages_more">
+<title>More about gf::MessageManager</title>
+<sect2 id="messages_1messages_sync">
+<title>Synchronous delivery</title>
+<para><ref refid="classgf_1_1_message_manager" kindref="compound">gf::MessageManager</ref> passes messages <emphasis>synchronously</emphasis>. This means that the message is sent immediately to handlers. An advantage is that there is no need for an allocation, the message can be put on the stack. A drawback is that care must be taken to avoid message loops. If handlers do not send messages, then the drawback disappears.</para></sect2>
+<sect2 id="messages_1messages_remove_handlers">
+<title>Removing handlers</title>
+<para>Each message handler receives an handler id when it is registered. This handler id can then be used to remove the handler directly through the <ref refid="classgf_1_1_message_manager_1a87f720ae15a83e95007d03f8880abfcf" kindref="member">gf::MessageManager::removeHandler()</ref> method.</para><para>The other method to remove a handler is to return <ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a952f8d52fbca6da722e72d520acd6edd" kindref="member">gf::MessageStatus::Die</ref> at the end of the handler.</para><para>A common error is to register an handler as a method of an object and to delete this object without removing the handler. As a consequence, the message manager will try to call the handler and that will result in an error as the object does not exist anymore. This type of error can be very hard to find because the effect of the error is often indirect.</para><para>A good way to prevent this type of error for short life objects is to keep the handler ids and to remove the handlers in the destructor of the class.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">ShortLife<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ShortLife()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_onFoo<sp/>=<sp/>messageManager.<ref refid="classgf_1_1_message_manager_1a48d349a6546e304542dab9a4d73e184b" kindref="member">registerHandler</ref>&lt;Foo&gt;(&amp;ShortLife::onFoo,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>register<sp/>the<sp/>same<sp/>function<sp/>for<sp/>two<sp/>message<sp/>types:<sp/>that<sp/>makes<sp/>two<sp/>different<sp/>handlers</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_onBar<sp/>=<sp/>messageManager.<ref refid="classgf_1_1_message_manager_1a48d349a6546e304542dab9a4d73e184b" kindref="member">registerHandler</ref>&lt;Bar&gt;(&amp;ShortLife::onBarOrBaz,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>m_onBaz<sp/>=<sp/>messageManager.<ref refid="classgf_1_1_message_manager_1a48d349a6546e304542dab9a4d73e184b" kindref="member">registerHandler</ref>&lt;Baz&gt;(&amp;ShortLife::onBarOrBaz,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>~ShortLife()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>messageManager.<ref refid="classgf_1_1_message_manager_1af15bb3fab26df9b0abd005e40d96626c" kindref="member">removeHandlers</ref>({<sp/>m_onFoo,<sp/>m_onBar,<sp/>m_onBaz<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref><sp/>onFoo(<ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>useful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>doSomethingUsefulWith(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" kindref="member">gf::MessageStatus::Keep</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__game_1ga3aa6a8e716c96465950e5a16aa3cc7e0" kindref="member">gf::MessageStatus</ref><sp/>onBarOrBaz(<ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>useful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>doSomethingUsefulWith(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__game_1gga3aa6a8e716c96465950e5a16aa3cc7e0a02bce93bff905887ad2233110bf9c49e" kindref="member">gf::MessageStatus::Keep</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__game_1ga6c620c63dd07ac6064f87f0ddafd1e87" kindref="member">gf::MessageHandlerId</ref><sp/>m_onFoo,<sp/>m_onBar,<sp/>m_onBaz;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

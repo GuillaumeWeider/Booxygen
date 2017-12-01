@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_transformable" kind="class" language="C++" prot="public">
+    <compoundname>gf::Transformable</compoundname>
+    <basecompoundref refid="classgf_1_1_drawable" prot="public" virt="non-virtual">gf::Drawable</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_buffered_geometry" prot="public" virt="non-virtual">gf::BufferedGeometry</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_console" prot="public" virt="non-virtual">gf::Console</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_curve" prot="public" virt="non-virtual">gf::Curve</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_logo" prot="public" virt="non-virtual">gf::Logo</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_nine_patch" prot="public" virt="non-virtual">gf::NinePatch</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_point_particles" prot="public" virt="non-virtual">gf::PointParticles</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_shape" prot="public" virt="non-virtual">gf::Shape</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_shape_particles" prot="public" virt="non-virtual">gf::ShapeParticles</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_sprite" prot="public" virt="non-virtual">gf::Sprite</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_sprite_particles" prot="public" virt="non-virtual">gf::SpriteParticles</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_square_grid" prot="public" virt="non-virtual">gf::SquareGrid</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_text" prot="public" virt="non-virtual">gf::Text</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_tile_layer" prot="public" virt="non-virtual">gf::TileLayer</derivedcompoundref>
+    <includes refid="_transformable_8h" local="no">gf/Transformable.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_transformable_1a9628e7582d5cf84aa36d49e1082cf2c0" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::m_origin</definition>
+        <argsstring></argsstring>
+        <name>m_origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="339" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_transformable_1abcb38a8033f43d78b7ebb55f80e4b07d" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="340" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_transformable_1aaf6cf44f30d6fe5c16e9e5e5b4fc6d06" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Transformable::m_rotation</definition>
+        <argsstring></argsstring>
+        <name>m_rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="341" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_transformable_1a4ac408d2a09d6c632c5a384c5129a11f" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::m_scale</definition>
+        <argsstring></argsstring>
+        <name>m_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="342" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Transformable::Transformable</definition>
+        <argsstring>()</argsstring>
+        <name>Transformable</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default:</para><para><itemizedlist>
+<listitem><para>the origin is set to <formula id="75">$(0,0)$</formula></para></listitem><listitem><para>the position is set to <formula id="75">$(0,0)$</formula></para></listitem><listitem><para>the rotation is set to <formula id="3">$ 0 $</formula></para></listitem><listitem><para>the scale is set to <formula id="76">$(1,1)$</formula> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setOrigin</definition>
+        <argsstring>(Vector2f origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Set the local origin of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation).</para><para>The default origin of a transformable object is <formula id="89">$(0, 0)$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New origin</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" kindref="member">getOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::getOrigin</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrigin</name>
+        <briefdescription>
+<para>Get the local origin of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current origin</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">setOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="133" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="133" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setPosition</definition>
+        <argsstring>(Vector2f position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set the position of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function completely overwrites the previous position. See the <ref refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" kindref="member">move()</ref> function to apply an offset based on the previous position instead.</para><para>The default position of a transformable object is <formula id="89">$(0, 0)$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New position</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" kindref="member">move()</ref>, <ref refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" kindref="member">getPosition()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>Get the position of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current position</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="159" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::move</definition>
+        <argsstring>(Vector2f offset)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Move the object by a given offset. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function adds to the current position of the object, unlike <ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition()</ref> which overwrites it. Thus, it is equivalent to the following code:</para><para><programlisting><codeline><highlight class="keywordtype">object</highlight><highlight class="normal">.setPosition(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.<ref refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" kindref="member">getPosition</ref>()<sp/>+<sp/>offset);</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" kindref="member">setPosition()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setRotation</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>setRotation</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the orientation of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function completely overwrites the previous rotation. See the <ref refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" kindref="member">rotate()</ref> function to add an angle based on the previous rotation instead.</para><para>The default rotation of a transformable object is <formula id="3">$ 0 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New rotation, in radians</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" kindref="member">rotate()</ref>, <ref refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" kindref="member">getRotation()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Transformable::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+<para>Get the orientation of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current rotation, in radians</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" kindref="member">setRotation()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="202" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::rotate</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Rotate the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function adds to the current rotation of the object, unlike <ref refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" kindref="member">setRotation()</ref> which overwrites it. Thus, it is equivalent to the following code:</para><para><programlisting><codeline><highlight class="keywordtype">object</highlight><highlight class="normal">.setRotation(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.<ref refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" kindref="member">getRotation</ref>()<sp/>+<sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>);</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of rotation, in radians </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setScale</definition>
+        <argsstring>(Vector2f factors)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>factors</declname>
+        </param>
+        <briefdescription>
+<para>Set the scale factors of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function completely overwrites the previous scale. See the <ref refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" kindref="member">scale()</ref> function to add a factor based on the previous scale instead.</para><para>The default scale of a transformable object is <formula id="92">$(1, 1)$</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New scale factors</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" kindref="member">scale()</ref>, <ref refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" kindref="member">getScale()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setScale</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Set the scale factor of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut when the scale factors for <formula id="67">$ x $</formula> and <formula id="77">$ y $</formula> are the same. It is equivalent to:</para><para><programlisting><codeline><highlight class="keywordtype">object</highlight><highlight class="normal">.setScale({<sp/>factor,<sp/>factor<sp/>});</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New scale factor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" kindref="member">scale()</ref>, <ref refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" kindref="member">getScale()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="251" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>Vector2f gf::Transformable::getScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getScale</name>
+        <briefdescription>
+<para>Get the current scale of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current scale factors</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" kindref="member">setScale()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="262" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="262" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::scale</definition>
+        <argsstring>(Vector2f factors)</argsstring>
+        <name>scale</name>
+        <param>
+          <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+          <declname>factors</declname>
+        </param>
+        <briefdescription>
+<para>Scale the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function multiplies the current scale of the object, unlike <ref refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" kindref="member">setScale()</ref> which overwrites it. Thus, it is equivalent to the following code:</para><para><programlisting><codeline><highlight class="keywordtype">object</highlight><highlight class="normal">.setScale(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.<ref refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" kindref="member">getScale</ref>()<sp/>*<sp/>factors);</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale factors</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" kindref="member">setScale()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::scale</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Scale the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is a shortcut when the scale factors for <formula id="67">$ x $</formula> and <formula id="77">$ y $</formula> are the same. It is equivalent to:</para><para><programlisting><codeline><highlight class="keywordtype">object</highlight><highlight class="normal">.scale({<sp/>factor,<sp/>factor<sp/>});</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale factor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" kindref="member">setScale()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="297" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="297" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref></type>
+        <definition>Matrix3f gf::Transformable::getTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransform</name>
+        <briefdescription>
+<para>Get the combined transform of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The combined transform of the object is (in this order):</para><para><itemizedlist>
+<listitem><para>a translation of -origin</para></listitem><listitem><para>a scaling of the defined scaling factors</para></listitem><listitem><para>a rotation of the defined angle</para></listitem><listitem><para>a translation of the defined position</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> combining the position/rotation/scale/origin of the object</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" kindref="member">getInverseTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">Matrix3f</ref></type>
+        <definition>Matrix3f gf::Transformable::getInverseTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getInverseTransform</name>
+        <briefdescription>
+<para>Get the inverse of the combined transform of the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Inverse of the combined transformations applied to the object</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" kindref="member">getTransform()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="324" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Transformable::setOriginFromAnchorAndBounds</definition>
+        <argsstring>(Anchor anchor, const RectF &amp;bounds)</argsstring>
+        <name>setOriginFromAnchorAndBounds</name>
+        <param>
+          <type><ref refid="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" kindref="member">Anchor</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Set the origin from an anchor and bounds. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function can be called from derived classes for setting the origin properly thanks to an anchor and the bounds they computed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An anchor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounds of the entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="336" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Decomposed transform defined by a position, a rotation and a scale. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref>, as a low-level class, offers a great level of flexibility but it is not always convenient to manage. Indeed, one can easily combine any kind of operation, such as a translation followed by a rotation followed by a scaling, but once the result transform is built, there&apos;s no way to go backward and, let&apos;s say, change only the rotation without modifying the translation and scaling. The entire transform must be recomputed, which means that you need to retrieve the initial translation and scale factors as well, and combine them the same way you did before updating the rotation. This is a tedious operation, and it requires to store all the individual components of the final transform.</para><para>That&apos;s exactly what <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> was written for: it hides these variables and the composed transform behind an easy to use interface. You can set or get any of the individual components without worrying about the others. It also provides the composed transform (as a <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref>), and keeps it up-to-date.</para><para>In addition to the position, rotation and scale, <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> provides an &quot;origin&quot; component, which represents the local origin of the three other components. Let&apos;s take an example with a 10x10 pixels sprite. By default, the sprite is positioned/rotated/scaled relatively to its top-left corner, because it is the local point <formula id="89">$(0, 0)$</formula>. But if we change the origin to be <formula id="90">$(5, 5)$</formula>, the sprite will be positioned/rotated/scaled around its center instead. And if we set the origin to <formula id="91">$(10, 10)$</formula>, it will be transformed around its bottom-right corner.</para><para>To keep the <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> class simple, there&apos;s only one origin for all the components. You cannot position the sprite relatively to its top-left corner while rotating it around its center, for example. To do such things, use <ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref> directly.</para><para><ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> can be used as a base class. That&apos;s what gf&apos;s sprites, texts, curves and shapes do.</para><para><programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">MyEntity<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" kindref="member">draw</ref>(<ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>&amp;<sp/>target,<sp/><ref refid="structgf_1_1_render_states" kindref="compound">gf::RenderStates</ref><sp/>states)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="structgf_1_1_render_states_1a8ebe53edcc7e0d84865a47a41a1f30d0" kindref="member">transform</ref><sp/>*=<sp/><ref refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" kindref="member">getTransform</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(...,<sp/>states);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">MyEntity<sp/>entity;</highlight></codeline>
+<codeline><highlight class="normal">entity.setPosition(10,<sp/>20);</highlight></codeline>
+<codeline><highlight class="normal">entity.setRotation(45);</highlight></codeline>
+<codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(entity);</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="group__core_1gae702e6021057443ca43f94b32618bbc2" kindref="member">gf::Matrix3f</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1028">
+        <label>gf::CompoundCurve</label>
+        <link refid="classgf_1_1_compound_curve"/>
+        <childnode refid="1027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>gf::Line</label>
+        <link refid="classgf_1_1_line"/>
+        <childnode refid="1027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>gf::CircleShape</label>
+        <link refid="classgf_1_1_circle_shape"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>gf::SpriteParticles</label>
+        <link refid="classgf_1_1_sprite_particles"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1034">
+        <label>gf::PointParticles</label>
+        <link refid="classgf_1_1_point_particles"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1032">
+        <label>gf::Logo</label>
+        <link refid="classgf_1_1_logo"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>gf::NinePatch</label>
+        <link refid="classgf_1_1_nine_patch"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>gf::Shape</label>
+        <link refid="classgf_1_1_shape"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>gf::SquareGrid</label>
+        <link refid="classgf_1_1_square_grid"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>gf::RoundedRectangleShape</label>
+        <link refid="classgf_1_1_rounded_rectangle_shape"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>gf::QuadraticBezierCurve</label>
+        <link refid="classgf_1_1_quadratic_bezier_curve"/>
+        <childnode refid="1027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1046">
+        <label>gf::Text</label>
+        <link refid="classgf_1_1_text"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>gf::Sprite</label>
+        <link refid="classgf_1_1_sprite"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>gf::StarShape</label>
+        <link refid="classgf_1_1_star_shape"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>gf::CubicBezierCurve</label>
+        <link refid="classgf_1_1_cubic_bezier_curve"/>
+        <childnode refid="1027" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="1024" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>gf::AnimatedSprite</label>
+        <link refid="classgf_1_1_animated_sprite"/>
+        <childnode refid="1042" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>gf::Console</label>
+        <link refid="classgf_1_1_console"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>gf::ConvexShape</label>
+        <link refid="classgf_1_1_convex_shape"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>gf::TileLayer</label>
+        <link refid="classgf_1_1_tile_layer"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>gf::ShapeParticles</label>
+        <link refid="classgf_1_1_shape_particles"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1025">
+        <label>gf::BufferedGeometry</label>
+        <link refid="classgf_1_1_buffered_geometry"/>
+        <childnode refid="1023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1038">
+        <label>gf::RectangleShape</label>
+        <link refid="classgf_1_1_rectangle_shape"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1049">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="1048">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="1049" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" line="95" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Transformable.h" bodystart="95" bodyend="343"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27" prot="public" virt="pure-virtual"><scope>gf::Transformable</scope><name>draw</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_transformable_1a9628e7582d5cf84aa36d49e1082cf2c0" prot="private" virt="non-virtual"><scope>gf::Transformable</scope><name>m_origin</name></member>
+      <member refid="classgf_1_1_transformable_1abcb38a8033f43d78b7ebb55f80e4b07d" prot="private" virt="non-virtual"><scope>gf::Transformable</scope><name>m_position</name></member>
+      <member refid="classgf_1_1_transformable_1aaf6cf44f30d6fe5c16e9e5e5b4fc6d06" prot="private" virt="non-virtual"><scope>gf::Transformable</scope><name>m_rotation</name></member>
+      <member refid="classgf_1_1_transformable_1a4ac408d2a09d6c632c5a384c5129a11f" prot="private" virt="non-virtual"><scope>gf::Transformable</scope><name>m_scale</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>move</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Transformable</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Transformable</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Transformable</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

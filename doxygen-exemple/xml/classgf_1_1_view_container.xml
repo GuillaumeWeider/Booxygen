@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_view_container" kind="class" language="C++" prot="public">
+    <compoundname>gf::ViewContainer</compoundname>
+    <includes refid="_view_container_8h" local="no">gf/ViewContainer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_view_container_1a69de7778e156b03e104445aac8d728cf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classgf_1_1_adaptative_view" kindref="compound">AdaptativeView</ref> * &gt;</type>
+        <definition>std::vector&lt;AdaptativeView*&gt; gf::ViewContainer::m_views</definition>
+        <argsstring></argsstring>
+        <name>m_views</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="86" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ViewContainer::addView</definition>
+        <argsstring>(AdaptativeView &amp;view)</argsstring>
+        <name>addView</name>
+        <param>
+          <type><ref refid="classgf_1_1_adaptative_view" kindref="compound">AdaptativeView</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Add a view to the container. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An adaptive view </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_container_1a61734888f06a8c8629c39c78a7346639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ViewContainer::processEvent</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>processEvent</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the views thanks to the event. </para>        </briefdescription>
+        <detaileddescription>
+<para>Internally it calls <ref refid="classgf_1_1_view_container_1a21d4aa19fb64de73ee09db8cb1b8857f" kindref="member">onScreenSizeChange()</ref> if a resize event occurs.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_container_1a21d4aa19fb64de73ee09db8cb1b8857f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ViewContainer::onScreenSizeChange</definition>
+        <argsstring>(Vector2u screenSize)</argsstring>
+        <name>onScreenSizeChange</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>screenSize</declname>
+        </param>
+        <briefdescription>
+<para>Update the views with the new screen size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new size of the screen</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_adaptative_view_1ada5e089ccb8d82c22e30b96ff01a8df0" kindref="member">gf::AdaptativeView::onScreenSizeChange()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_view_container_1af1c6132257c4838da5c0db61793a18cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ViewContainer::setInitialScreenSize</definition>
+        <argsstring>(Vector2u screenSize)</argsstring>
+        <name>setInitialScreenSize</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>screenSize</declname>
+        </param>
+        <briefdescription>
+<para>Set the initial screen size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screenSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial size of the screen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A container of views. </para>    </briefdescription>
+    <detaileddescription>
+<para>A view manager handles several adaptive views. It can update all the views at the same time. All it needs is the events that come from the window.</para><para>Here is a full example with two adaptive views:</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_view_container" kindref="compound">gf::ViewContainer</ref><sp/>views;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_extend_view" kindref="compound">gf::ExtendView</ref><sp/>extendView;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>extendView.<ref refid="classgf_1_1_view_1a76879d7542b0bcb2fcf75daf5e6009f8" kindref="member">setSize</ref>(ViewSize);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" kindref="member">addView</ref>(extendView);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_screen_view" kindref="compound">gf::ScreenView</ref><sp/>screenView;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" kindref="member">addView</ref>(screenView);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>the<sp/>views<sp/>with<sp/>the<sp/>initial<sp/>screen<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1af1c6132257c4838da5c0db61793a18cd" kindref="member">setInitialScreenSize</ref>(ScreenSize);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" kindref="member">isOpen</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>views.<ref refid="classgf_1_1_view_container_1a61734888f06a8c8629c39c78a7346639" kindref="member">processEvent</ref>(event);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" kindref="member">clear</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" kindref="member">setView</ref>(extendView);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" kindref="member">setView</ref>(screenView);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(ui);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>renderer.<ref refid="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" kindref="member">display</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="classgf_1_1_adaptative_view" kindref="compound">gf::AdaptativeView</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" line="51" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/ViewContainer.h" bodystart="51" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_view_container_1aa3eba860cd2fb8cb9ac11e06b81c4389" prot="public" virt="non-virtual"><scope>gf::ViewContainer</scope><name>addView</name></member>
+      <member refid="classgf_1_1_view_container_1a69de7778e156b03e104445aac8d728cf" prot="private" virt="non-virtual"><scope>gf::ViewContainer</scope><name>m_views</name></member>
+      <member refid="classgf_1_1_view_container_1a21d4aa19fb64de73ee09db8cb1b8857f" prot="public" virt="non-virtual"><scope>gf::ViewContainer</scope><name>onScreenSizeChange</name></member>
+      <member refid="classgf_1_1_view_container_1a61734888f06a8c8629c39c78a7346639" prot="public" virt="non-virtual"><scope>gf::ViewContainer</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_view_container_1af1c6132257c4838da5c0db61793a18cd" prot="public" virt="non-virtual"><scope>gf::ViewContainer</scope><name>setInitialScreenSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

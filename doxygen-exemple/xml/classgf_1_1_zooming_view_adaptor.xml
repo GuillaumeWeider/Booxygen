@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_zooming_view_adaptor" kind="class" language="C++" prot="public">
+    <compoundname>gf::ZoomingViewAdaptor</compoundname>
+    <includes refid="_view_8h" local="no">gf/View.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_zooming_view_adaptor_1a3bb1539b429cc5bc56ede990caf8ef63" prot="private" static="no">
+        <name>State</name>
+        <enumvalue id="classgf_1_1_zooming_view_adaptor_1a3bb1539b429cc5bc56ede990caf8ef63a5146a957bfa51752bd6020691fda598e" prot="private">
+          <name>Stationary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_zooming_view_adaptor_1a3bb1539b429cc5bc56ede990caf8ef63adefe967ad0373b2274fc298f19125ca7" prot="private">
+          <name>Moving</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="461" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="461" bodyend="464"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_zooming_view_adaptor_1a09e9034541375130dd672cafc6f3cc8a" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+        <definition>const RenderTarget&amp; gf::ZoomingViewAdaptor::m_target</definition>
+        <argsstring></argsstring>
+        <name>m_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="457" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_zooming_view_adaptor_1ac577b402e427b6462ac931e3118bdeb8" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+        <definition>View&amp; gf::ZoomingViewAdaptor::m_view</definition>
+        <argsstring></argsstring>
+        <name>m_view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="458" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_zooming_view_adaptor_1a3fc73db9ed5bed5d6313882a6cf4e095" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">gf::Vector2i</ref></type>
+        <definition>gf::Vector2i gf::ZoomingViewAdaptor::m_mousePosition</definition>
+        <argsstring></argsstring>
+        <name>m_mousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="459" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_zooming_view_adaptor_1aa77dad0232f1adc7bbd6a9325403aa5c" prot="private" static="no" mutable="no">
+        <type>State</type>
+        <definition>State gf::ZoomingViewAdaptor::m_state</definition>
+        <argsstring></argsstring>
+        <name>m_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="466" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_zooming_view_adaptor_1a536a31ae8eba5e0e105d637d05933f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::ZoomingViewAdaptor::ZoomingViewAdaptor</definition>
+        <argsstring>(const RenderTarget &amp;target, View &amp;view)</argsstring>
+        <name>ZoomingViewAdaptor</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_view" kindref="compound">View</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rendering target </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original view to zoom/move </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_zooming_view_adaptor_1a2cc44596452909af2a83362569f1df4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::ZoomingViewAdaptor::processEvent</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>processEvent</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the original view thanks to the event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="454" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A view adaptor for zooming/moving with the mouse. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/View.h" line="439" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/View.h" bodystart="439" bodyend="467"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_zooming_view_adaptor_1a3fc73db9ed5bed5d6313882a6cf4e095" prot="private" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>m_mousePosition</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1aa77dad0232f1adc7bbd6a9325403aa5c" prot="private" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>m_state</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1a09e9034541375130dd672cafc6f3cc8a" prot="private" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>m_target</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1ac577b402e427b6462ac931e3118bdeb8" prot="private" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>m_view</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1a2cc44596452909af2a83362569f1df4f" prot="public" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>processEvent</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1a3bb1539b429cc5bc56ede990caf8ef63" prot="private" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>State</name></member>
+      <member refid="classgf_1_1_zooming_view_adaptor_1a536a31ae8eba5e0e105d637d05933f38" prot="public" virt="non-virtual"><scope>gf::ZoomingViewAdaptor</scope><name>ZoomingViewAdaptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

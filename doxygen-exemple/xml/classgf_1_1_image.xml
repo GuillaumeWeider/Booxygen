@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_image" kind="class" language="C++" prot="public">
+    <compoundname>gf::Image</compoundname>
+    <includes refid="_image_8h" local="no">gf/Image.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_image_1a88e31ec0da1089df7716bb23d0eb1f31" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Image::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="288" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_image_1abdb8b45b8feb995c5569a050a39013ab" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; gf::Image::m_pixels</definition>
+        <argsstring></argsstring>
+        <name>m_pixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="289" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_image_1a3235e4619da103068ce7d1b10caa01cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Image::Image</definition>
+        <argsstring>()</argsstring>
+        <name>Image</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty image. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a97617edac495edc19bd521b7e38a867b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Image::Image</definition>
+        <argsstring>(const Image &amp;)=default</argsstring>
+        <name>Image</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a69205ec0bafc98a124a547a50b37179d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+        <definition>Image&amp; gf::Image::operator=</definition>
+        <argsstring>(const Image &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a1f44f264671ac4c75394695b63e8f4f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Image::Image</definition>
+        <argsstring>(Image &amp;&amp;)=default</argsstring>
+        <name>Image</name>
+        <param>
+          <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1afcabeb9a7c675edea45e3e240a1c53dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;</type>
+        <definition>Image&amp; gf::Image::operator=</definition>
+        <argsstring>(Image &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1af0e79b68a0ab927f73ff7ee394089fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::create</definition>
+        <argsstring>(Vector2u size, const Color4u &amp;color=Color4u{0x00, 0x00, 0x00, 0xFF})</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref> &amp;</type>
+          <declname>color</declname>
+          <defval><ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref>{0x00, 0x00, 0x00, 0xFF}</defval>
+        </param>
+        <briefdescription>
+<para>Create the image and fill it with a unique color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1af9be4f712107c9821de6fbd8155260a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::create</definition>
+        <argsstring>(Vector2u size, const uint8_t *pixels)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+<para>Create the image from an array of pixels. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <emphasis>pixel</emphasis> array is assumed to contain 32-bits RGBA pixels, and have the given <emphasis>size</emphasis>. If not, this is an undefined behavior. If <emphasis>pixels</emphasis> is null, an empty image is created.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of pixels to copy to the image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a11fd1e729b3037ca39fd15911af66f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::createRGB</definition>
+        <argsstring>(Vector2u size, const uint8_t *pixels)</argsstring>
+        <name>createRGB</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+<para>Create the image from an array of pixels. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <emphasis>pixel</emphasis> array is assumed to contain 24-bits RGB pixels, and have the given <emphasis>size</emphasis>. If not, this is an undefined behavior. If <emphasis>pixels</emphasis> is null, an empty image is created.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of pixels to copy to the image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Image::loadFromFile</definition>
+        <argsstring>(const Path &amp;filename)</argsstring>
+        <name>loadFromFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Load the image from a file on disk. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported image formats are bmp, png, tga, jpg, gif, psd, hdr and pic. Some format options are not supported, like progressive jpeg. If this function fails, the image is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the image file to load</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" kindref="member">loadFromStream()</ref>, <ref refid="classgf_1_1_image_1ac1b0df219357a97f6eb7ccb04d4e352a" kindref="member">saveToFile()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Image::loadFromMemory</definition>
+        <argsstring>(const uint8_t *data, std::size_t length)</argsstring>
+        <name>loadFromMemory</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Load the image from a file in memory. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported image formats are bmp, png, tga, jpg, gif, psd, hdr and pic. Some format options are not supported, like progressive jpeg. If this function fails, the image is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the file data in memory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data to load, in bytes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" kindref="member">loadFromStream()</ref>, <ref refid="classgf_1_1_image_1ac1b0df219357a97f6eb7ccb04d4e352a" kindref="member">saveToFile()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Image::loadFromStream</definition>
+        <argsstring>(InputStream &amp;stream)</argsstring>
+        <name>loadFromStream</name>
+        <param>
+          <type><ref refid="classgf_1_1_input_stream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Load the image from a custom stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>The supported image formats are bmp, png, tga, jpg, gif, psd, hdr and pic. Some format options are not supported, like progressive jpeg. If this function fails, the image is left unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stream to read from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if loading was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1ac1b0df219357a97f6eb7ccb04d4e352a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gf::Image::saveToFile</definition>
+        <argsstring>(const Path &amp;filename) const</argsstring>
+        <name>saveToFile</name>
+        <param>
+          <type>const <ref refid="group__core_1ga6788e40b762777c1081f796076116a02" kindref="member">Path</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Save the image to a file on disk. </para>        </briefdescription>
+        <detaileddescription>
+<para>The format of the image is automatically deduced from the extension. The supported image formats are bmp, png and tga. The destination file is overwritten if it already exists. This function fails if the image is empty.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the file to save</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if saving was successful</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1af0e79b68a0ab927f73ff7ee394089fef" kindref="member">create</ref>, <ref refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" kindref="member">loadFromFile()</ref>, <ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref>, <ref refid="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" kindref="member">loadFromStream()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a628512127bf7cac0626bb695152e37f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>Vector2u gf::Image::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Return the size (width and height) of the image. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the image, in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a1fdede6587ade60d4e7bb47bc4cdde20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::createMaskFromColor</definition>
+        <argsstring>(const Color4u &amp;color, uint8_t alpha=0)</argsstring>
+        <name>createMaskFromColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a transparency mask from a specified color-key. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the alpha value of every pixel matching the given color to <emphasis>alpha</emphasis> (0 by default), so that they become transparent.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color to make transparent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alpha value to assign to transparent pixels </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1acc59558cafaef1620c572e91f4289a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::setPixel</definition>
+        <argsstring>(Vector2u pos, const Color4u &amp;color)</argsstring>
+        <name>setPixel</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Change the color of a pixel. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function doesn&apos;t check the validity of the pixel coordinates, using out-of-range values will result in an undefined behavior.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinate of pixel to change </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New color of the pixel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1a4bc5b366661fff559bdf33acedf9f873" kindref="member">getPixel</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a4bc5b366661fff559bdf33acedf9f873" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">Color4u</ref></type>
+        <definition>Color4u gf::Image::getPixel</definition>
+        <argsstring>(Vector2u pos) const</argsstring>
+        <name>getPixel</name>
+        <param>
+          <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get the color of a pixel. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function doesn&apos;t check the validity of the pixel coordinates, using out-of-range values will result in an undefined behavior.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordinate of pixel to get</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Color of the pixel at coordinates (x, y)</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_image_1acc59558cafaef1620c572e91f4289a6b" kindref="member">setPixel</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a495343330b3c449e4b842b8f2c911f9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* gf::Image::getPixelsPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixelsPtr</name>
+        <briefdescription>
+<para>Get a read-only pointer to the array of pixels. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned value points to an array of RGBA pixels made of 8 bits integers components. The size of the array is width * height * 4. Warning: the returned pointer may become invalid if you modify the image, so you should never store it for too long. If the image is empty, a null pointer is returned.</para><para><simplesect kind="return"><para>Read-only pointer to the array of pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_image_1a36cc8cb44505e6e0ba5140e8b62eb793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Image::flipHorizontally</definition>
+        <argsstring>()</argsstring>
+        <name>flipHorizontally</name>
+        <briefdescription>
+<para>Flip the pixels horizontally. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is needed internally. But you can use it if you want. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="285" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for loading, manipulating and saving images. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> is an abstraction to manipulate images as bidimensional arrays of pixels. The class provides functions to load, read, write and save pixels, as well as many other useful functions.</para><para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can handle a unique internal representation of pixels, which is RGBA 32 bits. This means that a pixel must be composed of 8 bits red, green, blue and alpha channels <ndash/> just like a <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">gf::Color4u</ref>.</para><para>All the functions that return an array of pixels follow this rule, and all parameters that you pass to <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> functions (such as <computeroutput><ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref></computeroutput>) must use this representation as well.</para><para>A <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can be copied, but it is a heavy resource and if possible you should always use (const) references to pass or return them to avoid useless copies.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Load<sp/>an<sp/>image<sp/>file<sp/>from<sp/>a<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>background;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!background.<ref refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">&quot;background.jpg&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>20x20<sp/>image<sp/>filled<sp/>with<sp/>black<sp/>color</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>image;</highlight></codeline>
+<codeline><highlight class="normal">image.<ref refid="classgf_1_1_image_1af0e79b68a0ab927f73ff7ee394089fef" kindref="member">create</ref>({<sp/>20,<sp/>20<sp/>},<sp/><ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">sf::Color4u</ref>{0xFF,<sp/>0xFF,<sp/>0xFF,<sp/>0xFF});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Make<sp/>the<sp/>top-left<sp/>pixel<sp/>transparent</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgf_1_1_vector" kindref="compound">gf::Color4u</ref><sp/>color<sp/>=<sp/>image.<ref refid="classgf_1_1_image_1a4bc5b366661fff559bdf33acedf9f873" kindref="member">getPixel</ref>({<sp/>0,<sp/>0<sp/>});</highlight></codeline>
+<codeline><highlight class="normal">color.a<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">image.<ref refid="classgf_1_1_image_1acc59558cafaef1620c572e91f4289a6b" kindref="member">setPixel</ref>({<sp/>0,<sp/>0<sp/>},<sp/>color);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>image<sp/>to<sp/>a<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!image.<ref refid="classgf_1_1_image_1ac1b0df219357a97f6eb7ccb04d4e352a" kindref="member">saveToFile</ref>(</highlight><highlight class="stringliteral">&quot;result.png&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" line="92" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Image.h" bodystart="92" bodyend="291"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_image_1af0e79b68a0ab927f73ff7ee394089fef" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>create</name></member>
+      <member refid="classgf_1_1_image_1af9be4f712107c9821de6fbd8155260a9" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>create</name></member>
+      <member refid="classgf_1_1_image_1a1fdede6587ade60d4e7bb47bc4cdde20" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>createMaskFromColor</name></member>
+      <member refid="classgf_1_1_image_1a11fd1e729b3037ca39fd15911af66f05" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>createRGB</name></member>
+      <member refid="classgf_1_1_image_1a36cc8cb44505e6e0ba5140e8b62eb793" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>flipHorizontally</name></member>
+      <member refid="classgf_1_1_image_1a4bc5b366661fff559bdf33acedf9f873" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>getPixel</name></member>
+      <member refid="classgf_1_1_image_1a495343330b3c449e4b842b8f2c911f9b" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>getPixelsPtr</name></member>
+      <member refid="classgf_1_1_image_1a628512127bf7cac0626bb695152e37f5" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_image_1a3235e4619da103068ce7d1b10caa01cc" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>Image</name></member>
+      <member refid="classgf_1_1_image_1a97617edac495edc19bd521b7e38a867b" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>Image</name></member>
+      <member refid="classgf_1_1_image_1a1f44f264671ac4c75394695b63e8f4f0" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>Image</name></member>
+      <member refid="classgf_1_1_image_1a998b74cd7081fad22f368360904623a0" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>loadFromFile</name></member>
+      <member refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>loadFromMemory</name></member>
+      <member refid="classgf_1_1_image_1a0a331780678c61c86988d4d2685b30d8" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>loadFromStream</name></member>
+      <member refid="classgf_1_1_image_1abdb8b45b8feb995c5569a050a39013ab" prot="private" virt="non-virtual"><scope>gf::Image</scope><name>m_pixels</name></member>
+      <member refid="classgf_1_1_image_1a88e31ec0da1089df7716bb23d0eb1f31" prot="private" virt="non-virtual"><scope>gf::Image</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_image_1a69205ec0bafc98a124a547a50b37179d" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_image_1afcabeb9a7c675edea45e3e240a1c53dd" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_image_1ac1b0df219357a97f6eb7ccb04d4e352a" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>saveToFile</name></member>
+      <member refid="classgf_1_1_image_1acc59558cafaef1620c572e91f4289a6b" prot="public" virt="non-virtual"><scope>gf::Image</scope><name>setPixel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

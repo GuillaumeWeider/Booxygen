@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_tile" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxTile</compoundname>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a0a8230e5a69562c2cc3990b4008897dd" prot="public" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tmx_properties" kindref="compound">TmxProperties</ref></type>
+        <definition>TmxProperties gf::TmxTile::properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+<para>The properties of the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="556" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1abfe4ac8f21e95cd5192ff74dde4668e6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::TmxTile::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The local id of the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="557" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a1e155d4ad676d7a71bb503d66b530ead" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gf::TmxTile::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="558" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a0fc05c74161dc18464c593b2735a39f0" prot="public" static="no" mutable="no">
+        <type>std::array&lt; unsigned, 4 &gt;</type>
+        <definition>std::array&lt;unsigned, 4&gt; gf::TmxTile::terrain</definition>
+        <argsstring></argsstring>
+        <name>terrain</name>
+        <briefdescription>
+<para>The terrain if the corners (top-left, top-right, bottom-left, bottom-right) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="559" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1af47a87dbde667df777ee05111b38e70f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gf::TmxTile::probability</definition>
+        <argsstring></argsstring>
+        <name>probability</name>
+        <briefdescription>
+<para>The probability of the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="560" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a84c61031fd1cf71ad930a1689fa50207" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structgf_1_1_tmx_image" kindref="compound">TmxImage</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;TmxImage&gt; gf::TmxTile::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+<para>The image of this tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="562" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a5f29085e35be0d75716bddbba229393f" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structgf_1_1_tmx_object_layer" kindref="compound">TmxObjectLayer</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;TmxObjectLayer&gt; gf::TmxTile::objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+<para>The objects in the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="563" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgf_1_1_tmx_tile_1a0a4b4aae3705dd1c2e0906889ef1f094" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structgf_1_1_tmx_animation" kindref="compound">TmxAnimation</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;TmxAnimation&gt; gf::TmxTile::animation</definition>
+        <argsstring></argsstring>
+        <name>animation</name>
+        <briefdescription>
+<para>The animation data of the tile. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="564" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A rectangular part of a tileset. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structgf_1_1_tmx_tileset" kindref="compound">gf::TmxTileset</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="968">
+        <label>std::unique_ptr&lt; gf::TmxImage &gt;</label>
+        <childnode refid="969" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="960">
+        <label>std::unique_ptr&lt; gf::TmxObject &gt;</label>
+        <childnode refid="961" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="965">
+        <label>std::vector&lt; gf::TmxFrame &gt;</label>
+        <childnode refid="966" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="951">
+        <label>std::unique_ptr&lt; gf::TmxObjectLayer &gt;</label>
+        <childnode refid="952" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="956">
+        <label>gf::Vector&lt; int, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="952">
+        <label>gf::TmxObjectLayer</label>
+        <link refid="structgf_1_1_tmx_object_layer"/>
+        <childnode refid="953" relation="public-inheritance">
+        </childnode>
+        <childnode refid="958" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+        <childnode refid="959" relation="usage">
+          <edgelabel>objects</edgelabel>
+        </childnode>
+      </node>
+      <node id="953">
+        <label>gf::TmxLayer</label>
+        <link refid="structgf_1_1_tmx_layer"/>
+        <childnode refid="954" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="956" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="955">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="961">
+        <label>gf::TmxObject</label>
+        <link refid="structgf_1_1_tmx_object"/>
+        <childnode refid="962" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="954" relation="usage">
+          <edgelabel>type</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="950">
+        <label>std::array&lt; unsigned, 4 &gt;</label>
+      </node>
+      <node id="963">
+        <label>std::unique_ptr&lt; gf::TmxAnimation &gt;</label>
+        <childnode refid="964" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="967">
+        <label>gf::Time</label>
+        <link refid="classgf_1_1_time"/>
+        <childnode refid="967" relation="usage">
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="957">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="958">
+        <label>gf::Vector&lt; uint8_t, 4 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="949">
+        <label>gf::TmxTile</label>
+        <link refid="structgf_1_1_tmx_tile"/>
+        <childnode refid="950" relation="usage">
+          <edgelabel>terrain</edgelabel>
+        </childnode>
+        <childnode refid="951" relation="usage">
+          <edgelabel>objects</edgelabel>
+        </childnode>
+        <childnode refid="963" relation="usage">
+          <edgelabel>animation</edgelabel>
+        </childnode>
+        <childnode refid="968" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+        <childnode refid="954" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="959">
+        <label>std::vector&lt; std::unique_ptr&lt; gf::TmxObject &gt; &gt;</label>
+        <childnode refid="960" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="966">
+        <label>gf::TmxFrame</label>
+        <link refid="structgf_1_1_tmx_frame"/>
+        <childnode refid="967" relation="usage">
+          <edgelabel>duration</edgelabel>
+        </childnode>
+      </node>
+      <node id="962">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="964">
+        <label>gf::TmxAnimation</label>
+        <link refid="structgf_1_1_tmx_animation"/>
+        <childnode refid="965" relation="usage">
+          <edgelabel>frames</edgelabel>
+        </childnode>
+      </node>
+      <node id="969">
+        <label>gf::TmxImage</label>
+        <link refid="structgf_1_1_tmx_image"/>
+        <childnode refid="962" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="958" relation="usage">
+          <edgelabel>transparent</edgelabel>
+        </childnode>
+        <childnode refid="954" relation="usage">
+          <edgelabel>format</edgelabel>
+        </childnode>
+      </node>
+      <node id="954">
+        <label>std::string</label>
+        <childnode refid="955" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="555" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="555" bodyend="565"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_tile_1a0a4b4aae3705dd1c2e0906889ef1f094" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>animation</name></member>
+      <member refid="structgf_1_1_tmx_tile_1abfe4ac8f21e95cd5192ff74dde4668e6" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>id</name></member>
+      <member refid="structgf_1_1_tmx_tile_1a84c61031fd1cf71ad930a1689fa50207" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>image</name></member>
+      <member refid="structgf_1_1_tmx_tile_1a5f29085e35be0d75716bddbba229393f" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>objects</name></member>
+      <member refid="structgf_1_1_tmx_tile_1af47a87dbde667df777ee05111b38e70f" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>probability</name></member>
+      <member refid="structgf_1_1_tmx_tile_1a0a8230e5a69562c2cc3990b4008897dd" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_tile_1a0fc05c74161dc18464c593b2735a39f0" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>terrain</name></member>
+      <member refid="structgf_1_1_tmx_tile_1a1e155d4ad676d7a71bb503d66b530ead" prot="public" virt="non-virtual"><scope>gf::TmxTile</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

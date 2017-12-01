@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_time" kind="class" language="C++" prot="public">
+    <compoundname>gf::Time</compoundname>
+    <includes refid="_time_8h" local="no">gf/Time.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgf_1_1_time_1a0e57f5608f6f12d903645e56f4f3c10d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>const Time gf::Time::Zero</definition>
+        <argsstring></argsstring>
+        <name>Zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="161" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_time_1a79b85a402636001f30c5eff8678d1822" prot="private" static="no" mutable="no">
+        <type>std::chrono::steady_clock::duration</type>
+        <definition>std::chrono::steady_clock::duration gf::Time::m_duration</definition>
+        <argsstring></argsstring>
+        <name>m_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="168" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_time_1a1f1e458438658823fbbfa20f77060fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Time::Time</definition>
+        <argsstring>()</argsstring>
+        <name>Time</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the time value to zero. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="80" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1ac3657d79aef1672a229b39de2e7f7150" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr gf::Time::Time</definition>
+        <argsstring>(std::chrono::steady_clock::duration duration)</argsstring>
+        <name>Time</name>
+        <param>
+          <type>std::chrono::steady_clock::duration</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a duration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A duration expressed with a <computeroutput>std::chrono</computeroutput> type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="91" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr float</type>
+        <definition>constexpr float gf::Time::asSeconds</definition>
+        <argsstring>() const</argsstring>
+        <name>asSeconds</name>
+        <briefdescription>
+<para>Return the time value as a number of seconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> in seconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1a1f122d2019823907cc36cc48455159d5" kindref="member">asMilliseconds()</ref>, <ref refid="classgf_1_1_time_1a9a53a6992d0ad455752f1086b99f2106" kindref="member">asMicroseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="104" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a1f122d2019823907cc36cc48455159d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t gf::Time::asMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>asMilliseconds</name>
+        <briefdescription>
+<para>Return the time value as a number of milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> in milliseconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds()</ref>, <ref refid="classgf_1_1_time_1a9a53a6992d0ad455752f1086b99f2106" kindref="member">asMicroseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="115" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a9a53a6992d0ad455752f1086b99f2106" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int64_t</type>
+        <definition>constexpr int64_t gf::Time::asMicroseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>asMicroseconds</name>
+        <briefdescription>
+<para>Return the time value as a number of microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> in microseconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds()</ref>, <ref refid="classgf_1_1_time_1a1f122d2019823907cc36cc48455159d5" kindref="member">asMilliseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a8c41e11242be895a8ad52c4579b02eaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::chrono::steady_clock::duration</type>
+        <definition>constexpr std::chrono::steady_clock::duration gf::Time::asDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>asDuration</name>
+        <briefdescription>
+<para>Return the time value as a duration. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> as a duration (<computeroutput>std::chrono</computeroutput> type) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="135" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a430e43beb25f7590d442f0c7e646d1bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref> &amp;</type>
+        <definition>Time&amp; gf::Time::addTo</definition>
+        <argsstring>(Time other)</argsstring>
+        <name>addTo</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Add another time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to add to the current time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="145" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a09023887fa1130409851b3e719cf69ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref> &amp;</type>
+        <definition>Time&amp; gf::Time::subTo</definition>
+        <argsstring>(Time other)</argsstring>
+        <name>subTo</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Substract another time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to substract to the current time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="156" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="156" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_time_1acf6ddcec65d12c7bb9797089d7209217" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>static constexpr Time gf::Time::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="163" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="related">
+      <memberdef kind="function" id="classgf_1_1_time_1a561d4c49cd1acfa0ba68ef5d57c5e307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>constexpr Time seconds</definition>
+        <argsstring>(float amount)</argsstring>
+        <name>seconds</name>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Construct a time value from a number of seconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of seconds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> value constructed from the amount of seconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1ac77d7e5340883f813bcad95a1ef4d1e8" kindref="member">milliseconds()</ref>, <ref refid="classgf_1_1_time_1abf68097a9084f3a876a7b932b9f341b0" kindref="member">microseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="182" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1ac77d7e5340883f813bcad95a1ef4d1e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>constexpr Time milliseconds</definition>
+        <argsstring>(int32_t amount)</argsstring>
+        <name>milliseconds</name>
+        <param>
+          <type>int32_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Construct a time value from a number of milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of milliseconds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> value constructed from the amount of milliseconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1a561d4c49cd1acfa0ba68ef5d57c5e307" kindref="member">seconds()</ref>, <ref refid="classgf_1_1_time_1abf68097a9084f3a876a7b932b9f341b0" kindref="member">microseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="197" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1abf68097a9084f3a876a7b932b9f341b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>constexpr Time microseconds</definition>
+        <argsstring>(int64_t amount)</argsstring>
+        <name>microseconds</name>
+        <param>
+          <type>int64_t</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Construct a time value from a number of microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of microseconds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classgf_1_1_time" kindref="compound">Time</ref> value constructed from the amount of microseconds</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_time_1a561d4c49cd1acfa0ba68ef5d57c5e307" kindref="member">seconds()</ref>, <ref refid="classgf_1_1_time_1ac77d7e5340883f813bcad95a1ef4d1e8" kindref="member">milliseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="212" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a976a93b8d3da41ec9ad564e914bd320b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator==</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time and the second time are the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="225" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a0aa83fa82a3c3d421ac1ce15fac7f5d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator!=</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time and the second time are different </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="238" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a995ef36bf9cda80956e2ef8565bcf38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator&lt;</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Lesser than operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time is lesser than the second time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="251" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1ae19791a5457425d49dfb877cb4539cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator&gt;</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Greater than operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time is greater than the second time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="264" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a5a3c8c0d34bfeabdeadc54f0033bca41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator&lt;=</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Lesser or equal operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time is lesser or equal than the second time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="277" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="277" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a78b22afb7ba73a64d578bcd214d9c09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool operator&gt;=</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Greater or equal than operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the first time is greater or equal than the second time </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="290" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a61c31962cd6fc52858c73d3aca2190a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>constexpr Time operator+</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Addition of two times. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of two times </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="303" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a0e8efce25f3fd9d98116081d16c2a647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time operator+=</definition>
+        <argsstring>(Time &amp;rhs, Time lhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Addition and assignement. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of two times </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="316" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="316" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a92d750edc56c525f35c5d6596aa4bf18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>constexpr Time operator-</definition>
+        <argsstring>(Time rhs, Time lhs)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Substraction of two times. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The difference of two times </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="329" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="329" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_time_1a8fb0f579ef667e4179d846010bc50b4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time operator-=</definition>
+        <argsstring>(Time &amp;rhs, Time lhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+<para>Substraction and assignment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The difference of two times </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="342" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="342" bodyend="344"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a time value. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref> encapsulates a time value in a flexible way. It allows to define a time value either as a number of seconds, milliseconds or microseconds. It also works the other way round: you can read a time value as either a number of seconds, milliseconds or microseconds.</para><para>By using such a flexible interface, the API doesn&apos;t impose any fixed type or resolution for time values, and let the user choose its own favorite representation.</para><para>Since they represent a time span and not an absolute time value, times can also be negative.</para><para><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref> is a thin wrapper around C++11 <ulink url="http://en.cppreference.com/w/cpp/chrono/steady_clock">std::chrono::steady_clock</ulink>.</para><para>Usage example:</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref><sp/>t1<sp/>=<sp/>gf::seconds(0.1f);</highlight></codeline>
+<codeline><highlight class="normal">int32_t<sp/>milli<sp/>=<sp/>t1.<ref refid="classgf_1_1_time_1a1f122d2019823907cc36cc48455159d5" kindref="member">asMilliseconds</ref>();<sp/></highlight><highlight class="comment">//<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref><sp/>t2<sp/>=<sp/>gf::milliseconds(30);</highlight></codeline>
+<codeline><highlight class="normal">int64_t<sp/>micro<sp/>=<sp/>t2.<ref refid="classgf_1_1_time_1a9a53a6992d0ad455752f1086b99f2106" kindref="member">asMicroseconds</ref>();<sp/></highlight><highlight class="comment">//<sp/>30000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_time" kindref="compound">gf::Time</ref><sp/>t3<sp/>=<sp/>gf::microseconds(-800000);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sec<sp/>=<sp/>t3.<ref refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" kindref="member">asSeconds</ref>();<sp/></highlight><highlight class="comment">//<sp/>-0.8</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_clock" kindref="compound">gf::Clock</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="791">
+        <label>gf::Time</label>
+        <link refid="classgf_1_1_time"/>
+        <childnode refid="791" relation="usage">
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" line="73" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Time.h" bodystart="73" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_time_1a430e43beb25f7590d442f0c7e646d1bd" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>addTo</name></member>
+      <member refid="classgf_1_1_time_1a8c41e11242be895a8ad52c4579b02eaf" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>asDuration</name></member>
+      <member refid="classgf_1_1_time_1a9a53a6992d0ad455752f1086b99f2106" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>asMicroseconds</name></member>
+      <member refid="classgf_1_1_time_1a1f122d2019823907cc36cc48455159d5" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>asMilliseconds</name></member>
+      <member refid="classgf_1_1_time_1a7812608f859bf55308cc35d874af5368" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>asSeconds</name></member>
+      <member refid="classgf_1_1_time_1a79b85a402636001f30c5eff8678d1822" prot="private" virt="non-virtual"><scope>gf::Time</scope><name>m_duration</name></member>
+      <member refid="classgf_1_1_time_1abf68097a9084f3a876a7b932b9f341b0" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>microseconds</name></member>
+      <member refid="classgf_1_1_time_1ac77d7e5340883f813bcad95a1ef4d1e8" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>milliseconds</name></member>
+      <member refid="classgf_1_1_time_1a0aa83fa82a3c3d421ac1ce15fac7f5d6" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator!=</name></member>
+      <member refid="classgf_1_1_time_1a61c31962cd6fc52858c73d3aca2190a6" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator+</name></member>
+      <member refid="classgf_1_1_time_1a0e8efce25f3fd9d98116081d16c2a647" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator+=</name></member>
+      <member refid="classgf_1_1_time_1a92d750edc56c525f35c5d6596aa4bf18" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator-</name></member>
+      <member refid="classgf_1_1_time_1a8fb0f579ef667e4179d846010bc50b4c" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator-=</name></member>
+      <member refid="classgf_1_1_time_1a995ef36bf9cda80956e2ef8565bcf38d" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator&lt;</name></member>
+      <member refid="classgf_1_1_time_1a5a3c8c0d34bfeabdeadc54f0033bca41" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator&lt;=</name></member>
+      <member refid="classgf_1_1_time_1a976a93b8d3da41ec9ad564e914bd320b" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator==</name></member>
+      <member refid="classgf_1_1_time_1ae19791a5457425d49dfb877cb4539cc4" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator&gt;</name></member>
+      <member refid="classgf_1_1_time_1a78b22afb7ba73a64d578bcd214d9c09c" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>operator&gt;=</name></member>
+      <member refid="classgf_1_1_time_1a561d4c49cd1acfa0ba68ef5d57c5e307" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>seconds</name></member>
+      <member refid="classgf_1_1_time_1a09023887fa1130409851b3e719cf69ff" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>subTo</name></member>
+      <member refid="classgf_1_1_time_1a1f1e458438658823fbbfa20f77060fd0" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>Time</name></member>
+      <member refid="classgf_1_1_time_1ac3657d79aef1672a229b39de2e7f7150" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>Time</name></member>
+      <member refid="classgf_1_1_time_1acf6ddcec65d12c7bb9797089d7209217" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>zero</name></member>
+      <member refid="classgf_1_1_time_1a0e57f5608f6f12d903645e56f4f3c10d" prot="public" virt="non-virtual"><scope>gf::Time</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_curve" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gf::Curve</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <derivedcompoundref refid="classgf_1_1_compound_curve" prot="public" virt="non-virtual">gf::CompoundCurve</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_cubic_bezier_curve" prot="public" virt="non-virtual">gf::CubicBezierCurve</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_line" prot="public" virt="non-virtual">gf::Line</derivedcompoundref>
+    <derivedcompoundref refid="classgf_1_1_quadratic_bezier_curve" prot="public" virt="non-virtual">gf::QuadraticBezierCurve</derivedcompoundref>
+    <includes refid="_curve_8h" local="no">gf/Curve.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a119907af16879acca1aafb34e91d5c1d" prot="public">
+          <name>Simple</name>
+          <briefdescription>
+<para>A simple curve with no outline. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a306eccd159d833238a04d882d7d9a321" prot="public">
+          <name>Outlined</name>
+          <briefdescription>
+<para>An outlined curve. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of the curve. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="57" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_curve_1a419aed051e8b4a33f833a0b5da5ef2f7" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" kindref="member">Type</ref></type>
+        <definition>Type gf::Curve::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="271" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1aa140f4956a33412c3caa02305f5da9d1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gf::Curve::m_closed</definition>
+        <argsstring></argsstring>
+        <name>m_closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="272" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1abfd70647e36636d9246779e74b8c0b20" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Curve::m_color</definition>
+        <argsstring></argsstring>
+        <name>m_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="274" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1ab1adb3e2cc54d537749dd79b809f9245" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Curve::m_width</definition>
+        <argsstring></argsstring>
+        <name>m_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="275" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1a580f71077ee44d9145942c0ff66a3c03" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::Curve::m_vertices</definition>
+        <argsstring></argsstring>
+        <name>m_vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="276" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1a63fe7f3d760a8892417c49b8ea0bc739" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Curve::m_bounds</definition>
+        <argsstring></argsstring>
+        <name>m_bounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="277" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1a795d4dcf33b94ea06f02c47cdd8f860d" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Curve::m_outlineColor</definition>
+        <argsstring></argsstring>
+        <name>m_outlineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="279" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1aab1280b5e4779b3d29853acc0d90093c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Curve::m_outlineThickness</definition>
+        <argsstring></argsstring>
+        <name>m_outlineThickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="280" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_curve_1a833b1a3044dfb438936262bf58cab712" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref></type>
+        <definition>VertexArray gf::Curve::m_outlineVertices</definition>
+        <argsstring></argsstring>
+        <name>m_outlineVertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="281" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_curve_1a564dba3050a213392a10d23f4ed1ba90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Curve::Curve</definition>
+        <argsstring>()</argsstring>
+        <name>Curve</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1afa5e524b5de1d869e7cd83524f7dfbda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setType</definition>
+        <argsstring>(Type type)</argsstring>
+        <name>setType</name>
+        <param>
+          <type><ref refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, a curve is outlined.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a8bcfb3e49fed7d6a38bfd4065c16a9c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" kindref="member">Type</ref></type>
+        <definition>Type gf::Curve::getType</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Return the type of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current type of the curve </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="81" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the fill color of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>This color is modulated (multiplied) with the curve&apos;s texture if any. It can be used to colorize the curve, or change its global opacity.</para><para>By default, the curve&apos;s fill color is opaque white.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New color of the curve</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a71ee8668036208a3a26b84fd7686172b" kindref="member">getColor()</ref>, <ref refid="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" kindref="member">setOutlineColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a71ee8668036208a3a26b84fd7686172b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Curve::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Get the fill color of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Fill color of the curve</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" kindref="member">setColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="107" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a4d1ee3635fa82957c94f3f2085f8651f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setWidth</definition>
+        <argsstring>(float width)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Set the width of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the curve </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a6b74eb47e582346ff9e8706a9a5d0eb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Curve::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+<para>Get the width of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current width of the curve </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="123" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setOutlineColor</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setOutlineColor</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the outline color of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, the curve&apos;s outline color is opaque white.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New outline color of the curve</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a6dcca32a07306fd868dc732bb246c134" kindref="member">getOutlineColor()</ref>, <ref refid="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" kindref="member">setColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a6dcca32a07306fd868dc732bb246c134" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Curve::getOutlineColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutlineColor</name>
+        <briefdescription>
+<para>Get the outline color of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Outline color of the curve</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" kindref="member">setOutlineColor()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="145" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1ae5c7357a6ebb37fd978486b430f8286d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setOutlineThickness</definition>
+        <argsstring>(float thickness)</argsstring>
+        <name>setOutlineThickness</name>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <briefdescription>
+<para>Set the thickness of the curve&apos;s outline. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, the outline thickness is <formula id="3">$ 0 $</formula>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New outline thickness</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a5ea717b424d865f3b52cabda32754542" kindref="member">getOutlineThickness()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a5ea717b424d865f3b52cabda32754542" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Curve::getOutlineThickness</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutlineThickness</name>
+        <briefdescription>
+<para>Get the outline thickness of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Outline thickness of the curve</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1ae5c7357a6ebb37fd978486b430f8286d" kindref="member">setOutlineThickness()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="167" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t gf::Curve::getPointCount</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getPointCount</name>
+        <reimplementedby refid="classgf_1_1_line_1ae6aef7d6582dae2eebc1d58d123dbb14">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_quadratic_bezier_curve_1a72c85648cfc950b17204ddfe4678dbe4">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_cubic_bezier_curve_1a2355b004925603cfa5a37496990d4fd5">getPointCount</reimplementedby>
+        <reimplementedby refid="classgf_1_1_compound_curve_1ab13ca041e8073292b066afc8f7acaafe">getPointCount</reimplementedby>
+        <briefdescription>
+<para>Get the total number of points of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of points of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8" kindref="member">getPoint()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__core_1ga6036002b111f9c4216809da953818625" kindref="member">Vector2f</ref></type>
+        <definition>virtual Vector2f gf::Curve::getPoint</definition>
+        <argsstring>(std::size_t index) const =0</argsstring>
+        <name>getPoint</name>
+        <reimplementedby refid="classgf_1_1_line_1a9341e0eeb3279ea570274df701931ff1">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_quadratic_bezier_curve_1a7346a4a56e784ecd484a6d9210f27f5b">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_cubic_bezier_curve_1a1108ba605d7de602921e9f640b1767e5">getPoint</reimplementedby>
+        <reimplementedby refid="classgf_1_1_compound_curve_1a5e04910e52ba5e83faf7e44cba9445e2">getPoint</reimplementedby>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get a point of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned point is in local coordinates, that is, the curve&apos;s transforms (position, rotation, scale) are not taken into account.</para><para>The result is undefined if <computeroutput>index</computeroutput> is out of the valid range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to get, in range <formula id="22">$ [0, n-1] $</formula> where <formula id="23">$ n $</formula> is the number of points of the curve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index-th point of the curve </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1" kindref="member">getPointCount()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a4924072750e0aab38e10272786bf7a7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1gac3887a7df16895871374b04d9f6cb961" kindref="member">RectF</ref></type>
+        <definition>RectF gf::Curve::getLocalBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalBounds</name>
+        <briefdescription>
+<para>Get the local bounding rectangle of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned rectangle is in local coordinates, which means that it ignores the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the entity in the entity&apos;s coordinate system.</para><para><simplesect kind="return"><para>Local bounding rectangle of the entity </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1af7a049cb925bb1b7d4de1ffe36056133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setAnchor</definition>
+        <argsstring>(Anchor anchor)</argsstring>
+        <name>setAnchor</name>
+        <param>
+          <type><ref refid="group__graphics_1gadeb9cdf9d7e8eec2eb8cc638c54b5066" kindref="member">Anchor</ref></type>
+          <declname>anchor</declname>
+        </param>
+        <briefdescription>
+<para>Set the anchor origin of the entity. </para>        </briefdescription>
+        <detaileddescription>
+<para>Compute the origin of the entity based on the local bounds and the specified anchor. Internally, this function calls <computeroutput><ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The anchor of the entity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_curve_1a4924072750e0aab38e10272786bf7a7b" kindref="member">getLocalBounds()</ref>, <ref refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" kindref="member">Transformable::setOrigin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a1cff9947e7a2ca8bd819af431460845b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref></type>
+        <definition>VertexBuffer gf::Curve::commitGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>commitGeometry</name>
+        <briefdescription>
+<para>Create a buffer with the current geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is uploaded in the graphics memory so that it&apos;s faster to draw.</para><para><simplesect kind="return"><para>A buffer with the current geometry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a81cdd96a68982a3f51a0c4a4f9ac4353" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_vertex_buffer" kindref="compound">VertexBuffer</ref></type>
+        <definition>VertexBuffer gf::Curve::commitOutlineGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>commitOutlineGeometry</name>
+        <briefdescription>
+<para>Create a buffer with the current outline geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The geometry is uploaded in the graphics memory so that it&apos;s faster to draw.</para><para><simplesect kind="return"><para>A buffer with the current outline geometry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1aa54fc04c78d0e2c4471647728ca29c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Curve::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="241" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgf_1_1_curve_1a3dee8a7f5d153f4f276dd4127f5bd391" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::updateGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>updateGeometry</name>
+        <briefdescription>
+<para>Recompute the internal geometry of the curve. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function must be called by the derived class everytime the curve&apos;s points change (i.e. the result of either <ref refid="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1" kindref="member">getPointCount()</ref> or <ref refid="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8" kindref="member">getPoint()</ref> is different). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a984074936efb2cb0fa03d37f3330eece" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::setClosed</definition>
+        <argsstring>(bool closed=true)</argsstring>
+        <name>setClosed</name>
+        <param>
+          <type>bool</type>
+          <declname>closed</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set the curve closed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function must be called by derived class when the curve must be closed, i.e. the last point is connected to the first point with a line.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>closed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the curve is closed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="262" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_curve_1a9ee767d4916ef0935f6ec24fe98c8348" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::updateColors</definition>
+        <argsstring>()</argsstring>
+        <name>updateColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a1ff1b93864719cc762eefc4cd285000a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::updateOutline</definition>
+        <argsstring>()</argsstring>
+        <name>updateOutline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1a2c8ec6f8c5117b7a1c3f5d9535ff506b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::updateOutlineColors</definition>
+        <argsstring>()</argsstring>
+        <name>updateOutlineColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_curve_1ab3ccb4f80e5ed2a7cdb5edf664320f71" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Curve::computeVertices</definition>
+        <argsstring>(VertexArray &amp;vertices, float halfWidth)</argsstring>
+        <name>computeVertices</name>
+        <param>
+          <type><ref refid="classgf_1_1_vertex_array" kindref="compound">VertexArray</ref> &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>halfWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="269" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A curve is a one dimension object. </para>    </briefdescription>
+    <detaileddescription>
+<para>A curve is similar to a shape but for one dimension objects like lines, <ulink url="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves</ulink>, or compound curves.</para><para>A curve can be simple or outlined. A simple curve has no outline and is generally thin. An outline curve is more complex and can have an outline and has no limit on the width. By default, curves are outlined.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_line" kindref="compound">gf::Line</ref>, <ref refid="classgf_1_1_quadratic_bezier_curve" kindref="compound">gf::QuadraticBezierCurve</ref>, <ref refid="classgf_1_1_cubic_bezier_curve" kindref="compound">gf::CubicBezierCurve</ref>, <ref refid="classgf_1_1_compound_curve" kindref="compound">gf::CompoundCurve</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="206">
+        <label>gf::CompoundCurve</label>
+        <link refid="classgf_1_1_compound_curve"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>gf::Line</label>
+        <link refid="classgf_1_1_line"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>gf::QuadraticBezierCurve</label>
+        <link refid="classgf_1_1_quadratic_bezier_curve"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="207">
+        <label>gf::CubicBezierCurve</label>
+        <link refid="classgf_1_1_cubic_bezier_curve"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="212">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="211">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>gf::Curve</label>
+        <link refid="classgf_1_1_curve"/>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" line="52" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Curve.h" bodystart="52" bodyend="282"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_curve_1a1cff9947e7a2ca8bd819af431460845b" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>commitGeometry</name></member>
+      <member refid="classgf_1_1_curve_1a81cdd96a68982a3f51a0c4a4f9ac4353" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>commitOutlineGeometry</name></member>
+      <member refid="classgf_1_1_curve_1ab3ccb4f80e5ed2a7cdb5edf664320f71" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>computeVertices</name></member>
+      <member refid="classgf_1_1_curve_1a564dba3050a213392a10d23f4ed1ba90" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>Curve</name></member>
+      <member refid="classgf_1_1_curve_1aa54fc04c78d0e2c4471647728ca29c95" prot="public" virt="virtual"><scope>gf::Curve</scope><name>draw</name></member>
+      <member refid="classgf_1_1_curve_1a71ee8668036208a3a26b84fd7686172b" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getColor</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_curve_1a4924072750e0aab38e10272786bf7a7b" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getLocalBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_curve_1a6dcca32a07306fd868dc732bb246c134" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1a5ea717b424d865f3b52cabda32754542" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getOutlineThickness</name></member>
+      <member refid="classgf_1_1_curve_1a7cb3b8fb2bb2419a065d1032fb7760c8" prot="public" virt="pure-virtual"><scope>gf::Curve</scope><name>getPoint</name></member>
+      <member refid="classgf_1_1_curve_1af2eb5f157eba2022330171d3b1809ff1" prot="public" virt="pure-virtual"><scope>gf::Curve</scope><name>getPointCount</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_curve_1a8bcfb3e49fed7d6a38bfd4065c16a9c1" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getType</name></member>
+      <member refid="classgf_1_1_curve_1a6b74eb47e582346ff9e8706a9a5d0eb8" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>getWidth</name></member>
+      <member refid="classgf_1_1_curve_1a63fe7f3d760a8892417c49b8ea0bc739" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_bounds</name></member>
+      <member refid="classgf_1_1_curve_1aa140f4956a33412c3caa02305f5da9d1" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_closed</name></member>
+      <member refid="classgf_1_1_curve_1abfd70647e36636d9246779e74b8c0b20" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_color</name></member>
+      <member refid="classgf_1_1_curve_1a795d4dcf33b94ea06f02c47cdd8f860d" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_outlineColor</name></member>
+      <member refid="classgf_1_1_curve_1aab1280b5e4779b3d29853acc0d90093c" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_outlineThickness</name></member>
+      <member refid="classgf_1_1_curve_1a833b1a3044dfb438936262bf58cab712" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_outlineVertices</name></member>
+      <member refid="classgf_1_1_curve_1a419aed051e8b4a33f833a0b5da5ef2f7" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_type</name></member>
+      <member refid="classgf_1_1_curve_1a580f71077ee44d9145942c0ff66a3c03" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_vertices</name></member>
+      <member refid="classgf_1_1_curve_1ab1adb3e2cc54d537749dd79b809f9245" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>m_width</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>move</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a306eccd159d833238a04d882d7d9a321" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>Outlined</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>scale</name></member>
+      <member refid="classgf_1_1_curve_1af7a049cb925bb1b7d4de1ffe36056133" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setAnchor</name></member>
+      <member refid="classgf_1_1_curve_1a984074936efb2cb0fa03d37f3330eece" prot="protected" virt="non-virtual"><scope>gf::Curve</scope><name>setClosed</name></member>
+      <member refid="classgf_1_1_curve_1a4a6e2178fbafedee89d76473723cf853" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setColor</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Curve</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_curve_1af1147f82594e323f9fb996967b9be32e" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setOutlineColor</name></member>
+      <member refid="classgf_1_1_curve_1ae5c7357a6ebb37fd978486b430f8286d" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setOutlineThickness</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_curve_1afa5e524b5de1d869e7cd83524f7dfbda" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setType</name></member>
+      <member refid="classgf_1_1_curve_1a4d1ee3635fa82957c94f3f2085f8651f" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>setWidth</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272a119907af16879acca1aafb34e91d5c1d" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>Simple</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_curve_1a2d29e228aaff294d5d38fe563d1ff272" prot="public" virt="non-virtual"><scope>gf::Curve</scope><name>Type</name></member>
+      <member refid="classgf_1_1_curve_1a9ee767d4916ef0935f6ec24fe98c8348" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>updateColors</name></member>
+      <member refid="classgf_1_1_curve_1a3dee8a7f5d153f4f276dd4127f5bd391" prot="protected" virt="non-virtual"><scope>gf::Curve</scope><name>updateGeometry</name></member>
+      <member refid="classgf_1_1_curve_1a1ff1b93864719cc762eefc4cd285000a" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>updateOutline</name></member>
+      <member refid="classgf_1_1_curve_1a2c8ec6f8c5117b7a1c3f5d9535ff506b" prot="private" virt="non-virtual"><scope>gf::Curve</scope><name>updateOutlineColors</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Curve</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

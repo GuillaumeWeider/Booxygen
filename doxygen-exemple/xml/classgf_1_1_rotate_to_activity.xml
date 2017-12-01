@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_rotate_to_activity" kind="class" language="C++" prot="public">
+    <compoundname>gf::RotateToActivity</compoundname>
+    <basecompoundref refid="classgf_1_1_activity" prot="public" virt="non-virtual">gf::Activity</basecompoundref>
+    <includes refid="_activities_8h" local="no">gf/Activities.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_rotate_to_activity_1a2b6fcb12eb45235a3580f97e6b3da029" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_tween" kindref="compound">Tween</ref>&lt; float &gt;</type>
+        <definition>Tween&lt;float&gt; gf::RotateToActivity::m_tween</definition>
+        <argsstring></argsstring>
+        <name>m_tween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="197" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a76452b722e7b9512c8fb0dfc1a28b3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RotateToActivity::RotateToActivity</definition>
+        <argsstring>(float origin, float target, float &amp;angle, Time duration, Easing easing=Ease::linear)</argsstring>
+        <name>RotateToActivity</name>
+        <param>
+          <type>float</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga956e20c5e2e9435c5c40dda37f672f32" kindref="member">Easing</ref></type>
+          <declname>easing</declname>
+          <defval><ref refid="classgf_1_1_ease_1a1edd726a738d4c05c10386932fd8d904" kindref="member">Ease::linear</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The origin value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference on the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the tween </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>easing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The easing for the interpolation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a08271660c753de5e8dc910125304ff73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RotateToActivity::setOrigin</definition>
+        <argsstring>(float origin)</argsstring>
+        <name>setOrigin</name>
+        <param>
+          <type>float</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Change the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new origin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="144" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a7a5b8688942555f3a1b4507bbbc98984" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::RotateToActivity::getOrigin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getOrigin</name>
+        <briefdescription>
+<para>Get the origin of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current origin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="153" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1ac1068f35ca0c3ff5141267b666b1e708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RotateToActivity::setTarget</definition>
+        <argsstring>(float target)</argsstring>
+        <name>setTarget</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Change the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new target </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a017a25f178f34a605e1b6f2684675c7d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::RotateToActivity::getTarget</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getTarget</name>
+        <briefdescription>
+<para>Get the target of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current target </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="171" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1aea591bf937dee296984dfc8f3098753c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RotateToActivity::setDuration</definition>
+        <argsstring>(Time duration)</argsstring>
+        <name>setDuration</name>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Change the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new duration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="180" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1ae8e07ccfbc5262c3418a9910a46438fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+        <definition>Time gf::RotateToActivity::getDuration</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDuration</name>
+        <briefdescription>
+<para>Get the duration of the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current duration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="189" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a6579b44cb0a709f6bfed1e47a914e528" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__game_1gac51a053dba8754067dd4bbbf793754df" kindref="member">ActivityStatus</ref></type>
+        <definition>virtual ActivityStatus gf::RotateToActivity::run</definition>
+        <argsstring>(Time time) override</argsstring>
+        <name>run</name>
+        <reimplements refid="classgf_1_1_activity_1a0299bd0365cbf50648135bf3d6d406d0">run</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_time" kindref="compound">Time</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Run the activity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time since the last run </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the activity (running or finished) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_rotate_to_activity_1a9b5bdb227ff03fb39756c9f86fbed637" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::RotateToActivity::restart</definition>
+        <argsstring>() override</argsstring>
+        <name>restart</name>
+        <reimplements refid="classgf_1_1_activity_1a9bd70c04b696b39d2e5d2ecb84a07a87">restart</reimplements>
+        <briefdescription>
+<para>Restart the activity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="194" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An activity for a change of angle. </para>    </briefdescription>
+    <detaileddescription>
+<para>The activity ensures that the change is no more that <formula id="0">$ \pi $</formula> radians.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_tween" kindref="compound">gf::Tween</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="659">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="658">
+        <label>gf::RotateToActivity</label>
+        <link refid="classgf_1_1_rotate_to_activity"/>
+        <childnode refid="659" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="661">
+        <label>gf::Activity</label>
+        <link refid="classgf_1_1_activity"/>
+      </node>
+      <node id="660">
+        <label>gf::RotateToActivity</label>
+        <link refid="classgf_1_1_rotate_to_activity"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Activities.h" bodystart="126" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_rotate_to_activity_1ae8e07ccfbc5262c3418a9910a46438fb" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>getDuration</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a7a5b8688942555f3a1b4507bbbc98984" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a017a25f178f34a605e1b6f2684675c7d" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>getTarget</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a2b6fcb12eb45235a3580f97e6b3da029" prot="private" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>m_tween</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a9b5bdb227ff03fb39756c9f86fbed637" prot="public" virt="virtual"><scope>gf::RotateToActivity</scope><name>restart</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a76452b722e7b9512c8fb0dfc1a28b3f3" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>RotateToActivity</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a6579b44cb0a709f6bfed1e47a914e528" prot="public" virt="virtual"><scope>gf::RotateToActivity</scope><name>run</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1aea591bf937dee296984dfc8f3098753c" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>setDuration</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1a08271660c753de5e8dc910125304ff73" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_rotate_to_activity_1ac1068f35ca0c3ff5141267b666b1e708" prot="public" virt="non-virtual"><scope>gf::RotateToActivity</scope><name>setTarget</name></member>
+      <member refid="classgf_1_1_activity_1a541a05bc394bc48e1a6f38f91959f2b0" prot="public" virt="virtual"><scope>gf::RotateToActivity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

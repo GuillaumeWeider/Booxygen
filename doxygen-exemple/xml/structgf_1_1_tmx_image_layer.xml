@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgf_1_1_tmx_image_layer" kind="struct" language="C++" prot="public">
+    <compoundname>gf::TmxImageLayer</compoundname>
+    <basecompoundref refid="structgf_1_1_tmx_layer" prot="public" virt="non-virtual">gf::TmxLayer</basecompoundref>
+    <includes refid="_tmx_8h" local="no">gf/Tmx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgf_1_1_tmx_image_layer_1a8229c3819b39e0722aa4959c1746138a" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structgf_1_1_tmx_image" kindref="compound">TmxImage</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;TmxImage&gt; gf::TmxImageLayer::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+<para>The image of the layer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="502" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgf_1_1_tmx_image_layer_1a40cd6fba444ffd883103d992bd15a328" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::TmxImageLayer::accept</definition>
+        <argsstring>(const TmxLayers &amp;map, TmxVisitor &amp;visitor) const override</argsstring>
+        <name>accept</name>
+        <reimplements refid="structgf_1_1_tmx_layer_1aac7dcc82aae5fdbd39144453e6fea3e4">accept</reimplements>
+        <param>
+          <type>const <ref refid="structgf_1_1_tmx_layers" kindref="compound">TmxLayers</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_tmx_visitor" kindref="compound">TmxVisitor</ref> &amp;</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+<para>Accept function in the visitor pattern. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visitor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Visitor_pattern">Wikipedia - Visitor pattern</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="504" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A layer with an image. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="827">
+        <label>gf::TmxImageLayer</label>
+        <link refid="structgf_1_1_tmx_image_layer"/>
+        <childnode refid="828" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>gf::TmxLayer</label>
+        <link refid="structgf_1_1_tmx_layer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="835">
+        <label>std::unique_ptr&lt; gf::TmxImage &gt;</label>
+        <childnode refid="836" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="829">
+        <label>gf::TmxImageLayer</label>
+        <link refid="structgf_1_1_tmx_image_layer"/>
+        <childnode refid="830" relation="public-inheritance">
+        </childnode>
+        <childnode refid="835" relation="usage">
+          <edgelabel>image</edgelabel>
+        </childnode>
+      </node>
+      <node id="833">
+        <label>gf::Vector&lt; int, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="830">
+        <label>gf::TmxLayer</label>
+        <link refid="structgf_1_1_tmx_layer"/>
+        <childnode refid="831" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="833" relation="usage">
+          <edgelabel>offset</edgelabel>
+        </childnode>
+        <childnode refid="834" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="832">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="834">
+        <label>gf::TmxProperties</label>
+        <link refid="classgf_1_1_tmx_properties"/>
+      </node>
+      <node id="838">
+        <label>gf::Vector&lt; uint8_t, 4 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="837">
+        <label>gf::Vector&lt; unsigned, 2 &gt;</label>
+        <link refid="structgf_1_1_vector"/>
+      </node>
+      <node id="836">
+        <label>gf::TmxImage</label>
+        <link refid="structgf_1_1_tmx_image"/>
+        <childnode refid="837" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="838" relation="usage">
+          <edgelabel>transparent</edgelabel>
+        </childnode>
+        <childnode refid="831" relation="usage">
+          <edgelabel>format</edgelabel>
+        </childnode>
+      </node>
+      <node id="831">
+        <label>std::string</label>
+        <childnode refid="832" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" line="501" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Tmx.h" bodystart="501" bodyend="505"/>
+    <listofallmembers>
+      <member refid="structgf_1_1_tmx_image_layer_1a40cd6fba444ffd883103d992bd15a328" prot="public" virt="virtual"><scope>gf::TmxImageLayer</scope><name>accept</name></member>
+      <member refid="structgf_1_1_tmx_image_layer_1a8229c3819b39e0722aa4959c1746138a" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>image</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a3e14c44b9ea2aec349744b5d20f7689d" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>name</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a0b1e138a84457fcaa85f0278cc7cc4a7" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>offset</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a65238627e66b007690d08a8170a54fc1" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>opacity</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a3e8cd047b90290395e268270aca0adf6" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>properties</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a4c17ff661a6ca968c65b418d358d2148" prot="public" virt="non-virtual"><scope>gf::TmxImageLayer</scope><name>visible</name></member>
+      <member refid="structgf_1_1_tmx_layer_1a515388f93780000360abed0fa285f7c6" prot="public" virt="virtual"><scope>gf::TmxImageLayer</scope><name>~TmxLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

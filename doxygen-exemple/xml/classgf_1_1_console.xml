@@ -1,0 +1,1646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_console" kind="class" language="C++" prot="public">
+    <compoundname>gf::Console</compoundname>
+    <basecompoundref refid="classgf_1_1_transformable" prot="public" virt="non-virtual">gf::Transformable</basecompoundref>
+    <includes refid="_console_8h" local="no">gf/Console.h</includes>
+    <innerclass refid="structgf_1_1_console_1_1_cell" prot="private">gf::Console::Cell</innerclass>
+    <innerclass refid="structgf_1_1_console_1_1_color_control" prot="private">gf::Console::ColorControl</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Basic printing</header>
+      <memberdef kind="function" id="classgf_1_1_console_1a6817d3f88b43f23a1c5ae91d10e247b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setDefaultBackground</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setDefaultBackground</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the default background color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new background color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1af6479e0eb975bee4d44a4446cfd63018" kindref="member">getDefaultBackground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="267" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="267" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1af6479e0eb975bee4d44a4446cfd63018" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Console::getDefaultBackground</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultBackground</name>
+        <briefdescription>
+<para>Get the default background color. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current default background color </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a6817d3f88b43f23a1c5ae91d10e247b6" kindref="member">setDefaultBackground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="277" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="277" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ac73a51c0ca4608e1e6a2c21620b164cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setDefaultForeground</definition>
+        <argsstring>(const Color4f &amp;color)</argsstring>
+        <name>setDefaultForeground</name>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the default foreground color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new foreground color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ae76ea13bcc89f7bf8d5a30d67b49d342" kindref="member">getDefaultForeground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="287" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="287" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ae76ea13bcc89f7bf8d5a30d67b49d342" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Console::getDefaultForeground</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultForeground</name>
+        <briefdescription>
+<para>Get the default foreground color. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current default foreground color </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ac73a51c0ca4608e1e6a2c21620b164cb" kindref="member">setDefaultForeground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="297" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="297" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a89447139ec129a46c41ff63e3124715b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clear the console. </para>        </briefdescription>
+        <detaileddescription>
+<para>For each cell of the console, this function:<itemizedlist>
+<listitem><para>sets the background color to the default background color</para></listitem><listitem><para>sets the foreground color to the default foreground color</para></listitem><listitem><para>sets the character to space (ASCII 32) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a5ca58694e3dfa2034560ffe4cacda9ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setCharBackground</definition>
+        <argsstring>(Vector2i position, const Color4f &amp;color, ConsoleEffect effect=ConsoleEffect::Set)</argsstring>
+        <name>setCharBackground</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a75fe4a57ff6ba867a325e6ce4f634caa" kindref="member">ConsoleEffect::Set</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set the character background color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new background color </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to background</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ae7025bf458b213fdc142c1ef5574a6c3" kindref="member">getCharBackground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ae7025bf458b213fdc142c1ef5574a6c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Console::getCharBackground</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>getCharBackground</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Get the character background color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current character background color</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a5ca58694e3dfa2034560ffe4cacda9ad" kindref="member">setCharBackground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a5a1a8bb0ebae0abbe57ebae786dad802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setCharForeground</definition>
+        <argsstring>(Vector2i position, const Color4f &amp;color)</argsstring>
+        <name>setCharForeground</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the character foreground color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new foreground color</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ac5525d083cd51518c76bd2dc992dec48" kindref="member">getCharForeground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ac5525d083cd51518c76bd2dc992dec48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Console::getCharForeground</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>getCharForeground</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Get the character foreground color. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current character foreground color</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a5a1a8bb0ebae0abbe57ebae786dad802" kindref="member">setCharForeground()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1abfa9a3c07da362b386ec6782992c04e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setChar</definition>
+        <argsstring>(Vector2i position, char16_t c)</argsstring>
+        <name>setChar</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Set a character. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a046dbb4688864293af5adef0a08e6bf4" kindref="member">putChar()</ref>, <ref refid="classgf_1_1_console_1a11a1a3852b59db993cf4914fa9bd391e" kindref="member">getChar()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a11a1a3852b59db993cf4914fa9bd391e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char16_t</type>
+        <definition>char16_t gf::Console::getChar</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>getChar</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Get a character. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current character at the position</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1abfa9a3c07da362b386ec6782992c04e0" kindref="member">setChar()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a046dbb4688864293af5adef0a08e6bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::putChar</definition>
+        <argsstring>(Vector2i position, char16_t c, ConsoleEffect effect=ConsoleEffect::Default)</argsstring>
+        <name>putChar</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" kindref="member">ConsoleEffect::Default</ref></defval>
+        </param>
+        <briefdescription>
+<para>Modify a cell in the console. </para>        </briefdescription>
+        <detaileddescription>
+<para>At the specified position, this function:<itemizedlist>
+<listitem><para>sets the background color thanks to the effect and the default background color</para></listitem><listitem><para>sets the foreground color thanks to the default foreground color</para></listitem><listitem><para>sets the character to a new value</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a234e256a2794b641332e328369c2dca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::putChar</definition>
+        <argsstring>(Vector2i position, char16_t c, const Color4f &amp;foreground, const Color4f &amp;background)</argsstring>
+        <name>putChar</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>char16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>foreground</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+<para>Modify a cell in the console. </para>        </briefdescription>
+        <detaileddescription>
+<para>At the specified position, this function:<itemizedlist>
+<listitem><para>sets the background color to the specified color</para></listitem><listitem><para>sets the foreground color to the specified color</para></listitem><listitem><para>sets the character to a new value</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>foreground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The foreground color to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>background</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background color to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="399" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>String printing</header>
+      <memberdef kind="function" id="classgf_1_1_console_1a0d4cfab09e1b3b6a6f8d8b713b8c1d09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setDefaultConsoleEffect</definition>
+        <argsstring>(ConsoleEffect effect)</argsstring>
+        <name>setDefaultConsoleEffect</name>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <briefdescription>
+<para>Set the default console effect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new effect</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a821a01a3eb0917d839adb3a164cd2087" kindref="member">getDefaultConsoleEffect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="417" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="417" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a821a01a3eb0917d839adb3a164cd2087" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+        <definition>ConsoleEffect gf::Console::getDefaultConsoleEffect</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultConsoleEffect</name>
+        <briefdescription>
+<para>Get the default console effect. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current default console effect</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1a0d4cfab09e1b3b6a6f8d8b713b8c1d09" kindref="member">setDefaultConsoleEffect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="430" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="430" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ae313b249c9da14d09702e0e298ed5817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setDefaultAlignment</definition>
+        <argsstring>(ConsoleAlignment alignment)</argsstring>
+        <name>setDefaultAlignment</name>
+        <param>
+          <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Set the default alignment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alignment</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ae8563c02c0c70dd02de259e100822205" kindref="member">getDefaultAlignment()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="441" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="441" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ae8563c02c0c70dd02de259e100822205" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+        <definition>ConsoleAlignment gf::Console::getDefaultAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultAlignment</name>
+        <briefdescription>
+<para>Get the default alignment. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current default alignment</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1ae313b249c9da14d09702e0e298ed5817" kindref="member">setDefaultAlignment()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="452" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="452" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a483de105ae77c26a4058da6c22958a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::print</definition>
+        <argsstring>(Vector2i position, const char *fmt,...)</argsstring>
+        <name>print</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a formatted string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function uses the default values for background color, foreground color, console effect and alignment.</para><para>The specified position indicates:<itemizedlist>
+<listitem><para>The first character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::ConsoleAlignment::Left</ref></para></listitem><listitem><para>The center character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a4f1f6016fc9f3f2353c0cc7c67b292bd" kindref="member">gf::ConsoleAlignment::Center</ref></para></listitem><listitem><para>The last character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::ConsoleAlignment::Right</ref></para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of a cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a559a736ced154edaa4733ed4db59f3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::print</definition>
+        <argsstring>(Vector2i position, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)</argsstring>
+        <name>print</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a formatted string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function uses the default values for background color, foreground color but uses the specified console effect and alignment.</para><para>The specified position indicates:<itemizedlist>
+<listitem><para>The first character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::ConsoleAlignment::Left</ref></para></listitem><listitem><para>The center character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a4f1f6016fc9f3f2353c0cc7c67b292bd" kindref="member">gf::ConsoleAlignment::Center</ref></para></listitem><listitem><para>The last character of the string if the alignment is <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a92b09c7c48c520c3c55e497875da437c" kindref="member">gf::ConsoleAlignment::Right</ref></para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of a cell </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1aeebb5e9e91c8c6839d79246a981c4074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::printRect</definition>
+        <argsstring>(const RectI &amp;rect, const char *fmt,...)</argsstring>
+        <name>printRect</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a multi-line formatted string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The string is split in paragraphs according to new lines and then split in lines to fit the width of the specified rectangle. If the specified height is reached, the string is truncated. I the height is 0, then the string is truncated at the bottom of the console.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to print the string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The height in console lines of the printed string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="502" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1acbe121c8908b93f177e4b1c5326d5303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::printRect</definition>
+        <argsstring>(const RectI &amp;rect, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)</argsstring>
+        <name>printRect</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Print a multi-line formatted string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The string is split in paragraphs according to new lines and then split in lines to fit the width of the specified rectangle. If the specified height is reached, the string is truncated. I the height is 0, then the string is truncated at the bottom of the console.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to print the string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alignment of the text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The height in console lines of the printed string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="518" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1afa770855947182ad6e132f191940dfea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::getHeight</definition>
+        <argsstring>(const RectI &amp;rect, const char *fmt,...)</argsstring>
+        <name>getHeight</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Get the expected number of console lines of a multi-line formatted string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not print anything, it only computes the number of lines that a formatted string would take if it was printed with <ref refid="classgf_1_1_console_1aeebb5e9e91c8c6839d79246a981c4074" kindref="member">printRect()</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to print the string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_console_1aeebb5e9e91c8c6839d79246a981c4074" kindref="member">printRect()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="532" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a7e81030f5886a5369a30e3e7ed005080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setColorControl</definition>
+        <argsstring>(ConsoleColorControl ctrl, const Color4f &amp;foreground, const Color4f &amp;background)</argsstring>
+        <name>setColorControl</name>
+        <param>
+          <type><ref refid="group__game_1ga797f1ec5600b131777b7cb9800adcda4" kindref="member">ConsoleColorControl</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>foreground</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+<para>Set a color for color control. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structgf_1_1_color" kindref="compound">Color</ref> control codes allow to change color in a string on the fly. There are five color control codes: <ref refid="group__game_1gaacde5b93f2abb57973093ef86a39aea8" kindref="member">gf::ConsoleColorControl1</ref>, <ref refid="group__game_1gad4e9414ae3fe12d1c4419cbec1f6de97" kindref="member">gf::ConsoleColorControl2</ref>, <ref refid="group__game_1gac255d057740c130a6e69625eb6ddcc9f" kindref="member">gf::ConsoleColorControl3</ref>, <ref refid="group__game_1gaae3d0e16f399946d0cffa254d67eae5f" kindref="member">gf::ConsoleColorControl4</ref> and <ref refid="group__game_1ga025f8097e70254392eee43c7f80291c8" kindref="member">gf::ConsoleColorControl5</ref>. Each one is associated with a foreground and a background color that you can set with this function. The color control code <ref refid="group__game_1gae91305b923e63fd3d4df361b375da7a5" kindref="member">gf::ConsoleColorControlStop</ref> changes the colors back to their default.</para><para><programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_console" kindref="compound">gf::Console</ref><sp/>console(font,<sp/>size);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>string<sp/>with<sp/>a<sp/>red<sp/>over<sp/>black<sp/>word,<sp/>using<sp/>predefined<sp/>color<sp/>control<sp/>codes</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">console.setColorControl(<ref refid="group__game_1gaacde5b93f2abb57973093ef86a39aea8" kindref="member">gf::ConsoleColorControl1</ref>,<sp/><ref refid="structgf_1_1_color_1a7abeab052065d849d6a3f8b0d9ed57eb" kindref="member">gf::Color::Red</ref>,<sp/><ref refid="structgf_1_1_color_1a88dc1b689ca9dba60a8b7e51de680b4e" kindref="member">gf::Color::Black</ref>);</highlight></codeline>
+<codeline><highlight class="normal">console.print({<sp/>1,<sp/>1<sp/>},<sp/></highlight><highlight class="stringliteral">&quot;String<sp/>with<sp/>a<sp/>%cred%c<sp/>word.&quot;</highlight><highlight class="normal">,<sp/><ref refid="group__game_1gaacde5b93f2abb57973093ef86a39aea8" kindref="member">gf::ConsoleColorControl1</ref>,<sp/><ref refid="group__game_1gae91305b923e63fd3d4df361b375da7a5" kindref="member">gf::ConsoleColorControlStop</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="552" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Advanced printing</header>
+      <memberdef kind="function" id="classgf_1_1_console_1a3c3a1a37874766d2243b7a3f65fa08c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::drawRectangle</definition>
+        <argsstring>(const RectI &amp;rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default)</argsstring>
+        <name>drawRectangle</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426" kindref="member">PrintAction</ref></type>
+          <declname>action</declname>
+          <defval><ref refid="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">PrintAction::None</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" kindref="member">ConsoleEffect::Default</ref></defval>
+        </param>
+        <briefdescription>
+<para>Draw a filled rectangle. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function fills the specified rectangle with the default background color. If the print action is <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626adc30bc0c7914db5918da4263fce93ad2" kindref="member">gf::PrintAction::Clear</ref>, then the characters inside the rectangle are set to space (ASCII 32).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to print the rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="574" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ac3077bcf3e5d98d584fb01ed2cffe68f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::drawHorizontalLine</definition>
+        <argsstring>(Vector2i left, int width, ConsoleEffect effect=ConsoleEffect::Default)</argsstring>
+        <name>drawHorizontalLine</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" kindref="member">ConsoleEffect::Default</ref></defval>
+        </param>
+        <briefdescription>
+<para>Draw a horizontal line. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function draws a horizontal line using gf::SpecialChar::WallHorizontalLine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left end point of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="585" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1aeaca89bfb2322f2fe9b7ab5013d7faef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::drawVerticalLine</definition>
+        <argsstring>(Vector2i top, int height, ConsoleEffect effect=ConsoleEffect::Default)</argsstring>
+        <name>drawVerticalLine</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" kindref="member">ConsoleEffect::Default</ref></defval>
+        </param>
+        <briefdescription>
+<para>Draw a vertical line. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function draws a vertical line using gf::SpecialChar::WallVerticalLine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The top end point of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="596" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1af3e5fd65b3f6c71eff4b172c88ad27d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::drawFrame</definition>
+        <argsstring>(const RectI &amp;rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default, const char *title=nullptr,...)</argsstring>
+        <name>drawFrame</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426" kindref="member">PrintAction</ref></type>
+          <declname>action</declname>
+          <defval><ref refid="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">PrintAction::None</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+          <defval><ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a0824757eabf96bb0086f920558487d9e" kindref="member">ConsoleEffect::Default</ref></defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Draw a frame. </para>        </briefdescription>
+        <detaileddescription>
+<para>This funtion first draws a rectangle using the specified action and effect. Then it draws a frame. If a title is given, it is printed on the top of the frame with inverted colors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to print the rectangle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effect to apply to the background </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ulink url="http://en.cppreference.com/w/cpp/io/c/fprintf">format string</ulink> of the title </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="610" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Screen fading</header>
+      <memberdef kind="function" id="classgf_1_1_console_1aead76614338d66896e38fd4a39d06020" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::setFade</definition>
+        <argsstring>(float amount, const Color4f &amp;color)</argsstring>
+        <name>setFade</name>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Set the fading parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fading amount, with 0 meaning the fading color and 1 meaning no fading </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fading color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="627" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="627" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ae72b132d5df2e9fc28d9ab914c6fd425" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gf::Console::getFadingAmount</definition>
+        <argsstring>() const</argsstring>
+        <name>getFadingAmount</name>
+        <briefdescription>
+<para>Get the fading amount. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current fading amount </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="637" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="637" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a71a89307f729c7050a793e958d798095" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+        <definition>const Color4f&amp; gf::Console::getFadingColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getFadingColor</name>
+        <briefdescription>
+<para>Get the fading color. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current fading color </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="646" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="646" bodyend="648"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426" prot="public" static="no">
+        <name>PrintAction</name>
+        <enumvalue id="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>No action. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426adc30bc0c7914db5918da4263fce93ad2" prot="public">
+          <name>Clear</name>
+          <briefdescription>
+<para>Fill the area with space characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An action when printing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="229" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgf_1_1_console_1ab994f979e5f1ef191da800f5b551bd33" prot="private" static="no">
+        <name>PrintOption</name>
+        <enumvalue id="classgf_1_1_console_1ab994f979e5f1ef191da800f5b551bd33a8a9e64d86ed12ad40de129bc7f4683b2" prot="private">
+          <name>Split</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_console_1ab994f979e5f1ef191da800f5b551bd33a1b7afd472af0b8d48db9ead7974d3078" prot="private">
+          <name>CountOnly</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="672" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="672" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgf_1_1_console_1a5019308eef62cb34956bd0529c077b61" prot="private" static="no">
+        <type><ref refid="classgf_1_1_flags" kindref="compound">Flags</ref>&lt; PrintOption &gt;</type>
+        <definition>using gf::Console::PrintOptionFlags =  Flags&lt;PrintOption&gt;</definition>
+        <argsstring></argsstring>
+        <name>PrintOptionFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="677" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_console_1a4ce7a7993cb1fa28785aace80446a74c" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref> *</type>
+        <definition>const ConsoleFont* gf::Console::m_font</definition>
+        <argsstring></argsstring>
+        <name>m_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="688" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1ab8ebb6fb34d3125ed784af3427ae20a2" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&lt; Cell, int &gt;</type>
+        <definition>Array2D&lt;Cell, int&gt; gf::Console::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="689" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1a26a04f753630a57ed468f6a65bd75d9b" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Console::m_background</definition>
+        <argsstring></argsstring>
+        <name>m_background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="690" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1ad53bca207c1f7a74eaf2de5f7052d94f" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Console::m_foreground</definition>
+        <argsstring></argsstring>
+        <name>m_foreground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="691" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1af5dfdb50049d020be24d3af2975ce5a4" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+        <definition>ConsoleEffect gf::Console::m_effect</definition>
+        <argsstring></argsstring>
+        <name>m_effect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="693" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1ae68d0cd823de53019f715dcb760d3866" prot="private" static="no" mutable="no">
+        <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+        <definition>ConsoleAlignment gf::Console::m_alignment</definition>
+        <argsstring></argsstring>
+        <name>m_alignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="694" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1a3860f717fd2fc6788f7e5edc89bdfe52" prot="private" static="no" mutable="no">
+        <type>ColorControl</type>
+        <definition>ColorControl gf::Console::m_controls[ColorControlCount]</definition>
+        <argsstring>[ColorControlCount]</argsstring>
+        <name>m_controls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="702" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1a59b8d8b34a304529b65be768e66e90c2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gf::Console::m_fadingAmount</definition>
+        <argsstring></argsstring>
+        <name>m_fadingAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="704" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_console_1a3428d1a9f2079529d1e598ded271a833" prot="private" static="no" mutable="no">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Console::m_fadingColor</definition>
+        <argsstring></argsstring>
+        <name>m_fadingColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="705" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgf_1_1_console_1a7ce435e4f26aad4d893abfbd13061ca5" prot="private" static="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char gf::Console::ColorControlCount</definition>
+        <argsstring></argsstring>
+        <name>ColorControlCount</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="701" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_console_1a459dda8b4be6bd10ccd0e56740df136c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Console::Console</definition>
+        <argsstring>(const ConsoleFont &amp;font, Vector2i size)</argsstring>
+        <name>Console</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_console_font" kindref="compound">ConsoleFont</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A console font </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the console, in characters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a531478ce44af9ca7f048b5f92c4ffded" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+<para>Get the width of the console. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="245" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a34f2e4cba26633507c42983fd41e9c32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::getHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+<para>Get the height of the console. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="252" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="252" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1aec085a4b3b45e4840418be4d5a16e943" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Console::blit</definition>
+        <argsstring>(const RectI &amp;src, Console &amp;con, Vector2i dst, float foregroundAlpha=1.0f, float backgroundAlpha=1.0f) const</argsstring>
+        <name>blit</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console" kindref="compound">Console</ref> &amp;</type>
+          <declname>con</declname>
+        </param>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>foregroundAlpha</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>backgroundAlpha</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Blit a console on another console. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source rectangle on the source console </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>con</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination console </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination position on the destination console </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>foregroundAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha of the blitted console foreground color, 0 is a completely transparent source console and 1 is a completely opaque source console </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha of the blitted console background color, 0 is a completely transparent source console and 1 is a completely opaque source console </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="663" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1ab38a181b83718f8172d2f5aacc14cb4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gf::Console::draw</definition>
+        <argsstring>(RenderTarget &amp;target, RenderStates states) override</argsstring>
+        <name>draw</name>
+        <reimplements refid="classgf_1_1_drawable_1a01535a84e4fb6222311ceb81accc4a27">draw</reimplements>
+        <param>
+          <type><ref refid="classgf_1_1_render_target" kindref="compound">RenderTarget</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="structgf_1_1_render_states" kindref="compound">RenderStates</ref></type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+<para>Draw the object to a render target. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Render target to draw to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current render states </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="665" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_console_1a765dda23f13b70840920d5d816ed3cba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref></type>
+        <definition>Color4f gf::Console::computeColor</definition>
+        <argsstring>(ConsoleEffect effect, const Color4f &amp;existing, const Color4f &amp;current)</argsstring>
+        <name>computeColor</name>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>existing</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="668" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a6b53abc05d883cd381d6cc33c41bc9a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::putWord</definition>
+        <argsstring>(Vector2i position, ConsoleEffect effect, const std::u32string &amp;message, const Color4f &amp;foreground, const Color4f &amp;background)</argsstring>
+        <name>putWord</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type>const std::u32string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>foreground</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__core_1ga8c82c7df6d3bbd7f8d3601534b22a087" kindref="member">Color4f</ref> &amp;</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="670" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_console_1a2248e6745fe6191c643b4016cc0678a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gf::Console::printInternal</definition>
+        <argsstring>(const RectI &amp;rect, ConsoleEffect effect, ConsoleAlignment alignment, const std::string &amp;message, PrintOptionFlags flags=None)</argsstring>
+        <name>printInternal</name>
+        <param>
+          <type>const <ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_console_effect" kindref="compound">ConsoleEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type><ref refid="group__game_1ga79cfe1ad310880da0b2586645db3af32" kindref="member">ConsoleAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_flags" kindref="compound">PrintOptionFlags</ref></type>
+          <declname>flags</declname>
+          <defval><ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="679" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A virtual console. </para>    </briefdescription>
+    <detaileddescription>
+<para>A console is a virtual terminal where you can print the characters from a console font. Each cell of the console has a background color, a foreground color and a 8-bit character.</para><para>A console has a state with default values for different aspects:<itemizedlist>
+<listitem><para>a default background color (initiallly <ref refid="structgf_1_1_color_1a88dc1b689ca9dba60a8b7e51de680b4e" kindref="member">gf::Color::Black</ref>)</para></listitem><listitem><para>a default foreground color (initiallly <ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>)</para></listitem><listitem><para>a default console effect (initiallly <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a2005f43694b321ba19ce85f841ec61ec" kindref="member">gf::ConsoleEffect::None</ref>)</para></listitem><listitem><para>a default alignment (initiallly <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::ConsoleAlignment::Left</ref>)</para></listitem></itemizedlist>
+</para><para>Several functions use this state to determine actual values.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_console_font" kindref="compound">gf::ConsoleFont</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="159">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="158">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>gf::Console</label>
+        <link refid="classgf_1_1_console"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="162">
+        <label>gf::Drawable</label>
+        <link refid="classgf_1_1_drawable"/>
+      </node>
+      <node id="161">
+        <label>gf::Transformable</label>
+        <link refid="classgf_1_1_transformable"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>gf::Console</label>
+        <link refid="classgf_1_1_console"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Console.h" bodystart="224" bodyend="706"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_console_1aec085a4b3b45e4840418be4d5a16e943" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>blit</name></member>
+      <member refid="classgf_1_1_console_1a89447139ec129a46c41ff63e3124715b" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>clear</name></member>
+      <member refid="classgf_1_1_console_1a7ce435e4f26aad4d893abfbd13061ca5" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>ColorControlCount</name></member>
+      <member refid="classgf_1_1_console_1a765dda23f13b70840920d5d816ed3cba" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>computeColor</name></member>
+      <member refid="classgf_1_1_console_1a459dda8b4be6bd10ccd0e56740df136c" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>Console</name></member>
+      <member refid="classgf_1_1_console_1ab38a181b83718f8172d2f5aacc14cb4e" prot="public" virt="virtual"><scope>gf::Console</scope><name>draw</name></member>
+      <member refid="classgf_1_1_console_1af3e5fd65b3f6c71eff4b172c88ad27d9" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>drawFrame</name></member>
+      <member refid="classgf_1_1_console_1ac3077bcf3e5d98d584fb01ed2cffe68f" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>drawHorizontalLine</name></member>
+      <member refid="classgf_1_1_console_1a3c3a1a37874766d2243b7a3f65fa08c0" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>drawRectangle</name></member>
+      <member refid="classgf_1_1_console_1aeaca89bfb2322f2fe9b7ab5013d7faef" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>drawVerticalLine</name></member>
+      <member refid="classgf_1_1_console_1a11a1a3852b59db993cf4914fa9bd391e" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getChar</name></member>
+      <member refid="classgf_1_1_console_1ae7025bf458b213fdc142c1ef5574a6c3" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getCharBackground</name></member>
+      <member refid="classgf_1_1_console_1ac5525d083cd51518c76bd2dc992dec48" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getCharForeground</name></member>
+      <member refid="classgf_1_1_console_1ae8563c02c0c70dd02de259e100822205" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getDefaultAlignment</name></member>
+      <member refid="classgf_1_1_console_1af6479e0eb975bee4d44a4446cfd63018" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getDefaultBackground</name></member>
+      <member refid="classgf_1_1_console_1a821a01a3eb0917d839adb3a164cd2087" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getDefaultConsoleEffect</name></member>
+      <member refid="classgf_1_1_console_1ae76ea13bcc89f7bf8d5a30d67b49d342" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getDefaultForeground</name></member>
+      <member refid="classgf_1_1_console_1ae72b132d5df2e9fc28d9ab914c6fd425" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getFadingAmount</name></member>
+      <member refid="classgf_1_1_console_1a71a89307f729c7050a793e958d798095" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getFadingColor</name></member>
+      <member refid="classgf_1_1_console_1a34f2e4cba26633507c42983fd41e9c32" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getHeight</name></member>
+      <member refid="classgf_1_1_console_1afa770855947182ad6e132f191940dfea" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getHeight</name></member>
+      <member refid="classgf_1_1_transformable_1ae8272f770cf0acca8896f368c9c1cea5" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getInverseTransform</name></member>
+      <member refid="classgf_1_1_transformable_1a3737c1966237816e3b25bf60a443e327" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a6b0278741e6f39d27d7879ba16f1f3be" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a3324b9c470c4ae376294d212c66e4f02" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a9d56ee2060eef2666f95024dc03b9c12" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getScale</name></member>
+      <member refid="classgf_1_1_transformable_1aa742e95c087b0340bcff458b8872e2ea" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getTransform</name></member>
+      <member refid="classgf_1_1_console_1a531478ce44af9ca7f048b5f92c4ffded" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>getWidth</name></member>
+      <member refid="classgf_1_1_console_1ae68d0cd823de53019f715dcb760d3866" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_alignment</name></member>
+      <member refid="classgf_1_1_console_1a26a04f753630a57ed468f6a65bd75d9b" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_background</name></member>
+      <member refid="classgf_1_1_console_1a3860f717fd2fc6788f7e5edc89bdfe52" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_controls</name></member>
+      <member refid="classgf_1_1_console_1ab8ebb6fb34d3125ed784af3427ae20a2" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_console_1af5dfdb50049d020be24d3af2975ce5a4" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_effect</name></member>
+      <member refid="classgf_1_1_console_1a59b8d8b34a304529b65be768e66e90c2" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_fadingAmount</name></member>
+      <member refid="classgf_1_1_console_1a3428d1a9f2079529d1e598ded271a833" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_fadingColor</name></member>
+      <member refid="classgf_1_1_console_1a4ce7a7993cb1fa28785aace80446a74c" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_font</name></member>
+      <member refid="classgf_1_1_console_1ad53bca207c1f7a74eaf2de5f7052d94f" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>m_foreground</name></member>
+      <member refid="classgf_1_1_transformable_1a2e576b2f64c1f8591d82e8065eae738b" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>move</name></member>
+      <member refid="classgf_1_1_console_1a483de105ae77c26a4058da6c22958a77" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>print</name></member>
+      <member refid="classgf_1_1_console_1a559a736ced154edaa4733ed4db59f3c5" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>print</name></member>
+      <member refid="classgf_1_1_console_1a5e63b0fa915f86ee5c62688cc71b2426" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>PrintAction</name></member>
+      <member refid="classgf_1_1_console_1a2248e6745fe6191c643b4016cc0678a1" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>printInternal</name></member>
+      <member refid="classgf_1_1_console_1ab994f979e5f1ef191da800f5b551bd33" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>PrintOption</name></member>
+      <member refid="classgf_1_1_console_1a5019308eef62cb34956bd0529c077b61" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>PrintOptionFlags</name></member>
+      <member refid="classgf_1_1_console_1aeebb5e9e91c8c6839d79246a981c4074" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>printRect</name></member>
+      <member refid="classgf_1_1_console_1acbe121c8908b93f177e4b1c5326d5303" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>printRect</name></member>
+      <member refid="classgf_1_1_console_1a046dbb4688864293af5adef0a08e6bf4" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>putChar</name></member>
+      <member refid="classgf_1_1_console_1a234e256a2794b641332e328369c2dca9" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>putChar</name></member>
+      <member refid="classgf_1_1_console_1a6b53abc05d883cd381d6cc33c41bc9a6" prot="private" virt="non-virtual"><scope>gf::Console</scope><name>putWord</name></member>
+      <member refid="classgf_1_1_transformable_1a2957de61d2a76e9ae3c377c0aa477f53" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>rotate</name></member>
+      <member refid="classgf_1_1_transformable_1a61953d559ea3d1eaf718304d045a250a" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>scale</name></member>
+      <member refid="classgf_1_1_transformable_1ae9bae0ed6df111d554ce94595e2a15f1" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>scale</name></member>
+      <member refid="classgf_1_1_console_1abfa9a3c07da362b386ec6782992c04e0" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setChar</name></member>
+      <member refid="classgf_1_1_console_1a5ca58694e3dfa2034560ffe4cacda9ad" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setCharBackground</name></member>
+      <member refid="classgf_1_1_console_1a5a1a8bb0ebae0abbe57ebae786dad802" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setCharForeground</name></member>
+      <member refid="classgf_1_1_console_1a7e81030f5886a5369a30e3e7ed005080" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setColorControl</name></member>
+      <member refid="classgf_1_1_console_1ae313b249c9da14d09702e0e298ed5817" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setDefaultAlignment</name></member>
+      <member refid="classgf_1_1_console_1a6817d3f88b43f23a1c5ae91d10e247b6" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setDefaultBackground</name></member>
+      <member refid="classgf_1_1_console_1a0d4cfab09e1b3b6a6f8d8b713b8c1d09" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setDefaultConsoleEffect</name></member>
+      <member refid="classgf_1_1_console_1ac73a51c0ca4608e1e6a2c21620b164cb" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setDefaultForeground</name></member>
+      <member refid="classgf_1_1_console_1aead76614338d66896e38fd4a39d06020" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setFade</name></member>
+      <member refid="classgf_1_1_transformable_1a31bb4b55326593ea763dfdc8f12c67f4" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setOrigin</name></member>
+      <member refid="classgf_1_1_transformable_1a78fd003ff0412d2228764d6564d6ba69" prot="protected" virt="non-virtual"><scope>gf::Console</scope><name>setOriginFromAnchorAndBounds</name></member>
+      <member refid="classgf_1_1_transformable_1a1110891882093c2e8cbfc839e3300dca" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setPosition</name></member>
+      <member refid="classgf_1_1_transformable_1a66ef2bc90dcff50e070a6d0874b3824a" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setRotation</name></member>
+      <member refid="classgf_1_1_transformable_1a8c8a9bd669c0dbbd265d7188a669edb1" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1a642eb45044feb40084a8be341b0a8822" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>setScale</name></member>
+      <member refid="classgf_1_1_transformable_1ab6b8f8feebda03222ec0858b0218a64e" prot="public" virt="non-virtual"><scope>gf::Console</scope><name>Transformable</name></member>
+      <member refid="classgf_1_1_drawable_1a3bf0f49a1782c18e524ab0aeb0fefd7b" prot="public" virt="virtual"><scope>gf::Console</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

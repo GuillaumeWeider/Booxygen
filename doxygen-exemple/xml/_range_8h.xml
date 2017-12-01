@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_range_8h" kind="file" language="C++">
+    <compoundname>Range.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">iterator</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_array2_d_8h" local="yes">Array2D.h</includedby>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <includedby refid="_render_target_8h" local="yes">RenderTarget.h</includedby>
+    <incdepgraph>
+      <node id="1602">
+        <label>iterator</label>
+      </node>
+      <node id="1604">
+        <label>cstdint</label>
+      </node>
+      <node id="1608">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="1603">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>Range.h</label>
+        <link refid="_range_8h"/>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+      </node>
+      <node id="1601">
+        <label>cstddef</label>
+      </node>
+      <node id="1607">
+        <label>type_traits</label>
+      </node>
+      <node id="1605">
+        <label>algorithm</label>
+      </node>
+      <node id="1606">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1614">
+        <label>Geometry.h</label>
+        <link refid="_geometry_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>Array2D.h</label>
+        <link refid="_array2_d_8h_source"/>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>RenderPipeline.h</label>
+        <link refid="_render_pipeline_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>RenderTarget.h</label>
+        <link refid="_render_target_8h_source"/>
+        <childnode refid="1618" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1619" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>Range.h</label>
+        <link refid="_range_8h"/>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>RenderTexture.h</label>
+        <link refid="_render_texture_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1615">
+        <label>Map.h</label>
+        <link refid="_map_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>Heightmap.h</label>
+        <link refid="_heightmap_8h_source"/>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1612">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="1620">
+        <label>RenderWindow.h</label>
+        <link refid="_render_window_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>Console.h</label>
+        <link refid="_console_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1616">
+        <label>TileLayer.h</label>
+        <link refid="_tile_layer_8h_source"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgf_1_1_range" prot="public">gf::Range</innerclass>
+    <innerclass refid="structgf_1_1_range_1_1_iterator" prot="public">gf::Range::Iterator</innerclass>
+    <innerclass refid="structgf_1_1_position_range" prot="public">gf::PositionRange</innerclass>
+    <innerclass refid="structgf_1_1_position_range_1_1_iterator" prot="public">gf::PositionRange::Iterator</innerclass>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_RANGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_RANGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="42" refid="structgf_1_1_range" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_range" kindref="compound">Range</ref><sp/>{</highlight></codeline>
+<codeline lineno="43" refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/><ref refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" kindref="member">lo</ref>;<sp/></highlight></codeline>
+<codeline lineno="44" refid="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/><ref refid="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" kindref="member">hi</ref>;<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structgf_1_1_range_1_1_iterator" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::iterator&lt;std::input_iterator_tag,<sp/>T&gt;<sp/>{</highlight></codeline>
+<codeline lineno="51" refid="structgf_1_1_range_1_1_iterator_1ae98e48c0875896a57fa70ccbecb745d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/><ref refid="structgf_1_1_range_1_1_iterator_1ae98e48c0875896a57fa70ccbecb745d5" kindref="member">index</ref>;<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structgf_1_1_range_1_1_iterator_1ad824744be4b7092f99835b014e21d386" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range_1_1_iterator_1ad824744be4b7092f99835b014e21d386" kindref="member">Iterator</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>iteratorIndex)<sp/>noexcept</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>index(iteratorIndex)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structgf_1_1_range_1_1_iterator_1a22680f1dd41f1c34ae381a98724c2408" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/><ref refid="structgf_1_1_range_1_1_iterator_1a22680f1dd41f1c34ae381a98724c2408" kindref="member">operator*</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structgf_1_1_range_1_1_iterator_1a4459872c42b659b657424c78f8a8060a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/><ref refid="structgf_1_1_range_1_1_iterator_1a4459872c42b659b657424c78f8a8060a" kindref="member">operator++</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++index;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structgf_1_1_range_1_1_iterator_1a2dbe9e513e93fd66434a97e30e8597ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_range_1_1_iterator_1a2dbe9e513e93fd66434a97e30e8597ad" kindref="member">operator++</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref><sp/>copy<sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++index;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>copy;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structgf_1_1_range_1_1_iterator_1a1345f319c72a92fdad696b4f18b06c8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator_1a1345f319c72a92fdad696b4f18b06c8f" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index<sp/>!=<sp/>other.index;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structgf_1_1_range_1_1_iterator_1a03da95dcf864fa945c30a494933dc1e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator_1a03da95dcf864fa945c30a494933dc1e1" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index<sp/>==<sp/>other.index;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="structgf_1_1_range_1a4fd86736bca7b0e08d9c2a903728eddf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1a4fd86736bca7b0e08d9c2a903728eddf" kindref="member">contains</ref>(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lo<sp/>&lt;=<sp/>value<sp/>&amp;&amp;<sp/>value<sp/>&lt;<sp/>hi;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structgf_1_1_range_1aad0071043af7d74ec32722ba09e736f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_range_1aad0071043af7d74ec32722ba09e736f5" kindref="member">begin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref>(lo);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="structgf_1_1_range_1a7449f0a2cb37e507d9ba3dd3158b6c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_range_1a7449f0a2cb37e507d9ba3dd3158b6c91" kindref="member">end</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1_1_iterator" kindref="compound">Iterator</ref>(hi);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="structgf_1_1_range_1ad878f909f1ccd2ea561a36c7836da50a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/><ref refid="structgf_1_1_range_1ad878f909f1ccd2ea561a36c7836da50a" kindref="member">length</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hi<sp/>-<sp/>lo;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structgf_1_1_range_1a9a9844ea321bec5dc8dd7aab7de4ad62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1a9a9844ea321bec5dc8dd7aab7de4ad62" kindref="member">isEmpty</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lo<sp/>&gt;=<sp/>hi;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="structgf_1_1_range_1ad7a1d88f30b7d09c3232eef71deff937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range_1ad7a1d88f30b7d09c3232eef71deff937" kindref="member">isValid</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lo<sp/>&lt;=<sp/>hi;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="group__core_1ga875aab9d7de883344d72355cc09597e6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range" kindref="compound">RangeF</ref><sp/>=<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;float&gt;</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="group__core_1ga1f20513549e674effeb96f859ac37af5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range" kindref="compound">RangeI</ref><sp/>=<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;int&gt;</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group__core_1gad3135fe5249a7908bfe5aa6efa78ecb2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range" kindref="compound">RangeU</ref><sp/>=<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;unsigned&gt;</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="group__core_1gadd2465942ddf9cb7ae83b00797c00672" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_range" kindref="compound">RangeZ</ref><sp/>=<sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;std::size_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MSVC<sp/>does<sp/>not<sp/>like<sp/>extern<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_range" kindref="compound">Range&lt;float&gt;</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_range" kindref="compound">Range&lt;int&gt;</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_range" kindref="compound">Range&lt;unsigned&gt;</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="225" refid="structgf_1_1_position_range" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_position_range" kindref="compound">PositionRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="226" refid="structgf_1_1_position_range_1a8f1a33cd2ff09c2903711d31b5e57d0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;T&gt;</ref><sp/><ref refid="structgf_1_1_position_range_1a8f1a33cd2ff09c2903711d31b5e57d0f" kindref="member">first</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227" refid="structgf_1_1_position_range_1ada05b8225f84d52a2c466c86596c4299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;T&gt;</ref><sp/><ref refid="structgf_1_1_position_range_1ada05b8225f84d52a2c466c86596c4299" kindref="member">second</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="structgf_1_1_position_range_1_1_iterator" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::iterator&lt;std::input_iterator_tag,<sp/>T&gt;<sp/>{</highlight></codeline>
+<codeline lineno="233" refid="structgf_1_1_position_range_1_1_iterator_1a02428499f514482652b721c30624ab6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_range" kindref="compound">Range&lt;T&gt;</ref><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1a02428499f514482652b721c30624ab6e" kindref="member">range</ref>;</highlight></codeline>
+<codeline lineno="234" refid="structgf_1_1_position_range_1_1_iterator_1ade8f4b3a5943c697415e34dc1d62128a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">Vector&lt;T, 2&gt;</ref><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1ade8f4b3a5943c697415e34dc1d62128a" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="structgf_1_1_position_range_1_1_iterator_1abfd61c0c1573b99ea1d2c3ae162e24d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1abfd61c0c1573b99ea1d2c3ae162e24d6" kindref="member">Iterator</ref>(<ref refid="structgf_1_1_range" kindref="compound">Range&lt;T&gt;</ref><sp/>iteratorRange,<sp/><ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">Vector&lt;T, 2&gt;</ref><sp/>iteratorPosition)<sp/>noexcept</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>range(iteratorRange)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>position(iteratorPosition)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="structgf_1_1_position_range_1_1_iterator_1a006695bda188808a458ae0defe64e9bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_vector_3_01_t_00_012_01_4" kindref="compound">Vector&lt;T, 2&gt;</ref><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1a006695bda188808a458ae0defe64e9bb" kindref="member">operator*</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="structgf_1_1_position_range_1_1_iterator_1a10882f60980538379603f06fc75d4d98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1a10882f60980538379603f06fc75d4d98" kindref="member">operator++</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structgf_1_1_position_range_1_1_iterator_1a7e8a2afe39b8c52ee994e0806ea1896e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1a7e8a2afe39b8c52ee994e0806ea1896e" kindref="member">operator++</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref><sp/>copy<sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>copy;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="structgf_1_1_position_range_1_1_iterator_1af87ec29095b8a2e61b3d1966854e2db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1af87ec29095b8a2e61b3d1966854e2db7" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1af7d887e66080275b723e2b4bf0c13471" kindref="member">x</ref><sp/>!=<sp/>other.position.x<sp/>||<sp/>position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1acaa8c29e9f98b2a3b460c548cd7491cb" kindref="member">y</ref><sp/>!=<sp/>other.position.y;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="structgf_1_1_position_range_1_1_iterator_1ae4e9edd2f9310915363dcc3827d38e2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator_1ae4e9edd2f9310915363dcc3827d38e2d" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1af7d887e66080275b723e2b4bf0c13471" kindref="member">x</ref><sp/>==<sp/>other.position.x<sp/>&amp;&amp;<sp/>position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1acaa8c29e9f98b2a3b460c548cd7491cb" kindref="member">y</ref><sp/>==<sp/>other.position.y;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>step()<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1af7d887e66080275b723e2b4bf0c13471" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1af7d887e66080275b723e2b4bf0c13471" kindref="member">x</ref><sp/>&gt;=<sp/>range.<ref refid="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" kindref="member">hi</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1af7d887e66080275b723e2b4bf0c13471" kindref="member">x</ref><sp/>=<sp/>range.<ref refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" kindref="member">lo</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++position.<ref refid="structgf_1_1_vector_3_01_t_00_012_01_4_1acaa8c29e9f98b2a3b460c548cd7491cb" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="structgf_1_1_position_range_1a9a91dbb22e19e9ac52bece42cb2cfad9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_position_range_1a9a91dbb22e19e9ac52bece42cb2cfad9" kindref="member">begin</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref>(first,<sp/>{<sp/>first.<ref refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" kindref="member">lo</ref>,<sp/>second.<ref refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" kindref="member">lo</ref><sp/>});</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="structgf_1_1_position_range_1a5b8fbf11f3590586f4be9d5961e30c8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref><sp/><ref refid="structgf_1_1_position_range_1a5b8fbf11f3590586f4be9d5961e30c8b" kindref="member">end</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structgf_1_1_position_range_1_1_iterator" kindref="compound">Iterator</ref>(first,<sp/>{<sp/>first.<ref refid="structgf_1_1_range_1afcf0587de6aa377e6d87876c6a93eb7b" kindref="member">lo</ref>,<sp/>second.<ref refid="structgf_1_1_range_1acf814c011a89d0e8f6bc6dbd7debbd4f" kindref="member">hi</ref><sp/>});</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_RANGE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Range.h"/>
+  </compounddef>
+</doxygen>

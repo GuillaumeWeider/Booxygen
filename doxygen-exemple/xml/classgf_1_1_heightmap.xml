@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_heightmap" kind="class" language="C++" prot="public">
+    <compoundname>gf::Heightmap</compoundname>
+    <includes refid="_heightmap_8h" local="no">gf/Heightmap.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Shaping</header>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1acc9d34fd2541c3ad0438eea4a972d55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::normalize</definition>
+        <argsstring>(double min=0.0, double max=1.0)</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Normalize the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new minimum value (defaults to <formula id="45">$ 0.0 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new maximum value (defaults to <formula id="46">$ 1.0 $</formula>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a599a8fbf293b6dda8a8ad0a88b315377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::addHill</definition>
+        <argsstring>(Vector2d center, double radius, double height)</argsstring>
+        <name>addHill</name>
+        <param>
+          <type><ref refid="group__core_1gaf000d77b14f910bee6329245832d66af" kindref="member">Vector2d</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Add a hill to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the hill </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of the hill </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the hill </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a23270fcee9c9daa170abda92f02d781f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::digHill</definition>
+        <argsstring>(Vector2d center, double radius, double height)</argsstring>
+        <name>digHill</name>
+        <param>
+          <type><ref refid="group__core_1gaf000d77b14f910bee6329245832d66af" kindref="member">Vector2d</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Dig a hill in the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the hill </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of the hill </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the hill </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a91d4d0820d83a0017979d09eb0722e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::addNoise</definition>
+        <argsstring>(Noise2D &amp;noise, double scale=1.0)</argsstring>
+        <name>addNoise</name>
+        <param>
+          <type><ref refid="classgf_1_1_noise2_d" kindref="compound">Noise2D</ref> &amp;</type>
+          <declname>noise</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Add a noise to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The noise to use </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale of the noise </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a7ca818c0848c0e79b9f78b59e71f6649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::addValue</definition>
+        <argsstring>(double value)</argsstring>
+        <name>addValue</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a constant to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the constant </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1aaa100a9175f8dd28fd43b39a7d7769d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::scale</definition>
+        <argsstring>(double value)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Scale the values of the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The factor of scaling </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a34f44c5d6f642b142412ac9be23329cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::clamp</definition>
+        <argsstring>(double min=0.0, double max=1.0)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Clamp the values of the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value (defaults to <formula id="45">$ 0.0 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value (defaults to <formula id="46">$ 1.0 $</formula>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_heightmap_1acc9d34fd2541c3ad0438eea4a972d55e" kindref="member">normalize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="156" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Erosion</header>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a4d6fbfcede9b757fb37d8e76097bc319" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gf::Heightmap::getSlope</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>getSlope</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Compute the slope at a position. </para>        </briefdescription>
+        <detaileddescription>
+<para>The slope is defined as &quot;the greatest of the height differences between
+the cell and its four neighbours in a Von Neumann neighbourhood&quot;.</para><para><formula id="47">\[ \text{slope}(x, y) = \max(|h(x,y) - h(x - 1, y)|, |h(x,y) - h(x + 1, y)|, |h(x,y) - h(x, y - 1)|, |h(x,y) - h(x, y + 1)|) \]</formula></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The given position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a7e75d60d09325cf6d8b5314a8b5e8494" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::thermalErosion</definition>
+        <argsstring>(unsigned iterations, double talus, double fraction)</argsstring>
+        <name>thermalErosion</name>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>talus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+<para>Apply thermal erosion to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>talus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum difference for a move of material (typically <formula id="48">$ \frac{4}{N} $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fraction of material that moves (typically <formula id="49">$ 0.5 $</formula>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a3f236a680689d7139772a9b4bcb7d38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::hydraulicErosion</definition>
+        <argsstring>(unsigned iterations, double rainAmount, double solubility, double evaporation, double capacity)</argsstring>
+        <name>hydraulicErosion</name>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rainAmount</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>solubility</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>evaporation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Apply hydraulic erosision to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rainAmount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of rain each cell receives at each iteration (typically <formula id="50">$ 0.01 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solubility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The solubility of the terrain (typically <formula id="50">$ 0.01 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evaporation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The proportion of evaporated water at each iteration (typically <formula id="49">$ 0.5 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum proportion of material that can be carried by water (typically <formula id="50">$ 0.01 $</formula>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1aafdac386fbe1379ae476e5810da9488d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::fastErosion</definition>
+        <argsstring>(unsigned iterations, double talus, double fraction)</argsstring>
+        <name>fastErosion</name>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>talus</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+<para>Apply fast erosion to the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of iterations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>talus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum difference for a move of material (typically <formula id="51">$ \frac{8}{N} $</formula> or more) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fraction of material that moves (typically <formula id="49">$ 0.5 $</formula>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1ae4833677969e827030a098a195cbd0c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gf::Heightmap::getErosionScore</definition>
+        <argsstring>() const</argsstring>
+        <name>getErosionScore</name>
+        <briefdescription>
+<para>Compute the erosion score for the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para>The erosion score is the average slope divided by the standard deviation of slopes. A high erosion score means that the terrain has large flat areas and has some steep areas. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="215" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Export</header>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a7d1d6af9c7a00ceaf47391f607dd641c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_heightmap" kindref="compound">Heightmap</ref></type>
+        <definition>Heightmap gf::Heightmap::subMap</definition>
+        <argsstring>(RectI area) const</argsstring>
+        <name>subMap</name>
+        <param>
+          <type><ref refid="group__core_1ga2e3cde0dd67f7db84ca4e8ba9ce1fa64" kindref="member">RectI</ref></type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Get a sub-map of the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area of the sub-map in the heightmap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a66e60f36f6c1aab6c0fa80d48b94191d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::Heightmap::copyToGrayscaleImage</definition>
+        <argsstring>() const</argsstring>
+        <name>copyToGrayscaleImage</name>
+        <briefdescription>
+<para>Export to a grayscale image. </para>        </briefdescription>
+        <detaileddescription>
+<para>The heightmap is assumed to be normalized.</para><para><simplesect kind="return"><para>A grayscale image representing the heightmap</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_heightmap_1a6f442648e8bad59bc400a213ed85a30e" kindref="member">copyToColoredImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a6f442648e8bad59bc400a213ed85a30e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::Heightmap::copyToColoredImage</definition>
+        <argsstring>(const ColorRamp &amp;ramp, double waterLevel=0.5, Render render=Render::Colored) const</argsstring>
+        <name>copyToColoredImage</name>
+        <param>
+          <type>const <ref refid="structgf_1_1_color_ramp" kindref="compound">ColorRamp</ref> &amp;</type>
+          <declname>ramp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>waterLevel</declname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type><ref refid="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4" kindref="member">Render</ref></type>
+          <declname>render</declname>
+          <defval><ref refid="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4a23aad110ee43b97ef120fbbeb743d81c" kindref="member">Render::Colored</ref></defval>
+        </param>
+        <briefdescription>
+<para>Export to a colored image. </para>        </briefdescription>
+        <detaileddescription>
+<para>The heightmap is assumed to be normalized.</para><para>The color ramp assumes that the water level is at <formula id="49">$ 0.5 $</formula>. The actual water level can be specified and the ramp is automatically adapted on the fly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ramp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A color ramp </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The actual water level (defaults to <formula id="49">$ 0.5 $</formula>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rendering mode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A colored image representing the heightmap</para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_heightmap_1a66e60f36f6c1aab6c0fa80d48b94191d" kindref="member">copyToGrayscaleImage()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="268" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4" prot="public" static="no">
+        <name>Render</name>
+        <enumvalue id="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4a23aad110ee43b97ef120fbbeb743d81c" prot="public">
+          <name>Colored</name>
+          <briefdescription>
+<para>Export to a simply colored image. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4a95e4c683b31aacc6c251c95780ff6808" prot="public">
+          <name>Shaded</name>
+          <briefdescription>
+<para>Export to a shaded image. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Rendering mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="224" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="224" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_heightmap_1a7c2928c5a3c82495db4164ef98d9b9ba" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref>&lt; double, int &gt;</type>
+        <definition>Array2D&lt;double, int&gt; gf::Heightmap::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="275" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a93020b746ea67fb83ed3ce520ca60a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Heightmap::Heightmap</definition>
+        <argsstring>(Vector2i size)</argsstring>
+        <name>Heightmap</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the heightmap </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1ae77848b6cdd60658af1d15764cde6bac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+        <definition>Vector2i gf::Heightmap::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current size of the heightmap </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="58" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a0f73c3f4a6ba9245aefc70f5854b3263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para>The values are all set to <formula id="45">$ 0.0 $</formula> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1ad4025649625bd737917459a9cef8437e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double gf::Heightmap::getValue</definition>
+        <argsstring>(Vector2i position) const</argsstring>
+        <name>getValue</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Get the value at the specified position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value at the given position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="75" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a61242f9a76feea5df8cc87242e0d9274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Heightmap::setValue</definition>
+        <argsstring>(Vector2i position, double value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type><ref refid="group__core_1ga6db8376e8b54ea61befbc14817e6dde3" kindref="member">Vector2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value at the specified position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="85" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_heightmap_1a00bf3f3607071404dae70605fab93869" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; double, double &gt;</type>
+        <definition>std::tuple&lt;double, double&gt; gf::Heightmap::getMinMax</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinMax</name>
+        <briefdescription>
+<para>Get the minimum and maximum of the heightmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pair with the first element being the minimum and the second element the maximum </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A heightmap. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" kindref="member">gf::midpointDisplacement2D()</ref>, <ref refid="group__core_1ga224a9e63967d8b82789bdc3c87797c26" kindref="member">gf::diamondSquare2D()</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" line="44" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Heightmap.h" bodystart="44" bodyend="276"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_heightmap_1a599a8fbf293b6dda8a8ad0a88b315377" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>addHill</name></member>
+      <member refid="classgf_1_1_heightmap_1a91d4d0820d83a0017979d09eb0722e6d" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>addNoise</name></member>
+      <member refid="classgf_1_1_heightmap_1a7ca818c0848c0e79b9f78b59e71f6649" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>addValue</name></member>
+      <member refid="classgf_1_1_heightmap_1a34f44c5d6f642b142412ac9be23329cf" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>clamp</name></member>
+      <member refid="classgf_1_1_heightmap_1a6f442648e8bad59bc400a213ed85a30e" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>copyToColoredImage</name></member>
+      <member refid="classgf_1_1_heightmap_1a66e60f36f6c1aab6c0fa80d48b94191d" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>copyToGrayscaleImage</name></member>
+      <member refid="classgf_1_1_heightmap_1a23270fcee9c9daa170abda92f02d781f" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>digHill</name></member>
+      <member refid="classgf_1_1_heightmap_1aafdac386fbe1379ae476e5810da9488d" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>fastErosion</name></member>
+      <member refid="classgf_1_1_heightmap_1ae4833677969e827030a098a195cbd0c2" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>getErosionScore</name></member>
+      <member refid="classgf_1_1_heightmap_1a00bf3f3607071404dae70605fab93869" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>getMinMax</name></member>
+      <member refid="classgf_1_1_heightmap_1ae77848b6cdd60658af1d15764cde6bac" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_heightmap_1a4d6fbfcede9b757fb37d8e76097bc319" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>getSlope</name></member>
+      <member refid="classgf_1_1_heightmap_1ad4025649625bd737917459a9cef8437e" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>getValue</name></member>
+      <member refid="classgf_1_1_heightmap_1a93020b746ea67fb83ed3ce520ca60a17" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>Heightmap</name></member>
+      <member refid="classgf_1_1_heightmap_1a3f236a680689d7139772a9b4bcb7d38d" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>hydraulicErosion</name></member>
+      <member refid="classgf_1_1_heightmap_1a7c2928c5a3c82495db4164ef98d9b9ba" prot="private" virt="non-virtual"><scope>gf::Heightmap</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_heightmap_1acc9d34fd2541c3ad0438eea4a972d55e" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>normalize</name></member>
+      <member refid="classgf_1_1_heightmap_1aca20336340f6c9f326e6aeeee96d4ae4" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>Render</name></member>
+      <member refid="classgf_1_1_heightmap_1a0f73c3f4a6ba9245aefc70f5854b3263" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>reset</name></member>
+      <member refid="classgf_1_1_heightmap_1aaa100a9175f8dd28fd43b39a7d7769d3" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>scale</name></member>
+      <member refid="classgf_1_1_heightmap_1a61242f9a76feea5df8cc87242e0d9274" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>setValue</name></member>
+      <member refid="classgf_1_1_heightmap_1a7d1d6af9c7a00ceaf47391f607dd641c" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>subMap</name></member>
+      <member refid="classgf_1_1_heightmap_1a7e75d60d09325cf6d8b5314a8b5e8494" prot="public" virt="non-virtual"><scope>gf::Heightmap</scope><name>thermalErosion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

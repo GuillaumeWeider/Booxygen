@@ -1,0 +1,1133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_array2_d" kind="class" language="C++" prot="public">
+    <compoundname>gf::Array2D</compoundname>
+    <includes refid="_array2_d_8h" local="no">gf/Array2D.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>I</declname>
+        <defname>I</defname>
+        <defval>unsigned</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Raw data access</header>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a4b79fa8c752fd9f2ed5c639523490a74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Array2D&lt; T, I &gt;::getDataPtr</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDataPtr</name>
+        <briefdescription>
+<para>Get the pointer to raw data. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned pointer is <computeroutput>const</computeroutput> so you can not modify the array with this function.</para><para><simplesect kind="return"><para>The pointer to raw data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="144" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a0677c2fcb304ac8751f193b77c513dbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t gf::Array2D&lt; T, I &gt;::getDataSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getDataSize</name>
+        <briefdescription>
+<para>Get the raw data size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total number of elements in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="153" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a5e7ec4e91c30a35c7a41d5219c1a029d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;I, 2&gt; gf::Array2D&lt; T, I &gt;::getSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+<para>Get the size of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="162" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a199677b75b5c04282daa9ef15cdc5e9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+        <definition>constexpr I gf::Array2D&lt; T, I &gt;::getCols</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getCols</name>
+        <briefdescription>
+<para>Get the number of columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of columns </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="171" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a389b07a7da0c0cd5a01af384346a19a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+        <definition>constexpr I gf::Array2D&lt; T, I &gt;::getRows</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getRows</name>
+        <briefdescription>
+<para>Get the number of rows. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of rows </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="180" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1abcd3af6e1984e0345bb95d6f16f64c9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Array2D&lt; T, I &gt;::isEmpty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Check if the array is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>An empty array is an array with <formula id="3">$ 0 $</formula> elements, i.e. either the number of columns is <formula id="3">$ 0 $</formula> or the number of rows is <formula id="3">$ 0 $</formula>.</para><para><simplesect kind="return"><para>True if the array is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="192" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1adddda9ba3c9bd37add85fe246bb57cdd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool gf::Array2D&lt; T, I &gt;::isValid</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos) const noexcept</argsstring>
+        <name>isValid</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Check if a position is valid. </para>        </briefdescription>
+        <detaileddescription>
+<para>A valid position is a position inside the array</para><para><simplesect kind="return"><para>True if the position is valid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="203" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="203" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Elements access</header>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a4ce2f15a2adae812ec3889702b27b660" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>T&amp; gf::Array2D&lt; T, I &gt;::operator()</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get the element at a given 2D position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 2D position of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="219" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a25e29d5840eba19f24cd72f07874ea7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>T&amp; gf::Array2D&lt; T, I &gt;::operator()</definition>
+        <argsstring>(std::size_t index)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the element at a given 1D index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 1D index of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" kindref="member">getPositionRange()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="229" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a6881232f07dad70f955cf77b5f36a108" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>const T&amp; gf::Array2D&lt; T, I &gt;::operator()</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Get the element at a given 2D position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 2D position of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="238" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ad4bd487b2ed0031399c5997df59c8de3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>const T&amp; gf::Array2D&lt; T, I &gt;::operator()</definition>
+        <argsstring>(std::size_t index) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the element at a given 1D index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 1D index of the element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" kindref="member">getPositionRange()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="248" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ae4018dd5b613a2bf820d60b060551848" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+        <definition>constexpr Vector&lt;I, 2&gt; gf::Array2D&lt; T, I &gt;::toPosition</definition>
+        <argsstring>(std::size_t pos) const noexcept</argsstring>
+        <name>toPosition</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> a 1D position into a 2D position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 1D position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding 2D position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="258" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="258" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Visitors</header>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a56b1f031e9d3d6ec2b1c8cbba58d5e3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit4Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func)</argsstring>
+        <name>visit4Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 4 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical and horizontal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="291" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1afd7c2693c2780580ecb9b42d0c18550c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit4Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func) const</argsstring>
+        <name>visit4Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 4 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical and horizontal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="317" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="317" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a1006e33c449707e066a561b25c9771ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit12Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func)</argsstring>
+        <name>visit12Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 12 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical and horizontal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="343" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1afad6bcac042a8b721802d578c21c708c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit12Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func) const</argsstring>
+        <name>visit12Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 12 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical and horizontal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="369" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="369" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a845439d276d60edaafe7860641cdca42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit8Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func)</argsstring>
+        <name>visit8Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 8 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical, horizontal and diagonal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="395" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="395" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ad5d4e536abdca9dbe55c796ed791bf7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit8Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func) const</argsstring>
+        <name>visit8Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 8 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical, horizontal and diagonal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="423" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="423" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a38c1cf768d111e1e7a57032f4b051cb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit24Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func)</argsstring>
+        <name>visit24Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 24 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical, horizontal and diagonal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="449" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="449" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a840139ac05680d6406223b447037a664" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visit24Neighbors</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func) const</argsstring>
+        <name>visit24Neighbors</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Visit the 24 neighbors of a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calls a callback function for every neighbor in the vertical, horizontal and diagonal direction. The function checks if the neighbor actually exists.</para><para>The callback function has the following prototype:</para><para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callback(Vector&lt;I,<sp/>2&gt;<sp/>pos,<sp/><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref><sp/>value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>pos<sp/>is<sp/>the<sp/>position<sp/>of<sp/>the<sp/>neighbor</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>value<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>neighbor</highlight></codeline>
+</programlisting></para><para>The callback function can be a simple function but also a <ulink url="http://en.cppreference.com/w/cpp/language/lambda">lambda expression</ulink>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="475" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="475" bodyend="477"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Iterators and ranges</header>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1aff17b16f1868abd8bbe6955dafee3aa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Array2D&lt; T, I &gt;::begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first element of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <computeroutput>begin</computeroutput> iterator to the array </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="492" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="492" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1aec3d53d1365b9db610a9290b79e6d74f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>const T* gf::Array2D&lt; T, I &gt;::end</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator to the element following the last element of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <computeroutput>end</computeroutput> iterator to the array </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="502" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="502" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::Array2D&lt; T, I &gt;::begin</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Get an iterator to the first element of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <computeroutput>begin</computeroutput> iterator to the array </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" kindref="member">end()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="512" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="512" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> *</type>
+        <definition>T* gf::Array2D&lt; T, I &gt;::end</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>Get an iterator to the element following the last element of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <computeroutput>end</computeroutput> iterator to the array </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" kindref="member">begin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="522" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="522" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ae7b112218b2234719dc3d9d3c2b99496" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="group__core_1gadd2465942ddf9cb7ae83b00797c00672" kindref="member">RangeZ</ref></type>
+        <definition>constexpr RangeZ gf::Array2D&lt; T, I &gt;::getIndexRange</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getIndexRange</name>
+        <briefdescription>
+<para>Get the 1D index range of the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A range with all the 1D index in the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="531" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="531" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ae4881cc9ecc8b79f7fb4a0e63624eb6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref> &gt;</type>
+        <definition>constexpr Range&lt;I&gt; gf::Array2D&lt; T, I &gt;::getRowRange</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getRowRange</name>
+        <briefdescription>
+<para>Get the row range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A range with all the rows </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="540" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="540" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1adde6cc217dbf1c988c9fe2ade0becb53" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_range" kindref="compound">Range</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref> &gt;</type>
+        <definition>constexpr Range&lt;I&gt; gf::Array2D&lt; T, I &gt;::getColRange</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getColRange</name>
+        <briefdescription>
+<para>Get the column range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A range with all the columns </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="549" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="549" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="structgf_1_1_position_range" kindref="compound">PositionRange</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref> &gt;</type>
+        <definition>constexpr PositionRange&lt;I&gt; gf::Array2D&lt; T, I &gt;::getPositionRange</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getPositionRange</name>
+        <briefdescription>
+<para>Get the position range. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A range for iterating among the positions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="558" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="558" bodyend="560"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_array2_d_1a8e1c3d676242e44cf8600011c243f4dc" prot="private" static="no" mutable="no">
+        <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+        <definition>Vector&lt;I, 2&gt; gf::Array2D&lt; T, I &gt;::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="663" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgf_1_1_array2_d_1a15f223978e3e917cb3a5015e55e86163" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &gt;</type>
+        <definition>std::vector&lt;T&gt; gf::Array2D&lt; T, I &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="664" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a0ec41dd614366590913b0148ec48c040" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Array2D&lt; T, I &gt;::Array2D</definition>
+        <argsstring>()</argsstring>
+        <name>Array2D</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="70" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a280284a67ba004b12a0a9b6eaa4680fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Array2D&lt; T, I &gt;::Array2D</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; size)</argsstring>
+        <name>Array2D</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="81" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1adb700b94e1de611c0127972ad533b65b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gf::Array2D&lt; T, I &gt;::Array2D</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; size, const T &amp;value)</argsstring>
+        <name>Array2D</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with a size and a value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial value in the array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="94" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1aec121612f50c5914a1085cecf7fdba5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Array2D&lt; T, I &gt;::Array2D</definition>
+        <argsstring>(const Array2D &amp;)=default</argsstring>
+        <name>Array2D</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a09b47fd5f350c5e93fcbacc227475a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;</type>
+        <definition>Array2D&amp; gf::Array2D&lt; T, I &gt;::operator=</definition>
+        <argsstring>(const Array2D &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1adb7e284a3b786d204501389e06cc8766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Array2D&lt; T, I &gt;::Array2D</definition>
+        <argsstring>(Array2D &amp;&amp;)=default</argsstring>
+        <name>Array2D</name>
+        <param>
+          <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a0bac74bb7cf68be28453c0892be3b40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;</type>
+        <definition>Array2D&amp; gf::Array2D&lt; T, I &gt;::operator=</definition>
+        <argsstring>(Array2D &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move assignement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1aa5a1495f3d6ffc5fad5d1fe0bac3443a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::swap</definition>
+        <argsstring>(Array2D &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="classgf_1_1_array2_d" kindref="compound">Array2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Swap with another array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An other array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="126" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ac96943e8d3c2a85049210b80bb4d8ad9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>T&amp; gf::Array2D&lt; T, I &gt;::get</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="565" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="565" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a5eae8bfe5a53c0e081c40bca8eee6c4b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626ab9ece18c950afbfa6b0fdbfa4ff731d3" kindref="member">T</ref> &amp;</type>
+        <definition>const T&amp; gf::Array2D&lt; T, I &gt;::get</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos) const</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="569" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="569" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1a3a51a3868911a68cf372958d33a47564" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visitNeighborsSquare</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func, I n) const</argsstring>
+        <name>visitNeighborsSquare</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="574" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="574" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1abc4d96e4698da6b642bff7c624fded23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visitNeighborsSquare</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func, I n)</argsstring>
+        <name>visitNeighborsSquare</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="594" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="594" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1ac8e389aad99ffb4276038fe48cd32da3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visitNeighborsDiamond</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func, I n) const</argsstring>
+        <name>visitNeighborsDiamond</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="615" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="615" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_array2_d_1aedaf90c2dfb27fb9c9d5ee06edd7f6ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void gf::Array2D&lt; T, I &gt;::visitNeighborsDiamond</definition>
+        <argsstring>(Vector&lt; I, 2 &gt; pos, Func func, I n)</argsstring>
+        <name>visitNeighborsDiamond</name>
+        <param>
+          <type><ref refid="structgf_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref>, 2 &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626add7536794b63bf90eccfd37f9b147d7f" kindref="member">I</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="639" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="639" bodyend="660"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A two-dimensional array. </para>    </briefdescription>
+    <detaileddescription>
+<para>gf::Array represents a two-dimensional array, organized in row-major order.</para><para>The array is templated with the type of the data and the type of the indices (defaults to <computeroutput>unsigned</computeroutput>).</para><para>Contrary to the usual way of accessing 2D arrays, the first coordinate is the column and the second coordinate is the row. So that, if <computeroutput>size</computeroutput> is the size of the array and <computeroutput>pos</computeroutput> is the position in the array:</para><para><itemizedlist>
+<listitem><para><formula id="1">$ 0 \leq \mathtt{pos.x} = \mathtt{pos.col} &lt; \mathtt{size.width} = \mathtt{size.col} $</formula></para></listitem><listitem><para><formula id="2">$ 0 \leq \mathtt{pos.y} = \mathtt{pos.row} &lt; \mathtt{size.height} = \mathtt{size.row} $</formula></para></listitem></itemizedlist>
+</para><para>Some convinient visitors are provided to visit the four neighbors (up, down, left and right), or the eight neighbors.</para><para><simplesect kind="see"><para><ref refid="structgf_1_1_matrix" kindref="compound">gf::Matrix</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" line="63" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Array2D.h" bodystart="63" bodyend="665"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_array2_d_1a0ec41dd614366590913b0148ec48c040" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>Array2D</name></member>
+      <member refid="classgf_1_1_array2_d_1a280284a67ba004b12a0a9b6eaa4680fa" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>Array2D</name></member>
+      <member refid="classgf_1_1_array2_d_1adb700b94e1de611c0127972ad533b65b" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>Array2D</name></member>
+      <member refid="classgf_1_1_array2_d_1aec121612f50c5914a1085cecf7fdba5f" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>Array2D</name></member>
+      <member refid="classgf_1_1_array2_d_1adb7e284a3b786d204501389e06cc8766" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>Array2D</name></member>
+      <member refid="classgf_1_1_array2_d_1aff17b16f1868abd8bbe6955dafee3aa5" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>begin</name></member>
+      <member refid="classgf_1_1_array2_d_1a20500f2da197e54646130cc7cf03e4c0" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>begin</name></member>
+      <member refid="classgf_1_1_array2_d_1aec3d53d1365b9db610a9290b79e6d74f" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>end</name></member>
+      <member refid="classgf_1_1_array2_d_1a8d7dd52df003d68330a72ac3bfb092c5" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>end</name></member>
+      <member refid="classgf_1_1_array2_d_1ac96943e8d3c2a85049210b80bb4d8ad9" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>get</name></member>
+      <member refid="classgf_1_1_array2_d_1a5eae8bfe5a53c0e081c40bca8eee6c4b" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>get</name></member>
+      <member refid="classgf_1_1_array2_d_1adde6cc217dbf1c988c9fe2ade0becb53" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getColRange</name></member>
+      <member refid="classgf_1_1_array2_d_1a199677b75b5c04282daa9ef15cdc5e9f" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getCols</name></member>
+      <member refid="classgf_1_1_array2_d_1a4b79fa8c752fd9f2ed5c639523490a74" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getDataPtr</name></member>
+      <member refid="classgf_1_1_array2_d_1a0677c2fcb304ac8751f193b77c513dbe" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getDataSize</name></member>
+      <member refid="classgf_1_1_array2_d_1ae7b112218b2234719dc3d9d3c2b99496" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getIndexRange</name></member>
+      <member refid="classgf_1_1_array2_d_1ac4fdc6ad36d4ace8dc5f050eaa2de0fe" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getPositionRange</name></member>
+      <member refid="classgf_1_1_array2_d_1ae4881cc9ecc8b79f7fb4a0e63624eb6a" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getRowRange</name></member>
+      <member refid="classgf_1_1_array2_d_1a389b07a7da0c0cd5a01af384346a19a2" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getRows</name></member>
+      <member refid="classgf_1_1_array2_d_1a5e7ec4e91c30a35c7a41d5219c1a029d" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_array2_d_1abcd3af6e1984e0345bb95d6f16f64c9e" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>isEmpty</name></member>
+      <member refid="classgf_1_1_array2_d_1adddda9ba3c9bd37add85fe246bb57cdd" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>isValid</name></member>
+      <member refid="classgf_1_1_array2_d_1a15f223978e3e917cb3a5015e55e86163" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>m_data</name></member>
+      <member refid="classgf_1_1_array2_d_1a8e1c3d676242e44cf8600011c243f4dc" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>m_size</name></member>
+      <member refid="classgf_1_1_array2_d_1a4ce2f15a2adae812ec3889702b27b660" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_array2_d_1a25e29d5840eba19f24cd72f07874ea7f" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_array2_d_1a6881232f07dad70f955cf77b5f36a108" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_array2_d_1ad4bd487b2ed0031399c5997df59c8de3" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator()</name></member>
+      <member refid="classgf_1_1_array2_d_1a09b47fd5f350c5e93fcbacc227475a9f" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_array2_d_1a0bac74bb7cf68be28453c0892be3b40e" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_array2_d_1aa5a1495f3d6ffc5fad5d1fe0bac3443a" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>swap</name></member>
+      <member refid="classgf_1_1_array2_d_1ae4018dd5b613a2bf820d60b060551848" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>toPosition</name></member>
+      <member refid="classgf_1_1_array2_d_1a1006e33c449707e066a561b25c9771ba" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit12Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1afad6bcac042a8b721802d578c21c708c" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit12Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1a38c1cf768d111e1e7a57032f4b051cb4" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit24Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1a840139ac05680d6406223b447037a664" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit24Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1a56b1f031e9d3d6ec2b1c8cbba58d5e3e" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit4Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1afd7c2693c2780580ecb9b42d0c18550c" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit4Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1a845439d276d60edaafe7860641cdca42" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit8Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1ad5d4e536abdca9dbe55c796ed791bf7c" prot="public" virt="non-virtual"><scope>gf::Array2D</scope><name>visit8Neighbors</name></member>
+      <member refid="classgf_1_1_array2_d_1ac8e389aad99ffb4276038fe48cd32da3" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>visitNeighborsDiamond</name></member>
+      <member refid="classgf_1_1_array2_d_1aedaf90c2dfb27fb9c9d5ee06edd7f6ca" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>visitNeighborsDiamond</name></member>
+      <member refid="classgf_1_1_array2_d_1a3a51a3868911a68cf372958d33a47564" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>visitNeighborsSquare</name></member>
+      <member refid="classgf_1_1_array2_d_1abc4d96e4698da6b642bff7c624fded23" prot="private" virt="non-virtual"><scope>gf::Array2D</scope><name>visitNeighborsSquare</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

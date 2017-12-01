@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_system_info" kind="class" language="C++" prot="public">
+    <compoundname>gf::SystemInfo</compoundname>
+    <includes refid="_system_info_8h" local="no">gf/SystemInfo.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_system_info_1a1104a69685dd3244814a7b17a6bd82b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::SystemInfo::SystemInfo</definition>
+        <argsstring>()=delete</argsstring>
+        <name>SystemInfo</name>
+        <briefdescription>
+<para>Deleted default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_system_info_1ab3c8ad01435e188aa47100e43fbee217" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gf::SystemInfo::getPlatformName</definition>
+        <argsstring>()</argsstring>
+        <name>getPlatformName</name>
+        <briefdescription>
+<para>Get the plaform name. </para>        </briefdescription>
+        <detaileddescription>
+<para>The plaform can be:</para><para><itemizedlist>
+<listitem><para>Windows</para></listitem><listitem><para>Mac OS X</para></listitem><listitem><para>Linux</para></listitem><listitem><para>iOS</para></listitem><listitem><para>Android</para></listitem><listitem><para>Unknown</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>The plaform name (e.g. &quot;Linux&quot;) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_system_info_1a67602a42337894bcc3d2177727fd8b88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::SystemInfo::getCpuCacheLineSize</definition>
+        <argsstring>()</argsstring>
+        <name>getCpuCacheLineSize</name>
+        <briefdescription>
+<para>Get the CPU L1 cache line size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The L1 cache line size of the CPU, in kilobytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_system_info_1af2a572fabbbaf8659ba8870c63c2ffb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::SystemInfo::getCpuCount</definition>
+        <argsstring>()</argsstring>
+        <name>getCpuCount</name>
+        <briefdescription>
+<para>Get the number of CPU cores. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the number of logical CPU cores.</para><para><simplesect kind="return"><para>The number of CPU cores </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_system_info_1a3e0e3d6d36ca44def2a3d277d258f6ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gf::SystemInfo::getSystemRamSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSystemRamSize</name>
+        <briefdescription>
+<para>Get the amount of memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The amount of memory (RAM), in megabytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="89" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for system info. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class only contains static methods. You can get:</para><para><itemizedlist>
+<listitem><para>the plaform name (e.g. &quot;Linux&quot;)</para></listitem><listitem><para>the CPU cache line size</para></listitem><listitem><para>the number of CPU cores</para></listitem><listitem><para>the amount of memory (RAM) </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" line="45" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/SystemInfo.h" bodystart="45" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_system_info_1a67602a42337894bcc3d2177727fd8b88" prot="public" virt="non-virtual"><scope>gf::SystemInfo</scope><name>getCpuCacheLineSize</name></member>
+      <member refid="classgf_1_1_system_info_1af2a572fabbbaf8659ba8870c63c2ffb0" prot="public" virt="non-virtual"><scope>gf::SystemInfo</scope><name>getCpuCount</name></member>
+      <member refid="classgf_1_1_system_info_1ab3c8ad01435e188aa47100e43fbee217" prot="public" virt="non-virtual"><scope>gf::SystemInfo</scope><name>getPlatformName</name></member>
+      <member refid="classgf_1_1_system_info_1a3e0e3d6d36ca44def2a3d277d258f6ba" prot="public" virt="non-virtual"><scope>gf::SystemInfo</scope><name>getSystemRamSize</name></member>
+      <member refid="classgf_1_1_system_info_1a1104a69685dd3244814a7b17a6bd82b6" prot="public" virt="non-virtual"><scope>gf::SystemInfo</scope><name>SystemInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

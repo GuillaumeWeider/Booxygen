@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_gamepad" kind="class" language="C++" prot="public">
+    <compoundname>gf::Gamepad</compoundname>
+    <includes refid="_gamepad_8h" local="no">gf/Gamepad.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Gamepad management</header>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+        <definition>static GamepadId gf::Gamepad::open</definition>
+        <argsstring>(GamepadHwId hwid)</argsstring>
+        <name>open</name>
+        <param>
+          <type><ref refid="group__window_1gab3aed9942f731ce33866e921d443c5ee" kindref="member">GamepadHwId</ref></type>
+          <declname>hwid</declname>
+        </param>
+        <briefdescription>
+<para>Open a gamepad. </para>        </briefdescription>
+        <detaileddescription>
+<para>Generally, this function is called after a GamepadConnected event.</para><para>Example:</para><para><programlisting><codeline><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dad5909d240c46150dc002123ef8abcc2f" kindref="member">gf::EventType::GamepadConnected</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">gf::GamepadId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" kindref="member">gf::Gamepad::open</ref>(event.<ref refid="structgf_1_1_event_1a6c64e1db6097737c548e8615678da58d" kindref="member">gamepadConnection</ref>.<ref refid="structgf_1_1_event_1_1_gamepad_connection_1a1717f8014fc15bedcc47477a5487e02f" kindref="member">id</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something<sp/>with<sp/>id</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hwid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hardware identifier </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The identifier of the gamepad </para></simplesect>
+<simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_1a92da2e229df02fa67d00c8ab184f92a4" kindref="member">close()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a54ae71f21d0821c6aa7133b0f702d0a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gf::Gamepad::isAttached</definition>
+        <argsstring>(GamepadId id)</argsstring>
+        <name>isAttached</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Check if a gamepad is attached. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gamepad id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the gamepad is attached </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a92da2e229df02fa67d00c8ab184f92a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Gamepad::close</definition>
+        <argsstring>(GamepadId id)</argsstring>
+        <name>close</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Close a gamepad. </para>        </briefdescription>
+        <detaileddescription>
+<para>Generally, this function is called after a GamepadDisconnected event.</para><para>Example:</para><para><programlisting><codeline><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018dac1c12a889ebdc886dc3738b5a146def0" kindref="member">gf::EventType::GamepadDisconnected</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_gamepad_1a92da2e229df02fa67d00c8ab184f92a4" kindref="member">gf::Gamepad::close</ref>(event.<ref refid="structgf_1_1_event_1a0c34004fd4bfcbfbc83b0632d6ad4ec4" kindref="member">gamepadDisconnection</ref>.<ref refid="structgf_1_1_event_1_1_gamepad_disconnection_1a4ece3ed8114f6baeaebe74e8ba3f3420" kindref="member">id</ref>);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gamepad id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" kindref="member">open()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a821aae3a2ae5cbd7bfe21f83e2b28409" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* gf::Gamepad::getName</definition>
+        <argsstring>(GamepadId id)</argsstring>
+        <name>getName</name>
+        <param>
+          <type><ref refid="group__window_1ga11c9d24ca72015b03cec48ec595bafb3" kindref="member">GamepadId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the gamepad. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gamepad id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representation of the gamepad </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="206" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a96b215ab79c892a21212fc76f06c52e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* gf::Gamepad::getAxisName</definition>
+        <argsstring>(GamepadAxis axis)</argsstring>
+        <name>getAxisName</name>
+        <param>
+          <type><ref refid="group__window_1ga40276d90e4e5efa68433fd9040c08b86" kindref="member">GamepadAxis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+<para>Get the axis name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A gamepad axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representation of the axis </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1a77bfb31ecf0ec9a495bdfbff46457e0d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* gf::Gamepad::getButtonName</definition>
+        <argsstring>(GamepadButton button)</argsstring>
+        <name>getButtonName</name>
+        <param>
+          <type><ref refid="group__window_1ga66e2d144e71b76a0499edc3d0a68529f" kindref="member">GamepadButton</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Get the button name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A gamepad button </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string representation of the button </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_gamepad_1ae2fb2422b09bd55f30e1692bcac12f02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gf::Gamepad::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+<para>Initialize the already connected gamepads. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="213" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_gamepad_1af457a8abb8ce1a590363a74fa790fcae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::Gamepad::Gamepad</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Gamepad</name>
+        <briefdescription>
+<para>Deleted constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="218" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Some gamepad related functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" line="131" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/Gamepad.h" bodystart="131" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_gamepad_1a92da2e229df02fa67d00c8ab184f92a4" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>close</name></member>
+      <member refid="classgf_1_1_gamepad_1af457a8abb8ce1a590363a74fa790fcae" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>Gamepad</name></member>
+      <member refid="classgf_1_1_gamepad_1a96b215ab79c892a21212fc76f06c52e6" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>getAxisName</name></member>
+      <member refid="classgf_1_1_gamepad_1a77bfb31ecf0ec9a495bdfbff46457e0d" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>getButtonName</name></member>
+      <member refid="classgf_1_1_gamepad_1a821aae3a2ae5cbd7bfe21f83e2b28409" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>getName</name></member>
+      <member refid="classgf_1_1_gamepad_1ae2fb2422b09bd55f30e1692bcac12f02" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>initialize</name></member>
+      <member refid="classgf_1_1_gamepad_1a54ae71f21d0821c6aa7133b0f702d0a8" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>isAttached</name></member>
+      <member refid="classgf_1_1_gamepad_1a68662e95f527b08cdb4543733540d210" prot="public" virt="non-virtual"><scope>gf::Gamepad</scope><name>open</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

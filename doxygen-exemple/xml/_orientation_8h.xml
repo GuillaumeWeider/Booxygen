@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_orientation_8h" kind="file" language="C++">
+    <compoundname>Orientation.h</compoundname>
+    <includes refid="_portability_8h" local="yes">Portability.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_g_f_8h" local="yes">GF.h</includedby>
+    <incdepgraph>
+      <node id="1263">
+        <label>cstdint</label>
+      </node>
+      <node id="1260">
+        <label>Portability.h</label>
+        <link refid="_portability_8h_source"/>
+      </node>
+      <node id="1261">
+        <label>Vector.h</label>
+        <link refid="_vector_8h_source"/>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1262">
+        <label>cstddef</label>
+      </node>
+      <node id="1266">
+        <label>type_traits</label>
+      </node>
+      <node id="1264">
+        <label>algorithm</label>
+      </node>
+      <node id="1259">
+        <label>Orientation.h</label>
+        <link refid="_orientation_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1268">
+        <label>GF.h</label>
+        <link refid="_g_f_8h_source"/>
+      </node>
+      <node id="1267">
+        <label>Orientation.h</label>
+        <link refid="_orientation_8h"/>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacegf">gf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Gamedev<sp/>Framework<sp/>(gf)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2016-2017<sp/>Julien<sp/>Bernard</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>warranty.<sp/><sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_ORIENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_ORIENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Portability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>:<sp/>int<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa4f1f6016fc9f3f2353c0cc7c67b292bd" kindref="member">Center</ref><sp/><sp/><sp/><sp/>=<sp/>-1,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a601560b94fbb188919dd1d36c8ab70a4" kindref="member">North</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>0,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a7254edb19370d28e3466c971d2f8a03e" kindref="member">NorthEast</ref><sp/>=<sp/><sp/>1,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13aa99dc62d017d04cf67266593f9c3761e" kindref="member">East</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>2,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a865a51dff69223f0cf5ad630e5ada190" kindref="member">SouthEast</ref><sp/>=<sp/><sp/>3,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a263d7b2cf53802c9ed127b718c0bf9fd" kindref="member">South</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>4,<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13ae8eaf797b01fdb4246ed54904368b592" kindref="member">SouthWest</ref><sp/>=<sp/><sp/>5,<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13abf495fc048d8d44b7f32536df5cf3930" kindref="member">West</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/>6,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__core_1ggaa82adefc3ea3cca7e98d7cb4c85e9b13a142cbe82227bdec147eff3a629dd366b" kindref="member">NorthWest</ref><sp/>=<sp/><sp/>7,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2f</ref><sp/><ref refid="group__core_1ga06acc8afaf45bf8111735f1e5124e265" kindref="member">unit</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="structgf_1_1_vector" kindref="compound">Vector2i</ref><sp/><ref refid="group__core_1ga762fb8ffb213b0ca19f6997153821827" kindref="member">displacement</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>GF_API<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__core_1ga96c554e4534b63fd34ac457d563e7c32" kindref="member">angle</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/><ref refid="group__core_1ga9214206036fe1ff2e32f8eb5dd6ddd8c" kindref="member">opposite</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/><ref refid="group__core_1gaba311399ff14745ba9bd4727d20558ce" kindref="member">orthogonalCW</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/><ref refid="group__core_1gace83a6f16cc97de2213348a25da047ab" kindref="member">orthogonalCCW</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/><ref refid="group__core_1gaf772c7af2f2feee7aa295ce0bbbf0d44" kindref="member">nextCW</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>GF_API<sp/><ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/><ref refid="group__core_1gada85a63380e5957266d3e6c9ea4bb470" kindref="member">nextCCW</ref>(<ref refid="group__core_1gaa82adefc3ea3cca7e98d7cb4c85e9b13" kindref="member">Orientation</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOXYGEN_SHOULD_SKIP_THIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GF_ORIENTATION_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/Orientation.h"/>
+  </compounddef>
+</doxygen>

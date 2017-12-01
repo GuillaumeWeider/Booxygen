@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgf_1_1_render_window" kind="class" language="C++" prot="public">
+    <compoundname>gf::RenderWindow</compoundname>
+    <basecompoundref refid="classgf_1_1_render_target" prot="public" virt="non-virtual">gf::RenderTarget</basecompoundref>
+    <includes refid="_render_window_8h" local="no">gf/RenderWindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgf_1_1_render_window_1a849e71f4b88c0eba9f8e2988cfb033ab" prot="private" static="no" mutable="no">
+        <type><ref refid="classgf_1_1_window" kindref="compound">Window</ref> &amp;</type>
+        <definition>Window&amp; gf::RenderWindow::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="121" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgf_1_1_render_window_1aac36758c61a7c514d666f5ec11990ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gf::RenderWindow::RenderWindow</definition>
+        <argsstring>(Window &amp;window)</argsstring>
+        <name>RenderWindow</name>
+        <param>
+          <type><ref refid="classgf_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to render to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_window_1aa7024ba44b085483b89c029851b0e2f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core_1gaccbebb53cb8f06205d648e713ec5d40d" kindref="member">Vector2u</ref></type>
+        <definition>virtual Vector2u gf::RenderWindow::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <reimplements refid="classgf_1_1_render_target_1a6dc4ae258436db802fa4a2848a4010a6">getSize</reimplements>
+        <briefdescription>
+<para>Return the size of the rendering region of the target. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size in pixels </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_window_1a371ef7bab8a2957643bdf714c4270b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderWindow::setActive</definition>
+        <argsstring>()</argsstring>
+        <name>setActive</name>
+        <briefdescription>
+<para>Activate the target for rendering. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function activates the render-window so that all draw calls are targeted to the window. You should call this function before you want to draw something to the target. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gf::RenderWindow::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+<para>Display on screen what has been rendered to the window so far. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is typically called after all OpenGL rendering has been done for the current frame, in order to show it on screen.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_window_1af9c4a7e16529e3fcdc603aead494ea94" kindref="member">Window::display()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgf_1_1_render_window_1af9755619049454c6a2162e6591e9ad97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgf_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image gf::RenderWindow::capture</definition>
+        <argsstring>() const</argsstring>
+        <name>capture</name>
+        <briefdescription>
+<para>Copy the current contents of the render window to an image. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a slow operation, whose main purpose is to make screenshots of the application. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A window that can serve as a target for 2D drawing. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref> is the main class of the graphics module. It defines an OS window that can be painted using the other classes of the graphics module.</para><para>Here is a typical rendering and event loop with a <ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref>:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Declare<sp/>and<sp/>create<sp/>a<sp/>new<sp/>render-window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref><sp/>window(</highlight><highlight class="stringliteral">&quot;New<sp/>window&quot;</highlight><highlight class="normal">,<sp/>{<sp/>800,<sp/>600<sp/>});</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer(window);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>main<sp/>loop<sp/>-<sp/>ends<sp/>as<sp/>soon<sp/>as<sp/>the<sp/>window<sp/>is<sp/>closed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1af0d0f974e8edfd10db47fc8040a5874f" kindref="member">isOpen</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Event<sp/>processing</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Request<sp/>for<sp/>closing<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref><sp/>==<sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>whole<sp/>window<sp/>before<sp/>rendering<sp/>a<sp/>new<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" kindref="member">clear</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>some<sp/>graphical<sp/>entities</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(circle);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(text);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>End<sp/>the<sp/>current<sp/>frame<sp/>and<sp/>display<sp/>its<sp/>contents<sp/>on<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>renderer.<ref refid="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" kindref="member">display</ref>();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classgf_1_1_window" kindref="compound">gf::Window</ref>, <ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>, <ref refid="classgf_1_1_render_texture" kindref="compound">gf::RenderTexture</ref>, <ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="641">
+        <label>gf::RenderTarget</label>
+        <link refid="classgf_1_1_render_target"/>
+      </node>
+      <node id="640">
+        <label>gf::RenderWindow</label>
+        <link refid="classgf_1_1_render_window"/>
+        <childnode refid="641" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="643">
+        <label>gf::RenderTarget</label>
+        <link refid="classgf_1_1_render_target"/>
+      </node>
+      <node id="642">
+        <label>gf::RenderWindow</label>
+        <link refid="classgf_1_1_render_window"/>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" line="80" column="1" bodyfile="/home/jbernard/Workshop/gf/versions/include/gf/RenderWindow.h" bodystart="80" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classgf_1_1_render_window_1af9755619049454c6a2162e6591e9ad97" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>capture</name></member>
+      <member refid="classgf_1_1_render_target_1a4c83cb262854ad4b3cf77bc811c1bff1" prot="protected" virt="non-virtual"><scope>gf::RenderWindow</scope><name>captureFramebuffer</name></member>
+      <member refid="classgf_1_1_render_target_1a2c3f888d184e81d8668b6ec5b1d332de" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_target_1a878f6ffa9ba25da18db791fa83eac4c3" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>clear</name></member>
+      <member refid="classgf_1_1_render_window_1a1d4ad6ad8831957e277a173923ec4720" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>display</name></member>
+      <member refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a56eaf8b36e55cac0f2fd946443a72a9c" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1aa2c4723f1953113890771b1659096ad1" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a71d282bd4078463487daac06e544f199" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a7a31eaa2a6710e4ec164807e46977159" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1a39de6116a654206f146ce4d713713f93" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>draw</name></member>
+      <member refid="classgf_1_1_render_target_1aa1814c8b195d2a1a5e6525a3cba3c26f" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getAliasedLineWidthRange</name></member>
+      <member refid="classgf_1_1_render_target_1a76ae398641a9171c45bc31abd6e42112" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1afcb4bee93cdb4b5449dfbf823773f512" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getCanonicalViewport</name></member>
+      <member refid="classgf_1_1_render_target_1af7b6eeeca709f64b81ea6a09d13ac8d9" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getLineWidth</name></member>
+      <member refid="classgf_1_1_render_target_1a29797883fe14f6e1c49c6290adbd4a8c" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getScissorBox</name></member>
+      <member refid="classgf_1_1_render_window_1aa7024ba44b085483b89c029851b0e2f2" prot="public" virt="virtual"><scope>gf::RenderWindow</scope><name>getSize</name></member>
+      <member refid="classgf_1_1_render_target_1ae6240f15bd9b41044b678b415ba2f18c" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getView</name></member>
+      <member refid="classgf_1_1_render_target_1a51f479ce259f75e323549980cc3f014e" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>getViewport</name></member>
+      <member refid="classgf_1_1_render_target_1ac870325bffb142b4675ee2b3e9936b66" prot="protected" virt="non-virtual"><scope>gf::RenderWindow</scope><name>initialize</name></member>
+      <member refid="classgf_1_1_render_window_1a849e71f4b88c0eba9f8e2988cfb033ab" prot="private" virt="non-virtual"><scope>gf::RenderWindow</scope><name>m_window</name></member>
+      <member refid="classgf_1_1_render_target_1aec80dd6d1f6046f8cc3b1f32b8c80440" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1aebfe664cad224644a04f2a82cb4acad7" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>mapCoordsToPixel</name></member>
+      <member refid="classgf_1_1_render_target_1ad55789701df820a113d22dbc7cffb6e3" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a78fae041fa10cd9a3a960f816b1147cb" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>mapPixelToCoords</name></member>
+      <member refid="classgf_1_1_render_target_1a06233abc86a7db72c62b012ed151dc62" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>operator=</name></member>
+      <member refid="classgf_1_1_render_target_1a42e965c05374a9bd8f9bef9630572479" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_target_1af36a6312551fa0e297a9f6651b9fee82" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>RenderTarget</name></member>
+      <member refid="classgf_1_1_render_window_1aac36758c61a7c514d666f5ec11990ef3" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>RenderWindow</name></member>
+      <member refid="classgf_1_1_render_window_1a371ef7bab8a2957643bdf714c4270b2e" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>setActive</name></member>
+      <member refid="classgf_1_1_render_target_1ab47783a4937a88fcf72e282030b86c54" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>setCanonicalScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1ac400fc5713a745e5459a285ca4c3c11c" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>setScissorBox</name></member>
+      <member refid="classgf_1_1_render_target_1ad0c0d32d96beabdd18cfdab4c64ee93a" prot="public" virt="non-virtual"><scope>gf::RenderWindow</scope><name>setView</name></member>
+      <member refid="classgf_1_1_render_target_1a7d5128d6f88500fdc8b526ca24844431" prot="public" virt="virtual"><scope>gf::RenderWindow</scope><name>~RenderTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

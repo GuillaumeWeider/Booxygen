@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="devel" kind="page">
+    <compoundname>devel</compoundname>
+    <title>Developper documentation</title>
+    <detaileddescription>
+<sect1 id="devel_1devel_git_workflow">
+<title>Git workflow</title>
+<para>Gamedev Framework (gf) follows the <ulink url="http://nvie.com/posts/a-successful-git-branching-model/">successful Git branching model from Vincent Driessen</ulink>.</para></sect1>
+<sect1 id="devel_1devel_versioning">
+<title>Versioning</title>
+<para>gf uses <ulink url="http://semver.org/">Semantic Versioning 2.0.0</ulink>.</para></sect1>
+<sect1 id="devel_1devel_coding_style">
+<title>Coding style and guidelines</title>
+<para><orderedlist>
+<listitem><para>Follow the existing style.</para></listitem><listitem><para>See 1.</para></listitem></orderedlist>
+</para></sect1>
+<sect1 id="devel_1devel_namespaces">
+<title>Namespaces</title>
+<para>The library is put inside a <computeroutput>gf</computeroutput> namespace. Additionally, the classes are put in an <ulink url="http://en.cppreference.com/w/cpp/language/namespace#Inline_namespaces">inline namespace</ulink> called <computeroutput>v1</computeroutput> (or <computeroutput>v2</computeroutput> or ...) to preserve ABI compatibility.</para><para><programlisting><codeline><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>can<sp/>be<sp/>accessed<sp/>with<sp/>gf::Foo</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para>If an ABI-breaking change occurs, then the old class is put in a non-inline namespace called <computeroutput>v1</computeroutput> and the new one in an inline namespace called <computeroutput>v2</computeroutput> so that the old class still exist and old code that uses it do not need to be recompiled.</para><para><programlisting><codeline><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegf" kindref="compound">gf</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v2<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>version<sp/>of<sp/>Foo</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">v1<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>old<sp/>version<sp/>of<sp/>Foo</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Foo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para></sect1>
+<sect1 id="devel_1devel_gl_loader">
+<title>OpenGL loader</title>
+<para>gf uses <ulink url="https://github.com/Dav1dde/glad">glad</ulink> as its OpenGL loader. The loader is generated with the following command in the <computeroutput>library/vendor</computeroutput> directory.</para><para><programlisting><codeline><highlight class="normal">glad<sp/>--api<sp/>gles2=2.0<sp/>--profile<sp/>core<sp/>--generator<sp/>c<sp/>--spec<sp/>gl<sp/>--out-path<sp/>glad<sp/>--generator<sp/>c<sp/>--no-loader</highlight></codeline>
+</programlisting></para><para>The resulting file <computeroutput>src/glad.c</computeroutput> is then renamed to <computeroutput>src/glad.cc</computeroutput>. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
