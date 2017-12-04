@@ -13,6 +13,7 @@ module Booxygen
 
   end
 
+
   class Compound
     def initialize(node)
       @node = node
