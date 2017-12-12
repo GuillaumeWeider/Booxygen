@@ -1,0 +1,41 @@
+Résumé de nos recherches
+------------------------
+
+Types de Compound qui existent:
+- file
+- dir
+- class
+- struct
+- page
+- namespace
+- group
+
+
+Spécificités des différents types:
+
+- group
+Représente les modules (Core, Window, Graphics, Game)
+
+- file
+Représente les fichiers (*.h et *.dox)
+
+- dir
+Représente ?? ('gf' et 'include')
+
+- struct
+Représente les différentes structures
+
+- class
+Représente les différentes classes
+
+- page
+Représente des pages *.html de la documentation, faites à la demande de l'utilisateur, tel qu'une documentation supplémentaire
+
+- namespace
+Représente ?? ('std', 'gf::literals', 'gf')
+
+
+Un groupe (module) est composé de:
+- classes ( <innerclass ...)
+- énumérations ( <sectiondef kind="enum"> )
+- typedefs ( <sectiondef kind="typedef"> )
