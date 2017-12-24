@@ -20,20 +20,61 @@ module Booxygen
       @kind = node['kind']
       @full_name = node.at_xpath("compoundname").content
       @classes = []
+      #@struct = []
+      @enum = []
+      @typedef = []
 
+      # Traitement des groupes / modules
       if @kind == 'group'
+        # Traitement des classes
         @classes = node.xpath("innerclass")
+
+        # Traitement des memberdef
+        node.xpath('//memberdef').each do |memberdef|
+          # Traitement des énumérations
+          if memberdef['kind'] == 'enum'
+            @enum << memberdef.at_xpath('name').content
+          end
+          # Traitement des typedefs
+          if memberdef['kind'] == 'typedef'
+            @typedef << memberdef.at_xpath('definition').content
+          end
+        end
+
       end
     end
 
-    def print(compoundtype)
-      if @kind == compoundtype
+    def print(type)
+      if @kind == type
         puts "[#{@kind}] #{@full_name}"
+
+        # Traitement des groupes / modules
         if @kind == 'group'
-          puts '- Classes:'
-          @classes.each do |class0|
-            puts ' * ' + class0
+          # Traitement des classes
+          if @classes.length > 0
+            puts '- Classes:'
+            @classes.each do |node|
+              puts ' * ' + node
+            end
           end
+
+          # Traitement des énumérations
+          if @enum.length > 0
+            puts '- Enum:'
+            @enum.each do |node|
+              puts ' * ' + node
+            end
+          end
+
+          # Traitement des typedefs
+          if @typedef.length > 0
+            puts '- Typedefs:'
+            @typedef.each do |node|
+              puts ' * ' + node
+            end
+          end
+          #
+          puts('')
         end
       end
     end
@@ -61,9 +102,6 @@ module Booxygen
       @compounds.each do |c|
         c.print('group')
       end
-      #@compounds.each do |c|
-      #  c.print('dir')
-      #end
     end
   end
 
