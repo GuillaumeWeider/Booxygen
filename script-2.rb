@@ -10,10 +10,12 @@ module Booxygen
     def initialize(dir)
 
     end
-
   end
 
   class Compound
+    # Définition d'une structure pour stocker un nom + description brève
+    MyClass = Struct.new(:name, :briefdesc)
+
     def initialize(node)
       @node = node
 
@@ -26,8 +28,19 @@ module Booxygen
 
       # Traitement des groupes / modules
       if @kind == 'group'
+
         # Traitement des classes
-        @classes = node.xpath("innerclass")
+        node.xpath('innerclass').each do |innerclass|
+          # Lecture des classes publiques seulement
+          if innerclass['prot'] != 'private'
+
+            File.open($dir + '/' + innerclass['refid'] + '.xml', 'r') do |file|
+              xml = Nokogiri::XML(file)
+
+              @classes << MyClass.new(innerclass.content, xml.at_xpath('//compounddef/briefdescription/para'))
+            end
+          end
+        end
 
         # Traitement des memberdef
         node.xpath('//memberdef').each do |memberdef|
@@ -54,7 +67,8 @@ module Booxygen
           if @classes.length > 0
             puts '- Classes:'
             @classes.each do |node|
-              puts ' * ' + node
+              puts ' * ' + node.name
+              puts '   Desc: ' + node.briefdesc # unless node.briefdesc.nil?
             end
           end
 
@@ -120,7 +134,9 @@ if ARGV.length != 1
 end
 
 if Dir.exist?(ARGV[0])
-  Booxygen::run(ARGV[0])
+  # Définition d'une variable globale
+  $dir = ARGV[0]
+  Booxygen::run($dir)
 else
   print "Unknown directory\n"
   abort
