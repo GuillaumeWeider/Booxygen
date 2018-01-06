@@ -13,18 +13,22 @@ module Booxygen
   end
 
   class Compound
-    # Définition d'une structure pour stocker un nom + description brève
-    MyClass = Struct.new(:name, :briefdesc)
+    # Définition d'une structure pour stocker un nom + description brève + description complète
+    MyClass = Struct.new(:name, :kind, :briefdesc, :detaileddesc)
 
     def initialize(node)
       @node = node
 
       @kind = node['kind']
-      @full_name = node.at_xpath("compoundname").content
+      @full_name = node.at_xpath('compoundname').content
+      @brief_desc = node.at_xpath('//compounddef/briefdescription/para')
+      @detailed_desc = node.at_xpath('//compounddef/detaileddescription/para')
+
       @classes = []
-      #@struct = []
       @enum = []
       @typedef = []
+      @function = []
+      @variable = []
 
       # Traitement des groupes / modules
       if @kind == 'group'
@@ -37,7 +41,7 @@ module Booxygen
             File.open($dir + '/' + innerclass['refid'] + '.xml', 'r') do |file|
               xml = Nokogiri::XML(file)
 
-              @classes << MyClass.new(innerclass.content, xml.at_xpath('//compounddef/briefdescription/para'))
+              @classes << MyClass.new(innerclass.content, xml.at_xpath('//compounddef')['kind'], xml.at_xpath('//compounddef/briefdescription/para'), xml.at_xpath('//compounddef/detaileddescription/para'))
             end
           end
         end
@@ -48,9 +52,20 @@ module Booxygen
           if memberdef['kind'] == 'enum'
             @enum << memberdef.at_xpath('name').content
           end
+
           # Traitement des typedefs
           if memberdef['kind'] == 'typedef'
-            @typedef << memberdef.at_xpath('definition').content
+            @typedef << memberdef.at_xpath('name').content
+          end
+
+          # Traitement des fonctions
+          if memberdef['kind'] == 'function'
+            @function << memberdef.at_xpath('name').content
+          end
+
+          # Traitement des variables
+          if memberdef['kind'] == 'variable'
+            @variable << memberdef.at_xpath('name').content
           end
         end
 
@@ -58,8 +73,10 @@ module Booxygen
     end
 
     def print(type)
-      if @kind == type
+      if @kind == type && @full_name == 'graphics'
         puts "[#{@kind}] #{@full_name}"
+        puts '   Full desc: ' + @brief_desc  unless @brief_desc.nil?
+        puts @detailed_desc unless @detailed_desc.nil?
 
         # Traitement des groupes / modules
         if @kind == 'group'
@@ -67,8 +84,9 @@ module Booxygen
           if @classes.length > 0
             puts '- Classes:'
             @classes.each do |node|
-              puts ' * ' + node.name
+              puts ' * ' + node.kind + ' - ' + node.name
               puts '   Desc: ' + node.briefdesc # unless node.briefdesc.nil?
+              puts node.detaileddesc unless node.detaileddesc.nil?
             end
           end
 
@@ -84,6 +102,22 @@ module Booxygen
           if @typedef.length > 0
             puts '- Typedefs:'
             @typedef.each do |node|
+              puts ' * ' + node
+            end
+          end
+
+          # Traitement des fonctions
+          if @function.length > 0
+            puts '- Functions:'
+            @function.each do |node|
+              puts ' * ' + node
+            end
+          end
+
+          # Traitement des variables
+          if @variable.length > 0
+            puts '- Variables:'
+            @variable.each do |node|
               puts ' * ' + node
             end
           end
