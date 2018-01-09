@@ -4,7 +4,7 @@ require 'nokogiri'
 require 'liquid'
 
 module Booxygen
-  VERSION = "0.2.0"
+  VERSION = "0.3.0"
 
   class Templates
     def initialize(dir)
@@ -13,9 +13,6 @@ module Booxygen
   end
 
   class Compound
-    # Définition d'une structure pour stocker un nom + description brève + description complète
-    MyClass = Struct.new(:name, :kind, :briefdesc, :detaileddesc)
-
     def initialize(node)
       @node = node
 
@@ -24,50 +21,48 @@ module Booxygen
       @brief_desc = node.at_xpath('//compounddef/briefdescription/para')
       @detailed_desc = node.at_xpath('//compounddef/detaileddescription/para')
 
+      # CompoundKind
       @classes = []
-      @enum = []
-      @typedef = []
-      @function = []
-      @variable = []
+      # MemberKind
+      @memberdef = Hash.new {|h,k| h[k] = [] }
 
-      # Traitement des groupes / modules
+      # Traitement des groupes (modules)
       if @kind == 'group'
 
         # Traitement des classes
         node.xpath('innerclass').each do |innerclass|
+
           # Lecture des classes publiques seulement
           if innerclass['prot'] != 'private'
 
             File.open($dir + '/' + innerclass['refid'] + '.xml', 'r') do |file|
               xml = Nokogiri::XML(file)
 
-              @classes << MyClass.new(innerclass.content, xml.at_xpath('//compounddef')['kind'], xml.at_xpath('//compounddef/briefdescription/para'), xml.at_xpath('//compounddef/detaileddescription/para'))
+              tmp = {}
+              tmp['name'] = innerclass.content
+              tmp['kind'] = xml.at_xpath('//compounddef')['kind']
+              tmp['briefdesc'] = xml.at_xpath('//compounddef/briefdescription/para')
+              tmp['detaileddesc'] = xml.at_xpath('//compounddef/detaileddescription/para')
+
+              @classes << tmp
             end
           end
         end
 
+        memberdef_enum = %w{enum typedef function variable}
+
         # Traitement des memberdef
-        node.xpath('//memberdef').each do |memberdef|
-          # Traitement des énumérations
-          if memberdef['kind'] == 'enum'
-            @enum << memberdef.at_xpath('name').content
+        node.xpath('//memberdef').each do |member|
+
+          memberdef_enum.each do |member_enum|
+            if member['kind'] == member_enum
+              @memberdef[member_enum].push(member.at_xpath('name').content)
+              break
+            end
           end
 
-          # Traitement des typedefs
-          if memberdef['kind'] == 'typedef'
-            @typedef << memberdef.at_xpath('name').content
-          end
-
-          # Traitement des fonctions
-          if memberdef['kind'] == 'function'
-            @function << memberdef.at_xpath('name').content
-          end
-
-          # Traitement des variables
-          if memberdef['kind'] == 'variable'
-            @variable << memberdef.at_xpath('name').content
-          end
         end
+        #
 
       end
     end
@@ -84,43 +79,24 @@ module Booxygen
           if @classes.length > 0
             puts '- Classes:'
             @classes.each do |node|
-              puts ' * ' + node.kind + ' - ' + node.name
-              puts '   Desc: ' + node.briefdesc # unless node.briefdesc.nil?
-              puts node.detaileddesc unless node.detaileddesc.nil?
+              puts ' * ' + node['kind'] + ' - ' + node['name']
+              puts '   Desc: ' + node['briefdesc'] unless node['briefdesc'].nil?
+              puts node['detaileddesc'] unless node['detaileddesc'].nil?
             end
           end
 
-          # Traitement des énumérations
-          if @enum.length > 0
-            puts '- Enum:'
-            @enum.each do |node|
-              puts ' * ' + node
+          memberdef_enum = %w{enum typedef function variable}
+
+          # Affichage
+          memberdef_enum.each do |member_enum|
+            if @memberdef[member_enum].length > 0
+              puts '- ' + member_enum + ':'
+              @memberdef[member_enum].each do |value|
+                puts ' * ' + value
+              end
             end
           end
 
-          # Traitement des typedefs
-          if @typedef.length > 0
-            puts '- Typedefs:'
-            @typedef.each do |node|
-              puts ' * ' + node
-            end
-          end
-
-          # Traitement des fonctions
-          if @function.length > 0
-            puts '- Functions:'
-            @function.each do |node|
-              puts ' * ' + node
-            end
-          end
-
-          # Traitement des variables
-          if @variable.length > 0
-            puts '- Variables:'
-            @variable.each do |node|
-              puts ' * ' + node
-            end
-          end
           #
           puts('')
         end
