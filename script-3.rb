@@ -4,103 +4,11 @@ require 'nokogiri'
 require 'liquid'
 
 module Booxygen
-  VERSION = "0.3.0"
+  VERSION = "0.3.1"
 
   class Templates
     def initialize(dir)
 
-    end
-  end
-
-  class Compound
-    def initialize(node)
-      @node = node
-
-      @kind = node['kind']
-      @full_name = node.at_xpath('compoundname').content
-      @brief_desc = node.at_xpath('//compounddef/briefdescription/para')
-      @detailed_desc = node.at_xpath('//compounddef/detaileddescription/para')
-
-      # CompoundKind
-      @classes = []
-      # MemberKind
-      @memberdef = Hash.new {|h,k| h[k] = [] }
-
-      # Traitement des groupes (modules)
-      if @kind == 'group'
-
-        # Traitement des classes
-        node.xpath('innerclass').each do |innerclass|
-
-          # Lecture des classes publiques seulement
-          if innerclass['prot'] != 'private'
-
-            File.open($dir + '/' + innerclass['refid'] + '.xml', 'r') do |file|
-              xml = Nokogiri::XML(file)
-
-              tmp = {}
-              tmp['name'] = innerclass.content
-              tmp['kind'] = xml.at_xpath('//compounddef')['kind']
-              tmp['briefdesc'] = xml.at_xpath('//compounddef/briefdescription/para')
-              tmp['detaileddesc'] = xml.at_xpath('//compounddef/detaileddescription/para')
-
-              @classes << tmp
-            end
-          end
-        end
-
-        memberdef_enum = %w{enum typedef function variable}
-
-        # Traitement des memberdef
-        node.xpath('//memberdef').each do |member|
-
-          memberdef_enum.each do |member_enum|
-            if member['kind'] == member_enum
-              @memberdef[member_enum].push(member.at_xpath('name').content)
-              break
-            end
-          end
-
-        end
-        #
-
-      end
-    end
-
-    def print(type)
-      if @kind == type && @full_name == 'graphics'
-        puts "[#{@kind}] #{@full_name}"
-        puts '   Full desc: ' + @brief_desc  unless @brief_desc.nil?
-        puts @detailed_desc unless @detailed_desc.nil?
-
-        # Traitement des groupes / modules
-        if @kind == 'group'
-          # Traitement des classes
-          if @classes.length > 0
-            puts '- Classes:'
-            @classes.each do |node|
-              puts ' * ' + node['kind'] + ' - ' + node['name']
-              puts '   Desc: ' + node['briefdesc'] unless node['briefdesc'].nil?
-              puts node['detaileddesc'] unless node['detaileddesc'].nil?
-            end
-          end
-
-          memberdef_enum = %w{enum typedef function variable}
-
-          # Affichage
-          memberdef_enum.each do |member_enum|
-            if @memberdef[member_enum].length > 0
-              puts '- ' + member_enum + ':'
-              @memberdef[member_enum].each do |value|
-                puts ' * ' + value
-              end
-            end
-          end
-
-          #
-          puts('')
-        end
-      end
     end
   end
 
@@ -110,22 +18,92 @@ module Booxygen
     end
 
     def parse(directory)
-      Dir[directory + '/*.xml'].each do |filename|
-        File.open(filename) do |file|
-          xml = Nokogiri::XML(file)
+      xml = Nokogiri::XML(File.open(directory + '/index.xml'))
 
-          xml.xpath('//compounddef').each do |node|
-            @compounds << Compound.new(node)
+      xsd_name = xml.at_xpath('//doxygenindex')['xsi:noNamespaceSchemaLocation']
+      xsd = Nokogiri::XML(File.open(directory + xsd_name))
+
+      xsd_first_element = xsd.at_xpath('//xsd:element')
+
+      # DoxygenType
+      xsd_complex_type = xsd.at_xpath('//xsd:complexType[@name=\'' + xsd_first_element['type'] + '\']')
+
+      # Elements et attributs de DoxygenType
+      xsd_elements_list = xsd_complex_type.xpath('xsd:sequence/xsd:element')
+      # xsd_attributs_list = xsd_complex_type.xpath('xsd:attribute')
+
+      xsd_elements_list.each do |xsd_element|
+
+        # Code de chacun des éléments
+        xml_elements_list = xml.xpath('//doxygenindex/' + xsd_element['name'])
+
+        xml_elements_list.each do |xml_element_code|
+          element = {}
+
+          # Récupération des éléments et attributs associés au type
+          xsd_complex_type2 = xsd.at_xpath('//xsd:complexType[@name=\'' + xsd_element['type'] + '\']')
+
+          xsd_elements_list2 = xsd_complex_type2.xpath('xsd:sequence/xsd:element')
+          xsd_attributs_list2 = xsd_complex_type2.xpath('xsd:attribute')
+
+          # Traiter tous les attributs
+          xsd_attributs_list2.each do |attr2|
+            element[attr2['name']] = xml_element_code[attr2['name']]
+            puts attr2['name'] + ' : ' + element[attr2['name']]
           end
+
+          # Traiter tous les éléments du XSD
+          xsd_elements_list2.each do |xsd_element2|
+
+            # Code de chacun des éléments en XML
+            xml_elements_list2 = xml_element_code.xpath('./' + xsd_element2['name'])
+
+            sub_element = {}
+            xml_elements_list2.each do |xml_element_code2|
+
+              if xsd_element2['type'].start_with?('xsd:')
+                # Si c'est un type inconnu
+                sub_element[0] = xml_element_code2
+                puts xsd_element2['name'] + ' : ' + sub_element[0]
+
+              else
+                # Si c'est un type connu
+                # Récupération des éléments et attributs associés au type
+                xsd_complex_type3 = xsd.at_xpath('//xsd:complexType[@name=\'' + xsd_element2['type'] + '\']')
+
+                xsd_elements_list3 = xsd_complex_type3.xpath('xsd:sequence/xsd:element')
+                xsd_attributs_list3 = xsd_complex_type3.xpath('xsd:attribute')
+
+                # Traiter tous les attributs
+                xsd_attributs_list3.each do |attr3|
+                  sub_element[attr3['name']] = xml_element_code2[attr3['name']]
+                  puts attr3['name'] + ' : ' + sub_element[attr3['name']]
+                end
+
+                # Traiter tous les éléments
+                xsd_elements_list3.each do |element3|
+                  sub_element[element3['name']] = xml_element_code2.xpath(element3['name'])
+                  sub_element[element3['name']].each do |element3_to_print|
+                    puts element3['name'] + ' : ' + element3_to_print
+                  end
+                end
+              end
+            end
+
+            #element['subelement_list'].push(sub_element)
+
+            puts ' '
+          end
+          @compounds.push(element)
         end
       end
+
     end
 
     def print
-      # Possible kinds: class, file, dir, struct, page, namespace, group
-      @compounds.each do |c|
-        c.print('group')
-      end
+      #@compounds.each do |node|
+      #  puts node['kind'] + ' ' + node.at_xpath('name')
+      #end
     end
   end
 
