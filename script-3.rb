@@ -14,41 +14,48 @@ module Booxygen
 
   class Doxygen
     def initialize
-      @compounds = {}
+      @index_hash = {}
+      @compounds_hash = {}
     end
 
-    def parse(directory)
-      xml = Nokogiri::XML(File.open(directory + '/index.xml'))
+    # def parse_compound(ref_file)
+    #   xml = Nokogiri::XML(File.open($dir + ref_file + '.xml'))
+    #
+    #   xsd_name = xml.at_xpath('//doxygen')['xsi:noNamespaceSchemaLocation']
+    #   xsd = Nokogiri::XML(File.open($dir + xsd_name))
+    #
+    #   xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygen\']')
+    #
+    #   @compounds_hash = rec_parse(xsd_doxygen_element, xsd, xml.at_xpath('//doxygenindex'))
+    #
+    # end
 
-      xsd_name = xml.at_xpath('//doxygenindex')['xsi:noNamespaceSchemaLocation']
-      xsd = Nokogiri::XML(File.open(directory + xsd_name))
-
-      xsd_first_element = xsd.at_xpath('//xsd:element')
-
-      @compounds = rec_parse(xsd_first_element,xsd,xml.at_xpath('//doxygenindex'))
-    end
-
-    def rec_parse(index, xsd_file, xml)
+    def rec_parse(index, xsd, xml)
       result = {}
 
-      xsd_complex_type = xsd_file.at_xpath("//xsd:complexType[@name='#{index['type']}']")
+      xsd_complex_type = xsd.at_xpath("//xsd:complexType[@name='#{index['type']}']")
 
       # Récupération des éléments et attributs
-      xsd_elements_list = xsd_complex_type.xpath('.//xsd:sequence/xsd:element')
+      xsd_elements_list = xsd_complex_type.xpath('.//xsd:element')
       xsd_attributs_list = xsd_complex_type.xpath('.//xsd:attribute')
 
 
       # Traitement des attributs
       xsd_attributs_list.each do |attribut|
         result[attribut['name']] = xml[attribut['name']]
+
+        # if attribut['type'] == 'CompoundKind'
+        #   result['subelement'] = parse_compound xml['refid']
+        # end
       end
 
 
       # Traitement des éléments
+      count = 0
       xsd_elements_list.each do |xsd_element|
         xml_elements_list = xml.xpath("./#{xsd_element['name']}")
 
-        xml_elements_list.each_with_index do |xml_element_code, index_nbr|
+        xml_elements_list.each do |xml_element_code|
           element = {}
 
           if xsd_element['type'].start_with?('xsd:')
@@ -56,17 +63,31 @@ module Booxygen
             element[xsd_element['name']] = xml_element_code
           else
             # Si c'est un type connu
-            element[xsd_element['name']] = rec_parse(xsd_element, xsd_file, xml_element_code)
+            element[xsd_element['name']] = rec_parse(xsd_element, xsd, xml_element_code)
           end
 
-          result[index_nbr] = element
+          result[count] = element
+          count += 1
         end
       end
 
       result
     end
 
+    def parse(xml_filename)
+      xml = Nokogiri::XML(File.open($dir + xml_filename + '.xml'))
+
+      xsd_name = xml.at_xpath('//doxygenindex')['xsi:noNamespaceSchemaLocation']
+      xsd = Nokogiri::XML(File.open($dir + xsd_name))
+
+      xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygenindex\']')
+
+      @index_hash = rec_parse(xsd_doxygen_element, xsd, xml.at_xpath('//doxygenindex'))
+
+    end
+
     def rec_print_res(content)
+
       if content.is_a?(Array)
         content.each do |value|
           rec_print_res value
@@ -82,21 +103,25 @@ module Booxygen
     end
 
     def print_res
-      @compounds.each do |node|
-        rec_print_res node
-        print "\n"
+      @index_hash.each do |node|
+        # rec_print_res node
+        # print "\n"
+        print node, "\n"
       end
+
     end
   end
 
-  def self.run(directory)
+  def self.run
     dox = Doxygen.new
-    dox.parse(directory)
+    dox.parse 'index'
     dox.print_res
   end
 end
 
+#
 # Programme principal
+#
 
 if ARGV.length != 1
   print "Usage: booxygen <directory>\n"
@@ -106,7 +131,7 @@ end
 if Dir.exist?(ARGV[0])
   # Définition d'une variable globale
   $dir = ARGV[0]
-  Booxygen::run($dir)
+  Booxygen::run
 else
   print "Unknown directory\n"
   abort
