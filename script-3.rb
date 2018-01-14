@@ -19,10 +19,10 @@ module Booxygen
 
     # Fonction de traitement des différents fichiers XML
     def parse_compound(ref_file)
-      xml = Nokogiri::XML(File.open($dir + ref_file + '.xml'))
+      xml = Nokogiri::XML(File.open("#{$dir}#{ref_file}.xml"))
 
       xsd_name = xml.at_xpath('//doxygen')['xsi:noNamespaceSchemaLocation']
-      xsd = Nokogiri::XML(File.open($dir + xsd_name))
+      xsd = Nokogiri::XML(File.open("#{$dir}#{xsd_name}"))
 
       xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygen\']')
 
@@ -50,11 +50,11 @@ module Booxygen
         xsd_attributs_list.each do |attribut|
           result[attribut['name']] = xml[attribut['name']]
 
+          # Si c'est un type "CompoundKind", traiter son XML correspondant
           if attribut['type'] == 'CompoundKind'
-            result['subelement'] = parse_compound(xml['refid'])
+            result['sub_xml'] = parse_compound(xml['refid'])
           end
         end
-
 
         # Traitement des éléments
         count = 0
@@ -72,20 +72,21 @@ module Booxygen
               element[xsd_element['name']] = rec_parse(xsd_element, xsd, xml_element_code)
             end
 
-            result[count] = element
+            result["element#{count}"] = element
             count += 1
           end
         end
       end
+
       result
     end
 
     # Fonction de traitement d'un fichier d'index
     def parse(xml_filename)
-      xml = Nokogiri::XML(File.open($dir + xml_filename + '.xml'))
+      xml = Nokogiri::XML(File.open("#{$dir}#{xml_filename}.xml"))
 
       xsd_name = xml.at_xpath('//doxygenindex')['xsi:noNamespaceSchemaLocation']
-      xsd = Nokogiri::XML(File.open($dir + xsd_name))
+      xsd = Nokogiri::XML(File.open("#{$dir}#{xsd_name}"))
 
       xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygenindex\']')
 
