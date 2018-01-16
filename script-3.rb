@@ -66,7 +66,7 @@ module Booxygen
 
             if xsd_element['type'].nil? || xsd_element['type'].start_with?('xsd:')
               # Si c'est un type inconnu ou nul
-              element[xsd_element['name']] = xml_element_code
+              element[xsd_element['name']] = xml_element_code.content
             else
               # Si c'est un type connu
               element[xsd_element['name']] = rec_parse(xsd_element, xsd, xml_element_code)
@@ -114,11 +114,18 @@ module Booxygen
 
     # Fonction d'affichage
     def print_res
-      @index_hash.each do |node|
-        # rec_print_res node
-        # print "\n"
-        print node, "\n"
-      end
+      #@index_hash.each do |node|
+         #rec_print_res node
+         #print "\n"
+      #end
+
+      template = Liquid::Template.parse(File.read('./templates/template1.liquid'))
+      Liquid::Template.error_mode = :strict
+      File.write('output/index.html', template.render('index_hash' => @index_hash))
+
+      # print '{"version"=>', @index_hash['version'], "}\n\n"
+      # print '{"element0"=>',@index_hash['element0'], "}\n\n"
+      # print '{"element1"=>',@index_hash['element1'], "}\n\n"
 
     end
   end
