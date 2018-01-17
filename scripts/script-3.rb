@@ -101,9 +101,9 @@ module Booxygen
       end
 
       loop do
-        template = Liquid::Template.parse(File.read('./templates/template1.liquid'))
+        template = Liquid::Template.parse(File.read('../templates/template1.liquid'))
         Liquid::Template.error_mode = :strict
-        File.write('output/index.html', template.render('compounds' => compounds))
+        File.write('../output-html/index.html', template.render('compounds' => compounds))
 
         print "\n", "Please press any key to reload Liquid..."
         if STDIN.getch == "q"
