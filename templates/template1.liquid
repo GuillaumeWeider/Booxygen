@@ -15,136 +15,128 @@
 
 <h1>Booxygen example</h1>
 <h2>Index page</h2><br>
+
+
 <h3>Classes:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'class' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }} <br>
-        {{ element[1].compound.sub_xml.element0.compounddef.element4.briefdescription }}
+{% for compound in compounds %}
+    {% if compound.kind == 'class' %}
+        - {{ compound.sub_xml.compounddef[0].compoundname }}<br>
+        Brief desc: {{ compound.sub_xml.compounddef[0].briefdescription[0].para }}<br>
+        Full desc: {{ compound.sub_xml.compounddef[0].detaileddescription[0].para }}<br>
+
+        {% for section in compound.sub_xml.compounddef[0].sectiondef %}
+            {% if section.kind == 'user-defined' %}
+
+                <br><strong>Section: </strong>
+                {{ section.header }}<br>
+
+                {% for section_member in section.memberdef %}
+                    - {{ section_member.name }}<br>
+                {% endfor %}
+
+            {% endif %}
+        {% endfor %}
         <br>
-        {% endif %}
     {% endif %}
 {% endfor %}
 
+
 <h3>Structs:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'struct' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'struct' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
 
 <h3>Unions:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'union' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'union' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Interfaces:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'interface' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'interface' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Protocoles:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'protocol' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'protocol' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Categories:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'category' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'category' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Exceptions:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'exception' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'exception' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Files:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'file' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'file' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Namespaces:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'namespace' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'namespace' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Groups:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'group' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'group' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Pages:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'page' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'page' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Examples:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'example' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'example' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 <h3>Directories:</h3>
-{% for element in index_hash %}
-    {% if element[0] != 'version' %}
-        {% if element[1].compound.kind == 'Dir' %}
-        - {{ element[1].compound.sub_xml.element0.compounddef.element0.compoundname }}
-        <br>
-        {% endif %}
-    {% endif %}
+{% for compound in compounds %}
+{% if compound.kind == 'dir' %}
+- {{ compound.sub_xml.compounddef[0].compoundname }} <br>
+{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}
+<br>
+{% endif %}
 {% endfor %}
-
 </body>
 </html>

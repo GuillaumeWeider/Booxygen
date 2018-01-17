@@ -59,24 +59,21 @@ module Booxygen
         end
 
         # Traitement des éléments
-        count = 0
         xsd_elements_list.each do |xsd_element|
           xml_elements_list = xml.xpath("./#{xsd_element['name']}")
+          element_array = []
 
           xml_elements_list.each do |xml_element_code|
-            element = {}
 
             if xsd_element['type'].nil? || xsd_element['type'].start_with?('xsd:')
               # Si c'est un type inconnu ou nul
-              element[xsd_element['name']] = xml_element_code.to_s
+              element_array.push xml_element_code.to_s
             else
               # Si c'est un type connu
-              element[xsd_element['name']] = rec_parse(xsd_element, xsd, xml_element_code)
+              element_array.push rec_parse(xsd_element, xsd, xml_element_code)
             end
-
-            result["element#{count}"] = element
-            count += 1
           end
+          result[xsd_element['name']] = element_array
         end
       end
 
@@ -95,47 +92,25 @@ module Booxygen
       @index_hash = rec_parse(xsd_doxygen_element, xsd, xml.at_xpath('//doxygenindex'))
     end
 
-    # Fonction d'affichage selon le type de la donnée
-    def rec_print_res(content)
-      if content.is_a?(Array)
-        # Affichage du contenu d'un tableau
-        content.each do |value|
-          rec_print_res value
-        end
-      elsif content.is_a?(Hash)
-        # Affichage du contenu d'un hash (clé et valeur)
-        content.each do |key, value|
-          print "#{key} : "
-          rec_print_res value
-        end
-      else
-        # Affichage du texte
-        print content, "\n"
-      end
-    end
-
     # Fonction d'affichage
     def print_res
-=begin
-      @index_hash.each do |node|
-      rec_print_res node
-      print "\n"
+      compounds = []
+
+      @index_hash['compound'].each do |value|
+          compounds.push value
       end
-=end
 
       loop do
-        # print '{"version"=>', @index_hash['version'], "}\n\n"
-        # print '{"element0"=>',@index_hash['element0'], "}\n\n"
-        # print '{"element1"=>',@index_hash['element1'], "}\n\n"
-
         template = Liquid::Template.parse(File.read('./templates/template1.liquid'))
         Liquid::Template.error_mode = :strict
-        File.write('output/index.html', template.render('index_hash' => @index_hash))
+        File.write('output/index.html', template.render('compounds' => compounds))
 
         print "\n", "Please press any key to reload Liquid..."
         if STDIN.getch == "q"
           print "\n"
-          break end
+          break
+        end
+
       end
     end
   end
