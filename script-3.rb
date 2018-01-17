@@ -3,6 +3,8 @@
 require 'nokogiri'
 require 'liquid'
 
+require 'io/console'
+
 module Booxygen
   VERSION = "0.3.3"
 
@@ -43,7 +45,7 @@ module Booxygen
 
       # S'il n'y a aucun élément et aucun attribut
       if xsd_elements_list.all? {|x| x.nil?} && xsd_attributs_list.all? {|x| x.nil?}
-        result['end'] = xml
+        return xml.to_s
       else
 
         # Traitement des attributs
@@ -66,7 +68,7 @@ module Booxygen
 
             if xsd_element['type'].nil? || xsd_element['type'].start_with?('xsd:')
               # Si c'est un type inconnu ou nul
-              element[xsd_element['name']] = xml_element_code.content
+              element[xsd_element['name']] = xml_element_code.to_s
             else
               # Si c'est un type connu
               element[xsd_element['name']] = rec_parse(xsd_element, xsd, xml_element_code)
@@ -114,19 +116,27 @@ module Booxygen
 
     # Fonction d'affichage
     def print_res
-      #@index_hash.each do |node|
-         #rec_print_res node
-         #print "\n"
-      #end
+=begin
+      @index_hash.each do |node|
+      rec_print_res node
+      print "\n"
+      end
+=end
 
-      template = Liquid::Template.parse(File.read('./templates/template1.liquid'))
-      Liquid::Template.error_mode = :strict
-      File.write('output/index.html', template.render('index_hash' => @index_hash))
+      loop do
+        # print '{"version"=>', @index_hash['version'], "}\n\n"
+        # print '{"element0"=>',@index_hash['element0'], "}\n\n"
+        # print '{"element1"=>',@index_hash['element1'], "}\n\n"
 
-      # print '{"version"=>', @index_hash['version'], "}\n\n"
-      # print '{"element0"=>',@index_hash['element0'], "}\n\n"
-      # print '{"element1"=>',@index_hash['element1'], "}\n\n"
+        template = Liquid::Template.parse(File.read('./templates/template1.liquid'))
+        Liquid::Template.error_mode = :strict
+        File.write('output/index.html', template.render('index_hash' => @index_hash))
 
+        print "\n", "Please press any key to reload Liquid..."
+        if STDIN.getch == "q"
+          print "\n"
+          break end
+      end
     end
   end
 
