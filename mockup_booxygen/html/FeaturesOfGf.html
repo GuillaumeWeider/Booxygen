@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Weider Guillaume">
+
+    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/booxygen.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="main.html">Gamedev Framework (gf) 0.4.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="main.html">Main Page</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">Index</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/GamedevFramework/gf">GitHub</a></li>
+            <li><a href="https://www.reddit.com/r/GamedevFramework/">Reddit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar topsidebar">
+          <p>Modules</p>
+          <ul class="list-group">
+            <a href="#" class="list-group-item">Core classes and functions</a>
+            <a href="#" class="list-group-item">Window classes</a>
+            <a href="#" class="list-group-item">Graphics classes</a>
+            <a href="#" class="list-group-item">Game classes</a>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-2 sidebar bottomsidebar">
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Classes
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">TypeDef</a></li>
+              <li><a href="#">Enum</a></li>
+              <li><a href="#">etc...</a></li>
+            </ul>
+          </div>
+
+          <ul class="list-group">
+            <a href="#" class="list-group-item">gf::Action</a>
+            <a href="#" class="list-group-item">gf::Clipboard</a>
+            <a href="#" class="list-group-item">gf::Control</a>
+            <a href="#" class="list-group-item">gf::ActionContainer</a>
+            <a href="KeyCodeKeyControl.html" class="list-group-item">gf::KeyCodeKeyControl</a> <!-- Mockup de la classe KeyCodeKeyControl -->
+            <a href="#" class="list-group-item">gf::ScanCodeKeyControl</a>
+            <a href="#" class="list-group-item">gf::MouseButtonControl</a>
+            <a href="#" class="list-group-item">gf::GamepadButtonControl</a>
+            <a href="#" class="list-group-item">gf::GamepadAxisControl</a>
+            <a href="#" class="list-group-item">gf::CloseControl</a>
+            <a href="#" class="list-group-item">gf::Cursor</a>
+            <a href="#" class="list-group-item">gf::Event::KeyEvent</a>
+            <a href="#" class="list-group-item">gf::Event::TextEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseButtonEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseCursorEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseWheelEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadButtonEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadAxisEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadConnection</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadDisconnection</a>
+            <a href="#" class="list-group-item">gf::Event</a>
+            <a href="#" class="list-group-item">gf::Gamepad</a>
+            <a href="#" class="list-group-item">gf::Keyboard</a>
+            <a href="#" class="list-group-item">gf::VideoMode</a>
+            <a href="#" class="list-group-item">gf::Monitor</a>
+            <a href="#" class="list-group-item">gf::Region</a>
+            <a href="#" class="list-group-item">gf::Rune</a>
+            <a href="#" class="list-group-item">gf::Window</a>
+          </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="page-header">Features of Gamedev Framework (gf)</h2>
+
+          <p>Gamedev Framework (gf) is a game framework, it provides some useful features for developping 2D games. Here is a short list of some of the main features of gf:</p>
+
+          <ul>
+            <li>Core
+              <ul>
+                <li>Vector and matrix library</li>
+                <li>Geometry library</li>
+                <li>Noise library</li>
+                <li>Easings</li>
+              </ul>
+            </li>
+            <li>Window
+              <ul>
+                <li>Multiple monitors handling</li>
+                <li>Complete window events</li>
+                <li>Complete input events, including gamepads</li>
+                <li>Easy fullscreen</li>
+              </ul>
+            </li>
+            <li>Graphics
+              <ul>
+                <li>Views (a.k.a. cameras)</li>
+                <li>Sprites and animated sprites</li>
+                <li>Text and fonts</li>
+                <li>NinePatch</li>
+                <li>Sprite batch</li>
+                <li>Texture atlas</li>
+                <li>Tile layers</li>
+                <li>Post-processing effects</li>
+                <li>Immediate mode GUI</li>
+                <li>Particles</li>
+              </ul>
+            </li>
+            <li>Game
+              <ul>
+                <li>Resource loader</li>
+                <li>Application messages</li>
+                <li>Simple physics engine</li>
+                <li>Roguelike toolkit and console</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>If you are looking for a full game engine, you should take a look at <a href="https://en.wikipedia.org/wiki/List_of_game_engines">the list of game engines on Wikipedia</a>.</p>
+          <dl><dt>See also</dt><dd><a href="https://www.reddit.com/r/gamedev/wiki/engine_faq">The Engine FAQ on /r/gamedev wiki</a></dd></dl>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
