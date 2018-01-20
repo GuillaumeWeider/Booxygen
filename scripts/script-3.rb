@@ -16,6 +16,7 @@ module Booxygen
 
   class Doxygen
     def initialize
+      Liquid::Template.error_mode = :strict
       @index_hash = {}
     end
 
@@ -67,7 +68,7 @@ module Booxygen
 
             if xsd_element['type'].nil? || xsd_element['type'].start_with?('xsd:')
               # Si c'est un type inconnu ou nul
-              element_array.push xml_element_code.to_s
+              element_array.push xml_element_code.content.to_s
             else
               # Si c'est un type connu
               element_array.push rec_parse(xsd_element, xsd, xml_element_code)
@@ -102,10 +103,15 @@ module Booxygen
 
       loop do
         template = Liquid::Template.parse(File.read('../templates/template1.liquid'))
-        Liquid::Template.error_mode = :strict
-        File.write('../output-html/index.html', template.render('compounds' => compounds))
+        File.write('../output/index.html', template.render('compounds' => compounds))
 
-        print "\n", "Please press any key to reload Liquid..."
+        template = Liquid::Template.parse(File.read('../templates/main.liquid'))
+        File.write('../output/html/main.html', template.render('compounds' => compounds))
+
+        template = Liquid::Template.parse(File.read('../templates/classes.liquid'))
+        File.write('../output/html/classes.html', template.render('compounds' => compounds))
+
+        print "\n", "Press any key to reload Liquid, or 'q' to quit."
         if STDIN.getch == "q"
           print "\n"
           break

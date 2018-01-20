@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Weider Guillaume">
+
+    <title>Main page &mdash; Gamedev Framework (gf)</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/booxygen.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="main.html">Gamedev Framework (gf) 0.4.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="main.html">Main Page</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/GamedevFramework/gf">GitHub</a></li>
+                <li><a href="https://www.reddit.com/r/GamedevFramework/">Reddit</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- ******************************************************************************************************* -->
+        <div class="col-sm-3 col-md-2 sidebar topsidebar">
+            <p>Modules</p>
+            <ul class="list-group">
+                
+                <a href="#" class="list-group-item">Core classes and functions</a>
+                
+                <a href="#" class="list-group-item">Window classes</a>
+                
+                <a href="#" class="list-group-item">Graphics classes</a>
+                
+                <a href="#" class="list-group-item">Game classes</a>
+                
+            </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-2 sidebar bottomsidebar">
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Classes
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">TypeDef</a></li>
+                    <li><a href="#">Enum</a></li>
+                    <li><a href="#">etc...</a></li>
+                </ul>
+            </div>
+
+            <ul class="list-group">
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_array2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_array_ref", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_buffer_ref", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_circ", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_clock", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_ease", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_flags", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_bresenham", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_heightmap", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_input_stream", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_file_input_stream", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_memory_input_stream", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_library_1_1_version", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_library", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_log", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_matrix", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_matrix_3_01_t_00_012_00_012_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_matrix_3_01_t_00_013_00_013_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_matrix_3_01_t_00_014_00_014_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_value_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_gradient_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_gradient_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_better_gradient_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_fractal_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_fractal_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_perlin_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_perlin_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_simplex_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_open_simplex_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_open_simplex_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_wavelet_noise3_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_worley_noise2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_multifractal2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_hetero_terrain2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_hybrid_multifractal2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_ridged_multifractal2_d", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_noise3_d_to2_d_adapter", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_paths", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_polygon", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_polyline", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_queue", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_random", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_range_1_1_iterator", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_range", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_position_range_1_1_iterator", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_position_range", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_rect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_singleton", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_singleton_storage", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_string_ref", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_system_info", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_time", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_none_type", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_all_type", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_vector", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_vector_3_01_t_00_012_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_vector_3_01_t_00_013_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_vector_3_01_t_00_014_01_4", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_action", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_action_container", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_clipboard", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_keycode_key_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_scancode_key_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_mouse_button_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_gamepad_button_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_gamepad_axis_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_close_control", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_cursor", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_key_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_text_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_mouse_button_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_mouse_cursor_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_mouse_wheel_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_gamepad_button_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_gamepad_axis_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_gamepad_connection", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event_1_1_gamepad_disconnection", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_event", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_gamepad", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_keyboard", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_video_mode", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_monitor", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_region", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_rune", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_window", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_animated_sprite", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_animation_1_1_frame", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_animation", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_blend_mode", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_buffered_geometry", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_color", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_color_ramp", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_coordinates", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_curve", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_drawable", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_default_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_anti_aliasing_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_color_matrix_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_color_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_color_blind_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_edge_effect", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_glyph", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_font_1_1_packing", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_font_1_1_glyph_cache", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_font", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_graphics_info_1_1_format", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_graphics_info", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_square_grid", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_image", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_logo", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_nine_patch", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_point_particles", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_shape_particles", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_sprite_particles", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_post_processing", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_render_pipeline_1_1_texture_buffer", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_render_pipeline", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_render_states", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_render_target_1_1_locations", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_render_target", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_render_texture", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_render_window", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_shader", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_rectangle_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_circle_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_convex_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_star_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_rounded_rectangle_shape", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_sprite", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_sprite_batch", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_text_1_1_line", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_text_1_1_paragraph", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_text", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_bare_texture", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_texture", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_alpha_texture", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_tile_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_transformable", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_u_i_edit_type", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_u_i_browser", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_u_i", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_vertex", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_vertex_array", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_vertex_buffer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_adaptative_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_zooming_view_adaptor", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_view_container", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_stretch_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_fit_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_fill_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_extend_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_locked_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_screen_view", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_value_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_rotate_to_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_move_to_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_color_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_callback_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_delay_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_sequence_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_repeat_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_parallel_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_activity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_asset_manager", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_penetration", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_console_1_1_cell", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_console_1_1_color_control", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_console", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_console_char", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_console_font_format", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_console_font_element", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_predefined_console_font_format", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_console_font", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_bitmap_console_font", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_colored_console_font", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_entity", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_entity_container", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_square_map", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_message", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_message_manager_1_1_handler", "prot"=>"private"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_message_manager", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_model", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_model_container", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_fixed_timestep_model", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_physics_body", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_physics_geometry", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_physics_model", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_resource_cache", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_resource_manager", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_space_tree", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_texture_atlas", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_tmx_properties", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_tmx_visitor", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_cell", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_tile_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_object", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_rectangle", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_ellipse", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_tile_object", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_polyline", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_polygon", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_text", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_object_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_image", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_image_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_group_layer", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_frame", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_animation", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_terrain", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_tile", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_tileset", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"structgf_1_1_tmx_layers", "prot"=>"public"}</a>
+                
+                <a href="#" class="list-group-item">{"refid"=>"classgf_1_1_tween", "prot"=>"public"}</a>
+                
+            </ul>
+        </div>
+        <!-- ******************************************************************************************************* -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h2 class="page-header">Gamedev Framework (gf)</h2>
+
+            <p><b>Gamedev Framework (gf)</b> is a framework to build 2D games in C++11. It is based on <a
+                    href="https://www.libsdl.org/">SDL</a> and <a href="https://www.khronos.org/opengles/2_X/">OpenGL ES
+                2.0</a>, and presents an API that is very similar to the graphics module of <a
+                    href="http://www.sfml-dev.org/">SFML</a> (see <a class="el" href="differences_with_sfml.html">Differences
+                with SFML</a>) with additional features. It is <em>not</em> a <a
+                    href="https://en.wikipedia.org/wiki/Game_engine">game engine</a>, it is more something like a
+                framework, similar to <a href="https://libgdx.badlogicgames.com/">libGDX</a> in the Java world.</p>
+            <p>Gamedev Framework (gf) is licensed under the terms and conditions of the <a
+                    href="https://opensource.org/licenses/Zlib">zlib/libpng license</a>.</p>
+
+            <h3>First example</h3>
+            <pre>
+            <span class="preprocessor">#include &lt;gf/Event.h&gt;
+            #include &lt;gf/Font.h&gt;
+            #include &lt;gf/RenderWindow.h&gt;
+            #include &lt;gf/Sprite.h&gt;
+            #include &lt;gf/Text.h&gt;
+            #include &lt;gf/Window.h&gt;</span>
+            int main() {
+              <span class="comment">// Create the main window and the renderer</span>
+              <a href="#">gf::Window</a> window(<span class="stringliteral">"Example"</span>, { 640, 480 });
+              <a href="#">gf::RenderWindow</a> renderer(window);
+              <span class="comment">// Load a sprite to display</span>
+              <a href="#">gf::Texture</a> texture;
+              <span class="keywordflow">if</span> (!texture.<a href="#">loadFromFile</a>(<span class="stringliteral">"sprite.png"</span>)) {
+                <span class="keywordflow">return</span> EXIT_FAILURE;
+              }
+              <a href="#">gf::Sprite</a> sprite(texture);
+              sprite.<a href="#">setPosition</a>({ 300, 200 });
+              <span class="comment">// Create a graphical text to display</span>
+              <a href="#">gf::Font</a> font;
+              <span class="keywordflow">if</span> (!font.<a href="#">loadFromFile</a>(<span class="stringliteral">"DroidSans.ttf"</span>)) {
+                <span class="keywordflow">return</span> EXIT_FAILURE;
+              }
+              <a href="#">gf::Text</a> text(<span class="stringliteral">"Hello gf!"</span>, font, 50);
+              text.setPosition({ 100, 100 });
+              renderer.<a href="#">clear</a>(<a href="#">gf::Color::White</a>);
+              <span class="comment">// Start the game loop</span>
+              <span class="keywordflow">while</span> (window.<a href="#">isOpen</a>()) {
+                <span class="comment">// Process events</span>
+                <a href="#">gf::Event</a> event;
+                <span class="keywordflow">while</span> (window.<a href="#">pollEvent</a>(event)) {
+                  <span class="keywordflow">switch</span> (event.<a href="#">type</a>) {
+                    <span class="keywordflow">case</span> <a href="#">gf::EventType::Closed</a>:
+                      window.<a href="#">close</a>();
+                      <span class="keywordflow">break</span>;
+                    <span class="keywordflow">default</span>:
+                      <span class="keywordflow">break</span>;
+                  }
+                }
+                <span class="comment">// Draw the entities</span>
+                renderer.<a href="#">clear</a>();
+                renderer.<a href="#">draw</a>(sprite);
+                renderer.<a href="#">draw</a>(text);
+                renderer.<a href="#">display</a>();
+              }
+              <span class="keywordflow">return</span> 0;
+            }
+          </pre>
+
+            <h3>Source</h3>
+            <p>The source code is available on <a href="https://github.com/GamedevFramework/gf">github</a>.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p>Generated by Booxygen</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

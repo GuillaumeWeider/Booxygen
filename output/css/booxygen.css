@@ -1,0 +1,120 @@
+body {
+    padding-top: 50px;
+}
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+@media (min-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #e5e5e5;
+        border-right: 1px solid #eee;
+    }
+
+    .topsidebar {
+        top: 51px;
+        bottom: 65%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .bottomsidebar {
+        top: 35%;
+        bottom: 0;
+        padding: 5px 2px 2px 2px;
+    }
+
+}
+
+.main {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+.topsidebar p, .bottomsidebar p {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.bottomsidebar .list-group {
+    padding-top: 5px;
+}
+
+.bottomsidebar .list-group-item {
+    height: 25px;
+    padding-top: 2px;
+}
+
+span.preprocessor {
+    color: #806020
+}
+
+span.comment {
+    color: #800000
+}
+
+span.stringliteral {
+    color: #002080
+}
+
+span.keywordflow {
+    color: #e08000
+}
+
+#footer {
+    position: relative;
+    height: 50px;
+    background-color: #e5e5e5;
+    text-align: right;
+    padding-top: 15px;
+    bottom: 0;
+}
+
+/* Erwan */
+
+.indexlist {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+@media (max-width: 992px) {
+    .indexlist {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .indexlist {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+}
+
+.index_group {
+    page-break-inside: avoid;           /* Theoretically FF 20+ */
+    break-inside: avoid-column;         /* IE 11 */
+}
