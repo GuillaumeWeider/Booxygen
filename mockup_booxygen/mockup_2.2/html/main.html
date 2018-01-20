@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Weider Guillaume">
+
+    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/booxygen.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="main.html">Gamedev Framework (gf) 0.4.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="main.html">Main Page</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="index.html">Index</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/GamedevFramework/gf">GitHub</a></li>
+            <li><a href="https://www.reddit.com/r/GamedevFramework/">Reddit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar topsidebar">
+          <p>Modules</p>
+          <ul class="list-group">
+            <a href="#" class="list-group-item">Core classes and functions</a>
+            <a href="#" class="list-group-item">Window classes</a>
+            <a href="#" class="list-group-item">Graphics classes</a>
+            <a href="#" class="list-group-item">Game classes</a>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-2 sidebar bottomsidebar">
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Classes
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">TypeDef</a></li>
+              <li><a href="#">Enum</a></li>
+              <li><a href="#">etc...</a></li>
+            </ul>
+          </div>
+
+          <ul class="list-group">
+            <a href="#" class="list-group-item">gf::Action</a>
+            <a href="#" class="list-group-item">gf::Clipboard</a>
+            <a href="#" class="list-group-item">gf::Control</a>
+            <a href="#" class="list-group-item">gf::ActionContainer</a>
+            <a href="KeyCodeKeyControl.html" class="list-group-item">gf::KeyCodeKeyControl</a> <!-- Mockup de la classe KeyCodeKeyControl -->
+            <a href="#" class="list-group-item">gf::ScanCodeKeyControl</a>
+            <a href="#" class="list-group-item">gf::MouseButtonControl</a>
+            <a href="#" class="list-group-item">gf::GamepadButtonControl</a>
+            <a href="#" class="list-group-item">gf::GamepadAxisControl</a>
+            <a href="#" class="list-group-item">gf::CloseControl</a>
+            <a href="#" class="list-group-item">gf::Cursor</a>
+            <a href="#" class="list-group-item">gf::Event::KeyEvent</a>
+            <a href="#" class="list-group-item">gf::Event::TextEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseButtonEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseCursorEvent</a>
+            <a href="#" class="list-group-item">gf::Event::MouseWheelEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadButtonEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadAxisEvent</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadConnection</a>
+            <a href="#" class="list-group-item">gf::Event::GamepadDisconnection</a>
+            <a href="#" class="list-group-item">gf::Event</a>
+            <a href="#" class="list-group-item">gf::Gamepad</a>
+            <a href="#" class="list-group-item">gf::Keyboard</a>
+            <a href="#" class="list-group-item">gf::VideoMode</a>
+            <a href="#" class="list-group-item">gf::Monitor</a>
+            <a href="#" class="list-group-item">gf::Region</a>
+            <a href="#" class="list-group-item">gf::Rune</a>
+            <a href="#" class="list-group-item">gf::Window</a>
+          </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="page-header">Gamedev Framework (gf)</h2>
+
+          <p><b>Gamedev Framework (gf)</b> is a framework to build 2D games in C++11. It is based on <a href="https://www.libsdl.org/">SDL</a> and <a href="https://www.khronos.org/opengles/2_X/">OpenGL ES 2.0</a>, and presents an API that is very similar to the graphics module of <a href="http://www.sfml-dev.org/">SFML</a> (see <a class="el" href="differences_with_sfml.html">Differences with SFML</a>) with additional features. It is <em>not</em> a <a href="https://en.wikipedia.org/wiki/Game_engine">game engine</a>, it is more something like a framework, similar to <a href="https://libgdx.badlogicgames.com/">libGDX</a> in the Java world.</p>
+          <p>Gamedev Framework (gf) is licensed under the terms and conditions of the <a href="https://opensource.org/licenses/Zlib">zlib/libpng license</a>.</p>
+
+          <p>The source code is available on <a href="https://github.com/GamedevFramework/gf">github</a>.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
