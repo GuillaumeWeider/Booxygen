@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Transformable &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -565,97 +565,237 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Transformable</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setOrigin</a> (Vector2f origin)
                         <br><span><para>Set the local origin of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getOrigin</a> () const
                         <br><span><para>Get the local origin of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setPosition</a> (Vector2f position)
                         <br><span><para>Set the position of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPosition</a> () const
                         <br><span><para>Get the position of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">move</a> (Vector2f offset)
                         <br><span><para>Move the object by a given offset. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setRotation</a> (float angle)
                         <br><span><para>Set the orientation of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          float
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getRotation</a> () const
                         <br><span><para>Get the orientation of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">rotate</a> (float angle)
                         <br><span><para>Rotate the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setScale</a> (Vector2f factors)
                         <br><span><para>Set the scale factors of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setScale</a> (float factor)
                         <br><span><para>Set the scale factor of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getScale</a> () const
                         <br><span><para>Get the current scale of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">scale</a> (Vector2f factors)
                         <br><span><para>Scale the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">scale</a> (float factor)
                         <br><span><para>Scale the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Matrix3f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getTransform</a> () const
                         <br><span><para>Get the combined transform of the object. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Matrix3f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getInverseTransform</a> () const
                         <br><span><para>Get the inverse of the combined transform of the object. </para></span></td>
                 </tr>
@@ -672,7 +812,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setOriginFromAnchorAndBounds</a> (Anchor anchor, const RectF &bounds)
                         <br><span><para>Set the origin from an anchor and bounds. </para></span></td>
                 </tr>

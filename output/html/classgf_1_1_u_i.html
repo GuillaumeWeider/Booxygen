@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::UI &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -628,19 +628,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">begin</a> (const std::string &title, const RectF &bounds, UIWindowFlags flags=None)
                         <br><span><para>Create a window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">end</a> ()
                         <br><span><para>Finish a window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          RectF
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">windowGetBounds</a> ()
                         <br><span><para>Get the window bounds. </para></span></td>
                 </tr>
@@ -657,43 +684,106 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRowDynamic</a> (float height, int cols)
                         <br><span><para>Dynamic row with fixed column layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRowStatic</a> (float height, int itemWidth, int cols)
                         <br><span><para>Static row with fixed column layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRowBegin</a> (UILayout format, float height, int cols)
                         <br><span><para>Start an immediate mode custom column layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRowPush</a> (float width)
                         <br><span><para>Specify the width of the next column. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRowEnd</a> ()
                         <br><span><para>Finish an immediate mode custom column layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">layoutRow</a> (UILayout format, float height, ArrayRef< float > ratio)
                         <br><span><para>Array-based custom column layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">separator</a> (float height)
                         <br><span><para>An empty separator. </para></span></td>
                 </tr>
@@ -710,25 +800,61 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">groupBegin</a> (const std::string &title, UIWindowFlags flags=None)
                         <br><span><para>Start a group. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">groupEnd</a> ()
                         <br><span><para>Finish a group. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">groupScrolledBegin</a> (UIScroll &scroll, const std::string &title, UIWindowFlags flags=None)
                         <br><span><para>Start a scrolled group. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">groupScrolledEnd</a> ()
                         <br><span><para>Finish a scrolled group. </para></span></td>
                 </tr>
@@ -745,13 +871,31 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">treePush</a> (UITree type, const std::string &title, UICollapse &state)
                         <br><span><para>Start a tree layout. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">treePop</a> ()
                         <br><span><para>Finish a tree layout. </para></span></td>
                 </tr>
@@ -768,31 +912,76 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">label</a> (StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A simple label with text. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">labelColored</a> (const Color4f &color, StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A label with colored text. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">labelWrap</a> (StringRef title)
                         <br><span><para>A simple label that can wrap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">labelWrapColored</a> (const Color4f &color, StringRef title)
                         <br><span><para>A label with colored text that can wrap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">image</a> (const Texture &texture, const RectF &textureRect)
                         <br><span><para>An image. </para></span></td>
                 </tr>
@@ -809,43 +998,106 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonSetBehavior</a> (UIButtonBehavior behavior)
                         <br><span><para>Change the behavior of buttons. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonPushBehavior</a> (UIButtonBehavior behavior)
                         <br><span><para>Push a new behavior of buttons. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonPopBehavior</a> ()
                         <br><span><para>Pop the previous behavior of buttons. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonLabel</a> (StringRef title)
                         <br><span><para>A button with a centered label. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonColor</a> (const Color4f &color)
                         <br><span><para>A button with a color. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonSymbol</a> (UISymbol symbol)
                         <br><span><para>A button with a symbol. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">buttonSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A button with a symbol and a centered label. </para></span></td>
                 </tr>
@@ -862,13 +1114,31 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">checkbox</a> (StringRef title, bool &active)
                         <br><span><para>A checkbox with a title. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">checkboxFlags</a> (StringRef title, unsigned &flags, unsigned value)
                         <br><span><para>A checkbox with a title for flags. </para></span></td>
                 </tr>
@@ -885,13 +1155,31 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">option</a> (StringRef title, bool active)
                         <br><span><para>A radio button without state. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">radio</a> (StringRef title, bool &active)
                         <br><span><para>A radio button with a reference state. </para></span></td>
                 </tr>
@@ -908,7 +1196,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">selectableLabel</a> (StringRef title, UIAlignment align, bool &value)
                         <br><span><para>A selectable label. </para></span></td>
                 </tr>
@@ -925,13 +1222,31 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">sliderFloat</a> (float min, float &val, float max, float step)
                         <br><span><para>A slider for a float value. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">sliderInt</a> (int min, int &val, int max, int step)
                         <br><span><para>A slider for an int value. </para></span></td>
                 </tr>
@@ -948,7 +1263,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">progress</a> (std::size_t &current, std::size_t max, UIProgress modifyable=UIProgress::Modifyable)
                         <br><span><para>A progress bar. </para></span></td>
                 </tr>
@@ -965,7 +1289,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">colorPicker</a> (Color4f &color)
                         <br><span><para>A color picker. </para></span></td>
                 </tr>
@@ -982,19 +1315,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">propertyInt</a> (const std::string &name, int min, int &val, int max, int step, float incPerPixel)
                         <br><span><para>A property for an integer. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">propertyFloat</a> (const std::string &name, float min, float &val, float max, float step, float incPerPixel)
                         <br><span><para>A property for a float. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">propertyDouble</a> (const std::string &name, double min, double &val, double max, double step, float incPerPixel)
                         <br><span><para>A property for a double. </para></span></td>
                 </tr>
@@ -1011,7 +1371,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          UIEditEventFlags
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">edit</a> (UIEditFlags flags, BufferRef< char > buffer, std::size_t &length, UIEditFilter filter=UIEditFilter::Default)
                         <br><span></span></td>
                 </tr>
@@ -1028,7 +1397,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">fileSelector</a> (UIBrowser &browser, const std::string &title, const RectF &bounds)
                         <br><span><para>File selector. </para></span></td>
                 </tr>
@@ -1045,19 +1423,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">popupBegin</a> (UIPopup type, const std::string &title, UIWindowFlags flags, const RectF &bounds)
                         <br><span><para>Start a popup window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">popupClose</a> ()
                         <br><span><para>Close a popup window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">popupEnd</a> ()
                         <br><span><para>Finish a popup window. </para></span></td>
                 </tr>
@@ -1074,61 +1479,151 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">combobox</a> (const std::vector< std::string > &items, int &selected, int itemHeight, Vector2f size)
                         <br><span><para>A simple combo box with a list of item. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboboxSeparator</a> (const std::string &itemsSeparatedBySeparator, char separator, int &selected, int itemHeight, Vector2f size)
                         <br><span><para>A simple combo box with a string and a separator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboBeginLabel</a> (StringRef selected, Vector2f size)
                         <br><span><para>Start a combo box with a label. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboBeginColor</a> (const Color4f &color, Vector2f size)
                         <br><span><para>Start a combo box with a color. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboBeginSymbol</a> (UISymbol symbol, Vector2f size)
                         <br><span><para>Start a combo box with a symbol. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboBeginSymbolLabel</a> (UISymbol symbol, StringRef selected, Vector2f size)
                         <br><span><para>Start a combo box with a symbol and a label. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A label inside the combo box. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A symbol and a label inside the combo box. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboClose</a> ()
                         <br><span><para>Close a combo box. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">comboEnd</a> ()
                         <br><span><para>Finish a combo box. </para></span></td>
                 </tr>
@@ -1145,31 +1640,76 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">contextualBegin</a> (UIWindowFlags flags, Vector2f size, const RectF &triggerBounds)
                         <br><span><para>Start a contextual window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">contextualItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A label inside the contextual window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">contextualItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A symbol and a label inside the contextual window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">contextualClose</a> ()
                         <br><span><para>Close the contextual window. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">contextualEnd</a> ()
                         <br><span><para>Finish the contextual window. </para></span></td>
                 </tr>
@@ -1186,19 +1726,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">tooltip</a> (const std::string &text)
                         <br><span><para>A simple tooltip with a text. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">tooltipBegin</a> (float width)
                         <br><span><para>Start a tooltip. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">tooltipEnd</a> ()
                         <br><span><para>Finish a tooltip. </para></span></td>
                 </tr>
@@ -1215,55 +1782,136 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menubarBegin</a> ()
                         <br><span><para>Start a menu bar. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menubarEnd</a> ()
                         <br><span><para>Finish a menu bar. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuBeginLabel</a> (StringRef title, UIAlignment align, Vector2f size)
                         <br><span><para>Start a menu with a label. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuBeginSymbol</a> (const std::string &id, UISymbol symbol, Vector2f size)
                         <br><span><para>Start a menu with a symbol. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuBeginSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align, Vector2f size)
                         <br><span><para>Start a menu with a symbol and a label. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A label inside the menu. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
                         <br><span><para>A symbol and a label inside the menu. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuClose</a> ()
                         <br><span><para>Close a menu. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">menuEnd</a> ()
                         <br><span><para>Finish a menu. </para></span></td>
                 </tr>
@@ -1280,19 +1928,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          RectF
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getWidgetBounds</a> ()
                         <br><span><para>Get the current widget bounds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isWidgetHovered</a> ()
                         <br><span><para>Check if the widget is hovered by the mouse. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">spacing</a> (int cols)
                         <br><span><para>Create a horizontal spacing to fill some columns. </para></span></td>
                 </tr>
@@ -1309,7 +1984,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setPredefinedStyle</a> (UIPredefinedStyle style)
                         <br><span><para>Set a predefined style for all the windows and the widgets. </para></span></td>
                 </tr>
@@ -1328,7 +2012,20 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          unsigned
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">DefaultCharacterSize</a> 
                         <br><span><para>The default size for the font. </para></span></td>
                 </tr>
@@ -1347,49 +2044,109 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">UI</a> (Font &font, unsigned characterSize=DefaultCharacterSize)
                         <br><span><para>Constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">~UI</a> ()
                         <br><span><para>Destructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">UI</a> (const UI &)=delete
                         <br><span><para>Deleted copy constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          UI&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator=</a> (const UI &)=delete
                         <br><span><para>Deleted copy assignment. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">UI</a> (UI &&other)
                         <br><span><para>Move constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          UI&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator=</a> (UI &&other)
                         <br><span><para>Move assignment. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">processEvent</a> (const Event &event)
                         <br><span><para>Update the internal state with an event. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
                         <br><span><para>Draw the object to a render target. </para></span></td>
                 </tr>

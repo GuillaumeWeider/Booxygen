@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Heightmap &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -550,43 +550,106 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">normalize</a> (double min=0.0, double max=1.0)
                         <br><span><para>Normalize the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">addHill</a> (Vector2d center, double radius, double height)
                         <br><span><para>Add a hill to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">digHill</a> (Vector2d center, double radius, double height)
                         <br><span><para>Dig a hill in the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">addNoise</a> (Noise2D &noise, double scale=1.0)
                         <br><span><para>Add a noise to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">addValue</a> (double value)
                         <br><span><para>Add a constant to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">scale</a> (double value)
                         <br><span><para>Scale the values of the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clamp</a> (double min=0.0, double max=1.0)
                         <br><span><para>Clamp the values of the heightmap. </para></span></td>
                 </tr>
@@ -603,31 +666,76 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          double
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSlope</a> (Vector2i position) const
                         <br><span><para>Compute the slope at a position. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">thermalErosion</a> (unsigned iterations, double talus, double fraction)
                         <br><span><para>Apply thermal erosion to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">hydraulicErosion</a> (unsigned iterations, double rainAmount, double solubility, double evaporation, double capacity)
                         <br><span><para>Apply hydraulic erosision to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">fastErosion</a> (unsigned iterations, double talus, double fraction)
                         <br><span><para>Apply fast erosion to the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          double
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getErosionScore</a> () const
                         <br><span><para>Compute the erosion score for the heightmap. </para></span></td>
                 </tr>
@@ -644,19 +752,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Heightmap
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">subMap</a> (RectI area) const
                         <br><span><para>Get a sub-map of the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Image
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">copyToGrayscaleImage</a> () const
                         <br><span><para>Export to a grayscale image. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Image
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">copyToColoredImage</a> (const ColorRamp &ramp, double waterLevel=0.5, Render render=Render::Colored) const
                         <br><span><para>Export to a colored image. </para></span></td>
                 </tr>
@@ -673,7 +808,10 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                    </td>
                     <td><a href="#">Render</a> 
                         <br><span><para>Rendering mode. </para></span></td>
                 </tr>
@@ -692,37 +830,91 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Heightmap</a> (Vector2i size)
                         <br><span><para>Constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2i
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSize</a> () const
                         <br><span><para>Get the size of the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">reset</a> ()
                         <br><span><para>Reset the heightmap. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          double
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getValue</a> (Vector2i position) const
                         <br><span><para>Get the value at the specified position. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setValue</a> (Vector2i position, double value)
                         <br><span><para>Set the value at the specified position. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          std::tuple<double,
+                      
+                  
+                      
+                          double>
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getMinMax</a> () const
                         <br><span><para>Get the minimum and maximum of the heightmap. </para></span></td>
                 </tr>

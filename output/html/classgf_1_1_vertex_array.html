@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::VertexArray &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -561,91 +561,230 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">VertexArray</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">VertexArray</a> (PrimitiveType type, std::size_t count=0)
                         <br><span><para>Construct the vertex array with a type and an initial number of vertices. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          std::size_t
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getVertexCount</a> () const
                         <br><span><para>Return the vertex count. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          Vertex*
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getVertexData</a> () const
                         <br><span><para>Return the vertex data. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vertex&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator[]</a> (std::size_t index)
                         <br><span><para>Get a read-write access to a vertex by its index. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          Vertex&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator[]</a> (std::size_t index) const
                         <br><span><para>Get a read-only access to a vertex by its index. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isEmpty</a> () const
                         <br><span><para>Check if the vertex array is empty. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clear</a> ()
                         <br><span><para>Clear the vertex array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">resize</a> (std::size_t count)
                         <br><span><para>Resize the vertex array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">reserve</a> (std::size_t capacity)
                         <br><span><para>Increase the capacity of the vertex array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">append</a> (const Vertex &vertex)
                         <br><span><para>Add a vertex to the array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setPrimitiveType</a> (PrimitiveType type)
                         <br><span><para>Set the type of primitives to draw. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          PrimitiveType
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPrimitiveType</a> () const
                         <br><span><para>Get the type of primitives drawn by the vertex array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          RectF
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getBounds</a> () const
                         <br><span><para>Compute the bounding rectangle of the vertex array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
                         <br><span><para>Draw the object to a render target. </para></span></td>
                 </tr>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -104,9 +104,16 @@
             <table class="table">
                 {% for memberdef in section.memberdef %}
                 <tr>
-                    <td>?</td>
+                    <td>
+                  {% assign type = memberdef.definition[0] | split: " " %}
+                  {% for word in type %}
+                      {% unless forloop.last == true %}
+                          {{ word }}
+                      {% endunless %}
+                  {% endfor %}
+                    </td>
                     <td><a href="#">{{ memberdef.name[0] }}</a> {{ memberdef.argsstring[0] }}
-                        <br><span>{{ memberdef.briefdescription[0].para }}</span></td>
+                        <br><span>{{ memberdef.briefdescription[0].para[0] }}</span></td>
                 </tr>
                 {% endfor %}
             </table>

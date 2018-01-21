@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::SquareMap &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -550,43 +550,106 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setCell</a> (Vector2i pos, CellFlags flags)
                         <br><span><para>Set the properties of a cell. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clear</a> (CellFlags flags)
                         <br><span><para>Initialize the cells with some properties. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setTransparent</a> (Vector2i pos)
                         <br><span><para>Make a cell transparent. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isTransparent</a> (Vector2i pos) const
                         <br><span><para>Check if a cell is transparent. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setWalkable</a> (Vector2i pos)
                         <br><span><para>Make a cell walkable. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isWalkable</a> (Vector2i pos) const
                         <br><span><para>Check if a cell is walkable. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setEmpty</a> (Vector2i pos)
                         <br><span><para>Make a cell empty. </para></span></td>
                 </tr>
@@ -603,37 +666,91 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clearFieldOfVision</a> ()
                         <br><span><para>Make the whole map not visible. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clearExplored</a> ()
                         <br><span><para>Make the whole map not explored. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">computeFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
                         <br><span><para>Compute a field of vision. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">computeLocalFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
                         <br><span><para>Compute a local field of vision. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isInFieldOfVision</a> (Vector2i pos) const
                         <br><span><para>Check if a cell is visible. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isExplored</a> (Vector2i pos) const
                         <br><span><para>Check if a cell is explored. </para></span></td>
                 </tr>
@@ -650,7 +767,16 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          std::vector<Vector2i>
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">computeRoute</a> (Vector2i origin, Vector2i target, float diagonalCost=Sqrt2, Route algorithm=Route::AStar)
                         <br><span><para>Compute a route between two points. </para></span></td>
                 </tr>
@@ -669,19 +795,42 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">SquareMap</a> (Vector2i size)
                         <br><span><para>Constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2i
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSize</a> () const
                         <br><span><para>Get the size of the map. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          PositionRange<int>
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getRange</a> () const
                         <br><span><para>Get a range of the positions of the map. </para></span></td>
                 </tr>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Time &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -560,7 +560,20 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Zero</a> 
                         <br><span></span></td>
                 </tr>
@@ -579,49 +592,137 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Time</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Time</a> (std::chrono::steady_clock::duration duration)
                         <br><span><para>Constructor with a duration. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          float
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">asSeconds</a> () const
                         <br><span><para>Return the time value as a number of seconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          int32_t
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">asMilliseconds</a> () const
                         <br><span><para>Return the time value as a number of milliseconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          int64_t
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">asMicroseconds</a> () const
                         <br><span><para>Return the time value as a number of microseconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          std::chrono::steady_clock::duration
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">asDuration</a> () const
                         <br><span><para>Return the time value as a duration. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Time&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">addTo</a> (Time other)
                         <br><span><para>Add another time. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Time&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">subTo</a> (Time other)
                         <br><span><para>Substract another time. </para></span></td>
                 </tr>
@@ -638,7 +739,24 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          static
+                      
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">zero</a> ()
                         <br><span></span></td>
                 </tr>
@@ -655,79 +773,240 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">seconds</a> (float amount)
                         <br><span><para>Construct a time value from a number of seconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">milliseconds</a> (int32_t amount)
                         <br><span><para>Construct a time value from a number of milliseconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">microseconds</a> (int64_t amount)
                         <br><span><para>Construct a time value from a number of microseconds. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator==</a> (Time rhs, Time lhs)
                         <br><span><para>Equality operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator!=</a> (Time rhs, Time lhs)
                         <br><span><para>Inequality operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator<</a> (Time rhs, Time lhs)
                         <br><span><para>Lesser than operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator></a> (Time rhs, Time lhs)
                         <br><span><para>Greater than operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator<=</a> (Time rhs, Time lhs)
                         <br><span><para>Lesser or equal operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator>=</a> (Time rhs, Time lhs)
                         <br><span><para>Greater or equal than operator. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator+</a> (Time rhs, Time lhs)
                         <br><span><para>Addition of two times. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator+=</a> (Time &rhs, Time lhs)
                         <br><span><para>Addition and assignement. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          constexpr
+                      
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator-</a> (Time rhs, Time lhs)
                         <br><span><para>Substraction of two times. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Time
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator-=</a> (Time &rhs, Time lhs)
                         <br><span><para>Substraction and assignment. </para></span></td>
                 </tr>

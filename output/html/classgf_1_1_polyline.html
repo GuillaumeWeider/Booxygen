@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Polyline &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -549,7 +549,10 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                    </td>
                     <td><a href="#">Type</a> 
                         <br><span><para>The type of polyline. </para></span></td>
                 </tr>
@@ -568,91 +571,222 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Polyline</a> (Type type=Chain)
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Polyline</a> (ArrayRef< Vector2f > points, Type type=Chain)
                         <br><span><para>Constructor from an array. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Polyline</a> (Iterator first, Iterator last, Type type=Chain)
                         <br><span><para>Constructor from points. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">addPoint</a> (Vector2f point)
                         <br><span><para>Add a point to the polyline. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          std::size_t
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPointCount</a> () const
                         <br><span><para>Get the number of points of the polyline. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPoint</a> (std::size_t index) const
                         <br><span><para>Get the i-th point of the polyline. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          Vector2f*
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">begin</a> () const
                         <br><span><para>Get an iterator to the first point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          Vector2f*
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">end</a> () const
                         <br><span><para>Get an iterator past the last point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">hasPrevPoint</a> (std::size_t i) const
                         <br><span><para>Check if there is a point before the i-th point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPrevPoint</a> (std::size_t i) const
                         <br><span><para>Get the point before the i-th point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">hasNextPoint</a> (std::size_t i) const
                         <br><span><para>Check if there is a point after the i-th point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getNextPoint</a> (std::size_t i) const
                         <br><span><para>Get the point after the i-th point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setType</a> (Type type)
                         <br><span><para>Set the type of the polyline. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isLoop</a> () const
                         <br><span><para>Check is the polyline is a loop. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">isChain</a> () const
                         <br><span><para>Check is the polyline is a chain. </para></span></td>
                 </tr>
