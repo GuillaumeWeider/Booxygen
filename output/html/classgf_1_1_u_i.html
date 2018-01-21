@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Weider Guillaume">
+
+    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/booxygen.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="main.html">Gamedev Framework (gf) 0.4.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="main.html">Main Page</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/GamedevFramework/gf">GitHub</a></li>
+                <li><a href="https://www.reddit.com/r/GamedevFramework/">Reddit</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- ******************************************************************************************************* -->
+        <div class="col-sm-3 col-md-2 sidebar topsidebar">
+            <p>Modules</p>
+            <ul class="list-group">
+                
+                <a href="#" class="list-group-item">Core classes and functions</a>
+                
+                <a href="#" class="list-group-item">Window classes</a>
+                
+                <a href="#" class="list-group-item">Graphics classes</a>
+                
+                <a href="#" class="list-group-item">Game classes</a>
+                
+            </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-2 sidebar bottomsidebar">
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Classes
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">TypeDef</a></li>
+                    <li><a href="#">Enum</a></li>
+                    <li><a href="#">etc...</a></li>
+                </ul>
+            </div>
+
+            <ul class="list-group">
+                
+                
+                <a href="classgf_1_1_array2_d.html" class="list-group-item">gf::Array2D</a>
+                
+                <a href="classgf_1_1_array_ref.html" class="list-group-item">gf::ArrayRef</a>
+                
+                <a href="classgf_1_1_buffer_ref.html" class="list-group-item">gf::BufferRef</a>
+                
+                <a href="structgf_1_1_circ.html" class="list-group-item">gf::Circ</a>
+                
+                <a href="classgf_1_1_clock.html" class="list-group-item">gf::Clock</a>
+                
+                <a href="classgf_1_1_ease.html" class="list-group-item">gf::Ease</a>
+                
+                <a href="classgf_1_1_flags.html" class="list-group-item">gf::Flags</a>
+                
+                <a href="classgf_1_1_bresenham.html" class="list-group-item">gf::Bresenham</a>
+                
+                <a href="classgf_1_1_heightmap.html" class="list-group-item">gf::Heightmap</a>
+                
+                <a href="classgf_1_1_input_stream.html" class="list-group-item">gf::InputStream</a>
+                
+                <a href="classgf_1_1_file_input_stream.html" class="list-group-item">gf::FileInputStream</a>
+                
+                <a href="classgf_1_1_memory_input_stream.html" class="list-group-item">gf::MemoryInputStream</a>
+                
+                <a href="structgf_1_1_library_1_1_version.html" class="list-group-item">gf::Library::Version</a>
+                
+                <a href="classgf_1_1_library.html" class="list-group-item">gf::Library</a>
+                
+                <a href="classgf_1_1_log.html" class="list-group-item">gf::Log</a>
+                
+                <a href="structgf_1_1_matrix.html" class="list-group-item">gf::Matrix</a>
+                
+                <a href="structgf_1_1_matrix_3_01_t_00_012_00_012_01_4.html" class="list-group-item">gf::Matrix< T, 2, 2 ></a>
+                
+                <a href="structgf_1_1_matrix_3_01_t_00_013_00_013_01_4.html" class="list-group-item">gf::Matrix< T, 3, 3 ></a>
+                
+                <a href="structgf_1_1_matrix_3_01_t_00_014_00_014_01_4.html" class="list-group-item">gf::Matrix< T, 4, 4 ></a>
+                
+                <a href="classgf_1_1_noise2_d.html" class="list-group-item">gf::Noise2D</a>
+                
+                <a href="classgf_1_1_noise3_d.html" class="list-group-item">gf::Noise3D</a>
+                
+                <a href="classgf_1_1_value_noise2_d.html" class="list-group-item">gf::ValueNoise2D</a>
+                
+                <a href="classgf_1_1_gradient_noise2_d.html" class="list-group-item">gf::GradientNoise2D</a>
+                
+                <a href="classgf_1_1_gradient_noise3_d.html" class="list-group-item">gf::GradientNoise3D</a>
+                
+                <a href="classgf_1_1_better_gradient_noise2_d.html" class="list-group-item">gf::BetterGradientNoise2D</a>
+                
+                <a href="classgf_1_1_fractal_noise2_d.html" class="list-group-item">gf::FractalNoise2D</a>
+                
+                <a href="classgf_1_1_fractal_noise3_d.html" class="list-group-item">gf::FractalNoise3D</a>
+                
+                <a href="classgf_1_1_perlin_noise2_d.html" class="list-group-item">gf::PerlinNoise2D</a>
+                
+                <a href="classgf_1_1_perlin_noise3_d.html" class="list-group-item">gf::PerlinNoise3D</a>
+                
+                <a href="classgf_1_1_simplex_noise2_d.html" class="list-group-item">gf::SimplexNoise2D</a>
+                
+                <a href="classgf_1_1_open_simplex_noise2_d.html" class="list-group-item">gf::OpenSimplexNoise2D</a>
+                
+                <a href="classgf_1_1_open_simplex_noise3_d.html" class="list-group-item">gf::OpenSimplexNoise3D</a>
+                
+                <a href="classgf_1_1_wavelet_noise3_d.html" class="list-group-item">gf::WaveletNoise3D</a>
+                
+                <a href="classgf_1_1_worley_noise2_d.html" class="list-group-item">gf::WorleyNoise2D</a>
+                
+                <a href="classgf_1_1_multifractal2_d.html" class="list-group-item">gf::Multifractal2D</a>
+                
+                <a href="classgf_1_1_hetero_terrain2_d.html" class="list-group-item">gf::HeteroTerrain2D</a>
+                
+                <a href="classgf_1_1_hybrid_multifractal2_d.html" class="list-group-item">gf::HybridMultifractal2D</a>
+                
+                <a href="classgf_1_1_ridged_multifractal2_d.html" class="list-group-item">gf::RidgedMultifractal2D</a>
+                
+                <a href="classgf_1_1_noise3_d_to2_d_adapter.html" class="list-group-item">gf::Noise3DTo2DAdapter</a>
+                
+                <a href="structgf_1_1_paths.html" class="list-group-item">gf::Paths</a>
+                
+                <a href="classgf_1_1_polygon.html" class="list-group-item">gf::Polygon</a>
+                
+                <a href="classgf_1_1_polyline.html" class="list-group-item">gf::Polyline</a>
+                
+                <a href="classgf_1_1_queue.html" class="list-group-item">gf::Queue</a>
+                
+                <a href="classgf_1_1_random.html" class="list-group-item">gf::Random</a>
+                
+                <a href="structgf_1_1_range_1_1_iterator.html" class="list-group-item">gf::Range::Iterator</a>
+                
+                <a href="structgf_1_1_range.html" class="list-group-item">gf::Range</a>
+                
+                <a href="structgf_1_1_position_range_1_1_iterator.html" class="list-group-item">gf::PositionRange::Iterator</a>
+                
+                <a href="structgf_1_1_position_range.html" class="list-group-item">gf::PositionRange</a>
+                
+                <a href="structgf_1_1_rect.html" class="list-group-item">gf::Rect</a>
+                
+                <a href="classgf_1_1_singleton.html" class="list-group-item">gf::Singleton</a>
+                
+                <a href="classgf_1_1_singleton_storage.html" class="list-group-item">gf::SingletonStorage</a>
+                
+                <a href="classgf_1_1_string_ref.html" class="list-group-item">gf::StringRef</a>
+                
+                <a href="classgf_1_1_system_info.html" class="list-group-item">gf::SystemInfo</a>
+                
+                <a href="classgf_1_1_time.html" class="list-group-item">gf::Time</a>
+                
+                <a href="structgf_1_1_none_type.html" class="list-group-item">gf::NoneType</a>
+                
+                <a href="structgf_1_1_all_type.html" class="list-group-item">gf::AllType</a>
+                
+                <a href="structgf_1_1_vector.html" class="list-group-item">gf::Vector</a>
+                
+                <a href="structgf_1_1_vector_3_01_t_00_012_01_4.html" class="list-group-item">gf::Vector< T, 2 ></a>
+                
+                <a href="structgf_1_1_vector_3_01_t_00_013_01_4.html" class="list-group-item">gf::Vector< T, 3 ></a>
+                
+                <a href="structgf_1_1_vector_3_01_t_00_014_01_4.html" class="list-group-item">gf::Vector< T, 4 ></a>
+                
+                
+                <a href="classgf_1_1_action.html" class="list-group-item">gf::Action</a>
+                
+                <a href="classgf_1_1_action_container.html" class="list-group-item">gf::ActionContainer</a>
+                
+                <a href="classgf_1_1_clipboard.html" class="list-group-item">gf::Clipboard</a>
+                
+                <a href="classgf_1_1_control.html" class="list-group-item">gf::Control</a>
+                
+                <a href="classgf_1_1_keycode_key_control.html" class="list-group-item">gf::KeycodeKeyControl</a>
+                
+                <a href="classgf_1_1_scancode_key_control.html" class="list-group-item">gf::ScancodeKeyControl</a>
+                
+                <a href="classgf_1_1_mouse_button_control.html" class="list-group-item">gf::MouseButtonControl</a>
+                
+                <a href="classgf_1_1_gamepad_button_control.html" class="list-group-item">gf::GamepadButtonControl</a>
+                
+                <a href="classgf_1_1_gamepad_axis_control.html" class="list-group-item">gf::GamepadAxisControl</a>
+                
+                <a href="classgf_1_1_close_control.html" class="list-group-item">gf::CloseControl</a>
+                
+                <a href="classgf_1_1_cursor.html" class="list-group-item">gf::Cursor</a>
+                
+                <a href="structgf_1_1_event_1_1_key_event.html" class="list-group-item">gf::Event::KeyEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_text_event.html" class="list-group-item">gf::Event::TextEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_mouse_button_event.html" class="list-group-item">gf::Event::MouseButtonEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_mouse_cursor_event.html" class="list-group-item">gf::Event::MouseCursorEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_mouse_wheel_event.html" class="list-group-item">gf::Event::MouseWheelEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_gamepad_button_event.html" class="list-group-item">gf::Event::GamepadButtonEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_gamepad_axis_event.html" class="list-group-item">gf::Event::GamepadAxisEvent</a>
+                
+                <a href="structgf_1_1_event_1_1_gamepad_connection.html" class="list-group-item">gf::Event::GamepadConnection</a>
+                
+                <a href="structgf_1_1_event_1_1_gamepad_disconnection.html" class="list-group-item">gf::Event::GamepadDisconnection</a>
+                
+                <a href="structgf_1_1_event.html" class="list-group-item">gf::Event</a>
+                
+                <a href="classgf_1_1_gamepad.html" class="list-group-item">gf::Gamepad</a>
+                
+                <a href="structgf_1_1_keyboard.html" class="list-group-item">gf::Keyboard</a>
+                
+                <a href="structgf_1_1_video_mode.html" class="list-group-item">gf::VideoMode</a>
+                
+                <a href="classgf_1_1_monitor.html" class="list-group-item">gf::Monitor</a>
+                
+                <a href="structgf_1_1_region.html" class="list-group-item">gf::Region</a>
+                
+                <a href="structgf_1_1_rune.html" class="list-group-item">gf::Rune</a>
+                
+                <a href="classgf_1_1_window.html" class="list-group-item">gf::Window</a>
+                
+                
+                <a href="classgf_1_1_animated_sprite.html" class="list-group-item">gf::AnimatedSprite</a>
+                
+                <a href="structgf_1_1_animation_1_1_frame.html" class="list-group-item">gf::Animation::Frame</a>
+                
+                <a href="classgf_1_1_animation.html" class="list-group-item">gf::Animation</a>
+                
+                <a href="structgf_1_1_blend_mode.html" class="list-group-item">gf::BlendMode</a>
+                
+                <a href="classgf_1_1_buffered_geometry.html" class="list-group-item">gf::BufferedGeometry</a>
+                
+                <a href="structgf_1_1_color.html" class="list-group-item">gf::Color</a>
+                
+                <a href="structgf_1_1_color_ramp.html" class="list-group-item">gf::ColorRamp</a>
+                
+                <a href="classgf_1_1_coordinates.html" class="list-group-item">gf::Coordinates</a>
+                
+                <a href="classgf_1_1_curve.html" class="list-group-item">gf::Curve</a>
+                
+                <a href="classgf_1_1_drawable.html" class="list-group-item">gf::Drawable</a>
+                
+                <a href="classgf_1_1_effect.html" class="list-group-item">gf::Effect</a>
+                
+                <a href="classgf_1_1_default_effect.html" class="list-group-item">gf::DefaultEffect</a>
+                
+                <a href="classgf_1_1_anti_aliasing_effect.html" class="list-group-item">gf::AntiAliasingEffect</a>
+                
+                <a href="classgf_1_1_color_matrix_effect.html" class="list-group-item">gf::ColorMatrixEffect</a>
+                
+                <a href="classgf_1_1_color_effect.html" class="list-group-item">gf::ColorEffect</a>
+                
+                <a href="classgf_1_1_color_blind_effect.html" class="list-group-item">gf::ColorBlindEffect</a>
+                
+                <a href="classgf_1_1_edge_effect.html" class="list-group-item">gf::EdgeEffect</a>
+                
+                <a href="structgf_1_1_glyph.html" class="list-group-item">gf::Glyph</a>
+                
+                <a href="structgf_1_1_font_1_1_packing.html" class="list-group-item">gf::Font::Packing</a>
+                
+                <a href="structgf_1_1_font_1_1_glyph_cache.html" class="list-group-item">gf::Font::GlyphCache</a>
+                
+                <a href="classgf_1_1_font.html" class="list-group-item">gf::Font</a>
+                
+                <a href="structgf_1_1_graphics_info_1_1_format.html" class="list-group-item">gf::GraphicsInfo::Format</a>
+                
+                <a href="classgf_1_1_graphics_info.html" class="list-group-item">gf::GraphicsInfo</a>
+                
+                <a href="classgf_1_1_square_grid.html" class="list-group-item">gf::SquareGrid</a>
+                
+                <a href="classgf_1_1_image.html" class="list-group-item">gf::Image</a>
+                
+                <a href="classgf_1_1_logo.html" class="list-group-item">gf::Logo</a>
+                
+                <a href="classgf_1_1_nine_patch.html" class="list-group-item">gf::NinePatch</a>
+                
+                <a href="classgf_1_1_point_particles.html" class="list-group-item">gf::PointParticles</a>
+                
+                <a href="classgf_1_1_shape_particles.html" class="list-group-item">gf::ShapeParticles</a>
+                
+                <a href="classgf_1_1_sprite_particles.html" class="list-group-item">gf::SpriteParticles</a>
+                
+                <a href="classgf_1_1_post_processing.html" class="list-group-item">gf::PostProcessing</a>
+                
+                <a href="structgf_1_1_render_pipeline_1_1_texture_buffer.html" class="list-group-item">gf::RenderPipeline::TextureBuffer</a>
+                
+                <a href="classgf_1_1_render_pipeline.html" class="list-group-item">gf::RenderPipeline</a>
+                
+                <a href="structgf_1_1_render_states.html" class="list-group-item">gf::RenderStates</a>
+                
+                <a href="structgf_1_1_render_target_1_1_locations.html" class="list-group-item">gf::RenderTarget::Locations</a>
+                
+                <a href="classgf_1_1_render_target.html" class="list-group-item">gf::RenderTarget</a>
+                
+                <a href="classgf_1_1_render_texture.html" class="list-group-item">gf::RenderTexture</a>
+                
+                <a href="classgf_1_1_render_window.html" class="list-group-item">gf::RenderWindow</a>
+                
+                <a href="classgf_1_1_shader.html" class="list-group-item">gf::Shader</a>
+                
+                <a href="classgf_1_1_shape.html" class="list-group-item">gf::Shape</a>
+                
+                <a href="classgf_1_1_rectangle_shape.html" class="list-group-item">gf::RectangleShape</a>
+                
+                <a href="classgf_1_1_circle_shape.html" class="list-group-item">gf::CircleShape</a>
+                
+                <a href="classgf_1_1_convex_shape.html" class="list-group-item">gf::ConvexShape</a>
+                
+                <a href="classgf_1_1_star_shape.html" class="list-group-item">gf::StarShape</a>
+                
+                <a href="classgf_1_1_rounded_rectangle_shape.html" class="list-group-item">gf::RoundedRectangleShape</a>
+                
+                <a href="classgf_1_1_sprite.html" class="list-group-item">gf::Sprite</a>
+                
+                <a href="classgf_1_1_sprite_batch.html" class="list-group-item">gf::SpriteBatch</a>
+                
+                <a href="structgf_1_1_text_1_1_line.html" class="list-group-item">gf::Text::Line</a>
+                
+                <a href="structgf_1_1_text_1_1_paragraph.html" class="list-group-item">gf::Text::Paragraph</a>
+                
+                <a href="classgf_1_1_text.html" class="list-group-item">gf::Text</a>
+                
+                <a href="classgf_1_1_bare_texture.html" class="list-group-item">gf::BareTexture</a>
+                
+                <a href="classgf_1_1_texture.html" class="list-group-item">gf::Texture</a>
+                
+                <a href="classgf_1_1_alpha_texture.html" class="list-group-item">gf::AlphaTexture</a>
+                
+                <a href="classgf_1_1_tile_layer.html" class="list-group-item">gf::TileLayer</a>
+                
+                <a href="classgf_1_1_transformable.html" class="list-group-item">gf::Transformable</a>
+                
+                <a href="structgf_1_1_u_i_edit_type.html" class="list-group-item">gf::UIEditType</a>
+                
+                <a href="structgf_1_1_u_i_browser.html" class="list-group-item">gf::UIBrowser</a>
+                
+                <a href="classgf_1_1_u_i.html" class="list-group-item">gf::UI</a>
+                
+                <a href="structgf_1_1_vertex.html" class="list-group-item">gf::Vertex</a>
+                
+                <a href="classgf_1_1_vertex_array.html" class="list-group-item">gf::VertexArray</a>
+                
+                <a href="classgf_1_1_vertex_buffer.html" class="list-group-item">gf::VertexBuffer</a>
+                
+                <a href="classgf_1_1_view.html" class="list-group-item">gf::View</a>
+                
+                <a href="classgf_1_1_adaptative_view.html" class="list-group-item">gf::AdaptativeView</a>
+                
+                <a href="classgf_1_1_zooming_view_adaptor.html" class="list-group-item">gf::ZoomingViewAdaptor</a>
+                
+                <a href="classgf_1_1_view_container.html" class="list-group-item">gf::ViewContainer</a>
+                
+                <a href="classgf_1_1_stretch_view.html" class="list-group-item">gf::StretchView</a>
+                
+                <a href="classgf_1_1_fit_view.html" class="list-group-item">gf::FitView</a>
+                
+                <a href="classgf_1_1_fill_view.html" class="list-group-item">gf::FillView</a>
+                
+                <a href="classgf_1_1_extend_view.html" class="list-group-item">gf::ExtendView</a>
+                
+                <a href="classgf_1_1_locked_view.html" class="list-group-item">gf::LockedView</a>
+                
+                <a href="classgf_1_1_screen_view.html" class="list-group-item">gf::ScreenView</a>
+                
+                
+                <a href="classgf_1_1_value_activity.html" class="list-group-item">gf::ValueActivity</a>
+                
+                <a href="classgf_1_1_rotate_to_activity.html" class="list-group-item">gf::RotateToActivity</a>
+                
+                <a href="classgf_1_1_move_to_activity.html" class="list-group-item">gf::MoveToActivity</a>
+                
+                <a href="classgf_1_1_color_activity.html" class="list-group-item">gf::ColorActivity</a>
+                
+                <a href="classgf_1_1_callback_activity.html" class="list-group-item">gf::CallbackActivity</a>
+                
+                <a href="classgf_1_1_delay_activity.html" class="list-group-item">gf::DelayActivity</a>
+                
+                <a href="classgf_1_1_sequence_activity.html" class="list-group-item">gf::SequenceActivity</a>
+                
+                <a href="classgf_1_1_repeat_activity.html" class="list-group-item">gf::RepeatActivity</a>
+                
+                <a href="classgf_1_1_parallel_activity.html" class="list-group-item">gf::ParallelActivity</a>
+                
+                <a href="classgf_1_1_activity.html" class="list-group-item">gf::Activity</a>
+                
+                <a href="classgf_1_1_asset_manager.html" class="list-group-item">gf::AssetManager</a>
+                
+                <a href="structgf_1_1_penetration.html" class="list-group-item">gf::Penetration</a>
+                
+                <a href="structgf_1_1_console_1_1_cell.html" class="list-group-item">gf::Console::Cell</a>
+                
+                <a href="structgf_1_1_console_1_1_color_control.html" class="list-group-item">gf::Console::ColorControl</a>
+                
+                <a href="classgf_1_1_console.html" class="list-group-item">gf::Console</a>
+                
+                <a href="structgf_1_1_console_char.html" class="list-group-item">gf::ConsoleChar</a>
+                
+                <a href="structgf_1_1_console_font_format.html" class="list-group-item">gf::ConsoleFontFormat</a>
+                
+                <a href="structgf_1_1_console_font_element.html" class="list-group-item">gf::ConsoleFontElement</a>
+                
+                <a href="structgf_1_1_predefined_console_font_format.html" class="list-group-item">gf::PredefinedConsoleFontFormat</a>
+                
+                <a href="classgf_1_1_console_font.html" class="list-group-item">gf::ConsoleFont</a>
+                
+                <a href="classgf_1_1_bitmap_console_font.html" class="list-group-item">gf::BitmapConsoleFont</a>
+                
+                <a href="classgf_1_1_colored_console_font.html" class="list-group-item">gf::ColoredConsoleFont</a>
+                
+                <a href="classgf_1_1_entity.html" class="list-group-item">gf::Entity</a>
+                
+                <a href="classgf_1_1_entity_container.html" class="list-group-item">gf::EntityContainer</a>
+                
+                <a href="classgf_1_1_square_map.html" class="list-group-item">gf::SquareMap</a>
+                
+                <a href="structgf_1_1_message.html" class="list-group-item">gf::Message</a>
+                
+                <a href="structgf_1_1_message_manager_1_1_handler.html" class="list-group-item">gf::MessageManager::Handler</a>
+                
+                <a href="classgf_1_1_message_manager.html" class="list-group-item">gf::MessageManager</a>
+                
+                <a href="classgf_1_1_model.html" class="list-group-item">gf::Model</a>
+                
+                <a href="classgf_1_1_model_container.html" class="list-group-item">gf::ModelContainer</a>
+                
+                <a href="classgf_1_1_fixed_timestep_model.html" class="list-group-item">gf::FixedTimestepModel</a>
+                
+                <a href="classgf_1_1_physics_body.html" class="list-group-item">gf::PhysicsBody</a>
+                
+                <a href="classgf_1_1_physics_geometry.html" class="list-group-item">gf::PhysicsGeometry</a>
+                
+                <a href="classgf_1_1_physics_model.html" class="list-group-item">gf::PhysicsModel</a>
+                
+                <a href="classgf_1_1_resource_cache.html" class="list-group-item">gf::ResourceCache</a>
+                
+                <a href="classgf_1_1_resource_manager.html" class="list-group-item">gf::ResourceManager</a>
+                
+                <a href="classgf_1_1_space_tree.html" class="list-group-item">gf::SpaceTree</a>
+                
+                <a href="classgf_1_1_texture_atlas.html" class="list-group-item">gf::TextureAtlas</a>
+                
+                <a href="classgf_1_1_tmx_properties.html" class="list-group-item">gf::TmxProperties</a>
+                
+                <a href="classgf_1_1_tmx_visitor.html" class="list-group-item">gf::TmxVisitor</a>
+                
+                <a href="structgf_1_1_tmx_layer.html" class="list-group-item">gf::TmxLayer</a>
+                
+                <a href="structgf_1_1_tmx_cell.html" class="list-group-item">gf::TmxCell</a>
+                
+                <a href="structgf_1_1_tmx_tile_layer.html" class="list-group-item">gf::TmxTileLayer</a>
+                
+                <a href="structgf_1_1_tmx_object.html" class="list-group-item">gf::TmxObject</a>
+                
+                <a href="structgf_1_1_tmx_rectangle.html" class="list-group-item">gf::TmxRectangle</a>
+                
+                <a href="structgf_1_1_tmx_ellipse.html" class="list-group-item">gf::TmxEllipse</a>
+                
+                <a href="structgf_1_1_tmx_tile_object.html" class="list-group-item">gf::TmxTileObject</a>
+                
+                <a href="structgf_1_1_tmx_polyline.html" class="list-group-item">gf::TmxPolyline</a>
+                
+                <a href="structgf_1_1_tmx_polygon.html" class="list-group-item">gf::TmxPolygon</a>
+                
+                <a href="structgf_1_1_tmx_text.html" class="list-group-item">gf::TmxText</a>
+                
+                <a href="structgf_1_1_tmx_object_layer.html" class="list-group-item">gf::TmxObjectLayer</a>
+                
+                <a href="structgf_1_1_tmx_image.html" class="list-group-item">gf::TmxImage</a>
+                
+                <a href="structgf_1_1_tmx_image_layer.html" class="list-group-item">gf::TmxImageLayer</a>
+                
+                <a href="structgf_1_1_tmx_group_layer.html" class="list-group-item">gf::TmxGroupLayer</a>
+                
+                <a href="structgf_1_1_tmx_frame.html" class="list-group-item">gf::TmxFrame</a>
+                
+                <a href="structgf_1_1_tmx_animation.html" class="list-group-item">gf::TmxAnimation</a>
+                
+                <a href="structgf_1_1_tmx_terrain.html" class="list-group-item">gf::TmxTerrain</a>
+                
+                <a href="structgf_1_1_tmx_tile.html" class="list-group-item">gf::TmxTile</a>
+                
+                <a href="structgf_1_1_tmx_tileset.html" class="list-group-item">gf::TmxTileset</a>
+                
+                <a href="structgf_1_1_tmx_layers.html" class="list-group-item">gf::TmxLayers</a>
+                
+                <a href="classgf_1_1_tween.html" class="list-group-item">gf::Tween</a>
+                
+            </ul>
+        </div>
+        <!-- ******************************************************************************************************* -->
+
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h2 class="page-header">gf::UI Class Reference</h2>
+            <ol class="breadcrumb">
+                <li><a href="#">***</a></li>
+                <li class="active">gf::UI</li>
+            </ol>
+
+            
+            <h3>Description</h3>
+            <p><para>Context for an immediate mode graphical interface. </para></p>
+            <p><para>When building a graphical interfaces, you have basically two choices: either the retained mode where you build a hierarchy of widgets, or the immediate mode where widgets are built from function calls. Choosing the best mode between these two may be <ulink url="http://gamedev.stackexchange.com/questions/24103/immediate-gui-yae-or-nay">controversial</ulink>. gf offers an immediate mode graphical interface through this class.</para><para>The immediate mode graphical interface (or imgui) of gf is based on <ulink url="https://github.com/vurtun/nuklear">Nuklear</ulink>, a C library with the same purpose. gf does not provide (yet?) all the features of Nuklear, but a fair amount of the main features. Nuklear is totally abstracted in gf so you won't see any interface from Nuklear and you won't be able to interact directly with Nuklear. If you need a feature that is not implemented yet, just ask.</para><para>This imgui library can be used to create tools for the game developpers. It's easy and quick to build a functional interface with an imgui library. You can see some examples in gf itself. You can also use this library to build in-game interfaces, even if it's not its primary purpose. If your game is heavily based on a graphical interface, it may be a good option.</para><para><heading level="1">Creating a context</heading>
+</para><para>An instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> is a context for all the windows that will be created. You must provide a font and a character size that will be used in the interface. Generally, you create the instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> at the beginning of your application and then you use this instance throughout your application.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">"font.ttf"</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref><sp/>ui(font,<sp/>13);</highlight></codeline>
+</programlisting> By default, the character size is 13.</para><para><heading level="1">Managing events</heading>
+</para><para>The imgui needs to know the input events that occurred in the frame time. So when polling the events in your main loop, you must pass the events to the context so that it can be updated and take the good decision. For example, if you press on a button, the mouse event will be transmitted and the library will know that you pressed a button and act accordingly.</para><para>
+  <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgf_1_1_event" kindref="compound">gf::Event</ref><sp/>event;</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(window.<ref refid="classgf_1_1_window_1a88c202262d1e22f23f164247381deaa6" kindref="member">pollEvent</ref>(event))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.<ref refid="structgf_1_1_event_1a764707270173af5b617ed6589a58dfe1" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__window_1gga244fb10415539f03cde7ed0ae916018da03f4a47830f97377a35321051685071e" kindref="member">gf::EventType::Closed</ref>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.<ref refid="classgf_1_1_window_1a653d8e56d4c27da4aced0dc702edb8a8" kindref="member">close</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.processEvent(event);<sp/></highlight><highlight class="comment">//<sp/>update<sp/>the<sp/>imgui<sp/>with<sp/>input<sp/>events</highlight><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting>
+</para><para><heading level="1">Creating a window</heading>
+</para><para>Then, you have to create a window. The window has a title that may appear in the titlebar. It also identifies the window so two windows must have two different titles. The window also has bounds, i.e. a position and a size, that indicates where to put the window in the screen. There is no automatic placement of windows. Finally, the window can have many properties (see <ref refid="group__graphics_1ga1f6e0cfb0a30fef018c7dfa724ae6e20" kindref="member">gf::UIWindow</ref>) that modify the interaction with the window. They are defined at the window creation.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.begin(</highlight><highlight class="stringliteral">"Title"</highlight><highlight class="normal">,<sp/><ref refid="structgf_1_1_rect" kindref="compound">gf::RectF</ref>(20,<sp/>20,<sp/>200,<sp/>200),<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>window</highlight><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.end();</highlight></codeline>
+</programlisting> For each <ref refid="classgf_1_1_u_i_1a50503bc596243ddc42a78aa84d6b7c5c" kindref="member">begin()</ref>, you have to call <ref refid="classgf_1_1_u_i_1a2d54a12952406594826e93ff00c67d56" kindref="member">end()</ref> to finish the window. You can create as many windows as you want as long as they have different titles.</para><para><heading level="1">Determining a layout</heading>
+</para><para>Before drawing any widget, you have to define a layout. Think of it as a sort of specification for how to organize the following widgets. There are three types of layouts: rows, groups, trees.</para><para><heading level="2">Rows</heading>
+</para><para>Rows are the most common type of layout. The row layout is very flexible.</para><para>A row can be either static (it does not adapt to the width of the window) of dynamic (it adapts to the width of the window). It can be fixed (all columns have the same width) or custom (columns' widths are specified, either relatively or absolutely), and in the latter case the specification can be global or in immediate mode. Here is a summary of the functions to use in each case:</para><para><itemizedlist>
+<listitem><para>dynamic row<itemizedlist>
+<listitem><para>fixed column layout: <ref refid="classgf_1_1_u_i_1a507a56deaaa6eecf102e92243cd2a3bb" kindref="member">layoutRowDynamic()</ref></para></listitem><listitem><para>custom column layout<itemizedlist>
+<listitem><para>array-based: <ref refid="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" kindref="member">layoutRow()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a971fd8cc345d8bd9f92e9f7d88fdf20c" kindref="member">gf::UILayout::Dynamic</ref></para></listitem><listitem><para>immediate-mode: <ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a971fd8cc345d8bd9f92e9f7d88fdf20c" kindref="member">gf::UILayout::Dynamic</ref>, <ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>static row<itemizedlist>
+<listitem><para>fixed column layout: <ref refid="classgf_1_1_u_i_1ab6f2e0bc248a3bc5ba1b352764e8b821" kindref="member">layoutRowStatic()</ref></para></listitem><listitem><para>custom column layout<itemizedlist>
+<listitem><para>array-based: <ref refid="classgf_1_1_u_i_1ac0e52e0df2a1e02c37788a584f9a7741" kindref="member">layoutRow()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a84a8921b25f505d0d2077aeb5db4bc16" kindref="member">gf::UILayout::Static</ref></para></listitem><listitem><para>immediate-mode: <ref refid="classgf_1_1_u_i_1a07b2a56e4c4468e779c1c528dd0a887b" kindref="member">layoutRowBegin()</ref> with <ref refid="group__graphics_1gga6a42c4039729410b3839e01afe754719a84a8921b25f505d0d2077aeb5db4bc16" kindref="member">gf::UILayout::Static</ref>, <ref refid="classgf_1_1_u_i_1a1eb611a4762282923f629380b5280550" kindref="member">layoutRowPush()</ref>, <ref refid="classgf_1_1_u_i_1a3ce2eb3900039c1f2bf69ad4afc2e0bf" kindref="member">layoutRowEnd()</ref></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><heading level="2">Trees</heading>
+</para><para>A tree is a tree-like layout. It can be collapsed to hide its content except its title. There are two types of trees: tabs and nodes (see <ref refid="group__graphics_1ga08e52c09767f611e8578fb66a0c4644e" kindref="member">gf::UITree</ref>). A tab tree is generally put at the root of the tree, it is represented with a border around the title. A node tree is generally the son of a tab tree or another node tree. It is represented without any border.</para><para>In both cases, you need a variable of type <ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref> to handle the current state of the tree: minimized or maximized.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>rootCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a074afcc50ae51f248cbae4950845549e" kindref="member">gf::UICollapse::Minimized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__window_1gga795d7d5e2f2a4f38b16b95e0e78cb626a5c6ba25104401c9ee0650230fc6ba413" kindref="member">gf::UITree::Tab</ref>,<sp/></highlight><highlight class="stringliteral">"Root"</highlight><highlight class="normal">,<sp/>rootCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__graphics_1gab12328ea0a85c97bf28742e12aa76cb4" kindref="member">gf::UICollapse</ref><sp/>childCollapsed<sp/>=<sp/><ref refid="group__graphics_1ggab12328ea0a85c97bf28742e12aa76cb4a49d903a5c02560cf79bf6b516cc89457" kindref="member">gf::UICollapse::Maximized</ref>;</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.treePush(<ref refid="group__graphics_1gga08e52c09767f611e8578fb66a0c4644ea6c3a6944a808a7c0bbb6788dbec54a9f" kindref="member">gf::UITree::Node</ref>,<sp/></highlight><highlight class="stringliteral">"Child"</highlight><highlight class="normal">,<sp/>childCollapsed))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>child<sp/>node</highlight><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>next<sp/>content<sp/>of<sp/>the<sp/>root<sp/>node</highlight><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.treePop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <heading level="2">Groups</heading>
+</para><para>A group is a kind of window inside a window. It can have a title, a border and a scrollbar. However, a group needs to be put in a row. See <ref refid="classgf_1_1_u_i_1a0f417ea6c6d0e5ed793170550eb3ffd4" kindref="member">groupBegin()</ref> and <ref refid="classgf_1_1_u_i_1acd1e50425ba731b2eb66e0cab6ef357c" kindref="member">groupEnd()</ref>.</para><para>
+  <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ui.layoutRowStatic(groupHeight,<sp/>groupWidth,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ui.groupBegin(</highlight><highlight class="stringliteral">"Group"</highlight><highlight class="normal">,<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20ab78a3223503896721cca1303f776159b" kindref="member">gf::UIWindow::Title</ref><sp/>|<sp/><ref refid="group__graphics_1gga1f6e0cfb0a30fef018c7dfa724ae6e20a070554647306343cbea29ebfdd278ba8" kindref="member">gf::UIWindow::Border</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>content<sp/>of<sp/>the<sp/>group</highlight><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"/></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ui.groupEnd();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting>
+</para><para><heading level="1">Adding widgets and more</heading>
+</para><para>The library offers common kinds of widgets:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Label_%28control%29">labels</ulink>: <ref refid="classgf_1_1_u_i_1a0da41c78e21b98737fbd1be3ad4333af" kindref="member">label()</ref>, <ref refid="classgf_1_1_u_i_1a3eef3c61be59ac55399bdb718d5837ab" kindref="member">selectableLabel()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Button_%28computing%29">buttons</ulink>: <ref refid="classgf_1_1_u_i_1a6aa8feb99000165ce542b716b1f6067e" kindref="member">buttonLabel()</ref>, <ref refid="classgf_1_1_u_i_1a03589bf4661a1c0f7eed923bda71d737" kindref="member">buttonColor()</ref>, <ref refid="classgf_1_1_u_i_1a722b82d2444a0c422e8a43f096fe8795" kindref="member">buttonSymbol()</ref>, <ref refid="classgf_1_1_u_i_1a9e4cc3f7b9eb737275224296512a06fd" kindref="member">buttonSymbolLabel()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Checkbox">checkboxes</ulink>: <ref refid="classgf_1_1_u_i_1af1aa9f995cda346ca0599ff22598fa4b" kindref="member">checkbox()</ref>, <ref refid="classgf_1_1_u_i_1ada5876a7009b62961398d7fe7e101748" kindref="member">checkboxFlags()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Radio_button">radio buttons</ulink>: <ref refid="classgf_1_1_u_i_1a28fcbaa8eb6e6dada63da19f24fb60ec" kindref="member">option()</ref>, <ref refid="classgf_1_1_u_i_1aaf0fd0bef4258ac3e3d8caa00bff7c75" kindref="member">radio()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Slider_%28computing%29">sliders</ulink>: <ref refid="classgf_1_1_u_i_1a4bac30f1ff0b02140f3c005401945e2d" kindref="member">sliderFloat()</ref>, <ref refid="classgf_1_1_u_i_1a55eb6ac28e684fc06045bcbc7aac36af" kindref="member">sliderInt()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Progress_bar">progress bars</ulink>: <ref refid="classgf_1_1_u_i_1ab36c4a86436e40c78dbcb9aaf48f2f5f" kindref="member">progress()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Color_tool">color pickers</ulink>: <ref refid="classgf_1_1_u_i_1abceadbe761b49e1f5585c1aebd177b28" kindref="member">colorPicker()</ref></para></listitem></itemizedlist>
+</para><para>Widgets often manipulate a reference to a user-provided variable that represents the state of the widget. This way, you can pass directly your model variables to the graphical interface without duplicating the data. Some widgets return a boolean that indicates a state change. For example, a button returns true if it has been pressed.</para><para>The library also offers common graphical interface elements:<itemizedlist>
+<listitem><para><ulink url="https://en.wikipedia.org/wiki/Popover_%28GUI%29">popups</ulink>: <ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Combo_box">combo boxes</ulink>: <ref refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" kindref="member">combobox()</ref>, <ref refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" kindref="member">comboboxSeparator()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Context_menu">contextuals</ulink>: <ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Tooltip">tooltips</ulink>: <ref refid="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" kindref="member">tooltip()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Menu_28computing%29">menus</ulink>: <ref refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" kindref="member">menubarBegin()</ref>, <ref refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" kindref="member">menubarEnd()</ref></para></listitem></itemizedlist>
+</para><para>Many of these elements have a begin/end API. The end part must be called if the begin part succeeded, i.e. returned true. Some elements offer a simplified version without begin/end for common cases. </para></p>
+            
+
+            
+            
+
+            
+            <h4>Window</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">begin</a> (const std::string &title, const RectF &bounds, UIWindowFlags flags=None)
+                        <br><span><para>Create a window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">end</a> ()
+                        <br><span><para>Finish a window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">windowGetBounds</a> ()
+                        <br><span><para>Get the window bounds. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Layout</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRowDynamic</a> (float height, int cols)
+                        <br><span><para>Dynamic row with fixed column layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRowStatic</a> (float height, int itemWidth, int cols)
+                        <br><span><para>Static row with fixed column layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRowBegin</a> (UILayout format, float height, int cols)
+                        <br><span><para>Start an immediate mode custom column layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRowPush</a> (float width)
+                        <br><span><para>Specify the width of the next column. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRowEnd</a> ()
+                        <br><span><para>Finish an immediate mode custom column layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">layoutRow</a> (UILayout format, float height, ArrayRef< float > ratio)
+                        <br><span><para>Array-based custom column layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">separator</a> (float height)
+                        <br><span><para>An empty separator. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Layout: Group</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">groupBegin</a> (const std::string &title, UIWindowFlags flags=None)
+                        <br><span><para>Start a group. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">groupEnd</a> ()
+                        <br><span><para>Finish a group. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">groupScrolledBegin</a> (UIScroll &scroll, const std::string &title, UIWindowFlags flags=None)
+                        <br><span><para>Start a scrolled group. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">groupScrolledEnd</a> ()
+                        <br><span><para>Finish a scrolled group. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Layout: Tree</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">treePush</a> (UITree type, const std::string &title, UICollapse &state)
+                        <br><span><para>Start a tree layout. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">treePop</a> ()
+                        <br><span><para>Finish a tree layout. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Labels</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">label</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A simple label with text. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">labelColored</a> (const Color4f &color, StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A label with colored text. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">labelWrap</a> (StringRef title)
+                        <br><span><para>A simple label that can wrap. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">labelWrapColored</a> (const Color4f &color, StringRef title)
+                        <br><span><para>A label with colored text that can wrap. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">image</a> (const Texture &texture, const RectF &textureRect)
+                        <br><span><para>An image. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Buttons</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonSetBehavior</a> (UIButtonBehavior behavior)
+                        <br><span><para>Change the behavior of buttons. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonPushBehavior</a> (UIButtonBehavior behavior)
+                        <br><span><para>Push a new behavior of buttons. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonPopBehavior</a> ()
+                        <br><span><para>Pop the previous behavior of buttons. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonLabel</a> (StringRef title)
+                        <br><span><para>A button with a centered label. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonColor</a> (const Color4f &color)
+                        <br><span><para>A button with a color. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonSymbol</a> (UISymbol symbol)
+                        <br><span><para>A button with a symbol. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">buttonSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A button with a symbol and a centered label. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Checkbox</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">checkbox</a> (StringRef title, bool &active)
+                        <br><span><para>A checkbox with a title. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">checkboxFlags</a> (StringRef title, unsigned &flags, unsigned value)
+                        <br><span><para>A checkbox with a title for flags. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Radio</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">option</a> (StringRef title, bool active)
+                        <br><span><para>A radio button without state. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">radio</a> (StringRef title, bool &active)
+                        <br><span><para>A radio button with a reference state. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Selectable</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">selectableLabel</a> (StringRef title, UIAlignment align, bool &value)
+                        <br><span><para>A selectable label. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Slider</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">sliderFloat</a> (float min, float &val, float max, float step)
+                        <br><span><para>A slider for a float value. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">sliderInt</a> (int min, int &val, int max, int step)
+                        <br><span><para>A slider for an int value. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Progressbar</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">progress</a> (std::size_t &current, std::size_t max, UIProgress modifyable=UIProgress::Modifyable)
+                        <br><span><para>A progress bar. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Color picker</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">colorPicker</a> (Color4f &color)
+                        <br><span><para>A color picker. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: Property</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">propertyInt</a> (const std::string &name, int min, int &val, int max, int step, float incPerPixel)
+                        <br><span><para>A property for an integer. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">propertyFloat</a> (const std::string &name, float min, float &val, float max, float step, float incPerPixel)
+                        <br><span><para>A property for a float. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">propertyDouble</a> (const std::string &name, double min, double &val, double max, double step, float incPerPixel)
+                        <br><span><para>A property for a double. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Widgets: TextEdit</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">edit</a> (UIEditFlags flags, BufferRef< char > buffer, std::size_t &length, UIEditFilter filter=UIEditFilter::Default)
+                        <br><span></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Dialogs</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">fileSelector</a> (UIBrowser &browser, const std::string &title, const RectF &bounds)
+                        <br><span><para>File selector. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Popups</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">popupBegin</a> (UIPopup type, const std::string &title, UIWindowFlags flags, const RectF &bounds)
+                        <br><span><para>Start a popup window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">popupClose</a> ()
+                        <br><span><para>Close a popup window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">popupEnd</a> ()
+                        <br><span><para>Finish a popup window. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Combo box</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">combobox</a> (const std::vector< std::string > &items, int &selected, int itemHeight, Vector2f size)
+                        <br><span><para>A simple combo box with a list of item. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboboxSeparator</a> (const std::string &itemsSeparatedBySeparator, char separator, int &selected, int itemHeight, Vector2f size)
+                        <br><span><para>A simple combo box with a string and a separator. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboBeginLabel</a> (StringRef selected, Vector2f size)
+                        <br><span><para>Start a combo box with a label. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboBeginColor</a> (const Color4f &color, Vector2f size)
+                        <br><span><para>Start a combo box with a color. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboBeginSymbol</a> (UISymbol symbol, Vector2f size)
+                        <br><span><para>Start a combo box with a symbol. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboBeginSymbolLabel</a> (UISymbol symbol, StringRef selected, Vector2f size)
+                        <br><span><para>Start a combo box with a symbol and a label. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A label inside the combo box. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A symbol and a label inside the combo box. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboClose</a> ()
+                        <br><span><para>Close a combo box. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">comboEnd</a> ()
+                        <br><span><para>Finish a combo box. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Contextual</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">contextualBegin</a> (UIWindowFlags flags, Vector2f size, const RectF &triggerBounds)
+                        <br><span><para>Start a contextual window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">contextualItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A label inside the contextual window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">contextualItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A symbol and a label inside the contextual window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">contextualClose</a> ()
+                        <br><span><para>Close the contextual window. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">contextualEnd</a> ()
+                        <br><span><para>Finish the contextual window. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Tooltip</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">tooltip</a> (const std::string &text)
+                        <br><span><para>A simple tooltip with a text. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">tooltipBegin</a> (float width)
+                        <br><span><para>Start a tooltip. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">tooltipEnd</a> ()
+                        <br><span><para>Finish a tooltip. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Menu</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menubarBegin</a> ()
+                        <br><span><para>Start a menu bar. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menubarEnd</a> ()
+                        <br><span><para>Finish a menu bar. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuBeginLabel</a> (StringRef title, UIAlignment align, Vector2f size)
+                        <br><span><para>Start a menu with a label. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuBeginSymbol</a> (const std::string &id, UISymbol symbol, Vector2f size)
+                        <br><span><para>Start a menu with a symbol. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuBeginSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align, Vector2f size)
+                        <br><span><para>Start a menu with a symbol and a label. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A label inside the menu. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+                        <br><span><para>A symbol and a label inside the menu. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuClose</a> ()
+                        <br><span><para>Close a menu. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">menuEnd</a> ()
+                        <br><span><para>Finish a menu. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Utilities</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">getWidgetBounds</a> ()
+                        <br><span><para>Get the current widget bounds. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">isWidgetHovered</a> ()
+                        <br><span><para>Check if the widget is hovered by the mouse. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">spacing</a> (int cols)
+                        <br><span><para>Create a horizontal spacing to fill some columns. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+
+            
+            <h4>Style</h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">setPredefinedStyle</a> (UIPredefinedStyle style)
+                        <br><span><para>Set a predefined style for all the windows and the widgets. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+            
+            
+
+            
+            <h4></h4>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">DefaultCharacterSize</a> 
+                        <br><span><para>The default size for the font. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+            
+            
+
+            
+            <h3>Public Member Functions</h3>
+            
+
+            <table class="table">
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">UI</a> (Font &font, unsigned characterSize=DefaultCharacterSize)
+                        <br><span><para>Constructor. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">~UI</a> ()
+                        <br><span><para>Destructor. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">UI</a> (const UI &)=delete
+                        <br><span><para>Deleted copy constructor. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">operator=</a> (const UI &)=delete
+                        <br><span><para>Deleted copy assignment. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">UI</a> (UI &&other)
+                        <br><span><para>Move constructor. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">operator=</a> (UI &&other)
+                        <br><span><para>Move assignment. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">processEvent</a> (const Event &event)
+                        <br><span><para>Update the internal state with an event. </para></span></td>
+                </tr>
+                
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
+                        <br><span><para>Draw the object to a render target. </para></span></td>
+                </tr>
+                
+            </table>
+            
+            
+            
+            
+
+            <!--<h3>Constructor and Destructor documentation</h3>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+                        code)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Construct a key control.</p>
+                    <p><b>Parameters</b></p>
+                    <p><span><strong>code</strong></span> The keycode of the key</p>
+                </div>
+            </div>
+
+            <h3>Member Function</h3>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                            href="#"><b>Event</b></a> &event)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Update the state of the control thanks to an event.</p>
+                    <p><b>Parameters</b></p>
+                    <p><span><strong>event</strong></span> The event to update the control</p>
+                    <p><br><b>See also</b></p>
+                    <p><a href="#">Action::processEvent</a></p>
+                    <p>Implements <a href="#">gf::Control</a>.</p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p>Generated by Booxygen</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

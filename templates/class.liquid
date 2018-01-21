@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>Index &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -78,50 +78,74 @@
         </div>
         <!-- ******************************************************************************************************* -->
 
-        <!-- ******************************************************************************************************* -->
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h2 class="page-header">Class Index</h2>
-        </div>
+            <h2 class="page-header">{{ compound.name }} Class Reference</h2>
+            <ol class="breadcrumb">
+                <li><a href="#">***</a></li>
+                <li class="active">{{ compound.name }}</li>
+            </ol>
 
-        <div class="col-sm-offset-3 col-md-offset-2 main indexlist">
-            {% assign actual_index_letter = "" %}
-            {% assign is_first_letter = true %}
+            {% unless compound.sub_xml.compounddef[0].briefdescription.para.blank? or compound.sub_xml.compounddef[0].detaileddescription.para.blank? %}
+            <h3>Description</h3>
+            <p>{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}</p>
+            <p>{{ compound.sub_xml.compounddef[0].detaileddescription[0].para }}</p>
+            {% endunless %}
 
-            {% for compound in compounds %}
-            {% if compound.kind == 'class' %}
+            {% for section in compound.sub_xml.compounddef[0].sectiondef %}
+            {% unless section.kind contains 'private-' %}
 
-            {% assign current_class = compound.name[0] | split: "::" %}
-            {% assign current_letter = current_class | last | truncate: 1, "" | upcase %}
-
-            {% if actual_index_letter != current_letter %}
-            {% assign actual_index_letter = current_letter %}
-
-            {% if is_first_letter == false %}
-        </div>
-        <br>
-        {% endif %}
-
-        {% assign is_first_letter = false %}
-
-        <div class="index_group">
-            <h5 class="page-header"><strong>{{ actual_index_letter }}</strong></h5>
+            {% if section.kind == 'public-func' %}
+            <h3>Public Member Functions</h3>
+            {% else %}
+            <h4>{{ section.header }}</h4>
             {% endif %}
-            <a href="{{ compound.refid }}.html">{{ current_class | last }}</a>
 
-            {% assign current_class_first = current_class | first %}
-            {% assign current_class_last = current_class | last %}
-
-            {% if current_class_first != current_class_last %}
-            (<a href="#">{{ current_class | first }}</a>)
-            {% endif %}
-            <br>
-            {% endif %}
+            <table class="table">
+                {% for memberdef in section.memberdef %}
+                <tr>
+                    <td>?</td>
+                    <td><a href="#">{{ memberdef.name[0] }}</a> {{ memberdef.argsstring[0] }}
+                        <br><span>{{ memberdef.briefdescription[0].para }}</span></td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endunless %}
             {% endfor %}
+
+            <!--<h3>Constructor and Destructor documentation</h3>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+                        code)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Construct a key control.</p>
+                    <p><b>Parameters</b></p>
+                    <p><span><strong>code</strong></span> The keycode of the key</p>
+                </div>
+            </div>
+
+            <h3>Member Function</h3>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                            href="#"><b>Event</b></a> &event)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Update the state of the control thanks to an event.</p>
+                    <p><b>Parameters</b></p>
+                    <p><span><strong>event</strong></span> The event to update the control</p>
+                    <p><br><b>See also</b></p>
+                    <p><a href="#">Action::processEvent</a></p>
+                    <p>Implements <a href="#">gf::Control</a>.</p>
+                </div>
+            </div>-->
+
         </div>
     </div>
-    <!-- ******************************************************************************************************* -->
-</div>
 </div>
 
 <div id="footer">

@@ -42,7 +42,7 @@ module Booxygen
       # Récupération des éléments et attributs
       xsd_elements_list = xsd_complex_type.xpath('.//xsd:element')
       xsd_attributs_list = xsd_complex_type.xpath('.//xsd:attribute')
-      #xsd_group_list = xsd_complex_type.xpath('.//xsd:group')
+      xsd_simplecontent_list = xsd_complex_type.xpath('.//xsd:simpleContent')
 
       # S'il n'y a aucun élément et aucun attribut
       if xsd_elements_list.all? {|x| x.nil?} && xsd_attributs_list.all? {|x| x.nil?}
@@ -76,6 +76,11 @@ module Booxygen
           end
           result[xsd_element['name']] = element_array
         end
+
+        # Traitement du texte s'il s'agit d'un SimpleContent
+        unless xsd_simplecontent_list.empty?
+          result['content'] = xml.content.to_s
+        end
       end
 
       result
@@ -98,7 +103,7 @@ module Booxygen
       compounds = []
 
       @index_hash['compound'].each do |value|
-          compounds.push value
+        compounds.push value
       end
 
       loop do
@@ -110,6 +115,13 @@ module Booxygen
 
         template = Liquid::Template.parse(File.read('../templates/classes.liquid'))
         File.write('../output/html/classes.html', template.render('compounds' => compounds))
+
+        compounds.each do |compound|
+          if compound['kind'] == 'class'
+            template = Liquid::Template.parse(File.read('../templates/class.liquid'))
+            File.write("../output/html/#{compound['refid']}.html", template.render('compounds' => compounds, 'compound' => compound))
+          end
+        end
 
         print "\n", "Press any key to reload Liquid, or 'q' to quit."
         if STDIN.getch == "q"
@@ -133,7 +145,7 @@ end
 #
 
 if ARGV.length != 1
-  print "Usage: booxygen <directory>\n"
+  print "Usage: booxygen <xml-directory>\n"
   abort
 end
 
