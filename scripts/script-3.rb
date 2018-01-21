@@ -17,6 +17,7 @@ module Booxygen
   class Doxygen
     def initialize
       Liquid::Template.error_mode = :strict
+      Liquid::Template.file_system = Liquid::LocalFileSystem.new('../templates')
       @index_hash = {}
       @types = {}
     end

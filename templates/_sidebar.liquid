@@ -1,0 +1,32 @@
+<div class="col-sm-3 col-md-2 sidebar topsidebar">
+    <p>Modules</p>
+    <ul class="list-group">
+        {% for compound in compounds %}{% if compound.kind == 'group' %}
+        <a href="#" class="list-group-item">{{ compound.sub_xml.compounddef[0].title }}</a>
+        {% endif %}{% endfor %}
+    </ul>
+</div>
+
+<div class="col-sm-3 col-md-2 sidebar bottomsidebar">
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+            Classes
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">TypeDef</a></li>
+            <li><a href="#">Enum</a></li>
+            <li><a href="#">etc...</a></li>
+        </ul>
+    </div>
+
+    <ul class="list-group">
+        {% for compound in compounds %}{% if compound.kind == 'group' %}
+        {% for class in compound.sub_xml.compounddef[0].innerclass %}
+        <a href="{{ class.refid }}.html" class="list-group-item">{{ class.content }}</a>
+        {% endfor %}{% endif %}{% endfor %}
+    </ul>
+</div>
