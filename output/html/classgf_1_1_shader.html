@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Shader &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -572,37 +572,91 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromFile</a> (const Path &filename, Type type)
                         <br><span><para>Load the vertex of fragment shader from a file. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromFile</a> (const Path &vertexShaderFilename, const Path &fragmentShaderFilename)
                         <br><span><para>Load both the vertex and fragment shaders from files. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromMemory</a> (StringRef shader, Type type)
                         <br><span><para>Load the vertex or fragment shader from a source code in memory. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromMemory</a> (StringRef vertexShader, StringRef fragmentShader)
                         <br><span><para>Load both the vertex and fragment shaders from source codes in memory. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromStream</a> (InputStream &stream, Type type)
                         <br><span><para>Load the vertex or fragment shader from a custom stream. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromStream</a> (InputStream &vertexShaderStream, InputStream &fragmentShaderStream)
                         <br><span><para>Load both the vertex and fragment shaders from custom streams. </para></span></td>
                 </tr>
@@ -619,49 +673,121 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, float val)
                         <br><span><para>Specify value for a <computeroutput>float</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, int val)
                         <br><span><para>Specify value for a <computeroutput>int</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const Vector2f &vec)
                         <br><span><para>Specify value for a <computeroutput>vec2</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const Vector3f &vec)
                         <br><span><para>Specify value for a <computeroutput>vec3</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const Vector4f &vec)
                         <br><span><para>Specify value for a <computeroutput>vec4</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const Matrix3f &mat)
                         <br><span><para>Specify value for a <computeroutput>mat3</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const Matrix4f &mat)
                         <br><span><para>Specify value for a <computeroutput>mat4</computeroutput> uniform. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setUniform</a> (StringRef name, const BareTexture &tex)
                         <br><span><para>Specify a texture for a <computeroutput>sampler2D</computeroutput> uniform. </para></span></td>
                 </tr>
@@ -678,7 +804,10 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                    </td>
                     <td><a href="#">Type</a> 
                         <br><span><para>Type of shaders. </para></span></td>
                 </tr>
@@ -695,7 +824,20 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          friend
+                      
+                  
+                      
+                          class
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">RenderTarget</a> 
                         <br><span></span></td>
                 </tr>
@@ -714,25 +856,49 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Shader</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">~Shader</a> ()
                         <br><span><para>Destructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Shader</a> (const Shader &)=delete
                         <br><span><para>Deleted copy constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Shader&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator=</a> (const Shader &)=delete
                         <br><span><para>Deleted copy assignment. </para></span></td>
                 </tr>
@@ -749,7 +915,20 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          static
+                      
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">bind</a> (const Shader *shader)
                         <br><span><para>Bind a shader for rendering. </para></span></td>
                 </tr>

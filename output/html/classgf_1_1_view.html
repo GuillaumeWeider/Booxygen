@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::View &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -578,115 +578,278 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">View</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">View</a> (const RectF &rect)
                         <br><span><para>Construct the view from a rectangle. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">View</a> (Vector2f center, Vector2f size)
                         <br><span><para>Construct the view from its center and size. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">~View</a> ()
                         <br><span><para>Destructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setCenter</a> (Vector2f center)
                         <br><span><para>Set the center of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getCenter</a> () const
                         <br><span><para>Get the center of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setSize</a> (Vector2f size)
                         <br><span><para>Set the size of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSize</a> () const
                         <br><span><para>Get the size of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setRotation</a> (float rotation)
                         <br><span><para>Set the orientation of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          float
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getRotation</a> () const
                         <br><span><para>Get the current orientation of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setViewport</a> (const RectF &viewport)
                         <br><span><para>Set the target viewport. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          RectF&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getViewport</a> () const
                         <br><span><para>Get the target viewport rectangle of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">reset</a> (const RectF &rect)
                         <br><span><para>Reset the view to the given rectangle. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">move</a> (Vector2f offset)
                         <br><span><para>Move the view relatively to its current position. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">rotate</a> (float angle)
                         <br><span><para>Rotate the view relatively to its current orientation. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">zoom</a> (float factor)
                         <br><span><para>Resize the view rectangle relatively to its current size. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">zoom</a> (float factor, Vector2f fixed)
                         <br><span><para>Resize the view rectangle relatively to its current size and a fixed point. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Matrix3f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getTransform</a> () const
                         <br><span><para>Get the projection transform of the view. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Matrix3f
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getInverseTransform</a> () const
                         <br><span><para>Get the inverse projection transform of the view. </para></span></td>
                 </tr>
@@ -703,25 +866,69 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setSizeNoCallback</a> (Vector2f size)
                         <br><span><para>Set the world size, without calling <ref refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" kindref="member">onSizeChange()</ref> </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">onSizeChange</a> (Vector2f size)
                         <br><span><para>Callback when the world has just been resized. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setViewportNoCallback</a> (const RectF &viewport)
                         <br><span><para>Set the viewport, without calling <ref refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" kindref="member">onViewportChange()</ref> </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">onViewportChange</a> (const RectF &viewport)
                         <br><span><para>Callback when the viewport has just been changed. </para></span></td>
                 </tr>

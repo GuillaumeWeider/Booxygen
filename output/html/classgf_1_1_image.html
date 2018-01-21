@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Image &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -574,109 +574,263 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Image</a> ()
                         <br><span><para>Default constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Image</a> (const Image &)=default
                         <br><span><para>Default copy constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Image&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator=</a> (const Image &)=default
                         <br><span><para>Default copy assignment. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">Image</a> (Image &&)=default
                         <br><span><para>Default move constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Image&
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">operator=</a> (Image &&)=default
                         <br><span><para>Default move assignment. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">create</a> (Vector2u size, const Color4u &color=Color4u{0x00, 0x00, 0x00, 0xFF})
                         <br><span><para>Create the image and fill it with a unique color. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">create</a> (Vector2u size, const uint8_t *pixels)
                         <br><span><para>Create the image from an array of pixels. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">createRGB</a> (Vector2u size, const uint8_t *pixels)
                         <br><span><para>Create the image from an array of pixels. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromFile</a> (const Path &filename)
                         <br><span><para>Load the image from a file on disk. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
                         <br><span><para>Load the image from a file in memory. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">loadFromStream</a> (InputStream &stream)
                         <br><span><para>Load the image from a custom stream. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">saveToFile</a> (const Path &filename) const
                         <br><span><para>Save the image to a file on disk. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2u
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSize</a> () const
                         <br><span><para>Return the size (width and height) of the image. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">createMaskFromColor</a> (const Color4u &color, uint8_t alpha=0)
                         <br><span><para>Create a transparency mask from a specified color-key. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setPixel</a> (Vector2u pos, const Color4u &color)
                         <br><span><para>Change the color of a pixel. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Color4u
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPixel</a> (Vector2u pos) const
                         <br><span><para>Get the color of a pixel. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          const
+                      
+                  
+                      
+                          uint8_t*
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getPixelsPtr</a> () const
                         <br><span><para>Get a read-only pointer to the array of pixels. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">flipHorizontally</a> ()
                         <br><span><para>Flip the pixels horizontally. </para></span></td>
                 </tr>

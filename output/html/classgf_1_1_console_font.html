@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>gf::Action &mdash; Gamedev Framework (gf)</title>
+    <title>gf::ConsoleFont &mdash; Gamedev Framework (gf)</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/booxygen.css" rel="stylesheet">
@@ -550,19 +550,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          ConsoleFontFormat
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getFormat</a> () const
                         <br><span><para>Get the format of the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2u
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSize</a> () const
                         <br><span><para>Get the size of the fonts. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2u
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getCharacterSize</a> () const
                         <br><span><para>Get the size of the characters. </para></span></td>
                 </tr>
@@ -579,37 +606,91 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">mapCode</a> (char16_t c, Vector2u position)
                         <br><span><para>Map a character to a position in the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">mapCodeRange</a> (char16_t c, unsigned count, Vector2u position)
                         <br><span><para>Map a range of characters to consecutive positions in the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">mapString</a> (StringRef str, Vector2u position)
                         <br><span><para>Map characters from a string to consecutive positions in the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">mapElement</a> (ConsoleFontElement element)
                         <br><span><para>Map an element in the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">mapElements</a> (ArrayRef< ConsoleFontElement > elements)
                         <br><span><para>Map some elements in the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">clearMapping</a> ()
                         <br><span><para>Clear the mapping. </para></span></td>
                 </tr>
@@ -626,19 +707,54 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          RectU
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getSubTexture</a> (char16_t c) const
                         <br><span><para>Get the sub-texture rectangle. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          RectF
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getTextureRect</a> (char16_t c) const
                         <br><span><para>Get the texture rectangle for a character. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                          const
+                      
+                  
+                      
+                          BareTexture*
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getTexture</a> () const =0
                         <br><span><para>Get the texture of the console font. </para></span></td>
                 </tr>
@@ -657,13 +773,27 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">ConsoleFont</a> ()
                         <br><span><para>Constructor. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          virtual
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">~ConsoleFont</a> ()
                         <br><span><para>Destructor. </para></span></td>
                 </tr>
@@ -680,19 +810,46 @@
             <table class="table">
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          bool
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">setFormatAndComputeSizes</a> (ConsoleFontFormat format, Vector2u size, Vector2u imageSize)
                         <br><span><para>Set the format of the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          void
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">logFormat</a> (const Path &filename) const
                         <br><span><para>Print the format of the font. </para></span></td>
                 </tr>
                 
                 <tr>
-                    <td>?</td>
+                    <td>
+                  
+                  
+                      
+                          Vector2u
+                      
+                  
+                      
+                  
+                    </td>
                     <td><a href="#">getColorKeyPosition</a> () const
                         <br><span><para>Get the color key position. </para></span></td>
                 </tr>
