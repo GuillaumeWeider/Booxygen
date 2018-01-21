@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'liquid'
 
 require 'io/console'
+require 'awesome_print'
 
 module Booxygen
   VERSION = "0.3.3"
@@ -18,6 +19,7 @@ module Booxygen
     def initialize
       Liquid::Template.error_mode = :strict
       @index_hash = {}
+      @types = {}
     end
 
     # Fonction de traitement des différents fichiers XML
@@ -29,28 +31,36 @@ module Booxygen
 
       xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygen\']')
 
-      rec_parse(xsd_doxygen_element, xsd, xml.at_xpath('//doxygen'))
+      rec_parse(xsd_doxygen_element, xsd, xsd_name, xml.at_xpath('//doxygen'))
     end
 
     # Fonction de traitement d'un type donné dans un code XML donné
-    def rec_parse(index, xsd, xml)
+    def rec_parse(index, xsd, xsd_name, xml)
       result = {}
 
-      # Recherche des caractéristiques du type complexe donné
-      xsd_complex_type = xsd.at_xpath("//xsd:complexType[@name='#{index['type']}']")
+      unless @types.has_key? xsd_name
+        @types[xsd_name] = {}
+      end
 
-      # Récupération des éléments et attributs
-      xsd_elements_list = xsd_complex_type.xpath('.//xsd:element')
-      xsd_attributs_list = xsd_complex_type.xpath('.//xsd:attribute')
-      xsd_simplecontent_list = xsd_complex_type.xpath('.//xsd:simpleContent')
+      # Si ce type complexe a déjà été parsé
+      unless @types[xsd_name].has_key? index['type']
+        # Recherche des caractéristiques du type complexe donné
+        xsd_complex_type = xsd.at_xpath("//xsd:complexType[@name='#{index['type']}']")
+
+        # Récupération des éléments et attributs
+        @types[xsd_name][index['type']] = {}
+        @types[xsd_name][index['type']]['xsd_elements_list'] = xsd_complex_type.xpath('.//xsd:element')
+        @types[xsd_name][index['type']]['xsd_attributes_list'] = xsd_complex_type.xpath('.//xsd:attribute')
+        @types[xsd_name][index['type']]['xsd_simplecontent_list'] = xsd_complex_type.xpath('.//xsd:simpleContent')
+      end
 
       # S'il n'y a aucun élément et aucun attribut
-      if xsd_elements_list.all? {|x| x.nil?} && xsd_attributs_list.all? {|x| x.nil?}
+      if @types[xsd_name][index['type']]['xsd_elements_list'].all? {|x| x.nil?} && @types[xsd_name][index['type']]['xsd_attributes_list'].all? {|x| x.nil?}
         return xml.to_s
       else
 
         # Traitement des attributs
-        xsd_attributs_list.each do |attribut|
+        @types[xsd_name][index['type']]['xsd_attributes_list'].each do |attribut|
           result[attribut['name']] = xml[attribut['name']]
 
           # Si c'est un type "CompoundKind", traiter son XML correspondant
@@ -60,7 +70,7 @@ module Booxygen
         end
 
         # Traitement des éléments
-        xsd_elements_list.each do |xsd_element|
+        @types[xsd_name][index['type']]['xsd_elements_list'].each do |xsd_element|
           xml_elements_list = xml.xpath("./#{xsd_element['name']}")
           element_array = []
 
@@ -71,14 +81,14 @@ module Booxygen
               element_array.push xml_element_code.content.to_s
             else
               # Si c'est un type connu
-              element_array.push rec_parse(xsd_element, xsd, xml_element_code)
+              element_array.push rec_parse(xsd_element, xsd, xsd_name, xml_element_code)
             end
           end
           result[xsd_element['name']] = element_array
         end
 
         # Traitement du texte s'il s'agit d'un SimpleContent
-        unless xsd_simplecontent_list.empty?
+        unless @types[xsd_name][index['type']]['xsd_simplecontent_list'].empty?
           result['content'] = xml.content.to_s
         end
       end
@@ -95,7 +105,7 @@ module Booxygen
 
       xsd_doxygen_element = xsd.at_xpath('//xsd:element[@name=\'doxygenindex\']')
 
-      @index_hash = rec_parse(xsd_doxygen_element, xsd, xml.at_xpath('//doxygenindex'))
+      @index_hash = rec_parse(xsd_doxygen_element, xsd, xsd_name, xml.at_xpath('//doxygenindex'))
     end
 
     # Fonction d'affichage
