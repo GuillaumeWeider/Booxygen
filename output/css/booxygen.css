@@ -6,55 +6,17 @@ body {
     border: 0;
 }
 
-@media (min-width: 768px) {
-
-    .sidebar {
-        position: fixed;
-        left: 0;
-        z-index: 1000;
-        display: block;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: #e5e5e5;
-        border-right: 1px solid #eee;
-    }
-
-    .topsidebar {
-        top: 51px;
-        bottom: 65%;
-        padding: 5px 5px 5px 5px;
-    }
-
-    .bottomsidebar {
-        top: 35%;
-        bottom: 0;
-        padding: 5px 2px 2px 2px;
-    }
-
-}
-
-.main {
-    padding: 20px;
-}
-
-@media (min-width: 768px) {
-    .main {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-}
-
-.main .page-header {
-    margin-top: 0;
-}
-
-.topsidebar p, .bottomsidebar p {
-    font-size: 20px;
-}
-
 p {
     font-size: 16px;
 }
+
+table {
+   table-layout: fixed;
+ }
+ 
+ table tr, table td {
+   overflow: hidden;
+ }
 
 .bottomsidebar .list-group {
     padding-top: 5px;
@@ -91,6 +53,35 @@ span.keywordflow {
 }
 
 /* Erwan */
+
+.page-header {
+    margin-top: 15px;
+}
+
+.indexlist .index_group:first-child > .page-header {
+    margin-top: 0px;
+}
+
+.topsidebar {
+    width: 250px;
+}
+
+.list-module {
+    height: 150px;
+    overflow: auto;
+}
+
+.bottomsidebar {
+    position: fixed;
+    height: 70%;
+    width: 250px;
+    overflow: auto;
+    bottom: 0;
+}
+
+.bottomsidebar p {
+    font-size: 20px;
+}
 
 .indexlist {
     -webkit-column-count: 5; /* Chrome, Safari, Opera */
@@ -133,4 +124,61 @@ span.keywordflow {
 .index_group {
     page-break-inside: avoid;           /* Theoretically FF 20+ */
     break-inside: avoid-column;         /* IE 11 */
+}
+
+.wrapper {
+        display: flex;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 999;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .dropdown .dropdown-toggle {
+    width: 100%;
+}
+
+#content {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    position: absolute;
+    padding: 50px;
+    top: 30px;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
 }
