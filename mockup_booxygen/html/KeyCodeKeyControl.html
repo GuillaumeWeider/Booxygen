@@ -111,8 +111,8 @@
 
           <table class="table">
             <tr>
-              <td>&#160;</td>
-              <td><a href="#">KeyCodeKeyControl</a> (<a href="#">KeyCode</a> code)
+              <td class="col-md-1">&#160;</td>
+              <td class="col-md-4"><a href="#">KeyCodeKeyControl</a> (<a href="#">KeyCode</a> code)
               <br><span>Construct a key control</span></td>
             </tr>
             <tr>
@@ -120,7 +120,6 @@
               <td><a href="#">processEvent</a> (const <a href="#">Event</a> &event) override</td>
             </tr>
           </table>
-
 
           <h3>Constructor and Destructor</h3>
 
@@ -151,6 +150,66 @@
             </div>
           </div>
 
+          <h3>Member Enumeration</h3>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">enum <a href="#"><b>gf::Cursor::Type</b></a></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table">
+                <tr>
+                  <td class="col-md-1">Arrow</td>
+                  <td class="col-md-4">Arrow cursor (default)</td>
+                </tr>
+                <tr>
+                  <td>ArrowWait</td>
+                  <td>Busy arrow cursor.</td>
+                </tr>
+                <tr>
+                  <td>Wait</td>
+                  <td>Busy cursor.</td>
+                </tr>
+                <tr>
+                  <td>Text</td>
+                  <td>I-beam, cursor when hovering over a field allowing text entry.</td>
+                </tr>
+                <tr>
+                  <td>Hand</td>
+                  <td>Pointing hand cursor.</td>
+                </tr>
+                <tr>
+                  <td>SizeHorizontal</td>
+                  <td>Horizontal double arrow cursor.</td>
+                </tr>
+                <tr>
+                  <td>SizeVertical</td>
+                  <td>Vertical double arrow cursor.</td>
+                </tr>
+                <tr>
+                  <td>SizeTopLeftBottomRight</td>
+                  <td>Double arrow cursor going from top-left to bottom-right.</td>
+                </tr>
+                <tr>
+                  <td>SizeBottomLeftTopRight</td>
+                  <td>Double arrow cursor going from bottom-left to top-right.</td>
+                </tr>
+                <tr>
+                  <td>SizeAll</td>
+                  <td>Combination of SizeHorizontal and SizeVertical.</td>
+                </tr>
+                <tr>
+                  <td>Cross</td>
+                  <td>Crosshair cursor.</td>
+                </tr>
+                <tr>
+                  <td>NotAllowed</td>
+                  <td><a href="#">Action</a> not allowed cursor.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -162,6 +221,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
