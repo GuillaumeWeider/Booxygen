@@ -1,47 +1,37 @@
-<div class="wrapper">
-    <nav id="sidebar">
-        <div class="topsidebar">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
-                    Modules
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Namespaces</a></li>
-                    <li><a href="#">etc...</a></li>
-                </ul>
-            </div>
-            <div class="list-module">
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <select id="versions_dropdown">
+            <optgroup label="Modules">
                 {% for compound in compounds %}{% if compound.kind == 'group' %}
-                <a href="#" class="list-group-item">{{ compound.sub_xml.compounddef[0].title }}</a>
+                <option value="module_{% increment tmp %}">{{ compound.sub_xml.compounddef[0].title }}</option>
                 {% endif %}{% endfor %}
+            </optgroup>
+            <optgroup label="Namespaces">
+                {% for compound in compounds %}{% if compound.kind == 'namespace' %}
+                <option value="namespace_{% increment tmp2 %}">{{ compound.sub_xml.compounddef[0].compoundname }}
+                </option>
+                {% endif %}{% endfor %}
+            </optgroup>
+        </select>
 
-            </div>
-        </div>
-        <div class="middlesidebar">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
-                    Classes
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">TypeDef</a></li>
-                    <li><a href="#">Enum</a></li>
-                    <li><a href="#">etc...</a></li>
+        <ul id="categories">
+            <li class="category module_0">Classes
+                <ul>
+                    {% for compound in compounds %}{% if compound.kind == 'group' %}
+                    {% for class in compound.sub_xml.compounddef[0].innerclass %}
+                    <li><a href="{{ class.refid }}.html" class="element module_0">{{ class.content }}</a>
+                    </li>
+                    {% endfor %}{% endif %}{% endfor %}
                 </ul>
-            </div>
-        </div>
-        <div class="bottomsidebar">
-            <ul class="list-group">
-                {% for compound in compounds %}{% if compound.kind == 'group' %}
-                {% for class in compound.sub_xml.compounddef[0].innerclass %}
-                <a href="{{ class.refid }}.html" class="list-group-item">{{ class.content }}</a>
-                {% endfor %}{% endif %}{% endfor %}
-            </ul>
-        </div>
-    </nav>
+            </li>
+
+            <li class="category open_me module_0">Typesdef
+                <ul>
+                    <li>
+                        <a class="element open_me module_0">Truc</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </ul>
 </div>
