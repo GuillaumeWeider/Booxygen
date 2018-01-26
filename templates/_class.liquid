@@ -1,6 +1,8 @@
 <h2 class="page-header">{{ compound.name }} Class Reference</h2>
 <ol class="breadcrumb">
-    <li><a href="#">***</a></li>
+    {% for parent in compound.sub_xml.compounddef[0].basecompoundref %}
+    <li><a href="{{ parent.refid }}.html">{{ parent.content }}</a></li>
+    {% endfor %}
     <li class="active">{{ compound.name }}</li>
 </ol>
 
