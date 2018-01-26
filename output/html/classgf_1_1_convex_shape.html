@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::ConvexShape &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::ConvexShape Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::ConvexShape</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>Specialized shape representing a convex polygon. </para></p>
-            <p><para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>It is important to keep in mind that a convex shape must always be... convex, otherwise it may not be drawn correctly. Moreover, the points must be defined in order; using a random order would result in an incorrect shape.</para><para>Usage example:</para><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::ConvexShape Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::ConvexShape</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>Specialized shape representing a convex polygon. </para></p>
+<p><para>This class inherits all the functions of <ref refid="classgf_1_1_transformable" kindref="compound">gf::Transformable</ref> (position, rotation, scale, bounds, ...) as well as the functions of <ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> (outline, color, texture, ...).</para><para>It is important to keep in mind that a convex shape must always be... convex, otherwise it may not be drawn correctly. Moreover, the points must be defined in order; using a random order would result in an incorrect shape.</para><para>Usage example:</para><para>
   <programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_convex_shape" kindref="compound">gf::ConvexShape</ref><sp/>polygon;</highlight></codeline>
 <codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1abbec645b33fd5f3a78caf0d570d819c0" kindref="member">setPointCount</ref>(3);</highlight></codeline>
 <codeline><highlight class="normal">polygon.<ref refid="classgf_1_1_convex_shape_1a86b78d48473b09895abe492b6ade8a0b" kindref="member">setPoint</ref>(0,<sp/>{<sp/><sp/>0.0f,<sp/><sp/>0.0f<sp/>});</highlight></codeline>
@@ -812,152 +820,161 @@
 </programlisting>
 </para><para><simplesect kind="see"><para><ref refid="classgf_1_1_shape" kindref="compound">gf::Shape</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">ConvexShape</a> (std::size_t pointCount)
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">ConvexShape</a> (const Polygon &polygon)
+            <br><span><para>Constructor with a polygon. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setPointCount</a> (std::size_t pointCount)
+            <br><span><para>Set the number of points of the polygon. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setPoint</a> (std::size_t index, Vector2f point)
+            <br><span><para>Get the number of points of the polygon. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            std::size_t
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPointCount</a> () const override
+            <br><span><para>Get the total number of points of the shape. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            Vector2f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const override
+            <br><span><para>Get a point of the shape. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">ConvexShape</a> (std::size_t pointCount)
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">ConvexShape</a> (const Polygon &polygon)
-                        <br><span><para>Constructor with a polygon. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setPointCount</a> (std::size_t pointCount)
-                        <br><span><para>Set the number of points of the polygon. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setPoint</a> (std::size_t index, Vector2f point)
-                        <br><span><para>Get the number of points of the polygon. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        std::size_t
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPointCount</a> () const override
-                        <br><span><para>Get the total number of points of the shape. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        Vector2f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const override
-                        <br><span><para>Get a point of the shape. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

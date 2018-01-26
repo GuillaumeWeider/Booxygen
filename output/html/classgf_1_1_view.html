@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::View &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::View Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::View</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>2D camera that defines what region is shown on screen </para></p>
-            <p><para><ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> defines a camera in the 2D scene. This is a very powerful concept: you can scroll, rotate or zoom the entire scene without altering the way that your drawable objects are drawn.</para><para>A view is composed of a source rectangle, which defines what part of the 2D scene is shown, and a target viewport, which defines where the contents of the source rectangle will be displayed on the render target (window or texture).</para><para>The viewport allows to map the scene to a custom part of the render target, and can be used for split-screen or for displaying a minimap, for example. If the source rectangle has not the same size as the viewport, its contents will be stretched to fit in.</para><para>To apply a view, you have to assign it to the render target. Then, every objects drawn in this render target will be affected by the view until you use another view.</para><para>Usage example:</para><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::View Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::View</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>2D camera that defines what region is shown on screen </para></p>
+<p><para><ref refid="classgf_1_1_view" kindref="compound">gf::View</ref> defines a camera in the 2D scene. This is a very powerful concept: you can scroll, rotate or zoom the entire scene without altering the way that your drawable objects are drawn.</para><para>A view is composed of a source rectangle, which defines what part of the 2D scene is shown, and a target viewport, which defines where the contents of the source rectangle will be displayed on the render target (window or texture).</para><para>The viewport allows to map the scene to a custom part of the render target, and can be used for split-screen or for displaying a minimap, for example. If the source rectangle has not the same size as the viewport, its contents will be stretched to fit in.</para><para>To apply a view, you have to assign it to the render target. Then, every objects drawn in this render target will be affected by the view until you use another view.</para><para>Usage example:</para><para>
   <programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_render_window" kindref="compound">gf::RenderWindow</ref><sp/>renderer;</highlight></codeline>
 <codeline><highlight class="normal"><ref refid="classgf_1_1_view" kindref="compound">gf::View</ref><sp/>view;</highlight></codeline>
 <codeline><highlight class="normal"/></codeline>
@@ -826,418 +834,427 @@
 </programlisting>
 </para><para><simplesect kind="see"><para><ref refid="classgf_1_1_render_target" kindref="compound">gf::RenderTarget</ref>, gf::AdaptiveView </para></simplesect>
 </para></p>
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">View</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">View</a> (const RectF &rect)
+            <br><span><para>Construct the view from a rectangle. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">View</a> (Vector2f center, Vector2f size)
+            <br><span><para>Construct the view from its center and size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">~View</a> ()
+            <br><span><para>Destructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setCenter</a> (Vector2f center)
+            <br><span><para>Set the center of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getCenter</a> () const
+            <br><span><para>Get the center of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setSize</a> (Vector2f size)
+            <br><span><para>Set the size of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const
+            <br><span><para>Get the size of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setRotation</a> (float rotation)
+            <br><span><para>Set the orientation of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getRotation</a> () const
+            <br><span><para>Get the current orientation of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setViewport</a> (const RectF &viewport)
+            <br><span><para>Set the target viewport. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            RectF&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getViewport</a> () const
+            <br><span><para>Get the target viewport rectangle of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">reset</a> (const RectF &rect)
+            <br><span><para>Reset the view to the given rectangle. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">move</a> (Vector2f offset)
+            <br><span><para>Move the view relatively to its current position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">rotate</a> (float angle)
+            <br><span><para>Rotate the view relatively to its current orientation. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">zoom</a> (float factor)
+            <br><span><para>Resize the view rectangle relatively to its current size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">zoom</a> (float factor, Vector2f fixed)
+            <br><span><para>Resize the view rectangle relatively to its current size and a fixed point. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Matrix3f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTransform</a> () const
+            <br><span><para>Get the projection transform of the view. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Matrix3f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getInverseTransform</a> () const
+            <br><span><para>Get the inverse projection transform of the view. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setSizeNoCallback</a> (Vector2f size)
+            <br><span><para>Set the world size, without calling <ref refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" kindref="member">onSizeChange()</ref> </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">onSizeChange</a> (Vector2f size)
+            <br><span><para>Callback when the world has just been resized. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setViewportNoCallback</a> (const RectF &viewport)
+            <br><span><para>Set the viewport, without calling <ref refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" kindref="member">onViewportChange()</ref> </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">onViewportChange</a> (const RectF &viewport)
+            <br><span><para>Callback when the viewport has just been changed. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">View</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">View</a> (const RectF &rect)
-                        <br><span><para>Construct the view from a rectangle. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">View</a> (Vector2f center, Vector2f size)
-                        <br><span><para>Construct the view from its center and size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">~View</a> ()
-                        <br><span><para>Destructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setCenter</a> (Vector2f center)
-                        <br><span><para>Set the center of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getCenter</a> () const
-                        <br><span><para>Get the center of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setSize</a> (Vector2f size)
-                        <br><span><para>Set the size of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const
-                        <br><span><para>Get the size of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setRotation</a> (float rotation)
-                        <br><span><para>Set the orientation of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getRotation</a> () const
-                        <br><span><para>Get the current orientation of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setViewport</a> (const RectF &viewport)
-                        <br><span><para>Set the target viewport. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        RectF&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getViewport</a> () const
-                        <br><span><para>Get the target viewport rectangle of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">reset</a> (const RectF &rect)
-                        <br><span><para>Reset the view to the given rectangle. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">move</a> (Vector2f offset)
-                        <br><span><para>Move the view relatively to its current position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">rotate</a> (float angle)
-                        <br><span><para>Rotate the view relatively to its current orientation. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">zoom</a> (float factor)
-                        <br><span><para>Resize the view rectangle relatively to its current size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">zoom</a> (float factor, Vector2f fixed)
-                        <br><span><para>Resize the view rectangle relatively to its current size and a fixed point. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Matrix3f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTransform</a> () const
-                        <br><span><para>Get the projection transform of the view. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Matrix3f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getInverseTransform</a> () const
-                        <br><span><para>Get the inverse projection transform of the view. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setSizeNoCallback</a> (Vector2f size)
-                        <br><span><para>Set the world size, without calling <ref refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" kindref="member">onSizeChange()</ref> </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">onSizeChange</a> (Vector2f size)
-                        <br><span><para>Callback when the world has just been resized. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setViewportNoCallback</a> (const RectF &viewport)
-                        <br><span><para>Set the viewport, without calling <ref refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" kindref="member">onViewportChange()</ref> </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">onViewportChange</a> (const RectF &viewport)
-                        <br><span><para>Callback when the viewport has just been changed. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

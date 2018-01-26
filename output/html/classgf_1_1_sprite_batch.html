@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::SpriteBatch &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::SpriteBatch Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::SpriteBatch</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>A sprite batch. </para></p>
-            <p><para>A sprite batch is responsible for minimizing the number of draw calls by concatenating the different calls for sprites.</para><para>Before using a sprite batch, you have to call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput>, then call <computeroutput><ref refid="classgf_1_1_sprite_batch_1ab95640ff5f4193f43e347dfec1441d40" kindref="member">draw()</ref></computeroutput> for each sprite you want to draw, and finally call <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput>.</para><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::SpriteBatch Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::SpriteBatch</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>A sprite batch. </para></p>
+<p><para>A sprite batch is responsible for minimizing the number of draw calls by concatenating the different calls for sprites.</para><para>Before using a sprite batch, you have to call <computeroutput><ref refid="classgf_1_1_sprite_batch_1a25d81a85aa1906e2d6152310e76ed67b" kindref="member">begin()</ref></computeroutput>, then call <computeroutput><ref refid="classgf_1_1_sprite_batch_1ab95640ff5f4193f43e347dfec1441d40" kindref="member">draw()</ref></computeroutput> for each sprite you want to draw, and finally call <computeroutput><ref refid="classgf_1_1_sprite_batch_1abef8f8422d1aa03c52b404331a48370c" kindref="member">end()</ref></computeroutput>.</para><para>
   <programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_sprite_batch" kindref="compound">gf::SpriteBatch</ref><sp/>batch(renderer);</highlight></codeline>
 <codeline><highlight class="normal"/></codeline>
 <codeline><highlight class="normal">batch.begin();</highlight></codeline>
@@ -809,152 +817,161 @@
 </programlisting>
 </para><para><simplesect kind="see"><para><ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">SpriteBatch</a> (RenderTarget &target)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">begin</a> ()
+            <br><span><para>Begin the batch. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (Sprite &sprite, const RenderStates &states=RenderStates())
+            <br><span><para>Add a sprite to the batch. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (const Texture &texture, Vector2f position, const RenderStates &states=RenderStates())
+            <br><span><para>Add a raw texture to the batch. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (const Texture &texture, const RectF &textureRect, Vector2f position, const RenderStates &states=RenderStates())
+            <br><span><para>Add a portion of a raw texture to the batch. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">end</a> ()
+            <br><span><para>End the batch. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">SpriteBatch</a> (RenderTarget &target)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">begin</a> ()
-                        <br><span><para>Begin the batch. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (Sprite &sprite, const RenderStates &states=RenderStates())
-                        <br><span><para>Add a sprite to the batch. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (const Texture &texture, Vector2f position, const RenderStates &states=RenderStates())
-                        <br><span><para>Add a raw texture to the batch. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (const Texture &texture, const RectF &textureRect, Vector2f position, const RenderStates &states=RenderStates())
-                        <br><span><para>Add a portion of a raw texture to the batch. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">end</a> ()
-                        <br><span><para>End the batch. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

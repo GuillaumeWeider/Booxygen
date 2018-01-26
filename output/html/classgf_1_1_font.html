@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Font &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::Font Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Font</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>A character font. </para></p>
-            <p><para>Fonts can be loaded from a file, from memory or from a custom stream, and supports the most common types of fonts. See the <computeroutput><ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile()</ref></computeroutput> function for the complete list of supported formats.</para><para>Once it is loaded, a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> instance provides three types of information about the font:</para><para><itemizedlist>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::Font Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::Font</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>A character font. </para></p>
+<p><para>Fonts can be loaded from a file, from memory or from a custom stream, and supports the most common types of fonts. See the <computeroutput><ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile()</ref></computeroutput> function for the complete list of supported formats.</para><para>Once it is loaded, a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> instance provides three types of information about the font:</para><para><itemizedlist>
 <listitem><para>Global metrics, such as the line spacing</para></listitem><listitem><para>Per-glyph metrics, such as bounding box or kerning</para></listitem><listitem><para>Pixel representation of glyphs</para></listitem></itemizedlist>
 </para><para>Fonts alone are not very useful: they hold the font data but cannot make anything useful of it. To do so you need to use the <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> class, which is able to properly output text with several options such as character size, style, color, position, rotation, etc.</para><para>This separation allows more flexibility and better performances: indeed a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> is a lightweight object which can combine the glyphs data and metrics of a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> to display any text on a render target.</para><para>Note that it is also possible to bind several <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> instances to the same <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref>.</para><para>It is important to note that the <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> instance doesn't copy the font that it uses, it only keeps a reference to it. Thus, a <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> must not be destructed while it is used by a <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref> (i.e. never write a function that uses a local <ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref> instance for creating a text).</para><para>Usage example:</para><para>
   <programlisting><codeline><highlight class="comment">//<sp/>Declare<sp/>a<sp/>new<sp/>font</highlight><highlight class="normal"/></codeline>
@@ -823,266 +831,275 @@
 <codeline><highlight class="normal">text2.<ref refid="classgf_1_1_text_1a6672633cb3345b8d0ee61035603710bd" kindref="member">setCharacterSize</ref>(50);</highlight></codeline>
 </programlisting>
 </para><para>Apart from loading font files, and passing them to instances of <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>, you should normally not have to deal directly with this class. However, it may be useful to access the font metrics or rasterized glyphs for advanced usage. </para></p>
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Font</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">~Font</a> ()
+            <br><span><para>Destructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Font</a> (const Font &)=delete
+            <br><span><para>Deleted copy constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Font&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (const Font &)=delete
+            <br><span><para>Deleted copy assignement. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Font</a> (Font &&other)
+            <br><span><para>Move constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Font&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (Font &&other)
+            <br><span><para>Move assignement. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
+            <br><span><para>Load the font from a file. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
+            <br><span><para>Load the font from a custom stream. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
+            <br><span><para>Load the font from a file in memory. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Glyph&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getGlyph</a> (char32_t codepoint, unsigned characterSize, float outlineThickness=0.0f)
+            <br><span><para>Retrieve a glyph of the font. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getKerning</a> (char32_t left, char32_t right, unsigned characterSize)
+            <br><span><para>Get the kerning offset of two glyphs. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getLineSpacing</a> (unsigned characterSize)
+            <br><span><para>Get the line spacing. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            AlphaTexture*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTexture</a> (unsigned characterSize)
+            <br><span><para>Retrieve the texture containing the loaded glyphs of a certain size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">generateTexture</a> (unsigned characterSize)
+            <br><span><para>Generate the texture for a given character size. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Font</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">~Font</a> ()
-                        <br><span><para>Destructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Font</a> (const Font &)=delete
-                        <br><span><para>Deleted copy constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Font&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (const Font &)=delete
-                        <br><span><para>Deleted copy assignement. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Font</a> (Font &&other)
-                        <br><span><para>Move constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Font&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (Font &&other)
-                        <br><span><para>Move assignement. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
-                        <br><span><para>Load the font from a file. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
-                        <br><span><para>Load the font from a custom stream. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
-                        <br><span><para>Load the font from a file in memory. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Glyph&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getGlyph</a> (char32_t codepoint, unsigned characterSize, float outlineThickness=0.0f)
-                        <br><span><para>Retrieve a glyph of the font. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getKerning</a> (char32_t left, char32_t right, unsigned characterSize)
-                        <br><span><para>Get the kerning offset of two glyphs. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getLineSpacing</a> (unsigned characterSize)
-                        <br><span><para>Get the line spacing. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        AlphaTexture*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTexture</a> (unsigned characterSize)
-                        <br><span><para>Retrieve the texture containing the loaded glyphs of a certain size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">generateTexture</a> (unsigned characterSize)
-                        <br><span><para>Generate the texture for a given character size. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::SpaceTree &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,386 +785,404 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::SpaceTree Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::SpaceTree</li>
-            </ol>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::SpaceTree</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>Binary space random partionning tree. </para></p>
+<p><para>This class implements a random binary space partitioning tree. More precisely, this class is a node in the tree. </para></p>
+
+
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            using
+            
+            
+            
+            gf::SpaceTree::Callback
+            
+            
+            
+            =
+            
+            
+            
+            std::function<bool(const
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Callback</a> 
+            <br><span><para>A callback function for traversing the tree. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">SpaceTree</a> (const RectI &area)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            RectI&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getArea</a> () const
+            <br><span><para>Get the area of the node. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getLevel</a> () const
+            <br><span><para>Get the level of the node in the tree. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">removeChildren</a> ()
+            <br><span><para>Remove the children of the node. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">splitOnce</a> (Random &random, Vector2i minSize, float maxRatio=1.5f)
+            <br><span><para>Split the node once. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">splitRecursive</a> (Random &random, int levelMax, Vector2i minSize, Vector2i maxSize, float maxRatio=1.5f)
+            <br><span><para>Split a node recursively. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isLeaf</a> () const
+            <br><span><para>Check if a node is a leaf. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            SpaceTree*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getLeftChild</a> () const
+            <br><span><para>Get the left child. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            SpaceTree*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getRightChild</a> () const
+            <br><span><para>Get the right child. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            SpaceTree*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getFather</a> () const
+            <br><span><para>Get the father of the node. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contains</a> (Vector2i position) const
+            <br><span><para>Check if the area of the node contains a position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            SpaceTree*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">find</a> (Vector2i position) const
+            <br><span><para>Find the deepest node containing a position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">traversePreOrder</a> (Callback callback) const
+            <br><span><para>Traverse the nodes in pre-order. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">traverseInOrder</a> (Callback callback) const
+            <br><span><para>Traverse the nodes in in-order. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">traversePostOrder</a> (Callback callback) const
+            <br><span><para>Traverse the nodes in post-order. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">traverseLevelOrder</a> (Callback callback) const
+            <br><span><para>Traverse the nodes in level-order. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">traverseInvertedLevelOrder</a> (Callback callback) const
+            <br><span><para>Traverse the nodes in inverted level-order. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            <h3>Description</h3>
-            <p><para>Binary space random partionning tree. </para></p>
-            <p><para>This class implements a random binary space partitioning tree. More precisely, this class is a node in the tree. </para></p>
-            
 
-            
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        using
-                        
-                        
-                        
-                        gf::SpaceTree::Callback
-                        
-                        
-                        
-                        =
-                        
-                        
-                        
-                        std::function<bool(const
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Callback</a> 
-                        <br><span><para>A callback function for traversing the tree. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">SpaceTree</a> (const RectI &area)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        RectI&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getArea</a> () const
-                        <br><span><para>Get the area of the node. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getLevel</a> () const
-                        <br><span><para>Get the level of the node in the tree. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">removeChildren</a> ()
-                        <br><span><para>Remove the children of the node. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">splitOnce</a> (Random &random, Vector2i minSize, float maxRatio=1.5f)
-                        <br><span><para>Split the node once. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">splitRecursive</a> (Random &random, int levelMax, Vector2i minSize, Vector2i maxSize, float maxRatio=1.5f)
-                        <br><span><para>Split a node recursively. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isLeaf</a> () const
-                        <br><span><para>Check if a node is a leaf. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        SpaceTree*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getLeftChild</a> () const
-                        <br><span><para>Get the left child. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        SpaceTree*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getRightChild</a> () const
-                        <br><span><para>Get the right child. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        SpaceTree*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getFather</a> () const
-                        <br><span><para>Get the father of the node. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contains</a> (Vector2i position) const
-                        <br><span><para>Check if the area of the node contains a position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        SpaceTree*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">find</a> (Vector2i position) const
-                        <br><span><para>Find the deepest node containing a position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">traversePreOrder</a> (Callback callback) const
-                        <br><span><para>Traverse the nodes in pre-order. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">traverseInOrder</a> (Callback callback) const
-                        <br><span><para>Traverse the nodes in in-order. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">traversePostOrder</a> (Callback callback) const
-                        <br><span><para>Traverse the nodes in post-order. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">traverseLevelOrder</a> (Callback callback) const
-                        <br><span><para>Traverse the nodes in level-order. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">traverseInvertedLevelOrder</a> (Callback callback) const
-                        <br><span><para>Traverse the nodes in inverted level-order. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

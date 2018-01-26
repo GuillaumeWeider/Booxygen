@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Tween &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,402 +785,420 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::Tween Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Tween</li>
-            </ol>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::Tween</li>
+</ol>
 
-            
-            <h3>Description</h3>
-            <p><para>An interpolation between two values. </para></p>
-            <p><para><simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Inbetweening">Inbetweening - Wikipedia</ulink> </para></simplesect>
+
+<h3>Description</h3>
+<p><para>An interpolation between two values. </para></p>
+<p><para><simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Inbetweening">Inbetweening - Wikipedia</ulink> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            using
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            >::Setter
+            
+            
+            
+            =
+            
+            
+            
+            std::function<void(const
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Setter</a> 
+            <br><span><para>A setter function. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, Setter setter, Time duration, Easing easing=Ease::linear)
+            <br><span><para>Constructor with a setter. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, T &value, Time duration, Easing easing=Ease::linear)
+            <br><span><para>Constructor with a reference. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setOrigin</a> (T origin)
+            <br><span><para>Change the origin of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            T
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getOrigin</a> () const noexcept
+            <br><span><para>Get the origin of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setTarget</a> (T target)
+            <br><span><para>Change the target of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            T
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTarget</a> () const noexcept
+            <br><span><para>Get the target of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setDuration</a> (Time duration)
+            <br><span><para>Change the duration of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Time
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getDuration</a> () const noexcept
+            <br><span><para>Get the duration of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            T
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getValue</a> () const
+            <br><span><para>Get the current value of the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isFinished</a> () const
+            <br><span><para>Check if the tween is finished. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">update</a> (Time time)
+            <br><span><para>Update the tween. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Tween<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">restart</a> ()
+            <br><span><para>Restart the tween. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        using
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        >::Setter
-                        
-                        
-                        
-                        =
-                        
-                        
-                        
-                        std::function<void(const
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Setter</a> 
-                        <br><span><para>A setter function. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, Setter setter, Time duration, Easing easing=Ease::linear)
-                        <br><span><para>Constructor with a setter. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, T &value, Time duration, Easing easing=Ease::linear)
-                        <br><span><para>Constructor with a reference. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setOrigin</a> (T origin)
-                        <br><span><para>Change the origin of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getOrigin</a> () const noexcept
-                        <br><span><para>Get the origin of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setTarget</a> (T target)
-                        <br><span><para>Change the target of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTarget</a> () const noexcept
-                        <br><span><para>Get the target of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setDuration</a> (Time duration)
-                        <br><span><para>Change the duration of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Time
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getDuration</a> () const noexcept
-                        <br><span><para>Get the duration of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getValue</a> () const
-                        <br><span><para>Get the current value of the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isFinished</a> () const
-                        <br><span><para>Check if the tween is finished. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">update</a> (Time time)
-                        <br><span><para>Update the tween. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Tween<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">restart</a> ()
-                        <br><span><para>Restart the tween. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::BufferRef &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,325 +785,343 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::BufferRef Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::BufferRef</li>
-            </ol>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::BufferRef</li>
+</ol>
 
-            
-            <h3>Description</h3>
-            <p><para>A reference to a modifiable buffer and its size. </para></p>
-            <p><para>This class stores a pointer to a buffer and its size. It can be built from various inputs: <computeroutput>std::vector</computeroutput>, <computeroutput>std::array</computeroutput>, static array, pointer and size.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_array_ref" kindref="compound">gf::ArrayRef</ref>, <ref refid="classgf_1_1_string_ref" kindref="compound">gf::StringRef</ref> </para></simplesect>
+
+<h3>Description</h3>
+<p><para>A reference to a modifiable buffer and its size. </para></p>
+<p><para>This class stores a pointer to a buffer and its size. It can be built from various inputs: <computeroutput>std::vector</computeroutput>, <computeroutput>std::array</computeroutput>, static array, pointer and size.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_array_ref" kindref="compound">gf::ArrayRef</ref>, <ref refid="classgf_1_1_string_ref" kindref="compound">gf::StringRef</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            constexpr
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> (std::nullptr_t)
+            <br><span><para>Null constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> (T *data, std::size_t size)
+            <br><span><para>Constructor from a pointer and a size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> (std::vector< T > &values)
+            <br><span><para>Constructor from a <computeroutput>std::vector</computeroutput> </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> (std::array< T, N > &values)
+            <br><span><para>Constructor from a <computeroutput>std::array</computeroutput> </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BufferRef</a> (T(&data)[N])
+            <br><span><para>Constructor from a static array. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            T*
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getData</a> () noexcept
+            <br><span><para>Get a pointer to the elements. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            std::size_t
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const noexcept
+            <br><span><para>Get the number of elements. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            T*
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">begin</a> () noexcept
+            <br><span><para>Get an iterator to the first element. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            T*
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">end</a> () noexcept
+            <br><span><para>Get an iterator past the last element. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            T&
+            
+            
+            
+            gf::BufferRef<
+            
+            
+            
+            T
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index)
+            <br><span><para>Get an element at a given index. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> (std::nullptr_t)
-                        <br><span><para>Null constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> (T *data, std::size_t size)
-                        <br><span><para>Constructor from a pointer and a size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> (std::vector< T > &values)
-                        <br><span><para>Constructor from a <computeroutput>std::vector</computeroutput> </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> (std::array< T, N > &values)
-                        <br><span><para>Constructor from a <computeroutput>std::array</computeroutput> </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BufferRef</a> (T(&data)[N])
-                        <br><span><para>Constructor from a static array. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        T*
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getData</a> () noexcept
-                        <br><span><para>Get a pointer to the elements. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        std::size_t
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const noexcept
-                        <br><span><para>Get the number of elements. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        T*
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">begin</a> () noexcept
-                        <br><span><para>Get an iterator to the first element. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        T*
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">end</a> () noexcept
-                        <br><span><para>Get an iterator past the last element. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        T&
-                        
-                        
-                        
-                        gf::BufferRef<
-                        
-                        
-                        
-                        T
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index)
-                        <br><span><para>Get an element at a given index. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

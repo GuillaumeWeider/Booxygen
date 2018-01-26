@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Console &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,693 +785,711 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::Console Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Console</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>A virtual console. </para></p>
-            <p><para>A console is a virtual terminal where you can print the characters from a console font. Each cell of the console has a background color, a foreground color and a 8-bit character.</para><para>A console has a state with default values for different aspects:<itemizedlist>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::Console Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::Console</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>A virtual console. </para></p>
+<p><para>A console is a virtual terminal where you can print the characters from a console font. Each cell of the console has a background color, a foreground color and a 8-bit character.</para><para>A console has a state with default values for different aspects:<itemizedlist>
 <listitem><para>a default background color (initiallly <ref refid="structgf_1_1_color_1a88dc1b689ca9dba60a8b7e51de680b4e" kindref="member">gf::Color::Black</ref>)</para></listitem><listitem><para>a default foreground color (initiallly <ref refid="structgf_1_1_color_1aed80fd944d36f831ec5f4c70834df9a4" kindref="member">gf::Color::White</ref>)</para></listitem><listitem><para>a default console effect (initiallly <ref refid="classgf_1_1_console_effect_1aaf7b39fe72da981a92b845f82cddd596a2005f43694b321ba19ce85f841ec61ec" kindref="member">gf::ConsoleEffect::None</ref>)</para></listitem><listitem><para>a default alignment (initiallly <ref refid="group__game_1gga79cfe1ad310880da0b2586645db3af32a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gf::ConsoleAlignment::Left</ref>)</para></listitem></itemizedlist>
 </para><para>Several functions use this state to determine actual values.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_console_font" kindref="compound">gf::ConsoleFont</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4>Basic printing</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setDefaultBackground</a> (const Color4f &color)
+            <br><span><para>Set the default background color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getDefaultBackground</a> () const
+            <br><span><para>Get the default background color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setDefaultForeground</a> (const Color4f &color)
+            <br><span><para>Set the default foreground color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getDefaultForeground</a> () const
+            <br><span><para>Get the default foreground color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clear</a> ()
+            <br><span><para>Clear the console. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setCharBackground</a> (Vector2i position, const Color4f &color, ConsoleEffect effect=ConsoleEffect::Set)
+            <br><span><para>Set the character background color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getCharBackground</a> (Vector2i position) const
+            <br><span><para>Get the character background color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setCharForeground</a> (Vector2i position, const Color4f &color)
+            <br><span><para>Set the character foreground color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getCharForeground</a> (Vector2i position) const
+            <br><span><para>Get the character foreground color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setChar</a> (Vector2i position, char16_t c)
+            <br><span><para>Set a character. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            char16_t
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getChar</a> (Vector2i position) const
+            <br><span><para>Get a character. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">putChar</a> (Vector2i position, char16_t c, ConsoleEffect effect=ConsoleEffect::Default)
+            <br><span><para>Modify a cell in the console. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">putChar</a> (Vector2i position, char16_t c, const Color4f &foreground, const Color4f &background)
+            <br><span><para>Modify a cell in the console. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>String printing</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setDefaultConsoleEffect</a> (ConsoleEffect effect)
+            <br><span><para>Set the default console effect. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            ConsoleEffect
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getDefaultConsoleEffect</a> () const
+            <br><span><para>Get the default console effect. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setDefaultAlignment</a> (ConsoleAlignment alignment)
+            <br><span><para>Set the default alignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            ConsoleAlignment
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getDefaultAlignment</a> () const
+            <br><span><para>Get the default alignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">print</a> (Vector2i position, const char *fmt,...)
+            <br><span><para>Print a formatted string. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">print</a> (Vector2i position, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)
+            <br><span><para>Print a formatted string. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">printRect</a> (const RectI &rect, const char *fmt,...)
+            <br><span><para>Print a multi-line formatted string. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">printRect</a> (const RectI &rect, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)
+            <br><span><para>Print a multi-line formatted string. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getHeight</a> (const RectI &rect, const char *fmt,...)
+            <br><span><para>Get the expected number of console lines of a multi-line formatted string. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setColorControl</a> (ConsoleColorControl ctrl, const Color4f &foreground, const Color4f &background)
+            <br><span><para>Set a color for color control. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Advanced printing</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">drawRectangle</a> (const RectI &rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default)
+            <br><span><para>Draw a filled rectangle. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">drawHorizontalLine</a> (Vector2i left, int width, ConsoleEffect effect=ConsoleEffect::Default)
+            <br><span><para>Draw a horizontal line. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">drawVerticalLine</a> (Vector2i top, int height, ConsoleEffect effect=ConsoleEffect::Default)
+            <br><span><para>Draw a vertical line. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">drawFrame</a> (const RectI &rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default, const char *title=nullptr,...)
+            <br><span><para>Draw a frame. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Screen fading</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setFade</a> (float amount, const Color4f &color)
+            <br><span><para>Set the fading parameters. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getFadingAmount</a> () const
+            <br><span><para>Get the fading amount. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getFadingColor</a> () const
+            <br><span><para>Get the fading color. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">PrintAction</a> 
+            <br><span><para>An action when printing. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Console</a> (const ConsoleFont &font, Vector2i size)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getWidth</a> () const
+            <br><span><para>Get the width of the console. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getHeight</a> () const
+            <br><span><para>Get the height of the console. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">blit</a> (const RectI &src, Console &con, Vector2i dst, float foregroundAlpha=1.0f, float backgroundAlpha=1.0f) const
+            <br><span><para>Blit a console on another console. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
+            <br><span><para>Draw the object to a render target. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Basic printing</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setDefaultBackground</a> (const Color4f &color)
-                        <br><span><para>Set the default background color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getDefaultBackground</a> () const
-                        <br><span><para>Get the default background color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setDefaultForeground</a> (const Color4f &color)
-                        <br><span><para>Set the default foreground color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getDefaultForeground</a> () const
-                        <br><span><para>Get the default foreground color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clear</a> ()
-                        <br><span><para>Clear the console. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setCharBackground</a> (Vector2i position, const Color4f &color, ConsoleEffect effect=ConsoleEffect::Set)
-                        <br><span><para>Set the character background color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getCharBackground</a> (Vector2i position) const
-                        <br><span><para>Get the character background color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setCharForeground</a> (Vector2i position, const Color4f &color)
-                        <br><span><para>Set the character foreground color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getCharForeground</a> (Vector2i position) const
-                        <br><span><para>Get the character foreground color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setChar</a> (Vector2i position, char16_t c)
-                        <br><span><para>Set a character. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        char16_t
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getChar</a> (Vector2i position) const
-                        <br><span><para>Get a character. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">putChar</a> (Vector2i position, char16_t c, ConsoleEffect effect=ConsoleEffect::Default)
-                        <br><span><para>Modify a cell in the console. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">putChar</a> (Vector2i position, char16_t c, const Color4f &foreground, const Color4f &background)
-                        <br><span><para>Modify a cell in the console. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>String printing</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setDefaultConsoleEffect</a> (ConsoleEffect effect)
-                        <br><span><para>Set the default console effect. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        ConsoleEffect
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getDefaultConsoleEffect</a> () const
-                        <br><span><para>Get the default console effect. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setDefaultAlignment</a> (ConsoleAlignment alignment)
-                        <br><span><para>Set the default alignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        ConsoleAlignment
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getDefaultAlignment</a> () const
-                        <br><span><para>Get the default alignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">print</a> (Vector2i position, const char *fmt,...)
-                        <br><span><para>Print a formatted string. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">print</a> (Vector2i position, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)
-                        <br><span><para>Print a formatted string. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">printRect</a> (const RectI &rect, const char *fmt,...)
-                        <br><span><para>Print a multi-line formatted string. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">printRect</a> (const RectI &rect, ConsoleEffect effect, ConsoleAlignment alignment, const char *fmt,...)
-                        <br><span><para>Print a multi-line formatted string. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getHeight</a> (const RectI &rect, const char *fmt,...)
-                        <br><span><para>Get the expected number of console lines of a multi-line formatted string. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setColorControl</a> (ConsoleColorControl ctrl, const Color4f &foreground, const Color4f &background)
-                        <br><span><para>Set a color for color control. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Advanced printing</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">drawRectangle</a> (const RectI &rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default)
-                        <br><span><para>Draw a filled rectangle. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">drawHorizontalLine</a> (Vector2i left, int width, ConsoleEffect effect=ConsoleEffect::Default)
-                        <br><span><para>Draw a horizontal line. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">drawVerticalLine</a> (Vector2i top, int height, ConsoleEffect effect=ConsoleEffect::Default)
-                        <br><span><para>Draw a vertical line. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">drawFrame</a> (const RectI &rect, PrintAction action=PrintAction::None, ConsoleEffect effect=ConsoleEffect::Default, const char *title=nullptr,...)
-                        <br><span><para>Draw a frame. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Screen fading</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setFade</a> (float amount, const Color4f &color)
-                        <br><span><para>Set the fading parameters. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getFadingAmount</a> () const
-                        <br><span><para>Get the fading amount. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getFadingColor</a> () const
-                        <br><span><para>Get the fading color. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">PrintAction</a> 
-                        <br><span><para>An action when printing. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Console</a> (const ConsoleFont &font, Vector2i size)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getWidth</a> () const
-                        <br><span><para>Get the width of the console. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getHeight</a> () const
-                        <br><span><para>Get the height of the console. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">blit</a> (const RectI &src, Console &con, Vector2i dst, float foregroundAlpha=1.0f, float backgroundAlpha=1.0f) const
-                        <br><span><para>Blit a console on another console. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
-                        <br><span><para>Draw the object to a render target. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

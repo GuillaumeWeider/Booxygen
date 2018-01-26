@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Curve &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,425 +785,443 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::Curve Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Curve</li>
-            </ol>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::Curve</li>
+</ol>
 
-            
-            <h3>Description</h3>
-            <p><para>A curve is a one dimension object. </para></p>
-            <p><para>A curve is similar to a shape but for one dimension objects like lines, <ulink url="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves</ulink>, or compound curves.</para><para>A curve can be simple or outlined. A simple curve has no outline and is generally thin. An outline curve is more complex and can have an outline and has no limit on the width. By default, curves are outlined.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_line" kindref="compound">gf::Line</ref>, <ref refid="classgf_1_1_quadratic_bezier_curve" kindref="compound">gf::QuadraticBezierCurve</ref>, <ref refid="classgf_1_1_cubic_bezier_curve" kindref="compound">gf::CubicBezierCurve</ref>, <ref refid="classgf_1_1_compound_curve" kindref="compound">gf::CompoundCurve</ref> </para></simplesect>
+
+<h3>Description</h3>
+<p><para>A curve is a one dimension object. </para></p>
+<p><para>A curve is similar to a shape but for one dimension objects like lines, <ulink url="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves</ulink>, or compound curves.</para><para>A curve can be simple or outlined. A simple curve has no outline and is generally thin. An outline curve is more complex and can have an outline and has no limit on the width. By default, curves are outlined.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_line" kindref="compound">gf::Line</ref>, <ref refid="classgf_1_1_quadratic_bezier_curve" kindref="compound">gf::QuadraticBezierCurve</ref>, <ref refid="classgf_1_1_cubic_bezier_curve" kindref="compound">gf::CubicBezierCurve</ref>, <ref refid="classgf_1_1_compound_curve" kindref="compound">gf::CompoundCurve</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+        </td>
+        <td class="col-md-4"><a href="#">Type</a> 
+            <br><span><para>The type of the curve. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Curve</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setType</a> (Type type)
+            <br><span><para>Set the type of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Type
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getType</a> () const noexcept
+            <br><span><para>Return the type of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setColor</a> (const Color4f &color)
+            <br><span><para>Set the fill color of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getColor</a> () const
+            <br><span><para>Get the fill color of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setWidth</a> (float width)
+            <br><span><para>Set the width of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getWidth</a> () const
+            <br><span><para>Get the width of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setOutlineColor</a> (const Color4f &color)
+            <br><span><para>Set the outline color of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Color4f&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getOutlineColor</a> () const
+            <br><span><para>Get the outline color of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setOutlineThickness</a> (float thickness)
+            <br><span><para>Set the thickness of the curve's outline. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            float
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getOutlineThickness</a> () const
+            <br><span><para>Get the outline thickness of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            std::size_t
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPointCount</a> () const =0
+            <br><span><para>Get the total number of points of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            Vector2f
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const =0
+            <br><span><para>Get a point of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            RectF
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getLocalBounds</a> () const
+            <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
+            <br><span><para>Set the anchor origin of the entity. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            VertexBuffer
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">commitGeometry</a> () const
+            <br><span><para>Create a buffer with the current geometry. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            VertexBuffer
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">commitOutlineGeometry</a> () const
+            <br><span><para>Create a buffer with the current outline geometry. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states)
+            <br><span><para>Draw the object to a render target. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">updateGeometry</a> ()
+            <br><span><para>Recompute the internal geometry of the curve. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setClosed</a> (bool closed=true)
+            <br><span><para>Set the curve closed. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Type</a> 
-                        <br><span><para>The type of the curve. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Curve</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setType</a> (Type type)
-                        <br><span><para>Set the type of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Type
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getType</a> () const noexcept
-                        <br><span><para>Return the type of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setColor</a> (const Color4f &color)
-                        <br><span><para>Set the fill color of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getColor</a> () const
-                        <br><span><para>Get the fill color of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setWidth</a> (float width)
-                        <br><span><para>Set the width of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getWidth</a> () const
-                        <br><span><para>Get the width of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setOutlineColor</a> (const Color4f &color)
-                        <br><span><para>Set the outline color of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Color4f&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getOutlineColor</a> () const
-                        <br><span><para>Get the outline color of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setOutlineThickness</a> (float thickness)
-                        <br><span><para>Set the thickness of the curve's outline. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        float
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getOutlineThickness</a> () const
-                        <br><span><para>Get the outline thickness of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        std::size_t
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPointCount</a> () const =0
-                        <br><span><para>Get the total number of points of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        Vector2f
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const =0
-                        <br><span><para>Get a point of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        RectF
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getLocalBounds</a> () const
-                        <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
-                        <br><span><para>Set the anchor origin of the entity. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        VertexBuffer
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">commitGeometry</a> () const
-                        <br><span><para>Create a buffer with the current geometry. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        VertexBuffer
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">commitOutlineGeometry</a> () const
-                        <br><span><para>Create a buffer with the current outline geometry. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states)
-                        <br><span><para>Draw the object to a render target. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">updateGeometry</a> ()
-                        <br><span><para>Recompute the internal geometry of the curve. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setClosed</a> (bool closed=true)
-                        <br><span><para>Set the curve closed. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Heightmap &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,444 +785,462 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::Heightmap Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Heightmap</li>
-            </ol>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::Heightmap</li>
+</ol>
 
-            
-            <h3>Description</h3>
-            <p><para>A heightmap. </para></p>
-            <p><para><simplesect kind="see"><para><ref refid="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" kindref="member">gf::midpointDisplacement2D()</ref>, <ref refid="group__core_1ga224a9e63967d8b82789bdc3c87797c26" kindref="member">gf::diamondSquare2D()</ref> </para></simplesect>
+
+<h3>Description</h3>
+<p><para>A heightmap. </para></p>
+<p><para><simplesect kind="see"><para><ref refid="group__core_1ga00bbf9120e2ef9f449e55547a0e41324" kindref="member">gf::midpointDisplacement2D()</ref>, <ref refid="group__core_1ga224a9e63967d8b82789bdc3c87797c26" kindref="member">gf::diamondSquare2D()</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4>Shaping</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">normalize</a> (double min=0.0, double max=1.0)
+            <br><span><para>Normalize the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">addHill</a> (Vector2d center, double radius, double height)
+            <br><span><para>Add a hill to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">digHill</a> (Vector2d center, double radius, double height)
+            <br><span><para>Dig a hill in the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">addNoise</a> (Noise2D &noise, double scale=1.0)
+            <br><span><para>Add a noise to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">addValue</a> (double value)
+            <br><span><para>Add a constant to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">scale</a> (double value)
+            <br><span><para>Scale the values of the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clamp</a> (double min=0.0, double max=1.0)
+            <br><span><para>Clamp the values of the heightmap. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Erosion</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            double
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSlope</a> (Vector2i position) const
+            <br><span><para>Compute the slope at a position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">thermalErosion</a> (unsigned iterations, double talus, double fraction)
+            <br><span><para>Apply thermal erosion to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">hydraulicErosion</a> (unsigned iterations, double rainAmount, double solubility, double evaporation, double capacity)
+            <br><span><para>Apply hydraulic erosision to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">fastErosion</a> (unsigned iterations, double talus, double fraction)
+            <br><span><para>Apply fast erosion to the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            double
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getErosionScore</a> () const
+            <br><span><para>Compute the erosion score for the heightmap. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Export</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Heightmap
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">subMap</a> (RectI area) const
+            <br><span><para>Get a sub-map of the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Image
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">copyToGrayscaleImage</a> () const
+            <br><span><para>Export to a grayscale image. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Image
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">copyToColoredImage</a> (const ColorRamp &ramp, double waterLevel=0.5, Render render=Render::Colored) const
+            <br><span><para>Export to a colored image. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Render</a> 
+            <br><span><para>Rendering mode. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Heightmap</a> (Vector2i size)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2i
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const
+            <br><span><para>Get the size of the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">reset</a> ()
+            <br><span><para>Reset the heightmap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            double
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getValue</a> (Vector2i position) const
+            <br><span><para>Get the value at the specified position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setValue</a> (Vector2i position, double value)
+            <br><span><para>Set the value at the specified position. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            std::tuple<double,
+            
+            
+            
+            double>
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getMinMax</a> () const
+            <br><span><para>Get the minimum and maximum of the heightmap. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Shaping</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">normalize</a> (double min=0.0, double max=1.0)
-                        <br><span><para>Normalize the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">addHill</a> (Vector2d center, double radius, double height)
-                        <br><span><para>Add a hill to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">digHill</a> (Vector2d center, double radius, double height)
-                        <br><span><para>Dig a hill in the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">addNoise</a> (Noise2D &noise, double scale=1.0)
-                        <br><span><para>Add a noise to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">addValue</a> (double value)
-                        <br><span><para>Add a constant to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">scale</a> (double value)
-                        <br><span><para>Scale the values of the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clamp</a> (double min=0.0, double max=1.0)
-                        <br><span><para>Clamp the values of the heightmap. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Erosion</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        double
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSlope</a> (Vector2i position) const
-                        <br><span><para>Compute the slope at a position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">thermalErosion</a> (unsigned iterations, double talus, double fraction)
-                        <br><span><para>Apply thermal erosion to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">hydraulicErosion</a> (unsigned iterations, double rainAmount, double solubility, double evaporation, double capacity)
-                        <br><span><para>Apply hydraulic erosision to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">fastErosion</a> (unsigned iterations, double talus, double fraction)
-                        <br><span><para>Apply fast erosion to the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        double
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getErosionScore</a> () const
-                        <br><span><para>Compute the erosion score for the heightmap. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Export</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Heightmap
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">subMap</a> (RectI area) const
-                        <br><span><para>Get a sub-map of the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Image
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">copyToGrayscaleImage</a> () const
-                        <br><span><para>Export to a grayscale image. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Image
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">copyToColoredImage</a> (const ColorRamp &ramp, double waterLevel=0.5, Render render=Render::Colored) const
-                        <br><span><para>Export to a colored image. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Render</a> 
-                        <br><span><para>Rendering mode. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Heightmap</a> (Vector2i size)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2i
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const
-                        <br><span><para>Get the size of the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">reset</a> ()
-                        <br><span><para>Reset the heightmap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        double
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getValue</a> (Vector2i position) const
-                        <br><span><para>Get the value at the specified position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setValue</a> (Vector2i position, double value)
-                        <br><span><para>Set the value at the specified position. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        std::tuple<double,
-                        
-                        
-                        
-                        double>
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getMinMax</a> () const
-                        <br><span><para>Get the minimum and maximum of the heightmap. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

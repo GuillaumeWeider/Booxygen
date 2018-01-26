@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::BareTexture &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,393 +785,411 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::BareTexture Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::BareTexture</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>An image that lives in the graphic memory that can be used for drawing. </para></p>
-            <p><para><ref refid="classgf_1_1_bare_texture" kindref="compound">gf::BareTexture</ref> stores pixels that can be drawn, with a sprite for example. A texture lives in the graphics card memory, therefore it is very fast to draw a texture to a render target, or copy a render target to a texture (the graphics card can access both directly).</para><para>Being stored in the graphics card memory has some drawbacks. A texture cannot be manipulated as freely as a <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, you need to prepare the pixels first and then upload them to the texture in a single operation (see <ref refid="classgf_1_1_bare_texture_1aa601abc5feec107d624fba1fe867d484" kindref="member">BareTexture::update()</ref>).</para><para><ref refid="classgf_1_1_bare_texture" kindref="compound">gf::BareTexture</ref> can handle two types of texture:</para><para><itemizedlist>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::BareTexture Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::BareTexture</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>An image that lives in the graphic memory that can be used for drawing. </para></p>
+<p><para><ref refid="classgf_1_1_bare_texture" kindref="compound">gf::BareTexture</ref> stores pixels that can be drawn, with a sprite for example. A texture lives in the graphics card memory, therefore it is very fast to draw a texture to a render target, or copy a render target to a texture (the graphics card can access both directly).</para><para>Being stored in the graphics card memory has some drawbacks. A texture cannot be manipulated as freely as a <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref>, you need to prepare the pixels first and then upload them to the texture in a single operation (see <ref refid="classgf_1_1_bare_texture_1aa601abc5feec107d624fba1fe867d484" kindref="member">BareTexture::update()</ref>).</para><para><ref refid="classgf_1_1_bare_texture" kindref="compound">gf::BareTexture</ref> can handle two types of texture:</para><para><itemizedlist>
 <listitem><para>colored texture that stores RGBA channels (see <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>)</para></listitem><listitem><para>alpha texture that stores a single alpha channel (see <ref refid="classgf_1_1_alpha_texture" kindref="compound">gf::AlphaTexture</ref>)</para></listitem></itemizedlist>
 </para><para>Generally, you do not manipulate a <ref refid="classgf_1_1_bare_texture" kindref="compound">gf::BareTexture</ref> directly but you can use a <ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>.</para><para><simplesect kind="see"><para><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref>, <ref refid="classgf_1_1_alpha_texture" kindref="compound">gf::AlphaTexture</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+        </td>
+        <td class="col-md-4"><a href="#">Format</a> 
+            <br><span><para>Format of the texture. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BareTexture</a> (Format format)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">~BareTexture</a> ()
+            <br><span><para>Destructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BareTexture</a> (const BareTexture &)=delete
+            <br><span><para>Deleted copy constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            BareTexture&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (const BareTexture &)=delete
+            <br><span><para>Deleted copy assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">BareTexture</a> (BareTexture &&other)
+            <br><span><para>Move constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            BareTexture&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (BareTexture &&other)
+            <br><span><para>Move assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Format
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getFormat</a> () const
+            <br><span><para>Get the format of the texture. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            unsigned
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getName</a> () const
+            <br><span><para>Get the internal representation of the texture. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const
+            <br><span><para>Return the size of the texture. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setSmooth</a> (bool smooth=true)
+            <br><span><para>Enable or disable the smooth filter. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isSmooth</a> () const noexcept
+            <br><span><para>Check if the smooth filter is enabled or not. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setRepeated</a> (bool repeated=true)
+            <br><span><para>Enable or disable repeating. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isRepeated</a> () const noexcept
+            <br><span><para>Check if the texture is repeated or not. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">update</a> (const uint8_t *data)
+            <br><span><para>Update the whole texture from an array of pixels. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">update</a> (const uint8_t *data, const RectU &rect)
+            <br><span><para>Update a part of the texture from an array of pixels. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            RectF
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">computeTextureCoords</a> (const RectU &rect) const
+            <br><span><para>Compute normalized texture coordinates. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">generateMipmap</a> ()
+            <br><span><para>Generate a mipmap using the current texture data. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            static
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">bind</a> (const BareTexture *texture)
+            <br><span><para>Bind a texture for rendering. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *data)
+            <br><span><para>Create the texture. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Format</a> 
-                        <br><span><para>Format of the texture. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BareTexture</a> (Format format)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">~BareTexture</a> ()
-                        <br><span><para>Destructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BareTexture</a> (const BareTexture &)=delete
-                        <br><span><para>Deleted copy constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        BareTexture&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (const BareTexture &)=delete
-                        <br><span><para>Deleted copy assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">BareTexture</a> (BareTexture &&other)
-                        <br><span><para>Move constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        BareTexture&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (BareTexture &&other)
-                        <br><span><para>Move assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Format
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getFormat</a> () const
-                        <br><span><para>Get the format of the texture. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        unsigned
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getName</a> () const
-                        <br><span><para>Get the internal representation of the texture. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const
-                        <br><span><para>Return the size of the texture. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setSmooth</a> (bool smooth=true)
-                        <br><span><para>Enable or disable the smooth filter. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isSmooth</a> () const noexcept
-                        <br><span><para>Check if the smooth filter is enabled or not. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setRepeated</a> (bool repeated=true)
-                        <br><span><para>Enable or disable repeating. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isRepeated</a> () const noexcept
-                        <br><span><para>Check if the texture is repeated or not. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">update</a> (const uint8_t *data)
-                        <br><span><para>Update the whole texture from an array of pixels. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">update</a> (const uint8_t *data, const RectU &rect)
-                        <br><span><para>Update a part of the texture from an array of pixels. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        RectF
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">computeTextureCoords</a> (const RectU &rect) const
-                        <br><span><para>Compute normalized texture coordinates. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">generateMipmap</a> ()
-                        <br><span><para>Generate a mipmap using the current texture data. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        static
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">bind</a> (const BareTexture *texture)
-                        <br><span><para>Bind a texture for rendering. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *data)
-                        <br><span><para>Create the texture. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

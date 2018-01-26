@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::UI &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::UI Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::UI</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>Context for an immediate mode graphical interface. </para></p>
-            <p><para>When building a graphical interfaces, you have basically two choices: either the retained mode where you build a hierarchy of widgets, or the immediate mode where widgets are built from function calls. Choosing the best mode between these two may be <ulink url="http://gamedev.stackexchange.com/questions/24103/immediate-gui-yae-or-nay">controversial</ulink>. gf offers an immediate mode graphical interface through this class.</para><para>The immediate mode graphical interface (or imgui) of gf is based on <ulink url="https://github.com/vurtun/nuklear">Nuklear</ulink>, a C library with the same purpose. gf does not provide (yet?) all the features of Nuklear, but a fair amount of the main features. Nuklear is totally abstracted in gf so you won't see any interface from Nuklear and you won't be able to interact directly with Nuklear. If you need a feature that is not implemented yet, just ask.</para><para>This imgui library can be used to create tools for the game developpers. It's easy and quick to build a functional interface with an imgui library. You can see some examples in gf itself. You can also use this library to build in-game interfaces, even if it's not its primary purpose. If your game is heavily based on a graphical interface, it may be a good option.</para><para><heading level="1">Creating a context</heading>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::UI Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::UI</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>Context for an immediate mode graphical interface. </para></p>
+<p><para>When building a graphical interfaces, you have basically two choices: either the retained mode where you build a hierarchy of widgets, or the immediate mode where widgets are built from function calls. Choosing the best mode between these two may be <ulink url="http://gamedev.stackexchange.com/questions/24103/immediate-gui-yae-or-nay">controversial</ulink>. gf offers an immediate mode graphical interface through this class.</para><para>The immediate mode graphical interface (or imgui) of gf is based on <ulink url="https://github.com/vurtun/nuklear">Nuklear</ulink>, a C library with the same purpose. gf does not provide (yet?) all the features of Nuklear, but a fair amount of the main features. Nuklear is totally abstracted in gf so you won't see any interface from Nuklear and you won't be able to interact directly with Nuklear. If you need a feature that is not implemented yet, just ask.</para><para>This imgui library can be used to create tools for the game developpers. It's easy and quick to build a functional interface with an imgui library. You can see some examples in gf itself. You can also use this library to build in-game interfaces, even if it's not its primary purpose. If your game is heavily based on a graphical interface, it may be a good option.</para><para><heading level="1">Creating a context</heading>
 </para><para>An instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> is a context for all the windows that will be created. You must provide a font and a character size that will be used in the interface. Generally, you create the instance of <ref refid="classgf_1_1_u_i" kindref="compound">gf::UI</ref> at the beginning of your application and then you use this instance throughout your application.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><ref refid="classgf_1_1_font" kindref="compound">gf::Font</ref><sp/>font;</highlight></codeline>
 <codeline><highlight class="normal"/></codeline>
 <codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!font.<ref refid="classgf_1_1_font_1aa7d23688c81a7c31a5667547e1072501" kindref="member">loadFromFile</ref>(</highlight><highlight class="stringliteral">"font.ttf"</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
@@ -878,1586 +886,1595 @@
 </para><para>Widgets often manipulate a reference to a user-provided variable that represents the state of the widget. This way, you can pass directly your model variables to the graphical interface without duplicating the data. Some widgets return a boolean that indicates a state change. For example, a button returns true if it has been pressed.</para><para>The library also offers common graphical interface elements:<itemizedlist>
 <listitem><para><ulink url="https://en.wikipedia.org/wiki/Popover_%28GUI%29">popups</ulink>: <ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Combo_box">combo boxes</ulink>: <ref refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" kindref="member">combobox()</ref>, <ref refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" kindref="member">comboboxSeparator()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Context_menu">contextuals</ulink>: <ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Tooltip">tooltips</ulink>: <ref refid="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" kindref="member">tooltip()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Menu_28computing%29">menus</ulink>: <ref refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" kindref="member">menubarBegin()</ref>, <ref refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" kindref="member">menubarEnd()</ref></para></listitem></itemizedlist>
 </para><para>Many of these elements have a begin/end API. The end part must be called if the begin part succeeded, i.e. returned true. Some elements offer a simplified version without begin/end for common cases. </para></p>
+
+
+
+
+
+
+<h4>Window</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">begin</a> (const std::string &title, const RectF &bounds, UIWindowFlags flags=None)
+            <br><span><para>Create a window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">end</a> ()
+            <br><span><para>Finish a window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            RectF
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">windowGetBounds</a> ()
+            <br><span><para>Get the window bounds. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Layout</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRowDynamic</a> (float height, int cols)
+            <br><span><para>Dynamic row with fixed column layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRowStatic</a> (float height, int itemWidth, int cols)
+            <br><span><para>Static row with fixed column layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRowBegin</a> (UILayout format, float height, int cols)
+            <br><span><para>Start an immediate mode custom column layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRowPush</a> (float width)
+            <br><span><para>Specify the width of the next column. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRowEnd</a> ()
+            <br><span><para>Finish an immediate mode custom column layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">layoutRow</a> (UILayout format, float height, ArrayRef< float > ratio)
+            <br><span><para>Array-based custom column layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">separator</a> (float height)
+            <br><span><para>An empty separator. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Layout: Group</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">groupBegin</a> (const std::string &title, UIWindowFlags flags=None)
+            <br><span><para>Start a group. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">groupEnd</a> ()
+            <br><span><para>Finish a group. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">groupScrolledBegin</a> (UIScroll &scroll, const std::string &title, UIWindowFlags flags=None)
+            <br><span><para>Start a scrolled group. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">groupScrolledEnd</a> ()
+            <br><span><para>Finish a scrolled group. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Layout: Tree</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">treePush</a> (UITree type, const std::string &title, UICollapse &state)
+            <br><span><para>Start a tree layout. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">treePop</a> ()
+            <br><span><para>Finish a tree layout. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Labels</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">label</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A simple label with text. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">labelColored</a> (const Color4f &color, StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A label with colored text. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">labelWrap</a> (StringRef title)
+            <br><span><para>A simple label that can wrap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">labelWrapColored</a> (const Color4f &color, StringRef title)
+            <br><span><para>A label with colored text that can wrap. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">image</a> (const Texture &texture, const RectF &textureRect)
+            <br><span><para>An image. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Buttons</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonSetBehavior</a> (UIButtonBehavior behavior)
+            <br><span><para>Change the behavior of buttons. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonPushBehavior</a> (UIButtonBehavior behavior)
+            <br><span><para>Push a new behavior of buttons. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonPopBehavior</a> ()
+            <br><span><para>Pop the previous behavior of buttons. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonLabel</a> (StringRef title)
+            <br><span><para>A button with a centered label. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonColor</a> (const Color4f &color)
+            <br><span><para>A button with a color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonSymbol</a> (UISymbol symbol)
+            <br><span><para>A button with a symbol. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">buttonSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A button with a symbol and a centered label. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Checkbox</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">checkbox</a> (StringRef title, bool &active)
+            <br><span><para>A checkbox with a title. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">checkboxFlags</a> (StringRef title, unsigned &flags, unsigned value)
+            <br><span><para>A checkbox with a title for flags. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Radio</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">option</a> (StringRef title, bool active)
+            <br><span><para>A radio button without state. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">radio</a> (StringRef title, bool &active)
+            <br><span><para>A radio button with a reference state. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Selectable</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">selectableLabel</a> (StringRef title, UIAlignment align, bool &value)
+            <br><span><para>A selectable label. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Slider</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">sliderFloat</a> (float min, float &val, float max, float step)
+            <br><span><para>A slider for a float value. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">sliderInt</a> (int min, int &val, int max, int step)
+            <br><span><para>A slider for an int value. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Progressbar</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">progress</a> (std::size_t &current, std::size_t max, UIProgress modifyable=UIProgress::Modifyable)
+            <br><span><para>A progress bar. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Color picker</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">colorPicker</a> (Color4f &color)
+            <br><span><para>A color picker. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: Property</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">propertyInt</a> (const std::string &name, int min, int &val, int max, int step, float incPerPixel)
+            <br><span><para>A property for an integer. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">propertyFloat</a> (const std::string &name, float min, float &val, float max, float step, float incPerPixel)
+            <br><span><para>A property for a float. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">propertyDouble</a> (const std::string &name, double min, double &val, double max, double step, float incPerPixel)
+            <br><span><para>A property for a double. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Widgets: TextEdit</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            UIEditEventFlags
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">edit</a> (UIEditFlags flags, BufferRef< char > buffer, std::size_t &length, UIEditFilter filter=UIEditFilter::Default)
+            <br><span></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Dialogs</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">fileSelector</a> (UIBrowser &browser, const std::string &title, const RectF &bounds)
+            <br><span><para>File selector. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Popups</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">popupBegin</a> (UIPopup type, const std::string &title, UIWindowFlags flags, const RectF &bounds)
+            <br><span><para>Start a popup window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">popupClose</a> ()
+            <br><span><para>Close a popup window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">popupEnd</a> ()
+            <br><span><para>Finish a popup window. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Combo box</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">combobox</a> (const std::vector< std::string > &items, int &selected, int itemHeight, Vector2f size)
+            <br><span><para>A simple combo box with a list of item. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboboxSeparator</a> (const std::string &itemsSeparatedBySeparator, char separator, int &selected, int itemHeight, Vector2f size)
+            <br><span><para>A simple combo box with a string and a separator. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboBeginLabel</a> (StringRef selected, Vector2f size)
+            <br><span><para>Start a combo box with a label. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboBeginColor</a> (const Color4f &color, Vector2f size)
+            <br><span><para>Start a combo box with a color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboBeginSymbol</a> (UISymbol symbol, Vector2f size)
+            <br><span><para>Start a combo box with a symbol. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboBeginSymbolLabel</a> (UISymbol symbol, StringRef selected, Vector2f size)
+            <br><span><para>Start a combo box with a symbol and a label. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A label inside the combo box. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A symbol and a label inside the combo box. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboClose</a> ()
+            <br><span><para>Close a combo box. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">comboEnd</a> ()
+            <br><span><para>Finish a combo box. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Contextual</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contextualBegin</a> (UIWindowFlags flags, Vector2f size, const RectF &triggerBounds)
+            <br><span><para>Start a contextual window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contextualItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A label inside the contextual window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contextualItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A symbol and a label inside the contextual window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contextualClose</a> ()
+            <br><span><para>Close the contextual window. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">contextualEnd</a> ()
+            <br><span><para>Finish the contextual window. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Tooltip</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">tooltip</a> (const std::string &text)
+            <br><span><para>A simple tooltip with a text. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">tooltipBegin</a> (float width)
+            <br><span><para>Start a tooltip. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">tooltipEnd</a> ()
+            <br><span><para>Finish a tooltip. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Menu</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menubarBegin</a> ()
+            <br><span><para>Start a menu bar. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menubarEnd</a> ()
+            <br><span><para>Finish a menu bar. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuBeginLabel</a> (StringRef title, UIAlignment align, Vector2f size)
+            <br><span><para>Start a menu with a label. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuBeginSymbol</a> (const std::string &id, UISymbol symbol, Vector2f size)
+            <br><span><para>Start a menu with a symbol. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuBeginSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align, Vector2f size)
+            <br><span><para>Start a menu with a symbol and a label. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A label inside the menu. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
+            <br><span><para>A symbol and a label inside the menu. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuClose</a> ()
+            <br><span><para>Close a menu. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">menuEnd</a> ()
+            <br><span><para>Finish a menu. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Utilities</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            RectF
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getWidgetBounds</a> ()
+            <br><span><para>Get the current widget bounds. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isWidgetHovered</a> ()
+            <br><span><para>Check if the widget is hovered by the mouse. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">spacing</a> (int cols)
+            <br><span><para>Create a horizontal spacing to fill some columns. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Style</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setPredefinedStyle</a> (UIPredefinedStyle style)
+            <br><span><para>Set a predefined style for all the windows and the widgets. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            unsigned
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">DefaultCharacterSize</a> 
+            <br><span><para>The default size for the font. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">UI</a> (Font &font, unsigned characterSize=DefaultCharacterSize)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">~UI</a> ()
+            <br><span><para>Destructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">UI</a> (const UI &)=delete
+            <br><span><para>Deleted copy constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            UI&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (const UI &)=delete
+            <br><span><para>Deleted copy assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">UI</a> (UI &&other)
+            <br><span><para>Move constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            UI&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (UI &&other)
+            <br><span><para>Move assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">processEvent</a> (const Event &event)
+            <br><span><para>Update the internal state with an event. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
+            <br><span><para>Draw the object to a render target. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Window</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">begin</a> (const std::string &title, const RectF &bounds, UIWindowFlags flags=None)
-                        <br><span><para>Create a window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">end</a> ()
-                        <br><span><para>Finish a window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        RectF
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">windowGetBounds</a> ()
-                        <br><span><para>Get the window bounds. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Layout</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRowDynamic</a> (float height, int cols)
-                        <br><span><para>Dynamic row with fixed column layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRowStatic</a> (float height, int itemWidth, int cols)
-                        <br><span><para>Static row with fixed column layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRowBegin</a> (UILayout format, float height, int cols)
-                        <br><span><para>Start an immediate mode custom column layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRowPush</a> (float width)
-                        <br><span><para>Specify the width of the next column. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRowEnd</a> ()
-                        <br><span><para>Finish an immediate mode custom column layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">layoutRow</a> (UILayout format, float height, ArrayRef< float > ratio)
-                        <br><span><para>Array-based custom column layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">separator</a> (float height)
-                        <br><span><para>An empty separator. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Layout: Group</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">groupBegin</a> (const std::string &title, UIWindowFlags flags=None)
-                        <br><span><para>Start a group. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">groupEnd</a> ()
-                        <br><span><para>Finish a group. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">groupScrolledBegin</a> (UIScroll &scroll, const std::string &title, UIWindowFlags flags=None)
-                        <br><span><para>Start a scrolled group. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">groupScrolledEnd</a> ()
-                        <br><span><para>Finish a scrolled group. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Layout: Tree</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">treePush</a> (UITree type, const std::string &title, UICollapse &state)
-                        <br><span><para>Start a tree layout. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">treePop</a> ()
-                        <br><span><para>Finish a tree layout. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Labels</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">label</a> (StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A simple label with text. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">labelColored</a> (const Color4f &color, StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A label with colored text. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">labelWrap</a> (StringRef title)
-                        <br><span><para>A simple label that can wrap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">labelWrapColored</a> (const Color4f &color, StringRef title)
-                        <br><span><para>A label with colored text that can wrap. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">image</a> (const Texture &texture, const RectF &textureRect)
-                        <br><span><para>An image. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Buttons</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonSetBehavior</a> (UIButtonBehavior behavior)
-                        <br><span><para>Change the behavior of buttons. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonPushBehavior</a> (UIButtonBehavior behavior)
-                        <br><span><para>Push a new behavior of buttons. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonPopBehavior</a> ()
-                        <br><span><para>Pop the previous behavior of buttons. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonLabel</a> (StringRef title)
-                        <br><span><para>A button with a centered label. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonColor</a> (const Color4f &color)
-                        <br><span><para>A button with a color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonSymbol</a> (UISymbol symbol)
-                        <br><span><para>A button with a symbol. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">buttonSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A button with a symbol and a centered label. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Checkbox</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">checkbox</a> (StringRef title, bool &active)
-                        <br><span><para>A checkbox with a title. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">checkboxFlags</a> (StringRef title, unsigned &flags, unsigned value)
-                        <br><span><para>A checkbox with a title for flags. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Radio</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">option</a> (StringRef title, bool active)
-                        <br><span><para>A radio button without state. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">radio</a> (StringRef title, bool &active)
-                        <br><span><para>A radio button with a reference state. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Selectable</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">selectableLabel</a> (StringRef title, UIAlignment align, bool &value)
-                        <br><span><para>A selectable label. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Slider</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">sliderFloat</a> (float min, float &val, float max, float step)
-                        <br><span><para>A slider for a float value. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">sliderInt</a> (int min, int &val, int max, int step)
-                        <br><span><para>A slider for an int value. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Progressbar</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">progress</a> (std::size_t &current, std::size_t max, UIProgress modifyable=UIProgress::Modifyable)
-                        <br><span><para>A progress bar. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Color picker</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">colorPicker</a> (Color4f &color)
-                        <br><span><para>A color picker. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: Property</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">propertyInt</a> (const std::string &name, int min, int &val, int max, int step, float incPerPixel)
-                        <br><span><para>A property for an integer. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">propertyFloat</a> (const std::string &name, float min, float &val, float max, float step, float incPerPixel)
-                        <br><span><para>A property for a float. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">propertyDouble</a> (const std::string &name, double min, double &val, double max, double step, float incPerPixel)
-                        <br><span><para>A property for a double. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Widgets: TextEdit</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        UIEditEventFlags
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">edit</a> (UIEditFlags flags, BufferRef< char > buffer, std::size_t &length, UIEditFilter filter=UIEditFilter::Default)
-                        <br><span></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Dialogs</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">fileSelector</a> (UIBrowser &browser, const std::string &title, const RectF &bounds)
-                        <br><span><para>File selector. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Popups</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">popupBegin</a> (UIPopup type, const std::string &title, UIWindowFlags flags, const RectF &bounds)
-                        <br><span><para>Start a popup window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">popupClose</a> ()
-                        <br><span><para>Close a popup window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">popupEnd</a> ()
-                        <br><span><para>Finish a popup window. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Combo box</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">combobox</a> (const std::vector< std::string > &items, int &selected, int itemHeight, Vector2f size)
-                        <br><span><para>A simple combo box with a list of item. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboboxSeparator</a> (const std::string &itemsSeparatedBySeparator, char separator, int &selected, int itemHeight, Vector2f size)
-                        <br><span><para>A simple combo box with a string and a separator. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboBeginLabel</a> (StringRef selected, Vector2f size)
-                        <br><span><para>Start a combo box with a label. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboBeginColor</a> (const Color4f &color, Vector2f size)
-                        <br><span><para>Start a combo box with a color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboBeginSymbol</a> (UISymbol symbol, Vector2f size)
-                        <br><span><para>Start a combo box with a symbol. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboBeginSymbolLabel</a> (UISymbol symbol, StringRef selected, Vector2f size)
-                        <br><span><para>Start a combo box with a symbol and a label. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A label inside the combo box. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A symbol and a label inside the combo box. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboClose</a> ()
-                        <br><span><para>Close a combo box. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">comboEnd</a> ()
-                        <br><span><para>Finish a combo box. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Contextual</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contextualBegin</a> (UIWindowFlags flags, Vector2f size, const RectF &triggerBounds)
-                        <br><span><para>Start a contextual window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contextualItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A label inside the contextual window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contextualItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A symbol and a label inside the contextual window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contextualClose</a> ()
-                        <br><span><para>Close the contextual window. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">contextualEnd</a> ()
-                        <br><span><para>Finish the contextual window. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Tooltip</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">tooltip</a> (const std::string &text)
-                        <br><span><para>A simple tooltip with a text. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">tooltipBegin</a> (float width)
-                        <br><span><para>Start a tooltip. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">tooltipEnd</a> ()
-                        <br><span><para>Finish a tooltip. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Menu</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menubarBegin</a> ()
-                        <br><span><para>Start a menu bar. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menubarEnd</a> ()
-                        <br><span><para>Finish a menu bar. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuBeginLabel</a> (StringRef title, UIAlignment align, Vector2f size)
-                        <br><span><para>Start a menu with a label. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuBeginSymbol</a> (const std::string &id, UISymbol symbol, Vector2f size)
-                        <br><span><para>Start a menu with a symbol. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuBeginSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align, Vector2f size)
-                        <br><span><para>Start a menu with a symbol and a label. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuItemLabel</a> (StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A label inside the menu. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuItemSymbolLabel</a> (UISymbol symbol, StringRef title, UIAlignment align=UIAlignment::Left)
-                        <br><span><para>A symbol and a label inside the menu. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuClose</a> ()
-                        <br><span><para>Close a menu. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">menuEnd</a> ()
-                        <br><span><para>Finish a menu. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Utilities</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        RectF
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getWidgetBounds</a> ()
-                        <br><span><para>Get the current widget bounds. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isWidgetHovered</a> ()
-                        <br><span><para>Check if the widget is hovered by the mouse. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">spacing</a> (int cols)
-                        <br><span><para>Create a horizontal spacing to fill some columns. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Style</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setPredefinedStyle</a> (UIPredefinedStyle style)
-                        <br><span><para>Set a predefined style for all the windows and the widgets. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        unsigned
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">DefaultCharacterSize</a> 
-                        <br><span><para>The default size for the font. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">UI</a> (Font &font, unsigned characterSize=DefaultCharacterSize)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">~UI</a> ()
-                        <br><span><para>Destructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">UI</a> (const UI &)=delete
-                        <br><span><para>Deleted copy constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        UI&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (const UI &)=delete
-                        <br><span><para>Deleted copy assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">UI</a> (UI &&other)
-                        <br><span><para>Move constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        UI&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (UI &&other)
-                        <br><span><para>Move assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">processEvent</a> (const Event &event)
-                        <br><span><para>Update the internal state with an event. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
-                        <br><span><para>Draw the object to a render target. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

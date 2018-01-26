@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::TileLayer &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,435 +785,453 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::TileLayer Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::TileLayer</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>A tile layer. </para></p>
-            <p><para>A tile layer represents a map made of tiles. <ref refid="classgf_1_1_tile_layer" kindref="compound">gf::TileLayer</ref> makes it easy to draw a tile map.</para><para>A tile layer is associated to a single tileset. A tileset is a texture that contains all the tiles, ordered in a grid. The tileset has several parameters that are inspired by the parameters in <ulink url="http://www.mapeditor.org/">Tiled</ulink>:</para><para><itemizedlist>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::TileLayer Class Reference</h2>
+<ol class="breadcrumb">
+    <li><a href="#">***</a></li>
+    <li class="active">gf::TileLayer</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>A tile layer. </para></p>
+<p><para>A tile layer represents a map made of tiles. <ref refid="classgf_1_1_tile_layer" kindref="compound">gf::TileLayer</ref> makes it easy to draw a tile map.</para><para>A tile layer is associated to a single tileset. A tileset is a texture that contains all the tiles, ordered in a grid. The tileset has several parameters that are inspired by the parameters in <ulink url="http://www.mapeditor.org/">Tiled</ulink>:</para><para><itemizedlist>
 <listitem><para>tile size: the size of a tile (<computeroutput><ref refid="classgf_1_1_tile_layer_1ae2e0c092c754f17e8dd11a22b60e8b4b" kindref="member">setTileSize()</ref></computeroutput>, <computeroutput><ref refid="classgf_1_1_tile_layer_1af2e7a54e60ed78fca4002dae560986df" kindref="member">getTileSize()</ref></computeroutput>)</para></listitem><listitem><para>margin: the margin around the tiles (<computeroutput><ref refid="classgf_1_1_tile_layer_1ad00e958c485bede01a6bf60fb7d7a0c5" kindref="member">setMargin()</ref></computeroutput>, <computeroutput><ref refid="classgf_1_1_tile_layer_1a266841d84f28d6539b11923779b21f14" kindref="member">getMargin()</ref></computeroutput>), default: 0</para></listitem><listitem><para>spacing: the spacing between the tiles (<computeroutput><ref refid="classgf_1_1_tile_layer_1ada3dc8bfaed30ab7d25aae913f2ec56f" kindref="member">setSpacing()</ref></computeroutput>, <computeroutput><ref refid="classgf_1_1_tile_layer_1aa3c35609ea24fee38c9a90e82f2078d7" kindref="member">getSpacing()</ref></computeroutput>), default: 0</para></listitem></itemizedlist>
 </para><para>The tile layer is given with an array of indices. Each index correspond to a tile in the tileset. Tile 0 correspond to the tile at the top left in the tileset. Then tile are numbered from left to right, and then from top to bottom. If a tile is not present in the tile layer, the constant <ref refid="classgf_1_1_tile_layer_1a9ea62456a01e46446207cf5ae73a3cf4" kindref="member">gf::TileLayer::NoTile</ref> can be used. </para></p>
+
+
+
+
+
+
+<h4>Tileset parameters</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setTexture</a> (const Texture &texture)
+            <br><span><para>Change the source texture of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            Texture&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTexture</a> () const
+            <br><span><para>Get the source texture of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">hasTexture</a> () const
+            <br><span><para>Check if a texture is set. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">unsetTexture</a> ()
+            <br><span><para>Unset the source texture of the tile layer. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setTileSize</a> (Vector2u tileSize)
+            <br><span><para>Set the tile size in the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTileSize</a> () const
+            <br><span><para>Get the tile size in the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setMargin</a> (unsigned margin)
+            <br><span><para>Set the margin of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setMargin</a> (Vector2u margin)
+            <br><span><para>Set the margin of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getMargin</a> () const
+            <br><span><para>Get the margin of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setSpacing</a> (unsigned spacing)
+            <br><span><para>Set the spacing of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setSpacing</a> (Vector2u spacing)
+            <br><span><para>Set the spacing of the tileset. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSpacing</a> () const
+            <br><span><para>Get the spacing of the tileset. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Tile definition</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setBlockSize</a> (Vector2u blockSize)
+            <br><span><para>Set the block size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getBlockSize</a> () const
+            <br><span><para>Get the block size. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setTile</a> (Vector2u position, int tile)
+            <br><span><para>Set a tile. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getTile</a> (Vector2u position) const
+            <br><span><para>Get a tile. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clear</a> ()
+            <br><span><para>Remove all the tiles. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            int
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">NoTile</a> 
+            <br><span><para>A constant meaning that there is no tile. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">TileLayer</a> (Vector2u layerSize)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            VertexBuffer
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">commitGeometry</a> () const
+            <br><span><para>Create a buffer with the current geometry. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            virtual
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
+            <br><span><para>Draw the object to a render target. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Tileset parameters</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setTexture</a> (const Texture &texture)
-                        <br><span><para>Change the source texture of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        Texture&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTexture</a> () const
-                        <br><span><para>Get the source texture of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">hasTexture</a> () const
-                        <br><span><para>Check if a texture is set. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">unsetTexture</a> ()
-                        <br><span><para>Unset the source texture of the tile layer. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setTileSize</a> (Vector2u tileSize)
-                        <br><span><para>Set the tile size in the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTileSize</a> () const
-                        <br><span><para>Get the tile size in the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setMargin</a> (unsigned margin)
-                        <br><span><para>Set the margin of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setMargin</a> (Vector2u margin)
-                        <br><span><para>Set the margin of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getMargin</a> () const
-                        <br><span><para>Get the margin of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setSpacing</a> (unsigned spacing)
-                        <br><span><para>Set the spacing of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setSpacing</a> (Vector2u spacing)
-                        <br><span><para>Set the spacing of the tileset. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSpacing</a> () const
-                        <br><span><para>Get the spacing of the tileset. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Tile definition</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setBlockSize</a> (Vector2u blockSize)
-                        <br><span><para>Set the block size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getBlockSize</a> () const
-                        <br><span><para>Get the block size. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setTile</a> (Vector2u position, int tile)
-                        <br><span><para>Set a tile. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getTile</a> (Vector2u position) const
-                        <br><span><para>Get a tile. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clear</a> ()
-                        <br><span><para>Remove all the tiles. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        int
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">NoTile</a> 
-                        <br><span><para>A constant meaning that there is no tile. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">TileLayer</a> (Vector2u layerSize)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        VertexBuffer
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">commitGeometry</a> () const
-                        <br><span><para>Create a buffer with the current geometry. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        virtual
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
-                        <br><span><para>Draw the object to a render target. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
