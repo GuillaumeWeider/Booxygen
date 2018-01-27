@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::SquareMap &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,360 +785,378 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            
 
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
             <h2 class="page-header">gf::SquareMap Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::SquareMap</li>
-            </ol>
+<ol class="breadcrumb">
+    
+    <li class="active">gf::SquareMap</li>
+</ol>
 
-            
-            <h3>Description</h3>
-            <p><para>A square map. </para></p>
-            <p><para>A square map is a model of map where cells are organized in a square grid. This type of map is quite common in games. gf provides some useful algorithms related to square maps: field of vision, route finding.</para><para>A cell can be transparent and/or walkable. By default, all cells are neither transparent nor walkable i.e. they are walls. The transparent property of a cell is used to compute the field of vision. The walkable property of a cell is used to compute routes. A cell can be transparent and not walkable (e.g. lava or water), it can be walkable and not transparent (e.g. a secret passage).</para><para><simplesect kind="see"><para><ref refid="group__game_1gad82e9592419fd671caafe4af9b4f89e7" kindref="member">gf::CellProperty</ref> </para></simplesect>
+
+<h3>Description</h3>
+<p><para>A square map. </para></p>
+<p><para>A square map is a model of map where cells are organized in a square grid. This type of map is quite common in games. gf provides some useful algorithms related to square maps: field of vision, route finding.</para><para>A cell can be transparent and/or walkable. By default, all cells are neither transparent nor walkable i.e. they are walls. The transparent property of a cell is used to compute the field of vision. The walkable property of a cell is used to compute routes. A cell can be transparent and not walkable (e.g. lava or water), it can be walkable and not transparent (e.g. a secret passage).</para><para><simplesect kind="see"><para><ref refid="group__game_1gad82e9592419fd671caafe4af9b4f89e7" kindref="member">gf::CellProperty</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4>Cell properties</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setCell</a> (Vector2i pos, CellFlags flags)
+            <br><span><para>Set the properties of a cell. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clear</a> (CellFlags flags)
+            <br><span><para>Initialize the cells with some properties. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setTransparent</a> (Vector2i pos)
+            <br><span><para>Make a cell transparent. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isTransparent</a> (Vector2i pos) const
+            <br><span><para>Check if a cell is transparent. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setWalkable</a> (Vector2i pos)
+            <br><span><para>Make a cell walkable. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isWalkable</a> (Vector2i pos) const
+            <br><span><para>Check if a cell is walkable. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setEmpty</a> (Vector2i pos)
+            <br><span><para>Make a cell empty. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Field of Vision</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clearFieldOfVision</a> ()
+            <br><span><para>Make the whole map not visible. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">clearExplored</a> ()
+            <br><span><para>Make the whole map not explored. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">computeFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
+            <br><span><para>Compute a field of vision. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">computeLocalFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
+            <br><span><para>Compute a local field of vision. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isInFieldOfVision</a> (Vector2i pos) const
+            <br><span><para>Check if a cell is visible. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">isExplored</a> (Vector2i pos) const
+            <br><span><para>Check if a cell is explored. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Route</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            std::vector<Vector2i>
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">computeRoute</a> (Vector2i origin, Vector2i target, float diagonalCost=Sqrt2, Route algorithm=Route::AStar)
+            <br><span><para>Compute a route between two points. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">SquareMap</a> (Vector2i size)
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2i
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const
+            <br><span><para>Get the size of the map. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            PositionRange<int>
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getRange</a> () const
+            <br><span><para>Get a range of the positions of the map. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Cell properties</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setCell</a> (Vector2i pos, CellFlags flags)
-                        <br><span><para>Set the properties of a cell. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clear</a> (CellFlags flags)
-                        <br><span><para>Initialize the cells with some properties. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setTransparent</a> (Vector2i pos)
-                        <br><span><para>Make a cell transparent. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isTransparent</a> (Vector2i pos) const
-                        <br><span><para>Check if a cell is transparent. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setWalkable</a> (Vector2i pos)
-                        <br><span><para>Make a cell walkable. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isWalkable</a> (Vector2i pos) const
-                        <br><span><para>Check if a cell is walkable. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setEmpty</a> (Vector2i pos)
-                        <br><span><para>Make a cell empty. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Field of Vision</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clearFieldOfVision</a> ()
-                        <br><span><para>Make the whole map not visible. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">clearExplored</a> ()
-                        <br><span><para>Make the whole map not explored. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">computeFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
-                        <br><span><para>Compute a field of vision. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">computeLocalFieldOfVision</a> (Vector2i pos, int maxRadius=0, FieldOfVisionLimit limit=FieldOfVisionLimit::Included, FieldOfVision algorithm=FieldOfVision::Basic)
-                        <br><span><para>Compute a local field of vision. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isInFieldOfVision</a> (Vector2i pos) const
-                        <br><span><para>Check if a cell is visible. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">isExplored</a> (Vector2i pos) const
-                        <br><span><para>Check if a cell is explored. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Route</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        std::vector<Vector2i>
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">computeRoute</a> (Vector2i origin, Vector2i target, float diagonalCost=Sqrt2, Route algorithm=Route::AStar)
-                        <br><span><para>Compute a route between two points. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">SquareMap</a> (Vector2i size)
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2i
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const
-                        <br><span><para>Get the size of the map. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        PositionRange<int>
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getRange</a> () const
-                        <br><span><para>Get a range of the positions of the map. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

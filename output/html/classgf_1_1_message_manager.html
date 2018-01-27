@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::MessageManager &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::MessageManager Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::MessageManager</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>A message manager. </para></p>
-            <p><para>A message manager is responsible for passing messages synchronously between game entities. It relies on a variant of the <ulink url="https://en.wikipedia.org/wiki/Observer_pattern">observer pattern</ulink>. Some entities send messages (subclasses of <ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref> identified by their unique message type) to the message manager while some other entities listen to messages of a defined type through a message handler (<ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref>). As a consequence, there is very low <ulink url="https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">coupling</ulink> between entities.</para><para>Generally, you only need one message manager in a game. It is a good candidate for being a singleton (thanks to <ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref>).</para><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::MessageManager Class Reference</h2>
+<ol class="breadcrumb">
+    
+    <li class="active">gf::MessageManager</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>A message manager. </para></p>
+<p><para>A message manager is responsible for passing messages synchronously between game entities. It relies on a variant of the <ulink url="https://en.wikipedia.org/wiki/Observer_pattern">observer pattern</ulink>. Some entities send messages (subclasses of <ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref> identified by their unique message type) to the message manager while some other entities listen to messages of a defined type through a message handler (<ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref>). As a consequence, there is very low <ulink url="https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">coupling</ulink> between entities.</para><para>Generally, you only need one message manager in a game. It is a good candidate for being a singleton (thanks to <ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton</ref>).</para><para>
   <programlisting><codeline><highlight class="normal"><ref refid="classgf_1_1_singleton" kindref="compound">gf::Singleton&lt;gf::MessageManager&gt;</ref><sp/>gMessageManager;</highlight></codeline>
 <codeline><highlight class="normal"/></codeline>
 <codeline><highlight class="normal"/><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
@@ -809,226 +817,235 @@
 </programlisting>
 </para><para><simplesect kind="see"><para><ref refid="structgf_1_1_message" kindref="compound">gf::Message</ref>, <ref refid="group__game_1ga9b1ccf87c23efeaf78584eb75a631bcd" kindref="member">gf::MessageHandler</ref>, <ref refid="group__core_1ga375ce9d7d861b67c78398d51c1769410" kindref="member">gf::Id</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+<h4>Registering an handler</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            MessageHandlerId
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">registerHandler</a> (Id type, MessageHandler handler)
+            <br><span><para>Register a message handler for a type of message. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            MessageHandlerId
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">registerHandler</a> (MessageHandler handler)
+            <br><span><para>Register a message handler for a type of message. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            MessageHandlerId
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">registerHandler</a> (Id type, R T::*pm, T *obj)
+            <br><span><para>Register a message handler for a type of message. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            MessageHandlerId
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">registerHandler</a> (R T::*pm, T *obj)
+            <br><span><para>Register a message handler for a type of message. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Removing an handler</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">removeHandler</a> (MessageHandlerId id)
+            <br><span><para>Remove a handler. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">removeHandlers</a> (ArrayRef< MessageHandlerId > ids)
+            <br><span><para>Remove a list of handlers. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Sending a message</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">sendMessage</a> (Id type, Message *message)
+            <br><span><para>Send a message. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">sendMessage</a> (E *message)
+            <br><span><para>Send a message. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">MessageManager</a> ()
+            <br><span><para>Constructor. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Registering an handler</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        MessageHandlerId
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">registerHandler</a> (Id type, MessageHandler handler)
-                        <br><span><para>Register a message handler for a type of message. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        MessageHandlerId
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">registerHandler</a> (MessageHandler handler)
-                        <br><span><para>Register a message handler for a type of message. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        MessageHandlerId
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">registerHandler</a> (Id type, R T::*pm, T *obj)
-                        <br><span><para>Register a message handler for a type of message. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        MessageHandlerId
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">registerHandler</a> (R T::*pm, T *obj)
-                        <br><span><para>Register a message handler for a type of message. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Removing an handler</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">removeHandler</a> (MessageHandlerId id)
-                        <br><span><para>Remove a handler. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">removeHandlers</a> (ArrayRef< MessageHandlerId > ids)
-                        <br><span><para>Remove a list of handlers. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Sending a message</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">sendMessage</a> (Id type, Message *message)
-                        <br><span><para>Send a message. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">sendMessage</a> (E *message)
-                        <br><span><para>Send a message. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">MessageManager</a> ()
-                        <br><span><para>Constructor. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Image &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::Image Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Image</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>Class for loading, manipulating and saving images. </para></p>
-            <p><para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> is an abstraction to manipulate images as bidimensional arrays of pixels. The class provides functions to load, read, write and save pixels, as well as many other useful functions.</para><para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can handle a unique internal representation of pixels, which is RGBA 32 bits. This means that a pixel must be composed of 8 bits red, green, blue and alpha channels <ndash/> just like a <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">gf::Color4u</ref>.</para><para>All the functions that return an array of pixels follow this rule, and all parameters that you pass to <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> functions (such as <computeroutput><ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref></computeroutput>) must use this representation as well.</para><para>A <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can be copied, but it is a heavy resource and if possible you should always use (const) references to pass or return them to avoid useless copies.</para><para>Usage example:</para><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::Image Class Reference</h2>
+<ol class="breadcrumb">
+    
+    <li class="active">gf::Image</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>Class for loading, manipulating and saving images. </para></p>
+<p><para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> is an abstraction to manipulate images as bidimensional arrays of pixels. The class provides functions to load, read, write and save pixels, as well as many other useful functions.</para><para><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can handle a unique internal representation of pixels, which is RGBA 32 bits. This means that a pixel must be composed of 8 bits red, green, blue and alpha channels <ndash/> just like a <ref refid="group__core_1ga09c9beb9c818138a42f029091e885e61" kindref="member">gf::Color4u</ref>.</para><para>All the functions that return an array of pixels follow this rule, and all parameters that you pass to <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> functions (such as <computeroutput><ref refid="classgf_1_1_image_1ae9465bf351ae989a97de855ab3874701" kindref="member">loadFromMemory()</ref></computeroutput>) must use this representation as well.</para><para>A <ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref> can be copied, but it is a heavy resource and if possible you should always use (const) references to pass or return them to avoid useless copies.</para><para>Usage example:</para><para>
   <programlisting><codeline><highlight class="comment">//<sp/>Load<sp/>an<sp/>image<sp/>file<sp/>from<sp/>a<sp/>file</highlight><highlight class="normal"/></codeline>
 <codeline><highlight class="normal"><ref refid="classgf_1_1_image" kindref="compound">gf::Image</ref><sp/>background;</highlight></codeline>
 <codeline><highlight class="normal"/></codeline>
@@ -822,324 +830,333 @@
 </programlisting>
 </para><para><simplesect kind="see"><para><ref refid="classgf_1_1_texture" kindref="compound">gf::Texture</ref> </para></simplesect>
 </para></p>
+
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Image</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Image</a> (const Image &)=default
+            <br><span><para>Default copy constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Image&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (const Image &)=default
+            <br><span><para>Default copy assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Image</a> (Image &&)=default
+            <br><span><para>Default move constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Image&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (Image &&)=default
+            <br><span><para>Default move assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">create</a> (Vector2u size, const Color4u &color=Color4u{0x00, 0x00, 0x00, 0xFF})
+            <br><span><para>Create the image and fill it with a unique color. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *pixels)
+            <br><span><para>Create the image from an array of pixels. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">createRGB</a> (Vector2u size, const uint8_t *pixels)
+            <br><span><para>Create the image from an array of pixels. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
+            <br><span><para>Load the image from a file on disk. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
+            <br><span><para>Load the image from a file in memory. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
+            <br><span><para>Load the image from a custom stream. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">saveToFile</a> (const Path &filename) const
+            <br><span><para>Save the image to a file on disk. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Vector2u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getSize</a> () const
+            <br><span><para>Return the size (width and height) of the image. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">createMaskFromColor</a> (const Color4u &color, uint8_t alpha=0)
+            <br><span><para>Create a transparency mask from a specified color-key. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setPixel</a> (Vector2u pos, const Color4u &color)
+            <br><span><para>Change the color of a pixel. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Color4u
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPixel</a> (Vector2u pos) const
+            <br><span><para>Get the color of a pixel. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            const
+            
+            
+            
+            uint8_t*
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getPixelsPtr</a> () const
+            <br><span><para>Get a read-only pointer to the array of pixels. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">flipHorizontally</a> ()
+            <br><span><para>Flip the pixels horizontally. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
-            
-            
 
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Image</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Image</a> (const Image &)=default
-                        <br><span><para>Default copy constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Image&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (const Image &)=default
-                        <br><span><para>Default copy assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Image</a> (Image &&)=default
-                        <br><span><para>Default move constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Image&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (Image &&)=default
-                        <br><span><para>Default move assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">create</a> (Vector2u size, const Color4u &color=Color4u{0x00, 0x00, 0x00, 0xFF})
-                        <br><span><para>Create the image and fill it with a unique color. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *pixels)
-                        <br><span><para>Create the image from an array of pixels. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">createRGB</a> (Vector2u size, const uint8_t *pixels)
-                        <br><span><para>Create the image from an array of pixels. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
-                        <br><span><para>Load the image from a file on disk. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
-                        <br><span><para>Load the image from a file in memory. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
-                        <br><span><para>Load the image from a custom stream. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">saveToFile</a> (const Path &filename) const
-                        <br><span><para>Save the image to a file on disk. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Vector2u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getSize</a> () const
-                        <br><span><para>Return the size (width and height) of the image. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">createMaskFromColor</a> (const Color4u &color, uint8_t alpha=0)
-                        <br><span><para>Create a transparency mask from a specified color-key. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setPixel</a> (Vector2u pos, const Color4u &color)
-                        <br><span><para>Change the color of a pixel. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Color4u
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPixel</a> (Vector2u pos) const
-                        <br><span><para>Get the color of a pixel. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        const
-                        
-                        
-                        
-                        uint8_t*
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getPixelsPtr</a> () const
-                        <br><span><para>Get a read-only pointer to the array of pixels. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">flipHorizontally</a> ()
-                        <br><span><para>Flip the pixels horizontally. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

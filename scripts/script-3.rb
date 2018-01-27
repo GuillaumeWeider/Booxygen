@@ -3,10 +3,11 @@
 require 'nokogiri'
 require 'liquid'
 
+require 'fileutils'
 require 'io/console'
 
 module Booxygen
-  VERSION = "0.3.3"
+  VERSION = "0.4.0"
 
   class Templates
     def initialize(dir)
@@ -20,6 +21,7 @@ module Booxygen
       Liquid::Template.file_system = Liquid::LocalFileSystem.new('../templates')
       @index_hash = {}
       @types = {}
+      @project_name = "Gamedev Framework (gf)"
     end
 
     # Fonction de traitement d'un type donné, dans un code XML donné
@@ -120,19 +122,33 @@ module Booxygen
       end
 
       loop do
+        template = Liquid::Template.parse(File.read('../templates/base.liquid'))
+
         # Main page
-        template = Liquid::Template.parse(File.read('../templates/main.liquid'))
-        File.write('../output/html/main.html', template.render('compounds' => compounds))
+        compounds.each do |compound|
+          if compound['kind'] == 'page' && compound['refid'] == 'indexpage'
+            File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
+                                                                   'PROJECT_NAME' => @project_name,
+                                                                   'TITLE' => 'Main page',
+                                                                   'compounds' => compounds,
+                                                                   'compound' => compound))
+          end
+        end
 
         # Index
-        template = Liquid::Template.parse(File.read('../templates/classes.liquid'))
-        File.write('../output/html/classes.html', template.render('compounds' => compounds))
+        File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
+                                                                  'PROJECT_NAME' => @project_name,
+                                                                  'TITLE' => 'Index page',
+                                                                  'compounds' => compounds))
 
         # Classes
         compounds.each do |compound|
           if compound['kind'] == 'class'
-            template = Liquid::Template.parse(File.read('../templates/class.liquid'))
-            File.write("../output/html/#{compound['refid']}.html", template.render('compounds' => compounds, 'compound' => compound))
+            File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
+                                                                                   'PROJECT_NAME' => @project_name,
+                                                                                   'TITLE' => "#{compound['name'][0]}",
+                                                                                   'compounds' => compounds,
+                                                                                   'compound' => compound))
           end
         end
 
@@ -148,6 +164,7 @@ module Booxygen
   end
 
   def self.run
+    FileUtils.copy_entry('../files', '../output', false, false, true)
     dox = Doxygen.new
     dox.parse('index', true)
     dox.generate_html

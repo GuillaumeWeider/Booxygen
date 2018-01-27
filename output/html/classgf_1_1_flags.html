@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Flags &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::Flags Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Flags</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>Bitfield relying on an enumeration. </para></p>
-            <p><para>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::Flags Class Reference</h2>
+<ol class="breadcrumb">
+    
+    <li class="active">gf::Flags</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>Bitfield relying on an enumeration. </para></p>
+<p><para>
   <programlisting><codeline><highlight class="normal">enum<sp/>class<sp/>AnimalProperties<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>HasClaws<sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>CanFly<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
@@ -822,629 +830,638 @@
 <codeline><highlight class="normal"/></codeline>
 <codeline><highlight class="normal"><ref refid="classgf_1_1_flags" kindref="compound">gf::Flags&lt;AnimalProperties&gt;</ref><sp/>rat(<ref refid="group__graphics_1gga5229ccbffec1016d760ddfe296fd2edfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">gf::None</ref>);</highlight></codeline>
 </programlisting> </para></p>
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            using
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >::Type
+            
+            
+            
+            =
+            
+            
+            
+            typename
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Type</a> 
+            <br><span></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Flags</a> ()=default
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Flags</a> (NoneType)
+            <br><span><para>Constructor with no flag set. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Flags</a> (AllType)
+            <br><span><para>Constructor with all flags set. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Flags</a> (E e)
+            <br><span><para>Constructor with an enum value. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<E>
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator~</a> () const
+            <br><span><para>Binary NOT operator. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator|</a> (Flags flags) const
+            <br><span><para>Binary OR between two bitfields. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Flags<E>&
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator|=</a> (Flags< E > flags)
+            <br><span><para>Binary OR and assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator &</a> (Flags flags) const
+            <br><span><para>Binary AND between two bitfields. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Flags<E>&
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator &=</a> (Flags< E > flags)
+            <br><span><para>Binary AND and assignment. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >::operator
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator bool</a> () const
+            <br><span><para>Test if any flag is set. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            bool
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">test</a> (E flag) const
+            <br><span><para>Test if a specified flag is set. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">set</a> (E flag)
+            <br><span><para>Set a flag. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">reset</a> (E flag)
+            <br><span><para>Reset a flag. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Type
+            
+            
+            
+            gf::Flags<
+            
+            
+            
+            E
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">getValue</a> () const
+            <br><span><para>Get the underlying value of the flags. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator|</a> (Flags< E > lhs, E rhs)
+            <br><span><para>Binary OR between a bitfield and a flag. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator|</a> (E lhs, Flags< E > rhs)
+            <br><span><para>Binary OR between a flag and a bitfield. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            operator
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator&</a> (Flags< E > lhs, E rhs)
+            <br><span><para>Binary AND between a bitfield and a flag. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            operator
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator&</a> (E lhs, Flags< E > rhs)
+            <br><span><para>Binary AND between a flag and a bitfield. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">combineFlags</a> (E flag)
+            <br><span><para>Combine a single enum value into a flag value. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            constexpr
+            
+            
+            
+            Flags<
+            
+            
+            
+            E
+            
+            
+            
+            >
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">combineFlags</a> (E flag, F ... others)
+            <br><span><para>Combine several enum values into a flag value. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        using
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >::Type
-                        
-                        
-                        
-                        =
-                        
-                        
-                        
-                        typename
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Type</a> 
-                        <br><span></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Flags</a> ()=default
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Flags</a> (NoneType)
-                        <br><span><para>Constructor with no flag set. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Flags</a> (AllType)
-                        <br><span><para>Constructor with all flags set. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Flags</a> (E e)
-                        <br><span><para>Constructor with an enum value. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<E>
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator~</a> () const
-                        <br><span><para>Binary NOT operator. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator|</a> (Flags flags) const
-                        <br><span><para>Binary OR between two bitfields. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Flags<E>&
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator|=</a> (Flags< E > flags)
-                        <br><span><para>Binary OR and assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator &</a> (Flags flags) const
-                        <br><span><para>Binary AND between two bitfields. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Flags<E>&
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator &=</a> (Flags< E > flags)
-                        <br><span><para>Binary AND and assignment. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >::operator
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator bool</a> () const
-                        <br><span><para>Test if any flag is set. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">test</a> (E flag) const
-                        <br><span><para>Test if a specified flag is set. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">set</a> (E flag)
-                        <br><span><para>Set a flag. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">reset</a> (E flag)
-                        <br><span><para>Reset a flag. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Type
-                        
-                        
-                        
-                        gf::Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">getValue</a> () const
-                        <br><span><para>Get the underlying value of the flags. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator|</a> (Flags< E > lhs, E rhs)
-                        <br><span><para>Binary OR between a bitfield and a flag. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator|</a> (E lhs, Flags< E > rhs)
-                        <br><span><para>Binary OR between a flag and a bitfield. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        operator
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator&</a> (Flags< E > lhs, E rhs)
-                        <br><span><para>Binary AND between a bitfield and a flag. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        operator
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator&</a> (E lhs, Flags< E > rhs)
-                        <br><span><para>Binary AND between a flag and a bitfield. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">combineFlags</a> (E flag)
-                        <br><span><para>Combine a single enum value into a flag value. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        constexpr
-                        
-                        
-                        
-                        Flags<
-                        
-                        
-                        
-                        E
-                        
-                        
-                        
-                        >
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">combineFlags</a> (E flag, F ... others)
-                        <br><span><para>Combine several enum values into a flag value. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- *********************************** -->
+{% include 'header' %}
+<!-- *********************************** -->
+
+<body>
+
+<!-- *********************************** -->
+{% include 'navbar' %}
+<!-- *********************************** -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- *********************************** -->
+        {% include 'sidebar' %}
+        <!-- *********************************** -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
+            {% if pagetype == "mainpage" %}
+            {% include 'mainpage' %}
+            {% endif %}
+
+            <!-- Index page -->
+            {% if pagetype == "classes" %}
+            {% include 'classes' %}
+            {% endif %}
+
+            <!-- Class page -->
+            {% if pagetype == "class" %}
+            {% include 'class' %}
+            {% endif %}
+
+            <!-- ********************************************************************** -->
+        </div>
+    </div>
+</div>
+
+<!-- *********************************** -->
+{% include 'footer' %}
+<!-- *********************************** -->
+
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- ******************************************************************************************************* -->
-
+<!-- *********************************** -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Weider Guillaume">
 
-    <title>{{ compound.name }} &mdash; Gamedev Framework (gf)</title>
+    <title>gf::Shader &mdash; Gamedev Framework (gf)</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- jQuery Bonsai -->
     <script src="../jquery-bonsai/jquery.bonsai.js"></script>
     <link href="../jquery-bonsai/jquery.bonsai.css" rel="stylesheet" type="text/css">
+    <!-- TODO: Default kind ? -->
     <script>
         window.current_kind = "module_0";
     </script>
@@ -30,7 +30,6 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 
-
     </script>
 
     <!-- Bootstrap -->
@@ -40,11 +39,11 @@
     <script src="../js/booxygen.js"></script>
     <link href="../css/booxygen.css" rel="stylesheet">
 </head>
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <body>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,12 +70,12 @@
     </div>
 </nav>
 
-<!-- ******************************************************************************************************* -->
+<!-- *********************************** -->
 
 <div class="container-fluid">
     <div class="row">
 
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
         <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
         <select id="versions_dropdown">
@@ -786,19 +785,28 @@
         </ul>
     </ul>
 </div>
-        <!-- ******************************************************************************************************* -->
+        <!-- *********************************** -->
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-            <h2 class="page-header">gf::Shader Class Reference</h2>
-            <ol class="breadcrumb">
-                <li><a href="#">***</a></li>
-                <li class="active">gf::Shader</li>
-            </ol>
-
+            <!-- ***************************** CONTENT ******************************** -->
+            <!-- Main page -->
             
-            <h3>Description</h3>
-            <p><para>An OpenGL vertex and/or fragment shader. </para></p>
-            <p><para>Shaders are programs written using a specific language, executed directly by the graphics card and allowing to apply real-time operations to the rendered entities.</para><para>There are two kinds of shaders:</para><para><itemizedlist>
+
+            <!-- Index page -->
+            
+
+            <!-- Class page -->
+            
+            <h2 class="page-header">gf::Shader Class Reference</h2>
+<ol class="breadcrumb">
+    
+    <li class="active">gf::Shader</li>
+</ol>
+
+
+<h3>Description</h3>
+<p><para>An OpenGL vertex and/or fragment shader. </para></p>
+<p><para>Shaders are programs written using a specific language, executed directly by the graphics card and allowing to apply real-time operations to the rendered entities.</para><para>There are two kinds of shaders:</para><para><itemizedlist>
 <listitem><para>vertex shaders, that process vertices</para></listitem><listitem><para>fragment (or pixel) shaders, that process pixels</para></listitem></itemizedlist>
 </para><para>A <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref> can be composed of either a vertex shader alone, a geometry shader alone, a fragment shader alone, or any combination of them. (see the variants of the load functions).</para><para>Shaders are written in GLSL, which is a C-like language dedicated to OpenGL shaders. You'll probably need to learn its basics before writing your own shaders for gf. See also <ref refid="shader" kindref="compound">How to write your own shader</ref>.</para><para>Like any C/C++ program, a GLSL shader has its own variables called <emphasis>uniforms</emphasis> that you can set from your C++ application. <ref refid="classgf_1_1_shader" kindref="compound">gf::Shader</ref> handles different types of uniforms:</para><para><itemizedlist>
 <listitem><para>scalars: <computeroutput>float</computeroutput>, <computeroutput>int</computeroutput></para></listitem><listitem><para>vectors (2, 3 or 4 components)</para></listitem><listitem><para>matrices (3x3 or 4x4)</para></listitem><listitem><para>samplers (textures)</para></listitem></itemizedlist>
@@ -822,424 +830,433 @@
 <codeline><highlight class="normal">renderer.<ref refid="classgf_1_1_render_target_1a3445880f95c648efbeff3d2572c4c263" kindref="member">draw</ref>(sprite,<sp/>states);</highlight></codeline>
 </programlisting>
 </para><para>In the code above we pass a pointer to the shader, because it may be null (which means "default shader").</para><para>Shaders can be used on any drawable, but some combinations are not interesting. For example, using a vertex shader on a <ref refid="classgf_1_1_sprite" kindref="compound">gf::Sprite</ref> is limited because there are only 4 vertices, the sprite would have to be subdivided in order to apply wave effects. Another bad example is a fragment shader with <ref refid="classgf_1_1_text" kindref="compound">gf::Text</ref>: the texture of the text is not the actual text that you see on screen, it is a big texture containing all the characters of the font in an arbitrary order; thus, texture lookups on pixels other than the current one may not give you the expected result. </para></p>
+
+
+
+
+
+
+<h4>Loading</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
             
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename, Type type)
+            <br><span><para>Load the vertex of fragment shader from a file. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &vertexShaderFilename, const Path &fragmentShaderFilename)
+            <br><span><para>Load both the vertex and fragment shaders from files. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromMemory</a> (StringRef shader, Type type)
+            <br><span><para>Load the vertex or fragment shader from a source code in memory. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromMemory</a> (StringRef vertexShader, StringRef fragmentShader)
+            <br><span><para>Load both the vertex and fragment shaders from source codes in memory. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream, Type type)
+            <br><span><para>Load the vertex or fragment shader from a custom stream. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            bool
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &vertexShaderStream, InputStream &fragmentShaderStream)
+            <br><span><para>Load both the vertex and fragment shaders from custom streams. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4>Uniform setting</h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, float val)
+            <br><span><para>Specify value for a <computeroutput>float</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, int val)
+            <br><span><para>Specify value for a <computeroutput>int</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector2f &vec)
+            <br><span><para>Specify value for a <computeroutput>vec2</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector3f &vec)
+            <br><span><para>Specify value for a <computeroutput>vec3</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector4f &vec)
+            <br><span><para>Specify value for a <computeroutput>vec4</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Matrix3f &mat)
+            <br><span><para>Specify value for a <computeroutput>mat3</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Matrix4f &mat)
+            <br><span><para>Specify value for a <computeroutput>mat4</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const BareTexture &tex)
+            <br><span><para>Specify a texture for a <computeroutput>sampler2D</computeroutput> uniform. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Type</a> 
+            <br><span><para>Type of shaders. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            friend
+            
+            
+            
+            class
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">RenderTarget</a> 
+            <br><span></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+
+
+<h3>Public Member Functions</h3>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Shader</a> ()
+            <br><span><para>Default constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">~Shader</a> ()
+            <br><span><para>Destructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">Shader</a> (const Shader &)=delete
+            <br><span><para>Deleted copy constructor. </para></span></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            Shader&
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">operator=</a> (const Shader &)=delete
+            <br><span><para>Deleted copy assignment. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<h4></h4>
+
+
+<table class="table">
+    
+    <tr>
+        <td class="col-md-1">
+            
+            
+            
+            static
+            
+            
+            
+            void
+            
+            
+            
+            
+        </td>
+        <td class="col-md-4"><a href="#">bind</a> (const Shader *shader)
+            <br><span><para>Bind a shader for rendering. </para></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<!--<h3>Constructor and Destructor documentation</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
+            code)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Construct a key control.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>code</strong></span> The keycode of the key</p>
+    </div>
+</div>
+
+<h3>Member Function</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
+                href="#"><b>Event</b></a> &event)</h3>
+    </div>
+    <div class="panel-body">
+        <p>Update the state of the control thanks to an event.</p>
+        <p><b>Parameters</b></p>
+        <p><span><strong>event</strong></span> The event to update the control</p>
+        <p><br><b>See also</b></p>
+        <p><a href="#">Action::processEvent</a></p>
+        <p>Implements <a href="#">gf::Control</a>.</p>
+    </div>
+</div>-->
+
 
             
-            
 
-            
-            <h4>Loading</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename, Type type)
-                        <br><span><para>Load the vertex of fragment shader from a file. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &vertexShaderFilename, const Path &fragmentShaderFilename)
-                        <br><span><para>Load both the vertex and fragment shaders from files. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromMemory</a> (StringRef shader, Type type)
-                        <br><span><para>Load the vertex or fragment shader from a source code in memory. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromMemory</a> (StringRef vertexShader, StringRef fragmentShader)
-                        <br><span><para>Load both the vertex and fragment shaders from source codes in memory. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream, Type type)
-                        <br><span><para>Load the vertex or fragment shader from a custom stream. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        bool
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &vertexShaderStream, InputStream &fragmentShaderStream)
-                        <br><span><para>Load both the vertex and fragment shaders from custom streams. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4>Uniform setting</h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, float val)
-                        <br><span><para>Specify value for a <computeroutput>float</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, int val)
-                        <br><span><para>Specify value for a <computeroutput>int</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector2f &vec)
-                        <br><span><para>Specify value for a <computeroutput>vec2</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector3f &vec)
-                        <br><span><para>Specify value for a <computeroutput>vec3</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Vector4f &vec)
-                        <br><span><para>Specify value for a <computeroutput>vec4</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Matrix3f &mat)
-                        <br><span><para>Specify value for a <computeroutput>mat3</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const Matrix4f &mat)
-                        <br><span><para>Specify value for a <computeroutput>mat4</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">setUniform</a> (StringRef name, const BareTexture &tex)
-                        <br><span><para>Specify a texture for a <computeroutput>sampler2D</computeroutput> uniform. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Type</a> 
-                        <br><span><para>Type of shaders. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        friend
-                        
-                        
-                        
-                        class
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">RenderTarget</a> 
-                        <br><span></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-            
-
-            
-            <h3>Public Member Functions</h3>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Shader</a> ()
-                        <br><span><para>Default constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">~Shader</a> ()
-                        <br><span><para>Destructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">Shader</a> (const Shader &)=delete
-                        <br><span><para>Deleted copy constructor. </para></span></td>
-                </tr>
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        Shader&
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">operator=</a> (const Shader &)=delete
-                        <br><span><para>Deleted copy assignment. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-
-            
-            <h4></h4>
-            
-
-            <table class="table">
-                
-                <tr>
-                    <td class="col-md-1">
-                        
-                        
-                        
-                        static
-                        
-                        
-                        
-                        void
-                        
-                        
-                        
-                        
-                    </td>
-                    <td class="col-md-4"><a href="#">bind</a> (const Shader *shader)
-                        <br><span><para>Bind a shader for rendering. </para></span></td>
-                </tr>
-                
-            </table>
-            
-            
-            
-            
-
-            <!--<h3>Constructor and Destructor documentation</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">gf::KeycodeKeyControl::KeycodeKeyControl (<a href="#"><b>KeyCode</b></a>
-                        code)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Construct a key control.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>code</strong></span> The keycode of the key</p>
-                </div>
-            </div>
-
-            <h3>Member Function</h3>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">virtual void gf::KeycodeKeyControl::processEvent (const <a
-                            href="#"><b>Event</b></a> &event)</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Update the state of the control thanks to an event.</p>
-                    <p><b>Parameters</b></p>
-                    <p><span><strong>event</strong></span> The event to update the control</p>
-                    <p><br><b>See also</b></p>
-                    <p><a href="#">Action::processEvent</a></p>
-                    <p>Implements <a href="#">gf::Control</a>.</p>
-                </div>
-            </div>-->
-
+            <!-- ********************************************************************** -->
         </div>
     </div>
 </div>
+
+<!-- *********************************** -->
 <div id="footer">
     <div class="container">
         <p>Generated by Booxygen</p>
     </div>
 </div>
+
+<!-- *********************************** -->
+
 <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
