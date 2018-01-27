@@ -3,6 +3,7 @@
 require 'nokogiri'
 require 'liquid'
 
+require 'fileutils'
 require 'io/console'
 
 module Booxygen
@@ -124,10 +125,15 @@ module Booxygen
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
 
         # Main page
-        File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
-                                                               'PROJECT_NAME' => @project_name,
-                                                               'TITLE' => 'Main page',
-                                                               'compounds' => compounds))
+        compounds.each do |compound|
+          if compound['kind'] == 'page' && compound['refid'] == 'indexpage'
+            File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
+                                                                   'PROJECT_NAME' => @project_name,
+                                                                   'TITLE' => 'Main page',
+                                                                   'compounds' => compounds,
+                                                                   'compound' => compound))
+          end
+        end
 
         # Index
         File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
@@ -158,6 +164,7 @@ module Booxygen
   end
 
   def self.run
+    FileUtils.copy_entry('../files', '../output', false, false, true)
     dox = Doxygen.new
     dox.parse('index', true)
     dox.generate_html
