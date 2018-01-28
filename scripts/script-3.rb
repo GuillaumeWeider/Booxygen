@@ -9,12 +9,6 @@ require 'io/console'
 module Booxygen
   VERSION = "0.4.0"
 
-  class Templates
-    def initialize(dir)
-
-    end
-  end
-
   class Doxygen
     def initialize
       Liquid::Template.error_mode = :strict
@@ -123,31 +117,28 @@ module Booxygen
 
       loop do
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
+        template.assigns['PROJECT_NAME'] = @project_name
+        template.assigns['compounds'] = compounds
 
         # Main page
         compounds.each do |compound|
           if compound['kind'] == 'page' && compound['refid'] == 'indexpage'
             File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
-                                                                   'PROJECT_NAME' => @project_name,
                                                                    'TITLE' => 'Main page',
-                                                                   'compounds' => compounds,
                                                                    'compound' => compound))
+            break
           end
         end
 
         # Index
         File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
-                                                                  'PROJECT_NAME' => @project_name,
-                                                                  'TITLE' => 'Index page',
-                                                                  'compounds' => compounds))
+                                                                  'TITLE' => 'Index page'))
 
         # Classes
         compounds.each do |compound|
           if compound['kind'] == 'class'
             File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
-                                                                                   'PROJECT_NAME' => @project_name,
                                                                                    'TITLE' => "#{compound['name'][0]}",
-                                                                                   'compounds' => compounds,
                                                                                    'compound' => compound))
           end
         end

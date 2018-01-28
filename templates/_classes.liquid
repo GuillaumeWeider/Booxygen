@@ -1,36 +1,43 @@
 <h2 class="page-header">Class Index</h2>
 
+{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
+<div>
+{% for letter in alphabet %}
+    <a href="#letter{{ letter }}">{{ letter }} </a>
+{% endfor %}
+</div>
+
 <div class="indexlist">
-    {% assign actual_index_letter = "" %}
-    {% assign is_first_letter = true %}
+    {%- assign actual_index_letter = "" -%}
+    {%- assign is_first_letter = true -%}
 
-    {% for compound in compounds %}
-    {% if compound.kind == 'class' %}
+    {%- for compound in compounds -%}
+    {%- if compound.kind == 'class' -%}
 
-    {% assign current_class = compound.name[0] | split: "::" %}
-    {% assign current_letter = current_class | last | truncate: 1, "" | upcase %}
+    {%- assign current_class = compound.name[0] | split: "::" -%}
+    {%- assign current_letter = current_class | last | truncate: 1, "" | upcase -%}
 
-    {% if actual_index_letter != current_letter %}
-    {% assign actual_index_letter = current_letter %}
+    {%- if actual_index_letter != current_letter -%}
+    {%- assign actual_index_letter = current_letter -%}
 
-    {% if is_first_letter == false %}
+    {%- if is_first_letter == false -%}
 </div>
 {% endif %}
 
 {% assign is_first_letter = false %}
 
 <div class="index_group">
-    <h5 class="page-header"><strong>{{ actual_index_letter }}</strong></h5>
+    <h5 id="letter{{ actual_index_letter }}" class="page-header"><strong>{{ actual_index_letter }}</strong></h5>
     {% endif %}
     <a href="{{ compound.refid }}.html">{{ current_class | last }}</a>
 
-    {% assign current_class_first = current_class | first %}
-    {% assign current_class_last = current_class | last %}
+    {%- assign current_class_first = current_class | first -%}
+    {%- assign current_class_last = current_class | last -%}
 
-    {% if current_class_first != current_class_last %}
+    {%- if current_class_first != current_class_last -%}
     ({{ current_class | first }})
-    {% endif %}
+    {%- endif -%}
     <br>
-    {% endif %}
-    {% endfor %}
+    {%- endif -%}
+    {%- endfor -%}
 </div>
