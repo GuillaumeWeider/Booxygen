@@ -9,17 +9,6 @@ require 'io/console'
 module Booxygen
   VERSION = "0.4.0"
 
-  class Templates
-    def initialize(dir)
-
-    end
-  end
-
-  class Doxygen
-    def initialize
-      Liquid::Template.error_mode = :strict
-      Liquid::Template.file_system = Liquid::LocalFileSystem.new('../templates')
-      @index_hash = {}
       @types = {}
       @project_name = "Gamedev Framework (gf)"
     end
