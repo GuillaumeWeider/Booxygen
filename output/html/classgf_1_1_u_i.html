@@ -129,8 +129,7 @@
 
             <!-- Class page -->
             
-            <h2 class="page-header">gf::UI Class Reference</h2>
-<ol class="breadcrumb">
+            <h2 class="page-header">gf::UI Class Reference</h2><h5> Graphics classes</h5><ol class="breadcrumb">
     
     <li><a href="classgf_1_1_drawable.html">gf::Drawable</a></li>
     
@@ -220,8 +219,6 @@
 </para><para>Widgets often manipulate a reference to a user-provided variable that represents the state of the widget. This way, you can pass directly your model variables to the graphical interface without duplicating the data. Some widgets return a boolean that indicates a state change. For example, a button returns true if it has been pressed.</para><para>The library also offers common graphical interface elements:<itemizedlist>
 <listitem><para><ulink url="https://en.wikipedia.org/wiki/Popover_%28GUI%29">popups</ulink>: <ref refid="classgf_1_1_u_i_1a725cc2f102c84c61ea56d8b4f27bf9a2" kindref="member">popupBegin()</ref>, <ref refid="classgf_1_1_u_i_1a35d43aa89a115c04889f397744f8e880" kindref="member">popupEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Combo_box">combo boxes</ulink>: <ref refid="classgf_1_1_u_i_1a81176bad4dc2628bccb3ab06ec2957f8" kindref="member">combobox()</ref>, <ref refid="classgf_1_1_u_i_1a98289a8052dd670ad0b606189b67c382" kindref="member">comboboxSeparator()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Context_menu">contextuals</ulink>: <ref refid="classgf_1_1_u_i_1a6de6b47b7c25fc110dd47ffecae292c2" kindref="member">contextualBegin()</ref>, <ref refid="classgf_1_1_u_i_1ae439885cfe70c67bc1e347a155118a54" kindref="member">contextualEnd()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Tooltip">tooltips</ulink>: <ref refid="classgf_1_1_u_i_1a87daae5e597a04565f80bb0597f787af" kindref="member">tooltip()</ref></para></listitem><listitem><para><ulink url="https://en.wikipedia.org/wiki/Menu_28computing%29">menus</ulink>: <ref refid="classgf_1_1_u_i_1ab866397ba70f2dbd6dc346a58c99cce7" kindref="member">menubarBegin()</ref>, <ref refid="classgf_1_1_u_i_1a328ed0fff035d978f85a60e3ff7821fb" kindref="member">menubarEnd()</ref></para></listitem></itemizedlist>
 </para><para>Many of these elements have a begin/end API. The end part must be called if the begin part succeeded, i.e. returned true. Some elements offer a simplified version without begin/end for common cases. </para></p>
-
-
 
 
 

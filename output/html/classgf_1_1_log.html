@@ -129,8 +129,7 @@
 
             <!-- Class page -->
             
-            <h2 class="page-header">gf::Log Class Reference</h2>
-<ol class="breadcrumb">
+            <h2 class="page-header">gf::Log Class Reference</h2><h5> Core classes and functions</h5><ol class="breadcrumb">
     
     <li class="active">gf::Log</li>
 </ol>
@@ -141,8 +140,6 @@
 <p><para>Logging functions are used to report some events that have happened in the system. These functions print messages to the standard error. It uses <computeroutput>printf</computeroutput>-like format strings.</para><para>A message is associated to a severity level. The severity level indicates the severity of the message and range from a simple debug message to a fatal message.</para><para>You can set the minimum severity for which messages are displayed. By default, the minimum severity level is gf::Log::Warning (or <ref refid="classgf_1_1_log_1a09dcebe6e9d911a2d9d099115508edf9aee60afc6cba066b732b213601778a367" kindref="member">gf::Log::Debug</ref> if debug mode is activated at build time).</para><para>Example:</para><para><programlisting><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>entity<sp/>=<sp/>...;</highlight></codeline>
 <codeline><highlight class="normal"><ref refid="classgf_1_1_log_1aa4d71938c073d439a4eb35a61fb51f52" kindref="member">gf::Log::warning</ref>(</highlight><highlight class="stringliteral">"Something<sp/>weird<sp/>happened<sp/>to<sp/>entity<sp/>%i!\n"</highlight><highlight class="normal">,<sp/>entity);</highlight></codeline>
 </programlisting> </para></p>
-
-
 
 
 

@@ -1,9 +1,9 @@
 <h2 class="page-header">Class Index</h2>
 
-{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
-<div>
-{% for letter in alphabet %}
-    <a href="#letter{{ letter }}">{{ letter }} </a>
+{%- assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' -%}
+<div id="alphabet">
+{%- for letter in alphabet -%}
+    <a href="#letter{{ letter }}">{{ letter }}</a>&nbsp;
 {% endfor %}
 </div>
 

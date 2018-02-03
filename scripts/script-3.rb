@@ -117,11 +117,23 @@ module Booxygen
     # Fonction de génération des fichiers HTML
     def generate_html
       compounds = []
+      groups = []
+      classes = []
+      pages = []
 
       @index_hash['compound'].each do |value|
-        compounds.push value
         #ap value
         #puts '============================'
+
+        compounds.push value
+
+        if value['kind'] == 'group'
+          groups.push value
+        elsif value['kind'] == 'class'
+          classes.push value
+        elsif value['kind'] == 'page'
+          pages.push value
+        end
       end
 
       loop do
@@ -130,10 +142,11 @@ module Booxygen
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
         template.assigns['PROJECT_NAME'] = @project_name
         template.assigns['compounds'] = compounds
+        template.assigns['groups'] = groups
 
         # Main page
-        compounds.each do |compound|
-          if compound['kind'] == 'page' && compound['refid'] == 'indexpage'
+        pages.each do |compound|
+          if compound['refid'] == 'indexpage'
             File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
                                                                    'TITLE' => 'Main page',
                                                                    'compound' => compound))
@@ -146,12 +159,10 @@ module Booxygen
                                                                   'TITLE' => 'Index page'))
 
         # Classes
-        compounds.each do |compound|
-          if compound['kind'] == 'class'
-            File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
-                                                                                   'TITLE' => "#{compound['name'][0]}",
-                                                                                   'compound' => compound))
-          end
+        classes.each do |compound|
+          File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
+                                                                                 'TITLE' => "#{compound['name'][0]}",
+                                                                                 'compound' => compound))
         end
 
         # ?
