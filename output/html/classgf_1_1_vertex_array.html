@@ -167,9 +167,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::VertexArray::VertexArray
         </td>
         <td class="col-md-4"><a href="#">VertexArray</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -178,9 +176,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::VertexArray::VertexArray
         </td>
         <td class="col-md-4"><a href="#">VertexArray</a> (PrimitiveType type, std::size_t count=0)
             <br><span><para>Construct the vertex array with a type and an initial number of vertices. </para></span></td>
@@ -189,13 +185,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            std::size_t
-            
-            
-            
-            
+            std::size_t gf::VertexArray::getVertexCount
         </td>
         <td class="col-md-4"><a href="#">getVertexCount</a> () const
             <br><span><para>Return the vertex count. </para></span></td>
@@ -204,17 +194,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vertex*
-            
-            
-            
-            
+            const Vertex* gf::VertexArray::getVertexData
         </td>
         <td class="col-md-4"><a href="#">getVertexData</a> () const
             <br><span><para>Return the vertex data. </para></span></td>
@@ -223,13 +203,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vertex&
-            
-            
-            
-            
+            Vertex& gf::VertexArray::operator[]
         </td>
         <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index)
             <br><span><para>Get a read-write access to a vertex by its index. </para></span></td>
@@ -238,17 +212,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vertex&
-            
-            
-            
-            
+            const Vertex& gf::VertexArray::operator[]
         </td>
         <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index) const
             <br><span><para>Get a read-only access to a vertex by its index. </para></span></td>
@@ -257,13 +221,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::VertexArray::isEmpty
         </td>
         <td class="col-md-4"><a href="#">isEmpty</a> () const
             <br><span><para>Check if the vertex array is empty. </para></span></td>
@@ -272,13 +230,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::VertexArray::clear
         </td>
         <td class="col-md-4"><a href="#">clear</a> ()
             <br><span><para>Clear the vertex array. </para></span></td>
@@ -287,13 +239,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::VertexArray::resize
         </td>
         <td class="col-md-4"><a href="#">resize</a> (std::size_t count)
             <br><span><para>Resize the vertex array. </para></span></td>
@@ -302,13 +248,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::VertexArray::reserve
         </td>
         <td class="col-md-4"><a href="#">reserve</a> (std::size_t capacity)
             <br><span><para>Increase the capacity of the vertex array. </para></span></td>
@@ -317,13 +257,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::VertexArray::append
         </td>
         <td class="col-md-4"><a href="#">append</a> (const Vertex &vertex)
             <br><span><para>Add a vertex to the array. </para></span></td>
@@ -332,13 +266,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::VertexArray::setPrimitiveType
         </td>
         <td class="col-md-4"><a href="#">setPrimitiveType</a> (PrimitiveType type)
             <br><span><para>Set the type of primitives to draw. </para></span></td>
@@ -347,13 +275,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            PrimitiveType
-            
-            
-            
-            
+            PrimitiveType gf::VertexArray::getPrimitiveType
         </td>
         <td class="col-md-4"><a href="#">getPrimitiveType</a> () const
             <br><span><para>Get the type of primitives drawn by the vertex array. </para></span></td>
@@ -362,13 +284,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::VertexArray::getBounds
         </td>
         <td class="col-md-4"><a href="#">getBounds</a> () const
             <br><span><para>Compute the bounding rectangle of the vertex array. </para></span></td>
@@ -377,17 +293,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::VertexArray::draw
         </td>
         <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
             <br><span><para>Draw the object to a render target. </para></span></td>

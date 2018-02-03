@@ -178,9 +178,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Image::Image
         </td>
         <td class="col-md-4"><a href="#">Image</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -189,9 +187,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Image::Image
         </td>
         <td class="col-md-4"><a href="#">Image</a> (const Image &)=default
             <br><span><para>Default copy constructor. </para></span></td>
@@ -200,13 +196,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Image&
-            
-            
-            
-            
+            Image& gf::Image::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const Image &)=default
             <br><span><para>Default copy assignment. </para></span></td>
@@ -215,9 +205,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Image::Image
         </td>
         <td class="col-md-4"><a href="#">Image</a> (Image &&)=default
             <br><span><para>Default move constructor. </para></span></td>
@@ -226,13 +214,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Image&
-            
-            
-            
-            
+            Image& gf::Image::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (Image &&)=default
             <br><span><para>Default move assignment. </para></span></td>
@@ -241,13 +223,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::create
         </td>
         <td class="col-md-4"><a href="#">create</a> (Vector2u size, const Color4u &color=Color4u{0x00, 0x00, 0x00, 0xFF})
             <br><span><para>Create the image and fill it with a unique color. </para></span></td>
@@ -256,13 +232,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::create
         </td>
         <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *pixels)
             <br><span><para>Create the image from an array of pixels. </para></span></td>
@@ -271,13 +241,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::createRGB
         </td>
         <td class="col-md-4"><a href="#">createRGB</a> (Vector2u size, const uint8_t *pixels)
             <br><span><para>Create the image from an array of pixels. </para></span></td>
@@ -286,13 +250,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Image::loadFromFile
         </td>
         <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
             <br><span><para>Load the image from a file on disk. </para></span></td>
@@ -301,13 +259,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Image::loadFromMemory
         </td>
         <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
             <br><span><para>Load the image from a file in memory. </para></span></td>
@@ -316,13 +268,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Image::loadFromStream
         </td>
         <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
             <br><span><para>Load the image from a custom stream. </para></span></td>
@@ -331,13 +277,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Image::saveToFile
         </td>
         <td class="col-md-4"><a href="#">saveToFile</a> (const Path &filename) const
             <br><span><para>Save the image to a file on disk. </para></span></td>
@@ -346,13 +286,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2u
-            
-            
-            
-            
+            Vector2u gf::Image::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const
             <br><span><para>Return the size (width and height) of the image. </para></span></td>
@@ -361,13 +295,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::createMaskFromColor
         </td>
         <td class="col-md-4"><a href="#">createMaskFromColor</a> (const Color4u &color, uint8_t alpha=0)
             <br><span><para>Create a transparency mask from a specified color-key. </para></span></td>
@@ -376,13 +304,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::setPixel
         </td>
         <td class="col-md-4"><a href="#">setPixel</a> (Vector2u pos, const Color4u &color)
             <br><span><para>Change the color of a pixel. </para></span></td>
@@ -391,13 +313,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Color4u
-            
-            
-            
-            
+            Color4u gf::Image::getPixel
         </td>
         <td class="col-md-4"><a href="#">getPixel</a> (Vector2u pos) const
             <br><span><para>Get the color of a pixel. </para></span></td>
@@ -406,17 +322,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            uint8_t*
-            
-            
-            
-            
+            const uint8_t* gf::Image::getPixelsPtr
         </td>
         <td class="col-md-4"><a href="#">getPixelsPtr</a> () const
             <br><span><para>Get a read-only pointer to the array of pixels. </para></span></td>
@@ -425,13 +331,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Image::flipHorizontally
         </td>
         <td class="col-md-4"><a href="#">flipHorizontally</a> ()
             <br><span><para>Flip the pixels horizontally. </para></span></td>

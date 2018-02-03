@@ -164,17 +164,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Time
-            
-            
-            
-            
+            const Time gf::Time::Zero
         </td>
         <td class="col-md-4"><a href="#">Zero</a> 
             <br><span></span></td>
@@ -196,13 +186,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            
+            constexpr gf::Time::Time
         </td>
         <td class="col-md-4"><a href="#">Time</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -211,13 +195,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            
+            constexpr gf::Time::Time
         </td>
         <td class="col-md-4"><a href="#">Time</a> (std::chrono::steady_clock::duration duration)
             <br><span><para>Constructor with a duration. </para></span></td>
@@ -226,17 +204,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            float
-            
-            
-            
-            
+            constexpr float gf::Time::asSeconds
         </td>
         <td class="col-md-4"><a href="#">asSeconds</a> () const
             <br><span><para>Return the time value as a number of seconds. </para></span></td>
@@ -245,17 +213,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            int32_t
-            
-            
-            
-            
+            constexpr int32_t gf::Time::asMilliseconds
         </td>
         <td class="col-md-4"><a href="#">asMilliseconds</a> () const
             <br><span><para>Return the time value as a number of milliseconds. </para></span></td>
@@ -264,17 +222,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            int64_t
-            
-            
-            
-            
+            constexpr int64_t gf::Time::asMicroseconds
         </td>
         <td class="col-md-4"><a href="#">asMicroseconds</a> () const
             <br><span><para>Return the time value as a number of microseconds. </para></span></td>
@@ -283,17 +231,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            std::chrono::steady_clock::duration
-            
-            
-            
-            
+            constexpr std::chrono::steady_clock::duration gf::Time::asDuration
         </td>
         <td class="col-md-4"><a href="#">asDuration</a> () const
             <br><span><para>Return the time value as a duration. </para></span></td>
@@ -302,13 +240,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Time&
-            
-            
-            
-            
+            Time& gf::Time::addTo
         </td>
         <td class="col-md-4"><a href="#">addTo</a> (Time other)
             <br><span><para>Add another time. </para></span></td>
@@ -317,13 +249,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Time&
-            
-            
-            
-            
+            Time& gf::Time::subTo
         </td>
         <td class="col-md-4"><a href="#">subTo</a> (Time other)
             <br><span><para>Substract another time. </para></span></td>
@@ -343,21 +269,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            static
-            
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            static constexpr Time gf::Time::zero
         </td>
         <td class="col-md-4"><a href="#">zero</a> ()
             <br><span></span></td>
@@ -377,17 +289,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            constexpr Time seconds
         </td>
         <td class="col-md-4"><a href="#">seconds</a> (float amount)
             <br><span><para>Construct a time value from a number of seconds. </para></span></td>
@@ -396,17 +298,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            constexpr Time milliseconds
         </td>
         <td class="col-md-4"><a href="#">milliseconds</a> (int32_t amount)
             <br><span><para>Construct a time value from a number of milliseconds. </para></span></td>
@@ -415,17 +307,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            constexpr Time microseconds
         </td>
         <td class="col-md-4"><a href="#">microseconds</a> (int64_t amount)
             <br><span><para>Construct a time value from a number of microseconds. </para></span></td>
@@ -434,17 +316,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator==
         </td>
         <td class="col-md-4"><a href="#">operator==</a> (Time rhs, Time lhs)
             <br><span><para>Equality operator. </para></span></td>
@@ -453,17 +325,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator!=
         </td>
         <td class="col-md-4"><a href="#">operator!=</a> (Time rhs, Time lhs)
             <br><span><para>Inequality operator. </para></span></td>
@@ -472,17 +334,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator<
         </td>
         <td class="col-md-4"><a href="#">operator<</a> (Time rhs, Time lhs)
             <br><span><para>Lesser than operator. </para></span></td>
@@ -491,17 +343,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator>
         </td>
         <td class="col-md-4"><a href="#">operator></a> (Time rhs, Time lhs)
             <br><span><para>Greater than operator. </para></span></td>
@@ -510,17 +352,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator<=
         </td>
         <td class="col-md-4"><a href="#">operator<=</a> (Time rhs, Time lhs)
             <br><span><para>Lesser or equal operator. </para></span></td>
@@ -529,17 +361,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            
+            constexpr bool operator>=
         </td>
         <td class="col-md-4"><a href="#">operator>=</a> (Time rhs, Time lhs)
             <br><span><para>Greater or equal than operator. </para></span></td>
@@ -548,17 +370,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            constexpr Time operator+
         </td>
         <td class="col-md-4"><a href="#">operator+</a> (Time rhs, Time lhs)
             <br><span><para>Addition of two times. </para></span></td>
@@ -567,13 +379,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Time
-            
-            
-            
-            
+            Time operator+=
         </td>
         <td class="col-md-4"><a href="#">operator+=</a> (Time &rhs, Time lhs)
             <br><span><para>Addition and assignement. </para></span></td>
@@ -582,17 +388,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            
+            constexpr Time operator-
         </td>
         <td class="col-md-4"><a href="#">operator-</a> (Time rhs, Time lhs)
             <br><span><para>Substraction of two times. </para></span></td>
@@ -601,13 +397,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Time
-            
-            
-            
-            
+            Time operator-=
         </td>
         <td class="col-md-4"><a href="#">operator-=</a> (Time &rhs, Time lhs)
             <br><span><para>Substraction and assignment. </para></span></td>

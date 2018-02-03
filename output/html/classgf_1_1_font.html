@@ -179,9 +179,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Font::Font
         </td>
         <td class="col-md-4"><a href="#">Font</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -190,9 +188,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Font::~Font
         </td>
         <td class="col-md-4"><a href="#">~Font</a> ()
             <br><span><para>Destructor. </para></span></td>
@@ -201,9 +197,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Font::Font
         </td>
         <td class="col-md-4"><a href="#">Font</a> (const Font &)=delete
             <br><span><para>Deleted copy constructor. </para></span></td>
@@ -212,13 +206,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Font&
-            
-            
-            
-            
+            Font& gf::Font::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const Font &)=delete
             <br><span><para>Deleted copy assignement. </para></span></td>
@@ -227,9 +215,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Font::Font
         </td>
         <td class="col-md-4"><a href="#">Font</a> (Font &&other)
             <br><span><para>Move constructor. </para></span></td>
@@ -238,13 +224,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Font&
-            
-            
-            
-            
+            Font& gf::Font::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (Font &&other)
             <br><span><para>Move assignement. </para></span></td>
@@ -253,13 +233,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Font::loadFromFile
         </td>
         <td class="col-md-4"><a href="#">loadFromFile</a> (const Path &filename)
             <br><span><para>Load the font from a file. </para></span></td>
@@ -268,13 +242,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Font::loadFromStream
         </td>
         <td class="col-md-4"><a href="#">loadFromStream</a> (InputStream &stream)
             <br><span><para>Load the font from a custom stream. </para></span></td>
@@ -283,13 +251,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Font::loadFromMemory
         </td>
         <td class="col-md-4"><a href="#">loadFromMemory</a> (const uint8_t *data, std::size_t length)
             <br><span><para>Load the font from a file in memory. </para></span></td>
@@ -298,17 +260,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Glyph&
-            
-            
-            
-            
+            const Glyph& gf::Font::getGlyph
         </td>
         <td class="col-md-4"><a href="#">getGlyph</a> (char32_t codepoint, unsigned characterSize, float outlineThickness=0.0f)
             <br><span><para>Retrieve a glyph of the font. </para></span></td>
@@ -317,13 +269,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Font::getKerning
         </td>
         <td class="col-md-4"><a href="#">getKerning</a> (char32_t left, char32_t right, unsigned characterSize)
             <br><span><para>Get the kerning offset of two glyphs. </para></span></td>
@@ -332,13 +278,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Font::getLineSpacing
         </td>
         <td class="col-md-4"><a href="#">getLineSpacing</a> (unsigned characterSize)
             <br><span><para>Get the line spacing. </para></span></td>
@@ -347,17 +287,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            AlphaTexture*
-            
-            
-            
-            
+            const AlphaTexture* gf::Font::getTexture
         </td>
         <td class="col-md-4"><a href="#">getTexture</a> (unsigned characterSize)
             <br><span><para>Retrieve the texture containing the loaded glyphs of a certain size. </para></span></td>
@@ -366,13 +296,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Font::generateTexture
         </td>
         <td class="col-md-4"><a href="#">generateTexture</a> (unsigned characterSize)
             <br><span><para>Generate the texture for a given character size. </para></span></td>

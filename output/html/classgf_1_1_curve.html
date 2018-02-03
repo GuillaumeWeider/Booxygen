@@ -184,9 +184,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Curve::Curve
         </td>
         <td class="col-md-4"><a href="#">Curve</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -195,13 +193,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setType
         </td>
         <td class="col-md-4"><a href="#">setType</a> (Type type)
             <br><span><para>Set the type of the curve. </para></span></td>
@@ -210,13 +202,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Type
-            
-            
-            
-            
+            Type gf::Curve::getType
         </td>
         <td class="col-md-4"><a href="#">getType</a> () const noexcept
             <br><span><para>Return the type of the curve. </para></span></td>
@@ -225,13 +211,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setColor
         </td>
         <td class="col-md-4"><a href="#">setColor</a> (const Color4f &color)
             <br><span><para>Set the fill color of the curve. </para></span></td>
@@ -240,17 +220,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Color4f&
-            
-            
-            
-            
+            const Color4f& gf::Curve::getColor
         </td>
         <td class="col-md-4"><a href="#">getColor</a> () const
             <br><span><para>Get the fill color of the curve. </para></span></td>
@@ -259,13 +229,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setWidth
         </td>
         <td class="col-md-4"><a href="#">setWidth</a> (float width)
             <br><span><para>Set the width of the curve. </para></span></td>
@@ -274,13 +238,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Curve::getWidth
         </td>
         <td class="col-md-4"><a href="#">getWidth</a> () const
             <br><span><para>Get the width of the curve. </para></span></td>
@@ -289,13 +247,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setOutlineColor
         </td>
         <td class="col-md-4"><a href="#">setOutlineColor</a> (const Color4f &color)
             <br><span><para>Set the outline color of the curve. </para></span></td>
@@ -304,17 +256,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Color4f&
-            
-            
-            
-            
+            const Color4f& gf::Curve::getOutlineColor
         </td>
         <td class="col-md-4"><a href="#">getOutlineColor</a> () const
             <br><span><para>Get the outline color of the curve. </para></span></td>
@@ -323,13 +265,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setOutlineThickness
         </td>
         <td class="col-md-4"><a href="#">setOutlineThickness</a> (float thickness)
             <br><span><para>Set the thickness of the curve's outline. </para></span></td>
@@ -338,13 +274,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Curve::getOutlineThickness
         </td>
         <td class="col-md-4"><a href="#">getOutlineThickness</a> () const
             <br><span><para>Get the outline thickness of the curve. </para></span></td>
@@ -353,17 +283,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            std::size_t
-            
-            
-            
-            
+            virtual std::size_t gf::Curve::getPointCount
         </td>
         <td class="col-md-4"><a href="#">getPointCount</a> () const =0
             <br><span><para>Get the total number of points of the curve. </para></span></td>
@@ -372,17 +292,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            Vector2f
-            
-            
-            
-            
+            virtual Vector2f gf::Curve::getPoint
         </td>
         <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const =0
             <br><span><para>Get a point of the curve. </para></span></td>
@@ -391,13 +301,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::Curve::getLocalBounds
         </td>
         <td class="col-md-4"><a href="#">getLocalBounds</a> () const
             <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
@@ -406,13 +310,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setAnchor
         </td>
         <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
             <br><span><para>Set the anchor origin of the entity. </para></span></td>
@@ -421,13 +319,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            VertexBuffer
-            
-            
-            
-            
+            VertexBuffer gf::Curve::commitGeometry
         </td>
         <td class="col-md-4"><a href="#">commitGeometry</a> () const
             <br><span><para>Create a buffer with the current geometry. </para></span></td>
@@ -436,13 +328,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            VertexBuffer
-            
-            
-            
-            
+            VertexBuffer gf::Curve::commitOutlineGeometry
         </td>
         <td class="col-md-4"><a href="#">commitOutlineGeometry</a> () const
             <br><span><para>Create a buffer with the current outline geometry. </para></span></td>
@@ -451,17 +337,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::Curve::draw
         </td>
         <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states)
             <br><span><para>Draw the object to a render target. </para></span></td>
@@ -481,13 +357,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::updateGeometry
         </td>
         <td class="col-md-4"><a href="#">updateGeometry</a> ()
             <br><span><para>Recompute the internal geometry of the curve. </para></span></td>
@@ -496,13 +366,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Curve::setClosed
         </td>
         <td class="col-md-4"><a href="#">setClosed</a> (bool closed=true)
             <br><span><para>Set the curve closed. </para></span></td>

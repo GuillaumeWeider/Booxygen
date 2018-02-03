@@ -182,9 +182,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BareTexture::BareTexture
         </td>
         <td class="col-md-4"><a href="#">BareTexture</a> (Format format)
             <br><span><para>Constructor. </para></span></td>
@@ -193,9 +191,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BareTexture::~BareTexture
         </td>
         <td class="col-md-4"><a href="#">~BareTexture</a> ()
             <br><span><para>Destructor. </para></span></td>
@@ -204,9 +200,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BareTexture::BareTexture
         </td>
         <td class="col-md-4"><a href="#">BareTexture</a> (const BareTexture &)=delete
             <br><span><para>Deleted copy constructor. </para></span></td>
@@ -215,13 +209,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            BareTexture&
-            
-            
-            
-            
+            BareTexture& gf::BareTexture::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const BareTexture &)=delete
             <br><span><para>Deleted copy assignment. </para></span></td>
@@ -230,9 +218,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BareTexture::BareTexture
         </td>
         <td class="col-md-4"><a href="#">BareTexture</a> (BareTexture &&other)
             <br><span><para>Move constructor. </para></span></td>
@@ -241,13 +227,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            BareTexture&
-            
-            
-            
-            
+            BareTexture& gf::BareTexture::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (BareTexture &&other)
             <br><span><para>Move assignment. </para></span></td>
@@ -256,13 +236,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Format
-            
-            
-            
-            
+            Format gf::BareTexture::getFormat
         </td>
         <td class="col-md-4"><a href="#">getFormat</a> () const
             <br><span><para>Get the format of the texture. </para></span></td>
@@ -271,13 +245,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            unsigned
-            
-            
-            
-            
+            unsigned gf::BareTexture::getName
         </td>
         <td class="col-md-4"><a href="#">getName</a> () const
             <br><span><para>Get the internal representation of the texture. </para></span></td>
@@ -286,13 +254,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2u
-            
-            
-            
-            
+            Vector2u gf::BareTexture::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const
             <br><span><para>Return the size of the texture. </para></span></td>
@@ -301,13 +263,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BareTexture::setSmooth
         </td>
         <td class="col-md-4"><a href="#">setSmooth</a> (bool smooth=true)
             <br><span><para>Enable or disable the smooth filter. </para></span></td>
@@ -316,13 +272,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::BareTexture::isSmooth
         </td>
         <td class="col-md-4"><a href="#">isSmooth</a> () const noexcept
             <br><span><para>Check if the smooth filter is enabled or not. </para></span></td>
@@ -331,13 +281,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BareTexture::setRepeated
         </td>
         <td class="col-md-4"><a href="#">setRepeated</a> (bool repeated=true)
             <br><span><para>Enable or disable repeating. </para></span></td>
@@ -346,13 +290,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::BareTexture::isRepeated
         </td>
         <td class="col-md-4"><a href="#">isRepeated</a> () const noexcept
             <br><span><para>Check if the texture is repeated or not. </para></span></td>
@@ -361,13 +299,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BareTexture::update
         </td>
         <td class="col-md-4"><a href="#">update</a> (const uint8_t *data)
             <br><span><para>Update the whole texture from an array of pixels. </para></span></td>
@@ -376,13 +308,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BareTexture::update
         </td>
         <td class="col-md-4"><a href="#">update</a> (const uint8_t *data, const RectU &rect)
             <br><span><para>Update a part of the texture from an array of pixels. </para></span></td>
@@ -391,13 +317,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::BareTexture::computeTextureCoords
         </td>
         <td class="col-md-4"><a href="#">computeTextureCoords</a> (const RectU &rect) const
             <br><span><para>Compute normalized texture coordinates. </para></span></td>
@@ -406,13 +326,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::BareTexture::generateMipmap
         </td>
         <td class="col-md-4"><a href="#">generateMipmap</a> ()
             <br><span><para>Generate a mipmap using the current texture data. </para></span></td>
@@ -432,17 +346,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            static
-            
-            
-            
-            void
-            
-            
-            
-            
+            static void gf::BareTexture::bind
         </td>
         <td class="col-md-4"><a href="#">bind</a> (const BareTexture *texture)
             <br><span><para>Bind a texture for rendering. </para></span></td>
@@ -462,13 +366,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::BareTexture::create
         </td>
         <td class="col-md-4"><a href="#">create</a> (Vector2u size, const uint8_t *data)
             <br><span><para>Create the texture. </para></span></td>

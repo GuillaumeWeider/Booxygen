@@ -173,9 +173,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Library::Library
         </td>
         <td class="col-md-4"><a href="#">Library</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -184,9 +182,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Library::Library
         </td>
         <td class="col-md-4"><a href="#">Library</a> (const Library &)=delete
             <br><span><para>Deleted copy constructor. </para></span></td>
@@ -195,13 +191,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Library&
-            
-            
-            
-            
+            Library& gf::Library::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const Library &)=delete
             <br><span><para>Deleted copy assignment. </para></span></td>
@@ -210,9 +200,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Library::Library
         </td>
         <td class="col-md-4"><a href="#">Library</a> (Library &&)
             <br><span><para>Move constructor. </para></span></td>
@@ -221,13 +209,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Library&
-            
-            
-            
-            
+            Library& gf::Library::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (Library &&)
             <br><span><para>Move assignment. </para></span></td>
@@ -236,9 +218,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Library::~Library
         </td>
         <td class="col-md-4"><a href="#">~Library</a> ()
             <br><span><para>Destructor. </para></span></td>
@@ -258,17 +238,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            static
-            
-            
-            
-            Version
-            
-            
-            
-            
+            static Version gf::Library::getVersion
         </td>
         <td class="col-md-4"><a href="#">getVersion</a> ()
             <br><span><para>Get the version of the gf library. </para></span></td>
@@ -277,21 +247,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            static
-            
-            
-            
-            std::tuple<Version,
-            
-            
-            
-            Version>
-            
-            
-            
-            
+            static std::tuple<Version, Version> gf::Library::getDependencyVersion
         </td>
         <td class="col-md-4"><a href="#">getDependencyVersion</a> (Dependency dep)
             <br><span><para>Get the version information about the library dependencies. </para></span></td>

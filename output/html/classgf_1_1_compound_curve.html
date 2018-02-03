@@ -156,9 +156,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::CompoundCurve::CompoundCurve
         </td>
         <td class="col-md-4"><a href="#">CompoundCurve</a> (Vector2f origin=Vector2f(0, 0))
             <br><span><para>Constructor. </para></span></td>
@@ -167,13 +165,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            CompoundCurve&
-            
-            
-            
-            
+            CompoundCurve& gf::CompoundCurve::setOrigin
         </td>
         <td class="col-md-4"><a href="#">setOrigin</a> (Vector2f origin)
             <br><span><para>Set the first point of the curve. </para></span></td>
@@ -182,13 +174,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            CompoundCurve&
-            
-            
-            
-            
+            CompoundCurve& gf::CompoundCurve::lineTo
         </td>
         <td class="col-md-4"><a href="#">lineTo</a> (Vector2f p1)
             <br><span><para>Create a line from the last point to a new point. </para></span></td>
@@ -197,13 +183,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            CompoundCurve&
-            
-            
-            
-            
+            CompoundCurve& gf::CompoundCurve::quadraticCurveTo
         </td>
         <td class="col-md-4"><a href="#">quadraticCurveTo</a> (Vector2f p1, Vector2f p2, std::size_t pointCount=20)
             <br><span><para>Create a quadratic Bézier curve from the last point to a new point. </para></span></td>
@@ -212,13 +192,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            CompoundCurve&
-            
-            
-            
-            
+            CompoundCurve& gf::CompoundCurve::cubicCurveTo
         </td>
         <td class="col-md-4"><a href="#">cubicCurveTo</a> (Vector2f p1, Vector2f p2, Vector2f p3, std::size_t pointCount=30)
             <br><span><para>Create a cubic Bézier curve from the last point to a new point. </para></span></td>
@@ -227,13 +201,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::CompoundCurve::close
         </td>
         <td class="col-md-4"><a href="#">close</a> ()
             <br><span><para>Close the curve. </para></span></td>
@@ -242,13 +210,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            CompoundCurve&
-            
-            
-            
-            
+            CompoundCurve& gf::CompoundCurve::clear
         </td>
         <td class="col-md-4"><a href="#">clear</a> (Vector2f origin=Vector2f(0, 0))
             <br><span><para>Reset the curve to a new origin. </para></span></td>
@@ -257,17 +219,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            std::size_t
-            
-            
-            
-            
+            virtual std::size_t gf::CompoundCurve::getPointCount
         </td>
         <td class="col-md-4"><a href="#">getPointCount</a> () const override
             <br><span><para>Get the total number of points of the curve. </para></span></td>
@@ -276,17 +228,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            Vector2f
-            
-            
-            
-            
+            virtual Vector2f gf::CompoundCurve::getPoint
         </td>
         <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const override
             <br><span><para>Get a point of the curve. </para></span></td>

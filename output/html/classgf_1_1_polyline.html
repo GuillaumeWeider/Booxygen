@@ -175,9 +175,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polyline::Polyline
         </td>
         <td class="col-md-4"><a href="#">Polyline</a> (Type type=Chain)
             <br><span><para>Default constructor. </para></span></td>
@@ -186,9 +184,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polyline::Polyline
         </td>
         <td class="col-md-4"><a href="#">Polyline</a> (ArrayRef< Vector2f > points, Type type=Chain)
             <br><span><para>Constructor from an array. </para></span></td>
@@ -197,9 +193,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polyline::Polyline
         </td>
         <td class="col-md-4"><a href="#">Polyline</a> (Iterator first, Iterator last, Type type=Chain)
             <br><span><para>Constructor from points. </para></span></td>
@@ -208,13 +202,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Polyline::addPoint
         </td>
         <td class="col-md-4"><a href="#">addPoint</a> (Vector2f point)
             <br><span><para>Add a point to the polyline. </para></span></td>
@@ -223,13 +211,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            std::size_t
-            
-            
-            
-            
+            std::size_t gf::Polyline::getPointCount
         </td>
         <td class="col-md-4"><a href="#">getPointCount</a> () const
             <br><span><para>Get the number of points of the polyline. </para></span></td>
@@ -238,13 +220,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polyline::getPoint
         </td>
         <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const
             <br><span><para>Get the i-th point of the polyline. </para></span></td>
@@ -253,17 +229,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vector2f*
-            
-            
-            
-            
+            const Vector2f* gf::Polyline::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () const
             <br><span><para>Get an iterator to the first point. </para></span></td>
@@ -272,17 +238,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vector2f*
-            
-            
-            
-            
+            const Vector2f* gf::Polyline::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () const
             <br><span><para>Get an iterator past the last point. </para></span></td>
@@ -291,13 +247,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Polyline::hasPrevPoint
         </td>
         <td class="col-md-4"><a href="#">hasPrevPoint</a> (std::size_t i) const
             <br><span><para>Check if there is a point before the i-th point. </para></span></td>
@@ -306,13 +256,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polyline::getPrevPoint
         </td>
         <td class="col-md-4"><a href="#">getPrevPoint</a> (std::size_t i) const
             <br><span><para>Get the point before the i-th point. </para></span></td>
@@ -321,13 +265,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Polyline::hasNextPoint
         </td>
         <td class="col-md-4"><a href="#">hasNextPoint</a> (std::size_t i) const
             <br><span><para>Check if there is a point after the i-th point. </para></span></td>
@@ -336,13 +274,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polyline::getNextPoint
         </td>
         <td class="col-md-4"><a href="#">getNextPoint</a> (std::size_t i) const
             <br><span><para>Get the point after the i-th point. </para></span></td>
@@ -351,13 +283,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Polyline::setType
         </td>
         <td class="col-md-4"><a href="#">setType</a> (Type type)
             <br><span><para>Set the type of the polyline. </para></span></td>
@@ -366,13 +292,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Polyline::isLoop
         </td>
         <td class="col-md-4"><a href="#">isLoop</a> () const
             <br><span><para>Check is the polyline is a loop. </para></span></td>
@@ -381,13 +301,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Polyline::isChain
         </td>
         <td class="col-md-4"><a href="#">isChain</a> () const
             <br><span><para>Check is the polyline is a chain. </para></span></td>

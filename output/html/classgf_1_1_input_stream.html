@@ -157,9 +157,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::InputStream::InputStream
         </td>
         <td class="col-md-4"><a href="#">InputStream</a> ()=default
             <br><span><para>Default constructor. </para></span></td>
@@ -168,9 +166,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::InputStream::InputStream
         </td>
         <td class="col-md-4"><a href="#">InputStream</a> (const InputStream &)=delete
             <br><span><para>Deleted copy constructor. </para></span></td>
@@ -179,13 +175,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            InputStream&
-            
-            
-            
-            
+            InputStream& gf::InputStream::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const InputStream &)=delete
             <br><span><para>Deleted copy assignment. </para></span></td>
@@ -194,13 +184,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            
+            virtual gf::InputStream::~InputStream
         </td>
         <td class="col-md-4"><a href="#">~InputStream</a> ()
             <br><span><para>Destructor. </para></span></td>
@@ -209,17 +193,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            std::size_t
-            
-            
-            
-            
+            virtual std::size_t gf::InputStream::read
         </td>
         <td class="col-md-4"><a href="#">read</a> (void *data, std::size_t size)=0
             <br><span><para>Read data from the stream. </para></span></td>
@@ -228,17 +202,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            long
-            
-            
-            
-            
+            virtual long gf::InputStream::seek
         </td>
         <td class="col-md-4"><a href="#">seek</a> (long position)=0
             <br><span><para>Change the current reading position. </para></span></td>
@@ -247,17 +211,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            long
-            
-            
-            
-            
+            virtual long gf::InputStream::tell
         </td>
         <td class="col-md-4"><a href="#">tell</a> ()=0
             <br><span><para>Get the current reading position in the stream. </para></span></td>
@@ -266,17 +220,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            std::size_t
-            
-            
-            
-            
+            virtual std::size_t gf::InputStream::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> ()=0
             <br><span><para>Return the size of the stream. </para></span></td>

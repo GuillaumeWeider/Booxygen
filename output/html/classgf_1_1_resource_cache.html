@@ -154,33 +154,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            using
-            
-            
-            
-            gf::ResourceCache<
-            
-            
-            
-            T
-            
-            
-            
-            >::Loader
-            
-            
-            
-            =
-            
-            
-            
-            std::function<std::unique_ptr<T>(const
-            
-            
-            
-            
+            using gf::ResourceCache< T >::Loader =  std::function<std::unique_ptr<T>(const Path&)>
         </td>
         <td class="col-md-4"><a href="#">Loader</a> 
             <br><span><para>A resource loader. </para></span></td>
@@ -202,17 +176,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::ResourceCache<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::ResourceCache< T >::ResourceCache
         </td>
         <td class="col-md-4"><a href="#">ResourceCache</a> (Loader loader)
             <br><span><para>Constructor. </para></span></td>
@@ -221,17 +185,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::ResourceCache<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::ResourceCache< T >::ResourceCache
         </td>
         <td class="col-md-4"><a href="#">ResourceCache</a> (const ResourceCache &)=delete
             <br><span><para>Deleted copy constructor. </para></span></td>
@@ -240,21 +194,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            ResourceCache&
-            
-            
-            
-            gf::ResourceCache<
-            
-            
-            
-            T
-            
-            
-            
-            
+            ResourceCache& gf::ResourceCache< T >::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const ResourceCache &)=delete
             <br><span><para>Deleted copy assignment. </para></span></td>
@@ -263,21 +203,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T&
-            
-            
-            
-            gf::ResourceCache<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T& gf::ResourceCache< T >::getResource
         </td>
         <td class="col-md-4"><a href="#">getResource</a> (AssetManager &assetManager, const Path &filename)
             <br><span><para>Get a resource. </para></span></td>

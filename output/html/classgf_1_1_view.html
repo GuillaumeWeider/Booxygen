@@ -185,9 +185,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::View::View
         </td>
         <td class="col-md-4"><a href="#">View</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -196,9 +194,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::View::View
         </td>
         <td class="col-md-4"><a href="#">View</a> (const RectF &rect)
             <br><span><para>Construct the view from a rectangle. </para></span></td>
@@ -207,9 +203,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::View::View
         </td>
         <td class="col-md-4"><a href="#">View</a> (Vector2f center, Vector2f size)
             <br><span><para>Construct the view from its center and size. </para></span></td>
@@ -218,13 +212,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            
+            virtual gf::View::~View
         </td>
         <td class="col-md-4"><a href="#">~View</a> ()
             <br><span><para>Destructor. </para></span></td>
@@ -233,13 +221,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setCenter
         </td>
         <td class="col-md-4"><a href="#">setCenter</a> (Vector2f center)
             <br><span><para>Set the center of the view. </para></span></td>
@@ -248,13 +230,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::View::getCenter
         </td>
         <td class="col-md-4"><a href="#">getCenter</a> () const
             <br><span><para>Get the center of the view. </para></span></td>
@@ -263,13 +239,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setSize
         </td>
         <td class="col-md-4"><a href="#">setSize</a> (Vector2f size)
             <br><span><para>Set the size of the view. </para></span></td>
@@ -278,13 +248,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::View::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const
             <br><span><para>Get the size of the view. </para></span></td>
@@ -293,13 +257,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setRotation
         </td>
         <td class="col-md-4"><a href="#">setRotation</a> (float rotation)
             <br><span><para>Set the orientation of the view. </para></span></td>
@@ -308,13 +266,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::View::getRotation
         </td>
         <td class="col-md-4"><a href="#">getRotation</a> () const
             <br><span><para>Get the current orientation of the view. </para></span></td>
@@ -323,13 +275,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setViewport
         </td>
         <td class="col-md-4"><a href="#">setViewport</a> (const RectF &viewport)
             <br><span><para>Set the target viewport. </para></span></td>
@@ -338,17 +284,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            RectF&
-            
-            
-            
-            
+            const RectF& gf::View::getViewport
         </td>
         <td class="col-md-4"><a href="#">getViewport</a> () const
             <br><span><para>Get the target viewport rectangle of the view. </para></span></td>
@@ -357,13 +293,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::reset
         </td>
         <td class="col-md-4"><a href="#">reset</a> (const RectF &rect)
             <br><span><para>Reset the view to the given rectangle. </para></span></td>
@@ -372,13 +302,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::move
         </td>
         <td class="col-md-4"><a href="#">move</a> (Vector2f offset)
             <br><span><para>Move the view relatively to its current position. </para></span></td>
@@ -387,13 +311,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::rotate
         </td>
         <td class="col-md-4"><a href="#">rotate</a> (float angle)
             <br><span><para>Rotate the view relatively to its current orientation. </para></span></td>
@@ -402,13 +320,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::zoom
         </td>
         <td class="col-md-4"><a href="#">zoom</a> (float factor)
             <br><span><para>Resize the view rectangle relatively to its current size. </para></span></td>
@@ -417,13 +329,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::zoom
         </td>
         <td class="col-md-4"><a href="#">zoom</a> (float factor, Vector2f fixed)
             <br><span><para>Resize the view rectangle relatively to its current size and a fixed point. </para></span></td>
@@ -432,13 +338,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Matrix3f
-            
-            
-            
-            
+            Matrix3f gf::View::getTransform
         </td>
         <td class="col-md-4"><a href="#">getTransform</a> () const
             <br><span><para>Get the projection transform of the view. </para></span></td>
@@ -447,13 +347,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Matrix3f
-            
-            
-            
-            
+            Matrix3f gf::View::getInverseTransform
         </td>
         <td class="col-md-4"><a href="#">getInverseTransform</a> () const
             <br><span><para>Get the inverse projection transform of the view. </para></span></td>
@@ -473,13 +367,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setSizeNoCallback
         </td>
         <td class="col-md-4"><a href="#">setSizeNoCallback</a> (Vector2f size)
             <br><span><para>Set the world size, without calling <ref refid="classgf_1_1_view_1a631b73d08175963f62dcc70a937fa42e" kindref="member">onSizeChange()</ref> </para></span></td>
@@ -488,17 +376,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::View::onSizeChange
         </td>
         <td class="col-md-4"><a href="#">onSizeChange</a> (Vector2f size)
             <br><span><para>Callback when the world has just been resized. </para></span></td>
@@ -507,13 +385,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::View::setViewportNoCallback
         </td>
         <td class="col-md-4"><a href="#">setViewportNoCallback</a> (const RectF &viewport)
             <br><span><para>Set the viewport, without calling <ref refid="classgf_1_1_view_1a93edc1cd24540ad018ff00d2971a860f" kindref="member">onViewportChange()</ref> </para></span></td>
@@ -522,17 +394,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::View::onViewportChange
         </td>
         <td class="col-md-4"><a href="#">onViewportChange</a> (const RectF &viewport)
             <br><span><para>Callback when the viewport has just been changed. </para></span></td>

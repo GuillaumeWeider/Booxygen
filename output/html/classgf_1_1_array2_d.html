@@ -156,29 +156,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            const T* gf::Array2D< T, I >::getDataPtr
         </td>
         <td class="col-md-4"><a href="#">getDataPtr</a> () const noexcept
             <br><span><para>Get the pointer to raw data. </para></span></td>
@@ -187,25 +165,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            std::size_t
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            std::size_t gf::Array2D< T, I >::getDataSize
         </td>
         <td class="col-md-4"><a href="#">getDataSize</a> () const noexcept
             <br><span><para>Get the raw data size. </para></span></td>
@@ -214,33 +174,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Vector<I,
-            
-            
-            
-            2>
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr Vector<I, 2> gf::Array2D< T, I >::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const noexcept
             <br><span><para>Get the size of the array. </para></span></td>
@@ -249,29 +183,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            I
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr I gf::Array2D< T, I >::getCols
         </td>
         <td class="col-md-4"><a href="#">getCols</a> () const noexcept
             <br><span><para>Get the number of columns. </para></span></td>
@@ -280,29 +192,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            I
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr I gf::Array2D< T, I >::getRows
         </td>
         <td class="col-md-4"><a href="#">getRows</a> () const noexcept
             <br><span><para>Get the number of rows. </para></span></td>
@@ -311,29 +201,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr bool gf::Array2D< T, I >::isEmpty
         </td>
         <td class="col-md-4"><a href="#">isEmpty</a> () const noexcept
             <br><span><para>Check if the array is empty. </para></span></td>
@@ -342,29 +210,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            bool
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr bool gf::Array2D< T, I >::isValid
         </td>
         <td class="col-md-4"><a href="#">isValid</a> (Vector< I, 2 > pos) const noexcept
             <br><span><para>Check if a position is valid. </para></span></td>
@@ -384,25 +230,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            T& gf::Array2D< T, I >::operator()
         </td>
         <td class="col-md-4"><a href="#">operator()</a> (Vector< I, 2 > pos)
             <br><span><para>Get the element at a given 2D position. </para></span></td>
@@ -411,25 +239,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            T& gf::Array2D< T, I >::operator()
         </td>
         <td class="col-md-4"><a href="#">operator()</a> (std::size_t index)
             <br><span><para>Get the element at a given 1D index. </para></span></td>
@@ -438,29 +248,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            T&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            const T& gf::Array2D< T, I >::operator()
         </td>
         <td class="col-md-4"><a href="#">operator()</a> (Vector< I, 2 > pos) const
             <br><span><para>Get the element at a given 2D position. </para></span></td>
@@ -469,29 +257,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            T&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            const T& gf::Array2D< T, I >::operator()
         </td>
         <td class="col-md-4"><a href="#">operator()</a> (std::size_t index) const
             <br><span><para>Get the element at a given 1D index. </para></span></td>
@@ -500,33 +266,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Vector<I,
-            
-            
-            
-            2>
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr Vector<I, 2> gf::Array2D< T, I >::toPosition
         </td>
         <td class="col-md-4"><a href="#">toPosition</a> (std::size_t pos) const noexcept
             <br><span><para><ref refid="structgf_1_1_transform" kindref="compound">Transform</ref> a 1D position into a 2D position. </para></span></td>
@@ -546,25 +286,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit4Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit4Neighbors</a> (Vector< I, 2 > pos, Func func)
             <br><span><para>Visit the 4 neighbors of a given position. </para></span></td>
@@ -573,25 +295,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit4Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit4Neighbors</a> (Vector< I, 2 > pos, Func func) const
             <br><span><para>Visit the 4 neighbors of a given position. </para></span></td>
@@ -600,25 +304,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit12Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit12Neighbors</a> (Vector< I, 2 > pos, Func func)
             <br><span><para>Visit the 12 neighbors of a given position. </para></span></td>
@@ -627,25 +313,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit12Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit12Neighbors</a> (Vector< I, 2 > pos, Func func) const
             <br><span><para>Visit the 12 neighbors of a given position. </para></span></td>
@@ -654,25 +322,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit8Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit8Neighbors</a> (Vector< I, 2 > pos, Func func)
             <br><span><para>Visit the 8 neighbors of a given position. </para></span></td>
@@ -681,25 +331,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit8Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit8Neighbors</a> (Vector< I, 2 > pos, Func func) const
             <br><span><para>Visit the 8 neighbors of a given position. </para></span></td>
@@ -708,25 +340,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit24Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit24Neighbors</a> (Vector< I, 2 > pos, Func func)
             <br><span><para>Visit the 24 neighbors of a given position. </para></span></td>
@@ -735,25 +349,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::visit24Neighbors
         </td>
         <td class="col-md-4"><a href="#">visit24Neighbors</a> (Vector< I, 2 > pos, Func func) const
             <br><span><para>Visit the 24 neighbors of a given position. </para></span></td>
@@ -773,29 +369,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            const T* gf::Array2D< T, I >::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () const noexcept
             <br><span><para>Get an iterator to the first element of the array. </para></span></td>
@@ -804,29 +378,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            const T* gf::Array2D< T, I >::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () const noexcept
             <br><span><para>Get an iterator to the element following the last element of the array. </para></span></td>
@@ -835,25 +387,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T*
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            T* gf::Array2D< T, I >::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () noexcept
             <br><span><para>Get an iterator to the first element of the array. </para></span></td>
@@ -862,25 +396,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T*
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            T* gf::Array2D< T, I >::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () noexcept
             <br><span><para>Get an iterator to the element following the last element of the array. </para></span></td>
@@ -889,29 +405,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            RangeZ
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr RangeZ gf::Array2D< T, I >::getIndexRange
         </td>
         <td class="col-md-4"><a href="#">getIndexRange</a> () const noexcept
             <br><span><para>Get the 1D index range of the array. </para></span></td>
@@ -920,29 +414,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Range<I>
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr Range<I> gf::Array2D< T, I >::getRowRange
         </td>
         <td class="col-md-4"><a href="#">getRowRange</a> () const noexcept
             <br><span><para>Get the row range. </para></span></td>
@@ -951,29 +423,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Range<I>
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr Range<I> gf::Array2D< T, I >::getColRange
         </td>
         <td class="col-md-4"><a href="#">getColRange</a> () const noexcept
             <br><span><para>Get the column range. </para></span></td>
@@ -982,29 +432,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            PositionRange<I>
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            constexpr PositionRange<I> gf::Array2D< T, I >::getPositionRange
         </td>
         <td class="col-md-4"><a href="#">getPositionRange</a> () const noexcept
             <br><span><para>Get the position range. </para></span></td>
@@ -1026,21 +454,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            gf::Array2D< T, I >::Array2D
         </td>
         <td class="col-md-4"><a href="#">Array2D</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -1049,21 +463,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            gf::Array2D< T, I >::Array2D
         </td>
         <td class="col-md-4"><a href="#">Array2D</a> (Vector< I, 2 > size)
             <br><span><para>Constructor with a size. </para></span></td>
@@ -1072,21 +472,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            gf::Array2D< T, I >::Array2D
         </td>
         <td class="col-md-4"><a href="#">Array2D</a> (Vector< I, 2 > size, const T &value)
             <br><span><para>Constructor with a size and a value. </para></span></td>
@@ -1095,21 +481,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            gf::Array2D< T, I >::Array2D
         </td>
         <td class="col-md-4"><a href="#">Array2D</a> (const Array2D &)=default
             <br><span><para>Default copy constructor. </para></span></td>
@@ -1118,25 +490,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Array2D&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            Array2D& gf::Array2D< T, I >::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (const Array2D &)=default
             <br><span><para>Default copy assignment. </para></span></td>
@@ -1145,21 +499,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            gf::Array2D< T, I >::Array2D
         </td>
         <td class="col-md-4"><a href="#">Array2D</a> (Array2D &&)=default
             <br><span><para>Default move constructor. </para></span></td>
@@ -1168,25 +508,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Array2D&
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            Array2D& gf::Array2D< T, I >::operator=
         </td>
         <td class="col-md-4"><a href="#">operator=</a> (Array2D &&)=default
             <br><span><para>Default move assignement. </para></span></td>
@@ -1195,25 +517,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Array2D<
-            
-            
-            
-            T,
-            
-            
-            
-            I
-            
-            
-            
-            
+            void gf::Array2D< T, I >::swap
         </td>
         <td class="col-md-4"><a href="#">swap</a> (Array2D &other)
             <br><span><para>Swap with another array. </para></span></td>

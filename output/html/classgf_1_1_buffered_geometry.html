@@ -158,9 +158,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BufferedGeometry::BufferedGeometry
         </td>
         <td class="col-md-4"><a href="#">BufferedGeometry</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -169,9 +167,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BufferedGeometry::BufferedGeometry
         </td>
         <td class="col-md-4"><a href="#">BufferedGeometry</a> (const VertexBuffer &buffer)
             <br><span><para>Constructor with a buffer. </para></span></td>
@@ -180,9 +176,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::BufferedGeometry::BufferedGeometry
         </td>
         <td class="col-md-4"><a href="#">BufferedGeometry</a> (const VertexBuffer &buffer, const VertexBuffer &outlineBuffer)
             <br><span><para>Constructor with a buffer and an outline buffer. </para></span></td>
@@ -191,13 +185,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::setBuffer
         </td>
         <td class="col-md-4"><a href="#">setBuffer</a> (const VertexBuffer &buffer)
             <br><span><para>Set the vertex buffer. </para></span></td>
@@ -206,13 +194,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::setOutlineBuffer
         </td>
         <td class="col-md-4"><a href="#">setOutlineBuffer</a> (const VertexBuffer &outlineBuffer)
             <br><span><para>Set the outline buffer, if any. </para></span></td>
@@ -221,13 +203,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::setTexture
         </td>
         <td class="col-md-4"><a href="#">setTexture</a> (const BareTexture &texture)
             <br><span><para>Change the source texture of the geometry. </para></span></td>
@@ -236,17 +212,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            BareTexture&
-            
-            
-            
-            
+            const BareTexture& gf::BufferedGeometry::getTexture
         </td>
         <td class="col-md-4"><a href="#">getTexture</a> () const
             <br><span><para>Get the source texture of the geometry. </para></span></td>
@@ -255,13 +221,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::BufferedGeometry::hasTexture
         </td>
         <td class="col-md-4"><a href="#">hasTexture</a> () const
             <br><span><para>Check if a texture is set. </para></span></td>
@@ -270,13 +230,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::unsetTexture
         </td>
         <td class="col-md-4"><a href="#">unsetTexture</a> ()
             <br><span><para>Unset the source texture of the geometry. </para></span></td>
@@ -285,13 +239,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::setLocalBounds
         </td>
         <td class="col-md-4"><a href="#">setLocalBounds</a> (const RectF &bounds)
             <br><span><para>Set the local bounds of the geometry. </para></span></td>
@@ -300,13 +248,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::BufferedGeometry::getLocalBounds
         </td>
         <td class="col-md-4"><a href="#">getLocalBounds</a> () const
             <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
@@ -315,13 +257,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::BufferedGeometry::setAnchor
         </td>
         <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
             <br><span><para>Set the anchor origin of the entity. </para></span></td>
@@ -330,17 +266,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::BufferedGeometry::draw
         </td>
         <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
             <br><span><para>Draw the object to a render target. </para></span></td>

@@ -156,21 +156,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -179,21 +165,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> (std::nullptr_t)
             <br><span><para>Null constructor. </para></span></td>
@@ -202,21 +174,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> (T *data, std::size_t size)
             <br><span><para>Constructor from a pointer and a size. </para></span></td>
@@ -225,17 +183,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> (std::vector< T > &values)
             <br><span><para>Constructor from a <computeroutput>std::vector</computeroutput> </para></span></td>
@@ -244,17 +192,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> (std::array< T, N > &values)
             <br><span><para>Constructor from a <computeroutput>std::array</computeroutput> </para></span></td>
@@ -263,21 +201,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::BufferRef< T >::BufferRef
         </td>
         <td class="col-md-4"><a href="#">BufferRef</a> (T(&data)[N])
             <br><span><para>Constructor from a static array. </para></span></td>
@@ -286,21 +210,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T*
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T* gf::BufferRef< T >::getData
         </td>
         <td class="col-md-4"><a href="#">getData</a> () noexcept
             <br><span><para>Get a pointer to the elements. </para></span></td>
@@ -309,25 +219,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            std::size_t
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr std::size_t gf::BufferRef< T >::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const noexcept
             <br><span><para>Get the number of elements. </para></span></td>
@@ -336,21 +228,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T*
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T* gf::BufferRef< T >::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () noexcept
             <br><span><para>Get an iterator to the first element. </para></span></td>
@@ -359,21 +237,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T*
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T* gf::BufferRef< T >::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () noexcept
             <br><span><para>Get an iterator past the last element. </para></span></td>
@@ -382,21 +246,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T&
-            
-            
-            
-            gf::BufferRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T& gf::BufferRef< T >::operator[]
         </td>
         <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index)
             <br><span><para>Get an element at a given index. </para></span></td>

@@ -156,21 +156,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -179,21 +165,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (std::nullptr_t)
             <br><span><para>Null constructor. </para></span></td>
@@ -202,21 +174,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (const T *data, std::size_t size)
             <br><span><para>Constructor from a pointer and a size. </para></span></td>
@@ -225,17 +183,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (const std::vector< T > &values)
             <br><span><para>Constructor from a <computeroutput>std::vector</computeroutput> </para></span></td>
@@ -244,17 +192,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (const std::array< T, N > &values)
             <br><span><para>Constructor from a <computeroutput>std::array</computeroutput> </para></span></td>
@@ -263,21 +201,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (const T(&data)[N])
             <br><span><para>Constructor from a static array. </para></span></td>
@@ -286,17 +210,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::ArrayRef< T >::ArrayRef
         </td>
         <td class="col-md-4"><a href="#">ArrayRef</a> (std::initializer_list< T > values)
             <br><span><para>Constructor from an initializer list. </para></span></td>
@@ -305,29 +219,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr const T* gf::ArrayRef< T >::getData
         </td>
         <td class="col-md-4"><a href="#">getData</a> () const noexcept
             <br><span><para>Get a pointer to the elements. </para></span></td>
@@ -336,25 +228,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            std::size_t
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr std::size_t gf::ArrayRef< T >::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const noexcept
             <br><span><para>Get the number of elements. </para></span></td>
@@ -363,29 +237,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr const T* gf::ArrayRef< T >::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () const noexcept
             <br><span><para>Get an iterator to the first element. </para></span></td>
@@ -394,29 +246,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            const
-            
-            
-            
-            T*
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr const T* gf::ArrayRef< T >::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () const noexcept
             <br><span><para>Get an iterator past the last element. </para></span></td>
@@ -425,29 +255,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            const
-            
-            
-            
-            T&
-            
-            
-            
-            gf::ArrayRef<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr const T& gf::ArrayRef< T >::operator[]
         </td>
         <td class="col-md-4"><a href="#">operator[]</a> (std::size_t index) const
             <br><span><para>Get an element at a given index. </para></span></td>

@@ -41,12 +41,13 @@ compound.details.detaileddescription.para.blank? %}
     {% for memberdef in section.memberdef %}
     <tr>
         <td class="col-md-1">
-            {% assign type = memberdef.definition[0] | split: " " %}
+            {% comment %}}{% assign type = memberdef.definition[0] | split: " " %}
             {% for word in type %}
             {% unless forloop.last == true %}
             {{ word }}
             {% endunless %}
-            {% endfor %}
+            {% endfor %}{% endcomment %}
+            {{ memberdef.definition[0] }}
         </td>
         <td class="col-md-4"><a href="#">{{ memberdef.name[0] }}</a> {{ memberdef.argsstring[0] }}
             <br><span>{{ memberdef.briefdescription[0].para[0] }}</span></td>

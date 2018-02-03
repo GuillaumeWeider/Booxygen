@@ -154,13 +154,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::normalize
         </td>
         <td class="col-md-4"><a href="#">normalize</a> (double min=0.0, double max=1.0)
             <br><span><para>Normalize the heightmap. </para></span></td>
@@ -169,13 +163,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::addHill
         </td>
         <td class="col-md-4"><a href="#">addHill</a> (Vector2d center, double radius, double height)
             <br><span><para>Add a hill to the heightmap. </para></span></td>
@@ -184,13 +172,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::digHill
         </td>
         <td class="col-md-4"><a href="#">digHill</a> (Vector2d center, double radius, double height)
             <br><span><para>Dig a hill in the heightmap. </para></span></td>
@@ -199,13 +181,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::addNoise
         </td>
         <td class="col-md-4"><a href="#">addNoise</a> (Noise2D &noise, double scale=1.0)
             <br><span><para>Add a noise to the heightmap. </para></span></td>
@@ -214,13 +190,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::addValue
         </td>
         <td class="col-md-4"><a href="#">addValue</a> (double value)
             <br><span><para>Add a constant to the heightmap. </para></span></td>
@@ -229,13 +199,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::scale
         </td>
         <td class="col-md-4"><a href="#">scale</a> (double value)
             <br><span><para>Scale the values of the heightmap. </para></span></td>
@@ -244,13 +208,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::clamp
         </td>
         <td class="col-md-4"><a href="#">clamp</a> (double min=0.0, double max=1.0)
             <br><span><para>Clamp the values of the heightmap. </para></span></td>
@@ -270,13 +228,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            double
-            
-            
-            
-            
+            double gf::Heightmap::getSlope
         </td>
         <td class="col-md-4"><a href="#">getSlope</a> (Vector2i position) const
             <br><span><para>Compute the slope at a position. </para></span></td>
@@ -285,13 +237,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::thermalErosion
         </td>
         <td class="col-md-4"><a href="#">thermalErosion</a> (unsigned iterations, double talus, double fraction)
             <br><span><para>Apply thermal erosion to the heightmap. </para></span></td>
@@ -300,13 +246,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::hydraulicErosion
         </td>
         <td class="col-md-4"><a href="#">hydraulicErosion</a> (unsigned iterations, double rainAmount, double solubility, double evaporation, double capacity)
             <br><span><para>Apply hydraulic erosision to the heightmap. </para></span></td>
@@ -315,13 +255,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::fastErosion
         </td>
         <td class="col-md-4"><a href="#">fastErosion</a> (unsigned iterations, double talus, double fraction)
             <br><span><para>Apply fast erosion to the heightmap. </para></span></td>
@@ -330,13 +264,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            double
-            
-            
-            
-            
+            double gf::Heightmap::getErosionScore
         </td>
         <td class="col-md-4"><a href="#">getErosionScore</a> () const
             <br><span><para>Compute the erosion score for the heightmap. </para></span></td>
@@ -356,13 +284,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Heightmap
-            
-            
-            
-            
+            Heightmap gf::Heightmap::subMap
         </td>
         <td class="col-md-4"><a href="#">subMap</a> (RectI area) const
             <br><span><para>Get a sub-map of the heightmap. </para></span></td>
@@ -371,13 +293,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Image
-            
-            
-            
-            
+            Image gf::Heightmap::copyToGrayscaleImage
         </td>
         <td class="col-md-4"><a href="#">copyToGrayscaleImage</a> () const
             <br><span><para>Export to a grayscale image. </para></span></td>
@@ -386,13 +302,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Image
-            
-            
-            
-            
+            Image gf::Heightmap::copyToColoredImage
         </td>
         <td class="col-md-4"><a href="#">copyToColoredImage</a> (const ColorRamp &ramp, double waterLevel=0.5, Render render=Render::Colored) const
             <br><span><para>Export to a colored image. </para></span></td>
@@ -434,9 +344,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Heightmap::Heightmap
         </td>
         <td class="col-md-4"><a href="#">Heightmap</a> (Vector2i size)
             <br><span><para>Constructor. </para></span></td>
@@ -445,13 +353,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2i
-            
-            
-            
-            
+            Vector2i gf::Heightmap::getSize
         </td>
         <td class="col-md-4"><a href="#">getSize</a> () const
             <br><span><para>Get the size of the heightmap. </para></span></td>
@@ -460,13 +362,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::reset
         </td>
         <td class="col-md-4"><a href="#">reset</a> ()
             <br><span><para>Reset the heightmap. </para></span></td>
@@ -475,13 +371,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            double
-            
-            
-            
-            
+            double gf::Heightmap::getValue
         </td>
         <td class="col-md-4"><a href="#">getValue</a> (Vector2i position) const
             <br><span><para>Get the value at the specified position. </para></span></td>
@@ -490,13 +380,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Heightmap::setValue
         </td>
         <td class="col-md-4"><a href="#">setValue</a> (Vector2i position, double value)
             <br><span><para>Set the value at the specified position. </para></span></td>
@@ -505,17 +389,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            std::tuple<double,
-            
-            
-            
-            double>
-            
-            
-            
-            
+            std::tuple<double, double> gf::Heightmap::getMinMax
         </td>
         <td class="col-md-4"><a href="#">getMinMax</a> () const
             <br><span><para>Get the minimum and maximum of the heightmap. </para></span></td>

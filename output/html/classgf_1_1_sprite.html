@@ -174,9 +174,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Sprite::Sprite
         </td>
         <td class="col-md-4"><a href="#">Sprite</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -185,9 +183,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Sprite::Sprite
         </td>
         <td class="col-md-4"><a href="#">Sprite</a> (const Texture &texture)
             <br><span><para>Construct the sprite from a source texture. </para></span></td>
@@ -196,9 +192,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Sprite::Sprite
         </td>
         <td class="col-md-4"><a href="#">Sprite</a> (const Texture &texture, const RectF &textureRect)
             <br><span><para>Construct the sprite from a sub-rectangle of a source texture. </para></span></td>
@@ -207,13 +201,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Sprite::setTexture
         </td>
         <td class="col-md-4"><a href="#">setTexture</a> (const Texture &texture, bool resetRect=false)
             <br><span><para>Change the source texture of the sprite. </para></span></td>
@@ -222,17 +210,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Texture&
-            
-            
-            
-            
+            const Texture& gf::Sprite::getTexture
         </td>
         <td class="col-md-4"><a href="#">getTexture</a> () const
             <br><span><para>Get the source texture of the sprite. </para></span></td>
@@ -241,13 +219,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Sprite::hasTexture
         </td>
         <td class="col-md-4"><a href="#">hasTexture</a> () const
             <br><span><para>Check if a texture is set. </para></span></td>
@@ -256,13 +228,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Sprite::unsetTexture
         </td>
         <td class="col-md-4"><a href="#">unsetTexture</a> ()
             <br><span><para>Unset the source texture of the sprite. </para></span></td>
@@ -271,13 +237,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Sprite::setTextureRect
         </td>
         <td class="col-md-4"><a href="#">setTextureRect</a> (const RectF &rect)
             <br><span><para>Set the sub-rectangle of the texture that the sprite will display. </para></span></td>
@@ -286,17 +246,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            RectF&
-            
-            
-            
-            
+            const RectF& gf::Sprite::getTextureRect
         </td>
         <td class="col-md-4"><a href="#">getTextureRect</a> () const
             <br><span><para>Get the sub-rectangle of the texture displayed by the sprite. </para></span></td>
@@ -305,13 +255,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Sprite::setColor
         </td>
         <td class="col-md-4"><a href="#">setColor</a> (const Color4f &color)
             <br><span><para>Set the global color of the sprite. </para></span></td>
@@ -320,17 +264,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Color4f&
-            
-            
-            
-            
+            const Color4f& gf::Sprite::getColor
         </td>
         <td class="col-md-4"><a href="#">getColor</a> () const
             <br><span><para>Get the global color of the sprite. </para></span></td>
@@ -339,13 +273,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::Sprite::getLocalBounds
         </td>
         <td class="col-md-4"><a href="#">getLocalBounds</a> () const
             <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
@@ -354,13 +282,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Sprite::setAnchor
         </td>
         <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
             <br><span><para>Set the anchor origin of the entity. </para></span></td>
@@ -369,13 +291,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            VertexBuffer
-            
-            
-            
-            
+            VertexBuffer gf::Sprite::commitGeometry
         </td>
         <td class="col-md-4"><a href="#">commitGeometry</a> () const
             <br><span><para>Create a buffer with the current geometry. </para></span></td>
@@ -384,17 +300,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::Sprite::draw
         </td>
         <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
             <br><span><para>Draw the object to a render target. </para></span></td>

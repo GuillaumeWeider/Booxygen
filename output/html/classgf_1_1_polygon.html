@@ -155,9 +155,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polygon::Polygon
         </td>
         <td class="col-md-4"><a href="#">Polygon</a> ()=default
             <br><span><para>Default constructor. </para></span></td>
@@ -166,9 +164,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polygon::Polygon
         </td>
         <td class="col-md-4"><a href="#">Polygon</a> (ArrayRef< Vector2f > points)
             <br><span><para>Constructor from an array. </para></span></td>
@@ -177,9 +173,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Polygon::Polygon
         </td>
         <td class="col-md-4"><a href="#">Polygon</a> (Iterator first, Iterator last)
             <br><span><para>Constructor from points. </para></span></td>
@@ -188,13 +182,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Polygon::addPoint
         </td>
         <td class="col-md-4"><a href="#">addPoint</a> (Vector2f point)
             <br><span><para>Add a point to the polygon. </para></span></td>
@@ -203,13 +191,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            std::size_t
-            
-            
-            
-            
+            std::size_t gf::Polygon::getPointCount
         </td>
         <td class="col-md-4"><a href="#">getPointCount</a> () const
             <br><span><para>Get the number of points of the polygon. </para></span></td>
@@ -218,13 +200,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polygon::getPoint
         </td>
         <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const
             <br><span><para>Get the i-th point of the polygon. </para></span></td>
@@ -233,13 +209,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polygon::getCenter
         </td>
         <td class="col-md-4"><a href="#">getCenter</a> () const
             <br><span><para>Get the center of the polygon. </para></span></td>
@@ -248,13 +218,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polygon::getSupport
         </td>
         <td class="col-md-4"><a href="#">getSupport</a> (Vector2f direction, const Transform &transform) const
             <br><span><para>Get the farthest point in a direction. </para></span></td>
@@ -263,13 +227,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Vector2f
-            
-            
-            
-            
+            Vector2f gf::Polygon::getSupport
         </td>
         <td class="col-md-4"><a href="#">getSupport</a> (Vector2f direction) const
             <br><span><para>Get the farthest point in a direction. </para></span></td>
@@ -278,17 +236,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vector2f*
-            
-            
-            
-            
+            const Vector2f* gf::Polygon::begin
         </td>
         <td class="col-md-4"><a href="#">begin</a> () const
             <br><span><para>Get an iterator to the first point. </para></span></td>
@@ -297,17 +245,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Vector2f*
-            
-            
-            
-            
+            const Vector2f* gf::Polygon::end
         </td>
         <td class="col-md-4"><a href="#">end</a> () const
             <br><span><para>Get an iterator past the last point. </para></span></td>
@@ -316,13 +254,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Polygon::isConvex
         </td>
         <td class="col-md-4"><a href="#">isConvex</a> () const
             <br><span><para>Check if the polygon is convex. </para></span></td>
@@ -331,13 +263,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            Winding
-            
-            
-            
-            
+            Winding gf::Polygon::getWinding
         </td>
         <td class="col-md-4"><a href="#">getWinding</a> () const
             <br><span><para>Compute the winding of a convex polygon. </para></span></td>
@@ -346,13 +272,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Polygon::getArea
         </td>
         <td class="col-md-4"><a href="#">getArea</a> () const
             <br><span><para>Compute the area of the polygon. </para></span></td>
@@ -361,13 +281,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Polygon::applyTransform
         </td>
         <td class="col-md-4"><a href="#">applyTransform</a> (const Matrix3f &mat)
             <br><span><para>Apply a transformation to the polygon. </para></span></td>

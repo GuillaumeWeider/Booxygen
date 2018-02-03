@@ -155,25 +155,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            using
-            
-            
-            
-            gf::SpaceTree::Callback
-            
-            
-            
-            =
-            
-            
-            
-            std::function<bool(const
-            
-            
-            
-            
+            using gf::SpaceTree::Callback =  std::function<bool(const SpaceTree&)>
         </td>
         <td class="col-md-4"><a href="#">Callback</a> 
             <br><span><para>A callback function for traversing the tree. </para></span></td>
@@ -195,9 +177,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::SpaceTree::SpaceTree
         </td>
         <td class="col-md-4"><a href="#">SpaceTree</a> (const RectI &area)
             <br><span><para>Constructor. </para></span></td>
@@ -206,17 +186,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            RectI&
-            
-            
-            
-            
+            const RectI& gf::SpaceTree::getArea
         </td>
         <td class="col-md-4"><a href="#">getArea</a> () const
             <br><span><para>Get the area of the node. </para></span></td>
@@ -225,13 +195,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            int
-            
-            
-            
-            
+            int gf::SpaceTree::getLevel
         </td>
         <td class="col-md-4"><a href="#">getLevel</a> () const
             <br><span><para>Get the level of the node in the tree. </para></span></td>
@@ -240,13 +204,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::SpaceTree::removeChildren
         </td>
         <td class="col-md-4"><a href="#">removeChildren</a> ()
             <br><span><para>Remove the children of the node. </para></span></td>
@@ -255,13 +213,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::splitOnce
         </td>
         <td class="col-md-4"><a href="#">splitOnce</a> (Random &random, Vector2i minSize, float maxRatio=1.5f)
             <br><span><para>Split the node once. </para></span></td>
@@ -270,13 +222,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::SpaceTree::splitRecursive
         </td>
         <td class="col-md-4"><a href="#">splitRecursive</a> (Random &random, int levelMax, Vector2i minSize, Vector2i maxSize, float maxRatio=1.5f)
             <br><span><para>Split a node recursively. </para></span></td>
@@ -285,13 +231,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::isLeaf
         </td>
         <td class="col-md-4"><a href="#">isLeaf</a> () const
             <br><span><para>Check if a node is a leaf. </para></span></td>
@@ -300,17 +240,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            SpaceTree*
-            
-            
-            
-            
+            const SpaceTree* gf::SpaceTree::getLeftChild
         </td>
         <td class="col-md-4"><a href="#">getLeftChild</a> () const
             <br><span><para>Get the left child. </para></span></td>
@@ -319,17 +249,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            SpaceTree*
-            
-            
-            
-            
+            const SpaceTree* gf::SpaceTree::getRightChild
         </td>
         <td class="col-md-4"><a href="#">getRightChild</a> () const
             <br><span><para>Get the right child. </para></span></td>
@@ -338,17 +258,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            SpaceTree*
-            
-            
-            
-            
+            const SpaceTree* gf::SpaceTree::getFather
         </td>
         <td class="col-md-4"><a href="#">getFather</a> () const
             <br><span><para>Get the father of the node. </para></span></td>
@@ -357,13 +267,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::contains
         </td>
         <td class="col-md-4"><a href="#">contains</a> (Vector2i position) const
             <br><span><para>Check if the area of the node contains a position. </para></span></td>
@@ -372,17 +276,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            SpaceTree*
-            
-            
-            
-            
+            const SpaceTree* gf::SpaceTree::find
         </td>
         <td class="col-md-4"><a href="#">find</a> (Vector2i position) const
             <br><span><para>Find the deepest node containing a position. </para></span></td>
@@ -391,13 +285,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::traversePreOrder
         </td>
         <td class="col-md-4"><a href="#">traversePreOrder</a> (Callback callback) const
             <br><span><para>Traverse the nodes in pre-order. </para></span></td>
@@ -406,13 +294,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::traverseInOrder
         </td>
         <td class="col-md-4"><a href="#">traverseInOrder</a> (Callback callback) const
             <br><span><para>Traverse the nodes in in-order. </para></span></td>
@@ -421,13 +303,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::traversePostOrder
         </td>
         <td class="col-md-4"><a href="#">traversePostOrder</a> (Callback callback) const
             <br><span><para>Traverse the nodes in post-order. </para></span></td>
@@ -436,13 +312,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::traverseLevelOrder
         </td>
         <td class="col-md-4"><a href="#">traverseLevelOrder</a> (Callback callback) const
             <br><span><para>Traverse the nodes in level-order. </para></span></td>
@@ -451,13 +321,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::SpaceTree::traverseInvertedLevelOrder
         </td>
         <td class="col-md-4"><a href="#">traverseInvertedLevelOrder</a> (Callback callback) const
             <br><span><para>Traverse the nodes in inverted level-order. </para></span></td>

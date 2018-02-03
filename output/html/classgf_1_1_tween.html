@@ -154,33 +154,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            using
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            >::Setter
-            
-            
-            
-            =
-            
-            
-            
-            std::function<void(const
-            
-            
-            
-            
+            using gf::Tween< T >::Setter =  std::function<void(const T&)>
         </td>
         <td class="col-md-4"><a href="#">Setter</a> 
             <br><span><para>A setter function. </para></span></td>
@@ -202,17 +176,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::Tween< T >::Tween
         </td>
         <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, Setter setter, Time duration, Easing easing=Ease::linear)
             <br><span><para>Constructor with a setter. </para></span></td>
@@ -221,17 +185,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            gf::Tween< T >::Tween
         </td>
         <td class="col-md-4"><a href="#">Tween</a> (T origin, T target, T &value, Time duration, Easing easing=Ease::linear)
             <br><span><para>Constructor with a reference. </para></span></td>
@@ -240,21 +194,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            void gf::Tween< T >::setOrigin
         </td>
         <td class="col-md-4"><a href="#">setOrigin</a> (T origin)
             <br><span><para>Change the origin of the tween. </para></span></td>
@@ -263,25 +203,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            T
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr T gf::Tween< T >::getOrigin
         </td>
         <td class="col-md-4"><a href="#">getOrigin</a> () const noexcept
             <br><span><para>Get the origin of the tween. </para></span></td>
@@ -290,21 +212,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            void gf::Tween< T >::setTarget
         </td>
         <td class="col-md-4"><a href="#">setTarget</a> (T target)
             <br><span><para>Change the target of the tween. </para></span></td>
@@ -313,25 +221,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            T
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr T gf::Tween< T >::getTarget
         </td>
         <td class="col-md-4"><a href="#">getTarget</a> () const noexcept
             <br><span><para>Get the target of the tween. </para></span></td>
@@ -340,21 +230,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            void gf::Tween< T >::setDuration
         </td>
         <td class="col-md-4"><a href="#">setDuration</a> (Time duration)
             <br><span><para>Change the duration of the tween. </para></span></td>
@@ -363,25 +239,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            constexpr
-            
-            
-            
-            Time
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            constexpr Time gf::Tween< T >::getDuration
         </td>
         <td class="col-md-4"><a href="#">getDuration</a> () const noexcept
             <br><span><para>Get the duration of the tween. </para></span></td>
@@ -390,21 +248,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            T
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            T gf::Tween< T >::getValue
         </td>
         <td class="col-md-4"><a href="#">getValue</a> () const
             <br><span><para>Get the current value of the tween. </para></span></td>
@@ -413,21 +257,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            bool gf::Tween< T >::isFinished
         </td>
         <td class="col-md-4"><a href="#">isFinished</a> () const
             <br><span><para>Check if the tween is finished. </para></span></td>
@@ -436,21 +266,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            void gf::Tween< T >::update
         </td>
         <td class="col-md-4"><a href="#">update</a> (Time time)
             <br><span><para>Update the tween. </para></span></td>
@@ -459,21 +275,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            gf::Tween<
-            
-            
-            
-            T
-            
-            
-            
-            
+            void gf::Tween< T >::restart
         </td>
         <td class="col-md-4"><a href="#">restart</a> ()
             <br><span><para>Restart the tween. </para></span></td>

@@ -172,9 +172,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            
+            gf::Shape::Shape
         </td>
         <td class="col-md-4"><a href="#">Shape</a> ()
             <br><span><para>Default constructor. </para></span></td>
@@ -183,13 +181,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setTexture
         </td>
         <td class="col-md-4"><a href="#">setTexture</a> (const Texture &texture, bool resetRect=false)
             <br><span><para>Change the source texture of the shape. </para></span></td>
@@ -198,17 +190,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Texture&
-            
-            
-            
-            
+            const Texture& gf::Shape::getTexture
         </td>
         <td class="col-md-4"><a href="#">getTexture</a> () const
             <br><span><para>Get the source texture of the shape. </para></span></td>
@@ -217,13 +199,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            bool
-            
-            
-            
-            
+            bool gf::Shape::hasTexture
         </td>
         <td class="col-md-4"><a href="#">hasTexture</a> () const
             <br><span><para>Check if a texture is set. </para></span></td>
@@ -232,13 +208,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::unsetTexture
         </td>
         <td class="col-md-4"><a href="#">unsetTexture</a> ()
             <br><span><para>Unset the source texture of the shape. </para></span></td>
@@ -247,13 +217,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setTextureRect
         </td>
         <td class="col-md-4"><a href="#">setTextureRect</a> (const RectF &rect)
             <br><span><para>Set the sub-rectangle of the texture that the shape will display. </para></span></td>
@@ -262,17 +226,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            RectF&
-            
-            
-            
-            
+            const RectF& gf::Shape::getTextureRect
         </td>
         <td class="col-md-4"><a href="#">getTextureRect</a> () const
             <br><span><para>Get the sub-rectangle of the texture displayed by the shape. </para></span></td>
@@ -281,13 +235,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setColor
         </td>
         <td class="col-md-4"><a href="#">setColor</a> (const Color4f &color)
             <br><span><para>Set the fill color of the shape. </para></span></td>
@@ -296,17 +244,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Color4f&
-            
-            
-            
-            
+            const Color4f& gf::Shape::getColor
         </td>
         <td class="col-md-4"><a href="#">getColor</a> () const
             <br><span><para>Get the fill color of the shape. </para></span></td>
@@ -315,13 +253,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setOutlineColor
         </td>
         <td class="col-md-4"><a href="#">setOutlineColor</a> (const Color4f &color)
             <br><span><para>Set the outline color of the shape. </para></span></td>
@@ -330,17 +262,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            const
-            
-            
-            
-            Color4f&
-            
-            
-            
-            
+            const Color4f& gf::Shape::getOutlineColor
         </td>
         <td class="col-md-4"><a href="#">getOutlineColor</a> () const
             <br><span><para>Get the outline color of the shape. </para></span></td>
@@ -349,13 +271,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setOutlineThickness
         </td>
         <td class="col-md-4"><a href="#">setOutlineThickness</a> (float thickness)
             <br><span><para>Set the thickness of the shape's outline. </para></span></td>
@@ -364,13 +280,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            float
-            
-            
-            
-            
+            float gf::Shape::getOutlineThickness
         </td>
         <td class="col-md-4"><a href="#">getOutlineThickness</a> () const
             <br><span><para>Get the outline thickness of the shape. </para></span></td>
@@ -379,17 +289,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            std::size_t
-            
-            
-            
-            
+            virtual std::size_t gf::Shape::getPointCount
         </td>
         <td class="col-md-4"><a href="#">getPointCount</a> () const =0
             <br><span><para>Get the total number of points of the shape. </para></span></td>
@@ -398,17 +298,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            Vector2f
-            
-            
-            
-            
+            virtual Vector2f gf::Shape::getPoint
         </td>
         <td class="col-md-4"><a href="#">getPoint</a> (std::size_t index) const =0
             <br><span><para>Get a point of the shape. </para></span></td>
@@ -417,13 +307,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            RectF
-            
-            
-            
-            
+            RectF gf::Shape::getLocalBounds
         </td>
         <td class="col-md-4"><a href="#">getLocalBounds</a> () const
             <br><span><para>Get the local bounding rectangle of the entity. </para></span></td>
@@ -432,13 +316,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::setAnchor
         </td>
         <td class="col-md-4"><a href="#">setAnchor</a> (Anchor anchor)
             <br><span><para>Set the anchor origin of the entity. </para></span></td>
@@ -447,13 +325,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            VertexBuffer
-            
-            
-            
-            
+            VertexBuffer gf::Shape::commitGeometry
         </td>
         <td class="col-md-4"><a href="#">commitGeometry</a> () const
             <br><span><para>Create a buffer with the current geometry. </para></span></td>
@@ -462,13 +334,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            VertexBuffer
-            
-            
-            
-            
+            VertexBuffer gf::Shape::commitOutlineGeometry
         </td>
         <td class="col-md-4"><a href="#">commitOutlineGeometry</a> () const
             <br><span><para>Create a buffer with the current outline geometry. </para></span></td>
@@ -477,17 +343,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            virtual
-            
-            
-            
-            void
-            
-            
-            
-            
+            virtual void gf::Shape::draw
         </td>
         <td class="col-md-4"><a href="#">draw</a> (RenderTarget &target, RenderStates states) override
             <br><span><para>Draw the object to a render target. </para></span></td>
@@ -507,13 +363,7 @@
     <tr>
         <td class="col-md-1">
             
-            
-            
-            void
-            
-            
-            
-            
+            void gf::Shape::updateGeometry
         </td>
         <td class="col-md-4"><a href="#">updateGeometry</a> ()
             <br><span><para>Recompute the internal geometry of the shape. </para></span></td>
