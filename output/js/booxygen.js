@@ -54,6 +54,7 @@ jQuery(document).ready(function ($) {
         set_kind_id(window.current_kind);
         $("#versions_dropdown").val(window.current_kind).selectmenu('refresh');
 
+
         // hack to run after bonsai is initailized
         setTimeout(function () {
             $(".open_me").each(function () {

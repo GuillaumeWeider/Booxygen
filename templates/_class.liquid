@@ -13,6 +13,13 @@ compound.details.detaileddescription.para.blank? %}
 <p>{{ compound.details.detaileddescription[0].para }}</p>
 {% endunless %}
 
+{% if compound.details.derivedcompoundref[0] %}
+<h3>Childs</h3>
+{% for child in compound.details.derivedcompoundref %}
+<p><a href="{{ child.refid }}.html">{{ child.content }}</a></p>
+{% endfor %}
+{% endif %}
+
 {% for section in compound.details.sectiondef %}
 {% unless section.kind contains 'private-' %}
 

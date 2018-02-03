@@ -125,6 +125,8 @@ module Booxygen
       end
 
       loop do
+        FileUtils.copy_entry('../files', '../output', false, false, true)
+
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
         template.assigns['PROJECT_NAME'] = @project_name
         template.assigns['compounds'] = compounds
@@ -164,7 +166,6 @@ module Booxygen
   end
 
   def self.run
-    FileUtils.copy_entry('../files', '../output', false, false, true)
     dox = Doxygen.new
     dox.parse('index', true)
     dox.generate_html
