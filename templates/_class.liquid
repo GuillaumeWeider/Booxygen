@@ -1,19 +1,19 @@
 <h2 class="page-header">{{ compound.name }} Class Reference</h2>
 <ol class="breadcrumb">
-    {% for parent in compound.sub_xml.compounddef[0].basecompoundref %}
+    {% for parent in compound.details.basecompoundref %}
     <li><a href="{{ parent.refid }}.html">{{ parent.content }}</a></li>
     {% endfor %}
     <li class="active">{{ compound.name }}</li>
 </ol>
 
-{% unless compound.sub_xml.compounddef[0].briefdescription.para.blank? or
-compound.sub_xml.compounddef[0].detaileddescription.para.blank? %}
+{% unless compound.details.briefdescription.para.blank? or
+compound.details.detaileddescription.para.blank? %}
 <h3>Description</h3>
-<p>{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}</p>
-<p>{{ compound.sub_xml.compounddef[0].detaileddescription[0].para }}</p>
+<p>{{ compound.details.briefdescription[0].para }}</p>
+<p>{{ compound.details.detaileddescription[0].para }}</p>
 {% endunless %}
 
-{% for section in compound.sub_xml.compounddef[0].sectiondef %}
+{% for section in compound.details.sectiondef %}
 {% unless section.kind contains 'private-' %}
 
 {% if section.kind == 'public-func' %}

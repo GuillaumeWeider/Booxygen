@@ -5,6 +5,7 @@ require 'liquid'
 
 require 'fileutils'
 require 'io/console'
+#require 'awesome_print'
 
 module Booxygen
   VERSION = "0.4.0"
@@ -50,7 +51,7 @@ module Booxygen
 
           # Si c'est un type "CompoundKind", traiter son XML correspondant
           if attribut['type'] == 'CompoundKind'
-            result['sub_xml'] = parse(xml['refid'], false)
+            result['details'] = parse(xml['refid'], false)
           end
         end
 
@@ -70,6 +71,12 @@ module Booxygen
               element_array.push rec_parse(xsd_element, xsd, xsd_name, xml_element_code)
             end
           end
+
+          # Si c'est un "CompoundDef", envoyer directement le contenu
+          if xsd_element['name'] == 'compounddef'
+            return element_array[0]
+          end
+
           result[xsd_element['name']] = element_array
         end
 
@@ -113,6 +120,8 @@ module Booxygen
 
       @index_hash['compound'].each do |value|
         compounds.push value
+        #ap value
+        #puts '============================'
       end
 
       loop do
