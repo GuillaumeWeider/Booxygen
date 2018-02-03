@@ -1,5 +1,5 @@
 <div class="col-sm-3 col-md-2 sidebar">
-    <ul class="nav nav-sidebar">
+    <div class="nav nav-sidebar">
         <select id="versions_dropdown">
             <optgroup label="Modules">
                 {%- for compound in compounds -%}
@@ -20,7 +20,7 @@
 
         <ul id="categories">
 
-            <li class="category module_0">Typesdef
+            <li class="category module_0"><span>Typesdef</span>
                 <ul>
                     <li>
                         <a class="element module_0">Truc</a>
@@ -31,7 +31,7 @@
             {% for compound in compounds %}
             {%- if compound.kind == 'group' -%}
             {% if compound.details.innerclass %}
-            <li class="category open_me module_{% increment count3 %}">Classes
+            <li class="category open_me module_{% increment count3 %}"><span>Classes</span>
                 <ul>
                     {%- for class in compound.details.innerclass -%}
                     <li><a href="{{ class.refid }}.html" class="element module_{{ count3 | minus:1 }}">{{ class.content }}</a></li>
@@ -44,5 +44,5 @@
             {% endfor %}
 
         </ul>
-    </ul>
+    </div>
 </div>

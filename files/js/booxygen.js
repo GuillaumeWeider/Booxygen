@@ -2,6 +2,10 @@ jQuery(document).ready(function ($) {
     window.kind_id = "";
     window.last_kind_id = "";
 
+    $('.nav-sidebar').on('click', 'span', function() {
+        $(this).closest('li').find('> .thumb').click();
+    });
+
     function set_kind_id(id) {
         window.kind_id = id;
         console.log("Setting up this id: " + id);

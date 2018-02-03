@@ -1,7 +1,7 @@
 <h2 class="page-header">{{ compound.name }} Class Reference</h2>
 {%- for group in groups -%}
 {%- for class in group.details.innerclass -%}
-{%- if class.refid == compound.refid -%}
+{% if class.refid == compound.refid %}
 <h5> {{ group.details.title }}</h5>
 {%- endif -%}
 {%- endfor -%}
@@ -23,7 +23,7 @@ compound.details.detaileddescription.para.blank? %}
 
 {% if compound.details.derivedcompoundref[0] %}
 <h3>Childs</h3>
-{%- for child in compound.details.derivedcompoundref -%}
+{% for child in compound.details.derivedcompoundref %}
 <p><a href="{{ child.refid }}.html">{{ child.content }}</a></p>
 {%- endfor -%}
 {%- endif -%}
