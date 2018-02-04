@@ -1,19 +1,34 @@
 <h2 class="page-header">{{ compound.name }} Class Reference</h2>
+{%- for group in groups -%}
+{%- for class in group.details.innerclass -%}
+{% if class.refid == compound.refid %}
+<h5> {{ group.details.title }}</h5>
+{%- endif -%}
+{%- endfor -%}
+{%- endfor -%}
+
 <ol class="breadcrumb">
-    {% for parent in compound.sub_xml.compounddef[0].basecompoundref %}
+    {% for parent in compound.details.basecompoundref %}
     <li><a href="{{ parent.refid }}.html">{{ parent.content }}</a></li>
     {% endfor %}
     <li class="active">{{ compound.name }}</li>
 </ol>
 
-{% unless compound.sub_xml.compounddef[0].briefdescription.para.blank? or
-compound.sub_xml.compounddef[0].detaileddescription.para.blank? %}
+{% unless compound.details.briefdescription.para.blank? or
+compound.details.detaileddescription.para.blank? %}
 <h3>Description</h3>
-<p>{{ compound.sub_xml.compounddef[0].briefdescription[0].para }}</p>
-<p>{{ compound.sub_xml.compounddef[0].detaileddescription[0].para }}</p>
+<p>{{ compound.details.briefdescription[0].para }}</p>
+<p>{{ compound.details.detaileddescription[0].para }}</p>
 {% endunless %}
 
-{% for section in compound.sub_xml.compounddef[0].sectiondef %}
+{% if compound.details.derivedcompoundref[0] %}
+<h3>Childs</h3>
+{% for child in compound.details.derivedcompoundref %}
+<p><a href="{{ child.refid }}.html">{{ child.content }}</a></p>
+{%- endfor -%}
+{%- endif -%}
+
+{% for section in compound.details.sectiondef %}
 {% unless section.kind contains 'private-' %}
 
 {% if section.kind == 'public-func' %}
@@ -26,12 +41,13 @@ compound.sub_xml.compounddef[0].detaileddescription.para.blank? %}
     {% for memberdef in section.memberdef %}
     <tr>
         <td class="col-md-1">
-            {% assign type = memberdef.definition[0] | split: " " %}
+            {% comment %}}{% assign type = memberdef.definition[0] | split: " " %}
             {% for word in type %}
             {% unless forloop.last == true %}
             {{ word }}
             {% endunless %}
-            {% endfor %}
+            {% endfor %}{% endcomment %}
+            {{ memberdef.definition[0] }}
         </td>
         <td class="col-md-4"><a href="#">{{ memberdef.name[0] }}</a> {{ memberdef.argsstring[0] }}
             <br><span>{{ memberdef.briefdescription[0].para[0] }}</span></td>

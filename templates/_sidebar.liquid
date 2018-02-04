@@ -1,37 +1,48 @@
 <div class="col-sm-3 col-md-2 sidebar">
-    <ul class="nav nav-sidebar">
+    <div class="nav nav-sidebar">
         <select id="versions_dropdown">
             <optgroup label="Modules">
-                {% for compound in compounds %}{% if compound.kind == 'group' %}
-                <option value="module_{% increment tmp %}">{{ compound.sub_xml.compounddef[0].title }}</option>
-                {% endif %}{% endfor %}
+                {%- for compound in compounds -%}
+                {%- if compound.kind == 'group' -%}
+                <option value="module_{% increment count %}">{{ compound.details.title }}</option>
+                {%- endif -%}
+                {%- endfor -%}
             </optgroup>
             <optgroup label="Namespaces">
-                {% for compound in compounds %}{% if compound.kind == 'namespace' %}
-                <option value="namespace_{% increment tmp2 %}">{{ compound.sub_xml.compounddef[0].compoundname }}
+                {%- for compound in compounds -%}
+                {%- if compound.kind == 'namespace' -%}
+                <option value="namespace_{% increment count2 %}">{{ compound.details.compoundname }}
                 </option>
-                {% endif %}{% endfor %}
+                {%- endif -%}
+                {%- endfor -%}
             </optgroup>
         </select>
 
         <ul id="categories">
-            <li class="category module_0">Classes
+
+            <li class="category module_0"><span>Typesdef</span>
                 <ul>
-                    {% for compound in compounds %}{% if compound.kind == 'group' %}
-                    {% for class in compound.sub_xml.compounddef[0].innerclass %}
-                    <li><a href="{{ class.refid }}.html" class="element module_0">{{ class.content }}</a>
+                    <li>
+                        <a class="element module_0">Truc</a>
                     </li>
-                    {% endfor %}{% endif %}{% endfor %}
                 </ul>
             </li>
 
-            <li class="category open_me module_0">Typesdef
+            {% for compound in compounds %}
+            {%- if compound.kind == 'group' -%}
+            {% if compound.details.innerclass %}
+            <li class="category open_me module_{% increment count3 %}"><span>Classes</span>
                 <ul>
-                    <li>
-                        <a class="element open_me module_0">Truc</a>
-                    </li>
+                    {%- for class in compound.details.innerclass -%}
+                    <li><a href="{{ class.refid }}.html" class="element module_{{ count3 | minus:1 }}">{{ class.content }}</a></li>
+                    {%- endfor -%}
                 </ul>
             </li>
+            {% endif %}
+
+            {%- endif -%}
+            {% endfor %}
+
         </ul>
-    </ul>
+    </div>
 </div>

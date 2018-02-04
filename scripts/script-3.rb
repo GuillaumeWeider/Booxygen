@@ -5,15 +5,10 @@ require 'liquid'
 
 require 'fileutils'
 require 'io/console'
+#require 'awesome_print'
 
 module Booxygen
   VERSION = "0.4.0"
-
-  class Templates
-    def initialize(dir)
-
-    end
-  end
 
   class Doxygen
     def initialize
@@ -56,7 +51,7 @@ module Booxygen
 
           # Si c'est un type "CompoundKind", traiter son XML correspondant
           if attribut['type'] == 'CompoundKind'
-            result['sub_xml'] = parse(xml['refid'], false)
+            result['details'] = parse(xml['refid'], false)
           end
         end
 
@@ -76,6 +71,12 @@ module Booxygen
               element_array.push rec_parse(xsd_element, xsd, xsd_name, xml_element_code)
             end
           end
+
+          # Si c'est un "CompoundDef", envoyer directement le contenu
+          if xsd_element['name'] == 'compounddef'
+            return element_array[0]
+          end
+
           result[xsd_element['name']] = element_array
         end
 
@@ -116,40 +117,52 @@ module Booxygen
     # Fonction de génération des fichiers HTML
     def generate_html
       compounds = []
+      groups = []
+      classes = []
+      pages = []
 
       @index_hash['compound'].each do |value|
+        #ap value
+        #puts '============================'
+
         compounds.push value
+
+        if value['kind'] == 'group'
+          groups.push value
+        elsif value['kind'] == 'class'
+          classes.push value
+        elsif value['kind'] == 'page'
+          pages.push value
+        end
       end
 
       loop do
+        FileUtils.copy_entry('../files', '../output', false, false, true)
+
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
+        template.assigns['PROJECT_NAME'] = @project_name
+        template.assigns['compounds'] = compounds
+        template.assigns['groups'] = groups
 
         # Main page
-        compounds.each do |compound|
-          if compound['kind'] == 'page' && compound['refid'] == 'indexpage'
+        pages.each do |compound|
+          if compound['refid'] == 'indexpage'
             File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
-                                                                   'PROJECT_NAME' => @project_name,
                                                                    'TITLE' => 'Main page',
-                                                                   'compounds' => compounds,
                                                                    'compound' => compound))
+            break
           end
         end
 
         # Index
         File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
-                                                                  'PROJECT_NAME' => @project_name,
-                                                                  'TITLE' => 'Index page',
-                                                                  'compounds' => compounds))
+                                                                  'TITLE' => 'Index page'))
 
         # Classes
-        compounds.each do |compound|
-          if compound['kind'] == 'class'
-            File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
-                                                                                   'PROJECT_NAME' => @project_name,
-                                                                                   'TITLE' => "#{compound['name'][0]}",
-                                                                                   'compounds' => compounds,
-                                                                                   'compound' => compound))
-          end
+        classes.each do |compound|
+          File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
+                                                                                 'TITLE' => "#{compound['name'][0]}",
+                                                                                 'compound' => compound))
         end
 
         # ?
@@ -164,7 +177,6 @@ module Booxygen
   end
 
   def self.run
-    FileUtils.copy_entry('../files', '../output', false, false, true)
     dox = Doxygen.new
     dox.parse('index', true)
     dox.generate_html
