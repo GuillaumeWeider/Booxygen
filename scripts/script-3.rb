@@ -159,7 +159,7 @@ module Booxygen
 
       classes = []
 
-      @compounds.each do |value|
+      @compounds.each_value do |value|
 
         if value['kind'] == 'class'
           classes.push value
