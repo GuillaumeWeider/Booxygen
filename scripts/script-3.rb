@@ -525,8 +525,7 @@ module Booxygen
     def start
 
       # Build XML files list
-      xml_files = Dir.glob("#{$dir}/*.xml")
-      xml_files.sort
+      xml_files = Dir.glob("#{$dir}/*.xml").sort
 
       # Treat all XML files
       xml_files.each do |filename|
@@ -568,6 +567,7 @@ module Booxygen
 
           compound['briefdesc'] = '' #TODO
 
+          # Look for children's ID
           if ['namespace', 'class', 'struct', 'union'].include?(compound['kind'])
             compounddef.xpath('innerclass').each do |element|
               compound['children'].push(element['refid'])
@@ -596,6 +596,7 @@ module Booxygen
         end
       end
 
+      # Look for parent's ID
       @compounds.each_value do |element|
         element['children'].each do |refid|
           if @compounds.has_key?(refid)
@@ -604,6 +605,7 @@ module Booxygen
         end
       end
 
+      # Create the short name, without namespace prefix
       @compounds.each_value do |element|
         unless element['parent'].nil?
           if ['namespace', 'struct', 'class', 'union'].include?(element['kind'])
@@ -663,7 +665,7 @@ module Booxygen
         # Index
         File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
                                                                   'TITLE' => 'Index page',
-                                                                  'classes' => classes))
+                                                                  'classes_index' => classes))
 
         # Classes
         #classes.each do |compound|

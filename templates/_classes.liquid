@@ -23,7 +23,7 @@
     {%- if actual_index_letter != current_letter -%}
     {%- assign actual_index_letter = current_letter -%}
 
-    {%- if is_first_letter == false -%}
+    {%- if is_first_letter == false -%} {% comment %} Closing previous letter div {% endcomment %}
 </div>
 {% endif %}
 

@@ -44,10 +44,6 @@ def parse_type(state: State, type: ET.Element) -> str:
 
         if i.tail: out += html.escape(i.tail)
 
-    # Warn if suspicious stuff is present
-    if '_EXPORT' in out or '_LOCAL' in out:
-        logging.warning("{}: type contains an export macro: {}".format(state.current, ''.join(type.itertext())))
-
     # Remove spacing inside <> and before & and *
     return fix_type_spacing(out)
 
@@ -973,14 +969,6 @@ def parse_enum(state: State, element: ET.Element):
 
     enum.has_details = enum.description or enum.has_value_details
     if enum.brief or enum.has_details or enum.has_value_details:
-        if not state.doxyfile['M_SEARCH_DISABLED']:
-            result = Empty()
-            result.flags = ResultFlag.ENUM|(ResultFlag.DEPRECATED if enum.is_deprecated else ResultFlag(0))
-            result.url = state.current_url + '#' + enum.id
-            result.prefix = state.current_prefix
-            result.name = enum.name
-            result.keywords = search_keywords
-            state.search += [result]
         return enum
     return None
 
@@ -1044,13 +1032,6 @@ def parse_typedef(state: State, element: ET.Element):
 
     typedef.has_details = typedef.description or typedef.has_template_details
     if typedef.brief or typedef.has_details:
-        result = Empty()
-        result.flags = ResultFlag.TYPEDEF|(ResultFlag.DEPRECATED if typedef.is_deprecated else ResultFlag(0))
-        result.url = state.current_url + '#' + typedef.id
-        result.prefix = state.current_prefix
-        result.name = typedef.name
-        result.keywords = search_keywords
-        state.search += [result]
         return typedef
     return None
 
@@ -1154,7 +1135,11 @@ def parse_func(state: State, element: ET.Element):
             param.description, param.direction = '', ''
 
         func.params += [param]
-
+        
+    func.has_details = func.description or func.has_template_details or func.has_param_details or func.return_value
+    if func.brief or func.has_details:
+        return func
+    return None
 
 
 
@@ -1178,7 +1163,10 @@ def parse_var(state: State, element: ET.Element):
     var.brief = parse_desc(state, element.find('briefdescription'))
     var.description, search_keywords, var.is_deprecated = parse_var_desc(state, element)
 
-
+    var.has_details = not not var.description
+    if var.brief or var.has_details:
+        return var
+    return None
 
 
 def parse_define(state: State, element: ET.Element):
@@ -1203,3 +1191,8 @@ def parse_define(state: State, element: ET.Element):
             else:
                 description = ''
             define.params += [(name.text, description)]
+            
+    define.has_details = define.description or define.return_value
+    if define.brief or define.has_details:
+        return define
+    return None
