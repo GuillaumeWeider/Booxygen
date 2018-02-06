@@ -157,6 +157,15 @@ module Booxygen
       #  puts ''
       #end
 
+      classes = []
+
+      @compounds.each do |value|
+
+        if value['kind'] == 'class'
+          classes.push value
+        end
+      end
+
       loop do
         FileUtils.copy_entry('../files', '../output', false, false, true)
 
@@ -176,7 +185,8 @@ module Booxygen
 
         # Index
         File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
-                                                                  'TITLE' => 'Index page'))
+                                                                  'TITLE' => 'Index page',
+                                                                  'classes' => classes))
 
         # Classes
         #classes.each do |compound|
