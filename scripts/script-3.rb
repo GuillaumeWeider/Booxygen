@@ -20,24 +20,24 @@ module Booxygen
       @logger = Logger.new(STDOUT)
     end
 
-    def parse(file_path)
-      filename = File.basename(file_path)
-
-      @logger.info("Parsing #{filename}.xml")
-
-      xml = Nokogiri::XML(File.open("#{filename}"))
-
-      if xml.at_xpath('name(/*)') != 'doxygen'
-        @logger.warn('File root tag isn\'t correct, skip it.')
-      end
-
-      compounddef = xml.xpath('compounddef')
-      if compounddef.length != 1
-        @logger.warn('File content isn\'t correct, skip it.')
-      end
-
-
-    end
+    # def parse(file_path)
+    #   filename = File.basename(file_path)
+    #
+    #   @logger.info("Parsing #{filename}.xml")
+    #
+    #   xml = Nokogiri::XML(File.open("#{filename}"))
+    #
+    #   if xml.at_xpath('name(/*)') != 'doxygen'
+    #     @logger.warn('File root tag isn\'t correct, skip it.')
+    #   end
+    #
+    #   compounddef = xml.xpath('compounddef')
+    #   if compounddef.length != 1
+    #     @logger.warn('File content isn\'t correct, skip it.')
+    #   end
+    #
+    #
+    # end
 
     def start
 
@@ -64,7 +64,7 @@ module Booxygen
           compound['url'] = ''
           compound['briefdesc'] = ''
           compound['children'] = []
-          compound['parent'] = []
+          compound['parent'] = nil
 
           # Parsing
           compound['id'] = compounddef['id']
@@ -138,7 +138,7 @@ module Booxygen
         # If file is index.xml skip for now
         next if File.basename(file_path) == 'index.xml'
 
-        parse(file_path)
+        #parse(file_path)
       end
 
       # Generate ?
@@ -150,8 +150,10 @@ module Booxygen
 
       @compounds.each_value do |element|
         puts 'ID: ' + element['id']
+        puts 'Kind: ' + element['kind']
         puts 'Name: ' + element['name']
         puts 'Short name: ' + element['short_name']
+        puts 'URL: ' + element['url']
         puts ''
       end
 
