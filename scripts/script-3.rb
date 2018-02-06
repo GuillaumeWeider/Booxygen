@@ -3,22 +3,43 @@
 require 'nokogiri'
 require 'liquid'
 
+require 'logger'
 require 'fileutils'
 require 'io/console'
 #require 'awesome_print'
 
 module Booxygen
-  VERSION = "0.4.0"
+  VERSION = "0.5.0"
 
   class Doxygen
     def initialize
       Liquid::Template.error_mode = :strict
       Liquid::Template.file_system = Liquid::LocalFileSystem.new('../templates')
+      @compounds = {}
       @project_name = "Gamedev Framework (gf)"
+      @logger = Logger.new(STDOUT)
+    end
+
+    def parse(file_path)
+      filename = File.basename(file_path)
+
+      @logger.info("Parsing #{filename}.xml")
+
+      xml = Nokogiri::XML(File.open("#{filename}"))
+
+      if xml.at_xpath('name(/*)') != 'doxygen'
+        @logger.warn('File root tag isn\'t correct, skip it.')
+      end
+
+      compounddef = xml.xpath('compounddef')
+      if compounddef.length != 1
+        @logger.warn('File content isn\'t correct, skip it.')
+      end
+
+
     end
 
     def start
-      compounds = {}
 
       # Build XML files list
       xml_files = Dir.glob("#{$dir}/*.xml")
@@ -36,6 +57,16 @@ module Booxygen
         # If it's a valid kind, parse it
         if ['namespace', 'group', 'class', 'struct', 'union', 'dir', 'file', 'page'].include?(compounddef['kind'])
           compound = {}
+          compound['id'] = ''
+          compound['kind'] = ''
+          compound['name'] = ''
+          compound['short_name'] = ''
+          compound['url'] = ''
+          compound['briefdesc'] = ''
+          compound['children'] = []
+          compound['parent'] = []
+
+          # Parsing
           compound['id'] = compounddef['id']
           compound['kind'] = compounddef['kind']
 
@@ -53,8 +84,6 @@ module Booxygen
           end
 
           compound['briefdesc'] = '' #TODO
-          compound['children'] = []
-          compound['parent'] = nil
 
           if ['namespace', 'class', 'struct', 'union'].include?(compound['kind'])
             compounddef.xpath('innerclass').each do |element|
@@ -80,22 +109,22 @@ module Booxygen
             end
           end
 
-          compounds[compound['id']] = compound
+          @compounds[compound['id']] = compound
         end
       end
 
-      compounds.each_value do |element|
+      @compounds.each_value do |element|
         element['children'].each do |refid|
-          if compounds.has_key?(refid)
-            compounds[refid]['parent'] = element['id']
+          if @compounds.has_key?(refid)
+            @compounds[refid]['parent'] = element['id']
           end
         end
       end
 
-      compounds.each_value do |element|
+      @compounds.each_value do |element|
         unless element['parent'].nil?
           if ['namespace', 'struct', 'class', 'union'].include?(element['kind'])
-            prefix = compounds[element['parent']]['name'] + '::'
+            prefix = @compounds[element['parent']]['name'] + '::'
             if element['name'].start_with?(prefix)
               element['short_name'] = element['name'][prefix.length..element['name'].length]
             end
@@ -103,7 +132,23 @@ module Booxygen
         end
       end
 
-      compounds.each_value do |element|
+
+      # Treat all XML files, parse
+      xml_files.each do |file_path|
+        # If file is index.xml skip for now
+        next if File.basename(file_path) == 'index.xml'
+
+        parse(file_path)
+      end
+
+      # Generate ?
+      #
+      # Copy source files ?
+
+
+
+
+      @compounds.each_value do |element|
         puts 'ID: ' + element['id']
         puts 'Name: ' + element['name']
         puts 'Short name: ' + element['short_name']
