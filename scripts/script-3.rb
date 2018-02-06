@@ -21,11 +21,49 @@ module Booxygen
     end
 
     def parse_define(element)
+      if element.name == 'memberdef' and element['kind'] == 'define'
 
+        define = {}
+        define['id'] = element['id']
+        define['name'] = element.at_xpath(name).to_s
+        define['briefdesc'] = '' #TODO
+        define['description'] = '' #TODO
+
+        if define['briefdesc'] or define['description']
+          return define
+        else
+          return nil
+        end
+      end
     end
 
     def parse_var(element)
+      if element.name == 'memberdef' and element['kind'] == 'variable'
 
+        var = {}
+        var['id'] = element['id']
+        var['name'] = element.at_xpath(name).to_s
+        var['briefdesc'] = '' #TODO
+        var['description'] = '' #TODO
+
+        var['type'] = parse_type(element.find('type'))
+        if var['type'].start_with?('constexpr')
+          var['type'] = var['type'][10..length]
+          var['is_constexpr'] = true
+        else
+          var['is_constexpr'] = false
+        end
+
+        var['is_static'] = element['static'] == 'yes'
+        var['is_protected'] = element['prot'] == 'protected'
+        var['is_private'] = element['prot'] == 'private'
+
+        if var['briefdesc'] or var['description']
+          return var
+        else
+          return nil
+        end
+      end
     end
 
     def parse_func(element)
@@ -85,7 +123,16 @@ module Booxygen
     end
 
     def parse_ref(element)
+      id = element['refid']
+      url = '#'
+      if element['kindref'] == 'compound'
+        url = id + '.html'
+      elsif element['kindref'] == 'member'
+        index = id.rindex('_1')
+        url = id[index..length] + '.html' + '#' + id[index + 1..length]
+      end
 
+      "<a href=\"#{url}\">#{element.innerHTML}</a>" # TODO Vérifier le texte
     end
 
     def parse(file_path)
@@ -157,6 +204,7 @@ module Booxygen
       end
 
       compounddef_elements = compounddef.children
+
       compounddef_elements.each do |child|
 
         # Directory / file
@@ -168,15 +216,14 @@ module Booxygen
 
             f = {}
             f['url'] = file['url']
-            f['name'] = file['leaf_name']
-            f['brief'] = file['brief']
+            f['name'] = file['short_name']
+            f['briefdesc'] = file['briefdesc']
 
             if child.name == 'innerdir'
               compound['dirs'].push(f)
             elsif child.name == 'innerfile'
               compound['files'].push(f)
             end
-
           end
 
           # Namespace / class
@@ -191,12 +238,12 @@ module Booxygen
               namespace['url'] = symbol['url']
 
               if compound['kind'] == 'namespace'
-                namespace['name'] = symbol['leaf_name']
+                namespace['name'] = symbol['short_name']
               else
                 namespace['name'] = symbol['name']
               end
 
-              namespace['brief'] = symbol['brief']
+              namespace['briefdesc'] = symbol['briefdesc']
               compound['namespaces'].push(namespace)
 
             elsif child['name'] == 'innerclass'
@@ -206,20 +253,20 @@ module Booxygen
               class_val['url'] = symbol['url']
 
               if ['namespace', 'class', 'struct', 'union'].include?(compound['kind'])
-                class_val['name'] = symbol['leaf_name']
+                class_val['name'] = symbol['short_name']
               else
                 class_val['name'] = symbol['name']
               end
 
-              class_val['brief'] = symbol['brief']
+              class_val['briefdesc'] = symbol['briefdesc']
 
               # Put classes into the public/protected section for
               # inner classes
               if ['class', 'struct', 'union'].include?(compound['kind'])
                 if child['prot'] == 'public'
-                  compound['public_types']['class'] += class_val
+                  compound['public_types'].push ['class', class_val]
                 elsif child['prot'] == 'protected'
-                  compound['protected_types']['class'] += class_val
+                  compound['protected_types'].push ['class', class_val]
                 end
               elsif ['namespace', 'group', 'file'].include?(compound['kind'])
                 compound['classes'].push(class_val)
@@ -238,8 +285,8 @@ module Booxygen
                     class_val = {}
                     class_val['kind'] = symbol['kind']
                     class_val['url'] = symbol['url']
-                    class_val['name'] = symbol['leaf_name']
-                    class_val['brief'] = symbol['brief']
+                    class_val['name'] = symbol['short_name']
+                    class_val['briefdesc'] = symbol['briefdesc']
                     class_val['is_protected'] = child['prot'] == 'protected'
                     class_val['is_virtual'] = child['virt'] == 'virtual'
 
@@ -261,8 +308,8 @@ module Booxygen
                     class_val = {}
                     class_val['kind'] = symbol['kind']
                     class_val['url'] = symbol['url']
-                    class_val['name'] = symbol['leaf_name']
-                    class_val['brief'] = symbol['brief']
+                    class_val['name'] = symbol['short_name']
+                    class_val['briefdesc'] = symbol['briefdesc']
 
                     compound['derived_classes'].push(class_val)
                   end
@@ -275,51 +322,52 @@ module Booxygen
                 group = @compounds[child['refid']]
                 g = {}
                 g['url'] = group['url']
-                g['name'] = group['leaf_name']
-                g['brief'] = group['brief']
+                g['name'] = group['short_name']
+                g['briefdesc'] = group['briefdesc']
 
                 compound['modules'].push(g)
               end
 
               # Other, grouped in sections
-            elsif child.tag == 'sectiondef'
+            elsif child.name == 'sectiondef'
               if child['kind'] == 'enum'
                 child.each do |memberdef|
                   enum = parse_enum(memberdef)
                   unless enum.nil?
-                    compound['enums'] += enum
+                    compound['enums'].push enum
                   end
                 end
               elsif child['kind'] == 'typedef'
                 child.each do |memberdef|
                   typedef = parse_typedef(memberdef)
                   if typedef
-                    compound['typedefs'] += typedef
+                    compound['typedefs'].push typedef
                   end
                 end
               elsif child['kind'] == 'func'
                 child.each do |memberdef|
                   func = parse_func(memberdef)
                   if func
-                    compound['funcs'] += func
+                    compound['funcs'].push func
                   end
                 end
               elsif child['kind'] == 'var'
                 child.each do |memberdef|
                   var = parse_var(memberdef)
                   if var
-                    compound['vars'] += var
+                    compound['vars'].push var
                   end
                 end
               elsif child['kind'] == 'define'
                 child.each do |memberdef|
                   define = parse_define(memberdef)
                   if define
-                    compound['defines'] += define
+                    compound['defines'].push define
                   end
                 end
               elsif child['kind'] == 'public-type'
                 child.each do |memberdef|
+                  member = nil
                   if memberdef['kind'] == 'enum'
                     member = parse_enum(memberdef)
                   else
@@ -327,14 +375,15 @@ module Booxygen
                       member = parse_typedef(memberdef)
                     end
                   end
-                  #if member compound['public_types'] += [(memberdef['kind'], member)]
-                  #end TODO
+                  unless member.nil?
+                    compound['public_types'].push [memberdef['kind'], member]
+                  end
                 end
               elsif child['kind'] == 'public-static-func'
                 child.each do |memberdef|
                   func = parse_func(memberdef)
                   if func
-                    compound['public_static_funcs'] += func
+                    compound['public_static_funcs'].push func
                   end
                 end
               elsif child['kind'] == 'public-func'
@@ -342,9 +391,9 @@ module Booxygen
                   func = parse_func(memberdef)
                   if func
                     if func['type'].nil?
-                      compound['typeless_funcs'] += func
+                      compound['typeless_funcs'].push func
                     else
-                      compound['public_funcs'] += func
+                      compound['public_funcs'].push func
                     end
                   end
                 end
@@ -352,18 +401,19 @@ module Booxygen
                 child.each do |memberdef|
                   var = parse_var(memberdef)
                   if var
-                    compound['public_static_vars'] += var
+                    compound['public_static_vars'].push var
                   end
                 end
               elsif child['kind'] == 'public-attrib'
                 child.each do |memberdef|
                   var = parse_var(memberdef)
                   if var
-                    compound['public_vars'] += var
+                    compound['public_vars'].push var
                   end
                 end
               elsif child['kind'] == 'protected-type'
                 child.each do |memberdef|
+                  member = nil
                   if memberdef['kind'] == 'enum'
                     member = parse_enum(memberdef)
                   else
@@ -371,25 +421,25 @@ module Booxygen
                       member = parse_typedef(memberdef)
                     end
                   end
-
-                  #if member compound['protected_types'] += [(memberdef['kind'], member)]
-                  #  end TODO
+                  unless member.nil?
+                    compound['protected_types'].push [memberdef['kind'], member]
+                  end
                 end
               elsif child['kind'] == 'protected-static-func'
                 child.each do |memberdef|
                   func = parse_func(memberdef)
                   if func
-                    compound['protected_static_funcs'] += func
+                    compound['protected_static_funcs'].push func
                   end
                 end
               elsif child['kind'] == 'protected-func'
                 child.each do |memberdef|
                   func = parse_func(memberdef)
                   if func
-                    if func.type.nil?
-                      compound['typeless_funcs'] += func
+                    if func['type'].nil?
+                      compound['typeless_funcs'].push func
                     else
-                      compound['protected_funcs'] += func
+                      compound['protected_funcs'].push func
                     end
                   end
                 end
@@ -397,14 +447,14 @@ module Booxygen
                 child.each do |memberdef|
                   var = parse_var(memberdef)
                   if var
-                    compound['protected_static_vars'] += var
+                    compound['protected_static_vars'].push var
                   end
                 end
               elsif child['kind'] == 'protected-attrib'
                 child.each do |memberdef|
                   var = parse_var(memberdef)
                   if var
-                    compound['protected_vars'] += var
+                    compound['protected_vars'].push var
                   end
                 end
               elsif child['kind'] == 'private-func'
@@ -417,7 +467,7 @@ module Booxygen
 
                   func = parse_func(memberdef)
                   if func
-                    compound['private_funcs'] += func
+                    compound['private_funcs'].push func
                   end
                 end
               elsif child['kind'] == 'related'
@@ -425,58 +475,58 @@ module Booxygen
                   if memberdef['kind'] == 'enum'
                     enum = parse_enum(memberdef)
                     if enum
-                      compound['related']['enum'] += enum
+                      compound['related'].push ['enum', enum]
                     end
                   elsif memberdef['kind'] == 'typedef'
                     typedef = parse_typedef(memberdef)
                     if typedef
-                      compound['related']['typedef'] += typedef
+                      compound['related'].push ['typedef', typedef]
                     end
                   elsif memberdef['kind'] == 'function'
                     func = parse_func(memberdef)
                     if func
-                      compound['related']['func'] += func
+                      compound['related'].push ['func', func]
                     end
                   elsif memberdef['kind'] == 'variable'
                     var = parse_var(memberdef)
                     if var
-                      compound['related']['var'] += var
+                      compound['related'].push ['var', var]
                     end
                   elsif memberdef['kind'] == 'define'
                     define = parse_define(memberdef)
                     if define
-                      compound['related']['define'] += define
+                      compound['related'].push ['define', define]
                     end
                   end
                 end
               elsif child['kind'] == 'user-defined'
                 list = []
 
-                  child.xpath('memberdef').each do |memberdef|
+                child.xpath('memberdef').each do |memberdef|
                   if memberdef['kind'] == 'enum'
                     enum = parse_enum(memberdef)
                     if enum
-                      list['enum'] += enum
+                      list['enum'].push enum
                     end
                   elsif memberdef['kind'] == 'typedef'
                     typedef = parse_typedef(memberdef)
                     if typedef
-                      list['typedef'] += typedef
+                      list['typedef'].push typedef
                     end
                   elsif memberdef['kind'] == 'function'
                     func = parse_func(memberdef)
                     if func
-                      list['func'] += func
+                      list['func'].push func
                     end
                   elsif memberdef['kind'] == 'variable'
                     var = parse_var(memberdef)
                     if var
-                      list['var'] += var
+                      list['var'].push var
                     end
                   elsif memberdef['kind'] == 'define'
                     define = parse_define(memberdef)
                     if define
-                      list['define'] += define
+                      list['define'].push define
                     end
                   end
                 end
@@ -491,7 +541,7 @@ module Booxygen
                     group['id'] = group['name']
                     group['description'] = parse_desc(child.find('description'))
                     group['members'] = list
-                    compound['groups'] += [group]
+                    compound['groups'].push group
                   end
                 elsif !['private-type',
                         'private-static-func',
@@ -514,7 +564,7 @@ module Booxygen
                       'listofallmembers',
                       'tableofcontents'].include?(child.name) and
                   !(['page', 'group'].include?(compounddef['kind']) and child.name == 'title')
-                logger.warning("{} ignoring <{}> in <compounddef>".format(state.current, child.tag))
+                logger.warning("{} ignoring <{}> in <compounddef>".format(state.current, child.name))
               end
             end
           end
