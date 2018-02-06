@@ -183,7 +183,7 @@ module Booxygen
         #  File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
         #                                                                         'TITLE' => "#{compound['name'][0]}",
         #                                                                         'compound' => compound))
-        end
+        #end
 
         # ?
 
