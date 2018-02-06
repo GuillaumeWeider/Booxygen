@@ -624,18 +624,61 @@ module Booxygen
         #parse(file_path)
       end
 
-      # Generate ?
-      #
-      # Copy source files ?
 
+      #@compounds.each_value do |element|
+      #  puts 'ID: ' + element['id']
+      #  puts 'Kind: ' + element['kind']
+      #  puts 'Name: ' + element['name']
+      #  puts 'Short name: ' + element['short_name']
+      #  puts 'URL: ' + element['url']
+      #  puts ''
+      #end
 
-      @compounds.each_value do |element|
-        puts 'ID: ' + element['id']
-        puts 'Kind: ' + element['kind']
-        puts 'Name: ' + element['name']
-        puts 'Short name: ' + element['short_name']
-        puts 'URL: ' + element['url']
-        puts ''
+      classes = []
+
+      @compounds.each_value do |value|
+
+        if value['kind'] == 'class'
+          classes.push value
+        end
+      end
+
+      loop do
+        FileUtils.copy_entry('../files', '../output', false, false, true)
+
+        template = Liquid::Template.parse(File.read('../templates/base.liquid'))
+        template.assigns['PROJECT_NAME'] = @project_name
+        template.assigns['compounds'] = @compounds
+
+        # Main page
+        #pages.each do |compound|
+        #  if compound['refid'] == 'indexpage'
+        #    File.write('../output/html/main.html', template.render('pagetype' => 'mainpage',
+        #                                                           'TITLE' => 'Main page',
+        #                                                           'compound' => compound))
+        #    break
+        #  end
+        #end
+
+        # Index
+        File.write('../output/html/classes.html', template.render('pagetype' => 'classes',
+                                                                  'TITLE' => 'Index page',
+                                                                  'classes' => classes))
+
+        # Classes
+        #classes.each do |compound|
+        #  File.write("../output/html/#{compound['refid']}.html", template.render('pagetype' => 'class',
+        #                                                                         'TITLE' => "#{compound['name'][0]}",
+        #                                                                         'compound' => compound))
+        #end
+
+        # ?
+
+        print "\n", "Press any key to reload Liquid, or 'q' to quit."
+        if STDIN.getch == "q"
+          print "\n"
+          break
+        end
       end
 
     end
