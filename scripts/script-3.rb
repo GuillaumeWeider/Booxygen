@@ -50,11 +50,11 @@ module Booxygen
 
         var = {}
         var['id'] = element['id']
-        var['name'] = element.at_xpath(name).to_s
+        var['name'] = element.at_xpath('name').to_s
         var['briefdesc'] = '' #TODO
         var['description'] = '' #TODO
 
-        var['type'] = parse_type(element.find('type'))
+        var['type'] = parse_type(element.at_xpath('type'))
         if var['type'].start_with?('constexpr')
           var['type'] = var['type'][10..length]
           var['is_constexpr'] = true
@@ -127,7 +127,7 @@ module Booxygen
     end
 
     def parse_type(element)
-
+      element.to_s
     end
 
     def parse_ref(element)
@@ -146,6 +146,9 @@ module Booxygen
     def parse(file_path)
       filename = File.basename(file_path)
 
+      unless filename.start_with?('group_')
+        return
+      end
       @logger.info("Parsing #{filename}")
 
       xml = Nokogiri::XML(File.open("#{file_path}"))
@@ -154,9 +157,10 @@ module Booxygen
         @logger.warn('File root tag isn\'t correct, skip it.')
       end
 
-      compounddef = xml.xpath('compounddef')
+      compounddef = xml.xpath('//compounddef')
+
       if compounddef.length != 1
-        @logger.warn("File content isn't correct, skip it. #{compounddef.length}" )
+        @logger.warn("File content isn't correct, skip it.")
         return
       else
         compounddef = compounddef[0]
@@ -218,6 +222,7 @@ module Booxygen
 
       compounddef_elements.each do |child|
 
+        puts 'ICI: ' + child.name
         # Directory / file
         if ['innerdir', 'innerfile'].include?(child.name)
           id = child['refid']
@@ -244,7 +249,7 @@ module Booxygen
           if @compounds.include?(id)
             symbol = @compounds[id]
 
-            if child['name'] == 'innernamespace'
+            if child.name == 'innernamespace'
               namespace = {}
               namespace['url'] = symbol['url']
 
@@ -257,14 +262,14 @@ module Booxygen
               namespace['briefdesc'] = symbol['briefdesc']
               compound['namespaces'].push(namespace)
 
-            elsif child['name'] == 'innerclass'
-
+            elsif child.name == 'innerclass'
               class_val = {}
               class_val['kind'] = symbol['kind']
               class_val['url'] = symbol['url']
 
               if ['namespace', 'class', 'struct', 'union'].include?(compound['kind'])
                 class_val['name'] = symbol['short_name']
+
               else
                 class_val['name'] = symbol['name']
               end
@@ -282,305 +287,307 @@ module Booxygen
               elsif ['namespace', 'group', 'file'].include?(compound['kind'])
                 compound['classes'].push(class_val)
               end
+            end
+          end
+          # Base class (if it links to anywhere)
+        elsif child.name == 'basecompoundref'
+          if ['class', 'struct', 'union'].include?(compound['kind'])
 
-              # Base class (if it links to anywhere)
-            elsif child['name'] == 'basecompoundref'
-              if ['class', 'struct', 'union'].include?(compound['kind'])
+            unless child['refid'].nil?
+              id = child['refid']
 
-                unless child['refid'].nil?
-                  id = child['refid']
+              if @compounds.include?(id)
+                symbol = @compounds[id]
 
-                  if @compounds.include?(id)
-                    symbol = @compounds[id]
+                class_val = {}
+                class_val['kind'] = symbol['kind']
+                class_val['url'] = symbol['url']
+                class_val['name'] = symbol['short_name']
+                class_val['briefdesc'] = symbol['briefdesc']
+                class_val['is_protected'] = child['prot'] == 'protected'
+                class_val['is_virtual'] = child['virt'] == 'virtual'
 
-                    class_val = {}
-                    class_val['kind'] = symbol['kind']
-                    class_val['url'] = symbol['url']
-                    class_val['name'] = symbol['short_name']
-                    class_val['briefdesc'] = symbol['briefdesc']
-                    class_val['is_protected'] = child['prot'] == 'protected'
-                    class_val['is_virtual'] = child['virt'] == 'virtual'
-
-                    compound['base_classes'].push(class_val)
-                  end
-                end
-              end
-
-              # Derived class
-            elsif child['name'] == 'derivedcompoundref'
-              if ['class', 'struct', 'union'].include?(compound['kind'])
-
-                unless child['refid'].nil?
-                  id = child['refid']
-
-                  if @compounds.include?(id)
-                    symbol = @compounds[id]
-
-                    class_val = {}
-                    class_val['kind'] = symbol['kind']
-                    class_val['url'] = symbol['url']
-                    class_val['name'] = symbol['short_name']
-                    class_val['briefdesc'] = symbol['briefdesc']
-
-                    compound['derived_classes'].push(class_val)
-                  end
-                end
-              end
-
-            elsif child['name'] == 'innergroup'
-              if compound['kind'] == 'group'
-
-                group = @compounds[child['refid']]
-                g = {}
-                g['url'] = group['url']
-                g['name'] = group['short_name']
-                g['briefdesc'] = group['briefdesc']
-
-                compound['modules'].push(g)
-              end
-
-              # Other, grouped in sections
-            elsif child.name == 'sectiondef'
-              if child['kind'] == 'enum'
-                child.each do |memberdef|
-                  enum = parse_enum(memberdef)
-                  unless enum.nil?
-                    compound['enums'].push enum
-                  end
-                end
-              elsif child['kind'] == 'typedef'
-                child.each do |memberdef|
-                  typedef = parse_typedef(memberdef)
-                  if typedef
-                    compound['typedefs'].push typedef
-                  end
-                end
-              elsif child['kind'] == 'func'
-                child.each do |memberdef|
-                  func = parse_func(memberdef)
-                  if func
-                    compound['funcs'].push func
-                  end
-                end
-              elsif child['kind'] == 'var'
-                child.each do |memberdef|
-                  var = parse_var(memberdef)
-                  if var
-                    compound['vars'].push var
-                  end
-                end
-              elsif child['kind'] == 'define'
-                child.each do |memberdef|
-                  define = parse_define(memberdef)
-                  if define
-                    compound['defines'].push define
-                  end
-                end
-              elsif child['kind'] == 'public-type'
-                child.each do |memberdef|
-                  member = nil
-                  if memberdef['kind'] == 'enum'
-                    member = parse_enum(memberdef)
-                  else
-                    if memberdef['kind'] == 'typedef'
-                      member = parse_typedef(memberdef)
-                    end
-                  end
-                  unless member.nil?
-                    compound['public_types'].push [memberdef['kind'], member]
-                  end
-                end
-              elsif child['kind'] == 'public-static-func'
-                child.each do |memberdef|
-                  func = parse_func(memberdef)
-                  if func
-                    compound['public_static_funcs'].push func
-                  end
-                end
-              elsif child['kind'] == 'public-func'
-                child.each do |memberdef|
-                  func = parse_func(memberdef)
-                  if func
-                    if func['type'].nil?
-                      compound['typeless_funcs'].push func
-                    else
-                      compound['public_funcs'].push func
-                    end
-                  end
-                end
-              elsif child['kind'] == 'public-static-attrib'
-                child.each do |memberdef|
-                  var = parse_var(memberdef)
-                  if var
-                    compound['public_static_vars'].push var
-                  end
-                end
-              elsif child['kind'] == 'public-attrib'
-                child.each do |memberdef|
-                  var = parse_var(memberdef)
-                  if var
-                    compound['public_vars'].push var
-                  end
-                end
-              elsif child['kind'] == 'protected-type'
-                child.each do |memberdef|
-                  member = nil
-                  if memberdef['kind'] == 'enum'
-                    member = parse_enum(memberdef)
-                  else
-                    if memberdef['kind'] == 'typedef'
-                      member = parse_typedef(memberdef)
-                    end
-                  end
-                  unless member.nil?
-                    compound['protected_types'].push [memberdef['kind'], member]
-                  end
-                end
-              elsif child['kind'] == 'protected-static-func'
-                child.each do |memberdef|
-                  func = parse_func(memberdef)
-                  if func
-                    compound['protected_static_funcs'].push func
-                  end
-                end
-              elsif child['kind'] == 'protected-func'
-                child.each do |memberdef|
-                  func = parse_func(memberdef)
-                  if func
-                    if func['type'].nil?
-                      compound['typeless_funcs'].push func
-                    else
-                      compound['protected_funcs'].push func
-                    end
-                  end
-                end
-              elsif child['kind'] == 'protected-static-attrib'
-                child.each do |memberdef|
-                  var = parse_var(memberdef)
-                  if var
-                    compound['protected_static_vars'].push var
-                  end
-                end
-              elsif child['kind'] == 'protected-attrib'
-                child.each do |memberdef|
-                  var = parse_var(memberdef)
-                  if var
-                    compound['protected_vars'].push var
-                  end
-                end
-              elsif child['kind'] == 'private-func'
-                # Gather only private functions that are virtual and
-                # documented
-                child.each do |memberdef|
-                  if memberdef['virt'] == 'non-virtual'
-                    next
-                  end
-
-                  func = parse_func(memberdef)
-                  if func
-                    compound['private_funcs'].push func
-                  end
-                end
-              elsif child['kind'] == 'related'
-                child.each do |memberdef|
-                  if memberdef['kind'] == 'enum'
-                    enum = parse_enum(memberdef)
-                    if enum
-                      compound['related'].push ['enum', enum]
-                    end
-                  elsif memberdef['kind'] == 'typedef'
-                    typedef = parse_typedef(memberdef)
-                    if typedef
-                      compound['related'].push ['typedef', typedef]
-                    end
-                  elsif memberdef['kind'] == 'function'
-                    func = parse_func(memberdef)
-                    if func
-                      compound['related'].push ['func', func]
-                    end
-                  elsif memberdef['kind'] == 'variable'
-                    var = parse_var(memberdef)
-                    if var
-                      compound['related'].push ['var', var]
-                    end
-                  elsif memberdef['kind'] == 'define'
-                    define = parse_define(memberdef)
-                    if define
-                      compound['related'].push ['define', define]
-                    end
-                  end
-                end
-              elsif child['kind'] == 'user-defined'
-                list = []
-
-                child.xpath('memberdef').each do |memberdef|
-                  if memberdef['kind'] == 'enum'
-                    enum = parse_enum(memberdef)
-                    if enum
-                      list['enum'].push enum
-                    end
-                  elsif memberdef['kind'] == 'typedef'
-                    typedef = parse_typedef(memberdef)
-                    if typedef
-                      list['typedef'].push typedef
-                    end
-                  elsif memberdef['kind'] == 'function'
-                    func = parse_func(memberdef)
-                    if func
-                      list['func'].push func
-                    end
-                  elsif memberdef['kind'] == 'variable'
-                    var = parse_var(memberdef)
-                    if var
-                      list['var'].push var
-                    end
-                  elsif memberdef['kind'] == 'define'
-                    define = parse_define(memberdef)
-                    if define
-                      list['define'].push define
-                    end
-                  end
-                end
-
-                if list
-                  header = child.find('header')
-                  if header.nil?
-                    logger.error("{} member groups without @name are not supported, ignoring")
-                  else
-                    group = {}
-                    group['name'] = header['text']
-                    group['id'] = group['name']
-                    group['description'] = parse_desc(child.find('description'))
-                    group['members'] = list
-                    compound['groups'].push group
-                  end
-                elsif !['private-type',
-                        'private-static-func',
-                        'private-static-attrib',
-                        'private-attrib',
-                        'friend'].include?(child['kind'])
-                  logger.warning("{} unknown <sectiondef> kind {}".format(state.current, child['kind']))
-                end
-              elsif !['compoundname',
-                      'briefdescription',
-                      'detaileddescription',
-                      'innerpage', # doesn't add anything to output
-                      'location',
-                      'includes',
-                      'includedby',
-                      'incdepgraph',
-                      'invincdepgraph',
-                      'inheritancegraph',
-                      'collaborationgraph',
-                      'listofallmembers',
-                      'tableofcontents'].include?(child.name) and
-                  !(['page', 'group'].include?(compounddef['kind']) and child.name == 'title')
-                logger.warning("{} ignoring <{}> in <compounddef>".format(state.current, child.name))
+                compound['base_classes'].push(class_val)
               end
             end
           end
+
+          # Derived class
+        elsif child.name == 'derivedcompoundref'
+          if ['class', 'struct', 'union'].include?(compound['kind'])
+
+            unless child['refid'].nil?
+              id = child['refid']
+
+              if @compounds.include?(id)
+                symbol = @compounds[id]
+
+                class_val = {}
+                class_val['kind'] = symbol['kind']
+                class_val['url'] = symbol['url']
+                class_val['name'] = symbol['short_name']
+                class_val['briefdesc'] = symbol['briefdesc']
+
+                compound['derived_classes'].push(class_val)
+              end
+            end
+          end
+
+        elsif child.name == 'innergroup'
+          if compound['kind'] == 'group'
+
+            group = @compounds[child['refid']]
+            g = {}
+            g['url'] = group['url']
+            g['name'] = group['short_name']
+            g['briefdesc'] = group['briefdesc']
+
+            compound['modules'].push(g)
+          end
+
+          # Other, grouped in sections
+        elsif child.name == 'sectiondef'
+          if child['kind'] == 'enum'
+            child.elements.each do |memberdef|
+              enum = parse_enum(memberdef)
+              unless enum.nil?
+                compound['enums'].push enum
+              end
+            end
+          elsif child['kind'] == 'typedef'
+            child.elements.each do |memberdef|
+              typedef = parse_typedef(memberdef)
+              if typedef
+                compound['typedefs'].push typedef
+              end
+            end
+          elsif child['kind'] == 'func'
+            child.elements.each do |memberdef|
+              func = parse_func(memberdef)
+              if func
+                compound['funcs'].push func
+              end
+            end
+          elsif child['kind'] == 'var'
+            child.elements.each do |memberdef|
+
+              var = parse_var(memberdef)
+              if var
+                compound['vars'].push var
+              end
+            end
+          elsif child['kind'] == 'define'
+            child.elements.each do |memberdef|
+              define = parse_define(memberdef)
+              if define
+                compound['defines'].push define
+              end
+            end
+          elsif child['kind'] == 'public-type'
+            child.elements.each do |memberdef|
+              member = nil
+              if memberdef['kind'] == 'enum'
+                member = parse_enum(memberdef)
+              else
+                if memberdef['kind'] == 'typedef'
+                  member = parse_typedef(memberdef)
+                end
+              end
+              unless member.nil?
+                compound['public_types'].push [memberdef['kind'], member]
+              end
+            end
+          elsif child['kind'] == 'public-static-func'
+            child.elements.each do |memberdef|
+              func = parse_func(memberdef)
+              if func
+                compound['public_static_funcs'].push func
+              end
+            end
+          elsif child['kind'] == 'public-func'
+            child.elements.each do |memberdef|
+              func = parse_func(memberdef)
+              if func
+                if func['type'].nil?
+                  compound['typeless_funcs'].push func
+                else
+                  compound['public_funcs'].push func
+                end
+              end
+            end
+          elsif child['kind'] == 'public-static-attrib'
+            child.elements.each do |memberdef|
+              var = parse_var(memberdef)
+              if var
+                compound['public_static_vars'].push var
+              end
+            end
+          elsif child['kind'] == 'public-attrib'
+            child.elements.each do |memberdef|
+              var = parse_var(memberdef)
+              if var
+                compound['public_vars'].push var
+              end
+            end
+          elsif child['kind'] == 'protected-type'
+            child.elements.each do |memberdef|
+              member = nil
+              if memberdef['kind'] == 'enum'
+                member = parse_enum(memberdef)
+              else
+                if memberdef['kind'] == 'typedef'
+                  member = parse_typedef(memberdef)
+                end
+              end
+              unless member.nil?
+                compound['protected_types'].push [memberdef['kind'], member]
+              end
+            end
+          elsif child['kind'] == 'protected-static-func'
+            child.elements.each do |memberdef|
+              func = parse_func(memberdef)
+              if func
+                compound['protected_static_funcs'].push func
+              end
+            end
+          elsif child['kind'] == 'protected-func'
+            child.elements.each do |memberdef|
+              func = parse_func(memberdef)
+              if func
+                if func['type'].nil?
+                  compound['typeless_funcs'].push func
+                else
+                  compound['protected_funcs'].push func
+                end
+              end
+            end
+          elsif child['kind'] == 'protected-static-attrib'
+            child.elements.each do |memberdef|
+              var = parse_var(memberdef)
+              if var
+                compound['protected_static_vars'].push var
+              end
+            end
+          elsif child['kind'] == 'protected-attrib'
+            child.elements.each do |memberdef|
+              var = parse_var(memberdef)
+              if var
+                compound['protected_vars'].push var
+              end
+            end
+          elsif child['kind'] == 'private-func'
+            # Gather only private functions that are virtual and
+            # documented
+            child.elements.each do |memberdef|
+              if memberdef['virt'] == 'non-virtual'
+                next
+              end
+
+              func = parse_func(memberdef)
+              if func
+                compound['private_funcs'].push func
+              end
+            end
+          elsif child['kind'] == 'related'
+            child.elements.each do |memberdef|
+              if memberdef['kind'] == 'enum'
+                enum = parse_enum(memberdef)
+                if enum
+                  compound['related'].push ['enum', enum]
+                end
+              elsif memberdef['kind'] == 'typedef'
+                typedef = parse_typedef(memberdef)
+                if typedef
+                  compound['related'].push ['typedef', typedef]
+                end
+              elsif memberdef['kind'] == 'function'
+                func = parse_func(memberdef)
+                if func
+                  compound['related'].push ['func', func]
+                end
+              elsif memberdef['kind'] == 'variable'
+                var = parse_var(memberdef)
+                if var
+                  compound['related'].push ['var', var]
+                end
+              elsif memberdef['kind'] == 'define'
+                define = parse_define(memberdef)
+                if define
+                  compound['related'].push ['define', define]
+                end
+              end
+            end
+          elsif child['kind'] == 'user-defined'
+            list = []
+
+            child.xpath('memberdef').each do |memberdef|
+              if memberdef['kind'] == 'enum'
+                enum = parse_enum(memberdef)
+                if enum
+                  list['enum'].push enum
+                end
+              elsif memberdef['kind'] == 'typedef'
+                typedef = parse_typedef(memberdef)
+                if typedef
+                  list['typedef'].push typedef
+                end
+              elsif memberdef['kind'] == 'function'
+                func = parse_func(memberdef)
+                if func
+                  list['func'].push func
+                end
+              elsif memberdef['kind'] == 'variable'
+                var = parse_var(memberdef)
+                if var
+                  list['var'].push var
+                end
+              elsif memberdef['kind'] == 'define'
+                define = parse_define(memberdef)
+                if define
+                  list['define'].push define
+                end
+              end
+            end
+
+            if list
+              header = child.at_xpath('header')
+              if header.nil?
+                logger.error("{} member groups without @name are not supported, ignoring")
+              else
+                group = {}
+                group['name'] = header['text']
+                group['id'] = group['name']
+                group['description'] = parse_desc(child.at_xpath('description'))
+                group['members'] = list
+                compound['groups'].push group
+              end
+            elsif !['private-type',
+                    'private-static-func',
+                    'private-static-attrib',
+                    'private-attrib',
+                    'friend'].include?(child['kind'])
+              logger.warning("{} unknown <sectiondef> kind {}".format(state.current, child['kind']))
+            end
+          elsif !['compoundname',
+                  'briefdescription',
+                  'detaileddescription',
+                  'innerpage', # doesn't add anything to output
+                  'location',
+                  'includes',
+                  'includedby',
+                  'incdepgraph',
+                  'invincdepgraph',
+                  'inheritancegraph',
+                  'collaborationgraph',
+                  'listofallmembers',
+                  'tableofcontents'].include?(child.name) and
+              !(['page', 'group'].include?(compounddef['kind']) and child.name == 'title')
+            logger.warning("{} ignoring <{}> in <compounddef>".format(state.current, child.name))
+          end
         end
       end
+
+      compound
     end
 
     def start
@@ -678,24 +685,29 @@ module Booxygen
         end
       end
 
+      groups = []
 
       # Treat all XML files, parse
       xml_files.each do |file_path|
         # If file is index.xml skip for now
         next if File.basename(file_path) == 'index.xml'
 
-        #parse(file_path)
+
+        # parsed = parse(file_path)
+        # if parsed.nil?
+        #   next
+        # end
+        #
+        # if parsed['kind'] == 'group'
+        #   groups.push parsed
+        # end
+        # puts 'ID: ' + parsed['id']
+        # puts 'Kind: ' + parsed['kind']
+        # puts 'Name: ' + parsed['name']
+        # puts 'URL: ' + parsed['url']
+        # puts ''
       end
 
-
-      #@compounds.each_value do |element|
-      #  puts 'ID: ' + element['id']
-      #  puts 'Kind: ' + element['kind']
-      #  puts 'Name: ' + element['name']
-      #  puts 'Short name: ' + element['short_name']
-      #  puts 'URL: ' + element['url']
-      #  puts ''
-      #end
 
       classes = []
 
@@ -712,6 +724,7 @@ module Booxygen
         template = Liquid::Template.parse(File.read('../templates/base.liquid'))
         template.assigns['PROJECT_NAME'] = @project_name
         template.assigns['compounds'] = @compounds
+        template.assigns['groups'] = groups
 
         # Main page
         #pages.each do |compound|

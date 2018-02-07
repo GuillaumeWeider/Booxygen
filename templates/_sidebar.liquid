@@ -2,18 +2,8 @@
     <div class="nav nav-sidebar">
         <select id="versions_dropdown">
             <optgroup label="Modules">
-                {%- for compound in compounds -%}
-                {%- if compound.kind == 'group' -%}
-                <option value="module_{% increment count %}">{{ compound.details.title }}</option>
-                {%- endif -%}
-                {%- endfor -%}
-            </optgroup>
-            <optgroup label="Namespaces">
-                {%- for compound in compounds -%}
-                {%- if compound.kind == 'namespace' -%}
-                <option value="namespace_{% increment count2 %}">{{ compound.details.compoundname }}
-                </option>
-                {%- endif -%}
+                {%- for compound in groups -%}
+                <option value="module_{% increment count %}">{{ compound.name }}</option>
                 {%- endfor -%}
             </optgroup>
         </select>
@@ -28,18 +18,15 @@
                 </ul>
             </li>
 
-            {% for compound in compounds %}
-            {%- if compound.kind == 'group' -%}
-            {% if compound.details.innerclass %}
+            {% for compound in groups %}
+            {% if compound.classes %}
             <li class="category open_me module_{% increment count3 %}"><span>Classes</span>
                 <ul>
-                    {%- for class in compound.details.innerclass -%}
-                    <li><a href="{{ class.refid }}.html" class="element module_{{ count3 | minus:1 }}">{{ class.content }}</a></li>
+                    {%- for class in compound.classes -%}
+                    <li><a href="{{ class.url }}" class="element module_{{ count3 | minus:1 }}">{{ class.name }}</a></li>
                     {%- endfor -%}
                 </ul>
             </li>
-            {% endif %}
-
             {%- endif -%}
             {% endfor %}
 
