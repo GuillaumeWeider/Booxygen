@@ -25,9 +25,17 @@ module Booxygen
 
         define = {}
         define['id'] = element['id']
-        define['name'] = element.at_xpath(name).to_s
+        define['name'] = element.at_xpath('name').to_s
         define['briefdesc'] = '' #TODO
         define['description'] = '' #TODO
+        define['params'] = []
+
+        element.xpath('param').each do |param|
+          name = param.at_xpath('defname')
+          unless name.nil?
+            #TODO
+          end
+        end
 
         if define['briefdesc'] or define['description']
           return define
@@ -138,17 +146,20 @@ module Booxygen
     def parse(file_path)
       filename = File.basename(file_path)
 
-      @logger.info("Parsing #{filename}.xml")
+      @logger.info("Parsing #{filename}")
 
-      xml = Nokogiri::XML(File.open("#{filename}"))
+      xml = Nokogiri::XML(File.open("#{file_path}"))
 
-      if xml.at_xpath('name(/*)') != 'doxygen'
+      if xml.at_xpath('/*').name != 'doxygen'
         @logger.warn('File root tag isn\'t correct, skip it.')
       end
 
       compounddef = xml.xpath('compounddef')
       if compounddef.length != 1
-        @logger.warn('File content isn\'t correct, skip it.')
+        @logger.warn("File content isn't correct, skip it. #{compounddef.length}" )
+        return
+      else
+        compounddef = compounddef[0]
       end
 
       compound = {}
